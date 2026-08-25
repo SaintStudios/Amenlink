@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="Download the Amen app from the App Store. Amen for Android is coming soon to Google Play.">
-    <meta name="theme-color" content="#e9faf8">
+    <meta name="theme-color" content="#fcf7ed">
     <meta name="robots" content="index, follow">
     <meta name="apple-itunes-app" content="app-id=6744241928, app-argument=https://amenbible.app/">
 
@@ -51,7 +51,7 @@
 
         html {
             min-height: 100%;
-            background: #e9faf8;
+            background: #fcf7ed;
         }
 
         body {
@@ -62,9 +62,9 @@
             overflow-x: hidden;
             overflow-y: auto;
             background:
-                radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.98) 0 8%, transparent 34%),
-                radial-gradient(circle at 88% 12%, rgba(37, 200, 190, 0.23), transparent 34%),
-                linear-gradient(155deg, #f7fffd 0%, #e7faf7 52%, #d9f4f0 100%);
+                radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.9) 0 8%, transparent 34%),
+                radial-gradient(circle at 88% 12%, rgba(37, 200, 190, 0.11), transparent 34%),
+                linear-gradient(155deg, #fffdf8 0%, #fcf7ed 52%, #f5efe3 100%);
             color: var(--ink);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
@@ -86,7 +86,7 @@
             height: 24rem;
             right: -12rem;
             bottom: -10rem;
-            background: rgba(8, 183, 174, 0.13);
+            background: rgba(8, 183, 174, 0.08);
         }
 
         body::after {
@@ -94,7 +94,7 @@
             height: 17rem;
             left: -9rem;
             bottom: 8%;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 253, 248, 0.76);
         }
 
         .page-shell {
@@ -371,25 +371,125 @@
         .browser-cue {
             position: fixed;
             z-index: 2;
-            top: max(10px, env(safe-area-inset-top));
-            right: max(12px, env(safe-area-inset-right));
+            top: max(8px, calc(env(safe-area-inset-top) + 2px));
+            right: max(10px, calc(env(safe-area-inset-right) + 4px));
             display: none;
-            align-items: center;
-            gap: 8px;
-            padding: 9px 12px;
-            border: 1px solid rgba(8, 117, 111, 0.15);
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.94);
-            box-shadow: 0 8px 24px rgba(16, 70, 65, 0.14);
+            width: 48px;
+            height: 44px;
             color: var(--teal-700);
-            font-size: 1rem;
-            font-weight: 850;
+            opacity: 0.78;
             pointer-events: none;
         }
 
-        body.is-restricted .browser-cue {
-            display: flex;
-            animation: cue-float 1.8s ease-in-out infinite;
+        .browser-cue svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        body.is-tiktok .browser-cue {
+            display: block;
+        }
+
+        body.is-tiktok .page-shell,
+        body.is-opening-store .page-shell {
+            place-items: start center;
+            padding-top: max(72px, calc(env(safe-area-inset-top) + 58px));
+        }
+
+        body.is-tiktok .download-card,
+        body.is-opening-store .download-card {
+            width: min(100%, 420px);
+            padding: 8px 0 24px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        body.is-tiktok .brand,
+        body.is-opening-store .brand {
+            margin-bottom: 24px;
+        }
+
+        body.is-tiktok .brand-copy,
+        body.is-opening-store .brand-copy {
+            display: none;
+        }
+
+        body.is-tiktok .app-icon,
+        body.is-opening-store .app-icon {
+            width: 76px;
+            height: 76px;
+            border-radius: 19px;
+        }
+
+        body.is-tiktok h1,
+        body.is-opening-store h1 {
+            max-width: 360px;
+            font-size: clamp(1.55rem, 6.8vw, 1.95rem);
+            line-height: 1.15;
+            letter-spacing: -0.035em;
+        }
+
+        body.is-tiktok .lead,
+        body.is-opening-store .lead {
+            max-width: 370px;
+            margin-top: 14px;
+            font-size: 0.96rem;
+            line-height: 1.52;
+        }
+
+        body.is-tiktok .steps {
+            width: min(100%, 370px);
+            margin: 27px auto 0;
+            gap: 0;
+        }
+
+        body.is-tiktok .step {
+            grid-template-columns: 34px 1fr;
+            gap: 13px;
+            min-height: 58px;
+            padding: 12px 2px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            color: var(--ink);
+            font-size: 0.96rem;
+            font-weight: 650;
+            line-height: 1.42;
+        }
+
+        body.is-tiktok .step + .step {
+            border-top: 1px solid var(--line);
+        }
+
+        body.is-tiktok .step-number {
+            width: 34px;
+            height: 34px;
+            border: 1px solid rgba(8, 117, 111, 0.18);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.74);
+            box-shadow: none;
+            color: var(--teal-700);
+            font-size: 0.82rem;
+        }
+
+        body.is-tiktok .actions,
+        body.is-tiktok .status-pill,
+        body.is-tiktok .fallback-hint,
+        body.is-tiktok .coming-soon,
+        body.is-tiktok .legal-links,
+        body.is-opening-store .actions,
+        body.is-opening-store .status-pill,
+        body.is-opening-store .steps,
+        body.is-opening-store .coming-soon,
+        body.is-opening-store .fallback-hint,
+        body.is-opening-store .legal-links {
+            display: none !important;
         }
 
         .noscript-note {
@@ -402,11 +502,6 @@
             font-size: 0.88rem;
             line-height: 1.5;
             text-align: center;
-        }
-
-        @keyframes cue-float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(4px); }
         }
 
         @media (max-width: 480px) {
@@ -449,7 +544,11 @@
     </style>
 </head>
 <body>
-    <div class="browser-cue" aria-hidden="true"><span>↑</span><span>•••</span></div>
+    <div class="browser-cue" aria-hidden="true">
+        <svg viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 37C14 33 18 26 21 20C25 13 31 9 41 8M30 5L41 8L37 19" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
 
     <main class="page-shell">
         <section class="download-card" aria-labelledby="headline">
@@ -513,17 +612,19 @@
 
     <script>
         const IOS_APP_STORE_URL = 'https://apps.apple.com/app/id6744241928';
+        const IOS_APP_STORE_NATIVE_URL = 'itms-apps://itunes.apple.com/app/id6744241928';
 
         const translations = {
             de: {
                 pageTitle: 'Amen App herunterladen',
                 pageDescription: 'Lade die Amen App aus dem App Store herunter. Amen für Android kommt bald zu Google Play.',
                 tagline: 'Bibel · Gebet · Glaube',
-                tiktokStatus: 'In TikTok geöffnet',
                 inAppStatus: 'Seite in einer App geöffnet',
                 restrictedHeadline: 'Amen App herunterladen',
-                restrictedExplanation: 'Um Amen aus dem App Store zu laden, musst du diese Seite in deinem Browser öffnen.',
-                stepOne: 'Tippe oben rechts auf „Teilen“ oder auf das Drei-Punkte-Menü.',
+                restrictedExplanation: 'App-Store-Links lassen sich im In-App-Browser von TikTok nicht direkt öffnen. Öffne diese Seite in deinem Browser, um die Amen App herunterzuladen.',
+                inAppExplanation: 'Öffne diese Seite in deinem Browser, um die Amen App aus dem App Store zu laden.',
+                stepOne: 'Tippe oben rechts auf das Drei-Punkte-Menü.',
+                inAppStepOne: 'Tippe oben rechts auf „Teilen“ oder auf das Drei-Punkte-Menü.',
                 stepTwo: 'Wähle „Im Browser öffnen“.',
                 fallbackHint: 'Falls das nicht klappt, kopiere den Link und füge ihn in Safari ein.',
                 copyLink: 'Link kopieren',
@@ -545,11 +646,12 @@
                 pageTitle: 'Télécharger l’app Amen',
                 pageDescription: 'Télécharge l’app Amen dans l’App Store. Amen arrive bientôt sur Android.',
                 tagline: 'Bible · Prière · Foi',
-                tiktokStatus: 'Ouvert dans TikTok',
                 inAppStatus: 'Page ouverte dans une application',
                 restrictedHeadline: 'Télécharger l’app Amen',
-                restrictedExplanation: 'Pour télécharger Amen depuis l’App Store, ouvre cette page dans ton navigateur.',
-                stepOne: 'En haut à droite, appuie sur « Partager » ou sur le menu à trois points.',
+                restrictedExplanation: 'Les liens vers l’App Store ne s’ouvrent pas directement dans le navigateur intégré de TikTok. Ouvre cette page dans ton navigateur pour télécharger l’app Amen.',
+                inAppExplanation: 'Ouvre cette page dans ton navigateur pour télécharger l’app Amen depuis l’App Store.',
+                stepOne: 'Appuie sur le menu à trois points en haut à droite.',
+                inAppStepOne: 'En haut à droite, appuie sur « Partager » ou sur le menu à trois points.',
                 stepTwo: 'Choisis « Ouvrir dans le navigateur ».',
                 fallbackHint: 'Si cela ne fonctionne pas, copie le lien et colle-le dans Safari.',
                 copyLink: 'Copier le lien',
@@ -571,11 +673,12 @@
                 pageTitle: 'Ladda ner Amen-appen',
                 pageDescription: 'Ladda ner Amen-appen från App Store. Amen kommer snart till Android.',
                 tagline: 'Bibeln · Bön · Tro',
-                tiktokStatus: 'Öppnad i TikTok',
                 inAppStatus: 'Sidan är öppen i en app',
                 restrictedHeadline: 'Ladda ner Amen-appen',
-                restrictedExplanation: 'För att ladda ner Amen från App Store behöver du öppna sidan i din webbläsare.',
-                stepOne: 'Tryck på ”Dela” eller menyn med tre punkter uppe till höger.',
+                restrictedExplanation: 'Länkar till App Store öppnas inte direkt i TikToks inbyggda webbläsare. Öppna den här sidan i din webbläsare för att ladda ner Amen-appen.',
+                inAppExplanation: 'Öppna den här sidan i din webbläsare för att ladda ner Amen-appen från App Store.',
+                stepOne: 'Tryck på menyn med tre punkter uppe till höger.',
+                inAppStepOne: 'Tryck på ”Dela” eller menyn med tre punkter uppe till höger.',
                 stepTwo: 'Välj ”Öppna i webbläsaren”.',
                 fallbackHint: 'Om det inte fungerar, kopiera länken och klistra in den i Safari.',
                 copyLink: 'Kopiera länken',
@@ -597,11 +700,12 @@
                 pageTitle: 'Download the Amen app',
                 pageDescription: 'Download the Amen app from the App Store. Amen for Android is coming soon.',
                 tagline: 'Bible · Prayer · Faith',
-                tiktokStatus: 'Opened in TikTok',
                 inAppStatus: 'Page opened inside an app',
                 restrictedHeadline: 'Download the Amen app',
-                restrictedExplanation: 'To download Amen from the App Store, open this page in your browser.',
-                stepOne: 'Tap Share or the three-dot menu in the top right.',
+                restrictedExplanation: 'App Store links don’t open directly in TikTok’s in-app browser. Open this page in your browser to download the Amen app.',
+                inAppExplanation: 'Open this page in your browser to download the Amen app from the App Store.',
+                stepOne: 'Tap the three-dot menu in the top right.',
+                inAppStepOne: 'Tap Share or the three-dot menu in the top right.',
                 stepTwo: 'Choose “Open in browser”.',
                 fallbackHint: 'If that doesn’t work, copy the link and paste it into Safari.',
                 copyLink: 'Copy link',
@@ -696,6 +800,23 @@
             if (copied) onSuccess();
         }
 
+        function openIosAppStore() {
+            let fallbackTimer = window.setTimeout(() => {
+                window.location.replace(IOS_APP_STORE_URL);
+            }, 1800);
+
+            const cancelFallback = () => {
+                window.clearTimeout(fallbackTimer);
+                fallbackTimer = null;
+            };
+
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) cancelFallback();
+            }, { once: true });
+            window.addEventListener('pagehide', cancelFallback, { once: true });
+            window.location.replace(IOS_APP_STORE_NATIVE_URL);
+        }
+
         function initializePage() {
             const language = detectLanguage();
             const copy = translations[language];
@@ -735,18 +856,30 @@
                 storeLink.hidden = true;
                 copyButton.hidden = true;
                 comingSoon.classList.add('is-visible');
-                if (isRestricted) {
-                    setText('statusPill', inAppBrowser === 'tiktok' ? copy.tiktokStatus : copy.inAppStatus);
+                if (isRestricted && inAppBrowser !== 'tiktok') {
+                    setText('statusPill', copy.inAppStatus);
                     statusPill.classList.add('is-visible');
                 }
                 return;
             }
 
-            if (isRestricted) {
-                document.body.classList.add('is-restricted');
-                setText('statusPill', inAppBrowser === 'tiktok' ? copy.tiktokStatus : copy.inAppStatus);
+            if (inAppBrowser === 'tiktok') {
+                document.body.classList.add('is-tiktok');
                 setText('headline', copy.restrictedHeadline);
                 setText('lead', copy.restrictedExplanation);
+                steps.classList.add('is-visible');
+                actions.hidden = true;
+                storeLink.hidden = true;
+                copyButton.hidden = true;
+                return;
+            }
+
+            if (isRestricted) {
+                document.body.classList.add('is-restricted');
+                setText('statusPill', copy.inAppStatus);
+                setText('headline', copy.restrictedHeadline);
+                setText('lead', copy.inAppExplanation);
+                setText('stepOne', copy.inAppStepOne);
                 setText('storeLinkLabel', copy.retryStoreButton);
                 statusPill.classList.add('is-visible');
                 steps.classList.add('is-visible');
@@ -756,10 +889,11 @@
             }
 
             if (platform === 'ios') {
-                setText('headline', copy.openingStore);
-                setText('lead', copy.redirectExplanation);
-                setText('storeLinkLabel', copy.retryStoreButton);
-                window.setTimeout(() => window.location.replace(IOS_APP_STORE_URL), 350);
+                document.body.classList.add('is-opening-store');
+                setText('headline', copy.pageTitle);
+                setText('lead', copy.openingStore);
+                actions.hidden = true;
+                window.setTimeout(openIosAppStore, 150);
                 return;
             }
 

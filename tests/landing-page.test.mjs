@@ -55,12 +55,41 @@ for (const locale of ['de', 'fr', 'sv']) {
 }
 
 assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6744241928/);
-assert.doesNotMatch(html, /play\.google\.com\/store\/apps\/details/);
+assert.match(html, /itms-apps:\/\/itunes\.apple\.com\/app\/id6744241928/);
+assert.match(html, /location\.replace\(IOS_APP_STORE_NATIVE_URL\)/);
 assert.match(html, /location\.replace\(IOS_APP_STORE_URL\)/);
+assert.doesNotMatch(html, /play\.google\.com\/store\/apps\/details/);
 assert.doesNotMatch(html, /window\.location\.href\s*=/);
 assert.match(html, /Coming soon on Google Play/);
+
+const browserCue = html.match(/<div class="browser-cue"[\s\S]*?<\/div>/)?.[0] ?? '';
+assert.match(browserCue, /<svg[\s\S]*?<\/svg>/, 'TikTok cue should be one drawn arrow');
+assert.doesNotMatch(browserCue, /•••|\.\.\./, 'TikTok cue must not duplicate TikTok’s three-dot menu');
+assert.match(html, /document\.body\.classList\.add\('is-tiktok'\)/);
+assert.match(html, /body\.is-tiktok \.brand-copy,\s*body\.is-opening-store \.brand-copy\s*\{\s*display:\s*none;/);
+assert.match(html, /body\.is-tiktok \.actions[\s\S]*?body\.is-tiktok \.fallback-hint[\s\S]*?display:\s*none(?:\s*!important)?;/);
+assert.doesNotMatch(html, /tiktokStatus|In TikTok geöffnet|Opened in TikTok|Ouvert dans TikTok|Öppnad i TikTok/);
+
+for (const requiredCopy of [
+    'App-Store-Links lassen sich im In-App-Browser von TikTok nicht direkt öffnen.',
+    'Les liens vers l’App Store ne s’ouvrent pas directement dans le navigateur intégré de TikTok.',
+    'Länkar till App Store öppnas inte direkt i TikToks inbyggda webbläsare.',
+    'App Store links don’t open directly in TikTok’s in-app browser.',
+    'Tippe oben rechts auf das Drei-Punkte-Menü.',
+    'Appuie sur le menu à trois points en haut à droite.',
+    'Tryck på menyn med tre punkter uppe till höger.',
+    'Tap the three-dot menu in the top right.',
+    'Tippe oben rechts auf „Teilen“ oder auf das Drei-Punkte-Menü.',
+    'En haut à droite, appuie sur « Partager » ou sur le menu à trois points.',
+    'Tryck på ”Dela” eller menyn med tre punkter uppe till höger.',
+    'Tap Share or the three-dot menu in the top right.'
+]) {
+    assert.match(html, new RegExp(requiredCopy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+}
+assert.match(html, /if \(isRestricted\)[\s\S]*?setText\('stepOne', copy\.inAppStepOne\)/);
 assert.match(html, /<link rel="canonical" href="https:\/\/amenbible\.app\/">/);
 assert.match(html, /<meta property="og:image" content="https:\/\/amenbible\.app\/og-image\.png">/);
+assert.match(html, /<meta name="theme-color" content="#fcf7ed">/);
 assert.match(html, /min-height: 100dvh/);
 assert.match(html, /overflow-y: auto/);
 assert.match(html, /prefers-reduced-motion: reduce/);
