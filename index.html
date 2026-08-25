@@ -1,258 +1,779 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Amen - Bible Study herunterladen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Download the Amen app from the App Store. Amen for Android is coming soon to Google Play.">
+    <meta name="theme-color" content="#e9faf8">
+    <meta name="robots" content="index, follow">
+    <meta name="apple-itunes-app" content="app-id=6744241928, app-argument=https://amenbible.app/">
+
+    <link rel="canonical" href="https://amenbible.app/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preload" href="/amen-app-icon.webp" as="image" type="image/webp">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Amen">
+    <meta property="og:title" content="Download the Amen app">
+    <meta property="og:description" content="Bible, prayer, and faith for every day.">
+    <meta property="og:url" content="https://amenbible.app/">
+    <meta property="og:image" content="https://amenbible.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Amen app icon">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Download the Amen app">
+    <meta name="twitter:description" content="Bible, prayer, and faith for every day.">
+    <meta name="twitter:image" content="https://amenbible.app/og-image.png">
+
+    <title>Download the Amen app</title>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        
+        :root {
+            color-scheme: light;
+            --teal-50: #effcf9;
+            --teal-100: #d9f7f2;
+            --teal-400: #25c8be;
+            --teal-500: #08b7ae;
+            --teal-600: #079990;
+            --teal-700: #08756f;
+            --ink: #102927;
+            --muted: #59706d;
+            --surface: rgba(255, 255, 255, 0.92);
+            --line: rgba(8, 117, 111, 0.13);
+            --shadow: 0 28px 80px rgba(21, 97, 91, 0.16);
+        }
+
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
-        
+
+        html {
+            min-height: 100%;
+            background: #e9faf8;
+        }
+
         body {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: #1a1a1a;
-            padding: 20px;
+            min-height: 100vh;
+            min-height: 100svh;
+            min-height: 100dvh;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background:
+                radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.98) 0 8%, transparent 34%),
+                radial-gradient(circle at 88% 12%, rgba(37, 200, 190, 0.23), transparent 34%),
+                linear-gradient(155deg, #f7fffd 0%, #e7faf7 52%, #d9f4f0 100%);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        body::before,
+        body::after {
+            position: fixed;
+            z-index: 0;
+            border-radius: 50%;
+            content: "";
+            pointer-events: none;
+            filter: blur(2px);
+        }
+
+        body::before {
+            width: 24rem;
+            height: 24rem;
+            right: -12rem;
+            bottom: -10rem;
+            background: rgba(8, 183, 174, 0.13);
+        }
+
+        body::after {
+            width: 17rem;
+            height: 17rem;
+            left: -9rem;
+            bottom: 8%;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .page-shell {
             position: relative;
-            overflow: hidden;
+            z-index: 1;
+            display: grid;
+            min-height: 100vh;
+            min-height: 100svh;
+            min-height: 100dvh;
+            place-items: center;
+            padding:
+                max(28px, env(safe-area-inset-top))
+                max(18px, env(safe-area-inset-right))
+                max(28px, env(safe-area-inset-bottom))
+                max(18px, env(safe-area-inset-left));
         }
-        
+
+        .download-card {
+            width: min(100%, 520px);
+            padding: clamp(24px, 5vw, 42px);
+            border: 1px solid rgba(255, 255, 255, 0.86);
+            border-radius: 32px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+
         .app-icon {
-            position: absolute;
-            top: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 80px;
-            background-image: url('Amen (1).png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            width: 72px;
+            height: 72px;
+            flex: 0 0 auto;
+            border: 1px solid rgba(6, 117, 111, 0.15);
             border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 12px 28px rgba(8, 117, 111, 0.22);
         }
-        
-        .arrow {
-            position: absolute;
-            top: 20px;
-            right: 15px;
-            font-size: 48px;
-            color: #1a1a1a;
-            opacity: 0.8;
-            transform: rotate(0deg);
-            animation: bounce 2s infinite;
+
+        .brand-copy {
+            min-width: 0;
         }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: rotate(0deg) translateY(0);
-            }
-            40% {
-                transform: rotate(0deg) translateY(-10px);
-            }
-            60% {
-                transform: rotate(0deg) translateY(-5px);
-            }
+
+        .brand-name {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 750;
+            letter-spacing: -0.025em;
         }
-        
-        .content {
-            text-align: left;
-            max-width: 320px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 32px 28px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 40px;
+
+        .brand-tagline {
+            display: block;
+            margin-top: 3px;
+            color: var(--muted);
+            font-size: 0.9rem;
         }
-        
-        .content h1 {
-            font-size: 22px;
-            font-weight: 600;
-            line-height: 1.3;
-            margin-bottom: 24px;
-            color: #1a1a1a;
+
+        .status-pill {
+            display: none;
+            width: fit-content;
+            margin: 0 auto 16px;
+            padding: 7px 12px;
+            border: 1px solid rgba(8, 183, 174, 0.2);
+            border-radius: 999px;
+            background: var(--teal-50);
+            color: var(--teal-700);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
         }
-        
+
+        .status-pill.is-visible {
+            display: block;
+        }
+
+        h1 {
+            max-width: 430px;
+            margin: 0 auto;
+            font-size: clamp(1.85rem, 8vw, 2.55rem);
+            line-height: 1.08;
+            letter-spacing: -0.045em;
+            text-align: center;
+        }
+
+        .lead {
+            max-width: 410px;
+            margin: 15px auto 0;
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.58;
+            text-align: center;
+        }
+
         .steps {
+            display: none;
+            margin: 26px 0 0;
+            padding: 0;
             list-style: none;
         }
-        
-        .steps li {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.4;
-            margin-bottom: 12px;
-            color: #2d2d2d;
-            display: flex;
-            align-items: flex-start;
+
+        .steps.is-visible {
+            display: grid;
+            gap: 11px;
         }
-        
+
+        .step {
+            display: grid;
+            grid-template-columns: 42px 1fr;
+            gap: 13px;
+            align-items: center;
+            min-height: 66px;
+            padding: 11px 14px 11px 11px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: rgba(239, 252, 249, 0.68);
+            color: #25413e;
+            font-size: 0.96rem;
+            font-weight: 600;
+            line-height: 1.42;
+        }
+
         .step-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: grid;
+            width: 42px;
+            height: 42px;
+            place-items: center;
+            border-radius: 14px;
+            background: linear-gradient(145deg, var(--teal-400), var(--teal-600));
+            box-shadow: 0 8px 18px rgba(8, 153, 144, 0.2);
             color: white;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            display: flex;
+            font-size: 0.9rem;
+            font-weight: 800;
+        }
+
+        .actions {
+            display: grid;
+            gap: 10px;
+            margin-top: 26px;
+        }
+
+        .actions[hidden] {
+            display: none;
+        }
+
+        .store-link,
+        .copy-button {
+            display: inline-flex;
+            min-height: 52px;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
-            font-weight: 600;
-            margin-right: 12px;
-            flex-shrink: 0;
-            margin-top: 2px;
+            gap: 10px;
+            border-radius: 16px;
+            font: inherit;
+            font-size: 0.98rem;
+            font-weight: 750;
+            text-decoration: none;
+            transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
         }
-        
-        .step-text {
-            flex: 1;
+
+        .store-link {
+            border: 1px solid #102927;
+            background: #102927;
+            box-shadow: 0 12px 24px rgba(16, 41, 39, 0.18);
+            color: white;
         }
-        
-        .dots {
-            font-weight: 700;
-            color: #1a1a1a;
+
+        .store-link[hidden],
+        .copy-button[hidden] {
+            display: none;
         }
-        
-        /* Language detection and responsive design */
+
+        .copy-button {
+            border: 1px solid var(--line);
+            background: white;
+            color: var(--teal-700);
+        }
+
+        .store-link:hover,
+        .copy-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .store-link:hover {
+            box-shadow: 0 15px 30px rgba(16, 41, 39, 0.22);
+        }
+
+        .copy-button.is-copied {
+            border-color: rgba(8, 183, 174, 0.35);
+            background: var(--teal-50);
+        }
+
+        .store-link:focus-visible,
+        .copy-button:focus-visible,
+        .legal-links a:focus-visible {
+            outline: 3px solid rgba(8, 183, 174, 0.42);
+            outline-offset: 3px;
+        }
+
+        .button-icon {
+            width: 20px;
+            height: 20px;
+            flex: 0 0 auto;
+        }
+
+        .coming-soon {
+            display: none;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 10px 14px;
+            border: 1px solid rgba(8, 117, 111, 0.14);
+            border-radius: 999px;
+            background: var(--teal-50);
+            text-align: center;
+        }
+
+        .coming-soon.is-visible {
+            display: block;
+        }
+
+        .coming-soon-label {
+            display: block;
+            color: var(--teal-700);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.01em;
+        }
+
+        .fallback-hint {
+            display: none;
+            margin: 17px 6px 0;
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .fallback-hint.is-visible {
+            display: block;
+        }
+
+        .legal-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2px 12px;
+            margin-top: 27px;
+            padding-top: 20px;
+            border-top: 1px solid var(--line);
+        }
+
+        .legal-links a {
+            display: inline-flex;
+            min-height: 44px;
+            align-items: center;
+            padding: 0 3px;
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 650;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            color: var(--teal-700);
+        }
+
+        .browser-cue {
+            position: fixed;
+            z-index: 2;
+            top: max(10px, env(safe-area-inset-top));
+            right: max(12px, env(safe-area-inset-right));
+            display: none;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 12px;
+            border: 1px solid rgba(8, 117, 111, 0.15);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.94);
+            box-shadow: 0 8px 24px rgba(16, 70, 65, 0.14);
+            color: var(--teal-700);
+            font-size: 1rem;
+            font-weight: 850;
+            pointer-events: none;
+        }
+
+        body.is-restricted .browser-cue {
+            display: flex;
+            animation: cue-float 1.8s ease-in-out infinite;
+        }
+
+        .noscript-note {
+            margin: 0 0 18px;
+            padding: 13px 14px;
+            border: 1px solid rgba(8, 117, 111, 0.16);
+            border-radius: 14px;
+            background: var(--teal-50);
+            color: var(--teal-700);
+            font-size: 0.88rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        @keyframes cue-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(4px); }
+        }
+
         @media (max-width: 480px) {
-            .content {
-                max-width: 280px;
-                padding: 28px 24px;
+            .page-shell {
+                align-items: start;
+                padding-top: max(54px, calc(env(safe-area-inset-top) + 46px));
             }
-            
-            .content h1 {
-                font-size: 20px;
+
+            .download-card {
+                border-radius: 26px;
             }
-            
-            .steps li {
-                font-size: 15px;
+
+            .brand {
+                margin-bottom: 24px;
             }
-            
+
             .app-icon {
-                width: 70px;
-                height: 70px;
-                top: 50px;
+                width: 64px;
+                height: 64px;
+                border-radius: 16px;
             }
         }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-out;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
+
+        @media (max-height: 680px) and (min-width: 481px) {
+            .page-shell {
+                align-items: start;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
             }
         }
     </style>
 </head>
-<body class="fade-in">
-    <div class="app-icon"></div>
-    <div class="arrow">↑</div>
-    
-    <div class="content" id="instructions">
-        <h1 id="title">Um den Link aufzurufen, befolge diese zwei einfachen Schritte:</h1>
-        <ul class="steps">
-            <li>
-                <div class="step-number">1</div>
-                <div class="step-text">Klicke auf <span class="dots">•••</span> oben rechts</div>
-            </li>
-            <li>
-                <div class="step-number">2</div>
-                <div class="step-text">Dann auf "Im Browser öffnen"</div>
-            </li>
-        </ul>
-        <div style="text-align: center; margin-top: 20px; font-size: 14px;">
-            <a href="/datenschutz" style="color: #667eea; text-decoration: none; margin: 0 10px;">Datenschutz</a>
-            <a href="/nutzungsbedingungen" style="color: #667eea; text-decoration: none; margin: 0 10px;">Nutzungsbedingungen</a>
-            <a href="/support" style="color: #667eea; text-decoration: none; margin: 0 10px;">Support</a>
-        </div>
-    </div>
-    
+<body>
+    <div class="browser-cue" aria-hidden="true"><span>↑</span><span>•••</span></div>
+
+    <main class="page-shell">
+        <section class="download-card" aria-labelledby="headline">
+            <noscript>
+                <p class="noscript-note">Automatic redirect requires JavaScript. Use the button below to open Amen in the App Store. The Android app is coming soon to Google Play.</p>
+            </noscript>
+
+            <header class="brand">
+                <img class="app-icon" src="/amen-app-icon.webp" width="240" height="240" alt="Amen app icon">
+                <div class="brand-copy">
+                    <span class="brand-name">Amen</span>
+                    <span class="brand-tagline" id="brandTagline">Bible · Prayer · Faith</span>
+                </div>
+            </header>
+
+            <p class="status-pill" id="statusPill" aria-live="polite"></p>
+            <h1 id="headline">Download the Amen app</h1>
+            <p class="lead" id="lead">Amen is available on the App Store. The Android app is coming soon to Google Play.</p>
+
+            <ol class="steps" id="steps">
+                <li class="step">
+                    <span class="step-number" aria-hidden="true">1</span>
+                    <span id="stepOne">Tap Share or the three-dot menu in the top right.</span>
+                </li>
+                <li class="step">
+                    <span class="step-number" aria-hidden="true">2</span>
+                    <span id="stepTwo">Choose “Open in browser”.</span>
+                </li>
+            </ol>
+
+            <div class="actions">
+                <a class="store-link" id="storeLink" href="https://apps.apple.com/app/id6744241928" rel="noopener">
+                    <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                        <path d="M17.05 12.54c-.03-3.03 2.47-4.5 2.58-4.57a5.54 5.54 0 0 0-4.36-2.36c-1.84-.2-3.63 1.1-4.57 1.1-.96 0-2.4-1.08-3.97-1.05a5.77 5.77 0 0 0-4.86 2.96c-2.12 3.67-.54 9.07 1.49 12.04 1.02 1.45 2.2 3.06 3.77 3 1.53-.06 2.1-.96 3.95-.96 1.83 0 2.37.96 3.96.93 1.65-.03 2.68-1.46 3.66-2.92a12.03 12.03 0 0 0 1.68-3.42 5.24 5.24 0 0 1-3.32-4.75ZM14.07 3.66A5.31 5.31 0 0 0 15.29 0a5.4 5.4 0 0 0-3.49 1.74 5.04 5.04 0 0 0-1.26 3.51 4.46 4.46 0 0 0 3.53-1.59Z"/>
+                    </svg>
+                    <span id="storeLinkLabel">Download on the App Store</span>
+                </a>
+
+                <button class="copy-button" id="copyButton" type="button" hidden>
+                    <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9">
+                        <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+                        <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path>
+                    </svg>
+                    <span id="copyButtonLabel">Copy link</span>
+                </button>
+            </div>
+
+            <div class="coming-soon" id="comingSoon" role="status">
+                <span class="coming-soon-label" id="comingSoonLabel">Coming soon on Google Play</span>
+            </div>
+
+            <p class="fallback-hint" id="fallbackHint">If that doesn’t work, copy the link and paste it into Safari or Chrome.</p>
+
+            <footer class="legal-links">
+                <a id="privacyLink" href="/privacy">Privacy</a>
+                <a id="termsLink" href="/terms">Terms</a>
+                <a id="supportLink" href="/support">Support</a>
+            </footer>
+        </section>
+    </main>
+
     <script>
-        // App Store URL
-        const APP_STORE_URL = 'https://apps.apple.com/de/app/amen-bible-study/id6744241928?platform=iphone';
-        
-        // Detect if user is in TikTok's in-app browser
-        function isTikTokBrowser() {
-            const userAgent = navigator.userAgent.toLowerCase();
-            return userAgent.includes('trill') || 
-                   userAgent.includes('musical_ly') || 
-                   userAgent.includes('bytedance') ||
-                   (userAgent.includes('mobile') && userAgent.includes('tiktok'));
-        }
-        
-        // Detect if user is in Instagram's in-app browser
-        function isInstagramBrowser() {
-            const userAgent = navigator.userAgent.toLowerCase();
-            return userAgent.includes('instagram') || userAgent.includes('fbav');
-        }
-        
-        // Check if user is in any restricted in-app browser
-        function isRestrictedBrowser() {
-            return isTikTokBrowser() || isInstagramBrowser();
-        }
-        
-        // Language detection based on user's locale
-        function detectLanguage() {
-            const userLang = navigator.language || navigator.userLanguage;
-            const country = userLang.toLowerCase();
-            
-            // German-speaking countries: Germany (de), Austria (de-at), Switzerland (de-ch)
-            const germanCountries = ['de', 'de-de', 'de-at', 'de-ch'];
-            
-            if (germanCountries.some(lang => country.startsWith(lang.split('-')[0]) && 
-                (country.includes('de') || country.includes('at') || country.includes('ch')))) {
-                return 'de';
+        const IOS_APP_STORE_URL = 'https://apps.apple.com/app/id6744241928';
+
+        const translations = {
+            de: {
+                pageTitle: 'Amen App herunterladen',
+                pageDescription: 'Lade die Amen App aus dem App Store herunter. Amen für Android kommt bald zu Google Play.',
+                tagline: 'Bibel · Gebet · Glaube',
+                tiktokStatus: 'In TikTok geöffnet',
+                inAppStatus: 'Seite in einer App geöffnet',
+                restrictedHeadline: 'Amen App herunterladen',
+                restrictedExplanation: 'Um Amen aus dem App Store zu laden, musst du diese Seite in deinem Browser öffnen.',
+                stepOne: 'Tippe oben rechts auf „Teilen“ oder auf das Drei-Punkte-Menü.',
+                stepTwo: 'Wähle „Im Browser öffnen“.',
+                fallbackHint: 'Falls das nicht klappt, kopiere den Link und füge ihn in Safari ein.',
+                copyLink: 'Link kopieren',
+                copied: 'Link kopiert',
+                storeButton: 'Im App Store laden',
+                openingStore: 'App Store wird geöffnet …',
+                redirectExplanation: 'Du wirst zum App Store weitergeleitet, um Amen herunterzuladen.',
+                retryStoreButton: 'App Store öffnen',
+                androidHeadline: 'Amen für Android kommt bald',
+                androidBody: 'Amen ist noch nicht bei Google Play verfügbar. Schau bald wieder vorbei.',
+                androidBadge: 'Demnächst bei Google Play',
+                desktopHeadline: 'Amen App herunterladen',
+                desktopBody: 'Amen ist im App Store verfügbar. Die Android-App ist demnächst bei Google Play verfügbar.',
+                privacy: 'Datenschutz',
+                terms: 'Nutzungsbedingungen',
+                support: 'Support'
+            },
+            fr: {
+                pageTitle: 'Télécharger l’app Amen',
+                pageDescription: 'Télécharge l’app Amen dans l’App Store. Amen arrive bientôt sur Android.',
+                tagline: 'Bible · Prière · Foi',
+                tiktokStatus: 'Ouvert dans TikTok',
+                inAppStatus: 'Page ouverte dans une application',
+                restrictedHeadline: 'Télécharger l’app Amen',
+                restrictedExplanation: 'Pour télécharger Amen depuis l’App Store, ouvre cette page dans ton navigateur.',
+                stepOne: 'En haut à droite, appuie sur « Partager » ou sur le menu à trois points.',
+                stepTwo: 'Choisis « Ouvrir dans le navigateur ».',
+                fallbackHint: 'Si cela ne fonctionne pas, copie le lien et colle-le dans Safari.',
+                copyLink: 'Copier le lien',
+                copied: 'Lien copié',
+                storeButton: 'Télécharger dans l’App Store',
+                openingStore: 'Ouverture de l’App Store…',
+                redirectExplanation: 'Nous te redirigeons vers l’App Store pour télécharger Amen.',
+                retryStoreButton: 'Ouvrir l’App Store',
+                androidHeadline: 'Amen arrive bientôt sur Android',
+                androidBody: 'Amen n’est pas encore disponible sur Google Play. Reviens bientôt.',
+                androidBadge: 'Bientôt disponible sur Google Play',
+                desktopHeadline: 'Télécharger l’app Amen',
+                desktopBody: 'Amen est disponible sur l’App Store. L’app Android arrive bientôt sur Google Play.',
+                privacy: 'Confidentialité',
+                terms: 'Conditions d’utilisation',
+                support: 'Assistance'
+            },
+            sv: {
+                pageTitle: 'Ladda ner Amen-appen',
+                pageDescription: 'Ladda ner Amen-appen från App Store. Amen kommer snart till Android.',
+                tagline: 'Bibeln · Bön · Tro',
+                tiktokStatus: 'Öppnad i TikTok',
+                inAppStatus: 'Sidan är öppen i en app',
+                restrictedHeadline: 'Ladda ner Amen-appen',
+                restrictedExplanation: 'För att ladda ner Amen från App Store behöver du öppna sidan i din webbläsare.',
+                stepOne: 'Tryck på ”Dela” eller menyn med tre punkter uppe till höger.',
+                stepTwo: 'Välj ”Öppna i webbläsaren”.',
+                fallbackHint: 'Om det inte fungerar, kopiera länken och klistra in den i Safari.',
+                copyLink: 'Kopiera länken',
+                copied: 'Länken har kopierats',
+                storeButton: 'Hämta i App Store',
+                openingStore: 'Öppnar App Store…',
+                redirectExplanation: 'Du skickas vidare till App Store för att ladda ner Amen.',
+                retryStoreButton: 'Öppna App Store',
+                androidHeadline: 'Amen kommer snart till Android',
+                androidBody: 'Amen finns inte på Google Play än. Titta gärna in igen snart.',
+                androidBadge: 'Snart på Google Play',
+                desktopHeadline: 'Ladda ner Amen-appen',
+                desktopBody: 'Amen finns i App Store. Android-appen kommer snart till Google Play.',
+                privacy: 'Integritet',
+                terms: 'Användarvillkor',
+                support: 'Support'
+            },
+            en: {
+                pageTitle: 'Download the Amen app',
+                pageDescription: 'Download the Amen app from the App Store. Amen for Android is coming soon.',
+                tagline: 'Bible · Prayer · Faith',
+                tiktokStatus: 'Opened in TikTok',
+                inAppStatus: 'Page opened inside an app',
+                restrictedHeadline: 'Download the Amen app',
+                restrictedExplanation: 'To download Amen from the App Store, open this page in your browser.',
+                stepOne: 'Tap Share or the three-dot menu in the top right.',
+                stepTwo: 'Choose “Open in browser”.',
+                fallbackHint: 'If that doesn’t work, copy the link and paste it into Safari.',
+                copyLink: 'Copy link',
+                copied: 'Link copied',
+                storeButton: 'Download on the App Store',
+                openingStore: 'Opening the App Store…',
+                redirectExplanation: 'You’ll be redirected to the App Store to download Amen.',
+                retryStoreButton: 'Open the App Store',
+                androidHeadline: 'Amen for Android is coming soon',
+                androidBody: 'Amen isn’t available on Google Play yet. Please check back soon.',
+                androidBadge: 'Coming soon on Google Play',
+                desktopHeadline: 'Download the Amen app',
+                desktopBody: 'Amen is available on the App Store. The Android app is coming soon to Google Play.',
+                privacy: 'Privacy',
+                terms: 'Terms',
+                support: 'Support'
             }
-            
+        };
+
+        function detectLanguage(locales = navigator.languages || [navigator.language || 'en']) {
+            const locale = String(locales[0] || 'en').replace('_', '-');
+            const parts = locale.split('-');
+            const language = parts[0].toLowerCase();
+            const region = (parts[1] || '').toUpperCase();
+
+            if (['DE', 'AT', 'CH'].includes(region)) return 'de';
+            if (region === 'SE') return 'sv';
+            if (region === 'FR') return 'fr';
+            if (language === 'de') return 'de';
+            if (language === 'sv') return 'sv';
+            if (language === 'fr') return 'fr';
             return 'en';
         }
-        
-        // Set content based on detected language
-        function setContent() {
-            const lang = detectLanguage();
-            const title = document.getElementById('title');
-            const steps = document.querySelectorAll('.step-text');
-            
-            if (lang === 'en') {
-                document.documentElement.lang = 'en';
-                document.title = 'Download Amen - Bible Study';
-                title.textContent = 'To access the link, follow these two simple steps:';
-                steps[0].innerHTML = 'Click on <span class="dots">•••</span> at the top right';
-                steps[1].textContent = 'Then tap "Open in browser"';
-            }
-            // German is default, so no changes needed for German
+
+        function detectPlatform(userAgent = navigator.userAgent, platform = navigator.platform, touchPoints = navigator.maxTouchPoints) {
+            const ua = String(userAgent || '').toLowerCase();
+            if (ua.includes('android')) return 'android';
+            if (/iphone|ipad|ipod/.test(ua)) return 'ios';
+            if (platform === 'MacIntel' && Number(touchPoints) > 1) return 'ios';
+            return 'other';
         }
-        
-        // Initialize content on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            if (isRestrictedBrowser()) {
-                // Show instructions for in-app browsers
-                setContent();
+
+        function detectInAppBrowser(userAgent = navigator.userAgent) {
+            const ua = String(userAgent || '').toLowerCase();
+            if (/tiktok|trill|musical_ly|bytedance/.test(ua)) return 'tiktok';
+            if (/instagram|fbav|fban/.test(ua)) return 'inApp';
+            return null;
+        }
+
+        function setText(id, value) {
+            const element = document.getElementById(id);
+            if (element) element.textContent = value;
+        }
+
+        function setMetadata(copy) {
+            document.title = copy.pageTitle;
+            document.documentElement.lang = detectLanguage();
+            const description = document.querySelector('meta[name="description"]');
+            if (description) description.setAttribute('content', copy.pageDescription);
+        }
+
+        function copyCurrentLink(copy) {
+            const link = window.location.href;
+            const copyButton = document.getElementById('copyButton');
+
+            const showSuccess = () => {
+                setText('copyButtonLabel', copy.copied);
+                copyButton.classList.add('is-copied');
+                window.setTimeout(() => {
+                    setText('copyButtonLabel', copy.copyLink);
+                    copyButton.classList.remove('is-copied');
+                }, 1800);
+            };
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(link).then(showSuccess).catch(() => legacyCopy(link, showSuccess));
             } else {
-                // Redirect to App Store for normal browsers
-                window.location.href = APP_STORE_URL;
+                legacyCopy(link, showSuccess);
             }
+        }
+
+        function legacyCopy(value, onSuccess) {
+            const textArea = document.createElement('textarea');
+            textArea.value = value;
+            textArea.setAttribute('readonly', '');
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            const copied = document.execCommand('copy');
+            textArea.remove();
+            if (copied) onSuccess();
+        }
+
+        function initializePage() {
+            const language = detectLanguage();
+            const copy = translations[language];
+            const platform = detectPlatform();
+            const inAppBrowser = detectInAppBrowser();
+            const isRestricted = Boolean(inAppBrowser);
+
+            setMetadata(copy);
+            setText('brandTagline', copy.tagline);
+            setText('stepOne', copy.stepOne);
+            setText('stepTwo', copy.stepTwo);
+            setText('copyButtonLabel', copy.copyLink);
+            setText('fallbackHint', copy.fallbackHint);
+            setText('storeLinkLabel', copy.storeButton);
+            setText('comingSoonLabel', copy.androidBadge);
+            setText('privacyLink', copy.privacy);
+            setText('termsLink', copy.terms);
+            setText('supportLink', copy.support);
+
+            const statusPill = document.getElementById('statusPill');
+            const steps = document.getElementById('steps');
+            const actions = document.querySelector('.actions');
+            const storeLink = document.getElementById('storeLink');
+            const copyButton = document.getElementById('copyButton');
+            const comingSoon = document.getElementById('comingSoon');
+            const fallbackHint = document.getElementById('fallbackHint');
+
+            if (language === 'de') {
+                document.getElementById('privacyLink').href = '/datenschutz';
+                document.getElementById('termsLink').href = '/nutzungsbedingungen';
+            }
+
+            if (platform === 'android') {
+                setText('headline', copy.androidHeadline);
+                setText('lead', copy.androidBody);
+                actions.hidden = true;
+                storeLink.hidden = true;
+                copyButton.hidden = true;
+                comingSoon.classList.add('is-visible');
+                if (isRestricted) {
+                    setText('statusPill', inAppBrowser === 'tiktok' ? copy.tiktokStatus : copy.inAppStatus);
+                    statusPill.classList.add('is-visible');
+                }
+                return;
+            }
+
+            if (isRestricted) {
+                document.body.classList.add('is-restricted');
+                setText('statusPill', inAppBrowser === 'tiktok' ? copy.tiktokStatus : copy.inAppStatus);
+                setText('headline', copy.restrictedHeadline);
+                setText('lead', copy.restrictedExplanation);
+                setText('storeLinkLabel', copy.retryStoreButton);
+                statusPill.classList.add('is-visible');
+                steps.classList.add('is-visible');
+                copyButton.hidden = false;
+                fallbackHint.classList.add('is-visible');
+                return;
+            }
+
+            if (platform === 'ios') {
+                setText('headline', copy.openingStore);
+                setText('lead', copy.redirectExplanation);
+                setText('storeLinkLabel', copy.retryStoreButton);
+                window.setTimeout(() => window.location.replace(IOS_APP_STORE_URL), 350);
+                return;
+            }
+
+            setText('headline', copy.desktopHeadline);
+            setText('lead', copy.desktopBody);
+            comingSoon.classList.add('is-visible');
+        }
+
+        document.getElementById('copyButton').addEventListener('click', () => {
+            const copy = translations[detectLanguage()];
+            copyCurrentLink(copy);
         });
+
+        initializePage();
     </script>
 </body>
 </html>
