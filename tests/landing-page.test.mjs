@@ -54,17 +54,85 @@ for (const locale of ['de', 'fr', 'sv']) {
     assert.deepEqual(Array.from(localeKeys[locale]), Array.from(localeKeys.en), `${locale} must have the same copy keys as English`);
 }
 
+const openingStoreTitles = JSON.parse(vm.runInContext(
+    'JSON.stringify(Object.fromEntries(Object.entries(translations).map(([locale, value]) => [locale, value.openingStore])))',
+    context
+));
+assert.deepEqual(openingStoreTitles, {
+    de: 'App Store wird geladen',
+    fr: 'Chargement de l’App Store',
+    sv: 'Laddar App Store',
+    en: 'Loading the App Store'
+}, 'the external-iOS loading headline must use the approved localized titles without ellipses');
+
+const iosOpeningSource = functionSource.match(/if \(platform === 'ios'\) \{[\s\S]*?\n            \}/)?.[0] ?? '';
+assert.match(iosOpeningSource, /setText\('headline', copy\.openingStore\)/, 'external iOS must use openingStore as the headline');
+assert.match(iosOpeningSource, /\blead\.hidden = true;/, 'external iOS must hide the lead with the native hidden property');
+assert.equal((functionSource.match(/\blead\.hidden\s*=\s*true/g) ?? []).length, 1, 'only the external-iOS branch may hide the lead');
+
+const sharedSpecialHeadlineSelector = 'body.is-tiktok h1,\n        body.is-opening-store h1 {';
+const sharedSpecialHeadlineIndex = html.indexOf(sharedSpecialHeadlineSelector);
+assert.ok(sharedSpecialHeadlineIndex >= 0, 'TikTok and opening-store must retain their shared headline rule');
+const cssAfterSharedHeadlineRule = html.slice(sharedSpecialHeadlineIndex + sharedSpecialHeadlineSelector.length);
+const openingStoreHeadlineStyles = cssAfterSharedHeadlineRule.match(/body\.is-opening-store h1 \{([\s\S]*?)\n        \}/)?.[1] ?? '';
+assert.match(openingStoreHeadlineStyles, /font-size: clamp\(1\.45rem, 6vw, 1\.5rem\);/, 'opening-store needs a later scoped 23–24px headline override');
+assert.match(html, /body\.is-tiktok h1,\s*body\.is-opening-store h1 \{[\s\S]*?font-size: clamp\(1\.55rem, 6\.8vw, 1\.95rem\);/, 'the shared TikTok headline sizing must remain unchanged');
+
+const iosAppStoreUrl = 'https://apps.apple.com/app/id6744241928';
 assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6744241928/);
-assert.match(html, /itms-apps:\/\/itunes\.apple\.com\/app\/id6744241928/);
-assert.match(html, /location\.replace\(IOS_APP_STORE_NATIVE_URL\)/);
-assert.match(html, /location\.replace\(IOS_APP_STORE_URL\)/);
+assert.doesNotMatch(html, /itms-apps:/, 'iOS must never trigger the custom-scheme inter-app prompt');
+
+const openIosAppStoreSource = functionSource.match(/function openIosAppStore\(\) \{[\s\S]*?\n        \}/)?.[0] ?? '';
+assert.match(openIosAppStoreSource, /window\.location\.replace\(IOS_APP_STORE_URL\)/);
+assert.doesNotMatch(openIosAppStoreSource, /setTimeout|IOS_APP_STORE_NATIVE_URL/, 'the App Store attempt must use HTTPS once');
+
+const attemptedStoreUrls = [];
+const pendingStoreTimers = new Map();
+let nextStoreTimer = 1;
+context.window.location = { replace: (url) => attemptedStoreUrls.push(url) };
+context.window.setTimeout = (callback) => {
+    const timer = nextStoreTimer++;
+    pendingStoreTimers.set(timer, callback);
+    return timer;
+};
+context.window.clearTimeout = (timer) => pendingStoreTimers.delete(timer);
+
+const importantRegressionFailures = [];
+try {
+    vm.runInContext('iosStoreTimer = window.setTimeout(openIosAppStore, 150); openIosAppStore();', context);
+    for (const callback of pendingStoreTimers.values()) callback();
+    assert.deepEqual(Array.from(attemptedStoreUrls), [iosAppStoreUrl], 'an iOS click before 150ms must cancel the automatic attempt');
+} catch (error) {
+    importantRegressionFailures.push(`early iOS retry: ${error.message}`);
+}
+
+const storeLinkClickSource = scriptMatch[1].match(/document\.getElementById\('storeLink'\)\.addEventListener\('click',[\s\S]*?\n        \}\);/)?.[0] ?? '';
+try {
+    assert.match(storeLinkClickSource, /if \(!document\.body\.classList\.contains\('is-opening-store'\)\) return;[\s\S]*?event\.preventDefault\(\);/, 'non-iOS clicks must retain default anchor navigation');
+} catch (error) {
+    importantRegressionFailures.push(`non-iOS store link: ${error.message}`);
+}
+assert.deepEqual(importantRegressionFailures, [], `independent-review regressions:\n${importantRegressionFailures.join('\n')}`);
+
+attemptedStoreUrls.length = 0;
+context.openIosAppStore();
+assert.deepEqual(Array.from(attemptedStoreUrls), [iosAppStoreUrl], 'an App Store attempt must make one HTTPS navigation');
+
+assert.match(html, /if \(platform === 'ios'\) \{[\s\S]*?setText\('storeLinkLabel', copy\.retryStoreButton\)[\s\S]*?actions\.hidden = false;[\s\S]*?storeLink\.hidden = false;[\s\S]*?copyButton\.hidden = true;[\s\S]*?iosStoreTimer = window\.setTimeout\(openIosAppStore, 150\)/, 'iOS opening state must expose only the localized App Store retry action');
+assert.match(storeLinkClickSource, /event\.preventDefault\(\);[\s\S]*?openIosAppStore\(\);/, 'the retry button must repeat the HTTPS App Store attempt');
+assert.doesNotMatch(html, /body\.is-opening-store \.actions,/, 'iOS opening-state actions must remain visible');
 assert.doesNotMatch(html, /play\.google\.com\/store\/apps\/details/);
 assert.doesNotMatch(html, /window\.location\.href\s*=/);
 assert.match(html, /Coming soon on Google Play/);
 
 const browserCue = html.match(/<div class="browser-cue"[\s\S]*?<\/div>/)?.[0] ?? '';
 assert.match(browserCue, /<svg[\s\S]*?<\/svg>/, 'TikTok cue should be one drawn arrow');
+assert.match(browserCue, /<svg viewBox="0 0 40 48"/);
+assert.match(browserCue, /<path d="M20 43V8M11 17L20 8L29 17"/, 'TikTok arrow must point straight up');
 assert.doesNotMatch(browserCue, /•••|\.\.\./, 'TikTok cue must not duplicate TikTok’s three-dot menu');
+const browserCueStyles = html.match(/\.browser-cue \{([\s\S]*?)\n        \}/)?.[1] ?? '';
+assert.match(browserCueStyles, /right: max\(2px, calc\(env\(safe-area-inset-right\) \+ 2px\)\);/, 'TikTok arrow must sit at the far-right safe-area edge');
+assert.match(browserCueStyles, /width: 40px;[\s\S]*?height: 48px;/);
 assert.match(html, /document\.body\.classList\.add\('is-tiktok'\)/);
 assert.match(html, /body\.is-tiktok \.brand-copy,\s*body\.is-opening-store \.brand-copy\s*\{\s*display:\s*none;/);
 assert.match(html, /body\.is-tiktok \.actions[\s\S]*?body\.is-tiktok \.fallback-hint[\s\S]*?display:\s*none(?:\s*!important)?;/);

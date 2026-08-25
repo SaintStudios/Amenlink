@@ -372,10 +372,10 @@
             position: fixed;
             z-index: 2;
             top: max(8px, calc(env(safe-area-inset-top) + 2px));
-            right: max(10px, calc(env(safe-area-inset-right) + 4px));
+            right: max(2px, calc(env(safe-area-inset-right) + 2px));
             display: none;
-            width: 48px;
-            height: 44px;
+            width: 40px;
+            height: 48px;
             color: var(--teal-700);
             opacity: 0.78;
             pointer-events: none;
@@ -435,6 +435,10 @@
             letter-spacing: -0.035em;
         }
 
+        body.is-opening-store h1 {
+            font-size: clamp(1.45rem, 6vw, 1.5rem);
+        }
+
         body.is-tiktok .lead,
         body.is-opening-store .lead {
             max-width: 370px;
@@ -483,7 +487,6 @@
         body.is-tiktok .fallback-hint,
         body.is-tiktok .coming-soon,
         body.is-tiktok .legal-links,
-        body.is-opening-store .actions,
         body.is-opening-store .status-pill,
         body.is-opening-store .steps,
         body.is-opening-store .coming-soon,
@@ -545,8 +548,8 @@
 </head>
 <body>
     <div class="browser-cue" aria-hidden="true">
-        <svg viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 37C14 33 18 26 21 20C25 13 31 9 41 8M30 5L41 8L37 19" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 43V8M11 17L20 8L29 17" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </div>
 
@@ -612,7 +615,7 @@
 
     <script>
         const IOS_APP_STORE_URL = 'https://apps.apple.com/app/id6744241928';
-        const IOS_APP_STORE_NATIVE_URL = 'itms-apps://itunes.apple.com/app/id6744241928';
+        let iosStoreTimer = null;
 
         const translations = {
             de: {
@@ -630,7 +633,7 @@
                 copyLink: 'Link kopieren',
                 copied: 'Link kopiert',
                 storeButton: 'Im App Store laden',
-                openingStore: 'App Store wird geöffnet …',
+                openingStore: 'App Store wird geladen',
                 redirectExplanation: 'Du wirst zum App Store weitergeleitet, um Amen herunterzuladen.',
                 retryStoreButton: 'App Store öffnen',
                 androidHeadline: 'Amen für Android kommt bald',
@@ -657,7 +660,7 @@
                 copyLink: 'Copier le lien',
                 copied: 'Lien copié',
                 storeButton: 'Télécharger dans l’App Store',
-                openingStore: 'Ouverture de l’App Store…',
+                openingStore: 'Chargement de l’App Store',
                 redirectExplanation: 'Nous te redirigeons vers l’App Store pour télécharger Amen.',
                 retryStoreButton: 'Ouvrir l’App Store',
                 androidHeadline: 'Amen arrive bientôt sur Android',
@@ -684,7 +687,7 @@
                 copyLink: 'Kopiera länken',
                 copied: 'Länken har kopierats',
                 storeButton: 'Hämta i App Store',
-                openingStore: 'Öppnar App Store…',
+                openingStore: 'Laddar App Store',
                 redirectExplanation: 'Du skickas vidare till App Store för att ladda ner Amen.',
                 retryStoreButton: 'Öppna App Store',
                 androidHeadline: 'Amen kommer snart till Android',
@@ -711,7 +714,7 @@
                 copyLink: 'Copy link',
                 copied: 'Link copied',
                 storeButton: 'Download on the App Store',
-                openingStore: 'Opening the App Store…',
+                openingStore: 'Loading the App Store',
                 redirectExplanation: 'You’ll be redirected to the App Store to download Amen.',
                 retryStoreButton: 'Open the App Store',
                 androidHeadline: 'Amen for Android is coming soon',
@@ -801,20 +804,11 @@
         }
 
         function openIosAppStore() {
-            let fallbackTimer = window.setTimeout(() => {
-                window.location.replace(IOS_APP_STORE_URL);
-            }, 1800);
-
-            const cancelFallback = () => {
-                window.clearTimeout(fallbackTimer);
-                fallbackTimer = null;
-            };
-
-            document.addEventListener('visibilitychange', () => {
-                if (document.hidden) cancelFallback();
-            }, { once: true });
-            window.addEventListener('pagehide', cancelFallback, { once: true });
-            window.location.replace(IOS_APP_STORE_NATIVE_URL);
+            if (iosStoreTimer !== null) {
+                window.clearTimeout(iosStoreTimer);
+                iosStoreTimer = null;
+            }
+            window.location.replace(IOS_APP_STORE_URL);
         }
 
         function initializePage() {
@@ -841,6 +835,7 @@
             const actions = document.querySelector('.actions');
             const storeLink = document.getElementById('storeLink');
             const copyButton = document.getElementById('copyButton');
+            const lead = document.getElementById('lead');
             const comingSoon = document.getElementById('comingSoon');
             const fallbackHint = document.getElementById('fallbackHint');
 
@@ -890,10 +885,13 @@
 
             if (platform === 'ios') {
                 document.body.classList.add('is-opening-store');
-                setText('headline', copy.pageTitle);
-                setText('lead', copy.openingStore);
-                actions.hidden = true;
-                window.setTimeout(openIosAppStore, 150);
+                setText('headline', copy.openingStore);
+                lead.hidden = true;
+                setText('storeLinkLabel', copy.retryStoreButton);
+                actions.hidden = false;
+                storeLink.hidden = false;
+                copyButton.hidden = true;
+                iosStoreTimer = window.setTimeout(openIosAppStore, 150);
                 return;
             }
 
@@ -905,6 +903,12 @@
         document.getElementById('copyButton').addEventListener('click', () => {
             const copy = translations[detectLanguage()];
             copyCurrentLink(copy);
+        });
+
+        document.getElementById('storeLink').addEventListener('click', (event) => {
+            if (!document.body.classList.contains('is-opening-store')) return;
+            event.preventDefault();
+            openIosAppStore();
         });
 
         initializePage();
