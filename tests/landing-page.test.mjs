@@ -37,10 +37,74 @@ assert.equal(detectLanguage(['fr-CA']), 'fr');
 assert.equal(detectLanguage(['es-ES']), 'en');
 assert.equal(detectLanguage([]), 'en');
 
-assert.equal(detectPlatform('Mozilla/5.0 (Linux; Android 15; Pixel Tablet)', 'Linux armv8l', 10), 'android');
-assert.equal(detectPlatform('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)', 'iPhone', 5), 'ios');
-assert.equal(detectPlatform('Mozilla/5.0 (Macintosh; Intel Mac OS X)', 'MacIntel', 5), 'ios');
-assert.equal(detectPlatform('Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Win32', 0), 'other');
+const platformFixtures = [
+    {
+        name: 'Mac Chrome',
+        userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/128.0.0.0 Safari/537.36',
+        platform: 'MacIntel',
+        touchPoints: 0,
+        expected: 'mac'
+    },
+    {
+        name: 'Mac Safari',
+        userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/18.0 Safari/605.1.15',
+        platform: 'MacIntel',
+        touchPoints: 0,
+        expected: 'mac'
+    },
+    {
+        name: 'Mac Firefox',
+        userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.6; rv:129.0) Gecko/20100101 Firefox/129.0',
+        platform: 'MacIntel',
+        touchPoints: 0,
+        expected: 'mac'
+    },
+    {
+        name: 'iPad desktop mode',
+        userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 Version/18.0 Mobile/15E148 Safari/604.1',
+        platform: 'MacIntel',
+        touchPoints: 5,
+        expected: 'ios'
+    },
+    {
+        name: 'iPhone Chrome',
+        userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 CriOS/128.0.0.0 Mobile/15E148 Safari/604.1',
+        platform: 'iPhone',
+        touchPoints: 5,
+        expected: 'ios'
+    },
+    {
+        name: 'Android',
+        userAgent: 'Mozilla/5.0 (Linux; Android 15; Pixel Tablet)',
+        platform: 'Linux armv8l',
+        touchPoints: 10,
+        expected: 'android'
+    },
+    {
+        name: 'Windows',
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        platform: 'Win32',
+        touchPoints: 0,
+        expected: 'other'
+    },
+    {
+        name: 'Linux',
+        userAgent: 'Mozilla/5.0 (X11; Linux x86_64) Firefox/129.0',
+        platform: 'Linux x86_64',
+        touchPoints: 0,
+        expected: 'other'
+    }
+];
+
+for (const fixture of platformFixtures) {
+    assert.equal(
+        detectPlatform(fixture.userAgent, fixture.platform, fixture.touchPoints),
+        fixture.expected,
+        `${fixture.name} platform routing`
+    );
+}
+assert.equal(detectPlatform('Mozilla/5.0 AppleWebKit/537.36', 'MacIntel', 0), 'mac', 'Mac-like platform must be sufficient');
+assert.equal(detectPlatform('Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6)', '', 0), 'mac', 'Mac user-agent tokens must be sufficient');
 
 assert.equal(detectInAppBrowser('Mozilla/5.0 TikTok 38.1.0'), 'tiktok');
 assert.equal(detectInAppBrowser('Mozilla/5.0 musical_ly'), 'tiktok');
@@ -80,11 +144,138 @@ assert.match(html, /body\.is-tiktok h1,\s*body\.is-opening-store h1 \{[\s\S]*?fo
 
 const iosAppStoreUrl = 'https://apps.apple.com/app/id6744241928';
 assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6744241928/);
-assert.doesNotMatch(html, /itms-apps:/, 'iOS must never trigger the custom-scheme inter-app prompt');
+assert.doesNotMatch(html, /itms-apps:|macappstore:/, 'Apple routing must never trigger a custom-scheme inter-app prompt');
 
 const openIosAppStoreSource = functionSource.match(/function openIosAppStore\(\) \{[\s\S]*?\n        \}/)?.[0] ?? '';
 assert.match(openIosAppStoreSource, /window\.location\.replace\(IOS_APP_STORE_URL\)/);
 assert.doesNotMatch(openIosAppStoreSource, /setTimeout|IOS_APP_STORE_NATIVE_URL/, 'the App Store attempt must use HTTPS once');
+
+const macOpeningSource = functionSource.match(/if \(platform === 'mac'\) \{[\s\S]*?\n            \}/)?.[0] ?? '';
+assert.match(macOpeningSource, /openIosAppStore\(\);\s*return;/, 'normal macOS must navigate immediately and return');
+assert.doesNotMatch(macOpeningSource, /is-opening-store|setTimeout/, 'macOS must not enter the iOS loading state');
+assert.ok(
+    functionSource.indexOf("if (isRestricted) {") < functionSource.indexOf("if (platform === 'mac') {"),
+    'restricted in-app routing must take precedence over macOS navigation'
+);
+
+function createClassList() {
+    const names = new Set();
+    return {
+        add(...values) {
+            for (const value of values) names.add(value);
+        },
+        contains(value) {
+            return names.has(value);
+        }
+    };
+}
+
+function runInitialization(fixture) {
+    const attemptedUrls = [];
+    const pendingTimers = new Map();
+    let nextTimer = 1;
+    const elementIds = [
+        'brandTagline', 'stepOne', 'stepTwo', 'copyButtonLabel', 'fallbackHint',
+        'storeLinkLabel', 'comingSoonLabel', 'privacyLink', 'termsLink', 'supportLink',
+        'statusPill', 'steps', 'storeLink', 'copyButton', 'lead', 'comingSoon', 'headline'
+    ];
+    const elements = Object.fromEntries(elementIds.map((id) => [id, {
+        textContent: id === 'headline' ? 'initial headline' : '',
+        hidden: id === 'copyButton',
+        href: '',
+        classList: createClassList(),
+        setAttribute(name, value) {
+            this[name] = value;
+        }
+    }]));
+    const actions = { hidden: false, classList: createClassList() };
+    const description = {
+        setAttribute(name, value) {
+            this[name] = value;
+        }
+    };
+    const body = { classList: createClassList() };
+    const document = {
+        title: '',
+        documentElement: { lang: '' },
+        body,
+        getElementById: (id) => elements[id] ?? null,
+        querySelector(selector) {
+            if (selector === '.actions') return actions;
+            if (selector === 'meta[name="description"]') return description;
+            return null;
+        }
+    };
+    const fixtureContext = vm.createContext({
+        navigator: {
+            languages: ['en-US'],
+            language: 'en-US',
+            userAgent: fixture.userAgent,
+            platform: fixture.platform,
+            maxTouchPoints: fixture.touchPoints
+        },
+        window: {
+            location: { replace: (url) => attemptedUrls.push(url) },
+            setTimeout(callback) {
+                const timer = nextTimer++;
+                pendingTimers.set(timer, callback);
+                return timer;
+            },
+            clearTimeout: (timer) => pendingTimers.delete(timer)
+        },
+        document,
+        console
+    });
+    vm.runInContext(functionSource, fixtureContext, { filename: 'index.inline.js' });
+    fixtureContext.initializePage();
+    return { actions, attemptedUrls, body, elements, pendingTimers };
+}
+
+for (const fixture of platformFixtures.filter(({ expected }) => expected === 'mac')) {
+    const result = runInitialization(fixture);
+    assert.deepEqual(result.attemptedUrls, [iosAppStoreUrl], `${fixture.name} must make exactly one immediate HTTPS navigation`);
+    assert.equal(result.pendingTimers.size, 0, `${fixture.name} must not schedule the iOS loading timer`);
+    assert.equal(result.body.classList.contains('is-opening-store'), false, `${fixture.name} must not enter the iOS loading state`);
+    assert.equal(result.elements.headline.textContent, 'initial headline', `${fixture.name} must return before the desktop fallback`);
+    assert.equal(result.elements.comingSoon.classList.contains('is-visible'), false, `${fixture.name} must return before showing the desktop badge`);
+}
+
+for (const [marker, stateClass] of [
+    ['TikTok 38.1.0', 'is-tiktok'],
+    ['Instagram 348.0', 'is-restricted']
+]) {
+    const result = runInitialization({
+        ...platformFixtures[0],
+        userAgent: `${platformFixtures[0].userAgent} ${marker}`
+    });
+    assert.deepEqual(result.attemptedUrls, [], `${marker} on Mac must not navigate automatically`);
+    assert.equal(result.pendingTimers.size, 0, `${marker} on Mac must not schedule a store attempt`);
+    assert.equal(result.body.classList.contains(stateClass), true, `${marker} on Mac must retain its restricted recovery state`);
+}
+
+const androidRestrictedResult = runInitialization({
+    ...platformFixtures.find(({ name }) => name === 'Android'),
+    userAgent: `${platformFixtures.find(({ name }) => name === 'Android').userAgent} TikTok 38.1.0`
+});
+assert.deepEqual(androidRestrictedResult.attemptedUrls, [], 'Android routing must not navigate to Apple, including inside TikTok');
+assert.equal(androidRestrictedResult.elements.comingSoon.classList.contains('is-visible'), true, 'Android routing must retain its coming-soon state');
+assert.equal(androidRestrictedResult.body.classList.contains('is-tiktok'), false, 'Android routing must return before Apple-focused TikTok instructions');
+
+for (const fixture of platformFixtures.filter(({ expected }) => expected === 'ios')) {
+    const result = runInitialization(fixture);
+    assert.deepEqual(result.attemptedUrls, [], `${fixture.name} must retain its delayed iOS navigation`);
+    assert.equal(result.pendingTimers.size, 1, `${fixture.name} must retain one iOS loading timer`);
+    assert.equal(result.body.classList.contains('is-opening-store'), true, `${fixture.name} must retain the iOS loading state`);
+    assert.equal(result.elements.lead.hidden, true, `${fixture.name} must retain the title-only iOS loading state`);
+}
+
+for (const fixture of platformFixtures.filter(({ expected }) => expected === 'other')) {
+    const result = runInitialization(fixture);
+    assert.deepEqual(result.attemptedUrls, [], `${fixture.name} desktop must not navigate automatically`);
+    assert.equal(result.pendingTimers.size, 0, `${fixture.name} desktop must not schedule a store attempt`);
+    assert.equal(result.elements.headline.textContent, 'Download the Amen app', `${fixture.name} must retain the desktop fallback`);
+    assert.equal(result.elements.comingSoon.classList.contains('is-visible'), true, `${fixture.name} must retain the desktop badge`);
+}
 
 const attemptedStoreUrls = [];
 const pendingStoreTimers = new Map();

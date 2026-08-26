@@ -745,9 +745,11 @@
 
         function detectPlatform(userAgent = navigator.userAgent, platform = navigator.platform, touchPoints = navigator.maxTouchPoints) {
             const ua = String(userAgent || '').toLowerCase();
+            const isMacLike = /^mac/i.test(String(platform || '')) || /macintosh|mac os x/.test(ua);
             if (ua.includes('android')) return 'android';
             if (/iphone|ipad|ipod/.test(ua)) return 'ios';
-            if (platform === 'MacIntel' && Number(touchPoints) > 1) return 'ios';
+            if (isMacLike && Number(touchPoints) > 1) return 'ios';
+            if (isMacLike) return 'mac';
             return 'other';
         }
 
@@ -880,6 +882,11 @@
                 steps.classList.add('is-visible');
                 copyButton.hidden = false;
                 fallbackHint.classList.add('is-visible');
+                return;
+            }
+
+            if (platform === 'mac') {
+                openIosAppStore();
                 return;
             }
 
