@@ -1,6 +1,6 @@
 {
   "ui": {
-    "home": "Sito AMEN",
+    "home": "Sito amen",
     "privacy": "Informativa sulla privacy",
     "terms": "Condizioni d’uso",
     "support": "Contatta l’assistenza",
@@ -14,63 +14,46 @@
     "skip": "Vai al documento",
     "top": "Torna in alto",
     "documents": "Informazioni legali",
-    "copyright": "AMEN · Ezra Maslaton",
-    "privacyDescription": "Come AMEN tratta dati di account, fede, conversazioni, acquisti e navigazione e come esercitare i diritti.",
-    "termsDescription": "Condizioni AMEN, funzioni IA, abbonamenti, cancellazione e diritti legali dei consumatori.",
-    "email": "Scrivi ad AMEN",
+    "copyright": "amen",
+    "privacyDescription": "Come l’app amen usa dati di account, lettura, preghiera, conversazioni e acquisti e come esercitare i tuoi diritti.",
+    "termsDescription": "Condizioni dell’app cristiana amen, lettura biblica, preghiera, chat IA Nema, abbonamenti e diritti dei consumatori.",
+    "email": "amenapphilfe@gmail.com",
     "cancel": "Annullare un abbonamento Apple",
     "refund": "Richiedere un rimborso ad Apple",
     "appleEula": "Licenza standard Apple",
-    "google": "Condizioni dell’API Google Gemini",
-    "providers": "Informazioni sulla privacy dei fornitori",
+    "google": "Condizioni dei servizi IA di Google",
+    "providers": "Ulteriori informazioni",
     "applePrivacy": "Privacy di Apple",
-    "supabasePrivacy": "Privacy di Supabase",
-    "revenuecatPrivacy": "Privacy di RevenueCat",
-    "appsflyerPrivacy": "Privacy di AppsFlyer",
-    "githubPrivacy": "Privacy di GitHub",
-    "country": "Germania",
-    "imprint": "Note legali",
-    "supportDescription": "Contatta AMEN per account, richieste sui dati, abbonamenti e conversazioni salvate.",
-    "imprintDescription": "Dati e contatti del gestore del sito e dell’app AMEN."
+    "imprint": "Informazioni legali",
+    "supportDescription": "Contatta l’assistenza di amen a amenapphilfe@gmail.com per l’app, l’account, gli abbonamenti o richieste sulla privacy.",
+    "imprintDescription": "Condizioni, informazioni sulla privacy e assistenza per l’app amen.",
+    "googlePrivacy": "Informativa sulla privacy di Google",
+    "appleTerms": "Condizioni dell’App Store e regole d’uso di Apple",
+    "appleInformation": "Informazioni Apple",
+    "more": "Scopri di più qui"
   },
   "privacy": {
-    "intro": "Questa informativa descrive i dati personali trattati su amen-app.com e nell’app AMEN per iOS. Distingue la navigazione dalle funzioni account, personalizzazione religiosa, Nema, audio, Bible Lock e accesso a pagamento. I dati dipendono dalle funzioni utilizzate.",
+    "intro": "amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
     "summary": [
-      "Le richieste IA vengono inviate a Google Gemini. Supabase conserva dati account e conversazioni salvate.",
-      "RevenueCat tratta lo stato degli acquisti. AppsFlyer riceve eventi e attribuzione, comprese alcune scelte iniziali.",
-      "Preferenze religiose e conversazioni possono rivelare informazioni sensibili. Leggere questa informativa non costituisce consenso.",
-      "Eliminare app o account non annulla un abbonamento Apple. Richieste privacy: amenapphilfe@gmail.com."
+      "Nema usa i servizi IA di Google per la chat. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
+      "Dati dell’account, conversazioni salvate e attività di lettura permettono le funzioni scelte. Gli acquisti si gestiscono tramite l’account Apple.",
+      "Preghiere, preferenze di fede e conversazioni possono contenere informazioni personali sensibili. I tuoi diritti e i consensi necessari restano tutelati.",
+      "Per richieste sulla privacy, contatta l’assistenza a amenapphilfe@gmail.com. Gli abbonamenti Apple vanno annullati separatamente dall’eliminazione dell’app o dell’account amen."
     ],
     "sections": [
       {
         "id": "controller",
-        "title": "Titolare e contatti",
+        "title": "Contatto per la privacy",
         "paragraphs": [
-          "Ezra Maslaton gestisce AMEN ed è titolare dei trattamenti descritti. Contatto: {{email}} all’indirizzo amenapphilfe@gmail.com, anche per accesso, rettifica, cancellazione, opposizione e altri diritti.",
-          "Apple, Google e altri fornitori possono essere titolari autonomi per i propri scopi. Le loro informative integrano questa senza eliminare le responsabilità di AMEN. È una comunicazione informativa, non una rinuncia ai diritti."
-        ]
-      },
-      {
-        "id": "website",
-        "title": "Richieste web e hosting",
-        "paragraphs": [
-          "Il sito statico utilizza GitHub Pages e la relativa distribuzione. Ogni richiesta comunica necessariamente IP e informazioni tecniche come orario, URL, browser e pagina di provenienza se inviata. Il fornitore può conservare registri operativi e di sicurezza.",
-          "Gli scopi sono distribuzione, diagnosi e protezione dagli abusi. Se si applica il GDPR, la base è l’articolo 6.1.f: interesse legittimo a un sito sicuro. Non promettiamo anonimizzazione universale degli IP né una scadenza fissa per tutti i registri."
-        ]
-      },
-      {
-        "id": "browser-storage",
-        "title": "Cookie, lingua e collegamenti",
-        "paragraphs": [
-          "Le pagine legali non aggiungono analisi, pixel pubblicitari, font esterni, cookie o archiviazione locale. La selezione automatica legge sul dispositivo la lingua principale del browser; quella manuale è nell’URL. Per lingue non supportate si usa l’inglese. Non viene inviato un evento analitico separato sulla lingua.",
-          "Aprire App Store o link di fornitori comunica dati della richiesta alla destinazione secondo le sue regole. Un link email apre il programma di posta: il messaggio parte solo quando lo invii."
+          "Per domande sull’uso delle informazioni personali nell’app amen, contatta l’assistenza a {{email}}. L’indirizzo è disponibile anche per accesso, rettifica, cancellazione, limitazione, portabilità, revoca del consenso e altre richieste sulla privacy.",
+          "Questa informativa descrive il trattamento associato all’app amen. Apple e Google trattano anche informazioni per i propri servizi secondo le rispettive informative. Le loro responsabilità non sostituiscono quelle associate ad amen e non riducono i tuoi diritti."
         ]
       },
       {
         "id": "support",
         "title": "Assistenza e posta",
         "paragraphs": [
-          "Quando ci contatti trattiamo email, messaggio, allegati e dati necessari alla risposta. L’assistenza usa Gmail, quindi l’infrastruttura di Google. Evita password, dati completi di pagamento o informazioni sensibili superflue.",
+          "Se contatti l’assistenza, email, messaggio, allegati e dati necessari a rispondere sono trattati tramite il servizio email di supporto. Non inviare password, dati di pagamento completi o informazioni sensibili non necessarie per risolvere la richiesta.",
           "Questioni contrattuali o precontrattuali si basano sull’articolo 6.1.b; altre comunicazioni e reclami sul 6.1.f. I messaggi pertinenti possono servire a risolvere richieste, adempiere obblighi o difendere diritti. I dati sensibili richiedono un’ulteriore condizione lecita."
         ]
       },
@@ -78,7 +61,7 @@
         "id": "accounts",
         "title": "Account, autenticazione e profilo",
         "paragraphs": [
-          "AMEN usa Supabase per autenticazione, database e file. Secondo accesso e scelte, i dati comprendono identificativo, email, credenziali di sessione, nome, foto scelta e date di creazione o modifica. Accedi con Apple può fornire identificativo Apple e indirizzo di inoltro.",
+          "I fornitori di account e servizi cloud permettono accesso, sincronizzazione e archiviazione. Secondo le tue scelte, le informazioni comprendono identificatore dell’account, email, dati di sessione, nome, foto scelta e date di creazione o aggiornamento. Accedi con Apple può fornire un identificatore Apple e un indirizzo email di inoltro.",
           "Servono ad accesso, recupero, sincronizzazione e personalizzazione, normalmente secondo l’articolo 6.1.b. Sicurezza e abusi possono basarsi sul 6.1.f; registri obbligatori sul 6.1.c. Sessioni e preferenze possono essere conservate anche sul dispositivo."
         ]
       },
@@ -86,31 +69,31 @@
         "id": "reading",
         "title": "Lettura, note e personalizzazione",
         "paragraphs": [
-          "Le funzioni usate trattano lingua, versione biblica, lettura, serie, risultati, versetti salvati, evidenziazioni, note e impostazioni. Alcuni dati sono locali; quelli collegati all’account possono sincronizzarsi con Supabase. Profilo o classifiche possono mostrare nome, immagine o attività utilizzati.",
+          "L’app usa lingua e versione biblica, attività di lettura, serie, risultati, versetti salvati, evidenziazioni, note e impostazioni quando usi queste funzioni. Le informazioni possono essere conservate sul dispositivo e sincronizzate con l’account. Profili o classifiche possono mostrare nome, foto o attività scelti per tali funzioni.",
           "Si forniscono le funzioni scelte, generalmente secondo il 6.1.b. Note, confessione e obiettivi di fede possono rivelare convinzioni o circostanze personali e richiedono la protezione aggiuntiva descritta sotto. Non mettere informazioni riservate altrui in campi condivisi."
         ]
       },
       {
         "id": "ai",
-        "title": "Nema e altre funzioni IA",
+        "title": "Chat IA Nema",
         "paragraphs": [
-          "Nema è l’interfaccia IA di AMEN. L’app attuale invia richieste all’API Gemini di Google: il trattamento non resta soltanto sui server AMEN. Può includere messaggio, contesto caricato, nome, lingua, confessione e istruzioni personalizzate. Anche titoli e spiegazioni dei versetti inviano testo rilevante.",
-          "Alcune risposte iniziali e raccomandazioni Bible Lock usano Google con risposte, bisogni, vincoli di lettura e riferimenti recenti. Input e output possono essere intimi. Non inviare password, pagamenti o dati riservati altrui. La funzione richiesta usa normalmente il 6.1.b, con un’ulteriore condizione per categorie particolari."
+          "Nema usa un modello IA di Google per la chat in amen. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto di personalizzazione può includere nome, lingua e preferenze di fede. La conversazione è generata da IA, non da una persona che ti consiglia.",
+          "I servizi IA di Google possono anche supportare spiegazioni bibliche, suggerimenti di lettura e altre funzioni di generazione richieste. Si usano risposte, riferimenti o testi pertinenti alla funzione scelta. Non condividere password, dati di pagamento o informazioni riservate altrui. La prestazione si basa generalmente sull’articolo 6.1.b, con un’ulteriore condizione lecita per i dati sensibili."
         ]
       },
       {
         "id": "google",
-        "title": "Google e miglioramento dei modelli",
+        "title": "Servizi IA di Google",
         "paragraphs": [
-          "Google tratta input e output secondo il progetto API di AMEN. Le condizioni Gemini distinguono servizi a pagamento e gratuiti: nei primi non usa richieste e risposte per migliorare prodotti; le regole dei secondi possono consentire miglioramento e revisione umana. Si applicano anche disposizioni regionali. Vedi {{google}}.",
-          "Il codice non dimostra da solo fatturazione, impostazioni o tutte le durate del fornitore. Non promettiamo universalmente assenza di addestramento, accesso umano o conservazione. Sicurezza, prevenzione degli abusi e obblighi legali possono richiedere trattamenti anche senza miglioramento dei modelli."
+          "Google tratta le informazioni inviate ai suoi servizi IA per generare la risposta richiesta. Il trattamento di input e risposte dipende dalle condizioni e impostazioni applicabili, comprese le disposizioni su miglioramento dei modelli, sicurezza e conservazione. Consulta {{google}}.",
+          "Sicurezza, prevenzione degli abusi e obblighi legali possono comportare conservazione temporanea o revisione delle richieste IA. L’informativa non promette la cancellazione immediata di ogni registro del fornitore. Per le informazioni di Google, consulta {{googlePrivacy}}. Puoi chiedere all’assistenza chiarimenti sui dati delle conversazioni."
         ]
       },
       {
         "id": "chat-storage",
         "title": "Cronologia e cancellazione",
         "paragraphs": [
-          "Conversazioni, messaggi, risposte e titoli possono essere salvati localmente e in Supabase per cronologia e contesto. Chiudere chat, app o sessione non li elimina automaticamente. Questa descrizione sostituisce le precedenti indicazioni di conservazione normalmente limitata alla sessione.",
+          "Conversazioni, messaggi, risposte e titoli possono essere salvati sul dispositivo e con l’account per ritrovarli in seguito. Chiudere una conversazione o l’app non elimina la cronologia salvata. Usa i controlli disponibili o contatta l’assistenza per chiedere la rimozione delle informazioni conservate.",
           "Usa i controlli disponibili o chiedi copia o cancellazione. Occorre considerare account, fornitori e backup associati. Non si recuperano copie esportate o condivise. Può restare conservazione limitata per obblighi legali o difesa di diritti."
         ]
       },
@@ -119,14 +102,14 @@
         "title": "Lettura ad alta voce",
         "paragraphs": [
           "Quando richiedi voce generata, l’app invia a Google testo, impostazioni vocali e istruzioni, anche per Bibbia, meditazioni o preghiere. Audio e informazioni sulle voci possono essere memorizzati sul dispositivo per la riproduzione.",
-          "La funzione attuale genera voce da testo e non registra il microfono. Un’impostazione di archiviazione non esclude registri operativi, legali o di sicurezza di Google. La riproduzione richiesta usa normalmente il 6.1.b, con protezione aggiuntiva per contenuti sensibili."
+          "La lettura ad alta voce genera parlato dal testo e non registra di per sé il microfono. Il testo pertinente è trattato per fornire l’audio richiesto; possono esistere anche registri di sicurezza o legali del fornitore. La riproduzione si basa generalmente sull’articolo 6.1.b, con protezione aggiuntiva per informazioni sensibili."
         ]
       },
       {
         "id": "bible-lock",
         "title": "Bible Lock e Tempo di utilizzo",
         "paragraphs": [
-          "Con autorizzazione, Bible Lock usa Family Controls e Tempo di utilizzo di Apple. Conserva token di app, categorie o domini scelti, orari, sblocco e progresso necessari. I token opachi non autorizzano accesso generale a cronologia di navigazione o messaggi.",
+          "Bible Lock usa le funzioni Tempo di utilizzo di Apple quando le autorizzi. App selezionate, orari, impostazioni di sblocco e progressi di lettura servono a fornire la funzione. L’autorizzazione non concede ad amen accesso generale a messaggi o cronologia di navigazione. Puoi gestire o revocare l’accesso nelle impostazioni di sistema.",
           "Le raccomandazioni IA possono inviare bisogni e vincoli biblici a Google. Revocare il permesso nelle impostazioni influenza la funzione. Le impostazioni funzionali usano il 6.1.b; Apple controlla i propri trattamenti. Il permesso del dispositivo non equivale al consenso GDPR per analisi diverse."
         ]
       },
@@ -134,40 +117,40 @@
         "id": "photos-notifications",
         "title": "Foto, notifiche e widget",
         "paragraphs": [
-          "Salvare una foto carica l’immagine selezionata in Supabase. Gli URL possono dare accesso all’immagine: condividili con prudenza. Le notifiche usano stato e preferenze; per invii remoti servono token, servizio push Apple e backend AMEN.",
+          "Quando salvi una foto del profilo, l’immagine scelta è conservata dal servizio di account pertinente. Condividere il collegamento può dare ad altri accesso all’immagine. Le notifiche usano autorizzazioni, preferenze e un identificatore push del dispositivo quando è attiva la consegna remota. Consulta {{applePrivacy}}.",
           "Widget ed estensioni accedono ai dati condivisi necessari. Puoi modificare permessi foto, notifiche e Tempo di utilizzo in iOS; negarli può limitare la funzione. Autorizzare una capacità del dispositivo è diverso da consentire pubblicità o dati sensibili."
         ]
       },
       {
         "id": "purchases",
-        "title": "Acquisti, Apple e RevenueCat",
+        "title": "Acquisti e Apple",
         "paragraphs": [
-          "Apple gestisce pagamenti e fatturazione App Store. AMEN non riceve il numero completo della carta. RevenueCat verifica transazioni e gestisce accessi, trattando identificativi, prodotti, diritti, prove, transazioni e dati tecnici correlati.",
-          "RevenueCat può collegarsi all’account AMEN e identificativo AppsFlyer. Integrazioni configurate possono usare acquisti e abbonamenti per attribuzione. L’accesso si basa normalmente sul 6.1.b, i registri obbligatori sul 6.1.c e il marketing sul consenso richiesto. Vedi {{applePrivacy}} e {{revenuecatPrivacy}}."
+          "Apple gestisce pagamenti e fatturazione dell’App Store. amen non riceve il numero completo della carta da un acquisto in-app Apple. I servizi di verifica usano identificatori dell’account, transazioni, prodotti, stato di prova e accesso agli abbonamenti per riconoscere gli acquisti. Consulta {{appleTerms}}.",
+          "Stato degli acquisti e identificatori tecnici possono essere associati all’account amen per attribuire gli abbonamenti. La gestione dell’accesso si basa generalmente sull’articolo 6.1.b, i registri obbligatori sul 6.1.c e il marketing facoltativo sul consenso quando necessario. Il trattamento degli acquisti da parte di Apple è descritto in {{applePrivacy}}."
         ]
       },
       {
         "id": "analytics",
-        "title": "AppsFlyer, eventi e attribuzione",
+        "title": "Misurazione e attribuzione nell’app",
         "paragraphs": [
-          "AMEN usa AppsFlyer per misurazione e attribuzione. Il codice attuale segnala passaggi iniziali, confessione, obiettivi, versione biblica, offerte a pagamento e alcuni eventi di acquisto. Possono comparire versione, orari, identificativi e permessi. Identificativi RevenueCat e AppsFlyer possono essere collegati.",
-          "Negare il tracciamento Apple non arresta necessariamente ogni evento operativo: il permesso controlla ciò che Apple consente. Le integrazioni possono coinvolgere partner pubblicitari. Il tracciamento facoltativo necessita del consenso applicabile. Confessione e obiettivi possono rivelare religione: il solo interesse legittimo del 6 non basta. Vedi {{appsflyerPrivacy}}."
+          "I fornitori di misurazione e attribuzione ricevono eventi dell’app e informazioni tecniche. Possono includere passaggi iniziali, preferenze di fede e obiettivi scelti, versioni bibliche, attività sulle offerte, eventi d’acquisto, versione dell’app, date e identificatori. Identificatori di acquisto e dell’app possono essere associati per misurare l’attribuzione degli abbonamenti.",
+          "Il permesso di tracciamento Apple non interrompe necessariamente ogni evento operativo o dell’app. L’attribuzione pubblicitaria può coinvolgere partner di marketing; il tracciamento facoltativo richiede consenso quando previsto. Le preferenze di fede possono rivelare convinzioni religiose e richiedono un’ulteriore condizione lecita oltre al comune legittimo interesse. Contatta {{email}} per destinatari, permessi e scelte sulla privacy."
         ]
       },
       {
         "id": "sensitive",
         "title": "Religione e altri dati sensibili",
         "paragraphs": [
-          "Confessione, preghiera, obiettivi e conversazioni possono rivelare religione, salute o categorie particolari dell’articolo 9 GDPR. Servono una base dell’articolo 6 e una condizione del 9, normalmente consenso esplicito per personalizzazione religiosa facoltativa. Leggere, usare AMEN o consentire tracciamento Apple non lo fornisce.",
+          "Confessione, preghiera, obiettivi e conversazioni possono rivelare religione, salute o categorie particolari dell’articolo 9 GDPR. Servono una base dell’articolo 6 e una condizione del 9, normalmente consenso esplicito per personalizzazione religiosa facoltativa. Leggere, usare amen o consentire tracciamento Apple non lo fornisce.",
           "Puoi chiedere revoca, limitazione o cancellazione a {{email}} e cambiare preferenze disponibili. La revoca non invalida trattamenti precedenti leciti. Non inserire dati sensibili altrui senza autorità. Trasmetterli all’analitica richiede giustificazione distinta; questo documento non crea consenso o liceità."
         ]
       },
       {
         "id": "children",
-        "title": "Minori e requisiti di età",
+        "title": "Minori e autorizzazione dei genitori",
         "paragraphs": [
-          "La classificazione App Store riguarda contenuti, non capacità contrattuale, consenso o limiti IA. Le condizioni attuali Gemini vietano servizi destinati o probabilmente accessibili a minori di 18 anni. Le funzioni Google di AMEN sono quindi destinate ad adulti di almeno 18 anni.",
-          "Altre funzioni possono richiedere autorizzazione genitoriale e regole locali. La soglia GDPR del consenso minorile dipende dalla legge nazionale. Segnala eventuali dati di minori trattati senza autorizzazione perché possiamo indagare e organizzare limitazione o cancellazione."
+          "L’uso di amen deve rispettare le norme sui dati dei minori, l’autorizzazione valida dei genitori quando necessaria e le condizioni dei servizi esterni. La classificazione dei contenuti dell’App Store non sostituisce tali requisiti. Le condizioni IA di Google collegate restano pertinenti per le funzioni che usano quei servizi.",
+          "Quando serve il consenso, i requisiti per minori dipendono dalla legge locale. Contatta l’assistenza se ritieni che informazioni di un minore siano state trattate senza l’autorizzazione necessaria. Esamineremo la richiesta e gestiremo la limitazione o cancellazione richiesta dalle circostanze."
         ]
       },
       {
@@ -180,10 +163,10 @@
       },
       {
         "id": "recipients",
-        "title": "Destinatari e ruoli",
+        "title": "Fornitori e altri destinatari",
         "paragraphs": [
-          "Intervengono Supabase per account e archivi; Google per Gemini e posta; Apple per accesso, pagamento, notifiche e sistemi; RevenueCat per acquisti; AppsFlyer per eventi e attribuzione; GitHub per hosting. Ruoli dipendono da trattamenti e accordi.",
-          "Informazioni necessarie possono anche arrivare ad assistenza autorizzata, consulenti o autorità per legge. Informative dei fornitori non sostituiscono accordi obbligatori. I link sono sotto; non affermiamo che tutti i dati restino esclusivamente con AMEN."
+          "Le categorie di destinatari comprendono autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, misurazione, attribuzione pubblicitaria ed email di supporto. Google fornisce servizi IA. Apple offre acquisti, accesso, notifiche e funzioni pertinenti del dispositivo. Le informazioni condivise dipendono da funzione e finalità.",
+          "Le informazioni necessarie possono essere condivise anche con personale autorizzato, consulenti professionali o autorità quando richiesto dalla legge. Trattamento e trasferimenti internazionali restano soggetti alle garanzie applicabili. Contatta {{email}} per informazioni sui destinatari e sugli accordi relativi ai tuoi dati."
         ]
       },
       {
@@ -199,14 +182,14 @@
         "title": "Conservazione e backup",
         "paragraphs": [
           "Account e contenuti sincronizzati servono le funzioni scelte fino a rimozione o cessata necessità. Cache dipendono dai controlli locali; assistenza dal caso e obblighi. Transazioni, prove di frode e controversie possono richiedere conservazione legale più lunga.",
-          "Hosting, IA e analitica applicano durate contrattuali e operative. Dati cancellati possono restare in backup protetti fino a scadenza o sostituzione; registri obbligatori possono restare con accesso limitato. Non inventiamo termini dove decide configurazione o legge. Puoi chiedere i criteri applicabili."
+          "Servizi cloud, IA e di misurazione conservano informazioni secondo finalità, accordi e obblighi legali. Dati eliminati possono rimanere in copie protette fino alla scadenza; registri obbligatori possono essere conservati con accesso limitato. Chiedi all’assistenza i criteri di conservazione applicabili alle tue informazioni."
         ]
       },
       {
         "id": "account-deletion",
         "title": "Eliminare l’account",
         "paragraphs": [
-          "L’app iOS offre un flusso che richiede cancellazione al backend. Se fallisce o non puoi accedere, scrivi a {{email}}. Una verifica proporzionata può impedire eliminazione o accesso abusivo. Non inviare password.",
+          "Puoi richiedere la cancellazione dell’account nell’app. Se non puoi accedere o la richiesta non si completa, contatta l’assistenza a {{email}}. Una verifica proporzionata dell’identità può proteggere le informazioni da accessi o eliminazioni non autorizzati. Non ti sarà chiesto di inviare una password per la verifica.",
           "Disinstallare non elimina i dati backend. La cancellazione account non annulla abbonamenti Apple: usa separatamente {{cancel}}. Copie locali, esportazioni, scadenze backup e conservazione legale restano distinte dalla rimozione dell’account attivo."
         ]
       },
@@ -215,7 +198,7 @@
         "title": "Diritti e reclami",
         "paragraphs": [
           "Se si applica il GDPR puoi chiedere accesso, rettifica, cancellazione, limitazione e portabilità dove ammessa. Puoi revocare consenso e opporti a interesse legittimo per circostanze personali. Opposizione al marketing diretto è sempre possibile.",
-          "Scrivi a {{email}}. Normalmente rispondiamo entro un mese; proroghe lecite richiedono avviso e motivi. Le richieste sono normalmente gratuite salvo eccezioni. Puoi reclamare all’autorità del luogo di residenza, lavoro o violazione, senza dover contattare AMEN prima."
+          "Scrivi a {{email}}. Normalmente rispondiamo entro un mese; proroghe lecite richiedono avviso e motivi. Le richieste sono normalmente gratuite salvo eccezioni. Puoi reclamare all’autorità del luogo di residenza, lavoro o violazione, senza dover contattare amen prima."
         ]
       },
       {
@@ -231,25 +214,25 @@
         "title": "Modifiche e documenti collegati",
         "paragraphs": [
           "Data e versione identificano l’informativa. Aggiorneremo per modifiche a servizi, destinatari o legge, con ulteriori avvisi quando richiesto. Pubblicare una versione non autorizza un nuovo scopo soggetto a consenso.",
-          "Le {{terms}} descrivono servizi e acquisti. Le sei lingue indicano le stesse pratiche. L’inglese è una soluzione tecnica, non rinuncia ai diritti locali. Domande: {{email}}."
+          "Le {{terms}} spiegano uso dell’app e acquisti. Gli aggiornamenti dell’informativa non riducono i diritti obbligatori sulla privacy. Contatta l’assistenza a {{email}} per domande sul documento o sull’uso delle tue informazioni."
         ]
       }
     ]
   },
   "terms": {
-    "intro": "Queste condizioni riguardano AMEN e amen-app.com, comprese Bibbia, preghiera, IA, account e acquisti. Leggile insieme all’offerta prima dell’acquisto e all’informativa privacy. Restano applicabili diritti inderogabili dei consumatori e di protezione dei dati.",
+    "intro": "amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni spiegano uso dell’app, chat IA Nema, account e abbonamenti. Leggi anche l’informativa sulla privacy e l’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
     "summary": [
-      "Nema genera risposte IA e può sbagliare. Le funzioni Google sono destinate a maggiorenni di almeno 18 anni.",
-      "Il dialogo d’acquisto stabilisce prezzo, prova, periodo e funzioni.",
-      "Gli abbonamenti Apple si rinnovano fino all’annullamento. Eliminare app o account non ferma gli addebiti.",
-      "I diritti obbligatori restano: non sono escluse tutte le garanzie o responsabilità."
+      "Nema usa servizi IA di Google per la chat. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
+      "La schermata d’acquisto mostra prezzo, periodo di fatturazione, condizioni di prova e accesso incluso prima della conferma.",
+      "Gli abbonamenti Apple si rinnovano fino all’annullamento. Eliminare l’app o l’account amen non annulla la fatturazione Apple.",
+      "Queste condizioni preservano i diritti legali dei consumatori. Restano applicabili regole d’acquisto Apple e licenza dell’app."
     ],
     "sections": [
       {
         "id": "provider",
-        "title": "Fornitore e ambito",
+        "title": "Ambito e accordo",
         "paragraphs": [
-          "Ezra Maslaton fornisce i servizi AMEN; contatto {{email}} presso amenapphilfe@gmail.com. Apple risponde di servizi e transazioni propri secondo lo store. Le condizioni si applicano a sito e app iOS per il servizio pertinente.",
+          "Queste condizioni si applicano all’app amen per iOS e alle funzioni bibliche, di preghiera e riflessione cristiana. Contatta l’assistenza a {{email}} per domande sull’accordo. Il rapporto con Apple per i suoi servizi App Store segue le regole del tuo store; consulta {{appleTerms}}.",
           "Il contratto nasce nel processo applicabile di registrazione, accettazione o acquisto dopo disponibilità di condizioni e offerta. Pubblicare non sostituisce accettazione necessaria. Accordi individuali e diritto inderogabile prevalgono su clausole incompatibili."
         ]
       },
@@ -257,16 +240,16 @@
         "id": "service",
         "title": "Servizi offerti",
         "paragraphs": [
-          "Secondo versione e accesso, AMEN offre lettura, versetti, evidenziazioni, note, meditazioni, preghiera, progressi, widget e personalizzazione. Nema e alcune funzioni iniziali, di piano e audio usano IA. Bible Lock aiuta le routine con Tempo di utilizzo.",
+          "amen sostiene lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni collegate. Nema offre chat tramite servizi IA di Google. Anche alcuni suggerimenti di lettura e funzioni audio usano IA. La disponibilità dipende da versione e accesso; Bible Lock usa Tempo di utilizzo di Apple.",
           "L’offerta concreta definisce accesso pagato. Non promettiamo un numero fisso di messaggi gratuiti, modello specifico, ogni traduzione, funzionamento perpetuo o funzioni di altre versioni. Descrizioni legalmente vincolanti restano obbligatorie."
         ]
       },
       {
         "id": "eligibility",
-        "title": "Età e capacità",
+        "title": "Uso di amen e servizi esterni",
         "paragraphs": [
-          "Le funzioni Google IA sono per adulti di almeno 18 anni secondo le restrizioni attuali. Non usarle sotto tale età. Una classificazione App Store inferiore non annulla i limiti.",
-          "Altre funzioni richiedono capacità contrattuale o autorizzazione genitoriale efficace ove necessaria. Valgono anche norme locali sui dati dei minori. Per acquistare servono autorizzazioni di pagamento e famiglia dell’account Apple."
+          "Devi avere capacità legale per concludere l’accordo o un’autorizzazione valida dei genitori o tutori quando necessaria. Usa i servizi esterni secondo le loro condizioni. Nema usa servizi IA di Google; le condizioni del fornitore sono disponibili in {{google}}.",
+          "Requisiti su dati e consenso dei minori dipendono dalla legge locale. Gli acquisti richiedono le autorizzazioni di pagamento e famiglia dell’account Apple usato. La classificazione dei contenuti non prevale su requisiti legali o condizioni di altri servizi."
         ]
       },
       {
@@ -274,14 +257,14 @@
         "title": "Account e sicurezza",
         "paragraphs": [
           "Alcune funzioni necessitano account e rete. Fornisci dati richiesti corretti, aggiorna recupero e proteggi credenziali. Non usare account altrui senza permesso. Segnala accessi sospetti; non rispondi automaticamente di attività dovute a guasti fuori dal tuo controllo.",
-          "Un nome scelto non concede marchi o impersonificazione. Sincronizzazione può dipendere da accesso e compatibilità. Conserva copie dei dati importanti; ciò non riduce obblighi di conformità di AMEN."
+          "Un nome scelto non concede marchi o impersonificazione. Sincronizzazione può dipendere da accesso e compatibilità. Conserva copie dei dati importanti; ciò non riduce obblighi di conformità di amen."
         ]
       },
       {
         "id": "license",
         "title": "Licenza d’uso",
         "paragraphs": [
-          "Ricevi un diritto limitato e non esclusivo per uso personale su dispositivi compatibili propri o controllati, secondo il contratto. Regole Apple e condivisione familiare applicabile restano valide. Non si trasferisce proprietà intellettuale.",
+          "Ricevi un diritto limitato e non esclusivo di uso personale su dispositivi compatibili che possiedi o controlli, secondo accordo e legge. La licenza dell’app è in {{appleEula}}. Regole d’uso e In famiglia di Apple sono in {{appleTerms}}. La proprietà intellettuale del software non viene trasferita.",
           "Non ridistribuire, sfruttare commercialmente, aggirare controlli, interferire nella sicurezza o estrarre contenuti illecitamente. Restano diritti inderogabili di interoperabilità, accessibilità, citazione e altre eccezioni. Sospensione e cessazione seguono le regole sotto, non revoca illimitata."
         ]
       },
@@ -289,7 +272,7 @@
         "id": "bible",
         "title": "Bibbia e contenuti spirituali",
         "paragraphs": [
-          "Traduzioni, commenti, immagini e contenuti possono appartenere ad AMEN o terzi. Testi e interpretazioni confessionali differiscono. Una parafrasi IA non è citazione esatta: verifica riferimenti nella traduzione scelta.",
+          "Traduzioni, commenti, immagini e contenuti possono appartenere ad amen o terzi. Testi e interpretazioni confessionali differiscono. Una parafrasi IA non è citazione esatta: verifica riferimenti nella traduzione scelta.",
           "Rispetta scopi della condivisione, attribuzione e licenze. Accesso non autorizza automaticamente copia integrale, database concorrenti o pubblicazione commerciale protetta. Restano eccezioni legali di citazione e uso."
         ]
       },
@@ -297,7 +280,7 @@
         "id": "ai",
         "title": "Nema e risultati IA",
         "paragraphs": [
-          "Nema è interfaccia IA, non consulente umano, ministro religioso o voce divina. Usa attualmente Google Gemini. Può produrre citazioni inventate, riferimenti errati, pregiudizi, ragionamenti incompleti o dati obsoleti anche con tono convincente.",
+          "Nema usa un modello IA di Google per domande bibliche e riflessione cristiana. Le risposte sono generate da IA e possono contenere affermazioni inesatte, citazioni inventate, riferimenti errati o interpretazioni incomplete. Leggi con attenzione e controlla citazioni importanti nella traduzione biblica che usi.",
           "Verifica risposte importanti. Altri possono ricevere risultati simili; protezione ed esclusività non sono garantite. Non presentarli come consulenza verificata o parole autentiche altrui. Modello, velocità e disponibilità variano nel rispetto dei diritti contrattuali e legali."
         ]
       },
@@ -305,7 +288,7 @@
         "id": "professional-advice",
         "title": "Consulenza ed emergenze",
         "paragraphs": [
-          "AMEN offre lettura e riflessione, non diagnosi, cure, psicoterapia, consulenza legale o finanziaria, monitoraggio emergenze o relazione pastorale riservata. Non sostituisce professionisti che conoscano le tue circostanze.",
+          "amen offre lettura e riflessione, non diagnosi, cure, psicoterapia, consulenza legale o finanziaria, monitoraggio emergenze o relazione pastorale riservata. Non sostituisce professionisti che conoscano le tue circostanze.",
           "In pericolo immediato contatta emergenze o servizi di crisi locali. Non aspettare lettura umana tempestiva. Non decidere farmaci, sicurezza, diritto o finanze solo da IA. Restano responsabilità legalmente non escludibili."
         ]
       },
@@ -321,7 +304,7 @@
         "id": "your-content",
         "title": "Contenuti e autorizzazioni",
         "paragraphs": [
-          "Mantieni i diritti su messaggi, note e immagini. Consenti ad AMEN e fornitori necessari trattamento, conservazione e trasmissione solo per funzioni richieste, sicurezza e obblighi leciti, secondo privacy e legge.",
+          "Mantieni i diritti su messaggi, note e immagini. Consenti ad amen e fornitori necessari trattamento, conservazione e trasmissione solo per funzioni richieste, sicurezza e obblighi leciti, secondo privacy e legge.",
           "Non autorizzi indiscriminatamente pubblicazione delle chat private, pubblicità con il nome o addestramento estraneo. Vedi {{privacy}} per IA. Invia solo materiale lecito evitando dati sensibili altrui superflui. Copie esportate o condivise possono restare ai destinatari."
         ]
       },
@@ -337,8 +320,8 @@
         "id": "paid-access",
         "title": "Accesso pagato e offerta",
         "paragraphs": [
-          "AMEN può offrire abbonamenti e acquisti unici Apple. Prima di confermare vedi prodotto, prezzo, valuta, periodo, prova o promozione e accesso incluso. Governa l’offerta concreta, non una descrizione generale.",
-          "Prezzi e disponibilità variano per store, imposte, prodotto e idoneità. Apple addebita; AMEN e RevenueCat validano accessi senza ricevere AMEN la carta completa. Non presumere prove o promozioni assenti dalla conferma."
+          "amen può offrire abbonamenti e acquisti unici Apple. Prima di confermare vedi prodotto, prezzo, valuta, periodo, prova o promozione e accesso incluso. Governa l’offerta concreta, non una descrizione generale.",
+          "Prezzi e disponibilità variano per store, imposte, prodotto e idoneità. Gli acquisti sono addebitati all’account Apple e servizi di verifica riconoscono l’accesso. amen non riceve il numero completo della carta. Prove e promozioni valgono solo se incluse nella conferma; consulta {{appleTerms}}."
         ]
       },
       {
@@ -354,7 +337,7 @@
         "title": "Rinnovo e annullamento",
         "paragraphs": [
           "Abbonamenti automatici proseguono per il periodo fino all’annullamento secondo Apple. Usa le impostazioni account o {{cancel}}. Lì vedi rinnovo e accesso successivo; regole e legge determinano gli effetti.",
-          "Eliminare app o account, uscire, scrivere ad AMEN o revocare permessi non annulla Apple. Variazioni di prezzo seguono avvisi, consenso e legge richiesti. Non rivendichiamo aumenti senza informazione o accordo necessario."
+          "Eliminare app o account, uscire, scrivere ad amen o revocare permessi non annulla Apple. Variazioni di prezzo seguono avvisi, consenso e legge richiesti. Non rivendichiamo aumenti senza informazione o accordo necessario."
         ]
       },
       {
@@ -377,7 +360,7 @@
         "id": "withdrawal",
         "title": "Recesso del consumatore",
         "paragraphs": [
-          "Se la legge concede recesso, incluso il normale termine di 14 giorni per contratti a distanza pertinenti nel SEE, documenti e legge determinano diritti e destinatario. Contatta il venditore indicato e AMEN se contraente.",
+          "Se la legge concede recesso, incluso il normale termine di 14 giorni per contratti a distanza pertinenti nel SEE, documenti e legge determinano diritti e destinatario. Contatta il venditore indicato e amen se contraente.",
           "La fornitura digitale immediata incide solo se ricorrono requisiti legali, comprese richiesta, consenso, riconoscimento e conferma ove necessari. Scaricare o leggere non rinuncia automaticamente. Basta dichiarazione chiara, salvo forma legalmente obbligatoria."
         ]
       },
@@ -402,7 +385,7 @@
         "title": "Disponibilità e requisiti",
         "paragraphs": [
           "Funzioni richiedono talvolta internet, iOS compatibile, permessi, accesso e terzi disponibili. Manutenzione, guasti, limiti o dispositivo possono interromperle. Non garantiamo accesso continuo, output identico o permanenza del modello.",
-          "Restano rimedi se manca accesso pattuito. Valutiamo guasti e correzioni ragionevoli. Costi propri di connessione e dispositivo sono tuoi senza giustificare difetti AMEN."
+          "Restano rimedi se manca accesso pattuito. Valutiamo guasti e correzioni ragionevoli. Costi propri di connessione e dispositivo sono tuoi senza giustificare difetti amen."
         ]
       },
       {
@@ -417,8 +400,8 @@
         "id": "termination",
         "title": "Cessazione e cancellazione account",
         "paragraphs": [
-          "Puoi smettere e chiedere cancellazione tramite app o assistenza. Disinstallare non elimina backend. {{privacy}} descrive cancellazione, conservazione lecita e backup. Salva ciò che vuoi mantenere prima.",
-          "Annulla Apple separatamente per fermare futuri addebiti. Cessare accesso non annulla quel contratto automaticamente. AMEN rispetterà obblighi di avviso, accesso pagato e rimedi in caso di chiusura. Clausole necessariamente persistenti restano soggette a legge."
+          "Puoi smettere di usare amen e richiedere la cancellazione dell’account nell’app o tramite assistenza. Disinstallare non elimina da solo le informazioni salvate dell’account. Consulta {{privacy}} per cancellazione, conservazione lecita e copie. Salva le informazioni utili prima della richiesta.",
+          "Annulla Apple separatamente per fermare futuri addebiti. Cessare accesso non annulla quel contratto automaticamente. amen rispetterà obblighi di avviso, accesso pagato e rimedi in caso di chiusura. Clausole necessariamente persistenti restano soggette a legge."
         ]
       },
       {
@@ -431,10 +414,10 @@
       },
       {
         "id": "apple",
-        "title": "Apple e terzi",
+        "title": "Regole Apple e informazioni collegate",
         "paragraphs": [
-          "Condizioni App Store e, se usata per la licenza, {{appleEula}} integrano le condizioni AMEN. AMEN resta responsabile delle proprie prestazioni. Distribuire su Apple non rende Apple fornitore di Nema o contenuti spirituali.",
-          "Siti e sistemi terzi hanno proprie regole lecite. Un collegamento non trasferisce obblighi AMEN né obbliga a reclamare esclusivamente al terzo per ogni problema."
+          "Acquisti e uso dell’App Store seguono le condizioni Apple: {{appleTerms}}. La licenza è in {{appleEula}} e le informazioni sulla privacy in {{applePrivacy}}. Questi riferimenti spiegano i servizi propri di Apple e non sostituiscono le responsabilità di amen per l’app.",
+          "Usa le procedure di annullamento e rimborso Apple per acquisti e abbonamenti fatturati da Apple. Servizi esterni e funzioni del dispositivo hanno condizioni, permessi e requisiti di disponibilità propri. Restano i diritti obbligatori del consumatore; il rinvio a un altro fornitore non elimina le responsabilità associate ad amen."
         ]
       },
       {
@@ -463,9 +446,9 @@
       },
       {
         "id": "contact",
-        "title": "Contatto e informazioni",
+        "title": "Contatta l’assistenza",
         "paragraphs": [
-          "Contatta Ezra Maslaton tramite {{email}} per contratti, problemi, reclami o accesso. Link Apple spiegano fatturazione e annullamento; {{privacy}} riguarda i dati.",
+          "Contatta l’assistenza di amen a {{email}} per l’app, l’account, l’accesso agli abbonamenti o reclami. I link Apple spiegano fatturazione, annullamento e rimborsi. Per richieste sulle informazioni personali, consulta {{privacy}}.",
           "Indica prodotto o funzione e descrivi brevemente. Riferimento ordine solo se necessario; niente password, carte complete o chat riservate superflui. Restano valide comunicazioni attraverso altri canali legalmente ammessi."
         ]
       }

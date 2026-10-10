@@ -39,6 +39,8 @@ for (const locale of locales) {
       }
     }
   }
+  assert.equal(copies[locale].ui.email, 'amenapphilfe@gmail.com');
+  assert.ok(!copies[locale].privacy.sections.some((s) => ['website', 'browser-storage'].includes(s.id)), locale + ': app policy must not contain website-processing sections');
 }
 for (const file of htmlFiles) {
   const html = read(file);
@@ -52,11 +54,21 @@ for (const file of htmlFiles) {
     const hash = createHash('sha256').update(read('assets/' + name)).digest('hex').slice(0, 12);
     assert.ok(html.includes('/assets/' + name + '?v=' + hash), file + ': stale asset URL');
   }
-  assert.match(html, /Gartenstraße 17/);
-  assert.match(html, /85764 Oberschleißheim/);
+  assert.doesNotMatch(html, /AMEN|\bAmen\b|Supabase|RevenueCat|AppsFlyer|Ezra Maslaton|Gartenstraße|Oberschleißheim/);
+  const prose = html.replace(/<span class="section-number">[^<]*<\/span>/g, '').replace(/<[^>]*>/g, ' ');
+  assert.ok(!/\b18\b|\bFSK\b/.test(prose), file + ': unexpected numeric age label');
   const language = file.startsWith('legal/') ? file.split('/')[1] : 'en';
   assert.match(html, new RegExp('<html lang="' + language + '"'));
   assert.ok(html.includes(copies[language].ui.skip));
+  assert.ok(html.includes(copies[language].ui.more));
+  assert.ok(html.includes('mailto:amenapphilfe@gmail.com'));
+  for (const url of [
+    'https://www.apple.com/legal/internet-services/itunes/',
+    'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
+    'https://www.apple.com/legal/privacy/',
+    'https://support.apple.com/en-us/118428',
+    'https://support.apple.com/en-us/118223'
+  ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
   assert.ok(html.includes('datetime="2026-10-10"'));
   assert.equal((html.match(/data-language="/g) || []).length, 6);
   assert.equal((html.match(/hreflang="x-default"/g) || []).length, 1);
@@ -71,10 +83,12 @@ for (const file of htmlFiles) {
   }
 }
 const englishPrivacy = read('privacy.html');
-assert.match(englishPrivacy, /Google.*Gemini/);
-assert.match(englishPrivacy, /Supabase/);
-assert.match(englishPrivacy, /AppsFlyer/);
-assert.match(englishPrivacy, /RevenueCat/);
+assert.match(englishPrivacy, /Google AI model/);
+for (const category of ['cloud hosting', 'purchase validation', 'app measurement', 'advertising attribution']) assert.ok(englishPrivacy.includes(category), 'recipient category must still be disclosed: ' + category);
+assert.doesNotMatch(copies.en.privacy.intro, /website|amen-app\.com/i);
+assert.match(copies.en.privacy.intro, /Christian app/);
+assert.match(copies.en.terms.intro, /Christian app/);
+assert.match(copies.en.terms.summary.join(' '), /does not cancel Apple billing/);
 assert.doesNotMatch(englishPrivacy, /No external AI|exclusively internally|only for the duration of the active session/);
 assert.match(read('terms.html'), /Article|consumer/);
 assert.match(read('assets/legal.css'), /@media print/);

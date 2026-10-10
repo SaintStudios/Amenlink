@@ -46,7 +46,6 @@ main section { margin-bottom: 2.5rem; }
 main h2 { font-size: 1.35rem; line-height: 1.4; margin: 0 0 1rem; letter-spacing: -.015em; overflow-wrap: anywhere; }
 .section-number { color: var(--accent); }
 main p { margin: 0 0 1rem; }
-.operator { font-style: normal; margin: 0 0 1.5rem; padding-left: 1rem; border-left: 2px solid var(--line); }
 .key-points { background: #f0faf7; border-left: 3px solid var(--accent); padding: 1.5rem 1.75rem 1.1rem; }
 .key-points h2 { font-size: 1.15rem; }
 .key-points ul, .provider-links { padding-left: 1.25rem; margin: 0; }

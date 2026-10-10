@@ -1,6 +1,6 @@
 {
   "ui": {
-    "home": "AMENs webbplats",
+    "home": "amens webbplats",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
     "support": "Kontakta supporten",
@@ -14,63 +14,46 @@
     "skip": "Gå till dokumentet",
     "top": "Till toppen",
     "documents": "Juridisk information",
-    "copyright": "AMEN · Ezra Maslaton",
-    "privacyDescription": "Hur AMEN behandlar konto-, tros-, chatt-, köp- och webbdata och hur du använder dina rättigheter.",
-    "termsDescription": "Villkor för AMEN, AI, abonnemang, uppsägning och lagstadgade konsumenträttigheter.",
-    "email": "Mejla AMEN",
+    "copyright": "amen",
+    "privacyDescription": "Hur amen-appen använder konto-, läs-, böne-, chatt- och köpuppgifter och hur du använder dina integritetsrättigheter.",
+    "termsDescription": "Villkor för den kristna appen amen, bibelläsning, bön, Nema AI-chatt, abonnemang och konsumenträttigheter.",
+    "email": "amenapphilfe@gmail.com",
     "cancel": "Säg upp ett Apple-abonnemang",
     "refund": "Begär återbetalning från Apple",
     "appleEula": "Apples standardlicensavtal",
-    "google": "Villkor för Google Gemini API",
-    "providers": "Leverantörernas integritetsinformation",
+    "google": "Villkor för Googles AI-tjänster",
+    "providers": "Mer information",
     "applePrivacy": "Apples integritetspolicy",
-    "supabasePrivacy": "Supabases integritetspolicy",
-    "revenuecatPrivacy": "RevenueCats integritetspolicy",
-    "appsflyerPrivacy": "AppsFlyers integritetspolicy",
-    "githubPrivacy": "GitHubs integritetspolicy",
-    "country": "Tyskland",
-    "imprint": "Juridiskt meddelande",
-    "supportDescription": "Kontakta AMEN om konton, uppgiftsförfrågningar, abonnemang och sparade samtal.",
-    "imprintDescription": "Uppgifter och kontakt för operatören av AMENs webbplats och app."
+    "imprint": "Juridisk information",
+    "supportDescription": "Kontakta amens support på amenapphilfe@gmail.com för hjälp med appen, kontot, abonnemang eller integritetsfrågor.",
+    "imprintDescription": "Villkor, integritetsinformation och support för amen-appen.",
+    "googlePrivacy": "Googles integritetspolicy",
+    "appleTerms": "Apples App Store-villkor och användningsregler",
+    "appleInformation": "Information från Apple",
+    "more": "Läs mer här"
   },
   "privacy": {
-    "intro": "Denna policy beskriver personuppgiftsbehandling på amen-app.com och i AMEN för iOS. Den skiljer webbplatsbesök från konton, trosanpassning, Nema, ljud, Bible Lock och betald åtkomst. Uppgifterna beror på vilka funktioner du använder.",
+    "intro": "amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
     "summary": [
-      "AI-förfrågningar skickas till Google Gemini. Supabase lagrar kontouppgifter och sparade samtal.",
-      "RevenueCat behandlar köpstatus. AppsFlyer får apphändelser och attribueringsdata, inklusive vissa val vid introduktionen.",
-      "Trospreferenser och samtal kan avslöja känsliga uppgifter. Att läsa policyn innebär inte samtycke.",
-      "Att ta bort appen eller kontot säger inte upp ett Apple-abonnemang. Integritetsfrågor: amenapphilfe@gmail.com."
+      "Nema använder Googles AI-tjänster för chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
+      "Kontouppgifter, sparade samtal och läsaktivitet möjliggör funktionerna du använder. Köp hanteras genom ditt Apple-konto.",
+      "Böner, trosinställningar och samtal kan innehålla känsliga personuppgifter. Dina rättigheter och nödvändiga samtycken är fortsatt skyddade.",
+      "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller amen-kontot."
     ],
     "sections": [
       {
         "id": "controller",
-        "title": "Personuppgiftsansvarig och kontakt",
+        "title": "Kontakt om integritet",
         "paragraphs": [
-          "Ezra Maslaton driver AMEN och ansvarar för behandlingen som beskrivs här. Kontakt: {{email}} på amenapphilfe@gmail.com, även för tillgång, rättelse, radering, invändningar och andra dataskyddsrättigheter.",
-          "Apple, Google och andra leverantörer kan vara självständigt ansvariga för egna ändamål. Deras policyer kompletterar detta dokument utan att undanröja AMENs ansvar. Policyn ger information och innebär inget avstående från rättigheter."
-        ]
-      },
-      {
-        "id": "website",
-        "title": "Webbförfrågningar och webbhotell",
-        "paragraphs": [
-          "Den statiska webbplatsen använder GitHub Pages och dess leveransinfrastruktur. Förfrågningar lämnar nödvändigtvis IP-adress och tekniska uppgifter som tid, URL, webbläsare och hänvisande sida om webbläsaren skickar den. Leverantören kan spara drift- och säkerhetsloggar.",
-          "Syftena är leverans, felsökning och skydd mot missbruk. När GDPR gäller är grunden artikel 6.1 f, vårt berättigade intresse av säker drift. Vi lovar inte att alla IP-adresser anonymiseras eller att samtliga loggar raderas efter ett bestämt antal dagar."
-        ]
-      },
-      {
-        "id": "browser-storage",
-        "title": "Kakor, språk och externa länkar",
-        "paragraphs": [
-          "De juridiska sidorna lägger inte till analys, reklampixlar, externa typsnitt, kakor eller lokal webbläsarlagring. Automatiskt språkval läser enhetens primära webbläsarspråk; manuellt val finns i URL:en. Språk som inte stöds får engelska. Ingen separat analyshändelse om språkvalet skickas till AMEN.",
-          "En länk till App Store eller en leverantör skickar förfrågningsuppgifter till destinationen enligt dess villkor. En mejllänk öppnar ditt mejlprogram; inget skickas förrän du själv skickar meddelandet."
+          "Kontakta supporten på {{email}} om hur personuppgifter används i amen-appen. Adressen kan även användas för tillgång, rättelse, radering, begränsning, dataportabilitet, återkallat samtycke och andra integritetsförfrågningar.",
+          "Policyn beskriver behandling kopplad till amen-appen. Apple och Google behandlar också uppgifter för sina egna tjänster enligt sina respektive policyer. Deras ansvar ersätter inte ansvaret kopplat till amen och minskar inte dina rättigheter."
         ]
       },
       {
         "id": "support",
         "title": "Support och mejl",
         "paragraphs": [
-          "När du kontaktar oss behandlas mejladress, meddelande, bilagor och uppgifter som behövs för svar. Supportadressen använder Gmail och därmed Googles mejlinfrastruktur. Skicka inte lösenord, fullständiga betalningsuppgifter eller onödiga känsliga uppgifter.",
+          "När du kontaktar supporten behandlas din mejladress, ditt meddelande, bilagor och uppgifter som behövs för svaret genom supportens mejltjänst. Skicka inte lösenord, fullständiga betalningsuppgifter eller känsliga uppgifter som inte behövs för att besvara frågan.",
           "Avtalsfrågor grundas på artikel 6.1 b; annan korrespondens och klagomål på 6.1 f. Relevanta mejl kan sparas för handläggning, rättsliga skyldigheter eller för att göra och försvara anspråk. Känsliga uppgifter kräver ytterligare lagligt stöd."
         ]
       },
@@ -78,7 +61,7 @@
         "id": "accounts",
         "title": "Konton, inloggning och profil",
         "paragraphs": [
-          "AMEN använder Supabase för autentisering, databas och filer. Beroende på inloggning och val behandlas konto-ID, mejl, sessionsuppgifter, namn, vald profilbild och tid för skapande eller ändring. Logga in med Apple kan lämna Apple-identifierare och vidarebefordringsadress.",
+          "Leverantörer av konto- och molntjänster möjliggör inloggning, synkronisering och lagring. Beroende på dina val omfattar uppgifterna kontoidentifierare, mejladress, sessionsinformation, namn, vald profilbild och tider för skapande eller uppdatering. Logga in med Apple kan ge en Apple-identifierare och en vidarebefordringsadress.",
           "Uppgifterna möjliggör inloggning, återställning, synkronisering och anpassning, normalt enligt 6.1 b. Säkerhet och missbruksskydd kan använda 6.1 f; obligatoriska uppgifter 6.1 c. Sessionsuppgifter och inställningar kan också lagras på enheten."
         ]
       },
@@ -86,31 +69,31 @@
         "id": "reading",
         "title": "Läsning, anteckningar och anpassning",
         "paragraphs": [
-          "Använda funktioner behandlar språk, bibelversion, läsaktivitet, sviter, prestationer, sparade verser, markeringar, anteckningar och inställningar. Vissa uppgifter finns lokalt; kontofunktioner kan synkronisera med Supabase. Profil eller topplista kan visa valt namn, bild eller aktivitet.",
+          "Appen använder språk- och bibelversionsval, läsaktivitet, sviter, prestationer, sparade verser, markeringar, anteckningar och inställningar när du använder funktionerna. Uppgifter kan lagras på enheten och synkroniseras med kontot. Profiler eller topplistor kan visa namnet, bilden eller aktiviteten du väljer för dem.",
           "Syftet är valda funktioner, vanligen enligt 6.1 b. Anteckningar, samfund och trosmål kan avslöja övertygelser eller personliga förhållanden och behöver det extra skydd som beskrivs nedan. Lägg inte andras konfidentiella uppgifter i delade profilfält."
         ]
       },
       {
         "id": "ai",
-        "title": "Nema och andra AI-funktioner",
+        "title": "Nema AI-chatt",
         "paragraphs": [
-          "Nema är AMENs AI-gränssnitt. Den aktuella appen skickar förfrågningar till Googles Gemini API; behandlingen sker inte enbart på AMENs servrar. Meddelande, inläst samtalskontext, namn, språk, samfund och anpassningsinstruktioner kan ingå. Samtalstitlar och versförklaringar skickar också relevant text.",
-          "Vissa introduktionssvar och Bible Lock-förslag använder Google med svar, behov, läsvillkor och senaste bibelreferenser. In- och utdata kan vara privata. Skicka inte lösenord, betalningsuppgifter eller andras konfidentiella data. Funktionen använder normalt 6.1 b med extra villkor för särskilda kategorier."
+          "Nema använder en AI-modell från Google för chatten i amen. Ditt meddelande och relevant samtalshistorik skickas till Google för att skapa ett svar. Anpassningen kan använda namn, valt språk och trosinställningar. Samtalet skapas av AI och förs inte med en mänsklig rådgivare.",
+          "Googles AI-tjänster kan också stödja bibelförklaringar, läsförslag och andra begärda genereringsfunktioner. Relevanta svar, bibelhänvisningar eller texter används för vald funktion. Dela inte lösenord, betalningsuppgifter eller andras konfidentiella information. Funktionen stöds vanligen av artikel 6.1 b, med ett ytterligare lagligt villkor för känsliga uppgifter."
         ]
       },
       {
         "id": "google",
-        "title": "Google och modellförbättring",
+        "title": "Googles AI-tjänster",
         "paragraphs": [
-          "Google behandlar förfrågningar enligt villkoren för AMENs API-projekt. Gemini-villkoren skiljer betalda från obetalda tjänster: betalda använder inte promptar och svar för produktförbättring, medan obetalda regler kan tillåta förbättring och mänsklig granskning. Regionala regler gäller också. Se {{google}}.",
-          "Källkoden ensam visar inte faktureringsstatus, leverantörsinställningar eller alla lagringstider. Vi lovar därför inte generellt frånvaro av träning, mänsklig åtkomst eller lagring. Säkerhet, missbruksskydd och rättsliga skyldigheter kan kräva behandling även utan modellförbättring."
+          "Google behandlar uppgifterna som skickas till dess AI-tjänster för att skapa det begärda svaret. Hanteringen av indata och svar beror på gällande villkor och inställningar, inklusive regler om modellförbättring, säkerhet och lagring. Se {{google}}.",
+          "Säkerhet, förebyggande av missbruk och rättsliga skyldigheter kan innebära tillfällig lagring eller granskning av AI-förfrågningar. Policyn lovar inte att varje leverantörsuppgift raderas omedelbart. Se {{googlePrivacy}} för Googles egen information. Kontakta supporten om hanteringen av dina chattuppgifter."
         ]
       },
       {
         "id": "chat-storage",
         "title": "Samtalshistorik och radering",
         "paragraphs": [
-          "Samtal, meddelanden, svar och titlar kan sparas lokalt och i Supabase för historik och sammanhang. Att stänga samtal, app eller session raderar inte automatiskt historiken. Detta ersätter tidigare beskrivningar av lagring normalt bara under en aktiv session.",
+          "Samtal, meddelanden, svar och titlar kan sparas på enheten och med kontot så att du kan återvända till dem. Att stänga ett samtal eller appen raderar inte sparad historik. Använd tillgängliga samtalskontroller eller kontakta supporten för att begära borttagning av sparade uppgifter.",
           "Använd tillgängliga kontroller eller be om kopia eller radering. Kontouppgifter, leverantörer och säkerhetskopior behöver beaktas. Exporterade eller delade kopior återkallas inte. Begränsad lagring kan fortsätta för rättsliga skyldigheter eller anspråk."
         ]
       },
@@ -119,14 +102,14 @@
         "title": "Uppläsning",
         "paragraphs": [
           "Vid genererat tal skickar appen text, röstval och instruktioner till Google. Det kan vara Bibeln, andakt eller bön. Ljud och röstinformation kan mellanlagras på enheten för uppspelning.",
-          "Den aktuella funktionen skapar tal av text och spelar inte in mikrofonen. Förfrågningens lagringsinställning garanterar inte att Google saknar drift-, säkerhets- eller rättsliga loggar. Begärd uppläsning använder normalt 6.1 b, med extra skydd för känslig text."
+          "Uppläsning skapar tal från text och spelar inte i sig in mikrofonen. Relevant text behandlas för det begärda ljudet; leverantörens säkerhets- och rättsliga register kan också förekomma. Uppspelning stöds vanligen av artikel 6.1 b, med extra skydd om texten innehåller känsliga personuppgifter."
         ]
       },
       {
         "id": "bible-lock",
         "title": "Bible Lock och Skärmtid",
         "paragraphs": [
-          "Med ditt tillstånd använder Bible Lock Apples Family Controls och Skärmtid. Valda app-, kategori- och domäntoken, scheman, upplåsning och läsframsteg lagras vid behov. Apples ogenomskinliga token ger inte allmän åtkomst till webbhistorik eller meddelanden.",
+          "Bible Lock använder Apples Skärmtid-funktioner när du ger tillstånd. Valda appar, scheman, upplåsningsinställningar och läsframsteg används för funktionen. Tillståndet ger inte amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla Skärmtid-åtkomst i systeminställningarna.",
           "AI-läsförslag kan skicka behov och bibelvillkor till Google. Återkallad Skärmtid-behörighet påverkar funktionen. Funktionsinställningar använder 6.1 b; Apple ansvarar för sin egen behandling. Enhetsbehörighet är inte GDPR-samtycke till annan analys."
         ]
       },
@@ -134,24 +117,24 @@
         "id": "photos-notifications",
         "title": "Bilder, notiser och widgetar",
         "paragraphs": [
-          "Sparad profilbild laddas upp till Supabase. Bildlänkar kan ge åtkomst och bör delas försiktigt. Notiser använder behörigheter och inställningar; fjärrleverans använder enhetstoken, Apples push-tjänst och AMENs backend.",
+          "När du sparar en profilbild lagras den valda bilden hos relevant kontotjänst. Delade bildlänkar kan ge andra tillgång till bilden. Notiser använder tillstånd, inställningar och en push-identifierare för enheten när fjärrleverans är aktiv. Se {{applePrivacy}} för Apples information.",
           "Widgetar och tillägg använder nödvändiga gemensamma appdata. Foto-, notis- och Skärmtid-behörigheter ändras i iOS; nekande kan begränsa funktionen. Enhetsbehörighet är skild från samtycke till reklam eller känsliga uppgifter."
         ]
       },
       {
         "id": "purchases",
-        "title": "Köp, Apple och RevenueCat",
+        "title": "Köp och Apple",
         "paragraphs": [
-          "Apple sköter App Store-betalning och fakturering. AMEN får inte hela kortnumret från köp i appen. RevenueCat validerar transaktioner och hanterar åtkomst med kundidentifierare, produkter, behörigheter, provstatus, transaktioner och tekniska data.",
-          "RevenueCat kan kopplas till AMEN-konto och AppsFlyer-ID. Konfigurerade integrationer kan använda köp och abonnemang för attribuering. Åtkomst använder vanligen 6.1 b, obligatoriska uppgifter 6.1 c och valfri marknadsföring erforderligt samtycke. Se {{applePrivacy}} och {{revenuecatPrivacy}}."
+          "Apple hanterar App Store-betalningar och fakturering. amen får inte hela ditt kortnummer från ett Apple-köp i appen. Köpverifieringstjänster använder kontoidentifierare, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen köp. Apples köp- och användningsregler finns i {{appleTerms}}.",
+          "Köpstatus och tekniska identifierare kan kopplas till amen-kontot för abonnemangstillskrivning. Åtkomsthantering stöds vanligen av artikel 6.1 b, obligatoriska register av 6.1 c och valfri marknadsföring av samtycke när det krävs. Apples behandling av köpuppgifter beskrivs i {{applePrivacy}}."
         ]
       },
       {
         "id": "analytics",
-        "title": "AppsFlyer, händelser och attribuering",
+        "title": "Appmätning och tillskrivning",
         "paragraphs": [
-          "AMEN använder AppsFlyer för mätning och attribuering. Nuvarande kod rapporterar introduktionssteg, valt samfund, mål, bibelversion, betalväggshändelser och vissa köphändelser. Version, tidpunkter, identifierare och tillstånd kan ingå. RevenueCat- och AppsFlyer-ID kan länkas.",
-          "Nekat Apple-spårningstillstånd stoppar inte nödvändigtvis varje drifthändelse; tillståndet styr spårning enligt Apples regler. Reklampartner kan ingå i integrationer. Valfri spårning behöver tillämpligt samtycke. Samfund och mål kan avslöja religion: enbart berättigat intresse enligt artikel 6 räcker inte. Se {{appsflyerPrivacy}}."
+          "Leverantörer av mätning och tillskrivning tar emot apphändelser och tekniska uppgifter. Det kan omfatta introduktionssteg, valda trosinställningar och mål, bibelversioner, aktivitet vid erbjudanden, köphändelser, appversion, tider och identifierare. Köp- och appidentifierare kan kopplas för att mäta tillskrivning av abonnemang.",
+          "Apples spårningstillstånd stoppar inte nödvändigtvis varje app- eller drifthändelse. Reklamtillskrivning kan omfatta marknadsföringspartner; valfri spårning kräver samtycke där det gäller. Trosinställningar kan avslöja religiös övertygelse och behöver ett ytterligare lagligt villkor utöver vanligt berättigat intresse. Kontakta {{email}} om mottagare, tillstånd eller integritetsval."
         ]
       },
       {
@@ -164,10 +147,10 @@
       },
       {
         "id": "children",
-        "title": "Barn och ålderskrav",
+        "title": "Barn och föräldratillstånd",
         "paragraphs": [
-          "App Stores åldersklassning gäller innehåll, inte avtalsförmåga, dataskydd eller AI-regler. Nuvarande Gemini-villkor förbjuder tjänster riktade till eller sannolikt använda av personer under 18. AMENs Google-funktioner är därför avsedda för vuxna från 18 år.",
-          "Andra funktioner kan kräva vårdnadshavares tillstånd och lokala regler. GDPR:s gräns för barns samtycke beror på nationell lag. Kontakta oss om barns uppgifter behandlats utan nödvändigt tillstånd, för utredning och lämplig begränsning eller radering."
+          "Användning av amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i App Store ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
+          "När samtycke behövs beror kraven för barn på lokal lag. Kontakta supporten om du tror att ett barns uppgifter behandlats utan nödvändigt tillstånd. Vi undersöker förfrågan och ordnar den begränsning eller radering som krävs i situationen."
         ]
       },
       {
@@ -180,10 +163,10 @@
       },
       {
         "id": "recipients",
-        "title": "Mottagare och leverantörsroller",
+        "title": "Tjänsteleverantörer och andra mottagare",
         "paragraphs": [
-          "Supabase hanterar konto och lagring; Google Gemini och mejl; Apple inloggning, betalning, notiser och system; RevenueCat köpt åtkomst; AppsFlyer händelser och attribuering; GitHub webbhotell. Roller beror på behandling och avtal.",
-          "Nödvändiga uppgifter kan också lämnas till behörig support, rådgivare eller myndigheter enligt lag. Leverantörspolicyer ersätter inte nödvändiga personuppgiftsbiträdesavtal. Länkar finns nedan; uppgifterna beskrivs inte som uteslutande hos AMEN."
+          "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, appmätning, reklamtillskrivning och supportmejl. Google tillhandahåller AI-tjänster. Apple tillhandahåller köp, inloggning, notiser och relevanta enhetsfunktioner. Uppgifter som delas beror på funktion och syfte.",
+          "Nödvändiga uppgifter kan också delas med behörig supportpersonal, professionella rådgivare eller myndigheter när lagen kräver det. Behandling och internationella överföringar omfattas av tillämpliga skydd. Kontakta {{email}} för uppgifter om mottagare och avtal som rör dina uppgifter."
         ]
       },
       {
@@ -199,14 +182,14 @@
         "title": "Lagringstid och säkerhetskopior",
         "paragraphs": [
           "Konto och synkroniserat innehåll sparas för valda funktioner tills de raderas eller inte behövs. Cache beror på lokala kontroller; support på ärende och lagkrav. Transaktioner, bedrägeribevis och tvister kan kräva längre laglig lagring.",
-          "Hosting-, AI- och analysleverantörer har relevanta avtalstider och driftsregler. Raderade data kan tillfälligt finnas i skyddade säkerhetskopior till ersättning eller utgång; lagstadgade data kan behållas med begränsad åtkomst. Vi hittar inte på fasta tider när lag eller konfiguration styr. Fråga efter kriterier."
+          "Moln-, AI- och mättjänster sparar uppgifter enligt syfte, avtal och rättsliga skyldigheter. Raderade poster kan finnas i skyddade säkerhetskopior tills de löper ut; obligatoriska register kan behållas med begränsad åtkomst. Fråga supporten om lagringskriterierna för dina uppgifter."
         ]
       },
       {
         "id": "account-deletion",
         "title": "Radera kontot",
         "paragraphs": [
-          "iOS-appen erbjuder ett flöde som begär backend-radering. Vid fel eller saknad åtkomst kontakta {{email}}. Proportionerlig verifiering kan förhindra obehörig radering eller utlämning. Skicka inget lösenord.",
+          "Du kan begära kontoradering i appen. Om du inte kan logga in eller begäran inte slutförs, kontakta supporten på {{email}}. En proportionerlig identitetskontroll kan behövas för att skydda mot obehörig åtkomst eller radering. Du ombeds inte att skicka ett lösenord för kontrollen.",
           "Avinstallation raderar inte backend. Kontoradering säger inte upp Apple-abonnemang: gör det separat via {{cancel}}. Lokala kopior, export, backup-utgång och laglig lagring är skilda från borttagning av det aktiva kontot."
         ]
       },
@@ -215,7 +198,7 @@
         "title": "Dina rättigheter och klagomål",
         "paragraphs": [
           "När GDPR gäller kan du begära tillgång, rättelse, radering, begränsning och dataportabilitet där villkoren uppfylls. Du kan återkalla samtycke och invända mot berättigat intresse utifrån din situation. Direktmarknadsföring kan du alltid invända mot.",
-          "Skriv till {{email}}. Normal svarstid är en månad; tillåten förlängning kräver besked och skäl. Förfrågningar är normalt kostnadsfria med lagliga undantag. Du kan klaga hos myndigheten där du bor, arbetar eller där överträdelsen skett utan att kontakta AMEN först."
+          "Skriv till {{email}}. Normal svarstid är en månad; tillåten förlängning kräver besked och skäl. Förfrågningar är normalt kostnadsfria med lagliga undantag. Du kan klaga hos myndigheten där du bor, arbetar eller där överträdelsen skett utan att kontakta amen först."
         ]
       },
       {
@@ -231,42 +214,42 @@
         "title": "Ändringar och andra dokument",
         "paragraphs": [
           "Datum och version identifierar policyn. Vi uppdaterar vid ändrade tjänster, mottagare eller lag, med extra information vid behov. Publicering tillåter inte ett nytt ändamål som kräver samtycke.",
-          "{{terms}} förklarar tjänst och köp. Alla sex språk beskriver samma behandling. Engelska är teknisk reserv, inte avstående från lokala rättigheter. Frågor: {{email}}."
+          "{{terms}} förklarar användning och köp i appen. Policyuppdateringar minskar inte obligatoriska integritetsrättigheter. Kontakta supporten på {{email}} med frågor om dokumentet eller användningen av dina uppgifter."
         ]
       }
     ]
   },
   "terms": {
-    "intro": "Dessa villkor gäller AMEN och amen-app.com: Bibeln, bön, AI-stöd, konton och köp. Läs dem tillsammans med erbjudandet före köp och integritetspolicyn. Tvingande konsument- och dataskyddsrättigheter fortsätter att gälla.",
+    "intro": "amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren beskriver appens användning, Nema AI-chatt, kontofunktioner och abonnemang. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
     "summary": [
-      "Nema ger AI-svar och kan göra fel. Google-baserad AI är avsedd för vuxna från 18 år.",
-      "Köpskärmen bestämmer pris, provperiod, faktureringsperiod och funktioner.",
-      "Apple-abonnemang förnyas tills de sägs upp. Radering av app eller konto stoppar inte debitering.",
-      "Tvingande rättigheter bevaras; inte alla garantier eller ansvar utesluts."
+      "Nema använder Googles AI-tjänster för chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
+      "Köpskärmen visar pris, faktureringsperiod, provvillkor och inkluderad åtkomst före bekräftelse.",
+      "Apple-abonnemang förnyas tills de sägs upp. Att radera appen eller amen-kontot avslutar inte Apples fakturering.",
+      "Villkoren bevarar lagstadgade konsumenträttigheter. Apples köpregler och tillämplig applicens gäller också."
     ],
     "sections": [
       {
         "id": "provider",
-        "title": "Leverantör och omfattning",
+        "title": "Omfattning och avtal",
         "paragraphs": [
-          "Ezra Maslaton tillhandahåller AMEN, kontakt {{email}} på amenapphilfe@gmail.com. Apple ansvarar för egna butikstjänster och transaktioner enligt butikens villkor. Dessa gäller webbplats och iOS-app för relevant tjänst.",
+          "Villkoren gäller amen-appen för iOS och dess funktioner för Bibeln, bön och kristen reflektion. Kontakta supporten på {{email}} om avtalet. Din relation med Apple för dess egna App Store-tjänster följer reglerna för din butik; se {{appleTerms}}.",
           "Avtal ingås genom tillämplig registrering, acceptans eller köp efter tillgång till villkor och erbjudande. Publicering ersätter inte nödvändigt godkännande. Individuellt avtal och tvingande lag har företräde."
         ]
       },
       {
         "id": "service",
-        "title": "AMENs tjänster",
+        "title": "amens tjänster",
         "paragraphs": [
-          "Beroende på version och åtkomst erbjuder AMEN läsning, sparade verser, markeringar, anteckningar, andakter, bön, framsteg, widgetar och trosanpassning. Nema och vissa introduktions-, läsplan- och ljudfunktioner använder AI. Bible Lock stödjer rutiner genom Skärmtid.",
+          "amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Nema erbjuder chatt med Googles AI-tjänster. Vissa läsförslag och ljudfunktioner använder också AI. Tillgänglighet beror på version och åtkomst; Bible Lock använder Apples Skärmtid-funktioner.",
           "Erbjudandet definierar betald åtkomst. Vi lovar inte fast antal fria meddelanden, en viss AI-modell, alla översättningar, evig drift eller andra versioners funktioner. Rättsligt bindande beskrivningar och löften fortsätter gälla."
         ]
       },
       {
         "id": "eligibility",
-        "title": "Ålder och behörighet",
+        "title": "Använda amen och externa tjänster",
         "paragraphs": [
-          "Google-AI är avsedd för vuxna från 18 enligt nuvarande leverantörsregler. Använd den inte under 18. Lägre innehållsklassning i App Store upphäver inte kravet.",
-          "Övriga funktioner kräver avtalsförmåga eller giltigt vårdnadshavartillstånd där nödvändigt. Barns data följer även lokal lag. Köp kräver betalnings- och familjetillstånd för Apple-kontot."
+          "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder Googles AI-tjänster; leverantörens villkor finns i {{google}}.",
+          "Regler för barns uppgifter och samtycke beror på lokal lag. Köp kräver betalnings- och familjetillstånd för det använda Apple-kontot. Appens innehållsbedömning åsidosätter inte lagkrav eller andra tjänsters villkor."
         ]
       },
       {
@@ -274,14 +257,14 @@
         "title": "Konton och säkerhet",
         "paragraphs": [
           "Vissa funktioner behöver konto och nät. Ge korrekta nödvändiga uppgifter, håll återställning aktuell och skydda inloggning. Använd inte annans konto utan tillstånd. Rapportera misstänkt åtkomst; allt som beror på fel utanför din kontroll blir inte automatiskt ditt ansvar.",
-          "Valt namn ger inga varumärkes- eller utgivningsrättigheter som annan person. Synkronisering kan behöva inloggning och kompatibilitet. Behåll egna kopior av viktig information; det minskar inte AMENs skyldighet att leverera avtalsenligt."
+          "Valt namn ger inga varumärkes- eller utgivningsrättigheter som annan person. Synkronisering kan behöva inloggning och kompatibilitet. Behåll egna kopior av viktig information; det minskar inte amens skyldighet att leverera avtalsenligt."
         ]
       },
       {
         "id": "license",
         "title": "Användningslicens",
         "paragraphs": [
-          "Du får enligt avtalet en begränsad, icke-exklusiv rätt för personligt bruk på kompatibla enheter du äger eller kontrollerar. Apples regler och tillämplig familjedelning gäller. Programvarans immateriella äganderätt överförs inte.",
+          "Du får en begränsad, icke-exklusiv rätt till personligt bruk på kompatibla enheter du äger eller kontrollerar, enligt avtal och lag. Applicensen finns i {{appleEula}}. Apples användnings- och Familjedelningsregler finns i {{appleTerms}}. Ägandet av programvarans immateriella rättigheter överförs inte.",
           "Distribuera eller exploatera inte appen kommersiellt, kringgå inte kontroller och extrahera inte olagligt. Tvingande rättigheter till interoperabilitet, tillgänglighet, citat och undantag kvarstår. Avstängning och upphörande följer reglerna nedan, inte obegränsad återkallelse."
         ]
       },
@@ -289,7 +272,7 @@
         "id": "bible",
         "title": "Bibeltexter och andligt innehåll",
         "paragraphs": [
-          "Översättningar, kommentarer, bilder och annat kan tillhöra AMEN eller tredje part. Ordval och samfundstolkning varierar. En AI-parafras är inget exakt citat; kontrollera hänvisningar i vald översättning.",
+          "Översättningar, kommentarer, bilder och annat kan tillhöra amen eller tredje part. Ordval och samfundstolkning varierar. En AI-parafras är inget exakt citat; kontrollera hänvisningar i vald översättning.",
           "Följ delningsfunktioners syfte, källangivelse och licenser. Åtkomst tillåter inte automatiskt hela översättningar, konkurrerande databaser eller skyddad kommersiell publicering. Lagliga citat- och användningsundantag kvarstår."
         ]
       },
@@ -297,7 +280,7 @@
         "id": "ai",
         "title": "Nema och AI-resultat",
         "paragraphs": [
-          "Nema är ett AI-gränssnitt, inte mänsklig rådgivare, präst eller gudomlig röst. Nuvarande app använder Google Gemini. Påhittade citat, felaktiga hänvisningar, bias, ofullständiga resonemang och gammal information kan förekomma även i övertygande svar.",
+          "Nema använder en AI-modell från Google för bibelfrågor och kristen reflektion. Svar skapas av AI och kan innehålla felaktiga påståenden, påhittade citat, felaktiga hänvisningar eller ofullständiga tolkningar. Läs noggrant och kontrollera viktiga bibelcitat i den översättning du använder.",
           "Kontrollera viktiga svar. Andra kan få liknande resultat; rättsligt skydd och exklusivitet är inte garanterade. Presentera inte AI som verifierat råd eller verkligt uttalande av någon annan. Modell, hastighet och tillgång varierar med bibehållna avtals- och lagrättigheter."
         ]
       },
@@ -305,7 +288,7 @@
         "id": "professional-advice",
         "title": "Professionella råd och nödlägen",
         "paragraphs": [
-          "AMEN stödjer läsning och reflektion utan diagnos, behandling, terapi, juridisk eller ekonomisk rådgivning, nödövervakning eller konfidentiell själavårdsrelation. Det ersätter inte kvalificerad hjälp som känner din situation.",
+          "amen stödjer läsning och reflektion utan diagnos, behandling, terapi, juridisk eller ekonomisk rådgivning, nödövervakning eller konfidentiell själavårdsrelation. Det ersätter inte kvalificerad hjälp som känner din situation.",
           "Vid omedelbar fara kontakta lokala nöd- eller kristjänster. Räkna inte med mänsklig granskning i tid. Basera inte medicin-, säkerhets-, rätts- eller ekonomibeslut endast på AI. Lagstadgat ansvar kvarstår."
         ]
       },
@@ -321,7 +304,7 @@
         "id": "your-content",
         "title": "Ditt innehåll och tillstånd",
         "paragraphs": [
-          "Du behåller rättigheter till meddelanden, anteckningar och bilder. AMEN och nödvändiga leverantörer får behandla, lagra och överföra bara för begärda funktioner, säkerhet och lagliga skyldigheter enligt integritet och lag.",
+          "Du behåller rättigheter till meddelanden, anteckningar och bilder. amen och nödvändiga leverantörer får behandla, lagra och överföra bara för begärda funktioner, säkerhet och lagliga skyldigheter enligt integritet och lag.",
           "Det tillåter inte allmän publicering av privata chattar, reklam med ditt namn eller orelaterad modellträning. Se {{privacy}} om leverantörs-AI. Lämna bara lagligt användbart material och undvik andras känsliga data. Delade kopior kan stanna hos mottagaren."
         ]
       },
@@ -337,8 +320,8 @@
         "id": "paid-access",
         "title": "Betald åtkomst och erbjudande",
         "paragraphs": [
-          "AMEN kan erbjuda Apple-abonnemang eller engångsköp. Före bekräftelse visas produkt, pris, valuta, period, prov eller kampanj och åtkomst. Det specifika erbjudandet styr, inte allmän webbtext.",
-          "Priser och tillgång varierar med butik, skatt, produkt och behörighet. Apple debiterar; AMEN och RevenueCat validerar utan att AMEN får hela kortnumret. Anta inte prov eller erbjudande som saknas på bekräftelsen."
+          "amen kan erbjuda Apple-abonnemang eller engångsköp. Före bekräftelse visas produkt, pris, valuta, period, prov eller kampanj och åtkomst. Det specifika erbjudandet styr, inte allmän webbtext.",
+          "Pris och tillgänglighet varierar med butik, skatt, produkt och behörighet. Köp debiteras Apple-kontot och verifieringstjänster hjälper till att känna igen åtkomsten. amen får inte hela ditt kortnummer. Prov och erbjudanden gäller endast när bekräftelsen inkluderar dem; se {{appleTerms}}."
         ]
       },
       {
@@ -354,7 +337,7 @@
         "title": "Förnyelse och uppsägning",
         "paragraphs": [
           "Automatiska abonnemang fortsätter för angiven period tills uppsagda enligt Apple. Använd kontots abonnemang eller {{cancel}}. Där visas förnyelse och fortsatt åtkomst; butik och lag avgör följderna.",
-          "App- eller kontoradering, utloggning, mejl till AMEN och återkallade tillstånd säger inte upp Apple. Prisändringar följer erforderliga besked, samtycke och lag. Vi kräver ingen rätt att höja utan nödvändig information eller överenskommelse."
+          "App- eller kontoradering, utloggning, mejl till amen och återkallade tillstånd säger inte upp Apple. Prisändringar följer erforderliga besked, samtycke och lag. Vi kräver ingen rätt att höja utan nödvändig information eller överenskommelse."
         ]
       },
       {
@@ -377,7 +360,7 @@
         "id": "withdrawal",
         "title": "Ångerrätt",
         "paragraphs": [
-          "När konsumentlag ger ångerrätt, inklusive vanlig 14-dagarsfrist för relevanta distansavtal inom EES, styr köpinformation och lag rättigheter och mottagare. Kontakta angiven säljare och AMEN när avtalspart.",
+          "När konsumentlag ger ångerrätt, inklusive vanlig 14-dagarsfrist för relevanta distansavtal inom EES, styr köpinformation och lag rättigheter och mottagare. Kontakta angiven säljare och amen när avtalspart.",
           "Omedelbar digital leverans påverkar rätten bara när lagkrav uppfylls, inklusive nödvändig uttrycklig begäran, samtycke, bekräftelse av kännedom och avtalsbekräftelse. Nedladdning eller läsning är inget automatiskt avstående. Ett tydligt meddelande räcker om inte lag kräver viss form."
         ]
       },
@@ -402,7 +385,7 @@
         "title": "Tillgänglighet och teknik",
         "paragraphs": [
           "Vissa funktioner kräver nät, kompatibelt iOS, behörigheter, inloggning och tredje part. Underhåll, avbrott, gränser och enhet kan störa. Vi garanterar inte ständig åtkomst, identiska svar eller en permanent AI-modell.",
-          "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta AMENs fel."
+          "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta amens fel."
         ]
       },
       {
@@ -417,8 +400,8 @@
         "id": "termination",
         "title": "Sluta använda och radera konto",
         "paragraphs": [
-          "Du kan sluta och begära radering i app eller support. Avinstallation raderar inte backend. {{privacy}} beskriver radering, laglig lagring och backup. Spara önskad information före begäran.",
-          "Säg upp Apple separat för att stoppa framtida debitering. Avslutad åtkomst avslutar inte automatiskt butikskontraktet. AMEN följer krav på besked, betald åtkomst och påföljder vid upphörande. Skyldigheter som måste fortsätta gälla följer lagen."
+          "Du kan sluta använda amen och begära kontoradering i appen eller via support. Avinstallation tar inte i sig bort sparade kontouppgifter. Se {{privacy}} för radering, laglig lagring och säkerhetskopior. Spara uppgifter du behöver före begäran.",
+          "Säg upp Apple separat för att stoppa framtida debitering. Avslutad åtkomst avslutar inte automatiskt butikskontraktet. amen följer krav på besked, betald åtkomst och påföljder vid upphörande. Skyldigheter som måste fortsätta gälla följer lagen."
         ]
       },
       {
@@ -431,10 +414,10 @@
       },
       {
         "id": "apple",
-        "title": "Apple och tredje part",
+        "title": "Apples regler och relaterad information",
         "paragraphs": [
-          "App Store-villkor och, när använd för licensen, {{appleEula}} kompletterar AMENs villkor. AMEN ansvarar fortsatt för egna tjänster. Apple-distribution gör inte Apple till Nema- eller innehållsleverantör.",
-          "Externa webbplatser, system och tjänster har egna lagliga regler. Länkar överför inte AMENs skyldigheter och tvingar inte varje klagomål enbart till tredje part."
+          "App Store-köp och användning följer Apples villkor: {{appleTerms}}. Applicensen finns i {{appleEula}} och integritetsinformationen i {{applePrivacy}}. Hänvisningarna beskriver Apples egna tjänster och ersätter inte amens ansvar för appen.",
+          "Använd Apples uppsägnings- och återbetalningsprocesser för Apple-fakturerade abonnemang och köp. Externa tjänster och enhetsfunktioner har egna villkor, tillstånd och tillgänglighetskrav. Obligatoriska konsumenträttigheter gäller fortsatt; en hänvisning till annan leverantör tar inte bort ansvar kopplat till amen."
         ]
       },
       {
@@ -463,9 +446,9 @@
       },
       {
         "id": "contact",
-        "title": "Kontakt och information",
+        "title": "Kontakta supporten",
         "paragraphs": [
-          "Kontakta Ezra Maslaton via {{email}} för avtal, fel, klagomål och åtkomst. Apple-länkarna förklarar betalning och uppsägning; personuppgifter finns i {{privacy}}.",
+          "Kontakta amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Apples länkar beskriver fakturering, uppsägning och återbetalning. För personuppgiftsförfrågningar, se {{privacy}}.",
           "Ange produkt eller funktion och beskriv kort. Orderreferens bara vid behov; inga lösenord, hela kortnummer eller onödiga privata chattar. Andra lagligen tillåtna och giltiga meddelanden begränsas inte."
         ]
       }

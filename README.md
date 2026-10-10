@@ -1,10 +1,10 @@
-# AMEN website
+# amen website
 
-This is the AMEN website repository, named SaintStudios/Amenlink on GitHub. GitHub Pages serves the main branch at https://amen-app.com/. The deployment stays static: no runtime packages, account service, translation API or build service is needed.
+This is the amen website repository, named SaintStudios/Amenlink on GitHub. GitHub Pages serves the main branch at https://amen-app.com/. The deployment stays static: no runtime packages, account service, translation API or build service is needed.
 
 ## Legal pages
 
-The privacy policy, terms, support and legal notice are fully rendered in English, German, Spanish, French, Italian and Swedish. Content is in content/<language>.json. Support reuses the relevant translated sections so its explanations cannot diverge from the policies. Legal HTML is generated and committed; edit the JSON sources and run:
+The app privacy policy, terms, support and legal information are fully rendered in English, German, Spanish, French, Italian and Swedish. Content is in content/<language>.json. Support reuses the relevant translated sections so its explanations cannot diverge from the policies. Legal HTML is generated and committed; edit the JSON sources and run:
 
     node scripts/build-legal.mjs
 
@@ -14,11 +14,11 @@ Validate with:
     node tests/landing-page.test.mjs
     node tests/legal-pages.test.mjs
 
-To compare with a local AMEN app checkout:
+To compare with a local amen app checkout:
 
     node tests/legal-pages.test.mjs --app-languages="/absolute/path/to/AMEN/AMEN/Services/LocalizationManager.swift"
 
-CI checks translation structure, paragraph links, generated files, internal links, metadata, fallback behavior, restricted-storage behavior and existing App Store routing. Shared CSS and JavaScript URLs include content hashes to prevent stale cached assets after an update. Updating content or assets without regenerating the HTML fails the check.
+CI checks translation structure, paragraph links, generated files, internal links, metadata, fallback behavior, restricted-storage behavior and existing App Store routing. It also checks lowercase branding, app-only privacy scope, support email, recipient categories and official Apple references. Shared CSS and JavaScript URLs include content hashes to prevent stale cached assets after an update. Updating content or assets without regenerating the HTML fails the check.
 
 ## Language behavior and compatibility
 
@@ -40,4 +40,6 @@ Then open http://127.0.0.1:8765/privacy.html or an explicit language page. Produ
 
 ## Legal review and implementation limits
 
-See docs/legal-review.md. These are substantial original drafts grounded in app source and official references, not a certification of legal compliance. A privacy notice cannot create an absent consent flow, enforce an age limit or verify a provider’s production configuration. Do not treat passing website checks as proof of those conditions.
+See docs/legal-review.md. The public copy uses amen branding and support email, describes infrastructure by recipient category, and covers app processing. It includes links to Apple's terms, license, privacy, cancellation and refund guidance, plus Google AI conditions and privacy information. The compatibility /imprint and /impressum routes now show general legal information, not an operator disclosure.
+
+These are substantial original drafts grounded in app source and official references, not a certification of legal compliance. Operator identity was removed at the user's request and remains an unresolved legal disclosure requirement. A privacy notice cannot create an absent consent flow, change provider eligibility rules or verify production configuration. Passing website checks does not establish those conditions.
