@@ -609,6 +609,7 @@
                 <a id="privacyLink" href="/privacy">Privacy</a>
                 <a id="termsLink" href="/terms">Terms</a>
                 <a id="supportLink" href="/support">Support</a>
+                <a id="imprintLink" href="/imprint">Legal notice</a>
             </footer>
         </section>
     </main>
@@ -643,7 +644,8 @@
                 desktopBody: 'Amen ist im App Store verfügbar. Die Android-App ist demnächst bei Google Play verfügbar.',
                 privacy: 'Datenschutz',
                 terms: 'Nutzungsbedingungen',
-                support: 'Support'
+                support: 'Support',
+                imprint: 'Impressum'
             },
             fr: {
                 pageTitle: 'Télécharger l’app Amen',
@@ -670,7 +672,8 @@
                 desktopBody: 'Amen est disponible sur l’App Store. L’app Android arrive bientôt sur Google Play.',
                 privacy: 'Confidentialité',
                 terms: 'Conditions d’utilisation',
-                support: 'Assistance'
+                support: 'Assistance',
+                imprint: 'Mentions légales'
             },
             sv: {
                 pageTitle: 'Ladda ner Amen-appen',
@@ -697,7 +700,64 @@
                 desktopBody: 'Amen finns i App Store. Android-appen kommer snart till Google Play.',
                 privacy: 'Integritet',
                 terms: 'Användarvillkor',
-                support: 'Support'
+                support: 'Support',
+                imprint: 'Juridiskt meddelande'
+            },
+            es: {
+                pageTitle: 'Descargar la app Amen',
+                pageDescription: 'Descarga Amen en el App Store. Amen para Android llegará pronto.',
+                tagline: 'Biblia · Oración · Fe',
+                inAppStatus: 'Página abierta dentro de una app',
+                restrictedHeadline: 'Descargar la app Amen',
+                restrictedExplanation: 'Los enlaces al App Store no se abren directamente en el navegador de TikTok. Abre esta página en tu navegador para descargar Amen.',
+                inAppExplanation: 'Abre esta página en tu navegador para descargar Amen desde el App Store.',
+                stepOne: 'Toca el menú de tres puntos arriba a la derecha.',
+                inAppStepOne: 'Toca Compartir o el menú de tres puntos arriba a la derecha.',
+                stepTwo: 'Selecciona «Abrir en el navegador».',
+                fallbackHint: 'Si no funciona, copia el enlace y pégalo en Safari.',
+                copyLink: 'Copiar enlace',
+                copied: 'Enlace copiado',
+                storeButton: 'Descargar en el App Store',
+                openingStore: 'Cargando el App Store',
+                redirectExplanation: 'Te redirigimos al App Store para descargar Amen.',
+                retryStoreButton: 'Abrir el App Store',
+                androidHeadline: 'Amen llegará pronto a Android',
+                androidBody: 'Amen aún no está disponible en Google Play. Vuelve pronto.',
+                androidBadge: 'Próximamente en Google Play',
+                desktopHeadline: 'Descargar la app Amen',
+                desktopBody: 'Amen está en el App Store. La app para Android llegará pronto a Google Play.',
+                privacy: 'Privacidad',
+                terms: 'Condiciones',
+                support: 'Soporte',
+                imprint: 'Aviso legal'
+            },
+            it: {
+                pageTitle: 'Scarica l’app Amen',
+                pageDescription: 'Scarica Amen dall’App Store. Amen per Android arriverà presto.',
+                tagline: 'Bibbia · Preghiera · Fede',
+                inAppStatus: 'Pagina aperta in un’app',
+                restrictedHeadline: 'Scarica l’app Amen',
+                restrictedExplanation: 'I link dell’App Store non si aprono direttamente nel browser di TikTok. Apri questa pagina nel tuo browser per scaricare Amen.',
+                inAppExplanation: 'Apri questa pagina nel tuo browser per scaricare Amen dall’App Store.',
+                stepOne: 'Tocca il menu con tre punti in alto a destra.',
+                inAppStepOne: 'Tocca Condividi o il menu con tre punti in alto a destra.',
+                stepTwo: 'Scegli «Apri nel browser».',
+                fallbackHint: 'Se non funziona, copia il link e incollalo in Safari.',
+                copyLink: 'Copia link',
+                copied: 'Link copiato',
+                storeButton: 'Scarica su App Store',
+                openingStore: 'Caricamento dell’App Store',
+                redirectExplanation: 'Ti reindirizziamo all’App Store per scaricare Amen.',
+                retryStoreButton: 'Apri App Store',
+                androidHeadline: 'Amen arriverà presto su Android',
+                androidBody: 'Amen non è ancora su Google Play. Torna presto.',
+                androidBadge: 'Presto su Google Play',
+                desktopHeadline: 'Scarica l’app Amen',
+                desktopBody: 'Amen è disponibile sull’App Store. L’app Android arriverà presto su Google Play.',
+                privacy: 'Privacy',
+                terms: 'Condizioni',
+                support: 'Assistenza',
+                imprint: 'Note legali'
             },
             en: {
                 pageTitle: 'Download the Amen app',
@@ -724,23 +784,15 @@
                 desktopBody: 'Amen is available on the App Store. The Android app is coming soon to Google Play.',
                 privacy: 'Privacy',
                 terms: 'Terms',
-                support: 'Support'
+                support: 'Support',
+                imprint: 'Legal notice'
             }
         };
 
         function detectLanguage(locales = navigator.languages || [navigator.language || 'en']) {
-            const locale = String(locales[0] || 'en').replace('_', '-');
-            const parts = locale.split('-');
-            const language = parts[0].toLowerCase();
-            const region = (parts[1] || '').toUpperCase();
-
-            if (['DE', 'AT', 'CH'].includes(region)) return 'de';
-            if (region === 'SE') return 'sv';
-            if (region === 'FR') return 'fr';
-            if (language === 'de') return 'de';
-            if (language === 'sv') return 'sv';
-            if (language === 'fr') return 'fr';
-            return 'en';
+            const primary = Array.isArray(locales) ? locales[0] : null;
+            const language = typeof primary === 'string' ? primary.trim().replace(/_/g, '-').split('-')[0].toLowerCase() : 'en';
+            return Object.prototype.hasOwnProperty.call(translations, language) ? language : 'en';
         }
 
         function detectPlatform(userAgent = navigator.userAgent, platform = navigator.platform, touchPoints = navigator.maxTouchPoints) {
@@ -831,6 +883,7 @@
             setText('privacyLink', copy.privacy);
             setText('termsLink', copy.terms);
             setText('supportLink', copy.support);
+            setText('imprintLink', copy.imprint);
 
             const statusPill = document.getElementById('statusPill');
             const steps = document.getElementById('steps');
@@ -841,10 +894,10 @@
             const comingSoon = document.getElementById('comingSoon');
             const fallbackHint = document.getElementById('fallbackHint');
 
-            if (language === 'de') {
-                document.getElementById('privacyLink').href = '/datenschutz';
-                document.getElementById('termsLink').href = '/nutzungsbedingungen';
-            }
+            document.getElementById('privacyLink').href = '/legal/' + language + '/privacy.html';
+            document.getElementById('termsLink').href = '/legal/' + language + '/terms.html';
+            document.getElementById('supportLink').href = '/legal/' + language + '/support.html';
+            document.getElementById('imprintLink').href = '/legal/' + language + '/imprint.html';
 
             if (platform === 'android') {
                 setText('headline', copy.androidHeadline);

@@ -29,12 +29,18 @@ const detectPlatform = context.detectPlatform;
 const detectInAppBrowser = context.detectInAppBrowser;
 
 assert.equal(detectLanguage(['de-DE']), 'de');
-assert.equal(detectLanguage(['en-AT']), 'de');
-assert.equal(detectLanguage(['fr-CH']), 'de');
-assert.equal(detectLanguage(['en-SE']), 'sv');
+assert.equal(detectLanguage(['en-AT']), 'en');
+assert.equal(detectLanguage(['fr-CH']), 'fr');
+assert.equal(detectLanguage(['en-SE']), 'en');
 assert.equal(detectLanguage(['sv-FI']), 'sv');
 assert.equal(detectLanguage(['fr-CA']), 'fr');
-assert.equal(detectLanguage(['es-ES']), 'en');
+assert.equal(detectLanguage(['es-ES']), 'es');
+assert.equal(detectLanguage(['it-IT']), 'it');
+assert.equal(detectLanguage(['es-DE']), 'es');
+assert.equal(detectLanguage(['pt-BR', 'de-DE']), 'en');
+assert.equal(detectLanguage(['SV_fi']), 'sv');
+assert.equal(detectLanguage(['constructor']), 'en');
+assert.equal(detectLanguage(null), 'en');
 assert.equal(detectLanguage([]), 'en');
 
 const platformFixtures = [
@@ -113,8 +119,8 @@ assert.equal(detectInAppBrowser('Mozilla/5.0 FBAV/500.0'), 'inApp');
 assert.equal(detectInAppBrowser('Mozilla/5.0 Version/18.0 Mobile Safari/604.1'), null);
 
 const localeKeys = vm.runInContext('Object.fromEntries(Object.entries(translations).map(([locale, value]) => [locale, Object.keys(value).sort()]))', context);
-assert.deepEqual(Object.keys(localeKeys).sort(), ['de', 'en', 'fr', 'sv']);
-for (const locale of ['de', 'fr', 'sv']) {
+assert.deepEqual(Object.keys(localeKeys).sort(), ['de', 'en', 'es', 'fr', 'it', 'sv']);
+for (const locale of ['de', 'es', 'fr', 'it', 'sv']) {
     assert.deepEqual(Array.from(localeKeys[locale]), Array.from(localeKeys.en), `${locale} must have the same copy keys as English`);
 }
 
@@ -126,6 +132,8 @@ assert.deepEqual(openingStoreTitles, {
     de: 'App Store wird geladen',
     fr: 'Chargement de l’App Store',
     sv: 'Laddar App Store',
+    es: 'Cargando el App Store',
+    it: 'Caricamento dell’App Store',
     en: 'Loading the App Store'
 }, 'the external-iOS loading headline must use the approved localized titles without ellipses');
 
@@ -176,7 +184,7 @@ function runInitialization(fixture) {
     let nextTimer = 1;
     const elementIds = [
         'brandTagline', 'stepOne', 'stepTwo', 'copyButtonLabel', 'fallbackHint',
-        'storeLinkLabel', 'comingSoonLabel', 'privacyLink', 'termsLink', 'supportLink',
+        'storeLinkLabel', 'comingSoonLabel', 'privacyLink', 'termsLink', 'supportLink', 'imprintLink',
         'statusPill', 'steps', 'storeLink', 'copyButton', 'lead', 'comingSoon', 'headline'
     ];
     const elements = Object.fromEntries(elementIds.map((id) => [id, {
@@ -374,9 +382,11 @@ for (const htmlFile of fs.readdirSync(repoRoot).filter((name) => name.endsWith('
     assert.doesNotMatch(source, /Amen \(1\)\.png/, `${htmlFile} should use the optimized icon`);
 }
 
-for (const legacyPage of ['appstore_blocked.html', 'datenschutz.html', 'nutzungsbedingungen.html', 'privacy.html', 'support.html', 'terms.html']) {
-    const source = fs.readFileSync(path.join(repoRoot, legacyPage), 'utf8');
-    assert.match(source, /<style>\s*\*\s*\{\s*margin:\s*0;/, `${legacyPage} must retain its universal CSS reset`);
+const blockedPage = fs.readFileSync(path.join(repoRoot, 'appstore_blocked.html'), 'utf8');
+assert.match(blockedPage, /<style>\s*\*\s*\{\s*margin:\s*0;/, 'the existing blocked-store page retains its reset');
+for (const legalPage of ['datenschutz.html', 'nutzungsbedingungen.html', 'privacy.html', 'support.html', 'terms.html']) {
+    const source = fs.readFileSync(path.join(repoRoot, legalPage), 'utf8');
+    assert.match(source, /href="\/assets\/legal.css\?v=[a-f0-9]{12}"/, legalPage + ' must use the current shared legal stylesheet');
 }
 
 console.log('Amen landing-page checks passed.');
