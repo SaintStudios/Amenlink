@@ -346,8 +346,8 @@ for (const requiredCopy of [
     assert.match(html, new RegExp(requiredCopy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
 }
 assert.match(html, /if \(isRestricted\)[\s\S]*?setText\('stepOne', copy\.inAppStepOne\)/);
-assert.match(html, /<link rel="canonical" href="https:\/\/amenbible\.app\/">/);
-assert.match(html, /<meta property="og:image" content="https:\/\/amenbible\.app\/og-image\.png">/);
+assert.match(html, /<link rel="canonical" href="https:\/\/amen-app\.com\/">/);
+assert.match(html, /<meta property="og:image" content="https:\/\/amen-app\.com\/og-image\.png">/);
 assert.match(html, /<meta name="theme-color" content="#fcf7ed">/);
 assert.match(html, /min-height: 100dvh/);
 assert.match(html, /overflow-y: auto/);
@@ -364,8 +364,8 @@ assert.ok(fs.statSync(socialImagePath).size < 200_000, 'Open Graph image should 
 
 for (const legalFile of ['privacy.html', 'datenschutz.html']) {
     const source = fs.readFileSync(path.join(repoRoot, legalFile), 'utf8');
-    assert.match(source, /amenbible\.app/);
-    assert.doesNotMatch(source, /amen-app\.com|SwiperJS|Font Awesome|fonts\.googleapis\.com/);
+    assert.match(source, /amen-app\.com/);
+    assert.doesNotMatch(source, /amenbible\.app|SwiperJS|Font Awesome|fonts\.googleapis\.com/);
 }
 
 for (const htmlFile of fs.readdirSync(repoRoot).filter((name) => name.endsWith('.html'))) {
