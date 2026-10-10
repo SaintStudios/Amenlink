@@ -1,0 +1,457 @@
+{
+  "ui": {
+    "home": "amen-Website",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "support": "Support kontaktieren",
+    "language": "Sprache",
+    "auto": "Browsersprache verwenden",
+    "contents": "In diesem Dokument",
+    "summary": "Das Wichtigste",
+    "updated": "Zuletzt aktualisiert",
+    "version": "Version",
+    "print": "Drucken / als PDF speichern",
+    "skip": "Zum Dokument springen",
+    "top": "Nach oben",
+    "documents": "Rechtliche Informationen",
+    "copyright": "amen",
+    "privacyDescription": "Wie die amen-App Konto-, Lese-, Gebets-, Chat- und Kaufdaten nutzt und wie Sie Ihre Datenschutzrechte ausüben.",
+    "termsDescription": "Bedingungen für die christliche amen-App, Bibellesen, Gebet, Nema-KI-Chat, Abonnements und Verbraucherrechte.",
+    "email": "amenapphilfe@gmail.com",
+    "cancel": "Apple-Abonnement kündigen",
+    "refund": "Erstattung bei Apple beantragen",
+    "appleEula": "Apple-Standardlizenzvertrag",
+    "google": "Bedingungen der Google-KI-Dienste",
+    "providers": "Weitere Informationen",
+    "applePrivacy": "Apple-Datenschutzerklärung",
+    "imprint": "Rechtliche Hinweise",
+    "supportDescription": "Kontaktieren Sie den amen-Support unter amenapphilfe@gmail.com bei Fragen zur App, zum Konto, zu Abonnements oder zum Datenschutz.",
+    "imprintDescription": "Nutzungsbedingungen, Datenschutzinformationen und Support für die amen-App.",
+    "googlePrivacy": "Google-Datenschutzerklärung",
+    "appleTerms": "Apple-App-Store-Bedingungen und Nutzungsregeln",
+    "appleInformation": "Informationen von Apple",
+    "more": "Hier erfahren Sie mehr"
+  },
+  "privacy": {
+    "intro": "amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
+    "summary": [
+      "Nema nutzt Google-KI-Dienste für den KI-Chat. Ihre Nachricht und der relevante Gesprächskontext werden zur Erstellung einer Antwort an Google übermittelt.",
+      "Kontodaten, gespeicherte Gespräche und Leseaktivitäten ermöglichen die gewählten Funktionen. Käufe werden über Ihr Apple-Konto verwaltet.",
+      "Gebete, Glaubenseinstellungen und Gespräche können sensible personenbezogene Daten enthalten. Ihre Datenschutzrechte und erforderliche Einwilligungen bleiben geschützt.",
+      "Datenschutzanfragen richten Sie an den Support unter amenapphilfe@gmail.com. Apple-Abonnements müssen unabhängig vom Löschen der App oder eines amen-Kontos gekündigt werden."
+    ],
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Kontakt zum Datenschutz",
+        "paragraphs": [
+          "Bei Fragen zur Verwendung personenbezogener Daten in der amen-App kontaktieren Sie den Support unter {{email}}. Diese Adresse steht auch für Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf von Einwilligungen und andere Datenschutzanfragen zur Verfügung.",
+          "Diese Erklärung beschreibt die mit der amen-App verbundene Verarbeitung. Apple und Google verarbeiten auch Daten für ihre eigenen Dienste nach ihren jeweiligen Datenschutzerklärungen. Ihre Zuständigkeiten ersetzen nicht die mit amen verbundenen Verantwortlichkeiten und schränken Ihre Rechte nicht ein."
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Support und E-Mail-Korrespondenz",
+        "paragraphs": [
+          "Wenn Sie den Support kontaktieren, werden Ihre E-Mail-Adresse, Nachricht, Anhänge und zur Bearbeitung erforderliche Angaben über den Support-E-Mail-Dienst verarbeitet. Senden Sie bitte keine Passwörter, vollständigen Zahlungsdaten oder sensiblen Angaben, die zur Beantwortung Ihrer Frage nicht benötigt werden.",
+          "Vertragsbezogene und vorvertragliche Anfragen beruhen auf Art. 6 Abs. 1 lit. b DSGVO; sonstige Korrespondenz und Beschwerden auf lit. f. Relevante Nachrichten können zur Bearbeitung, Erfüllung gesetzlicher Pflichten oder Durchsetzung beziehungsweise Verteidigung von Ansprüchen aufbewahrt werden. Sensible Daten brauchen zusätzlich eine zulässige besondere Rechtsgrundlage."
+        ]
+      },
+      {
+        "id": "accounts",
+        "title": "Konten, Anmeldung und Profil",
+        "paragraphs": [
+          "Konto- und Cloud-Dienstleister ermöglichen Anmeldung, Synchronisierung und Speicherung. Je nach Auswahl gehören dazu eine Kontokennung, E-Mail-Adresse, Sitzungsdaten, Name, gewähltes Profilbild sowie Erstellungs- und Änderungszeiten. Mit Apple anmelden kann eine Apple-Kennung und eine Relay-E-Mail-Adresse bereitstellen.",
+          "Zwecke sind Anmeldung, Wiederherstellung, Synchronisierung und Personalisierung, regelmäßig auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Sicherheitsmaßnahmen können auf lit. f, gesetzlich erforderliche Unterlagen auf lit. c beruhen. Zugangsdaten für Sitzungen und Einstellungen können auch auf dem Gerät gespeichert werden."
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Leseaktivität, Notizen und Personalisierung",
+        "paragraphs": [
+          "Die App verwendet bei Nutzung der jeweiligen Funktion Sprach- und Bibelversionswahl, Leseaktivitäten, Serien, Erfolge, gespeicherte Verse, Markierungen, Notizen und Einstellungen. Daten können auf dem Gerät gespeichert und mit Ihrem Konto synchronisiert werden. Profil- oder Ranglistenfunktionen können den dafür gewählten Namen, das Bild oder Aktivitäten anzeigen.",
+          "Die Bereitstellung dieser Funktionen beruht gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO. Notizen, Konfession und Glaubensziele können Überzeugungen oder persönliche Umstände offenlegen und benötigen den unten beschriebenen zusätzlichen Schutz. Verwenden Sie keine vertraulichen Angaben über Dritte in geteilten Profilfeldern."
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Nema-KI-Chat",
+        "paragraphs": [
+          "Nema nutzt ein KI-Modell von Google für den KI-Chat in amen. Ihre Nachricht und relevante Gesprächsinhalte werden zur Erstellung einer Antwort an Google übermittelt. Zur Personalisierung können Name, gewählte Sprache und Glaubenseinstellungen einbezogen werden. Das Gespräch wird von KI erzeugt und nicht von einer menschlichen Beratungsperson geführt.",
+          "Google-KI-Dienste können auch Bibelerklärungen, persönliche Lesevorschläge und andere angeforderte Erstellungsfunktionen unterstützen. Dazu werden relevante Antworten, Bibelstellen oder Texte verwendet. Geben Sie keine Passwörter, Zahlungsdaten oder vertraulichen Angaben über Dritte ein. Angeforderte Funktionen beruhen gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO; für sensible Daten ist zusätzlich eine zulässige Voraussetzung erforderlich."
+        ]
+      },
+      {
+        "id": "google",
+        "title": "Google-KI-Dienste",
+        "paragraphs": [
+          "Google verarbeitet die an seine KI-Dienste übermittelten Angaben zur Erstellung der angeforderten Antwort. Der Umgang mit Eingaben und Antworten hängt von den geltenden Dienstbedingungen und Einstellungen ab, einschließlich Regelungen zu Modellverbesserung, Sicherheit und Aufbewahrung. Die Bedingungen finden Sie unter {{google}}.",
+          "Sicherheit, Missbrauchsabwehr und gesetzliche Pflichten können eine vorübergehende Aufbewahrung oder Prüfung von KI-Anfragen erfordern. Diese Erklärung verspricht nicht die sofortige Löschung sämtlicher Anbieteraufzeichnungen. Googles eigene Datenschutzinformationen finden Sie unter {{googlePrivacy}}. Fragen zu Ihren Chatdaten können Sie an den Support richten."
+        ]
+      },
+      {
+        "id": "chat-storage",
+        "title": "Gesprächsverlauf und Löschung",
+        "paragraphs": [
+          "Gespräche, Nachrichten, Antworten und Titel können auf Ihrem Gerät und mit Ihrem Konto gespeichert werden, damit Sie später darauf zugreifen können. Das Schließen eines Gesprächs oder der App löscht den Verlauf nicht. Verwenden Sie verfügbare Gesprächsoptionen oder kontaktieren Sie den Support, um gespeicherte Angaben entfernen zu lassen.",
+          "Nutzen Sie vorhandene Gesprächssteuerungen oder kontaktieren Sie uns für Löschung oder Kopien. Zugehörige Kontodaten, Anbieter und Sicherungen müssen berücksichtigt werden. Exportierte oder geteilte Kopien werden dadurch nicht zurückgerufen. Gesetzlich erforderliche oder zur Rechtsverteidigung notwendige Speicherung kann mit eingeschränkter Nutzung fortbestehen."
+        ]
+      },
+      {
+        "id": "audio",
+        "title": "Vorlesefunktion",
+        "paragraphs": [
+          "Bei angeforderter Spracherzeugung sendet die App den Vorlesetext, Stimmeinstellungen und Generierungsanweisungen an Google. Dazu können Bibeltexte, Andachten oder Gebete gehören. Erzeugtes Audio und Stimmeninformationen können zur Wiedergabe auf dem Gerät zwischengespeichert werden.",
+          "Die Vorlesefunktion erzeugt Sprache aus Text und zeichnet selbst kein Mikrofon auf. Relevanter Text wird für das angeforderte Audio verarbeitet; Sicherheits- und gesetzlich erforderliche Anbieteraufzeichnungen können hinzukommen. Die Wiedergabe beruht gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz bei sensiblen personenbezogenen Angaben."
+        ]
+      },
+      {
+        "id": "bible-lock",
+        "title": "Bible Lock und Bildschirmzeit",
+        "paragraphs": [
+          "Bible Lock nutzt nach Ihrer Freigabe Apples Bildschirmzeitfunktionen. Ausgewählte Apps, Zeitpläne, Entsperreinstellungen und Lesefortschritte werden für die Funktion verwendet. Die Freigabe gewährt amen keinen allgemeinen Zugriff auf Nachrichten oder den Browserverlauf. Sie können den Bildschirmzeitzugriff in den Systemeinstellungen verwalten oder widerrufen.",
+          "KI-Leseempfehlungen können ausgewählte Bedürfnisse und Bibelstellenvorgaben an Google senden. Ein Widerruf der Bildschirmzeitfreigabe in den Systemeinstellungen beeinflusst die Funktion. Funktionseinstellungen beruhen auf Art. 6 Abs. 1 lit. b; Apple verantwortet seine Framework-Verarbeitung. Gerätefreigaben ersetzen keine DSGVO-Einwilligung für andere Analysen."
+        ]
+      },
+      {
+        "id": "photos-notifications",
+        "title": "Profilbilder, Mitteilungen und Widgets",
+        "paragraphs": [
+          "Wenn Sie ein Profilbild speichern, wird das ausgewählte Bild beim entsprechenden Kontodienst gespeichert. Geteilte Bildlinks können anderen Zugriff auf das Bild geben. Mitteilungen nutzen Berechtigungsstatus, Einstellungen und bei aktivierter Fernzustellung eine Push-Gerätekennung. Apples Datenschutzinformationen finden Sie unter {{applePrivacy}}.",
+          "Widgets und Erweiterungen greifen auf benötigte gemeinsame App-Daten zu. Foto-, Mitteilungs- und Bildschirmzeitberechtigungen können in iOS geändert werden. Eine Ablehnung kann die entsprechende Funktion einschränken. Die Freigabe einer Gerätefunktion ist von Einwilligungen für Werbung oder sensible Daten zu unterscheiden."
+        ]
+      },
+      {
+        "id": "purchases",
+        "title": "Käufe und Apple",
+        "paragraphs": [
+          "Apple wickelt App-Store-Zahlungen und Abrechnung ab. amen erhält bei Apple-In-App-Käufen nicht Ihre vollständige Zahlungskartennummer. Dienste zur Kaufprüfung verwenden Kontokennungen, Transaktionsdaten, Produkte, Teststatus und Abonnementberechtigungen, um Käufe zu erkennen. Apples Kauf- und Nutzungsregeln finden Sie unter {{appleTerms}}.",
+          "Kaufstatus und technische Kennungen können Ihrem amen-Konto zugeordnet und für die Zuordnung von Abonnements verwendet werden. Die Zugangsverwaltung beruht gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO, gesetzlich erforderliche Nachweise auf lit. c und optionales Marketing auf Einwilligung, soweit erforderlich. Apples Verarbeitung von Kaufdaten erläutert {{applePrivacy}}."
+        ]
+      },
+      {
+        "id": "analytics",
+        "title": "App-Messung und Zuordnung",
+        "paragraphs": [
+          "Dienstleister für Nutzungsmessung und Zuordnung erhalten App-Ereignisse und technische Angaben. Dazu können Einführungsschritte, gewählte Glaubenseinstellungen und Ziele, Bibelversionen, Aktivitäten an Kaufangeboten, kaufbezogene Ereignisse, App-Version, Zeitpunkte und Kennungen gehören. Kauf- und App-Kennungen können zur Zuordnung von Abonnements verknüpft werden.",
+          "Apples Trackingfreigabe beendet nicht zwingend jedes App- oder Betriebsereignis. Werbezuordnung kann Marketingpartner einbeziehen; optionales Tracking benötigt eine Einwilligung, soweit vorgeschrieben. Glaubenseinstellungen können religiöse Überzeugungen offenlegen und benötigen mehr als ein gewöhnliches berechtigtes Interesse. Fragen zu Empfängern, Berechtigungen und Datenschutzoptionen richten Sie an {{email}}."
+        ]
+      },
+      {
+        "id": "sensitive",
+        "title": "Religion und andere sensible Daten",
+        "paragraphs": [
+          "Konfession, Gebete, Glaubensziele und Gespräche können Religion, Gesundheit oder andere besondere Datenkategorien nach Art. 9 DSGVO offenlegen. Erforderlich sind sowohl eine Art.-6-Grundlage als auch eine Art.-9-Voraussetzung, bei optionaler Glaubenspersonalisierung regelmäßig ausdrückliche Einwilligung. Lesen der Erklärung, App-Nutzung oder Apple-Trackingfreigabe sind keine solche Einwilligung.",
+          "Widerruf, Einschränkung oder Löschung können Sie über {{email}} verlangen; vorhandene Einstellungen können Sie ändern. Ein Widerruf berührt frühere rechtmäßige Verarbeitung nicht. Geben Sie sensible Daten Dritter nur mit Befugnis ein. Die Weitergabe sensibler Auswahlwerte an Analyseanbieter braucht eine eigene Rechtfertigung; dieser Text schafft weder Einwilligung noch Rechtmäßigkeit."
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Kinder und elterliche Zustimmung",
+        "paragraphs": [
+          "Die Nutzung von amen muss geltenden Kinderdatenschutzregeln, erforderlicher wirksamer elterlicher Zustimmung und den Bedingungen externer Dienste entsprechen. Eine App-Store-Inhaltsbewertung ersetzt diese Voraussetzungen nicht. Die verlinkten Bedingungen der Google-KI-Dienste bleiben für Funktionen relevant, die diese Dienste verwenden.",
+          "Wenn eine Einwilligung nötig ist, richten sich die Anforderungen für Kinder nach dem örtlichen Recht. Kontaktieren Sie den Support, wenn Daten eines Kindes ohne erforderliche Zustimmung verarbeitet wurden. Wir prüfen die Anfrage und veranlassen die unter den Umständen erforderliche Einschränkung oder Löschung."
+        ]
+      },
+      {
+        "id": "legal-bases",
+        "title": "Zwecke und Rechtsgrundlagen",
+        "paragraphs": [
+          "Die Grundlage richtet sich nach dem Zweck: Art. 6 Abs. 1 lit. b für angeforderte Konto-, Lese-, KI- und Kaufzugangsfunktionen; lit. c für gesetzliche Pflichten; lit. f für verhältnismäßige Sicherheit, Betrieb und nichtvertragliche Korrespondenz; lit. a für einwilligungsbedürftige Verarbeitung.",
+          "Zugriffe auf Gerätespeicher können zusätzlich Einwilligung benötigen, sofern sie nicht unbedingt erforderlich sind. Besondere Daten benötigen eine Art.-9-Voraussetzung. Einwilligungsbedürftige Werbung lässt sich nicht durch pauschale berechtigte Interessen ersetzen. Pflichtangaben sind für die jeweilige Leistung nötig; optionale Angaben und Freigaben können mit möglichen Funktionseinschränkungen abgelehnt werden."
+        ]
+      },
+      {
+        "id": "recipients",
+        "title": "Dienstleister und andere Empfänger",
+        "paragraphs": [
+          "Empfängerkategorien umfassen Anbieter von Kontoauthentifizierung, Cloud-Hosting und Speicherung, Kaufprüfung, Nutzungsmessung, Werbezuordnung und Support-E-Mail. Google stellt KI-Dienste bereit. Apple ermöglicht App-Store-Käufe, Anmeldung, Mitteilungen und betreffende Gerätefunktionen. Übermittelte Angaben hängen von Funktion und Zweck ab.",
+          "Erforderliche Angaben können auch an befugte Supportpersonen, professionelle Beratende oder gesetzlich zuständige Behörden gehen. Verarbeitung und internationale Übermittlungen unterliegen den geltenden Schutzmaßnahmen. Weitere Angaben zu Empfängern und Vereinbarungen für Ihre Daten erhalten Sie über {{email}}."
+        ]
+      },
+      {
+        "id": "transfers",
+        "title": "Internationale Übermittlungen",
+        "paragraphs": [
+          "Anbieter können außerhalb Ihres Landes und des Europäischen Wirtschaftsraums tätig sein oder befugten Supportzugriff ermöglichen. Serverregion, Supportzugriff und Unterauftragnehmer sind gemeinsam zu berücksichtigen. Eine EU-Datenbankregion schließt nicht jede internationale Übermittlung aus.",
+          "Wo die DSGVO-Übermittlungsregeln gelten, braucht es geeignete Absicherung, etwa einen einschlägigen Angemessenheitsbeschluss oder vertragliche Garantien wie Standardvertragsklauseln und gegebenenfalls zusätzliche Maßnahmen. Informationen zu den für Ihre Daten relevanten Garantien erhalten Sie auf Anfrage. Ausschließliche EU-Speicherung wird nicht allgemein zugesichert."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Speicherdauer und Sicherungen",
+        "paragraphs": [
+          "Konto- und synchronisierte Inhalte bleiben für Konto und gewählte Funktionen gespeichert, bis sie entfernt oder nicht mehr benötigt werden. Lokale Zwischenspeicher hängen von Geräte- und App-Steuerungen ab, Supportdaten von Anfrage und gesetzlichen Pflichten. Transaktionen, Betrugsnachweise und Streitfälle können längere gesetzlich zulässige Aufbewahrung erfordern.",
+          "Cloud-, KI- und Messdienste bewahren Daten nach dem jeweiligen Zweck, den Vereinbarungen und gesetzlichen Pflichten auf. Gelöschte Einträge können bis zum Ablauf in geschützten Sicherungen verbleiben; gesetzlich erforderliche Nachweise können mit eingeschränktem Zugriff aufbewahrt werden. Die für Ihre Angaben geltenden Kriterien können Sie beim Support erfragen."
+        ]
+      },
+      {
+        "id": "account-deletion",
+        "title": "Konto löschen",
+        "paragraphs": [
+          "Sie können die Kontolöschung in der App beantragen. Bei fehlendem Kontozugriff oder einer nicht abgeschlossenen Anfrage kontaktieren Sie den Support unter {{email}}. Eine angemessene Identitätsprüfung kann zum Schutz vor unbefugtem Zugriff oder Löschen nötig sein. Für die Prüfung müssen Sie kein Passwort senden.",
+          "Deinstallation löscht Backend-Daten nicht. Kontolöschung kündigt kein Apple-Abonnement: Kündigen Sie separat über {{cancel}}. Gerätekopien, exportierte Inhalte, auslaufende Sicherungen und gesetzlich erforderliche Aufbewahrung sind von der Entfernung des aktiven Kontos zu unterscheiden."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Ihre Rechte und Beschwerden",
+        "paragraphs": [
+          "Soweit die DSGVO gilt, können Sie Auskunft, Berichtigung, Löschung, Einschränkung und bei erfüllten Voraussetzungen Datenübertragbarkeit verlangen. Sie können Einwilligungen widerrufen und einer Verarbeitung aufgrund berechtigter Interessen aus Gründen Ihrer besonderen Situation widersprechen. Gegen Direktwerbung können Sie jederzeit Widerspruch erheben.",
+          "Anfragen richten Sie an {{email}}. Wir antworten grundsätzlich innerhalb eines Monats; zulässige Verlängerungen erfordern Mitteilung und Begründung. Anfragen sind grundsätzlich kostenlos, vorbehaltlich gesetzlicher Ausnahmen. Beschwerden sind bei der Aufsichtsbehörde am Wohn-, Arbeits- oder mutmaßlichen Verletzungsort möglich, ohne zuvor amen kontaktieren zu müssen."
+        ]
+      },
+      {
+        "id": "security-decisions",
+        "title": "Sicherheit und automatisierte Verarbeitung",
+        "paragraphs": [
+          "Wir verwenden, soweit unterstützt, verschlüsselte Übertragungen, Zugriffskontrollen und angemessene technische und organisatorische Schutzmaßnahmen. Absolute Sicherheit kann kein Onlinedienst gewährleisten. Schützen Sie Gerät und Konto und melden Sie vermuteten unbefugten Zugriff.",
+          "KI erzeugt Antworten und Personalisierung; automatische Prüfungen können Zugang und Kaufberechtigungen verwalten. Diese Funktionen werden nicht als Entscheidungen über rechtliche Ansprüche, Kredit, Beschäftigung oder Behandlung angeboten. Wenn ein automatisiertes Ergebnis Sie erheblich betrifft, kontaktieren Sie uns für Prüfung und die einschlägigen Schutzrechte."
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "Änderungen und weitere Dokumente",
+        "paragraphs": [
+          "Datum und Version oben kennzeichnen diese Erklärung. Änderungen an Diensten, Empfängern oder Recht können Aktualisierungen und gegebenenfalls zusätzliche Hinweise erfordern. Eine veröffentlichte Aktualisierung erlaubt keinen neuen einwilligungsbedürftigen Zweck.",
+          "Die {{terms}} erklären App-Nutzung und Käufe. Aktualisierungen dieser Erklärung schränken zwingende Datenschutzrechte nicht ein. Fragen zum Dokument oder zur Verwendung Ihrer Daten richten Sie an den Support unter {{email}}."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "intro": "amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Bedingungen erklären die App-Nutzung einschließlich Nema-KI-Chat, Kontofunktionen und Abonnements. Lesen Sie auch die Datenschutzerklärung und das vor einem Kauf angezeigte Angebot. Ihre gesetzlichen Verbraucherrechte bleiben geschützt.",
+    "summary": [
+      "Nema nutzt Google-KI-Dienste für den KI-Chat. Antworten können unzutreffend sein; prüfen Sie wichtige Aussagen und Bibelzitate.",
+      "Vor der Bestätigung zeigt das Kaufangebot Preis, Abrechnungszeitraum, Testbedingungen und enthaltenen Zugang.",
+      "Apple-Abonnements verlängern sich bis zur Kündigung. Das Löschen der App oder Ihres amen-Kontos beendet die Apple-Abrechnung nicht.",
+      "Diese Bedingungen wahren gesetzliche Verbraucherrechte. Apples Kaufregeln und die geltende App-Lizenz bleiben anwendbar."
+    ],
+    "sections": [
+      {
+        "id": "provider",
+        "title": "Geltungsbereich und Vertrag",
+        "paragraphs": [
+          "Diese Bedingungen gelten für die amen-App für iOS und ihre Bibel-, Gebets- und christlichen Reflexionsfunktionen. Vertragsfragen richten Sie an den Support unter {{email}}. Ihre Beziehung zu Apple für dessen eigene App-Store-Dienste folgt den Regeln Ihres Store-Landes; siehe {{appleTerms}}.",
+          "Ein Vertrag entsteht im jeweiligen Registrierungs-, Zustimmungs- oder Kaufverfahren, nachdem Bedingungen und Angebot zugänglich gemacht wurden. Bloße Veröffentlichung ersetzt keine erforderliche Zustimmung. Individualvereinbarungen und zwingendes Recht haben Vorrang."
+        ]
+      },
+      {
+        "id": "service",
+        "title": "Leistungen von amen",
+        "paragraphs": [
+          "amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritten und zugehörigen Funktionen. Nema bietet KI-Chat mit Google-KI-Diensten. Auch manche Lesevorschläge und Audiofunktionen nutzen KI. Die Verfügbarkeit hängt von App-Version und Zugang ab; Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
+          "Das konkrete Angebot definiert kostenpflichtigen Zugang. Diese Bedingungen versprechen keine feste Zahl kostenloser Nachrichten, ein bestimmtes KI-Modell, jede Übersetzung, ewigen Betrieb oder Funktionen anderer Versionen. Rechtlich verbindliche Beschreibungen und Leistungszusagen bleiben verbindlich."
+        ]
+      },
+      {
+        "id": "eligibility",
+        "title": "amen und externe Dienste nutzen",
+        "paragraphs": [
+          "Sie müssen rechtlich zum betreffenden Vertrag befähigt sein oder, soweit erforderlich, eine wirksame Zustimmung von Eltern oder Sorgeberechtigten haben. Nutzen Sie externe Dienste nach deren geltenden Bedingungen. Nema nutzt Google-KI-Dienste; die Anbieterbedingungen finden Sie unter {{google}}.",
+          "Kinderdatenschutz und Einwilligungsvoraussetzungen richten sich nach dem örtlichen Recht. Käufe benötigen die für das verwendete Apple-Konto geltende Zahlungs- und Familienfreigabe. Die Inhaltsbewertung der App ersetzt weder gesetzliche Voraussetzungen noch die Bedingungen anderer Dienste."
+        ]
+      },
+      {
+        "id": "accounts",
+        "title": "Konto und Kontosicherheit",
+        "paragraphs": [
+          "Bestimmte Funktionen benötigen Konto und Internetzugang. Halten Sie erforderliche Angaben und Wiederherstellungsdaten aktuell, schützen Sie Zugangsdaten und verwenden Sie fremde Konten nur mit Befugnis. Melden Sie verdächtige Zugriffe zeitnah. Nicht jedes Ereignis aufgrund eines außerhalb Ihrer Kontrolle liegenden Fehlers wird Ihnen automatisch zugerechnet.",
+          "Ein gewählter Name erlaubt weder Markenverletzungen noch Identitätstäuschung. Synchronisierung kann erfolgreiche Anmeldung und kompatible Versionen voraussetzen. Bewahren Sie wichtige Informationen zusätzlich selbst auf; dieser Hinweis vermindert keine Pflicht von amen zur vertragsgemäßen Leistung."
+        ]
+      },
+      {
+        "id": "license",
+        "title": "Nutzungslizenz",
+        "paragraphs": [
+          "Nach dem geltenden Vertrag und Recht erhalten Sie ein beschränktes, nicht ausschließliches Recht zur persönlichen Nutzung auf kompatiblen Geräten, die Sie besitzen oder kontrollieren. Die App-Lizenz finden Sie unter {{appleEula}}. Apples Nutzungs- und Familienfreigaberegeln stehen unter {{appleTerms}}. Geistiges Eigentum an der Software wird nicht übertragen.",
+          "Unzulässige Weiterverbreitung, gewerbliche Verwertung, Umgehung von Zugangssperren, Sicherheitsstörungen und rechtswidrige Inhaltsextraktion sind untersagt. Zwingende Rechte, etwa zu Interoperabilität, Barrierefreiheit, Zitaten oder gesetzlichen Ausnahmen, bleiben bestehen. Einschränkung und Kündigung folgen den untenstehenden Regeln statt einem beliebigen Widerrufsrecht."
+        ]
+      },
+      {
+        "id": "bible",
+        "title": "Bibeltexte und geistliche Inhalte",
+        "paragraphs": [
+          "Übersetzungen, Kommentare, Bilder und andere Inhalte können amen oder Drittlizenzgebern gehören. Wortlaut und konfessionelle Auslegung unterscheiden sich. Eine erzeugte Umschreibung ist kein exaktes Bibelzitat; prüfen Sie Stellen und Zitate in der gewünschten Übersetzung.",
+          "Nutzen Sie Teilfunktionen bestimmungsgemäß und beachten Sie Quellenangaben und Lizenzen. App-Zugriff erlaubt nicht automatisch die Wiedergabe vollständiger Übersetzungen, den Aufbau konkurrierender Datenbanken oder gewerbliche Veröffentlichung geschützter Inhalte. Gesetzliche Zitat- und Nutzungsrechte bleiben bestehen."
+        ]
+      },
+      {
+        "id": "ai",
+        "title": "Nema und KI-Ausgaben",
+        "paragraphs": [
+          "Nema nutzt ein KI-Modell von Google für Gespräche zu Bibelfragen und christlicher Reflexion. Antworten werden von KI erstellt und können unzutreffende Aussagen, erfundene Zitate, falsche Bibelstellen oder unvollständige Auslegungen enthalten. Lesen Sie Antworten sorgfältig und prüfen Sie wichtige Bibelzitate in Ihrer verwendeten Übersetzung.",
+          "Prüfen Sie wichtige Antworten unabhängig. Ähnliche Ausgaben können für andere entstehen; rechtlicher Schutz und Exklusivität sind nicht garantiert. Stellen Sie KI-Ausgaben nicht als überprüfte Fachberatung oder echte Äußerung einer anderen Person dar. Verfügbarkeit, Geschwindigkeit und Modelle können unter Wahrung Ihrer vertraglichen und gesetzlichen Rechte variieren."
+        ]
+      },
+      {
+        "id": "professional-advice",
+        "title": "Fachberatung und Notfälle",
+        "paragraphs": [
+          "amen unterstützt Lesen und Reflexion, bietet aber keine Diagnose, Behandlung, Psychotherapie, Rechts- oder Finanzberatung, Notfallüberwachung oder vertrauliche Seelsorgebeziehung. Geistliche Gespräche ersetzen keine qualifizierte Beratung unter Berücksichtigung Ihrer Umstände.",
+          "Bei unmittelbarer Gefahr kontaktieren Sie örtliche Notfall- oder Krisendienste. Verlassen Sie sich nicht auf rechtzeitige menschliche Chatprüfung. Treffen Sie Medikamenten-, Sicherheits-, Rechts- oder Finanzentscheidungen nicht allein aufgrund von KI-Ausgaben. Gesetzlich nicht ausschließbare Haftung bleibt bestehen."
+        ]
+      },
+      {
+        "id": "screen-time",
+        "title": "Bible Lock und Gerätefreigaben",
+        "paragraphs": [
+          "Bible Lock hängt von Apple-Freigaben, Systemunterstützung, ausgewählten Apps und Zeitplänen ab und kann ausgewählte Aktivitäten sperren. Prüfen Sie die Auswahl und behalten Sie Zugang zu wichtigen Gerätefunktionen. Freigaben können in den Systemeinstellungen verwaltet werden.",
+          "Systemgrenzen, widerrufene Freigaben oder Unterbrechungen können Sperren und Entsperren beeinflussen. Die Funktion dient persönlichen Routinen und garantiert weder Aufsicht, Sicherheit, Behandlung noch lückenlose Sperrwirkung. KI-Leseempfehlungen müssen wie andere KI-Ausgaben geprüft werden."
+        ]
+      },
+      {
+        "id": "your-content",
+        "title": "Eigene Inhalte und eingeräumte Rechte",
+        "paragraphs": [
+          "Ihre Rechte an Nachrichten, Notizen, Bildern und sonstigen Eingaben bleiben bei Ihnen. amen und notwendige Anbieter dürfen sie nur insoweit verarbeiten, speichern und übertragen, wie gewünschte Funktionen, Sicherheit und rechtmäßige Pflichten es erfordern, unter Beachtung von Datenschutz und Recht.",
+          "Dies erlaubt nicht pauschal die Veröffentlichung privater Chats, Werbung mit Ihrem Namen oder zweckfremdes Modelltraining. Anbieter-KI-Verarbeitung beschreibt die {{privacy}}. Übermitteln Sie nur rechtmäßig nutzbare Inhalte und keine unnötigen sensiblen Daten Dritter. Geteilte und exportierte Kopien können bei Empfängern verbleiben."
+        ]
+      },
+      {
+        "id": "acceptable-use",
+        "title": "Zulässige Nutzung",
+        "paragraphs": [
+          "Untersagt sind rechtswidrige Handlungen, Drohungen, Belästigung, Ausbeutung von Kindern, Verletzung fremder Schutz- oder Datenschutzrechte, Schadsoftware, unbefugter Zugriff und gezielte Umgehung von Sicherheits- oder Zahlungskontrollen. Automatisierte übermäßige Anfragen dürfen den Dienst nicht beeinträchtigen oder zulässige Limits umgehen.",
+          "Sachliche religiöse Gespräche, Fragen und Kritik sind kein Missbrauch an sich. Maßnahmen müssen verhältnismäßig und gesetzeskonform sein. Melden Sie Missbrauch, Verletzungen oder Sicherheitsprobleme an {{email}} mit erforderlichen Angaben, ohne unnötige persönliche oder rechtswidrige Materialien zu senden."
+        ]
+      },
+      {
+        "id": "paid-access",
+        "title": "Kostenpflichtiger Zugang und Angebot",
+        "paragraphs": [
+          "amen kann Apple-Abonnements und Einmalkäufe anbieten. Vor Bestätigung zeigt der Kaufdialog Produkt, Preis, Währung, Zeitraum, Test- oder Sonderkonditionen und enthaltenen Zugang. Dieses konkrete Angebot gilt; allgemeine Website-Angaben ersetzen es nicht.",
+          "Preise und Verfügbarkeit können nach Store-Land, Steuern, Produkt und Angebotsberechtigung variieren. Käufe werden Ihrem Apple-Konto belastet; Kaufprüfdienste helfen, den Zugang zu erkennen. amen erhält nicht Ihre vollständige Zahlungskartennummer. Tests und Aktionen gelten nur, wenn die Bestätigung sie enthält. Apples Regeln finden Sie unter {{appleTerms}}."
+        ]
+      },
+      {
+        "id": "trials",
+        "title": "Testphasen und Aktionen",
+        "paragraphs": [
+          "Testphasen und Einführungspreise gelten nur bei ausdrücklichem Angebot und erfüllten Voraussetzungen. Angezeigte Dauer, Folgepreis und Berechtigung sind maßgeblich. Eine Testphase kann automatisch kostenpflichtig werden, wenn sie nicht bis zur von Apple angegebenen Frist gekündigt wird.",
+          "Apple empfiehlt bei kostenlosen oder vergünstigten Tests eine Kündigung mindestens 24 Stunden vor Ablauf, wenn keine Verlängerung gewünscht ist. Erinnerungen können ausbleiben. Prüfen Sie Termine in Apples Abonnementeinstellungen; ausgeschaltete Mitteilungen oder Deinstallation stoppen keine Abrechnung."
+        ]
+      },
+      {
+        "id": "renewal",
+        "title": "Verlängerung und Kündigung",
+        "paragraphs": [
+          "Automatisch verlängernde Abonnements laufen im angegebenen Zeitraum weiter, bis sie nach Apples Regeln gekündigt werden. Nutzen Sie die Abonnementeinstellungen Ihres Apple-Kontos oder {{cancel}}. Dort stehen Verlängerung und Zugang nach Kündigung; Store-Regeln und zwingendes Recht bestimmen die Folgen.",
+          "App- oder Kontolöschung, Abmeldung, E-Mail an amen oder Berechtigungswiderruf kündigen kein Apple-Abonnement. Preisänderungen folgen Apples Mitteilungs- und Zustimmungsverfahren sowie dem Gesetz. Ein Recht auf Preiserhöhung ohne erforderliche Information oder Zustimmung wird nicht beansprucht."
+        ]
+      },
+      {
+        "id": "restoration",
+        "title": "Käufe wiederherstellen und Einmalzugang",
+        "paragraphs": [
+          "Stellen Sie Käufe mit dem ursprünglich verwendeten Apple-Konto über die vorhandene Funktion wieder her. Zugang kann von Apple-Prüfung, Kontozuordnung, Kompatibilität und konkreter Familienfreigabe abhängen. Wenden Sie sich bei nicht erkanntem gültigem Kauf an den Support.",
+          "Einmal- oder Lifetime-Produkte verlängern sich nicht automatisch, sofern das Angebot nichts anderes ausdrücklich vorsieht. Umfang bestimmen Kaufbeschreibung und zwingendes Recht; weder Betrieb während Ihrer gesamten Lebenszeit noch jede künftige Leistung ist automatisch zugesagt. Vereinbarte Rechte dürfen nicht nachträglich durch Umdeutung reduziert werden."
+        ]
+      },
+      {
+        "id": "refunds",
+        "title": "Erstattungen und Kaufprobleme",
+        "paragraphs": [
+          "Für Apple-abgerechnete Käufe nutzen Sie {{refund}} oder reportaproblem.apple.com. Store-Regeln, Umstände und Recht bestimmen die Berechtigung. amen hilft bei Zugangsproblemen, kann aber keine Apple-Erstattung garantieren.",
+          "Gesetzliche Ansprüche gegenüber dem verantwortlichen Unternehmer bleiben bestehen. Melden Sie gegebenenfalls Ausfälle, Doppelbelastungen oder nicht vertragsgemäße Leistungen auch uns. Käufe werden nicht pauschal als nicht erstattbar bezeichnet; Nachbesserung, Minderung, Vertragsbeendigung und Erstattung bleiben nach Gesetz möglich."
+        ]
+      },
+      {
+        "id": "withdrawal",
+        "title": "Verbraucherwiderruf",
+        "paragraphs": [
+          "Bei gesetzlichem Widerrufsrecht, einschließlich der üblichen 14-tägigen Frist für einschlägige Fernabsatzverträge im EWR, bestimmen Kaufinformationen und Gesetz Rechte und zuständigen Empfänger. Wenden Sie sich an den in Kaufunterlagen genannten Verkäufer und gegebenenfalls amen als Vertragspartner.",
+          "Sofortige digitale Bereitstellung beeinflusst das Recht nur bei erfüllten gesetzlichen Voraussetzungen, einschließlich erforderlicher ausdrücklicher Erklärung, Zustimmung, Kenntnisnahme und Vertragsbestätigung. Download oder Lesen dieser Bedingungen ist kein automatischer Verzicht. Eine eindeutige Widerrufserklärung genügt, soweit kein Gesetz eine bestimmte Form verlangt."
+        ]
+      },
+      {
+        "id": "conformity",
+        "title": "Gesetzliche Rechte bei digitalen Leistungen",
+        "paragraphs": [
+          "Zwingende Rechte auf Vertragsmäßigkeit, Sicherheitsupdates und Abhilfe bleiben bestehen. Bei gesetzlichen Voraussetzungen können Sie Mangelbehebung, Minderung oder Vertragsbeendigung verlangen. Bezahlte Funktionen müssen verbindlichen Beschreibungen entsprechen.",
+          "Diese Rechte können auch für bestimmte gegen personenbezogene Daten bereitgestellte Leistungen gelten. Hinweise auf KI-Fehler und Netzstörungen beseitigen nicht sämtliche Leistungspflichten. Beschreiben Sie Mängel mit hilfreichen technischen Angaben, damit wir sie bewerten und beheben können."
+        ]
+      },
+      {
+        "id": "changes-updates",
+        "title": "Leistungsänderungen und Updates",
+        "paragraphs": [
+          "Wir können Updates, Sicherheitskorrekturen und angemessene betriebliche Verbesserungen vornehmen. Änderungen laufender digitaler Leistungen müssen rechtliche Anforderungen an vertragliche Gründe, Information, Mehrkosten und gegebenenfalls Kündigungsrechte bei mehr als geringfügigen Nachteilen erfüllen.",
+          "Ein pauschales folgenloses Entfernen bezahlter Funktionen ist nicht vorgesehen. Wesentliche Vertragsänderungen brauchen gesetzlich erforderliche Mitteilung und Zustimmung. Installieren Sie nach angemessener Information erforderliche Updates; Folgen einer Ablehnung richten sich nach Gesetz und Umständen."
+        ]
+      },
+      {
+        "id": "availability",
+        "title": "Verfügbarkeit und technische Voraussetzungen",
+        "paragraphs": [
+          "Einige Funktionen brauchen Internet, kompatibles iOS, Apple-Freigaben, Anmeldung und verfügbare Drittanbieter. Wartung, Ausfälle, Anbietergrenzen oder Gerätezustand können stören. Ununterbrochener Zugriff, identische Ausgaben oder dauerhafte Modellverfügbarkeit werden nicht garantiert.",
+          "Bei Ausfällen vertraglich geschuldeten Zugangs bleiben Ihre Abhilferechte bestehen. Wir prüfen gemeldete Fehler und ergreifen angemessene Maßnahmen. Ihre eigenen Verbindungs- und Gerätekosten tragen Sie; dies entschuldigt keinen Fehler von amen."
+        ]
+      },
+      {
+        "id": "suspension",
+        "title": "Sperrung und Überprüfung",
+        "paragraphs": [
+          "Bei erheblichen Verstößen, Missbrauch, Sicherheitsgefahr, Nichtzahlung oder gesetzlicher Pflicht kann Zugang angemessen eingeschränkt werden. Soweit angebracht, nennen wir Gründe und geben Gelegenheit zur Klärung oder Überprüfung vor einer dauerhaften Maßnahme.",
+          "Sofortiges Handeln kann bei Risiken oder gesetzlichem Mitteilungsverbot erforderlich sein. Vermutete Fehlentscheidungen melden Sie an {{email}}. Folgen für bezahlten Zugang und Erstattungs- oder Kündigungsrechte folgen Vertrag und zwingendem Recht, keinem beliebigen Sperrrecht ohne Begründung."
+        ]
+      },
+      {
+        "id": "termination",
+        "title": "Nutzung beenden und Konto löschen",
+        "paragraphs": [
+          "Sie können die Nutzung von amen beenden und die Kontolöschung über die App oder den Support beantragen. Deinstallation entfernt nicht automatisch gespeicherte Kontodaten. Informationen zu Löschung, rechtmäßiger Aufbewahrung und Sicherungen enthält {{privacy}}. Sichern Sie benötigte Angaben vor einer Löschanfrage.",
+          "Kündigen Sie Apple-Abonnements separat gegen weitere Abrechnung. Zugangsschließung beendet diesen Store-Vertrag nicht automatisch. Bei Beendigung durch amen gelten Informations-, Zugangs- und Verbraucherpflichten. Notwendig fortwirkende Ansprüche und rechtmäßige Speicherung bleiben dem Gesetz unterworfen."
+        ]
+      },
+      {
+        "id": "liability",
+        "title": "Haftung",
+        "paragraphs": [
+          "Nicht ausgeschlossen wird Haftung bei Vorsatz, grober Fahrlässigkeit, Verletzung von Leben, Körper oder Gesundheit, Täuschung, verbindlichen Garantien oder zwingender Haftung einschließlich einschlägiger Produkthaftung. Gesetzliche Entschädigungs- und Erstattungsrechte bleiben bestehen.",
+          "Soweit deutsches Recht es zulässt, ist einfache Fahrlässigkeit bei wesentlichen Vertragspflichten auf vorhersehbare vertragstypische Schäden beschränkt. Wesentlich sind Pflichten, die Vertragsdurchführung ermöglichen und auf deren Erfüllung Sie regelmäßig vertrauen dürfen. Andere Grenzen gelten nur gesetzlich zulässig. Es gibt keinen pauschalen Ausschluss sämtlicher Schäden, KI-Schäden oder Datenverluste."
+        ]
+      },
+      {
+        "id": "apple",
+        "title": "Apple-Regeln und weitere Informationen",
+        "paragraphs": [
+          "App-Store-Käufe und Nutzung folgen Apples geltenden Bedingungen: {{appleTerms}}. Die App-Lizenz finden Sie unter {{appleEula}} und Apples Datenschutzinformationen unter {{applePrivacy}}. Diese Verweise erklären Apples eigene Dienste und ersetzen nicht die mit amen verbundenen Verantwortlichkeiten für die App.",
+          "Verwenden Sie Apples Kündigungs- und Erstattungsverfahren für darüber abgerechnete Abonnements und Käufe. Externe Dienste und Gerätefunktionen haben eigene Bedingungen, Freigaben und Verfügbarkeitsvoraussetzungen. Diese Regeln gelten neben zwingenden Verbraucherrechten; der Verweis auf Apple oder andere Anbieter beseitigt keine mit amen verbundenen Pflichten."
+        ]
+      },
+      {
+        "id": "privacy",
+        "title": "Datenschutz und Einwilligung",
+        "paragraphs": [
+          "Die {{privacy}} erläutern Daten, Anbieter, KI, Analysen, Grundlagen und Rechte. Sie sind keine pauschale Einwilligung. Einwilligungsbedürftige Verarbeitung, insbesondere optionales Tracking oder religiöse und andere besondere Daten, benötigt eine gesonderte gültige Grundlage und erforderliche ausdrückliche Zustimmung.",
+          "Weder diese Bedingungen noch Apples Trackingfreigabe erlauben automatisch jeden sensiblen Datenzweck. Widerruf und Löschung richten sich nach Datenschutzrecht. Vertrags- und Kaufrechte sind von Datenschutzfreigaben zu unterscheiden."
+        ]
+      },
+      {
+        "id": "disputes",
+        "title": "Anwendbares Recht und Beschwerden",
+        "paragraphs": [
+          "Deutsches Recht gilt, soweit eine wirksame Rechtswahl zulässig ist. Zwingende Schutzrechte am gewöhnlichen Aufenthaltsort von Verbrauchern bleiben gegebenenfalls bestehen. Der Gerichtsstand folgt dem Gesetz; kein Verbraucher wird pauschal zum Anbietergericht oder privater Pflichtschlichtung verpflichtet.",
+          "Beschwerden richten Sie an {{email}}. Gesetzlich erforderliche Angaben zur zuständigen alternativen Streitbeilegungsstelle oder Teilnahme werden für den betreffenden Streit bereitgestellt. Die frühere EU-Online-Streitbeilegungsplattform wurde 2025 geschlossen und wird nicht als verfügbare Beschwerdemöglichkeit genannt."
+        ]
+      },
+      {
+        "id": "revisions",
+        "title": "Änderungen, Sprache und Unwirksamkeit",
+        "paragraphs": [
+          "Datum und Version kennzeichnen den Text. Veröffentlichung oder weiteres Browsen machen Änderungen nicht automatisch für bestehende Verträge verbindlich. Erforderliche Zustimmung wird eingeholt; sonstige zulässige Änderungen erhalten gesetzlich erforderliche Hinweise und Rechte.",
+          "Alle sechs Übersetzungen sollen denselben Inhalt haben. Englisch als Rückfallsprache verdrängt keine örtlichen Sprach- oder Verbraucherrechte. Bei unwirksamen Klauseln gilt die einschlägige gesetzliche Regel; der Rest bleibt soweit möglich bestehen. Keine automatische Ersetzung durch die anbietergünstigste Formulierung erfolgt."
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Support kontaktieren",
+        "paragraphs": [
+          "Kontaktieren Sie den amen-Support unter {{email}} bei App-Problemen, Kontofragen, Abonnementzugang oder Beschwerden. Die Apple-Links erläutern Abrechnung, Kündigung und Erstattung. Für Anfragen zu personenbezogenen Daten lesen Sie {{privacy}}.",
+          "Nennen Sie betroffenes Produkt oder Funktion und beschreiben Sie das Anliegen kurz. Bestellreferenzen nur bei Bedarf; keine Passwörter, vollständigen Kartendaten oder unnötigen Chatdetails. Gesetzlich gültige Mitteilungen oder anderweitig zulässige Kontaktwege werden dadurch nicht beschränkt."
+        ]
+      }
+    ]
+  }
+}

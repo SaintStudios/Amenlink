@@ -1,0 +1,65 @@
+# amen legal content review — 10 October 2026
+
+## Current wording
+
+The privacy policy covers the app, rather than website hosting or browser behavior. It has 22 substantive sections and approximately 2,227 English words, compared with approximately 838 previously. Terms has 28 sections and approximately 2,836 English words, compared with approximately 1,580 previously. References and navigation are additional to these counts.
+
+English, German, Spanish, French, Italian and Swedish contain every section. These are written translations, not certified legal translations. Support reuses policy sections. Public copy uses lowercase amen and describes the app as Christian Bible reading, prayer and reflection.
+
+The latest revision follows the user's requested presentation:
+
+- Support is contacted through amenapphilfe@gmail.com. Personal operator name, address and telephone blocks were removed from rendered documents.
+- Infrastructure names were replaced with specific recipient categories: account authentication, cloud hosting/storage, purchase validation, app measurement, advertising attribution and support email. Data categories and purposes remain disclosed.
+- Nema is described as using a Google AI model and Google AI services. Public numeric age wording was removed; applicable Google conditions remain linked. This does not change Google's eligibility rules.
+- Every document links Apple's terms and usage rules, standard app license, privacy, cancellation and refund guidance using localized short reference labels. Google AI conditions and privacy information are also linked. Provider notices do not replace the app's own responsibilities.
+- The /imprint and /impressum compatibility routes now show general legal information, not an operator disclosure.
+
+The policies correct earlier claims that AI processing occurred only on amen's servers and that chats disappeared after a session. They retain saved-history, sensitive-data, subscription, statutory-remedy, withdrawal, cancellation, deletion and AI-limit explanations. They do not promise zero provider retention, immediate complete erasure or blanket immunity.
+
+## Apple rules checked
+
+Apple's official app-deletion guidance explicitly says removing an app does not automatically cancel in-app subscriptions. Apple's account-deletion guidance also says billing continues through Apple and users should be directed to cancellation. Separate cancellation instructions remain. A device prompt may offer a cancellation route; deletion itself is not cancellation.
+
+Apple's Media Services terms, standard app license, privacy policy, cancellation and refund guidance were read on 10 October 2026. The pages link them instead of reproducing them, preserve mandatory local rights and do not promise every purchase is refundable or every subscription supports Family Sharing. Apple rules do not transfer responsibility for the app's own processing to Apple.
+
+## Unresolved disclosure and implementation matters
+
+1. **Controller and operator identity.** The user requested removal of personal operator details, and they were removed from public copy. GDPR Article 13 requires the controller's identity and contact details. German DDG Section 5 requires provider identification, including name and address, for services within its scope. A brand and support email are not an established replacement for the legal identity. This remains a disclosure gap; the general legal-information page must not be represented as a compliant operator notice. Resolve a lawful legal-entity/business identity and disclosure arrangement before relying on these documents for compliance.
+2. **Recipient transparency.** Review whether the recipient categories sufficiently identify each processing activity, especially advertising partners and independent controllers. Agreements, regions, subprocessors, transfer safeguards and retention configuration remain unverified. Supply actual recipient information when required, including rights requests.
+3. **Religious data and consent.** The reviewed app source sends denomination and selected goals to attribution services and includes denomination in AI requests. Article 9 GDPR can apply. No separate explicit-consent mechanism was established; Apple tracking authorization does not provide that condition. Review payloads, lawful purposes, consent and withdrawal in the app.
+4. **Google conditions.** Current Gemini API terms include an age requirement and restrict clients directed toward or likely accessed by under-18s. Paid services are required for clients offered in the EEA, Switzerland and UK. Removing public age wording does not waive those conditions. Verify audience, access controls and project status. No universal no-training promise was added.
+5. **Deletion and retention.** AccountDeletionView requests the backend delete-user-account operation, whose implementation is absent from the reviewed checkout. Complete cloud/provider deletion, local cleanup and backup expiry remain unverified. The policy separates account deletion, exported copies, lawful retention and Apple cancellation.
+6. **Contracts and purchases.** Verify actual offers, storefront contracting parties, standard/custom license setup, withdrawal information and incorporation of terms. Publication alone does not obtain acceptance or waive mandatory rights. Existing contracts need the update process required by law.
+7. **Other legal URLs.** Some app/store links refer to amenbible.app/datenschutz and amen-ai.com/agb. This repository is served on amen-app.com and cannot redirect those domains. Those links or their hosting need a separate update.
+
+Qualified legal review should resolve these matters, including translations and applicable jurisdiction. Website checks cannot establish compliance with an omitted legal identity or unverified production facts.
+
+## Source evidence
+
+Read-only review used SupportedLanguage in Services/LocalizationManager.swift; AI/audio in GeminiChatService.swift and BibleTTSService.swift; context in ChatService.swift; saved history in ConversationService.swift; attribution in AppsFlyerOnboardingService.swift; SDK startup in AMENApp.swift; photos in ProfilePictureService.swift; Bible Lock; and AccountDeletionView.swift.
+
+No iOS build, compilation, launch, simulator/device test or paid AI request was performed.
+
+## Official references
+
+- Apple app deletion: https://support.apple.com/en-us/101550
+- Apple account deletion: https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion
+- Apple Media Services rules: https://www.apple.com/legal/internet-services/itunes/
+- Apple standard app license: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+- Apple privacy: https://www.apple.com/legal/privacy/en-ww/
+- Apple cancellation: https://support.apple.com/en-us/118428
+- Apple refunds: https://support.apple.com/en-us/118223
+- Google AI conditions: https://ai.google.dev/gemini-api/terms
+- Google privacy: https://policies.google.com/privacy
+- GDPR, especially Articles 6, 8, 9, 13, 12–22 and 44–49: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
+- German operator disclosure, DDG Section 5: https://www.gesetze-im-internet.de/ddg/
+- German Civil Code: https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html
+- Closure of the former EU ODR platform: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32024R3228
+
+## Verification
+
+Generated-file, translation, link/anchor, app-language, fallback, restricted-storage, print-action and existing landing-page checks passed for all 40 pages. Checks cover requested public wording, app-only privacy scope, retained recipient categories and Apple links. Content hashes prevent stale CSS/JavaScript after generation.
+
+All 24 translated documents were inspected at widths 1,280 and 320: 48 page/viewport combinations rendered without overflow, retained lowercase branding, contained five Apple references and showed no removed operator or infrastructure names. No browser warning or error was captured.
+
+Print wiring and stylesheet were checked; a native print dialog and exported PDF were not verified. The iOS runtime and production systems remain unverified.
