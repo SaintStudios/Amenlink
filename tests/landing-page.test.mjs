@@ -114,6 +114,9 @@ assert.equal(detectPlatform('Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6)', '', 
 
 assert.equal(detectInAppBrowser('Mozilla/5.0 TikTok 38.1.0'), 'tiktok');
 assert.equal(detectInAppBrowser('Mozilla/5.0 musical_ly'), 'tiktok');
+assert.equal(detectInAppBrowser('Mozilla/5.0 musical.ly'), 'tiktok');
+assert.equal(detectInAppBrowser('Mozilla/5.0 com.ss.android.ugc.aweme'), 'tiktok');
+assert.equal(detectInAppBrowser('Mozilla/5.0 ByteDance'), 'tiktok');
 assert.equal(detectInAppBrowser('Mozilla/5.0 Instagram 348.0'), 'inApp');
 assert.equal(detectInAppBrowser('Mozilla/5.0 FBAV/500.0'), 'inApp');
 assert.equal(detectInAppBrowser('Mozilla/5.0 Version/18.0 Mobile Safari/604.1'), null);
@@ -124,6 +127,19 @@ for (const locale of ['de', 'es', 'fr', 'it', 'sv']) {
     assert.deepEqual(Array.from(localeKeys[locale]), Array.from(localeKeys.en), `${locale} must have the same copy keys as English`);
 }
 const localizedCopy = JSON.parse(vm.runInContext('JSON.stringify(translations)', context));
+const appNames = {
+    en: 'Amen - Bible Chat',
+    de: 'Amen - Bibel Chat',
+    es: 'Amen - Chat bíblico',
+    fr: 'Amen - Chat biblique',
+    it: 'Amen - Chat biblico',
+    sv: 'Amen - Bibelchatt'
+};
+for (const [locale, appName] of Object.entries(appNames)) {
+    assert.equal(localizedCopy[locale].appName, appName, `${locale}: the app name must describe Bible chat`);
+}
+assert.match(html, /<span class="brand-name" id="brandName">Amen - Bible Chat<\/span>/, 'no-script branding must fall back to the English app name');
+assert.doesNotMatch(html, /Prayer · Faith|Gebet · Glaube|Prière · Foi|Bön · Tro|Oración · Fe|Preghiera · Fede|brandTagline/);
 for (const [locale, copy] of Object.entries(localizedCopy)) {
     for (const [key, value] of Object.entries(copy)) {
         assert.doesNotMatch(value, /(?:^|[.!?]\s+)amen\b/, `${locale}/${key}: capitalize Amen at sentence and heading starts`);
@@ -189,7 +205,7 @@ function runInitialization(fixture) {
     const pendingTimers = new Map();
     let nextTimer = 1;
     const elementIds = [
-        'brandTagline', 'stepOne', 'stepTwo', 'copyButtonLabel', 'fallbackHint',
+        'brandName', 'stepOne', 'stepTwo', 'copyButtonLabel', 'fallbackHint',
         'storeLinkLabel', 'comingSoonLabel', 'privacyLink', 'termsLink', 'supportLink', 'imprintLink',
         'statusPill', 'steps', 'storeLink', 'copyButton', 'lead', 'comingSoon', 'headline'
     ];
@@ -247,6 +263,7 @@ function runInitialization(fixture) {
 
 for (const language of ['en', 'de', 'es', 'fr', 'it', 'sv']) {
     const result = runInitialization({ ...platformFixtures.find(({ expected }) => expected === 'android'), languages: [language + '-CH'] });
+    assert.equal(result.elements.brandName.textContent, appNames[language], 'the visible brand must use the browser language');
     for (const document of ['privacy', 'terms', 'support', 'imprint']) {
         assert.equal(result.elements[document + 'Link'].href, '/legal/' + language + '/' + document + '/', 'landing navigation must use the selected language and clean URL');
     }
@@ -274,13 +291,40 @@ for (const [marker, stateClass] of [
     assert.equal(result.body.classList.contains(stateClass), true, `${marker} on Mac must retain its restricted recovery state`);
 }
 
-const androidRestrictedResult = runInitialization({
-    ...platformFixtures.find(({ name }) => name === 'Android'),
-    userAgent: `${platformFixtures.find(({ name }) => name === 'Android').userAgent} TikTok 38.1.0`
-});
-assert.deepEqual(androidRestrictedResult.attemptedUrls, [], 'Android routing must not navigate to Apple, including inside TikTok');
-assert.equal(androidRestrictedResult.elements.comingSoon.classList.contains('is-visible'), true, 'Android routing must retain its coming-soon state');
-assert.equal(androidRestrictedResult.body.classList.contains('is-tiktok'), false, 'Android routing must return before Apple-focused TikTok instructions');
+for (const language of Object.keys(appNames)) {
+    for (const fixture of platformFixtures) {
+        for (const marker of ['TikTok 38.1.0', 'musical_ly', 'musical.ly', 'ByteDance', 'com.ss.android.ugc.aweme']) {
+            const result = runInitialization({
+                ...fixture,
+                languages: [language],
+                userAgent: `${fixture.userAgent} ${marker}`
+            });
+            const name = `${language}/${fixture.name}/${marker}`;
+            assert.deepEqual(result.attemptedUrls, [], `${name}: TikTok must not attempt an App Store navigation`);
+            assert.equal(result.pendingTimers.size, 0, `${name}: TikTok must not schedule an App Store navigation`);
+            assert.equal(result.body.classList.contains('is-tiktok'), true, `${name}: show the browser tutorial on every platform`);
+            assert.equal(result.elements.headline.textContent, localizedCopy[language].restrictedHeadline, `${name}: use the localized browser headline`);
+            assert.equal(result.elements.lead.textContent, localizedCopy[language].restrictedExplanation, `${name}: use the localized browser explanation`);
+            assert.equal(result.elements.steps.classList.contains('is-visible'), true, `${name}: show both tutorial steps`);
+            assert.equal(result.elements.stepOne.textContent, localizedCopy[language].stepOne, `${name}: show the TikTok menu step`);
+            assert.equal(result.elements.stepTwo.textContent, localizedCopy[language].stepTwo, `${name}: show the external-browser step`);
+            assert.equal(result.actions.hidden, true, `${name}: hide every download action`);
+            assert.equal(result.elements.storeLink.hidden, true, `${name}: hide the App Store link`);
+            assert.equal(result.elements.copyButton.hidden, true, `${name}: hide the copy button`);
+            assert.equal(result.elements.comingSoon.classList.contains('is-visible'), false, `${name}: keep the page focused on the tutorial`);
+        }
+    }
+    const external = runInitialization({
+        ...platformFixtures.find(({ name }) => name === 'iPhone Chrome'),
+        languages: [language]
+    });
+    assert.equal(external.elements.headline.textContent, localizedCopy[language].openingStore, `${language}: leaving TikTok must show the App Store loading state`);
+    assert.equal(external.body.classList.contains('is-tiktok'), false, `${language}: leaving TikTok must not keep its tutorial`);
+    assert.equal(external.body.classList.contains('is-opening-store'), true, `${language}: external iOS enters the loading state`);
+    assert.equal(external.pendingTimers.size, 1, `${language}: external iOS schedules one handoff`);
+    for (const callback of Array.from(external.pendingTimers.values())) callback();
+    assert.deepEqual(external.attemptedUrls, [iosAppStoreUrl], `${language}: the handoff must use the correct App Store listing once`);
+}
 
 for (const fixture of platformFixtures.filter(({ expected }) => expected === 'ios')) {
     const result = runInitialization(fixture);
@@ -351,10 +395,6 @@ assert.match(html, /body\.is-tiktok \.actions[\s\S]*?body\.is-tiktok \.fallback-
 assert.doesNotMatch(html, /tiktokStatus|In TikTok geöffnet|Opened in TikTok|Ouvert dans TikTok|Öppnad i TikTok/);
 
 for (const requiredCopy of [
-    'App-Store-Links lassen sich im In-App-Browser von TikTok nicht direkt öffnen.',
-    'Les liens vers l’App Store ne s’ouvrent pas directement dans le navigateur intégré de TikTok.',
-    'Länkar till App Store öppnas inte direkt i TikToks inbyggda webbläsare.',
-    'App Store links don’t open directly in TikTok’s in-app browser.',
     'Tippe oben rechts auf das Drei-Punkte-Menü.',
     'Appuie sur le menu à trois points en haut à droite.',
     'Tryck på menyn med tre punkter uppe till höger.',
@@ -397,6 +437,16 @@ for (const htmlFile of fs.readdirSync(repoRoot).filter((name) => name.endsWith('
 
 const blockedPage = fs.readFileSync(path.join(repoRoot, 'appstore_blocked.html'), 'utf8');
 assert.match(blockedPage, /<style>\s*\*\s*\{\s*margin:\s*0;/, 'the existing blocked-store page retains its reset');
+assert.match(blockedPage, /<html lang="en">/, 'the older blocked URL must provide an English no-script fallback');
+assert.match(blockedPage, /Open in your browser/);
+assert.doesNotMatch(blockedPage, /Bible Study|germanCountries/, 'the older URL must not retain stale branding or separate language rules');
+const blockedScript = blockedPage.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+assert.ok(blockedScript, 'the older URL must forward to the main redirect flow');
+for (const [search, hash] of [['', ''], ['?lang=de&source=tiktok', '#download']]) {
+    const attemptedUrls = [];
+    vm.runInNewContext(blockedScript, { window: { location: { search, hash, replace: (url) => attemptedUrls.push(url) } } });
+    assert.deepEqual(attemptedUrls, ['/' + search + hash], 'the older URL must forward once to the main page and preserve URL details');
+}
 for (const legalPage of ['datenschutz.html', 'nutzungsbedingungen.html', 'privacy.html', 'support.html', 'terms.html']) {
     const source = fs.readFileSync(path.join(repoRoot, legalPage), 'utf8');
     assert.match(source, /href="\/assets\/legal.css\?v=[a-f0-9]{12}"/, legalPage + ' must use the current shared legal stylesheet');

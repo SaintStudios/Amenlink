@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>amen - Bible Study herunterladen</title>
+    <link rel="canonical" href="https://amen-app.com/">
+    <title>Amen - Bible Chat</title>
     <style>
         * {
             margin: 0;
@@ -134,11 +135,6 @@
             min-width: 0;
         }
 
-        .dots {
-            color: var(--ink);
-            font-weight: 600;
-        }
-
         @media (prefers-color-scheme: dark) {
             :root {
                 --page: #1c1c1e;
@@ -155,54 +151,22 @@
     <div class="arrow">↑</div>
     
     <div class="content" id="instructions">
-        <h1 id="title">Um den Link aufzurufen, befolge diese zwei einfachen Schritte:</h1>
+        <h1 id="title">Open in your browser</h1>
         <ul class="steps">
             <li>
                 <div class="step-number">1</div>
-                <div class="step-text">Klicke auf <span class="dots">•••</span> oben rechts</div>
+                <div class="step-text">Tap the three-dot menu in the top right.</div>
             </li>
             <li>
                 <div class="step-number">2</div>
-                <div class="step-text">Dann auf "Im Browser öffnen"</div>
+                <div class="step-text">Choose “Open in browser”.</div>
             </li>
         </ul>
     </div>
     
     <script>
-        // Language detection based on user's locale
-        function detectLanguage() {
-            const userLang = navigator.language || navigator.userLanguage;
-            const country = userLang.toLowerCase();
-            
-            // German-speaking countries: Germany (de), Austria (de-at), Switzerland (de-ch)
-            const germanCountries = ['de', 'de-de', 'de-at', 'de-ch'];
-            
-            if (germanCountries.some(lang => country.startsWith(lang.split('-')[0]) && 
-                (country.includes('de') || country.includes('at') || country.includes('ch')))) {
-                return 'de';
-            }
-            
-            return 'en';
-        }
-        
-        // Set content based on detected language
-        function setContent() {
-            const lang = detectLanguage();
-            const title = document.getElementById('title');
-            const steps = document.querySelectorAll('.step-text');
-            
-            if (lang === 'en') {
-                document.documentElement.lang = 'en';
-                document.title = 'Download amen - Bible Study';
-                title.textContent = 'To access the link, follow these two simple steps:';
-                steps[0].innerHTML = 'Click on <span class="dots">•••</span> at the top right';
-                steps[1].textContent = 'Then tap "Open in browser"';
-            }
-            // German is default, so no changes needed for German
-        }
-        
-        // Initialize content on page load
-        document.addEventListener('DOMContentLoaded', setContent);
+        // Keep older links on the same localized, platform-aware flow as the main page.
+        window.location.replace('/' + window.location.search + window.location.hash);
     </script>
 </body>
 </html>
