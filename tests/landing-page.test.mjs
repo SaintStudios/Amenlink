@@ -293,7 +293,7 @@ for (const [marker, stateClass] of [
 
 for (const language of Object.keys(appNames)) {
     for (const fixture of platformFixtures) {
-        for (const marker of ['TikTok 38.1.0', 'musical_ly', 'musical.ly', 'ByteDance', 'com.ss.android.ugc.aweme']) {
+        for (const marker of ['TikTok 38.1.0', 'musical_ly', 'musical.ly', 'ByteDance', 'aweme']) {
             const result = runInitialization({
                 ...fixture,
                 languages: [language],
@@ -304,7 +304,8 @@ for (const language of Object.keys(appNames)) {
             assert.equal(result.pendingTimers.size, 0, `${name}: TikTok must not schedule an App Store navigation`);
             assert.equal(result.body.classList.contains('is-tiktok'), true, `${name}: show the browser tutorial on every platform`);
             assert.equal(result.elements.headline.textContent, localizedCopy[language].restrictedHeadline, `${name}: use the localized browser headline`);
-            assert.equal(result.elements.lead.textContent, localizedCopy[language].restrictedExplanation, `${name}: use the localized browser explanation`);
+            const explanation = fixture.expected === 'android' ? localizedCopy[language].androidBody : localizedCopy[language].restrictedExplanation;
+            assert.equal(result.elements.lead.textContent, explanation, `${name}: use the localized explanation for the device`);
             assert.equal(result.elements.steps.classList.contains('is-visible'), true, `${name}: show both tutorial steps`);
             assert.equal(result.elements.stepOne.textContent, localizedCopy[language].stepOne, `${name}: show the TikTok menu step`);
             assert.equal(result.elements.stepTwo.textContent, localizedCopy[language].stepTwo, `${name}: show the external-browser step`);
