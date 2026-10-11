@@ -501,8 +501,6 @@
   "notFound": {
     "title": "Pagina non trovata.",
     "description": "Il link potrebbe essere cambiato o la pagina è stata spostata. Torniamo all’inizio.",
-    "homeAction": "Torna all’inizio",
-    "sheepNote": "Ogni pecora merita di essere ritrovata.",
-    "sheepReference": "Ispirato a Luca 15,4"
+    "homeAction": "Torna all’inizio"
   }
 }

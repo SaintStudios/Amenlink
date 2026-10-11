@@ -69,7 +69,7 @@ function render(copy, locale, kind, auto = false) {
       copy.terms.sections.find((s) => s.id === 'contact')
     ]
   } : copy[kind];
-  const url = (type, lang = locale) => '/legal/' + lang + '/' + type + '.html';
+  const url = (type, lang = locale) => '/legal/' + lang + '/' + type + '/';
   const links = { ...external, privacy: url('privacy'), terms: url('terms') };
   const rich = (s) => escape(s).replace(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!links[key] || !ui[key]) throw new Error('Unknown link token: ' + key);
@@ -87,7 +87,7 @@ function render(copy, locale, kind, auto = false) {
     '<title>' + title + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
     '<link rel="canonical" href="' + origin + url(kind) + '">\n' +
     languages.map((l) => '<link rel="alternate" hreflang="' + l + '" href="' + origin + url(kind, l) + '">').join('\n') +
-    '\n<link rel="alternate" hreflang="x-default" href="' + origin + '/' + kind + '.html">\n' +
+    '\n<link rel="alternate" hreflang="x-default" href="' + origin + '/' + kind + '/">\n' +
     '<link rel="stylesheet" href="' + asset('legal.css') + '">\n<script src="' + asset('legal.js') + '" defer></script>\n</head>\n<body id="top">\n' +
     '<a class="skip" href="#document">' + escape(ui.skip) + '</a>\n' +
     '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="36" height="36"><span>amen</span></a>' +
@@ -110,16 +110,15 @@ function render(copy, locale, kind, auto = false) {
     '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(navigation[type]) + '</a>').join('') + '</div>' +
     '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
-    '<a class="auto-language" href="/' + kind + '.html">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
+    '<a class="auto-language" href="/' + kind + '/">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
 }
 
 function renderNotFound(copies) {
   const ui = english.ui;
   const copy = english.notFound;
   const labels = { privacy: 'navPrivacy', terms: 'navTerms', imprint: 'navImprint', support: 'navSupport' };
-  const navigation = Object.entries(labels).map(([kind, key]) => '<a data-legal-document="' + kind + '" data-copy="ui.' + key + '" href="/legal/en/' + kind + '.html">' + escape(ui[key]) + '</a>').join('');
+  const navigation = Object.entries(labels).map(([kind, key]) => '<a data-legal-document="' + kind + '" data-copy="ui.' + key + '" href="/legal/en/' + kind + '/">' + escape(ui[key]) + '</a>').join('');
   const data = JSON.stringify(copies).replace(/</g, '\\u003c');
-  const artwork = fs.readFileSync(path.join(root, 'assets/lost-sheep.svg'), 'utf8');
   return '<!doctype html>\n<html lang="en">\n<head>\n' +
     '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
     '<meta name="robots" content="noindex">\n<meta name="description" content="' + escape(copy.description) + '">\n' +
@@ -130,11 +129,11 @@ function renderNotFound(copies) {
     '<script src="' + asset('not-found.js') + '" defer></script>\n</head>\n<body class="not-found-page">\n' +
     '<a class="skip" href="#document" data-copy="ui.skip">' + escape(ui.skip) + '</a>\n' +
     '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="32" height="32"><span>amen</span></a><nav aria-label="' + escape(ui.documents) + '">' + navigation + '</nav></div></header>\n' +
-    '<main id="document" class="not-found-main" tabindex="-1">\n' + artwork +
+    '<main id="document" class="not-found-main" tabindex="-1">\n<p class="error-code" aria-hidden="true">4<span>0</span>4</p>\n' +
     '<h1><span class="sr-only">404: </span><span data-copy="notFound.title">' + escape(copy.title) + '</span></h1>\n' +
     '<p class="error-description" data-copy="notFound.description">' + escape(copy.description) + '</p>\n' +
     '<a class="home-action" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-copy="notFound.homeAction">' + escape(copy.homeAction) + '</span></a>\n' +
-    '<p class="sheep-note"><span data-copy="notFound.sheepNote">' + escape(copy.sheepNote) + '</span><span class="scripture-reference" data-copy="notFound.sheepReference">' + escape(copy.sheepReference) + '</span></p>\n</main>\n' +
+    '</main>\n' +
     '<footer><div class="footer-links"><span>amen</span>' + navigation + '</div>' +
     '<details class="language-picker"><summary><span data-copy="ui.language">' + escape(ui.language) + '</span> · <span id="current-language">English</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +
@@ -147,7 +146,11 @@ for (const locale of languages) {
   const copy = JSON.parse(fs.readFileSync(path.join(root, 'content', locale + '.json'), 'utf8'));
   validate(copy, locale);
   notFoundCopies[locale] = { ui: copy.ui, notFound: copy.notFound, languageName: names[locale] };
-  for (const kind of ['privacy', 'terms', 'support', 'imprint']) generated.set('legal/' + locale + '/' + kind + '.html', render(copy, locale, kind));
+  for (const kind of ['privacy', 'terms', 'support', 'imprint']) {
+    const html = render(copy, locale, kind);
+    generated.set('legal/' + locale + '/' + kind + '.html', html);
+    generated.set('legal/' + locale + '/' + kind + '/index.html', html);
+  }
 }
 const aliases = { privacy: ['privacy','datenschutz'], terms: ['terms','nutzungsbedingungen','agb'], support: ['support'], imprint: ['imprint','impressum'] };
 for (const [kind, names] of Object.entries(aliases)) {
@@ -158,6 +161,7 @@ for (const [kind, names] of Object.entries(aliases)) {
   }
 }
 generated.set('404.html', renderNotFound(notFoundCopies));
+generated.set('404/index.html', renderNotFound(notFoundCopies));
 
 let stale = false;
 for (const [name, html] of generated) {
@@ -173,4 +177,4 @@ for (const [name, html] of generated) {
   }
 }
 if (stale) process.exitCode = 1;
-else console.log((check ? 'Verified ' : 'Generated ') + (generated.size - 1) + ' legal pages and the localized 404 page.');
+else console.log((check ? 'Verified ' : 'Generated ') + generated.size + ' pages, including clean routes and compatible older URLs.');

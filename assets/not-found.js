@@ -1,5 +1,9 @@
 (function () {
   'use strict';
+  if (['/404.html', '/404/index.html'].includes(window.location.pathname)) {
+    window.location.replace('/404/' + window.location.search + window.location.hash);
+    return;
+  }
   const translations = JSON.parse(document.getElementById('not-found-copy').textContent);
   const params = new URLSearchParams(window.location.search);
   const primary = params.has('lang') ? params.get('lang') : (navigator.languages?.length ? navigator.languages[0] : navigator.language);
@@ -18,7 +22,7 @@
   document.querySelector('.languages').setAttribute('aria-label', copy.ui.language);
   document.getElementById('current-language').textContent = copy.languageName;
   for (const link of document.querySelectorAll('[data-legal-document]')) {
-    link.setAttribute('href', '/legal/' + locale + '/' + link.dataset.legalDocument + '.html');
+    link.setAttribute('href', '/legal/' + locale + '/' + link.dataset.legalDocument + '/');
   }
   const page = new URL(window.location.href);
   page.search = '';

@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const html = read('404.html');
+assert.equal(read('404/index.html'), html, 'the clean preview must match the published custom error page');
 const script = read('assets/not-found.js');
 const data = html.match(/<script type="application\/json" id="not-found-copy">([^]*?)<\/script>/)?.[1];
 assert.ok(data, 'translations must be included without an external request');
@@ -32,13 +33,14 @@ assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
 assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'));
 assert.doesNotMatch(html, /<details[^>]*\bopen\b|<base\b|<script[^>]+src="https:/);
 assert.equal((html.match(/<h1>/g) || []).length, 1);
-assert.match(read('assets/not-found.css'), /prefers-reduced-motion: reduce/);
 for (const asset of ['legal.css', 'not-found.css', 'not-found.js']) {
   const hash = createHash('sha256').update(read('assets/' + asset)).digest('hex').slice(0, 12);
   assert.ok(html.includes('/assets/' + asset + '?v=' + hash), 'stale error-page asset ' + asset);
 }
 for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)/g)) {
-  assert.ok(fs.existsSync(path.join(root, match[1] === '/' ? 'index.html' : match[1].slice(1))), 'broken recovery link or asset ' + match[1]);
+  const local = match[1];
+  assert.doesNotMatch(local, /\.html$/, 'recovery links must use clean routes');
+  assert.ok(fs.existsSync(path.join(root, local.endsWith('/') ? local.slice(1) + 'index.html' : local.slice(1))), 'broken recovery link or asset ' + local);
 }
 
 function element(dataset = {}) {
@@ -59,18 +61,20 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', url = 'https://
   };
   Object.defineProperty(document, 'cookie', { get() { throw new Error('cookies unavailable'); }, set() { throw new Error('cookies unavailable'); } });
   const parsed = new URL(url);
-  const window = { location: { href: parsed.href, search: parsed.search, replace() { throw new Error('404 must not redirect'); }, assign() { throw new Error('404 must not redirect'); } } };
+  const redirects = [];
+  const window = { location: { href: parsed.href, search: parsed.search, hash: parsed.hash, pathname: parsed.pathname, replace(target) { redirects.push(target); }, assign() { throw new Error('404 must not redirect'); } } };
   for (const storage of ['localStorage', 'sessionStorage']) Object.defineProperty(window, storage, { get() { throw new Error('storage unavailable'); } });
   vm.runInNewContext(script, { window, document, navigator: { languages, language: browserLanguage }, URL, URLSearchParams });
-  return { document, copyElements, legalLinks, languageLinks, auto, current, url: parsed };
+  return { document, copyElements, legalLinks, languageLinks, auto, current, url: parsed, redirects };
 }
 for (const locale of locales) {
   const state = run({ languages: [locale.toUpperCase() + '_CH'] });
+  assert.deepEqual(state.redirects, [], 'missing paths must remain real 404s');
   assert.equal(state.document.documentElement.lang, locale);
   assert.equal(state.document.title, copies[locale].notFound.title + ' · amen');
   assert.equal(state.current.textContent, copies[locale].languageName);
   assert.equal(state.copyElements.find((element) => element.dataset.copy === 'notFound.title').textContent, copies[locale].notFound.title);
-  for (const link of state.legalLinks) assert.equal(link.attributes.href, '/legal/' + locale + '/' + link.dataset.legalDocument + '.html');
+  for (const link of state.legalLinks) assert.equal(link.attributes.href, '/legal/' + locale + '/' + link.dataset.legalDocument + '/');
   for (const link of state.languageLinks) {
     const target = new URL(link.attributes.href);
     assert.equal(target.origin, state.url.origin);
@@ -90,5 +94,14 @@ for (const language of ['', 'ja', '__proto__', '<script>', '../de']) {
   assert.equal(run({ languages: ['de-DE'], url: 'https://amen-app.com/missing?lang=' + encodeURIComponent(language) }).document.documentElement.lang, 'en');
 }
 const unusual = run({ url: 'https://amen-app.com//other.example/missing?lang=sv' });
+assert.deepEqual(unusual.redirects, []);
 for (const link of unusual.languageLinks) assert.equal(new URL(link.attributes.href).origin, 'https://amen-app.com', 'language links must not become external URLs');
-console.log('404 checks passed: six translations, English fallback, nested URLs, recovery links, restricted storage and reduced-motion stylesheet.');
+for (const pathname of ['/missing', '/missing/deep/page.html', '/404/']) {
+  const state = run({ url: 'https://amen-app.com' + pathname + '?lang=de#document' });
+  assert.deepEqual(state.redirects, [], 'only known preview aliases may redirect');
+  assert.equal(state.document.documentElement.lang, 'de');
+}
+for (const pathname of ['/404.html', '/404/index.html']) {
+  assert.deepEqual(run({ url: 'https://amen-app.com' + pathname + '?lang=de#document' }).redirects, ['/404/?lang=de#document']);
+}
+console.log('404 checks passed: six translations, English fallback, nested missing paths, clean recovery links, preview aliases and restricted storage.');
