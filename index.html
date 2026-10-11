@@ -405,6 +405,11 @@
             line-height: 1.6;
         }
 
+        body.is-tiktok .lead {
+            white-space: pre-line;
+            text-wrap: pretty;
+        }
+
         body.is-tiktok .steps {
             width: min(100%, 370px);
             margin: 24px auto 0;
@@ -561,7 +566,7 @@
                 appName: 'Amen - Bibel Chat',
                 inAppStatus: 'Seite in einer App geöffnet',
                 restrictedHeadline: 'Im Browser öffnen',
-                restrictedExplanation: 'Öffne diese Seite in Safari oder Chrome, um amen herunterzuladen.',
+                restrictedExplanation: 'Der Browser von TikTok kann verhindern, dass sich der App Store öffnet.\n\nÖffne diese Seite in Safari oder Chrome, um Amen - Bibel Chat aus dem App Store von Apple herunterzuladen.',
                 inAppExplanation: 'Öffne diese Seite in deinem Browser, um die amen App aus dem App Store zu laden.',
                 stepOne: 'Tippe oben rechts auf das Drei-Punkte-Menü.',
                 inAppStepOne: 'Tippe oben rechts auf „Teilen“ oder auf das Drei-Punkte-Menü.',
@@ -589,7 +594,7 @@
                 appName: 'Amen - Chat biblique',
                 inAppStatus: 'Page ouverte dans une application',
                 restrictedHeadline: 'Ouvrir dans le navigateur',
-                restrictedExplanation: 'Ouvre cette page dans Safari ou Chrome pour télécharger amen.',
+                restrictedExplanation: 'Le navigateur de TikTok peut empêcher l’ouverture de l’App Store.\n\nOuvre cette page dans Safari ou Chrome pour télécharger Amen - Chat biblique depuis l’App Store d’Apple.',
                 inAppExplanation: 'Ouvre cette page dans ton navigateur pour télécharger l’app amen depuis l’App Store.',
                 stepOne: 'Appuie sur le menu à trois points en haut à droite.',
                 inAppStepOne: 'En haut à droite, appuie sur « Partager » ou sur le menu à trois points.',
@@ -617,7 +622,7 @@
                 appName: 'Amen - Bibelchatt',
                 inAppStatus: 'Sidan är öppen i en app',
                 restrictedHeadline: 'Öppna i webbläsaren',
-                restrictedExplanation: 'Öppna den här sidan i Safari eller Chrome för att ladda ner amen.',
+                restrictedExplanation: 'TikToks webbläsare kan hindra App Store från att öppnas.\n\nÖppna den här sidan i Safari eller Chrome för att ladda ner Amen - Bibelchatt från Apples App Store.',
                 inAppExplanation: 'Öppna den här sidan i din webbläsare för att ladda ner amen-appen från App Store.',
                 stepOne: 'Tryck på menyn med tre punkter uppe till höger.',
                 inAppStepOne: 'Tryck på ”Dela” eller menyn med tre punkter uppe till höger.',
@@ -645,7 +650,7 @@
                 appName: 'Amen - Chat bíblico',
                 inAppStatus: 'Página abierta dentro de una app',
                 restrictedHeadline: 'Abrir en el navegador',
-                restrictedExplanation: 'Abre esta página en Safari o Chrome para descargar amen.',
+                restrictedExplanation: 'El navegador de TikTok puede impedir que se abra el App Store.\n\nAbre esta página en Safari o Chrome para descargar Amen - Chat bíblico desde el App Store de Apple.',
                 inAppExplanation: 'Abre esta página en tu navegador para descargar amen desde el App Store.',
                 stepOne: 'Toca el menú de tres puntos arriba a la derecha.',
                 inAppStepOne: 'Toca Compartir o el menú de tres puntos arriba a la derecha.',
@@ -673,7 +678,7 @@
                 appName: 'Amen - Chat biblico',
                 inAppStatus: 'Pagina aperta in un’app',
                 restrictedHeadline: 'Apri nel browser',
-                restrictedExplanation: 'Apri questa pagina in Safari o Chrome per scaricare amen.',
+                restrictedExplanation: 'Il browser di TikTok potrebbe impedire l’apertura dell’App Store.\n\nApri questa pagina in Safari o Chrome per scaricare Amen - Chat biblico dall’App Store di Apple.',
                 inAppExplanation: 'Apri questa pagina nel tuo browser per scaricare amen dall’App Store.',
                 stepOne: 'Tocca il menu con tre punti in alto a destra.',
                 inAppStepOne: 'Tocca Condividi o il menu con tre punti in alto a destra.',
@@ -701,7 +706,7 @@
                 appName: 'Amen - Bible Chat',
                 inAppStatus: 'Page opened inside an app',
                 restrictedHeadline: 'Open in your browser',
-                restrictedExplanation: 'Open this page in Safari or Chrome to download amen.',
+                restrictedExplanation: 'TikTok’s browser may prevent the App Store from opening.\n\nOpen this page in Safari or Chrome to download Amen - Bible Chat from Apple’s App Store.',
                 inAppExplanation: 'Open this page in your browser to download the amen app from the App Store.',
                 stepOne: 'Tap the three-dot menu in the top right.',
                 inAppStepOne: 'Tap Share or the three-dot menu in the top right.',
@@ -838,7 +843,7 @@
             if (inAppBrowser === 'tiktok') {
                 document.body.classList.add('is-tiktok');
                 setText('headline', copy.restrictedHeadline);
-                setText('lead', copy.restrictedExplanation);
+                setText('lead', platform === 'android' ? copy.androidBody : copy.restrictedExplanation);
                 steps.classList.add('is-visible');
                 actions.hidden = true;
                 storeLink.hidden = true;
