@@ -27,8 +27,13 @@ CI checks translation structure, paragraph links, generated files, internal link
 - Explicit /legal/de/privacy.html links preserve that language regardless of browser preferences. Navigation among documents preserves the selection. Language links also preserve the current section.
 - Pages contain all text before JavaScript runs. With JavaScript unavailable, automatic entry pages show complete English documents and all six explicit language links still work.
 - The site does not store language preferences in cookies or browser storage. No translation request, external font, analytics SDK or advertising pixel is added.
+- One compact language disclosure appears at the very bottom of each document, after the footer links. The language menu and contents list start collapsed and remain usable without JavaScript.
 - /privacy, /terms, /datenschutz, /nutzungsbedingungen and /agb, their .html versions and trailing-slash versions remain supported. /support, /imprint and /impressum work the same way.
-- The current app and App Store description also refer to amenbible.app and amen-ai.com. This repository cannot redirect those other domains. The existing app links and store listing need to use the current domain or those domains must be configured separately.
+- The iOS source now uses localized amen-app.com privacy and terms URLs through AppLegalLinks (Amenapp commit f4730a1), including Profile → Legal and Contact, onboarding privacy and the deletion-offer paywall privacy link. Installed app versions and App Store metadata are separate from source changes. This repository cannot redirect the older amenbible.app or amen-ai.com domains.
+
+## Document design
+
+The legal document layout follows the app's DESIGN.md: system type, neutral light/dark surfaces, restrained bright teal, and a maximum 680-pixel reading column with 24-pixel side insets. Headings are compact and the contents list is an inline disclosure. The footer language menu uses native details/summary and 44-pixel targets. The print stylesheet removes navigation and keeps a plain document layout.
 
 ## Local preview
 

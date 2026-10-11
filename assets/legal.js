@@ -24,7 +24,7 @@
     printButton.hidden = false;
     printButton.addEventListener('click', function () { window.print(); });
   }
-  for (const link of document.querySelectorAll('[data-language]')) {
+  for (const link of document.querySelectorAll('[data-language], .auto-language')) {
     link.hash = window.location.hash;
     link.addEventListener('click', function () { link.hash = window.location.hash; });
   }

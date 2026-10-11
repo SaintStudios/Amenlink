@@ -36,7 +36,7 @@
     "intro": "amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
     "summary": [
       "Nema usa i servizi IA di Google per la chat. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
-      "Dati dell’account, conversazioni salvate e attività di lettura permettono le funzioni scelte. Gli acquisti si gestiscono tramite l’account Apple.",
+      "L'uso come ospite crea un identificativo di account senza richiedere un indirizzo e-mail. Note ed evidenziazioni locali sono separate dai contenuti salvati nell'account. Gli acquisti sono gestiti tramite Apple.",
       "Preghiere, preferenze di fede e conversazioni possono contenere informazioni personali sensibili. I tuoi diritti e i consensi necessari restano tutelati.",
       "Per richieste sulla privacy, contatta l’assistenza a amenapphilfe@gmail.com. Gli abbonamenti Apple vanno annullati separatamente dall’eliminazione dell’app o dell’account amen."
     ],
@@ -61,24 +61,40 @@
         "id": "accounts",
         "title": "Account, autenticazione e profilo",
         "paragraphs": [
-          "I fornitori di account e servizi cloud permettono accesso, sincronizzazione e archiviazione. Secondo le tue scelte, le informazioni comprendono identificatore dell’account, email, dati di sessione, nome, foto scelta e date di creazione o aggiornamento. Accedi con Apple può fornire un identificatore Apple e un indirizzo email di inoltro.",
-          "Servono ad accesso, recupero, sincronizzazione e personalizzazione, normalmente secondo l’articolo 6.1.b. Sicurezza e abusi possono basarsi sul 6.1.f; registri obbligatori sul 6.1.c. Sessioni e preferenze possono essere conservate anche sul dispositivo."
+          "Durante la configurazione iniziale, amen può creare un account ospite senza richiedere e-mail o Accedi con Apple. L'account ha un identificativo univoco e informazioni di sessione. Il nome scelto e le attività salvate supportate possono essere associati all'identificativo; l'uso come ospite non significa quindi che non vengano trattati dati personali. Identificativi, credenziali di sessione e preferenze sono conservati presso i servizi di account e sul dispositivo per mantenere l'accesso e la sincronizzazione disponibile. L'accesso dopo uscita, reinstallazione o cambio di dispositivo dipende dalle informazioni di autenticazione e recupero disponibili. Le informazioni di account includono anche le date di creazione e aggiornamento.",
+          "Puoi collegare informazioni supportate dell'account ospite tramite Accedi con Apple. Apple può fornire identificativo, nome e indirizzo e-mail o di inoltro privato; amen non riceve la password del tuo account Apple. Il collegamento può associare o trasferire conversazioni, dati di profilo e progressi supportati, secondo le informazioni esistenti e il completamento del processo. Non rende disponibili altrove tutti i contenuti esclusivamente locali. Chi torna con un account esistente e-mail/password può usare i controlli di accesso e reimpostazione disponibili. I servizi di account trattano credenziali e informazioni di recupero necessarie. Le basi usuali sono l'articolo 6.1.b, la sicurezza proporzionata dell'articolo 6.1.f e gli obblighi legali dell'articolo 6.1.c del GDPR."
+        ]
+      },
+      {
+        "id": "onboarding",
+        "title": "Risposte iniziali e personalizzazione della fede",
+        "paragraphs": [
+          "La configurazione iniziale usa risposte su obiettivi di fede, una visione di fede, abitudini di lettura, ostacoli e difficoltà personali per selezionare contenuti pertinenti. Queste risposte sono salvate localmente nel flusso attuale. La confessione è anche salvata nelle impostazioni di chat dell'account e può essere inclusa nelle richieste personalizzate all'IA di Google. Alcune riflessioni iniziali sono scelte tra testi preparati e tradotti, anziché generate dall'IA. Il passaggio attuale della confessione richiede una scelta per continuare.",
+          "Le risposte possono rivelare convinzioni religiose o circostanze personali e rientrano nella sezione sui dati sensibili. Ogni finalità e destinatario richiede una base giuridica adeguata e, ove applicabile, una condizione aggiuntiva per i dati sensibili. Continuare la configurazione, leggere questa informativa o concedere un permesso del dispositivo non costituisce di per sé consenso esplicito al trattamento sensibile. Contatta l'assistenza a {{email}} per risposte, preferenze o richieste relative alla privacy."
         ]
       },
       {
         "id": "reading",
         "title": "Lettura, note e personalizzazione",
         "paragraphs": [
-          "L’app usa lingua e versione biblica, attività di lettura, serie, risultati, versetti salvati, evidenziazioni, note e impostazioni quando usi queste funzioni. Le informazioni possono essere conservate sul dispositivo e sincronizzate con l’account. Profili o classifiche possono mostrare nome, foto o attività scelti per tali funzioni.",
-          "Si forniscono le funzioni scelte, generalmente secondo il 6.1.b. Note, confessione e obiettivi di fede possono rivelare convinzioni o circostanze personali e richiedono la protezione aggiuntiva descritta sotto. Non mettere informazioni riservate altrui in campi condivisi."
+          "amen usa lingua, versione biblica, attività di lettura, serie, traguardi e impostazioni per fornire le funzioni scelte. Le note bibliche e le evidenziazioni dei versetti sono salvate nello spazio locale dell'app nella versione attuale. Versetti e messaggi salvati nell'account, conversazioni, profilo e progressi supportati usano il cloud quando disponibile. L'accesso non sincronizza da solo ogni elemento locale tra dispositivi. Le impostazioni del dispositivo e dei backup possono influire sulle informazioni locali.",
+          "La finalità è fornire lettura, progressi e personalizzazione, di norma ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per convinzioni o altre circostanze sensibili. Usa i controlli di note, evidenziazioni o conversazioni per gestire i contenuti. Conserva una copia delle informazioni importanti; questo non riduce i tuoi diritti a un servizio conforme. La visibilità del profilo pubblico e delle classifiche è spiegata separatamente di seguito."
+        ]
+      },
+      {
+        "id": "rankings",
+        "title": "Profilo pubblico e classifiche",
+        "paragraphs": [
+          "Le classifiche mostrano agli altri utenti informazioni tra cui nome visualizzato, eventuale foto del profilo, bandiera del paese, serie di lettura, distintivi, punteggio e posizione. I progressi supportati vengono sincronizzati con il servizio di classifica per calcolare e mostrare i risultati. Profilo e classifica sono quindi diversi da una nota o conversazione privata.",
+          "Il codice paese per la bandiera deriva dalla regione impostata sul dispositivo, non da coordinate GPS. Scegli nome e foto adatti a questa visibilità ed evita dati riservati nel profilo. Anche i collegamenti a immagini condivisi possono consentire ad altri di visualizzarle. Il trattamento fornisce di norma la funzione ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili. Contatta {{email}} sui dati mostrati o per richieste di privacy."
         ]
       },
       {
         "id": "ai",
         "title": "Chat IA Nema",
         "paragraphs": [
-          "Nema usa un modello IA di Google per la chat in amen. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto di personalizzazione può includere nome, lingua e preferenze di fede. La conversazione è generata da IA, non da una persona che ti consiglia.",
-          "I servizi IA di Google possono anche supportare spiegazioni bibliche, suggerimenti di lettura e altre funzioni di generazione richieste. Si usano risposte, riferimenti o testi pertinenti alla funzione scelta. Non condividere password, dati di pagamento o informazioni riservate altrui. La prestazione si basa generalmente sull’articolo 6.1.b, con un’ulteriore condizione lecita per i dati sensibili."
+          "Nema usa un modello di IA di Google per offrire la chat IA in amen. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto può includere nome, lingua e preferenze di fede per personalizzare. Messaggi pertinenti possono anche essere inviati a Google per creare un breve titolo della conversazione. La conversazione è generata dall'IA, non da un consulente umano.",
+          "I servizi di IA di Google possono anche fornire spiegazioni bibliche e consigli di lettura personalizzati. Risposte, riferimenti o testi pertinenti sono usati per la funzione richiesta. Le riflessioni iniziali preparate sono descritte nella sezione di configurazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
         ]
       },
       {
@@ -93,8 +109,8 @@
         "id": "chat-storage",
         "title": "Cronologia e cancellazione",
         "paragraphs": [
-          "Conversazioni, messaggi, risposte e titoli possono essere salvati sul dispositivo e con l’account per ritrovarli in seguito. Chiudere una conversazione o l’app non elimina la cronologia salvata. Usa i controlli disponibili o contatta l’assistenza per chiedere la rimozione delle informazioni conservate.",
-          "Usa i controlli disponibili o chiedi copia o cancellazione. Occorre considerare account, fornitori e backup associati. Non si recuperano copie esportate o condivise. Può restare conservazione limitata per obblighi legali o difesa di diritti."
+          "Conversazioni, messaggi, risposte e titoli possono essere salvati localmente e nell'account per tornarvi in seguito. Chiudere una conversazione o l'app non elimina la cronologia salvata. I messaggi salvati e i dati di account associati possono essere separati dalla conversazione attualmente sullo schermo.",
+          "Usa i controlli disponibili o contatta l'assistenza a {{email}} per chiedere eliminazione o copia. Rimozione dalla cronologia attiva, dati associati, trattamento dei fornitori e scadenza dei backup sono aspetti separati della richiesta. L'eliminazione non richiama automaticamente copie esportate o condivise. I dati necessari per obblighi legali o pretese possono restare conservati con uso limitato."
         ]
       },
       {
@@ -109,16 +125,40 @@
         "id": "bible-lock",
         "title": "Bible Lock e Tempo di utilizzo",
         "paragraphs": [
-          "Bible Lock usa le funzioni Tempo di utilizzo di Apple quando le autorizzi. App selezionate, orari, impostazioni di sblocco e progressi di lettura servono a fornire la funzione. L’autorizzazione non concede ad amen accesso generale a messaggi o cronologia di navigazione. Puoi gestire o revocare l’accesso nelle impostazioni di sistema.",
-          "Le raccomandazioni IA possono inviare bisogni e vincoli biblici a Google. Revocare il permesso nelle impostazioni influenza la funzione. Le impostazioni funzionali usano il 6.1.b; Apple controlla i propri trattamenti. Il permesso del dispositivo non equivale al consenso GDPR per analisi diverse."
+          "Bible Lock usa le funzioni Tempo di utilizzo di Apple quando le autorizzi. I codici di selezione forniti da Apple per app, categorie e domini web supportati scelti, insieme a orari, impostazioni di sblocco e progressi di lettura, sono conservati localmente per l'app e le estensioni. L'autorizzazione non dà ad amen accesso generale a messaggi o cronologia di navigazione. Puoi gestire o revocare l'accesso nelle impostazioni di sistema.",
+          "Per un consiglio di lettura IA possono essere inviati a Google il bisogno selezionato, la lunghezza richiesta, la lingua preferita e i riferimenti di capitoli recenti. Questi evitano ripetizioni e sono anche salvati localmente per la funzione. Il trattamento fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili. Apple controlla il proprio trattamento di sistema; i permessi del dispositivo non valgono come consenso per analisi estranee o finalità sensibili."
         ]
       },
       {
         "id": "photos-notifications",
-        "title": "Foto, notifiche e widget",
+        "title": "Foto del profilo e permessi del dispositivo",
         "paragraphs": [
-          "Quando salvi una foto del profilo, l’immagine scelta è conservata dal servizio di account pertinente. Condividere il collegamento può dare ad altri accesso all’immagine. Le notifiche usano autorizzazioni, preferenze e un identificatore push del dispositivo quando è attiva la consegna remota. Consulta {{applePrivacy}}.",
-          "Widget ed estensioni accedono ai dati condivisi necessari. Puoi modificare permessi foto, notifiche e Tempo di utilizzo in iOS; negarli può limitare la funzione. Autorizzare una capacità del dispositivo è diverso da consentire pubblicità o dati sensibili."
+          "Quando salvi una foto del profilo, l'immagine scelta viene conservata presso il servizio di account pertinente. Può apparire nel profilo o nella classifica. I collegamenti condivisi possono consentire ad altri di accedervi. amen usa l'immagine che selezioni; aggiungere una foto del profilo non rende tutte le immagini della libreria disponibili all'app.",
+          "Puoi gestire i permessi pertinenti di Foto e Tempo di utilizzo nelle impostazioni iOS. Salvare sfondi o Live Photo usa il permesso necessario per aggiungere i contenuti scelti a Foto, come spiegato sotto. Negare un permesso può limitare la funzione. Autorizzare una capacità del dispositivo è distinto dal consenso a pubblicità o trattamento sensibile. La privacy di Apple è disponibile a {{applePrivacy}}."
+        ]
+      },
+      {
+        "id": "notifications",
+        "title": "Notifiche e orari dei promemoria",
+        "paragraphs": [
+          "Per i promemoria remoti di versetti e preghiere, amen invia al servizio di notifiche token push del dispositivo, lingua dell'app, fuso orario, tipi attivi e orari di consegna scelti. La registrazione può essere associata all'account. I promemoria supportati di serie o prove possono invece essere programmati localmente. Queste informazioni servono alle funzioni di promemoria e consegna che scegli.",
+          "Puoi cambiare le preferenze nell'app e il permesso di notifiche in iOS. La consegna dipende da permessi, impostazioni e servizi disponibili. Revocare un permesso non dimostra da solo che ogni token o dato precedente sia stato eliminato; contatta {{email}} per richieste di eliminazione. Un promemoria di prova non annulla un abbonamento e non sostituisce le informazioni di rinnovo di Apple."
+        ]
+      },
+      {
+        "id": "widgets",
+        "title": "Giorni con Gesù e widget",
+        "paragraphs": [
+          "Se usi Giorni con Gesù, amen salva localmente la data scelta per calcolare il conteggio dei giorni. Puoi modificarla o azzerarla nella funzione. Data, contenuti biblici, preferenze e informazioni di accesso necessari ai widget supportati vengono condivisi con le estensioni sul dispositivo. Anche Bible Lock usa dati condivisi del dispositivo per le funzioni autorizzate.",
+          "Widget e anteprime delle notifiche possono mostrare contenuti di fede nella schermata Home o di blocco. Chi vede lo schermo può vedere anche quei contenuti. Considera questa visibilità quando scegli widget e anteprime. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con protezione aggiuntiva quando le informazioni rivelano convinzioni religiose o altri dati sensibili."
+        ]
+      },
+      {
+        "id": "media",
+        "title": "Fumetti, sfondi, scene e musica",
+        "paragraphs": [
+          "Aprendo fumetti, sfondi, scene a 360° o audio, amen richiede i contenuti ai servizi di distribuzione e può conservarne copie o cache locali per visualizzazione e riproduzione. La consegna implica il file richiesto e normali informazioni di connessione di rete, incluso l'indirizzo IP usato per la connessione. Le preferenze supportate di musica di sottofondo sono salvate localmente e possono anche essere conservate nel profilo per l'ascolto scelto.",
+          "Il visualizzatore attuale a 360° mostra panorami scaricati controllati al tocco; non usa la fotocamera per riprendere la stanza. Salvare uno sfondo o una Live Photo aggiunge i contenuti scelti a Foto con il permesso richiesto. Le copie salvate in Foto o condivise fuori da amen sono separate dai dati di account e non vengono richiamate automaticamente dalla sua eliminazione. Il trattamento dei media fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR."
         ]
       },
       {
@@ -133,8 +173,8 @@
         "id": "analytics",
         "title": "Misurazione e attribuzione nell’app",
         "paragraphs": [
-          "I fornitori di misurazione e attribuzione ricevono eventi dell’app e informazioni tecniche. Possono includere passaggi iniziali, preferenze di fede e obiettivi scelti, versioni bibliche, attività sulle offerte, eventi d’acquisto, versione dell’app, date e identificatori. Identificatori di acquisto e dell’app possono essere associati per misurare l’attribuzione degli abbonamenti.",
-          "Il permesso di tracciamento Apple non interrompe necessariamente ogni evento operativo o dell’app. L’attribuzione pubblicitaria può coinvolgere partner di marketing; il tracciamento facoltativo richiede consenso quando previsto. Le preferenze di fede possono rivelare convinzioni religiose e richiedono un’ulteriore condizione lecita oltre al comune legittimo interesse. Contatta {{email}} per destinatari, permessi e scelte sulla privacy."
+          "I servizi di misurazione e attribuzione ricevono eventi iniziali e d'uso, come passaggi visualizzati o completati, interazioni con offerte a pagamento e attività d'acquisto. Possono includere nomi o numeri dei passaggi, orari, informazioni dell'app e identificativi di account, acquisto o dispositivo per misurazione e attribuzione degli abbonamenti.",
+          "Il permesso di tracciamento Apple non arresta necessariamente ogni evento dell'app o operativo. L'attribuzione può coinvolgere partner di marketing, e il tracciamento facoltativo richiede consenso ove previsto. Eventi di funzioni di fede possono rivelare o permettere di dedurre interessi religiosi; anche finalità e condizioni giuridiche devono essere valutate. Contatta {{email}} per destinatari, permessi o scelte di privacy."
         ]
       },
       {
@@ -189,8 +229,8 @@
         "id": "account-deletion",
         "title": "Eliminare l’account",
         "paragraphs": [
-          "Puoi richiedere la cancellazione dell’account nell’app. Se non puoi accedere o la richiesta non si completa, contatta l’assistenza a {{email}}. Una verifica proporzionata dell’identità può proteggere le informazioni da accessi o eliminazioni non autorizzati. Non ti sarà chiesto di inviare una password per la verifica.",
-          "Disinstallare non elimina i dati backend. La cancellazione account non annulla abbonamenti Apple: usa separatamente {{cancel}}. Copie locali, esportazioni, scadenze backup e conservazione legale restano distinte dalla rimozione dell’account attivo."
+          "Puoi chiedere l'eliminazione dell'account nell'app. Se non puoi accedere o la richiesta non termina, contatta l'assistenza a {{email}}. Può servire una verifica proporzionata per prevenire accesso o eliminazione non autorizzati; non ti sarà chiesto di inviare una password. Eliminare l'account e rimuovere contenuti esclusivamente locali sono operazioni separate. Note, evidenziazioni o preferenze possono restare indipendentemente dall'account; usa i relativi controlli e il ripristino di Giorni con Gesù oppure chiedi aiuto.",
+          "Disinstallare l'app non elimina da solo i dati di account nel cloud. Rimuovere l'accesso tramite Accedi con Apple è distinto dalla richiesta di eliminare le informazioni detenute da amen. Né rimuovere l'app né eliminare l'account annulla automaticamente un abbonamento Apple: annullalo separatamente tramite {{cancel}}. Copie sul dispositivo, esportazioni, scadenza dei backup e conservazione legale sono distinti dalla rimozione dell'account attivo."
         ]
       },
       {
@@ -240,8 +280,8 @@
         "id": "service",
         "title": "Servizi offerti",
         "paragraphs": [
-          "amen sostiene lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni collegate. Nema offre chat tramite servizi IA di Google. Anche alcuni suggerimenti di lettura e funzioni audio usano IA. La disponibilità dipende da versione e accesso; Bible Lock usa Tempo di utilizzo di Apple.",
-          "L’offerta concreta definisce accesso pagato. Non promettiamo un numero fisso di messaggi gratuiti, modello specifico, ogni traduzione, funzionamento perpetuo o funzioni di altre versioni. Descrizioni legalmente vincolanti restano obbligatorie."
+          "amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema offre chat IA con servizi di Google. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
+          "L'offerta effettiva e la schermata d'acquisto definiscono l'accesso a pagamento. Alcuni media devono essere scaricati prima dell'uso; salvare o condividere contenuti resta soggetto alla licenza. Queste condizioni non promettono un numero fisso di messaggi gratuiti, un modello specifico, tutte le traduzioni bibliche, funzionamento perpetuo o funzioni di un'altra versione. Descrizioni e impegni contrattuali resi vincolanti dalla legge restano vincolanti."
         ]
       },
       {
@@ -256,8 +296,8 @@
         "id": "accounts",
         "title": "Account e sicurezza",
         "paragraphs": [
-          "Alcune funzioni necessitano account e rete. Fornisci dati richiesti corretti, aggiorna recupero e proteggi credenziali. Non usare account altrui senza permesso. Segnala accessi sospetti; non rispondi automaticamente di attività dovute a guasti fuori dal tuo controllo.",
-          "Un nome scelto non concede marchi o impersonificazione. Sincronizzazione può dipendere da accesso e compatibilità. Conserva copie dei dati importanti; ciò non riduce obblighi di conformità di amen."
+          "amen può creare un account ospite durante la configurazione senza e-mail o accesso Apple. L'accesso dipende dalle informazioni di autenticazione disponibili e non offre le stesse opzioni di accesso e recupero di un account collegato. Gli account esistenti supportati possono usare il ritorno con Apple o e-mail e password. Alcune funzioni richiedono un account operativo e rete. Proteggi l'accesso e avvisa l'assistenza di sospetti usi non autorizzati; non sei automaticamente responsabile di ogni azione causata da guasti fuori dal tuo controllo. Non usare l’account di un’altra persona senza autorizzazione.",
+          "L'opzione Apple disponibile può collegare o trasferire informazioni supportate dell'ospite. Autenticazione riuscita, dati esistenti e compatibilità influenzano collegamento e sincronizzazione; note ed evidenziazioni locali sono separate. Contatta l'assistenza per dati mancanti dopo cambi di accesso. La scelta di un nome visualizzato non autorizza a violare marchi o a fingere di essere un'altra persona. Conserva una copia delle informazioni importanti; ciò non riduce il dovere di amen di fornire un servizio conforme."
         ]
       },
       {
@@ -296,8 +336,8 @@
         "id": "screen-time",
         "title": "Bible Lock e permessi",
         "paragraphs": [
-          "Bible Lock dipende da autorizzazioni Apple, sistema, app scelte e orari. Può limitare attività configurate. Verifica selezioni e mantieni funzioni essenziali accessibili; gestisci permessi nelle impostazioni.",
-          "Limiti, revoche o interruzioni possono influire sui blocchi. È un aiuto di routine senza garanzia di sorveglianza parentale, sicurezza, trattamento o efficacia continua. Verifica piani IA come altri risultati."
+          "Bible Lock dipende dall'autorizzazione Apple, dalle funzioni di sistema supportate e da app, categorie, domini web compatibili e orari scelti. Può limitare attività selezionate secondo la configurazione. Controlla le scelte prima dell'attivazione e mantieni accesso alle funzioni essenziali. Puoi gestire l'autorizzazione nelle impostazioni di sistema.",
+          "Restrizioni del sistema, autorizzazioni scadute, impostazioni o interruzioni possono influenzare blocco e sblocco. È un aiuto alle abitudini personali e non garantisce supervisione genitoriale, sicurezza, trattamento o applicazione continua. I consigli di lettura possono essere generati dall'IA e vanno valutati come altri contenuti IA."
         ]
       },
       {
@@ -344,8 +384,8 @@
         "id": "restoration",
         "title": "Ripristino e acquisti unici",
         "paragraphs": [
-          "Ripristina con l’account Apple originale e il controllo disponibile. Servono validazione, associazione, compatibilità e condizioni effettive di condivisione. Contatta assistenza se un acquisto valido non è riconosciuto.",
-          "Prodotti unici o a vita non si rinnovano salvo offerta espressa. Portata segue descrizione e legge; non significa automaticamente servizio per tutta la vita o ogni funzione futura. Non riduciamo retroattivamente diritti concordati ridefinendoli qui."
+          "Usa il ripristino degli acquisti con l'account Apple che ha effettuato l'acquisto. Accedi con Apple in amen e l'account per acquisti App Store hanno scopi diversi. L'accesso all'app da solo non acquista, annulla o garantisce il ripristino di un abbonamento. L'accesso può dipendere da convalida Apple, associazione dell'account, compatibilità e condizioni effettive di condivisione. Contatta l'assistenza se un acquisto convalidato non è riconosciuto.",
+          "Un prodotto una tantum o a vita non si rinnova automaticamente salvo indicazione espressa dell'offerta. La portata segue la descrizione d'acquisto e la legge inderogabile; non promette automaticamente funzionamento per tutta la vita dell'acquirente o ogni servizio futuro. Non possiamo ridurre retroattivamente un diritto concordato ridefinendolo in queste condizioni."
         ]
       },
       {
@@ -400,8 +440,8 @@
         "id": "termination",
         "title": "Cessazione e cancellazione account",
         "paragraphs": [
-          "Puoi smettere di usare amen e richiedere la cancellazione dell’account nell’app o tramite assistenza. Disinstallare non elimina da solo le informazioni salvate dell’account. Consulta {{privacy}} per cancellazione, conservazione lecita e copie. Salva le informazioni utili prima della richiesta.",
-          "Annulla Apple separatamente per fermare futuri addebiti. Cessare accesso non annulla quel contratto automaticamente. amen rispetterà obblighi di avviso, accesso pagato e rimedi in caso di chiusura. Clausole necessariamente persistenti restano soggette a legge."
+          "Puoi smettere di usare amen e chiedere l'eliminazione dell'account nell'app o all'assistenza. Disinstallare non rimuove da solo le informazioni nel cloud; alcune note, evidenziazioni o preferenze esclusivamente locali possono restare separate dall'account. Vedi {{privacy}} per controlli, richieste, conservazione legale e backup. Salva ciò che vuoi conservare prima della richiesta.",
+          "Annulla separatamente un abbonamento Apple per fermare le fatturazioni future. Rimozione dell'app, eliminazione dell'account o fine dell'accesso non annullano automaticamente il contratto del negozio. Se amen termina un servizio o contratto, rispetteremo gli obblighi applicabili di preavviso, accesso pagato e rimedi del consumatore. Le clausole necessariamente persistenti, come pretese maturate e conservazione legale, restano soggette alla legge."
         ]
       },
       {
