@@ -1,5 +1,9 @@
 {
   "ui": {
+    "navPrivacy": "Datenschutz",
+    "navTerms": "AGB",
+    "navImprint": "Rechtliches",
+    "navSupport": "Kontakt",
     "home": "amen-Website",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",

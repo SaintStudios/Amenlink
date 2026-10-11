@@ -46,6 +46,7 @@ function validate(copy, locale) {
 
 function render(copy, locale, kind, auto = false) {
   const ui = copy.ui;
+  const navigation = { privacy: ui.navPrivacy, terms: ui.navTerms, imprint: ui.navImprint, support: ui.navSupport };
   const doc = kind === 'support' ? {
     intro: ui.supportDescription,
     summary: [copy.privacy.summary[3], copy.terms.summary[1]],
@@ -88,7 +89,7 @@ function render(copy, locale, kind, auto = false) {
     '<a class="skip" href="#document">' + escape(ui.skip) + '</a>\n' +
     '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="36" height="36"><span>amen</span></a>' +
     '<nav aria-label="' + escape(ui.documents) + '">' + ['privacy', 'terms', 'imprint', 'support'].map((type) =>
-      '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(ui[type]) + '</a>').join('') +
+      '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(navigation[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
     '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' +
     '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata"><span>' + escape(ui.updated) + ': <time datetime="' + date + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + date + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
@@ -103,7 +104,7 @@ function render(copy, locale, kind, auto = false) {
     (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
       ['google', 'googlePrivacy'].map(reference).join('') + '</ul></section>' : '') +
     '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
-    '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(ui[type]) + '</a>').join('') + '</div>' +
+    '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(navigation[type]) + '</a>').join('') + '</div>' +
     '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
     '<a class="auto-language" href="/' + kind + '.html">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';

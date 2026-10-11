@@ -1,5 +1,9 @@
 {
   "ui": {
+    "navPrivacy": "Integritet",
+    "navTerms": "Villkor",
+    "navImprint": "Juridik",
+    "navSupport": "Kontakt",
     "home": "amens webbplats",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",

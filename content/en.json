@@ -1,5 +1,9 @@
 {
   "ui": {
+    "navPrivacy": "Privacy",
+    "navTerms": "Terms",
+    "navImprint": "Legal",
+    "navSupport": "Support",
     "home": "amen website",
     "privacy": "Privacy policy",
     "terms": "Terms of use",
