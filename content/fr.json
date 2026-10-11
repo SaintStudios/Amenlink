@@ -1,5 +1,9 @@
 {
   "ui": {
+    "navPrivacy": "Vie privée",
+    "navTerms": "Conditions",
+    "navImprint": "Infos légales",
+    "navSupport": "Contact",
     "home": "Site amen",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d’utilisation",

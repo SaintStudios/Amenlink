@@ -1,5 +1,9 @@
 {
   "ui": {
+    "navPrivacy": "Privacidad",
+    "navTerms": "Términos",
+    "navImprint": "Legal",
+    "navSupport": "Contacto",
     "home": "Sitio web de amen",
     "privacy": "Política de privacidad",
     "terms": "Condiciones de uso",
