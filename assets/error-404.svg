@@ -1,0 +1,5 @@
+<svg class="error-art" viewBox="0 0 880 370" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <path class="error-digit" fill-rule="evenodd" d="M184 32H240V201H275V251H240V323H184V251H22V207L184 32ZM184 114L102 201H184V114Z"/>
+  <ellipse class="error-zero" cx="440" cy="172" rx="105" ry="141"/>
+  <path class="error-digit" fill-rule="evenodd" d="M764 32H820V201H855V251H820V323H764V251H602V207L764 32ZM764 114L682 201H764V114Z"/>
+</svg>

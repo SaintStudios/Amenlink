@@ -119,6 +119,7 @@ function renderNotFound(copies) {
   const labels = { privacy: 'navPrivacy', terms: 'navTerms', imprint: 'navImprint', support: 'navSupport' };
   const navigation = Object.entries(labels).map(([kind, key]) => '<a data-legal-document="' + kind + '" data-copy="ui.' + key + '" href="/legal/en/' + kind + '/">' + escape(ui[key]) + '</a>').join('');
   const data = JSON.stringify(copies).replace(/</g, '\\u003c');
+  const artwork = fs.readFileSync(path.join(root, 'assets/error-404.svg'), 'utf8');
   return '<!doctype html>\n<html lang="en">\n<head>\n' +
     '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
     '<meta name="robots" content="noindex">\n<meta name="description" content="' + escape(copy.description) + '">\n' +
@@ -129,11 +130,11 @@ function renderNotFound(copies) {
     '<script src="' + asset('not-found.js') + '" defer></script>\n</head>\n<body class="not-found-page">\n' +
     '<a class="skip" href="#document" data-copy="ui.skip">' + escape(ui.skip) + '</a>\n' +
     '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="32" height="32"><span>amen</span></a><nav aria-label="' + escape(ui.documents) + '">' + navigation + '</nav></div></header>\n' +
-    '<main id="document" class="not-found-main" tabindex="-1">\n<p class="error-code" aria-hidden="true">4<span>0</span>4</p>\n' +
+    '<main id="document" class="not-found-main" tabindex="-1">\n' + artwork +
     '<h1><span class="sr-only">404: </span><span data-copy="notFound.title">' + escape(copy.title) + '</span></h1>\n' +
     '<p class="error-description" data-copy="notFound.description">' + escape(copy.description) + '</p>\n' +
     '<a class="home-action" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-copy="notFound.homeAction">' + escape(copy.homeAction) + '</span></a>\n' +
-    '</main>\n' +
+    '<p class="verse-note"><span data-copy="notFound.verse">' + escape(copy.verse) + '</span><span class="scripture-reference" data-copy="notFound.verseReference">' + escape(copy.verseReference) + '</span></p>\n</main>\n' +
     '<footer><div class="footer-links"><span>amen</span>' + navigation + '</div>' +
     '<details class="language-picker"><summary><span data-copy="ui.language">' + escape(ui.language) + '</span> · <span id="current-language">English</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +

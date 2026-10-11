@@ -501,6 +501,8 @@
   "notFound": {
     "title": "Página no encontrada.",
     "description": "El enlace puede haber cambiado o la página se ha movido. Volvamos al inicio.",
-    "homeAction": "Ir al inicio"
+    "homeAction": "Ir al inicio",
+    "verse": "Cada oveja merece ser encontrada.",
+    "verseReference": "Inspirado en Lucas 15:4"
   }
 }

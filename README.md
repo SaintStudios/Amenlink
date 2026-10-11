@@ -39,7 +39,7 @@ The legal document layout follows the app's DESIGN.md: system type, neutral ligh
 
 ## Missing pages
 
-GitHub Pages serves the generated root `404.html` for unknown URLs, including nested paths. The page keeps the requested URL and its real HTTP 404 response. A minimal outlined 404 with a solid teal zero uses the app's system typography and neutral surfaces, inspired by the compositions in [404s.design](https://www.404s.design/sites/hexful). The layout is static, with a clear home action. `/404/` provides a clean preview; direct preview filenames redirect there.
+GitHub Pages serves the generated root `404.html` for unknown URLs, including nested paths. The page keeps the requested URL and its real HTTP 404 response. A centered 404 with dark digits and a teal zero uses the app's neutral surfaces, inspired by the compositions in [404s.design](https://www.404s.design/sites/hexful). Below the clear home action, a localized reflection inspired by Luke 15:4 preserves the Christian character of the page. The illustration contains only the 404 digits, and the layout is static. `/404/` provides a clean preview; direct preview filenames redirect there.
 
 The error page uses the browser's primary language or an explicit `?lang=` selection, supports all six app languages, and falls back to complete English content if JavaScript is unavailable. Legal links follow the selected language. The compact footer selector changes language on the same URL; it uses no cookies, storage or external translation service. Its copy lives under `notFound` in the existing content files and is regenerated with the legal pages.
 
