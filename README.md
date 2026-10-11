@@ -2,6 +2,10 @@
 
 This is the amen website repository, named SaintStudios/Amenlink on GitHub. GitHub Pages serves the main branch at https://amen-app.com/. The deployment stays static: no runtime packages, account service, translation API or build service is needed.
 
+## App Store redirect design
+
+The main redirect page and the older blocked-link page follow the app's DESIGN.md: system sans typography, neutral light/dark page and card surfaces, subtle separators, 20-pixel action corners and growing controls with a 52-pixel minimum height. Status and availability labels are quiet text; instructions use plain numbered rows. The existing markup, translations, visible controls and redirect logic are preserved, including the immediate macOS redirect, delayed iOS handoff, TikTok instructions, in-app-browser recovery, Android availability notice and no-script fallback.
+
 ## Legal pages
 
 The app privacy policy, terms, support and legal information are fully rendered in English, German, Spanish, French, Italian and Swedish. Content is in content/<language>.json. Support reuses the relevant translated sections so its explanations cannot diverge from the policies. Legal HTML is generated and committed; edit the JSON sources and run:

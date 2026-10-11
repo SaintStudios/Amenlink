@@ -154,7 +154,7 @@ assert.ok(sharedSpecialHeadlineIndex >= 0, 'TikTok and opening-store must retain
 const cssAfterSharedHeadlineRule = html.slice(sharedSpecialHeadlineIndex + sharedSpecialHeadlineSelector.length);
 const openingStoreHeadlineStyles = cssAfterSharedHeadlineRule.match(/body\.is-opening-store h1 \{([\s\S]*?)\n        \}/)?.[1] ?? '';
 assert.match(openingStoreHeadlineStyles, /font-size: clamp\(1\.45rem, 6vw, 1\.5rem\);/, 'opening-store needs a later scoped 23–24px headline override');
-assert.match(html, /body\.is-tiktok h1,\s*body\.is-opening-store h1 \{[\s\S]*?font-size: clamp\(1\.55rem, 6\.8vw, 1\.95rem\);/, 'the shared TikTok headline sizing must remain unchanged');
+assert.match(html, /body\.is-tiktok h1,\s*body\.is-opening-store h1 \{[\s\S]*?font-size: clamp\(1\.375rem, 4vw, 1\.5rem\);/, 'TikTok and opening-store use the shared compact utility title role');
 
 const iosAppStoreUrl = 'https://apps.apple.com/app/id6744241928';
 assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6744241928/);
@@ -369,7 +369,7 @@ for (const requiredCopy of [
 assert.match(html, /if \(isRestricted\)[\s\S]*?setText\('stepOne', copy\.inAppStepOne\)/);
 assert.match(html, /<link rel="canonical" href="https:\/\/amen-app\.com\/">/);
 assert.match(html, /<meta property="og:image" content="https:\/\/amen-app\.com\/og-image\.png">/);
-assert.match(html, /<meta name="theme-color" content="#fcf7ed">/);
+assert.match(html, /<meta name="theme-color" content="#ffffff" media="\(prefers-color-scheme: light\)">/);
 assert.match(html, /min-height: 100dvh/);
 assert.match(html, /overflow-y: auto/);
 assert.match(html, /prefers-reduced-motion: reduce/);
