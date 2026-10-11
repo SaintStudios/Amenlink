@@ -123,6 +123,12 @@ assert.deepEqual(Object.keys(localeKeys).sort(), ['de', 'en', 'es', 'fr', 'it', 
 for (const locale of ['de', 'es', 'fr', 'it', 'sv']) {
     assert.deepEqual(Array.from(localeKeys[locale]), Array.from(localeKeys.en), `${locale} must have the same copy keys as English`);
 }
+const localizedCopy = JSON.parse(vm.runInContext('JSON.stringify(translations)', context));
+for (const [locale, copy] of Object.entries(localizedCopy)) {
+    for (const [key, value] of Object.entries(copy)) {
+        assert.doesNotMatch(value, /(?:^|[.!?]\s+)amen\b/, `${locale}/${key}: capitalize Amen at sentence and heading starts`);
+    }
+}
 
 const openingStoreTitles = JSON.parse(vm.runInContext(
     'JSON.stringify(Object.fromEntries(Object.entries(translations).map(([locale, value]) => [locale, value.openingStore])))',

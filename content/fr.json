@@ -37,7 +37,7 @@
     "more": "En savoir plus ici"
   },
   "privacy": {
-    "intro": "amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Cette politique explique l’utilisation des informations personnelles dans l’app : comptes, préférences de lecture, discussion IA Nema, audio et abonnements. Les informations traitées dépendent des fonctions choisies.",
+    "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Cette politique explique l’utilisation des informations personnelles dans l’app : comptes, préférences de lecture, discussion IA Nema, audio et abonnements. Les informations traitées dépendent des fonctions choisies.",
     "summary": [
       "Nema utilise les services d’IA de Google pour la discussion. Votre message et le contexte pertinent sont transmis à Google pour produire une réponse.",
       "L'utilisation en tant qu'invité crée un identifiant de compte sans exiger d'adresse e-mail. Les notes et surlignages locaux sont distincts des contenus enregistrés avec le compte. Apple gère les achats.",
@@ -81,7 +81,7 @@
         "id": "reading",
         "title": "Lecture, notes et personnalisation",
         "paragraphs": [
-          "amen utilise la langue, la version de la Bible, l'activité de lecture, les séries, les réussites et les paramètres pour fournir les fonctions choisies. Les notes bibliques et surlignages de versets sont enregistrés dans le stockage local de l'app dans la version actuelle. Les versets et messages enregistrés avec le compte, les conversations, le profil et les données de progression prises en charge utilisent un stockage distant lorsqu'il est disponible. La connexion ne synchronise pas à elle seule tous les éléments locaux entre appareils. Les paramètres de l'appareil et de sauvegarde peuvent également affecter ces informations.",
+          "Amen utilise la langue, la version de la Bible, l'activité de lecture, les séries, les réussites et les paramètres pour fournir les fonctions choisies. Les notes bibliques et surlignages de versets sont enregistrés dans le stockage local de l'app dans la version actuelle. Les versets et messages enregistrés avec le compte, les conversations, le profil et les données de progression prises en charge utilisent un stockage distant lorsqu'il est disponible. La connexion ne synchronise pas à elle seule tous les éléments locaux entre appareils. Les paramètres de l'appareil et de sauvegarde peuvent également affecter ces informations.",
           "La finalité est de fournir les fonctions de lecture, progression et personnalisation, généralement au titre de l'article 6, paragraphe 1, point b du RGPD, avec une protection supplémentaire pour les convictions ou circonstances sensibles. Utilisez les commandes des notes, surlignages ou conversations pour gérer les contenus. Conservez une copie des informations importantes ; cela ne réduit pas vos droits à un service conforme. La visibilité du profil public et des classements est expliquée séparément ci-dessous."
         ]
       },
@@ -137,7 +137,7 @@
         "id": "photos-notifications",
         "title": "Photos de profil et permissions de l’appareil",
         "paragraphs": [
-          "Lorsque vous enregistrez une photo de profil, l'image sélectionnée est stockée auprès du service de compte concerné. Elle peut apparaître avec le profil ou le classement. Des liens d'image partagés peuvent donner accès à cette image. amen utilise l'image choisie ; ajouter une photo de profil ne rend pas toutes les images de votre photothèque disponibles pour l'app.",
+          "Lorsque vous enregistrez une photo de profil, l'image sélectionnée est stockée auprès du service de compte concerné. Elle peut apparaître avec le profil ou le classement. Des liens d'image partagés peuvent donner accès à cette image. Amen utilise l'image choisie ; ajouter une photo de profil ne rend pas toutes les images de votre photothèque disponibles pour l'app.",
           "Vous pouvez gérer les permissions pertinentes de Photos et Temps d'écran dans les réglages iOS. Enregistrer un fond ou une Live Photo utilise la permission nécessaire pour ajouter le contenu choisi à Photos, comme expliqué ci-dessous. Refuser une permission peut limiter la fonction. L'autorisation d'une capacité de l'appareil est distincte du consentement à la publicité ou au traitement sensible. Les informations de confidentialité d'Apple sont disponibles à {{applePrivacy}}."
         ]
       },
@@ -169,7 +169,7 @@
         "id": "purchases",
         "title": "Achats et Apple",
         "paragraphs": [
-          "Apple gère les paiements et la facturation de l’App Store. amen ne reçoit pas votre numéro de carte complet lors d’un achat intégré Apple. Les services de validation utilisent identifiants de compte, transactions, produits, état d’essai et accès aux abonnements pour reconnaître les achats. Consultez {{appleTerms}}.",
+          "Apple gère les paiements et la facturation de l’App Store. Amen ne reçoit pas votre numéro de carte complet lors d’un achat intégré Apple. Les services de validation utilisent identifiants de compte, transactions, produits, état d’essai et accès aux abonnements pour reconnaître les achats. Consultez {{appleTerms}}.",
           "L’état d’achat et des identifiants techniques peuvent être associés à votre compte amen pour l’attribution des abonnements. La gestion d’accès repose généralement sur l’article 6.1.b, les dossiers obligatoires sur le 6.1.c et le marketing facultatif sur le consentement lorsqu’il est nécessaire. Le traitement des achats par Apple est décrit dans {{applePrivacy}}."
         ]
       },
@@ -264,7 +264,7 @@
     ]
   },
   "terms": {
-    "intro": "amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Ces conditions expliquent l’usage de l’app, discussion IA Nema, compte et abonnements. Lisez aussi la politique de confidentialité et l’offre affichée avant un achat. Vos droits légaux de consommateur restent protégés.",
+    "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Ces conditions expliquent l’usage de l’app, discussion IA Nema, compte et abonnements. Lisez aussi la politique de confidentialité et l’offre affichée avant un achat. Vos droits légaux de consommateur restent protégés.",
     "summary": [
       "Nema utilise les services d’IA de Google pour la discussion. Les réponses peuvent être inexactes ; vérifiez les affirmations importantes et les citations bibliques.",
       "L’écran d’achat affiche prix, période de facturation, conditions d’essai et accès inclus avant confirmation.",
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "Services proposés",
         "paragraphs": [
-          "amen propose lecture biblique chrétienne, prière et réflexion avec versets enregistrés, surlignages, notes, méditations, progression et fonctions connexes. Selon la version et l'accès, l'app propose aussi bandes dessinées bibliques, fonds, scènes tactiles à 360°, musique de fond, Jours avec Jésus et widgets. Nema fournit la discussion par IA avec les services de Google. Certaines recommandations de lecture et fonctions audio utilisent aussi l'IA ; Bible Lock utilise Temps d'écran d'Apple.",
+          "Amen propose lecture biblique chrétienne, prière et réflexion avec versets enregistrés, surlignages, notes, méditations, progression et fonctions connexes. Selon la version et l'accès, l'app propose aussi bandes dessinées bibliques, fonds, scènes tactiles à 360°, musique de fond, Jours avec Jésus et widgets. Nema fournit la discussion par IA avec les services de Google. Certaines recommandations de lecture et fonctions audio utilisent aussi l'IA ; Bible Lock utilise Temps d'écran d'Apple.",
           "L'offre réelle et l'écran d'achat définissent l'accès payant. Certains médias doivent être téléchargés avant utilisation ; l'enregistrement et le partage restent soumis à leur licence. Ces conditions ne promettent pas un nombre fixe de messages gratuits, un modèle précis, chaque traduction biblique, un fonctionnement perpétuel ni des fonctions d'une autre version. Les descriptions et engagements contractuels rendus obligatoires par la loi restent obligatoires."
         ]
       },
@@ -300,7 +300,7 @@
         "id": "accounts",
         "title": "Comptes et sécurité",
         "paragraphs": [
-          "amen peut créer un compte invité pendant la configuration sans e-mail ni connexion Apple. L'accès invité dépend des informations d'authentification disponibles et ne fournit pas les mêmes options de connexion ou récupération qu'un compte associé. Les comptes existants pris en charge peuvent utiliser le retour avec Apple ou e-mail et mot de passe. Certaines fonctions nécessitent un compte opérationnel et une connexion réseau. Protégez l'accès et signalez toute suspicion d'usage non autorisé ; vous n'êtes pas automatiquement responsable de tout acte causé par une défaillance hors de votre contrôle. N'utilisez pas le compte d'autrui sans autorisation.",
+          "Amen peut créer un compte invité pendant la configuration sans e-mail ni connexion Apple. L'accès invité dépend des informations d'authentification disponibles et ne fournit pas les mêmes options de connexion ou récupération qu'un compte associé. Les comptes existants pris en charge peuvent utiliser le retour avec Apple ou e-mail et mot de passe. Certaines fonctions nécessitent un compte opérationnel et une connexion réseau. Protégez l'accès et signalez toute suspicion d'usage non autorisé ; vous n'êtes pas automatiquement responsable de tout acte causé par une défaillance hors de votre contrôle. N'utilisez pas le compte d'autrui sans autorisation.",
           "L'option Apple proposée peut associer ou transférer des informations prises en charge du compte invité. L'authentification réussie, les données existantes et la compatibilité affectent association et synchronisation ; notes et surlignages locaux restent distincts. Contactez l'assistance pour toute information manquante après changement de connexion. Le choix d'un nom affiché n'autorise pas à porter atteinte à une marque ou à usurper l'identité d'une autre personne. Conservez une copie des informations importantes ; cette recommandation ne réduit pas l'obligation d'amen de fournir un service conforme."
         ]
       },
@@ -332,7 +332,7 @@
         "id": "professional-advice",
         "title": "Conseils professionnels et urgences",
         "paragraphs": [
-          "amen aide lecture et réflexion sans fournir diagnostic, traitement, psychothérapie, conseil juridique ou financier, surveillance d’urgence ni relation pastorale confidentielle. Il ne remplace pas un professionnel connaissant votre situation.",
+          "Amen aide lecture et réflexion sans fournir diagnostic, traitement, psychothérapie, conseil juridique ou financier, surveillance d’urgence ni relation pastorale confidentielle. Il ne remplace pas un professionnel connaissant votre situation.",
           "En danger immédiat, contactez les urgences ou un service de crise local. Ne comptez pas sur une lecture humaine à temps. Ne décidez pas de médicaments, sécurité, droit ou finance sur la seule IA. La responsabilité impérative demeure."
         ]
       },
@@ -364,8 +364,8 @@
         "id": "paid-access",
         "title": "Accès payant et offre",
         "paragraphs": [
-          "amen peut proposer abonnements ou achats uniques via Apple. L’interface présente avant confirmation produit, prix, monnaie, période, essai ou promotion et accès inclus. Cette offre précise gouverne l’achat, pas une description générale du site.",
-          "Prix et disponibilité peuvent varier selon boutique, fiscalité, produit et admissibilité. Les achats sont facturés au compte Apple et des services de validation reconnaissent l’accès. amen ne reçoit pas le numéro complet de votre carte. Un essai ou une promotion ne vaut que s’il apparaît dans la confirmation ; consultez {{appleTerms}}."
+          "Amen peut proposer abonnements ou achats uniques via Apple. L’interface présente avant confirmation produit, prix, monnaie, période, essai ou promotion et accès inclus. Cette offre précise gouverne l’achat, pas une description générale du site.",
+          "Prix et disponibilité peuvent varier selon boutique, fiscalité, produit et admissibilité. Les achats sont facturés au compte Apple et des services de validation reconnaissent l’accès. Amen ne reçoit pas le numéro complet de votre carte. Un essai ou une promotion ne vaut que s’il apparaît dans la confirmation ; consultez {{appleTerms}}."
         ]
       },
       {
@@ -396,7 +396,7 @@
         "id": "refunds",
         "title": "Remboursements et problèmes",
         "paragraphs": [
-          "Pour les achats Apple, utilisez {{refund}} ou reportaproblem.apple.com. L’éligibilité dépend des règles, circonstances et loi. amen peut aider sur l’accès mais ne garantit pas chaque remboursement Apple.",
+          "Pour les achats Apple, utilisez {{refund}} ou reportaproblem.apple.com. L’éligibilité dépend des règles, circonstances et loi. Amen peut aider sur l’accès mais ne garantit pas chaque remboursement Apple.",
           "Les recours légaux contre le professionnel responsable restent ouverts. Signalez aussi défauts, doubles frais ou non-conformité si pertinent. Aucune clause ne rend tous les achats non remboursables ni ne retire réparation, réduction du prix, résolution ou remboursement."
         ]
       },
@@ -497,5 +497,12 @@
         ]
       }
     ]
+  },
+  "notFound": {
+    "title": "Page introuvable.",
+    "description": "L’adresse a peut-être changé ou la page a été déplacée. Retrouvons l’accueil.",
+    "homeAction": "Retour à l’accueil",
+    "sheepNote": "Chaque brebis mérite d’être retrouvée.",
+    "sheepReference": "Inspiré de Luc 15,4"
   }
 }

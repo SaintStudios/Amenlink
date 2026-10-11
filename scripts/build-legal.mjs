@@ -28,6 +28,9 @@ function validate(copy, locale) {
   for (const key of Object.keys(english.ui)) {
     if (typeof copy.ui?.[key] !== 'string' || !copy.ui[key].trim()) throw new Error(locale + ': missing UI key ' + key);
   }
+  for (const key of Object.keys(english.notFound)) {
+    if (typeof copy.notFound?.[key] !== 'string' || !copy.notFound[key].trim()) throw new Error(locale + ': missing 404 copy ' + key);
+  }
   for (const kind of ['privacy', 'terms']) {
     const document = copy[kind];
     if (!document?.intro || document.summary?.length !== english[kind].summary.length) throw new Error(locale + ': incomplete ' + kind);
@@ -110,9 +113,40 @@ function render(copy, locale, kind, auto = false) {
     '<a class="auto-language" href="/' + kind + '.html">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
 }
 
+function renderNotFound(copies) {
+  const ui = english.ui;
+  const copy = english.notFound;
+  const labels = { privacy: 'navPrivacy', terms: 'navTerms', imprint: 'navImprint', support: 'navSupport' };
+  const navigation = Object.entries(labels).map(([kind, key]) => '<a data-legal-document="' + kind + '" data-copy="ui.' + key + '" href="/legal/en/' + kind + '.html">' + escape(ui[key]) + '</a>').join('');
+  const data = JSON.stringify(copies).replace(/</g, '\\u003c');
+  const artwork = fs.readFileSync(path.join(root, 'assets/lost-sheep.svg'), 'utf8');
+  return '<!doctype html>\n<html lang="en">\n<head>\n' +
+    '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
+    '<meta name="robots" content="noindex">\n<meta name="description" content="' + escape(copy.description) + '">\n' +
+    '<meta name="referrer" content="strict-origin-when-cross-origin">\n' +
+    '<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">\n' +
+    '<title>' + escape(copy.title) + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
+    '<link rel="stylesheet" href="' + asset('legal.css') + '">\n<link rel="stylesheet" href="' + asset('not-found.css') + '">\n' +
+    '<script src="' + asset('not-found.js') + '" defer></script>\n</head>\n<body class="not-found-page">\n' +
+    '<a class="skip" href="#document" data-copy="ui.skip">' + escape(ui.skip) + '</a>\n' +
+    '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="32" height="32"><span>amen</span></a><nav aria-label="' + escape(ui.documents) + '">' + navigation + '</nav></div></header>\n' +
+    '<main id="document" class="not-found-main" tabindex="-1">\n' + artwork +
+    '<h1><span class="sr-only">404: </span><span data-copy="notFound.title">' + escape(copy.title) + '</span></h1>\n' +
+    '<p class="error-description" data-copy="notFound.description">' + escape(copy.description) + '</p>\n' +
+    '<a class="home-action" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-copy="notFound.homeAction">' + escape(copy.homeAction) + '</span></a>\n' +
+    '<p class="sheep-note"><span data-copy="notFound.sheepNote">' + escape(copy.sheepNote) + '</span><span class="scripture-reference" data-copy="notFound.sheepReference">' + escape(copy.sheepReference) + '</span></p>\n</main>\n' +
+    '<footer><div class="footer-links"><span>amen</span>' + navigation + '</div>' +
+    '<details class="language-picker"><summary><span data-copy="ui.language">' + escape(ui.language) + '</span> · <span id="current-language">English</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
+    languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +
+    '<a class="auto-language" href="?" data-copy="ui.auto">' + escape(ui.auto) + '</a></nav></details></footer>\n' +
+    '<script type="application/json" id="not-found-copy">' + data + '</script>\n</body>\n</html>\n';
+}
+
+const notFoundCopies = {};
 for (const locale of languages) {
   const copy = JSON.parse(fs.readFileSync(path.join(root, 'content', locale + '.json'), 'utf8'));
   validate(copy, locale);
+  notFoundCopies[locale] = { ui: copy.ui, notFound: copy.notFound, languageName: names[locale] };
   for (const kind of ['privacy', 'terms', 'support', 'imprint']) generated.set('legal/' + locale + '/' + kind + '.html', render(copy, locale, kind));
 }
 const aliases = { privacy: ['privacy','datenschutz'], terms: ['terms','nutzungsbedingungen','agb'], support: ['support'], imprint: ['imprint','impressum'] };
@@ -123,6 +157,7 @@ for (const [kind, names] of Object.entries(aliases)) {
     generated.set(name + '/index.html', html);
   }
 }
+generated.set('404.html', renderNotFound(notFoundCopies));
 
 let stale = false;
 for (const [name, html] of generated) {
@@ -138,4 +173,4 @@ for (const [name, html] of generated) {
   }
 }
 if (stale) process.exitCode = 1;
-else console.log((check ? 'Verified ' : 'Generated ') + generated.size + ' legal pages.');
+else console.log((check ? 'Verified ' : 'Generated ') + (generated.size - 1) + ' legal pages and the localized 404 page.');

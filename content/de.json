@@ -4,7 +4,7 @@
     "navTerms": "AGB",
     "navImprint": "Rechtliches",
     "navSupport": "Kontakt",
-    "home": "amen-Website",
+    "home": "Amen-Website",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "support": "Support kontaktieren",
@@ -37,7 +37,7 @@
     "more": "Hier erfahren Sie mehr"
   },
   "privacy": {
-    "intro": "amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
+    "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
     "summary": [
       "Nema nutzt Google-KI-Dienste für den KI-Chat. Ihre Nachricht und der relevante Gesprächskontext werden zur Erstellung einer Antwort an Google übermittelt.",
       "Bei der Gastnutzung entsteht eine Kontokennung, ohne dass eine E-Mail-Adresse erforderlich ist. Lokale Notizen und Markierungen sind von kontobasiert gespeicherten Inhalten getrennt. Käufe werden über Apple verwaltet.",
@@ -81,7 +81,7 @@
         "id": "reading",
         "title": "Leseaktivität, Notizen und Personalisierung",
         "paragraphs": [
-          "amen nutzt Sprache, Bibelversionswahl, Leseaktivität, Serien, Erfolge und Einstellungen für die gewählten Funktionen. Bibelnotizen und Versmarkierungen werden in der aktuellen Version lokal in der App gespeichert. Kontobasierte gespeicherte Verse, gespeicherte Chat-Nachrichten, Gespräche, Profilinformationen und unterstützte Fortschrittsdaten verwenden, soweit verfügbar, Cloud-Speicher. Eine Anmeldung synchronisiert nicht automatisch jeden lokal gespeicherten Inhalt zwischen Geräten. Geräte- und Sicherungseinstellungen können lokale Informationen ebenfalls beeinflussen.",
+          "Amen nutzt Sprache, Bibelversionswahl, Leseaktivität, Serien, Erfolge und Einstellungen für die gewählten Funktionen. Bibelnotizen und Versmarkierungen werden in der aktuellen Version lokal in der App gespeichert. Kontobasierte gespeicherte Verse, gespeicherte Chat-Nachrichten, Gespräche, Profilinformationen und unterstützte Fortschrittsdaten verwenden, soweit verfügbar, Cloud-Speicher. Eine Anmeldung synchronisiert nicht automatisch jeden lokal gespeicherten Inhalt zwischen Geräten. Geräte- und Sicherungseinstellungen können lokale Informationen ebenfalls beeinflussen.",
           "Der Zweck ist die Bereitstellung von Lese-, Fortschritts- und Personalisierungsfunktionen, üblicherweise nach Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz bei Angaben zu Überzeugungen oder anderen sensiblen Umständen. Verwende die jeweiligen Notiz-, Markierungs- oder Gesprächsfunktionen, um gespeicherte Inhalte zu verwalten. Bewahre eine eigene Kopie wichtiger Informationen auf; deine Rechte auf eine vertragsgemäße Leistung werden dadurch nicht eingeschränkt. Die Sichtbarkeit von Profilen und Ranglisten wird nachfolgend getrennt erläutert."
         ]
       },
@@ -137,7 +137,7 @@
         "id": "photos-notifications",
         "title": "Profilfotos und Geräteberechtigungen",
         "paragraphs": [
-          "Wenn du ein Profilfoto speicherst, wird das ausgewählte Bild beim zuständigen Kontodienst gespeichert. Es kann mit deinem Profil oder Ranglisteninformationen erscheinen. Geteilte Bildlinks können anderen Zugriff auf das Bild geben. amen verwendet das von dir ausgewählte Bild; das Hinzufügen eines Profilfotos bedeutet nicht, dass sämtliche Bilder deiner Fotomediathek für die App verfügbar werden.",
+          "Wenn du ein Profilfoto speicherst, wird das ausgewählte Bild beim zuständigen Kontodienst gespeichert. Es kann mit deinem Profil oder Ranglisteninformationen erscheinen. Geteilte Bildlinks können anderen Zugriff auf das Bild geben. Amen verwendet das von dir ausgewählte Bild; das Hinzufügen eines Profilfotos bedeutet nicht, dass sämtliche Bilder deiner Fotomediathek für die App verfügbar werden.",
           "Du kannst relevante Foto- und Bildschirmzeitberechtigungen in den iOS-Einstellungen verwalten. Das Speichern von Hintergrundbildern oder Live Photos verwendet die erforderliche Berechtigung zum Hinzufügen der ausgewählten Inhalte zu Fotos, wie unten beschrieben. Eine verweigerte Berechtigung kann die Funktion einschränken. Die Autorisierung einer Gerätefunktion ist von der Einwilligung in Werbung oder sensible Datenverarbeitung getrennt. Apples Datenschutzinformationen findest du unter {{applePrivacy}}."
         ]
       },
@@ -169,7 +169,7 @@
         "id": "purchases",
         "title": "Käufe und Apple",
         "paragraphs": [
-          "Apple wickelt App-Store-Zahlungen und Abrechnung ab. amen erhält bei Apple-In-App-Käufen nicht Ihre vollständige Zahlungskartennummer. Dienste zur Kaufprüfung verwenden Kontokennungen, Transaktionsdaten, Produkte, Teststatus und Abonnementberechtigungen, um Käufe zu erkennen. Apples Kauf- und Nutzungsregeln finden Sie unter {{appleTerms}}.",
+          "Apple wickelt App-Store-Zahlungen und Abrechnung ab. Amen erhält bei Apple-In-App-Käufen nicht Ihre vollständige Zahlungskartennummer. Dienste zur Kaufprüfung verwenden Kontokennungen, Transaktionsdaten, Produkte, Teststatus und Abonnementberechtigungen, um Käufe zu erkennen. Apples Kauf- und Nutzungsregeln finden Sie unter {{appleTerms}}.",
           "Kaufstatus und technische Kennungen können Ihrem amen-Konto zugeordnet und für die Zuordnung von Abonnements verwendet werden. Die Zugangsverwaltung beruht gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO, gesetzlich erforderliche Nachweise auf lit. c und optionales Marketing auf Einwilligung, soweit erforderlich. Apples Verarbeitung von Kaufdaten erläutert {{applePrivacy}}."
         ]
       },
@@ -264,7 +264,7 @@
     ]
   },
   "terms": {
-    "intro": "amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Bedingungen erklären die App-Nutzung einschließlich Nema-KI-Chat, Kontofunktionen und Abonnements. Lesen Sie auch die Datenschutzerklärung und das vor einem Kauf angezeigte Angebot. Ihre gesetzlichen Verbraucherrechte bleiben geschützt.",
+    "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Bedingungen erklären die App-Nutzung einschließlich Nema-KI-Chat, Kontofunktionen und Abonnements. Lesen Sie auch die Datenschutzerklärung und das vor einem Kauf angezeigte Angebot. Ihre gesetzlichen Verbraucherrechte bleiben geschützt.",
     "summary": [
       "Nema nutzt Google-KI-Dienste für den KI-Chat. Antworten können unzutreffend sein; prüfen Sie wichtige Aussagen und Bibelzitate.",
       "Vor der Bestätigung zeigt das Kaufangebot Preis, Abrechnungszeitraum, Testbedingungen und enthaltenen Zugang.",
@@ -284,13 +284,13 @@
         "id": "service",
         "title": "Leistungen von amen",
         "paragraphs": [
-          "amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritt und verwandten Funktionen. Je nach Version und Zugangslevel gibt es außerdem Bibelcomics, Hintergrundbilder, per Berührung gesteuerte 360°-Szenen, Hintergrundmusik, Tage mit Jesus und Widgets. Nema bietet KI-Chat mit Google-KI-Diensten. Manche Leseempfehlungen und Audiofunktionen verwenden ebenfalls KI. Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
+          "Amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritt und verwandten Funktionen. Je nach Version und Zugangslevel gibt es außerdem Bibelcomics, Hintergrundbilder, per Berührung gesteuerte 360°-Szenen, Hintergrundmusik, Tage mit Jesus und Widgets. Nema bietet KI-Chat mit Google-KI-Diensten. Manche Leseempfehlungen und Audiofunktionen verwenden ebenfalls KI. Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
           "Das tatsächliche Angebot und der Kaufbildschirm bestimmen den kostenpflichtigen Zugang. Manche Medien müssen vor der Nutzung heruntergeladen werden; Speicherung und Weitergabe bleiben ihrer Lizenz unterworfen. Diese Bedingungen versprechen keine feste Zahl kostenloser Nachrichten, ein bestimmtes KI-Modell, jede Bibelübersetzung, unbegrenzten Betrieb oder Funktionen einer anderen Version. Gesetzlich verbindliche Beschreibungen und vertragliche Zusagen bleiben verbindlich."
         ]
       },
       {
         "id": "eligibility",
-        "title": "amen und externe Dienste nutzen",
+        "title": "Amen und externe Dienste nutzen",
         "paragraphs": [
           "Sie müssen rechtlich zum betreffenden Vertrag befähigt sein oder, soweit erforderlich, eine wirksame Zustimmung von Eltern oder Sorgeberechtigten haben. Nutzen Sie externe Dienste nach deren geltenden Bedingungen. Nema nutzt Google-KI-Dienste; die Anbieterbedingungen finden Sie unter {{google}}.",
           "Kinderdatenschutz und Einwilligungsvoraussetzungen richten sich nach dem örtlichen Recht. Käufe benötigen die für das verwendete Apple-Konto geltende Zahlungs- und Familienfreigabe. Die Inhaltsbewertung der App ersetzt weder gesetzliche Voraussetzungen noch die Bedingungen anderer Dienste."
@@ -300,7 +300,7 @@
         "id": "accounts",
         "title": "Konto und Kontosicherheit",
         "paragraphs": [
-          "amen kann während der Einrichtung ein Gastkonto ohne E-Mail-Adresse oder Apple-Anmeldung erstellen. Der Gastzugang hängt von den für die App verfügbaren Anmeldeinformationen ab und bietet nicht dieselben Anmelde- und Wiederherstellungsoptionen wie ein verknüpftes Konto. Bestehende unterstützte Konten können die angebotene Apple- oder E-Mail-/Passwortanmeldung für Rückkehrer nutzen. Manche Funktionen erfordern ein funktionierendes Konto und Netzwerkzugang. Schütze den Kontozugang und informiere den Support bei Verdacht auf unbefugte Nutzung. Du haftest nicht automatisch für jede Handlung aufgrund eines Fehlers außerhalb deiner Kontrolle. Nutze das Konto einer anderen Person nicht ohne deren Erlaubnis.",
+          "Amen kann während der Einrichtung ein Gastkonto ohne E-Mail-Adresse oder Apple-Anmeldung erstellen. Der Gastzugang hängt von den für die App verfügbaren Anmeldeinformationen ab und bietet nicht dieselben Anmelde- und Wiederherstellungsoptionen wie ein verknüpftes Konto. Bestehende unterstützte Konten können die angebotene Apple- oder E-Mail-/Passwortanmeldung für Rückkehrer nutzen. Manche Funktionen erfordern ein funktionierendes Konto und Netzwerkzugang. Schütze den Kontozugang und informiere den Support bei Verdacht auf unbefugte Nutzung. Du haftest nicht automatisch für jede Handlung aufgrund eines Fehlers außerhalb deiner Kontrolle. Nutze das Konto einer anderen Person nicht ohne deren Erlaubnis.",
           "Die verfügbare Apple-Option kann unterstützte Gastkontodaten verknüpfen oder übertragen. Erfolgreiche Anmeldung, vorhandene Kontodaten und App-Kompatibilität beeinflussen Verknüpfung und Synchronisierung. Lokal gespeicherte Notizen und Markierungen werden getrennt behandelt. Kontaktiere den Support bei fehlenden Informationen nach einem Anmeldewechsel. Die Wahl eines Anzeigenamens berechtigt nicht dazu, fremde Markenrechte zu verletzen oder sich als eine andere Person auszugeben. Bewahre eine eigene Kopie wichtiger Informationen auf; dies mindert nicht amens Pflicht zu einer vertragsgemäßen Leistung."
         ]
       },
@@ -332,7 +332,7 @@
         "id": "professional-advice",
         "title": "Fachberatung und Notfälle",
         "paragraphs": [
-          "amen unterstützt Lesen und Reflexion, bietet aber keine Diagnose, Behandlung, Psychotherapie, Rechts- oder Finanzberatung, Notfallüberwachung oder vertrauliche Seelsorgebeziehung. Geistliche Gespräche ersetzen keine qualifizierte Beratung unter Berücksichtigung Ihrer Umstände.",
+          "Amen unterstützt Lesen und Reflexion, bietet aber keine Diagnose, Behandlung, Psychotherapie, Rechts- oder Finanzberatung, Notfallüberwachung oder vertrauliche Seelsorgebeziehung. Geistliche Gespräche ersetzen keine qualifizierte Beratung unter Berücksichtigung Ihrer Umstände.",
           "Bei unmittelbarer Gefahr kontaktieren Sie örtliche Notfall- oder Krisendienste. Verlassen Sie sich nicht auf rechtzeitige menschliche Chatprüfung. Treffen Sie Medikamenten-, Sicherheits-, Rechts- oder Finanzentscheidungen nicht allein aufgrund von KI-Ausgaben. Gesetzlich nicht ausschließbare Haftung bleibt bestehen."
         ]
       },
@@ -348,7 +348,7 @@
         "id": "your-content",
         "title": "Eigene Inhalte und eingeräumte Rechte",
         "paragraphs": [
-          "Ihre Rechte an Nachrichten, Notizen, Bildern und sonstigen Eingaben bleiben bei Ihnen. amen und notwendige Anbieter dürfen sie nur insoweit verarbeiten, speichern und übertragen, wie gewünschte Funktionen, Sicherheit und rechtmäßige Pflichten es erfordern, unter Beachtung von Datenschutz und Recht.",
+          "Ihre Rechte an Nachrichten, Notizen, Bildern und sonstigen Eingaben bleiben bei Ihnen. Amen und notwendige Anbieter dürfen sie nur insoweit verarbeiten, speichern und übertragen, wie gewünschte Funktionen, Sicherheit und rechtmäßige Pflichten es erfordern, unter Beachtung von Datenschutz und Recht.",
           "Dies erlaubt nicht pauschal die Veröffentlichung privater Chats, Werbung mit Ihrem Namen oder zweckfremdes Modelltraining. Anbieter-KI-Verarbeitung beschreibt die {{privacy}}. Übermitteln Sie nur rechtmäßig nutzbare Inhalte und keine unnötigen sensiblen Daten Dritter. Geteilte und exportierte Kopien können bei Empfängern verbleiben."
         ]
       },
@@ -364,8 +364,8 @@
         "id": "paid-access",
         "title": "Kostenpflichtiger Zugang und Angebot",
         "paragraphs": [
-          "amen kann Apple-Abonnements und Einmalkäufe anbieten. Vor Bestätigung zeigt der Kaufdialog Produkt, Preis, Währung, Zeitraum, Test- oder Sonderkonditionen und enthaltenen Zugang. Dieses konkrete Angebot gilt; allgemeine Website-Angaben ersetzen es nicht.",
-          "Preise und Verfügbarkeit können nach Store-Land, Steuern, Produkt und Angebotsberechtigung variieren. Käufe werden Ihrem Apple-Konto belastet; Kaufprüfdienste helfen, den Zugang zu erkennen. amen erhält nicht Ihre vollständige Zahlungskartennummer. Tests und Aktionen gelten nur, wenn die Bestätigung sie enthält. Apples Regeln finden Sie unter {{appleTerms}}."
+          "Amen kann Apple-Abonnements und Einmalkäufe anbieten. Vor Bestätigung zeigt der Kaufdialog Produkt, Preis, Währung, Zeitraum, Test- oder Sonderkonditionen und enthaltenen Zugang. Dieses konkrete Angebot gilt; allgemeine Website-Angaben ersetzen es nicht.",
+          "Preise und Verfügbarkeit können nach Store-Land, Steuern, Produkt und Angebotsberechtigung variieren. Käufe werden Ihrem Apple-Konto belastet; Kaufprüfdienste helfen, den Zugang zu erkennen. Amen erhält nicht Ihre vollständige Zahlungskartennummer. Tests und Aktionen gelten nur, wenn die Bestätigung sie enthält. Apples Regeln finden Sie unter {{appleTerms}}."
         ]
       },
       {
@@ -396,7 +396,7 @@
         "id": "refunds",
         "title": "Erstattungen und Kaufprobleme",
         "paragraphs": [
-          "Für Apple-abgerechnete Käufe nutzen Sie {{refund}} oder reportaproblem.apple.com. Store-Regeln, Umstände und Recht bestimmen die Berechtigung. amen hilft bei Zugangsproblemen, kann aber keine Apple-Erstattung garantieren.",
+          "Für Apple-abgerechnete Käufe nutzen Sie {{refund}} oder reportaproblem.apple.com. Store-Regeln, Umstände und Recht bestimmen die Berechtigung. Amen hilft bei Zugangsproblemen, kann aber keine Apple-Erstattung garantieren.",
           "Gesetzliche Ansprüche gegenüber dem verantwortlichen Unternehmer bleiben bestehen. Melden Sie gegebenenfalls Ausfälle, Doppelbelastungen oder nicht vertragsgemäße Leistungen auch uns. Käufe werden nicht pauschal als nicht erstattbar bezeichnet; Nachbesserung, Minderung, Vertragsbeendigung und Erstattung bleiben nach Gesetz möglich."
         ]
       },
@@ -497,5 +497,12 @@
         ]
       }
     ]
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden.",
+    "description": "Dieser Link führt zu keiner Seite. Über die Startseite findest du zurück.",
+    "homeAction": "Zur Startseite",
+    "sheepNote": "Jedes Schaf ist es wert, gefunden zu werden.",
+    "sheepReference": "Nach Lukas 15,4"
   }
 }

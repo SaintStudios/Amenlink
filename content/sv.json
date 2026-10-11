@@ -37,7 +37,7 @@
     "more": "Läs mer här"
   },
   "privacy": {
-    "intro": "amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
+    "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
     "summary": [
       "Nema använder Googles AI-tjänster för chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
       "Gästanvändning skapar ett konto-ID utan krav på e-postadress. Lokala anteckningar och markeringar är separata från innehåll som sparas med kontot. Köp hanteras via Apple.",
@@ -81,7 +81,7 @@
         "id": "reading",
         "title": "Läsning, anteckningar och anpassning",
         "paragraphs": [
-          "amen använder språk, bibelversion, läsaktivitet, lässviter, prestationer och inställningar för valda funktioner. Bibelanteckningar och versmarkeringar sparas i appens lokala lagring i den nuvarande versionen. Kontobaserade sparade verser, chattmeddelanden, samtal, profil och stödda framsteg använder molnlagring där den finns. Inloggning synkroniserar inte i sig varje lokalt objekt mellan enheter. Enhetens och säkerhetskopieringens inställningar kan också påverka lokala uppgifter.",
+          "Amen använder språk, bibelversion, läsaktivitet, lässviter, prestationer och inställningar för valda funktioner. Bibelanteckningar och versmarkeringar sparas i appens lokala lagring i den nuvarande versionen. Kontobaserade sparade verser, chattmeddelanden, samtal, profil och stödda framsteg använder molnlagring där den finns. Inloggning synkroniserar inte i sig varje lokalt objekt mellan enheter. Enhetens och säkerhetskopieringens inställningar kan också påverka lokala uppgifter.",
           "Ändamålet är att ge läs-, framstegs- och anpassningsfunktioner, vanligtvis enligt artikel 6.1 b i GDPR, med ytterligare skydd för övertygelser eller andra känsliga förhållanden. Använd kontroller för anteckningar, markeringar eller samtal för att hantera innehåll. Behåll en egen kopia av viktig information; detta minskar inte dina rättigheter till en avtalsenlig tjänst. Offentlig profil och topplistor beskrivs separat nedan."
         ]
       },
@@ -137,7 +137,7 @@
         "id": "photos-notifications",
         "title": "Profilbilder och enhetsbehörigheter",
         "paragraphs": [
-          "När du sparar en profilbild lagras den valda bilden hos kontotjänsten. Den kan visas med din profil eller placering. Delade bildlänkar kan ge andra tillgång till bilden. amen använder bilden du väljer; att lägga till en profilbild gör inte alla bilder i ditt bildbibliotek tillgängliga för appen.",
+          "När du sparar en profilbild lagras den valda bilden hos kontotjänsten. Den kan visas med din profil eller placering. Delade bildlänkar kan ge andra tillgång till bilden. Amen använder bilden du väljer; att lägga till en profilbild gör inte alla bilder i ditt bildbibliotek tillgängliga för appen.",
           "Du kan hantera relevanta behörigheter för Bilder och Skärmtid i iOS-inställningarna. Att spara bakgrunder eller Live Photos använder behörigheten för att lägga till valt innehåll i Bilder, enligt beskrivningen nedan. Nekad behörighet kan begränsa funktionen. Enhetsbehörighet är separat från samtycke till reklam eller känslig behandling. Apples integritetsinformation finns på {{applePrivacy}}."
         ]
       },
@@ -169,7 +169,7 @@
         "id": "purchases",
         "title": "Köp och Apple",
         "paragraphs": [
-          "Apple hanterar App Store-betalningar och fakturering. amen får inte hela ditt kortnummer från ett Apple-köp i appen. Köpverifieringstjänster använder kontoidentifierare, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen köp. Apples köp- och användningsregler finns i {{appleTerms}}.",
+          "Apple hanterar App Store-betalningar och fakturering. Amen får inte hela ditt kortnummer från ett Apple-köp i appen. Köpverifieringstjänster använder kontoidentifierare, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen köp. Apples köp- och användningsregler finns i {{appleTerms}}.",
           "Köpstatus och tekniska identifierare kan kopplas till amen-kontot för abonnemangstillskrivning. Åtkomsthantering stöds vanligen av artikel 6.1 b, obligatoriska register av 6.1 c och valfri marknadsföring av samtycke när det krävs. Apples behandling av köpuppgifter beskrivs i {{applePrivacy}}."
         ]
       },
@@ -264,7 +264,7 @@
     ]
   },
   "terms": {
-    "intro": "amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren beskriver appens användning, Nema AI-chatt, kontofunktioner och abonnemang. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
+    "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren beskriver appens användning, Nema AI-chatt, kontofunktioner och abonnemang. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
     "summary": [
       "Nema använder Googles AI-tjänster för chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
       "Köpskärmen visar pris, faktureringsperiod, provvillkor och inkluderad åtkomst före bekräftelse.",
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "amens tjänster",
         "paragraphs": [
-          "amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema ger AI-chatt med Googles tjänster. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
+          "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema ger AI-chatt med Googles tjänster. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
           "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Vissa medier måste laddas ned före användning, och sparande eller delning omfattas av licensen. Villkoren lovar inte ett fast antal gratis meddelanden, en viss modell, alla bibelöversättningar, evig drift eller funktioner från en annan version. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
         ]
       },
@@ -300,7 +300,7 @@
         "id": "accounts",
         "title": "Konton och säkerhet",
         "paragraphs": [
-          "amen kan skapa ett gästkonto under introduktionen utan e-post eller Apple-inloggning. Gäståtkomst beror på tillgänglig autentisering och ger inte samma inloggnings- och återställningsval som ett kopplat konto. Befintliga stödda konton kan använda återvändande inloggning med Apple eller e-post/lösenord. Vissa funktioner behöver ett fungerande konto och nätverk. Skydda åtkomsten och meddela support vid misstänkt obehörig användning; du ansvarar inte automatiskt för varje handling som orsakas av fel utanför din kontroll. Använd inte någon annans konto utan tillstånd.",
+          "Amen kan skapa ett gästkonto under introduktionen utan e-post eller Apple-inloggning. Gäståtkomst beror på tillgänglig autentisering och ger inte samma inloggnings- och återställningsval som ett kopplat konto. Befintliga stödda konton kan använda återvändande inloggning med Apple eller e-post/lösenord. Vissa funktioner behöver ett fungerande konto och nätverk. Skydda åtkomsten och meddela support vid misstänkt obehörig användning; du ansvarar inte automatiskt för varje handling som orsakas av fel utanför din kontroll. Använd inte någon annans konto utan tillstånd.",
           "Det tillgängliga Apple-valet kan koppla eller överföra stödda gästkontouppgifter. Lyckad autentisering, befintliga uppgifter och kompatibilitet påverkar koppling och synkronisering; lokala anteckningar och markeringar är separata. Kontakta support om uppgifter saknas efter ändrad inloggning. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte amens skyldighet att ge en avtalsenlig tjänst."
         ]
       },
@@ -332,7 +332,7 @@
         "id": "professional-advice",
         "title": "Professionella råd och nödlägen",
         "paragraphs": [
-          "amen stödjer läsning och reflektion utan diagnos, behandling, terapi, juridisk eller ekonomisk rådgivning, nödövervakning eller konfidentiell själavårdsrelation. Det ersätter inte kvalificerad hjälp som känner din situation.",
+          "Amen stödjer läsning och reflektion utan diagnos, behandling, terapi, juridisk eller ekonomisk rådgivning, nödövervakning eller konfidentiell själavårdsrelation. Det ersätter inte kvalificerad hjälp som känner din situation.",
           "Vid omedelbar fara kontakta lokala nöd- eller kristjänster. Räkna inte med mänsklig granskning i tid. Basera inte medicin-, säkerhets-, rätts- eller ekonomibeslut endast på AI. Lagstadgat ansvar kvarstår."
         ]
       },
@@ -348,7 +348,7 @@
         "id": "your-content",
         "title": "Ditt innehåll och tillstånd",
         "paragraphs": [
-          "Du behåller rättigheter till meddelanden, anteckningar och bilder. amen och nödvändiga leverantörer får behandla, lagra och överföra bara för begärda funktioner, säkerhet och lagliga skyldigheter enligt integritet och lag.",
+          "Du behåller rättigheter till meddelanden, anteckningar och bilder. Amen och nödvändiga leverantörer får behandla, lagra och överföra bara för begärda funktioner, säkerhet och lagliga skyldigheter enligt integritet och lag.",
           "Det tillåter inte allmän publicering av privata chattar, reklam med ditt namn eller orelaterad modellträning. Se {{privacy}} om leverantörs-AI. Lämna bara lagligt användbart material och undvik andras känsliga data. Delade kopior kan stanna hos mottagaren."
         ]
       },
@@ -364,8 +364,8 @@
         "id": "paid-access",
         "title": "Betald åtkomst och erbjudande",
         "paragraphs": [
-          "amen kan erbjuda Apple-abonnemang eller engångsköp. Före bekräftelse visas produkt, pris, valuta, period, prov eller kampanj och åtkomst. Det specifika erbjudandet styr, inte allmän webbtext.",
-          "Pris och tillgänglighet varierar med butik, skatt, produkt och behörighet. Köp debiteras Apple-kontot och verifieringstjänster hjälper till att känna igen åtkomsten. amen får inte hela ditt kortnummer. Prov och erbjudanden gäller endast när bekräftelsen inkluderar dem; se {{appleTerms}}."
+          "Amen kan erbjuda Apple-abonnemang eller engångsköp. Före bekräftelse visas produkt, pris, valuta, period, prov eller kampanj och åtkomst. Det specifika erbjudandet styr, inte allmän webbtext.",
+          "Pris och tillgänglighet varierar med butik, skatt, produkt och behörighet. Köp debiteras Apple-kontot och verifieringstjänster hjälper till att känna igen åtkomsten. Amen får inte hela ditt kortnummer. Prov och erbjudanden gäller endast när bekräftelsen inkluderar dem; se {{appleTerms}}."
         ]
       },
       {
@@ -497,5 +497,12 @@
         ]
       }
     ]
+  },
+  "notFound": {
+    "title": "Sidan hittades inte.",
+    "description": "Länken kan ha ändrats eller sidan flyttats. Vi hjälper dig tillbaka till startsidan.",
+    "homeAction": "Till startsidan",
+    "sheepNote": "Varje får är värt att hitta.",
+    "sheepReference": "Inspirerat av Lukas 15:4"
   }
 }

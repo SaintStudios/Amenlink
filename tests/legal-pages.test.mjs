@@ -23,6 +23,9 @@ for (const name of ['privacy', 'terms', 'datenschutz', 'nutzungsbedingungen', 'a
 for (const locale of locales) {
   assert.deepEqual(Object.keys(copies[locale].ui).sort(), Object.keys(copies.en.ui).sort());
   for (const kind of ['privacy', 'terms']) {
+    assert.doesNotMatch(JSON.stringify(copies[locale][kind]), /(?:"|[.!?]\s+)amen\b/, locale + ': sentence and heading starts must use Amen');
+  }
+  for (const kind of ['privacy', 'terms']) {
     const doc = copies[locale][kind];
     assert.deepEqual(doc.sections.map((s) => s.id), copies.en[kind].sections.map((s) => s.id));
     assert.equal(doc.summary.length, 4);
@@ -54,7 +57,7 @@ for (const file of htmlFiles) {
     const hash = createHash('sha256').update(read('assets/' + name)).digest('hex').slice(0, 12);
     assert.ok(html.includes('/assets/' + name + '?v=' + hash), file + ': stale asset URL');
   }
-  assert.doesNotMatch(html, /AMEN|\bAmen\b|Supabase|RevenueCat|AppsFlyer|Ezra Maslaton|Gartenstraße|Oberschleißheim/);
+  assert.doesNotMatch(html, /AMEN|Supabase|RevenueCat|AppsFlyer|Ezra Maslaton|Gartenstraße|Oberschleißheim/);
   const prose = html.replace(/<span class="section-number">[^<]*<\/span>/g, '').replace(/<[^>]*>/g, ' ');
   assert.ok(!/\b18\b|\bFSK\b/.test(prose), file + ': unexpected numeric age label');
   const language = file.startsWith('legal/') ? file.split('/')[1] : 'en';
