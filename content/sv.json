@@ -36,7 +36,7 @@
     "intro": "amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
     "summary": [
       "Nema använder Googles AI-tjänster för chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
-      "Kontouppgifter, sparade samtal och läsaktivitet möjliggör funktionerna du använder. Köp hanteras genom ditt Apple-konto.",
+      "Gästanvändning skapar ett konto-ID utan krav på e-postadress. Lokala anteckningar och markeringar är separata från innehåll som sparas med kontot. Köp hanteras via Apple.",
       "Böner, trosinställningar och samtal kan innehålla känsliga personuppgifter. Dina rättigheter och nödvändiga samtycken är fortsatt skyddade.",
       "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller amen-kontot."
     ],
@@ -61,24 +61,40 @@
         "id": "accounts",
         "title": "Konton, inloggning och profil",
         "paragraphs": [
-          "Leverantörer av konto- och molntjänster möjliggör inloggning, synkronisering och lagring. Beroende på dina val omfattar uppgifterna kontoidentifierare, mejladress, sessionsinformation, namn, vald profilbild och tider för skapande eller uppdatering. Logga in med Apple kan ge en Apple-identifierare och en vidarebefordringsadress.",
-          "Uppgifterna möjliggör inloggning, återställning, synkronisering och anpassning, normalt enligt 6.1 b. Säkerhet och missbruksskydd kan använda 6.1 f; obligatoriska uppgifter 6.1 c. Sessionsuppgifter och inställningar kan också lagras på enheten."
+          "Under introduktionen kan amen skapa ett gästkonto utan krav på e-postadress eller Logga in med Apple. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kan kopplas till detta ID; gästanvändning innebär därför inte att inga personuppgifter behandlas. Konto-ID, sessionsuppgifter för inloggning och inställningar lagras hos kontotjänster och på enheten för att bevara åtkomst och stödd synkronisering. Åtkomst efter utloggning, ominstallation eller byte av enhet beror på tillgängliga autentiserings- och återställningsuppgifter. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
+          "Du kan koppla stödda gästkontouppgifter genom Logga in med Apple. Apple kan lämna ett ID, namn och en e-postadress eller privat vidarebefordringsadress; amen får inte lösenordet till ditt Apple-konto. Kopplingen kan föra över eller knyta stödda samtal, profil- och framstegsuppgifter till kontot, beroende på befintliga uppgifter och att processen lyckas. Alla lokala objekt blir inte därmed tillgängliga på andra enheter. Återvändande användare med ett befintligt e-post-/lösenordskonto kan använda inloggning och lösenordsåterställning. Kontotjänster behandlar nödvändiga inloggnings- och återställningsuppgifter. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
+        ]
+      },
+      {
+        "id": "onboarding",
+        "title": "Introduktionssvar och trosanpassning",
+        "paragraphs": [
+          "Introduktionen använder svar om trosmål, en trosvision, läsvanor, hinder och personliga svårigheter för att välja relevant innehåll. Svaren sparas lokalt i det nuvarande flödet. Samfund sparas också med kontots chattinställningar och kan ingå i personanpassade förfrågningar till Googles AI. Vissa introduktionsreflektioner väljs ur förberedda, översatta texter i stället för att genereras av AI. Det nuvarande samfundssteget kräver ett val för att fortsätta.",
+          "Svaren kan avslöja religiös övertygelse eller personliga förhållanden och omfattas av avsnittet om känsliga uppgifter. Varje ändamål och mottagare behöver en lämplig rättslig grund och, när det gäller, ett ytterligare villkor för känsliga uppgifter. Att fortsätta introduktionen, läsa policyn eller tillåta en enhetsbehörighet ger inte i sig uttryckligt samtycke till sådan behandling. Kontakta support på {{email}} om svar, inställningar eller integritetsbegäranden."
         ]
       },
       {
         "id": "reading",
         "title": "Läsning, anteckningar och anpassning",
         "paragraphs": [
-          "Appen använder språk- och bibelversionsval, läsaktivitet, sviter, prestationer, sparade verser, markeringar, anteckningar och inställningar när du använder funktionerna. Uppgifter kan lagras på enheten och synkroniseras med kontot. Profiler eller topplistor kan visa namnet, bilden eller aktiviteten du väljer för dem.",
-          "Syftet är valda funktioner, vanligen enligt 6.1 b. Anteckningar, samfund och trosmål kan avslöja övertygelser eller personliga förhållanden och behöver det extra skydd som beskrivs nedan. Lägg inte andras konfidentiella uppgifter i delade profilfält."
+          "amen använder språk, bibelversion, läsaktivitet, lässviter, prestationer och inställningar för valda funktioner. Bibelanteckningar och versmarkeringar sparas i appens lokala lagring i den nuvarande versionen. Kontobaserade sparade verser, chattmeddelanden, samtal, profil och stödda framsteg använder molnlagring där den finns. Inloggning synkroniserar inte i sig varje lokalt objekt mellan enheter. Enhetens och säkerhetskopieringens inställningar kan också påverka lokala uppgifter.",
+          "Ändamålet är att ge läs-, framstegs- och anpassningsfunktioner, vanligtvis enligt artikel 6.1 b i GDPR, med ytterligare skydd för övertygelser eller andra känsliga förhållanden. Använd kontroller för anteckningar, markeringar eller samtal för att hantera innehåll. Behåll en egen kopia av viktig information; detta minskar inte dina rättigheter till en avtalsenlig tjänst. Offentlig profil och topplistor beskrivs separat nedan."
+        ]
+      },
+      {
+        "id": "rankings",
+        "title": "Offentlig profil och topplistor",
+        "paragraphs": [
+          "Topplistor visar uppgifter för andra användare, bland annat visningsnamn, profilbild om sådan finns, landsflagga, lässvit, märken, poäng och placering. Stödda framstegsuppgifter synkroniseras med rankningstjänsten för att beräkna och visa resultaten. Profil- och topplisteuppgifter skiljer sig därför från en privat anteckning eller ett samtal.",
+          "Landskoden för flaggan kommer från enhetens regioninställning, inte GPS-koordinater. Välj namn och bild som passar denna synlighet och undvik konfidentiell information i profilen. Delade bildlänkar kan också ge andra tillgång till bilden. Behandlingen stödjer vanligtvis funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter. Kontakta {{email}} om visade uppgifter eller integritetsbegäranden."
         ]
       },
       {
         "id": "ai",
         "title": "Nema AI-chatt",
         "paragraphs": [
-          "Nema använder en AI-modell från Google för chatten i amen. Ditt meddelande och relevant samtalshistorik skickas till Google för att skapa ett svar. Anpassningen kan använda namn, valt språk och trosinställningar. Samtalet skapas av AI och förs inte med en mänsklig rådgivare.",
-          "Googles AI-tjänster kan också stödja bibelförklaringar, läsförslag och andra begärda genereringsfunktioner. Relevanta svar, bibelhänvisningar eller texter används för vald funktion. Dela inte lösenord, betalningsuppgifter eller andras konfidentiella information. Funktionen stöds vanligen av artikel 6.1 b, med ett ytterligare lagligt villkor för känsliga uppgifter."
+          "Nema använder en AI-modell från Google för AI-chatt i amen. Ditt meddelande och relevant samtalshistorik skickas till Google för att generera ett svar. Kontext kan omfatta namn, valt språk och trosinställningar vid personanpassning. Relevanta meddelanden kan också skickas till Google för att skapa en kort samtalstitel. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
+          "Googles AI-tjänster kan också stödja bibelförklaringar och personanpassade läsrekommendationer. Relevanta svar, hänvisningar eller texter används för den funktion du begär. Förberedda introduktionsreflektioner beskrivs i introduktionsavsnittet. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
         ]
       },
       {
@@ -93,8 +109,8 @@
         "id": "chat-storage",
         "title": "Samtalshistorik och radering",
         "paragraphs": [
-          "Samtal, meddelanden, svar och titlar kan sparas på enheten och med kontot så att du kan återvända till dem. Att stänga ett samtal eller appen raderar inte sparad historik. Använd tillgängliga samtalskontroller eller kontakta supporten för att begära borttagning av sparade uppgifter.",
-          "Använd tillgängliga kontroller eller be om kopia eller radering. Kontouppgifter, leverantörer och säkerhetskopior behöver beaktas. Exporterade eller delade kopior återkallas inte. Begränsad lagring kan fortsätta för rättsliga skyldigheter eller anspråk."
+          "Samtal, meddelanden, svar och titlar kan sparas lokalt och med kontot så att du kan återvända till dem. Att stänga ett samtal eller appen raderar inte sparad historik. Sparade meddelanden och tillhörande kontouppgifter kan vara separata från det samtal som visas på skärmen.",
+          "Använd tillgängliga samtalskontroller eller kontakta support på {{email}} för att begära radering eller en kopia. Borttagning från aktiv historik, tillhörande uppgifter, leverantörers behandling och utgång av säkerhetskopior är olika delar av en begäran. Radering återkallar inte automatiskt exporterade eller delade kopior. Uppgifter som behövs för rättsliga skyldigheter eller anspråk kan behållas med begränsad användning."
         ]
       },
       {
@@ -109,16 +125,40 @@
         "id": "bible-lock",
         "title": "Bible Lock och Skärmtid",
         "paragraphs": [
-          "Bible Lock använder Apples Skärmtid-funktioner när du ger tillstånd. Valda appar, scheman, upplåsningsinställningar och läsframsteg används för funktionen. Tillståndet ger inte amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla Skärmtid-åtkomst i systeminställningarna.",
-          "AI-läsförslag kan skicka behov och bibelvillkor till Google. Återkallad Skärmtid-behörighet påverkar funktionen. Funktionsinställningar använder 6.1 b; Apple ansvarar för sin egen behandling. Enhetsbehörighet är inte GDPR-samtycke till annan analys."
+          "Bible Lock använder Apples Skärmtid efter ditt godkännande. Urvalsidentifierare från Apple för valda appar, appkategorier och stödda webbdomäner, tillsammans med scheman, upplåsningsinställningar och läsframsteg, lagras lokalt för appen och dess tillägg. Behörigheten ger inte amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla åtkomsten i systeminställningarna.",
+          "För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till Google. Hänvisningarna hjälper till att undvika upprepning och lagras även lokalt för funktionen. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter. Apple styr sin egen systembehandling; enhetsbehörigheter ger inte samtycke till orelaterad analys eller känsliga ändamål."
         ]
       },
       {
         "id": "photos-notifications",
-        "title": "Bilder, notiser och widgetar",
+        "title": "Profilbilder och enhetsbehörigheter",
         "paragraphs": [
-          "När du sparar en profilbild lagras den valda bilden hos relevant kontotjänst. Delade bildlänkar kan ge andra tillgång till bilden. Notiser använder tillstånd, inställningar och en push-identifierare för enheten när fjärrleverans är aktiv. Se {{applePrivacy}} för Apples information.",
-          "Widgetar och tillägg använder nödvändiga gemensamma appdata. Foto-, notis- och Skärmtid-behörigheter ändras i iOS; nekande kan begränsa funktionen. Enhetsbehörighet är skild från samtycke till reklam eller känsliga uppgifter."
+          "När du sparar en profilbild lagras den valda bilden hos kontotjänsten. Den kan visas med din profil eller placering. Delade bildlänkar kan ge andra tillgång till bilden. amen använder bilden du väljer; att lägga till en profilbild gör inte alla bilder i ditt bildbibliotek tillgängliga för appen.",
+          "Du kan hantera relevanta behörigheter för Bilder och Skärmtid i iOS-inställningarna. Att spara bakgrunder eller Live Photos använder behörigheten för att lägga till valt innehåll i Bilder, enligt beskrivningen nedan. Nekad behörighet kan begränsa funktionen. Enhetsbehörighet är separat från samtycke till reklam eller känslig behandling. Apples integritetsinformation finns på {{applePrivacy}}."
+        ]
+      },
+      {
+        "id": "notifications",
+        "title": "Notiser och påminnelsetider",
+        "paragraphs": [
+          "För fjärrlevererade vers- och bönepåminnelser skickar amen enhetens pushtoken, appspråk, tidszon, aktiverade påminnelsetyper och valda leveranstider till notistjänsten. Registreringen kan kopplas till kontot. Stödda lässvits- eller provperiodspåminnelser kan i stället schemaläggas lokalt. Uppgifterna används för de påminnelse- och leveransfunktioner du väljer.",
+          "Du kan ändra inställningar i appen och notisbehörighet i iOS. Leverans beror på behörigheter, enhetsinställningar och tillgängliga tjänster. Att återkalla en behörighet visar inte i sig att alla tidigare tokens eller uppgifter har raderats; kontakta {{email}} för raderingsbegäranden. En provperiodspåminnelse säger inte upp ett abonnemang och ersätter inte Apples förnyelseinformation."
+        ]
+      },
+      {
+        "id": "widgets",
+        "title": "Dagar med Jesus och widgetar",
+        "paragraphs": [
+          "Om du använder Dagar med Jesus sparar amen ditt valda datum lokalt för att beräkna antalet dagar. Du kan ändra eller nollställa datumet i funktionen. Datum, bibelinnehåll, inställningar och åtkomstinformation som stödda widgetar behöver delas med appens tillägg på enheten. Bible Lock använder också delade enhetsuppgifter för godkända funktioner.",
+          "Widgetar och notisförhandsvisningar kan visa trosrelaterat innehåll på hem- eller låsskärmen. Personer som ser skärmen kan också se innehållet. Ta hänsyn till synligheten när du väljer widgetar och förhandsvisningar. Begärda widgetfunktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med extra skydd när uppgifter avslöjar religiös övertygelse eller annan känslig information."
+        ]
+      },
+      {
+        "id": "media",
+        "title": "Serier, bakgrunder, scener och musik",
+        "paragraphs": [
+          "När du öppnar serier, bakgrunder, 360°-scener eller ljud begär amen innehåll från distributionstjänster och kan behålla lokala kopior eller cache för visning och uppspelning. Leveransen omfattar begärd fil och vanlig nätverksinformation, inklusive den IP-adress som används för anslutningen. Stödda bakgrundsmusikinställningar sparas lokalt och kan även lagras med profilen för den valda lyssningsupplevelsen.",
+          "Den nuvarande 360°-visaren visar nedladdade panoraman som styrs med pekgester; den använder inte enhetens kamera för att filma rummet. Att spara en bakgrund eller Live Photo lägger till valt innehåll i Bilder med begärd behörighet. Kopior i Bilder eller som delats utanför amen är separata från kontouppgifter och återkallas inte automatiskt när kontot raderas. Mediebehandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR."
         ]
       },
       {
@@ -133,8 +173,8 @@
         "id": "analytics",
         "title": "Appmätning och tillskrivning",
         "paragraphs": [
-          "Leverantörer av mätning och tillskrivning tar emot apphändelser och tekniska uppgifter. Det kan omfatta introduktionssteg, valda trosinställningar och mål, bibelversioner, aktivitet vid erbjudanden, köphändelser, appversion, tider och identifierare. Köp- och appidentifierare kan kopplas för att mäta tillskrivning av abonnemang.",
-          "Apples spårningstillstånd stoppar inte nödvändigtvis varje app- eller drifthändelse. Reklamtillskrivning kan omfatta marknadsföringspartner; valfri spårning kräver samtycke där det gäller. Trosinställningar kan avslöja religiös övertygelse och behöver ett ytterligare lagligt villkor utöver vanligt berättigat intresse. Kontakta {{email}} om mottagare, tillstånd eller integritetsval."
+          "Tjänster för appmätning och attribution får introduktions- och apphändelser, som visade eller slutförda steg, interaktioner med betalningserbjudanden och köprelaterad aktivitet. Händelser kan innehålla stegnamn eller nummer, tidsstämplar, appinformation samt konto-, köp- eller enhets-ID för mätning och abonnemangsattribution.",
+          "Apples spårningsbehörighet stoppar inte nödvändigtvis varje app- eller drifthändelse. Attribution kan involvera marknadsföringspartner, och valfri spårning kräver samtycke där det gäller. Händelser kring trosfunktioner kan avslöja eller möjliggöra slutsatser om religiösa intressen, så även deras ändamål och rättsliga villkor måste bedömas. Kontakta {{email}} om mottagare, behörigheter eller integritetsval."
         ]
       },
       {
@@ -189,8 +229,8 @@
         "id": "account-deletion",
         "title": "Radera kontot",
         "paragraphs": [
-          "Du kan begära kontoradering i appen. Om du inte kan logga in eller begäran inte slutförs, kontakta supporten på {{email}}. En proportionerlig identitetskontroll kan behövas för att skydda mot obehörig åtkomst eller radering. Du ombeds inte att skicka ett lösenord för kontrollen.",
-          "Avinstallation raderar inte backend. Kontoradering säger inte upp Apple-abonnemang: gör det separat via {{cancel}}. Lokala kopior, export, backup-utgång och laglig lagring är skilda från borttagning av det aktiva kontot."
+          "Du kan begära kontoradering i appen. Om du saknar åtkomst eller begäran inte slutförs, kontakta support på {{email}}. Proportionerlig identitetskontroll kan behövas för att förhindra obehörig åtkomst eller radering; du ombeds inte skicka ett lösenord. Kontoradering och borttagning av enbart lokalt innehåll är separata åtgärder. Lokala anteckningar, markeringar eller inställningar kan finnas kvar oberoende av kontot; använd deras kontroller och nollställning i Dagar med Jesus eller kontakta support.",
+          "Enbart avinstallation raderar inte kontouppgifter i molnet. Att ta bort åtkomst genom Logga in med Apple är också separat från en begäran att radera uppgifter hos amen. Varken appborttagning eller kontoradering avslutar automatiskt ett Apple-abonnemang: avsluta det separat via {{cancel}}. Enhetskopior, exporterat innehåll, utgång av säkerhetskopior och rättslig lagring skiljer sig från borttagning av det aktiva kontot."
         ]
       },
       {
@@ -240,8 +280,8 @@
         "id": "service",
         "title": "amens tjänster",
         "paragraphs": [
-          "amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Nema erbjuder chatt med Googles AI-tjänster. Vissa läsförslag och ljudfunktioner använder också AI. Tillgänglighet beror på version och åtkomst; Bible Lock använder Apples Skärmtid-funktioner.",
-          "Erbjudandet definierar betald åtkomst. Vi lovar inte fast antal fria meddelanden, en viss AI-modell, alla översättningar, evig drift eller andra versioners funktioner. Rättsligt bindande beskrivningar och löften fortsätter gälla."
+          "amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema ger AI-chatt med Googles tjänster. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
+          "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Vissa medier måste laddas ned före användning, och sparande eller delning omfattas av licensen. Villkoren lovar inte ett fast antal gratis meddelanden, en viss modell, alla bibelöversättningar, evig drift eller funktioner från en annan version. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
         ]
       },
       {
@@ -256,8 +296,8 @@
         "id": "accounts",
         "title": "Konton och säkerhet",
         "paragraphs": [
-          "Vissa funktioner behöver konto och nät. Ge korrekta nödvändiga uppgifter, håll återställning aktuell och skydda inloggning. Använd inte annans konto utan tillstånd. Rapportera misstänkt åtkomst; allt som beror på fel utanför din kontroll blir inte automatiskt ditt ansvar.",
-          "Valt namn ger inga varumärkes- eller utgivningsrättigheter som annan person. Synkronisering kan behöva inloggning och kompatibilitet. Behåll egna kopior av viktig information; det minskar inte amens skyldighet att leverera avtalsenligt."
+          "amen kan skapa ett gästkonto under introduktionen utan e-post eller Apple-inloggning. Gäståtkomst beror på tillgänglig autentisering och ger inte samma inloggnings- och återställningsval som ett kopplat konto. Befintliga stödda konton kan använda återvändande inloggning med Apple eller e-post/lösenord. Vissa funktioner behöver ett fungerande konto och nätverk. Skydda åtkomsten och meddela support vid misstänkt obehörig användning; du ansvarar inte automatiskt för varje handling som orsakas av fel utanför din kontroll. Använd inte någon annans konto utan tillstånd.",
+          "Det tillgängliga Apple-valet kan koppla eller överföra stödda gästkontouppgifter. Lyckad autentisering, befintliga uppgifter och kompatibilitet påverkar koppling och synkronisering; lokala anteckningar och markeringar är separata. Kontakta support om uppgifter saknas efter ändrad inloggning. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte amens skyldighet att ge en avtalsenlig tjänst."
         ]
       },
       {
@@ -296,8 +336,8 @@
         "id": "screen-time",
         "title": "Bible Lock och behörigheter",
         "paragraphs": [
-          "Bible Lock kräver Apple-tillstånd, systemstöd, appval och schema och kan begränsa vald aktivitet. Kontrollera val och behåll tillgång till nödvändiga funktioner. Hantera behörigheter i systeminställningar.",
-          "Systemgränser, utgångna tillstånd och avbrott påverkar låsning. Funktionen hjälper rutiner men garanterar inte föräldrakontroll, säkerhet, behandling eller ständig spärr. Granska AI-läsplaner som andra AI-resultat."
+          "Bible Lock beror på Apples godkännande, stödda systemfunktioner och de appar, appkategorier, stödda webbdomäner och scheman du väljer. Funktionen kan begränsa valda aktiviteter enligt inställningarna. Granska valet före aktivering och behåll åtkomst till viktiga enhetsfunktioner. Behörigheten kan hanteras i systeminställningarna.",
+          "Systembegränsningar, utgångna behörigheter, inställningar eller avbrott kan påverka blockering och upplåsning. Funktionen är ett stöd för personliga rutiner och garanterar inte föräldratillsyn, säkerhet, behandling eller oavbruten tillämpning. Läsrekommendationer kan genereras av AI och ska granskas som annat AI-innehåll."
         ]
       },
       {
@@ -344,8 +384,8 @@
         "id": "restoration",
         "title": "Återställa köp och engångsåtkomst",
         "paragraphs": [
-          "Återställ med ursprungligt Apple-konto och tillgänglig funktion. Åtkomst beror på validering, koppling, kompatibilitet och faktisk delning. Kontakta support om giltigt köp inte känns igen.",
-          "Engångs- eller livstidsprodukt förnyas inte om inte erbjudandet säger det. Omfattning följer beskrivning och lag, utan automatisk garanti för drift hela livet eller varje framtida tjänst. Överenskommen rätt kan inte minskas retroaktivt genom omdefinition."
+          "Använd återställning av köp med Apple-kontot som gjorde köpet. Logga in med Apple för amen och kontot för App Store-köp har olika ändamål. Appinloggning köper, avslutar eller garanterar inte i sig återställning av ett abonnemang. Åtkomst kan bero på Apples validering, kontokoppling, kompatibilitet och produktens faktiska delningsvillkor. Kontakta support om ett validerat köp inte känns igen.",
+          "En engångs- eller livstidsprodukt förnyas inte automatiskt om inte erbjudandet uttryckligen anger det. Omfattningen följer köpbeskrivning och tvingande lag; den lovar inte automatiskt drift under köparens hela liv eller varje framtida tjänst. Vi kan inte retroaktivt minska en avtalad rättighet genom att omdefiniera den i dessa villkor."
         ]
       },
       {
@@ -400,8 +440,8 @@
         "id": "termination",
         "title": "Sluta använda och radera konto",
         "paragraphs": [
-          "Du kan sluta använda amen och begära kontoradering i appen eller via support. Avinstallation tar inte i sig bort sparade kontouppgifter. Se {{privacy}} för radering, laglig lagring och säkerhetskopior. Spara uppgifter du behöver före begäran.",
-          "Säg upp Apple separat för att stoppa framtida debitering. Avslutad åtkomst avslutar inte automatiskt butikskontraktet. amen följer krav på besked, betald åtkomst och påföljder vid upphörande. Skyldigheter som måste fortsätta gälla följer lagen."
+          "Du kan sluta använda amen och begära kontoradering i appen eller via support. Avinstallation tar inte i sig bort molnuppgifter; vissa enbart lokala anteckningar, markeringar eller inställningar kan finnas kvar separat från kontot. Se {{privacy}} för kontroller, begäranden, rättslig lagring och säkerhetskopior. Spara det du vill behålla innan du begär radering.",
+          "Avsluta ett Apple-abonnemang separat för att stoppa framtida debitering. Appborttagning, kontoradering eller avslutad åtkomst säger inte automatiskt upp butikens avtal. Om amen avslutar en tjänst eller ditt avtal följer vi tillämpliga skyldigheter för information, betald åtkomst och konsumentens rättigheter. Klausuler som måste fortsätta, som uppkomna anspråk och rättslig lagring, förblir underkastade lag."
         ]
       },
       {

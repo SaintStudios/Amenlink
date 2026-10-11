@@ -1,8 +1,8 @@
-# amen legal content review — 10 October 2026
+# amen legal content review — updated 11 October 2026
 
 ## Current wording
 
-The privacy policy covers the app, rather than website hosting or browser behavior. It has 22 substantive sections and approximately 2,227 English words, compared with approximately 838 previously. Terms has 28 sections and approximately 2,836 English words, compared with approximately 1,580 previously. References and navigation are additional to these counts.
+The privacy policy covers the app, rather than website hosting or browser behavior. It now has 27 substantive sections and approximately 3,014 English words, compared with approximately 838 before the legal-page work. Terms has 28 sections and approximately 2,865 English words, compared with approximately 1,580 before that work. References and navigation are additional to these counts.
 
 English, German, Spanish, French, Italian and Swedish contain every section. These are written translations, not certified legal translations. Support reuses policy sections. Public copy uses lowercase amen and describes the app as Christian Bible reading, prayer and reflection.
 
@@ -26,11 +26,11 @@ Apple's Media Services terms, standard app license, privacy policy, cancellation
 
 1. **Controller and operator identity.** The user requested removal of personal operator details, and they were removed from public copy. GDPR Article 13 requires the controller's identity and contact details. German DDG Section 5 requires provider identification, including name and address, for services within its scope. A brand and support email are not an established replacement for the legal identity. This remains a disclosure gap; the general legal-information page must not be represented as a compliant operator notice. Resolve a lawful legal-entity/business identity and disclosure arrangement before relying on these documents for compliance.
 2. **Recipient transparency.** Review whether the recipient categories sufficiently identify each processing activity, especially advertising partners and independent controllers. Agreements, regions, subprocessors, transfer safeguards and retention configuration remain unverified. Supply actual recipient information when required, including rights requests.
-3. **Religious data and consent.** The reviewed app source sends denomination and selected goals to attribution services and includes denomination in AI requests. Article 9 GDPR can apply. No separate explicit-consent mechanism was established; Apple tracking authorization does not provide that condition. Review payloads, lawful purposes, consent and withdrawal in the app.
+3. **Religious data and consent.** The app stores denomination with account chat settings and includes it in AI requests. The 11 October source review found no active calls to the attribution helpers for denomination, selected goals or Bible-version values; their definitions alone do not establish transmission. Active measurement includes onboarding step events. Article 9 GDPR can apply to faith answers and related inferences. No separate explicit-consent mechanism was established, and the denomination step requires a selection to continue. Apple tracking authorization does not provide that condition. Review actual payloads, lawful purposes, consent and withdrawal in the app.
 4. **Google conditions.** Current Gemini API terms include an age requirement and restrict clients directed toward or likely accessed by under-18s. Paid services are required for clients offered in the EEA, Switzerland and UK. Removing public age wording does not waive those conditions. Verify audience, access controls and project status. No universal no-training promise was added.
 5. **Deletion and retention.** AccountDeletionView requests the backend delete-user-account operation, whose implementation is absent from the reviewed checkout. Complete cloud/provider deletion, local cleanup and backup expiry remain unverified. The policy separates account deletion, exported copies, lawful retention and Apple cancellation.
 6. **Contracts and purchases.** Verify actual offers, storefront contracting parties, standard/custom license setup, withdrawal information and incorporation of terms. Publication alone does not obtain acceptance or waive mandatory rights. Existing contracts need the update process required by law.
-7. **Other legal URLs.** Some app/store links refer to amenbible.app/datenschutz and amen-ai.com/agb. This repository is served on amen-app.com and cannot redirect those domains. Those links or their hosting need a separate update.
+7. **Other legal URLs.** iOS source commit f4730a1 now uses localized amen-app.com privacy and terms URLs through the shared AppLegalLinks helper. Older installed app versions and App Store metadata remain separate states and must be checked independently. This website cannot redirect the older amenbible.app or amen-ai.com domains.
 
 Qualified legal review should resolve these matters, including translations and applicable jurisdiction. Website checks cannot establish compliance with an omitted legal identity or unverified production facts.
 
@@ -39,6 +39,14 @@ Qualified legal review should resolve these matters, including translations and 
 Read-only review used SupportedLanguage in Services/LocalizationManager.swift; AI/audio in GeminiChatService.swift and BibleTTSService.swift; context in ChatService.swift; saved history in ConversationService.swift; attribution in AppsFlyerOnboardingService.swift; SDK startup in AMENApp.swift; photos in ProfilePictureService.swift; Bible Lock; and AccountDeletionView.swift.
 
 No iOS build, compilation, launch, simulator/device test or paid AI request was performed.
+
+## App-source follow-up — 11 October 2026
+
+The follow-up reviewed all 22 baseline privacy and 28 terms sections against active guest-account creation, Apple linking and existing returning email/password login; device session persistence; onboarding answers; local notes/highlights; account-based saved messages and conversations; public leaderboard fields; reminder schedules and time zones; Days with Jesus and widgets; Bible Lock selections/recommendation history; media downloads; and music preferences.
+
+The 11 October legal revision incorporates source-confirmed guest-account behavior, Apple linking and returning email/password login, the local/cloud storage distinction, ranking visibility and country flags, notification schedules/time zones, Days with Jesus and widgets, current Discover features, music preferences, Bible Lock inputs and device-only deletion limits. Five privacy sections were added and all changes were translated into all six languages. The analytics description was corrected because unused helper definitions are not active call sites. A separate local audit records source evidence and proposals for consent, deletion, account-linking and production-configuration work; those implementation changes were not performed.
+
+The visual revision follows DESIGN.md with system type, neutral surfaces, a 680-pixel reading column, compact headings and collapsed contents. A single compact language disclosure appears at the bottom only. Browser-primary language detection, English fallback, explicit language URLs, section anchors and no-storage behavior remain in place.
 
 ## Official references
 

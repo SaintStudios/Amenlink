@@ -69,8 +69,11 @@ for (const file of htmlFiles) {
     'https://support.apple.com/en-us/118428',
     'https://support.apple.com/en-us/118223'
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
-  assert.ok(html.includes('datetime="2026-10-10"'));
+  assert.ok(html.includes('datetime="2026-10-11"'));
   assert.equal((html.match(/data-language="/g) || []).length, 6);
+  assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
+  assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'), file + ': language selection belongs below the document');
+  assert.doesNotMatch(html, /<details[^>]*\bopen\b/, file + ': contents and language selection start collapsed');
   assert.equal((html.match(/hreflang="x-default"/g) || []).length, 1);
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = match[1].replace(/&amp;/g, '&');
@@ -100,6 +103,8 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', ha
   const print = { hidden: true, addEventListener(type, handler) { events[type] = handler; } };
   const manualEvents = {};
   const manualLink = { hash: '', addEventListener(type, handler) { manualEvents[type] = handler; } };
+  const autoEvents = {};
+  const autoLink = { hash: '', addEventListener(type, handler) { autoEvents[type] = handler; } };
   const window = {
     location: { search, hash, pathname, replace: (url) => redirects.push(url) },
     print: () => events.printed = true
@@ -109,12 +114,12 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', ha
   const document = {
     documentElement: { lang: language, dataset: { document: kind, autoLanguage: String(auto) } },
     getElementById: (id) => id === 'print-document' ? print : null,
-    querySelectorAll: () => [manualLink]
+    querySelectorAll: (selector) => selector.includes('.auto-language') ? [manualLink, autoLink] : [manualLink]
   };
   Object.defineProperty(document, 'cookie', { get() { throw new Error('cookies unavailable'); }, set() { throw new Error('cookies unavailable'); } });
   const context = vm.createContext({ window, document, navigator: { languages, language: browserLanguage }, URLSearchParams });
   vm.runInContext(script, context);
-  return { redirects, events, print, manualEvents, manualLink, window };
+  return { redirects, events, print, manualEvents, manualLink, autoEvents, autoLink, window };
 }
 for (const locale of locales) {
   for (const kind of kinds) {
@@ -140,9 +145,12 @@ assert.deepEqual(run({ auto: true, pathname: '/legal/en/privacy.html' }).redirec
 assert.deepEqual(run({ auto: false, pathname: '/legal/de/privacy.html', search: '?lang=no' }).redirects, ['/legal/en/privacy.html']);
 const manual = run({ auto: false, pathname: '/legal/en/privacy.html', hash: '#rights' });
 assert.equal(manual.manualLink.hash, '#rights');
+assert.equal(manual.autoLink.hash, '#rights');
 manual.window.location.hash = '#retention';
 manual.manualEvents.click();
 assert.equal(manual.manualLink.hash, '#retention');
+manual.autoEvents.click();
+assert.equal(manual.autoLink.hash, '#retention');
 manual.events.click();
 assert.equal(manual.events.printed, true);
 assert.deepEqual(run({ kind: 'unexpected' }).redirects, []);

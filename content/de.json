@@ -36,7 +36,7 @@
     "intro": "amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
     "summary": [
       "Nema nutzt Google-KI-Dienste für den KI-Chat. Ihre Nachricht und der relevante Gesprächskontext werden zur Erstellung einer Antwort an Google übermittelt.",
-      "Kontodaten, gespeicherte Gespräche und Leseaktivitäten ermöglichen die gewählten Funktionen. Käufe werden über Ihr Apple-Konto verwaltet.",
+      "Bei der Gastnutzung entsteht eine Kontokennung, ohne dass eine E-Mail-Adresse erforderlich ist. Lokale Notizen und Markierungen sind von kontobasiert gespeicherten Inhalten getrennt. Käufe werden über Apple verwaltet.",
       "Gebete, Glaubenseinstellungen und Gespräche können sensible personenbezogene Daten enthalten. Ihre Datenschutzrechte und erforderliche Einwilligungen bleiben geschützt.",
       "Datenschutzanfragen richten Sie an den Support unter amenapphilfe@gmail.com. Apple-Abonnements müssen unabhängig vom Löschen der App oder eines amen-Kontos gekündigt werden."
     ],
@@ -61,24 +61,40 @@
         "id": "accounts",
         "title": "Konten, Anmeldung und Profil",
         "paragraphs": [
-          "Konto- und Cloud-Dienstleister ermöglichen Anmeldung, Synchronisierung und Speicherung. Je nach Auswahl gehören dazu eine Kontokennung, E-Mail-Adresse, Sitzungsdaten, Name, gewähltes Profilbild sowie Erstellungs- und Änderungszeiten. Mit Apple anmelden kann eine Apple-Kennung und eine Relay-E-Mail-Adresse bereitstellen.",
-          "Zwecke sind Anmeldung, Wiederherstellung, Synchronisierung und Personalisierung, regelmäßig auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Sicherheitsmaßnahmen können auf lit. f, gesetzlich erforderliche Unterlagen auf lit. c beruhen. Zugangsdaten für Sitzungen und Einstellungen können auch auf dem Gerät gespeichert werden."
+          "Während der Einrichtung kann amen ein Gastkonto erstellen, ohne eine E-Mail-Adresse oder eine Anmeldung mit Apple zu verlangen. Das Konto hat eine eindeutige Kennung und Sitzungsinformationen. Dein gewählter Name und unterstützte gespeicherte Aktivitäten können dieser Kennung zugeordnet werden. Gastnutzung bedeutet daher nicht, dass keine personenbezogenen Daten verarbeitet werden. Kontokennungen, Sitzungszugangsdaten und Einstellungen werden bei Kontodiensten und auf dem Gerät gespeichert, um den Zugang und unterstützte Synchronisierung aufrechtzuerhalten. Der Zugang nach Abmeldung, Neuinstallation oder Gerätewechsel hängt von verfügbaren Anmelde- und Wiederherstellungsinformationen ab. Zu Kontoinformationen gehören auch Erstellungs- und Aktualisierungszeiten.",
+          "Über „Mit Apple anmelden“ kannst du unterstützte Gastkontodaten verknüpfen. Apple kann eine Kennung, einen Namen und eine E-Mail- oder private Weiterleitungsadresse bereitstellen; amen erhält dein Apple-Kontopasswort nicht. Die Verknüpfung kann unterstützte Gespräche, Profil- und Fortschrittsdaten zuordnen oder übertragen, abhängig von vorhandenen Kontodaten und einem erfolgreichen Abschluss. Nicht alle rein lokalen Inhalte werden dadurch auf anderen Geräten verfügbar. Rückkehrende Nutzer mit einem bestehenden E-Mail-/Passwortkonto können die angebotene Anmeldung und Passwortzurücksetzung nutzen. Kontodienste verarbeiten die erforderlichen Zugangsdaten und Wiederherstellungsinformationen. Übliche Grundlagen sind Art. 6 Abs. 1 lit. b, angemessene Sicherheit nach lit. f und gesetzliche Pflichten nach lit. c DSGVO."
+        ]
+      },
+      {
+        "id": "onboarding",
+        "title": "Einrichtungsantworten und Glaubenspersonalisierung",
+        "paragraphs": [
+          "Die Einrichtung nutzt Antworten zu Glaubenszielen, einer Glaubensvision, Lesegewohnheiten, Hindernissen und persönlichen Schwierigkeiten, um passende Inhalte auszuwählen. Diese Antworten werden im aktuellen Ablauf lokal gespeichert. Die Konfession wird zusätzlich mit den Chat-Einstellungen des Kontos gespeichert und kann in personalisierte Google-KI-Anfragen einfließen. Manche Reflexionen der Einrichtung werden aus vorbereiteten, übersetzten Texten ausgewählt und nicht durch KI erzeugt. Der aktuelle Konfessionsschritt erfordert eine Auswahl, um fortzufahren.",
+          "Diese Antworten können religiöse Überzeugungen oder persönliche Umstände offenbaren und fallen unter den Abschnitt zu sensiblen Daten. Für jeden Zweck und Empfänger sind eine geeignete Rechtsgrundlage und gegebenenfalls eine zusätzliche Voraussetzung für sensible Daten erforderlich. Das Fortsetzen der Einrichtung, das Lesen dieser Erklärung oder eine Geräteberechtigung stellen für sich keine ausdrückliche Einwilligung in die Verarbeitung sensibler Daten dar. Kontaktiere den Support unter {{email}} zu deinen Antworten, Einstellungen oder Datenschutzanliegen."
         ]
       },
       {
         "id": "reading",
         "title": "Leseaktivität, Notizen und Personalisierung",
         "paragraphs": [
-          "Die App verwendet bei Nutzung der jeweiligen Funktion Sprach- und Bibelversionswahl, Leseaktivitäten, Serien, Erfolge, gespeicherte Verse, Markierungen, Notizen und Einstellungen. Daten können auf dem Gerät gespeichert und mit Ihrem Konto synchronisiert werden. Profil- oder Ranglistenfunktionen können den dafür gewählten Namen, das Bild oder Aktivitäten anzeigen.",
-          "Die Bereitstellung dieser Funktionen beruht gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO. Notizen, Konfession und Glaubensziele können Überzeugungen oder persönliche Umstände offenlegen und benötigen den unten beschriebenen zusätzlichen Schutz. Verwenden Sie keine vertraulichen Angaben über Dritte in geteilten Profilfeldern."
+          "amen nutzt Sprache, Bibelversionswahl, Leseaktivität, Serien, Erfolge und Einstellungen für die gewählten Funktionen. Bibelnotizen und Versmarkierungen werden in der aktuellen Version lokal in der App gespeichert. Kontobasierte gespeicherte Verse, gespeicherte Chat-Nachrichten, Gespräche, Profilinformationen und unterstützte Fortschrittsdaten verwenden, soweit verfügbar, Cloud-Speicher. Eine Anmeldung synchronisiert nicht automatisch jeden lokal gespeicherten Inhalt zwischen Geräten. Geräte- und Sicherungseinstellungen können lokale Informationen ebenfalls beeinflussen.",
+          "Der Zweck ist die Bereitstellung von Lese-, Fortschritts- und Personalisierungsfunktionen, üblicherweise nach Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz bei Angaben zu Überzeugungen oder anderen sensiblen Umständen. Verwende die jeweiligen Notiz-, Markierungs- oder Gesprächsfunktionen, um gespeicherte Inhalte zu verwalten. Bewahre eine eigene Kopie wichtiger Informationen auf; deine Rechte auf eine vertragsgemäße Leistung werden dadurch nicht eingeschränkt. Die Sichtbarkeit von Profilen und Ranglisten wird nachfolgend getrennt erläutert."
+        ]
+      },
+      {
+        "id": "rankings",
+        "title": "Öffentliches Profil und Ranglisten",
+        "paragraphs": [
+          "Ranglisten zeigen anderen Nutzern Ranginformationen, darunter deinen Anzeigenamen, ein vorhandenes Profilbild, die Länderflagge, Leseserie, Abzeichen, Punktzahl und Platzierung. Unterstützte Fortschrittsdaten werden mit dem Ranglistendienst synchronisiert, um diese Ergebnisse zu berechnen und anzuzeigen. Profil- und Ranglisteninformationen unterscheiden sich daher von privaten Notizen oder Gesprächen.",
+          "Der Ländercode für die Flagge stammt aus der Regionseinstellung des Geräts, nicht aus GPS-Koordinaten. Wähle einen für diese Sichtbarkeit geeigneten Namen und ein passendes Foto und vermeide vertrauliche Angaben in Profilfeldern. Geteilte Bildlinks können anderen ebenfalls Zugriff auf das Bild geben. Die Verarbeitung dient grundsätzlich der Funktion nach Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz für sensible Informationen. Kontaktiere {{email}} zu angezeigten Angaben oder Datenschutzanliegen."
         ]
       },
       {
         "id": "ai",
         "title": "Nema-KI-Chat",
         "paragraphs": [
-          "Nema nutzt ein KI-Modell von Google für den KI-Chat in amen. Ihre Nachricht und relevante Gesprächsinhalte werden zur Erstellung einer Antwort an Google übermittelt. Zur Personalisierung können Name, gewählte Sprache und Glaubenseinstellungen einbezogen werden. Das Gespräch wird von KI erzeugt und nicht von einer menschlichen Beratungsperson geführt.",
-          "Google-KI-Dienste können auch Bibelerklärungen, persönliche Lesevorschläge und andere angeforderte Erstellungsfunktionen unterstützen. Dazu werden relevante Antworten, Bibelstellen oder Texte verwendet. Geben Sie keine Passwörter, Zahlungsdaten oder vertraulichen Angaben über Dritte ein. Angeforderte Funktionen beruhen gewöhnlich auf Art. 6 Abs. 1 lit. b DSGVO; für sensible Daten ist zusätzlich eine zulässige Voraussetzung erforderlich."
+          "Nema verwendet ein KI-Modell von Google für den KI-Chat in amen. Deine Nachricht und der relevante Gesprächsverlauf werden an Google gesendet, um eine Antwort zu erzeugen. Zur Personalisierung können dein Name, die gewählte Sprache und Glaubenseinstellungen einbezogen werden. Relevante Nachrichten können auch an Google gesendet werden, um einen kurzen Gesprächstitel zu erstellen. Das Gespräch wird durch KI und nicht durch einen menschlichen Berater erzeugt.",
+          "Google-KI-Dienste können außerdem Bibelerklärungen und personalisierte Leseempfehlungen unterstützen. Relevante Antworten, Bibelstellen oder Texte werden für die angeforderte Funktion verwendet. Vorbereitete Reflexionen der Einrichtung werden im Einrichtungsabschnitt beschrieben. Teile keine Passwörter, Zahlungsdaten oder vertraulichen Informationen über andere Personen. Angeforderte Funktionen beruhen grundsätzlich auf Art. 6 Abs. 1 lit. b DSGVO und benötigen bei sensiblen personenbezogenen Daten eine zusätzliche rechtliche Voraussetzung."
         ]
       },
       {
@@ -93,8 +109,8 @@
         "id": "chat-storage",
         "title": "Gesprächsverlauf und Löschung",
         "paragraphs": [
-          "Gespräche, Nachrichten, Antworten und Titel können auf Ihrem Gerät und mit Ihrem Konto gespeichert werden, damit Sie später darauf zugreifen können. Das Schließen eines Gesprächs oder der App löscht den Verlauf nicht. Verwenden Sie verfügbare Gesprächsoptionen oder kontaktieren Sie den Support, um gespeicherte Angaben entfernen zu lassen.",
-          "Nutzen Sie vorhandene Gesprächssteuerungen oder kontaktieren Sie uns für Löschung oder Kopien. Zugehörige Kontodaten, Anbieter und Sicherungen müssen berücksichtigt werden. Exportierte oder geteilte Kopien werden dadurch nicht zurückgerufen. Gesetzlich erforderliche oder zur Rechtsverteidigung notwendige Speicherung kann mit eingeschränkter Nutzung fortbestehen."
+          "Gespräche, Nachrichten, Antworten und Titel können lokal und mit deinem Konto gespeichert werden, damit du später darauf zurückkommen kannst. Das Schließen eines Gesprächs oder der App löscht den gespeicherten Verlauf nicht. Gespeicherte Nachrichten und zugehörige Kontodatensätze können vom gerade angezeigten Gespräch getrennt sein.",
+          "Nutze verfügbare Gesprächsfunktionen oder kontaktiere den Support unter {{email}}, um eine Löschung oder Kopie anzufordern. Die Entfernung aus dem aktiven Verlauf, zugehörige Datensätze, Verarbeitung bei Anbietern und der Ablauf von Sicherungen sind getrennte Teile einer Anfrage. Eine Löschung ruft exportierte oder geteilte Kopien nicht automatisch zurück. Für gesetzliche Pflichten oder Ansprüche erforderliche Datensätze können mit eingeschränkter Nutzung aufbewahrt werden."
         ]
       },
       {
@@ -109,16 +125,40 @@
         "id": "bible-lock",
         "title": "Bible Lock und Bildschirmzeit",
         "paragraphs": [
-          "Bible Lock nutzt nach Ihrer Freigabe Apples Bildschirmzeitfunktionen. Ausgewählte Apps, Zeitpläne, Entsperreinstellungen und Lesefortschritte werden für die Funktion verwendet. Die Freigabe gewährt amen keinen allgemeinen Zugriff auf Nachrichten oder den Browserverlauf. Sie können den Bildschirmzeitzugriff in den Systemeinstellungen verwalten oder widerrufen.",
-          "KI-Leseempfehlungen können ausgewählte Bedürfnisse und Bibelstellenvorgaben an Google senden. Ein Widerruf der Bildschirmzeitfreigabe in den Systemeinstellungen beeinflusst die Funktion. Funktionseinstellungen beruhen auf Art. 6 Abs. 1 lit. b; Apple verantwortet seine Framework-Verarbeitung. Gerätefreigaben ersetzen keine DSGVO-Einwilligung für andere Analysen."
+          "Bible Lock verwendet Apples Bildschirmzeitfunktionen nach deiner Autorisierung. Von Apple bereitgestellte Auswahlkennungen für gewählte Apps, App-Kategorien und unterstützte Web-Domains sowie Zeitpläne, Entsperreinstellungen und Lesefortschritt werden lokal für die App und ihre Erweiterungen gespeichert. Die Autorisierung gibt amen keinen allgemeinen Zugriff auf Nachrichten oder den Browserverlauf. Du kannst den Bildschirmzeitzugriff in den Systemeinstellungen verwalten oder widerrufen.",
+          "Für eine KI-Leseempfehlung können dein gewähltes Bedürfnis, der gewünschte Leseumfang, die bevorzugte Sprache und zuletzt verwendete Kapitelreferenzen an Google gesendet werden. Diese Referenzen helfen, wiederholte Empfehlungen zu vermeiden, und werden für diese Funktion auch lokal gespeichert. Die Verarbeitung dient grundsätzlich der angeforderten Funktion nach Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz für sensible Angaben. Apple verantwortet seine eigene Framework-Verarbeitung. Geräteberechtigungen erteilen keine Einwilligung für unabhängige Analyse- oder sensible Datenzwecke."
         ]
       },
       {
         "id": "photos-notifications",
-        "title": "Profilbilder, Mitteilungen und Widgets",
+        "title": "Profilfotos und Geräteberechtigungen",
         "paragraphs": [
-          "Wenn Sie ein Profilbild speichern, wird das ausgewählte Bild beim entsprechenden Kontodienst gespeichert. Geteilte Bildlinks können anderen Zugriff auf das Bild geben. Mitteilungen nutzen Berechtigungsstatus, Einstellungen und bei aktivierter Fernzustellung eine Push-Gerätekennung. Apples Datenschutzinformationen finden Sie unter {{applePrivacy}}.",
-          "Widgets und Erweiterungen greifen auf benötigte gemeinsame App-Daten zu. Foto-, Mitteilungs- und Bildschirmzeitberechtigungen können in iOS geändert werden. Eine Ablehnung kann die entsprechende Funktion einschränken. Die Freigabe einer Gerätefunktion ist von Einwilligungen für Werbung oder sensible Daten zu unterscheiden."
+          "Wenn du ein Profilfoto speicherst, wird das ausgewählte Bild beim zuständigen Kontodienst gespeichert. Es kann mit deinem Profil oder Ranglisteninformationen erscheinen. Geteilte Bildlinks können anderen Zugriff auf das Bild geben. amen verwendet das von dir ausgewählte Bild; das Hinzufügen eines Profilfotos bedeutet nicht, dass sämtliche Bilder deiner Fotomediathek für die App verfügbar werden.",
+          "Du kannst relevante Foto- und Bildschirmzeitberechtigungen in den iOS-Einstellungen verwalten. Das Speichern von Hintergrundbildern oder Live Photos verwendet die erforderliche Berechtigung zum Hinzufügen der ausgewählten Inhalte zu Fotos, wie unten beschrieben. Eine verweigerte Berechtigung kann die Funktion einschränken. Die Autorisierung einer Gerätefunktion ist von der Einwilligung in Werbung oder sensible Datenverarbeitung getrennt. Apples Datenschutzinformationen findest du unter {{applePrivacy}}."
+        ]
+      },
+      {
+        "id": "notifications",
+        "title": "Mitteilungen und Erinnerungszeiten",
+        "paragraphs": [
+          "Für serverseitige Vers- und Gebetserinnerungen sendet amen die Push-Kennung des Geräts, App-Sprache, Zeitzone, aktivierte Erinnerungstypen und gewählte Zustellzeiten an den Mitteilungsdienst. Die Registrierung kann deinem Konto zugeordnet werden. Unterstützte Serien- oder Probezeiterinnerungen können stattdessen lokal auf dem Gerät geplant werden. Diese Informationen dienen den von dir gewählten Erinnerungs- und Zustellfunktionen.",
+          "Du kannst Erinnerungseinstellungen in der App und die Mitteilungsberechtigung in iOS ändern. Die Zustellung hängt von Berechtigungen, Geräteeinstellungen und verfügbaren Diensten ab. Ein Berechtigungswiderruf belegt nicht für sich, dass jede zuvor registrierte Kennung oder Dienstaufzeichnung gelöscht wurde; kontaktiere {{email}} für Löschanfragen. Eine Probezeiterinnerung kündigt kein Abonnement und ersetzt Apples Verlängerungsinformationen nicht."
+        ]
+      },
+      {
+        "id": "widgets",
+        "title": "Tage mit Jesus und Widgets",
+        "paragraphs": [
+          "Wenn du Tage mit Jesus verwendest, speichert amen dein gewähltes Datum lokal, um die Tageszahl zu berechnen. Du kannst das Datum in der Funktion ändern oder zurücksetzen. Das Datum, Bibelinhalte, Einstellungen und Zugriffsinformationen, die unterstützte Widgets benötigen, werden auf dem Gerät mit den App-Erweiterungen geteilt. Bible Lock verwendet für seine autorisierten Funktionen ebenfalls gemeinsame Gerätedaten.",
+          "Widgets und Mitteilungsvorschauen können glaubensbezogene Inhalte auf deinem Home- oder Sperrbildschirm anzeigen. Personen, die den Bildschirm sehen können, können auch diese Inhalte sehen. Berücksichtige diese Sichtbarkeit bei der Auswahl von Widgets und Vorschauen. Angeforderte Widget-Funktionen beruhen grundsätzlich auf Art. 6 Abs. 1 lit. b DSGVO, mit zusätzlichem Schutz, wenn Informationen religiöse Überzeugungen oder andere sensible Daten offenbaren."
+        ]
+      },
+      {
+        "id": "media",
+        "title": "Comics, Hintergrundbilder, Szenen und Musik",
+        "paragraphs": [
+          "Wenn du Comics, Hintergrundbilder, 360°-Szenen oder Audio öffnest, fordert amen die relevanten Inhalte bei Auslieferungsdiensten an und kann lokale Kopien oder Zwischenspeicher für Anzeige und Wiedergabe behalten. Die Auslieferung umfasst die angeforderte Datei und übliche Netzwerkverbindungsinformationen einschließlich der für die Verbindung verwendeten IP-Adresse. Unterstützte Hintergrundmusikeinstellungen werden lokal gespeichert und können zusätzlich mit deinem Profil gespeichert werden, um das gewählte Hörerlebnis bereitzustellen.",
+          "Die aktuelle 360°-Ansicht zeigt heruntergeladene, per Berührung gesteuerte Panoramen. Sie verwendet die Gerätekamera nicht, um den umgebenden Raum aufzunehmen. Das Speichern eines Hintergrundbilds oder Live Photos fügt ausgewählte Inhalte mit der angeforderten Berechtigung zu Fotos hinzu. Dort gespeicherte oder außerhalb von amen geteilte Kopien sind von Kontodatensätzen getrennt und werden durch eine Kontolöschung nicht automatisch zurückgerufen. Die Medienverarbeitung dient grundsätzlich der angeforderten Funktion nach Art. 6 Abs. 1 lit. b DSGVO."
         ]
       },
       {
@@ -133,8 +173,8 @@
         "id": "analytics",
         "title": "App-Messung und Zuordnung",
         "paragraphs": [
-          "Dienstleister für Nutzungsmessung und Zuordnung erhalten App-Ereignisse und technische Angaben. Dazu können Einführungsschritte, gewählte Glaubenseinstellungen und Ziele, Bibelversionen, Aktivitäten an Kaufangeboten, kaufbezogene Ereignisse, App-Version, Zeitpunkte und Kennungen gehören. Kauf- und App-Kennungen können zur Zuordnung von Abonnements verknüpft werden.",
-          "Apples Trackingfreigabe beendet nicht zwingend jedes App- oder Betriebsereignis. Werbezuordnung kann Marketingpartner einbeziehen; optionales Tracking benötigt eine Einwilligung, soweit vorgeschrieben. Glaubenseinstellungen können religiöse Überzeugungen offenlegen und benötigen mehr als ein gewöhnliches berechtigtes Interesse. Fragen zu Empfängern, Berechtigungen und Datenschutzoptionen richten Sie an {{email}}."
+          "Dienste für App-Messung und Zuordnung erhalten Einrichtungs- und App-Ereignisse, etwa angesehene oder abgeschlossene Schritte, Interaktionen mit Kaufangeboten und kaufbezogene Aktivitäten. Ereignisse können Schrittnamen oder -nummern, Zeitstempel, App-Informationen sowie Konto-, Kauf- oder Gerätekennungen für Messung und Abonnementzuordnung enthalten.",
+          "Apples Tracking-Berechtigung stoppt nicht zwangsläufig jedes App- oder Betriebsereignis. Zuordnung kann Marketingpartner einbeziehen; optionales Tracking erfordert gegebenenfalls Einwilligung. Ereignisse zu Glaubensfunktionen können religiöse Interessen offenbaren oder entsprechende Rückschlüsse ermöglichen. Ihre Zwecke und rechtlichen Voraussetzungen müssen daher ebenfalls geprüft werden. Kontaktiere {{email}} zu Empfängern, Berechtigungen oder Datenschutzentscheidungen."
         ]
       },
       {
@@ -189,8 +229,8 @@
         "id": "account-deletion",
         "title": "Konto löschen",
         "paragraphs": [
-          "Sie können die Kontolöschung in der App beantragen. Bei fehlendem Kontozugriff oder einer nicht abgeschlossenen Anfrage kontaktieren Sie den Support unter {{email}}. Eine angemessene Identitätsprüfung kann zum Schutz vor unbefugtem Zugriff oder Löschen nötig sein. Für die Prüfung müssen Sie kein Passwort senden.",
-          "Deinstallation löscht Backend-Daten nicht. Kontolöschung kündigt kein Apple-Abonnement: Kündigen Sie separat über {{cancel}}. Gerätekopien, exportierte Inhalte, auslaufende Sicherungen und gesetzlich erforderliche Aufbewahrung sind von der Entfernung des aktiven Kontos zu unterscheiden."
+          "Du kannst die Kontolöschung in der App anfordern. Wenn du keinen Zugriff hast oder die Anfrage nicht abgeschlossen wird, kontaktiere den Support unter {{email}}. Eine angemessene Identitätsprüfung kann erforderlich sein, um unbefugten Zugriff oder Löschung zu verhindern; du wirst nicht gebeten, ein Passwort zu senden. Kontolöschung und Entfernung rein lokaler Inhalte sind getrennte Vorgänge. Lokale Notizen, Markierungen oder Einstellungen können unabhängig vom Konto bestehen bleiben. Nutze ihre verfügbaren Funktionen und das Zurücksetzen in Tage mit Jesus oder kontaktiere den Support.",
+          "Das bloße Deinstallieren der App löscht keine Cloud-Kontodatensätze. Auch das Entfernen des Zugangs über „Mit Apple anmelden“ ist von einer Löschanfrage für bei amen vorhandene Informationen getrennt. Weder App-Entfernung noch amen-Kontolöschung kündigen ein Apple-Abonnement automatisch: Kündige separat über {{cancel}}. Gerätekopien, exportierte Inhalte, der Ablauf von Sicherungen und gesetzlich aufzubewahrende Datensätze sind von der Entfernung des aktiven Kontos zu unterscheiden."
         ]
       },
       {
@@ -240,8 +280,8 @@
         "id": "service",
         "title": "Leistungen von amen",
         "paragraphs": [
-          "amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritten und zugehörigen Funktionen. Nema bietet KI-Chat mit Google-KI-Diensten. Auch manche Lesevorschläge und Audiofunktionen nutzen KI. Die Verfügbarkeit hängt von App-Version und Zugang ab; Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
-          "Das konkrete Angebot definiert kostenpflichtigen Zugang. Diese Bedingungen versprechen keine feste Zahl kostenloser Nachrichten, ein bestimmtes KI-Modell, jede Übersetzung, ewigen Betrieb oder Funktionen anderer Versionen. Rechtlich verbindliche Beschreibungen und Leistungszusagen bleiben verbindlich."
+          "amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritt und verwandten Funktionen. Je nach Version und Zugangslevel gibt es außerdem Bibelcomics, Hintergrundbilder, per Berührung gesteuerte 360°-Szenen, Hintergrundmusik, Tage mit Jesus und Widgets. Nema bietet KI-Chat mit Google-KI-Diensten. Manche Leseempfehlungen und Audiofunktionen verwenden ebenfalls KI. Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
+          "Das tatsächliche Angebot und der Kaufbildschirm bestimmen den kostenpflichtigen Zugang. Manche Medien müssen vor der Nutzung heruntergeladen werden; Speicherung und Weitergabe bleiben ihrer Lizenz unterworfen. Diese Bedingungen versprechen keine feste Zahl kostenloser Nachrichten, ein bestimmtes KI-Modell, jede Bibelübersetzung, unbegrenzten Betrieb oder Funktionen einer anderen Version. Gesetzlich verbindliche Beschreibungen und vertragliche Zusagen bleiben verbindlich."
         ]
       },
       {
@@ -256,8 +296,8 @@
         "id": "accounts",
         "title": "Konto und Kontosicherheit",
         "paragraphs": [
-          "Bestimmte Funktionen benötigen Konto und Internetzugang. Halten Sie erforderliche Angaben und Wiederherstellungsdaten aktuell, schützen Sie Zugangsdaten und verwenden Sie fremde Konten nur mit Befugnis. Melden Sie verdächtige Zugriffe zeitnah. Nicht jedes Ereignis aufgrund eines außerhalb Ihrer Kontrolle liegenden Fehlers wird Ihnen automatisch zugerechnet.",
-          "Ein gewählter Name erlaubt weder Markenverletzungen noch Identitätstäuschung. Synchronisierung kann erfolgreiche Anmeldung und kompatible Versionen voraussetzen. Bewahren Sie wichtige Informationen zusätzlich selbst auf; dieser Hinweis vermindert keine Pflicht von amen zur vertragsgemäßen Leistung."
+          "amen kann während der Einrichtung ein Gastkonto ohne E-Mail-Adresse oder Apple-Anmeldung erstellen. Der Gastzugang hängt von den für die App verfügbaren Anmeldeinformationen ab und bietet nicht dieselben Anmelde- und Wiederherstellungsoptionen wie ein verknüpftes Konto. Bestehende unterstützte Konten können die angebotene Apple- oder E-Mail-/Passwortanmeldung für Rückkehrer nutzen. Manche Funktionen erfordern ein funktionierendes Konto und Netzwerkzugang. Schütze den Kontozugang und informiere den Support bei Verdacht auf unbefugte Nutzung. Du haftest nicht automatisch für jede Handlung aufgrund eines Fehlers außerhalb deiner Kontrolle. Nutze das Konto einer anderen Person nicht ohne deren Erlaubnis.",
+          "Die verfügbare Apple-Option kann unterstützte Gastkontodaten verknüpfen oder übertragen. Erfolgreiche Anmeldung, vorhandene Kontodaten und App-Kompatibilität beeinflussen Verknüpfung und Synchronisierung. Lokal gespeicherte Notizen und Markierungen werden getrennt behandelt. Kontaktiere den Support bei fehlenden Informationen nach einem Anmeldewechsel. Die Wahl eines Anzeigenamens berechtigt nicht dazu, fremde Markenrechte zu verletzen oder sich als eine andere Person auszugeben. Bewahre eine eigene Kopie wichtiger Informationen auf; dies mindert nicht amens Pflicht zu einer vertragsgemäßen Leistung."
         ]
       },
       {
@@ -296,8 +336,8 @@
         "id": "screen-time",
         "title": "Bible Lock und Gerätefreigaben",
         "paragraphs": [
-          "Bible Lock hängt von Apple-Freigaben, Systemunterstützung, ausgewählten Apps und Zeitplänen ab und kann ausgewählte Aktivitäten sperren. Prüfen Sie die Auswahl und behalten Sie Zugang zu wichtigen Gerätefunktionen. Freigaben können in den Systemeinstellungen verwaltet werden.",
-          "Systemgrenzen, widerrufene Freigaben oder Unterbrechungen können Sperren und Entsperren beeinflussen. Die Funktion dient persönlichen Routinen und garantiert weder Aufsicht, Sicherheit, Behandlung noch lückenlose Sperrwirkung. KI-Leseempfehlungen müssen wie andere KI-Ausgaben geprüft werden."
+          "Bible Lock hängt von Apples Autorisierung, unterstützten Systemfunktionen sowie den gewählten Apps, App-Kategorien, unterstützten Web-Domains und Zeitplänen ab. Es kann ausgewählte Aktivitäten gemäß deiner Konfiguration einschränken. Prüfe die Auswahl vor der Aktivierung und behalte Zugang zu wesentlichen Gerätefunktionen. Die Autorisierung kannst du in den Systemeinstellungen verwalten.",
+          "Betriebssystembeschränkungen, abgelaufene Autorisierung, Geräteeinstellungen oder Unterbrechungen können Sperren und Entsperren beeinflussen. Die Funktion unterstützt persönliche Routinen und garantiert keine elterliche Aufsicht, Sicherheit, Behandlung oder lückenlose Durchsetzung. Leseempfehlungen können durch KI erzeugt werden und sind wie andere KI-Inhalte zu prüfen."
         ]
       },
       {
@@ -344,8 +384,8 @@
         "id": "restoration",
         "title": "Käufe wiederherstellen und Einmalzugang",
         "paragraphs": [
-          "Stellen Sie Käufe mit dem ursprünglich verwendeten Apple-Konto über die vorhandene Funktion wieder her. Zugang kann von Apple-Prüfung, Kontozuordnung, Kompatibilität und konkreter Familienfreigabe abhängen. Wenden Sie sich bei nicht erkanntem gültigem Kauf an den Support.",
-          "Einmal- oder Lifetime-Produkte verlängern sich nicht automatisch, sofern das Angebot nichts anderes ausdrücklich vorsieht. Umfang bestimmen Kaufbeschreibung und zwingendes Recht; weder Betrieb während Ihrer gesamten Lebenszeit noch jede künftige Leistung ist automatisch zugesagt. Vereinbarte Rechte dürfen nicht nachträglich durch Umdeutung reduziert werden."
+          "Nutze die verfügbare Kaufwiederherstellung mit dem Apple-Konto, das den Kauf getätigt hat. „Mit Apple anmelden“ für amen und das für App-Store-Käufe verwendete Apple-Konto dienen unterschiedlichen Zwecken. Eine App-Anmeldung kauft oder kündigt kein Abonnement und garantiert dessen Wiederherstellung nicht. Zugang kann von erfolgreicher Apple-Prüfung, Kontozuordnung, Gerätekompatibilität und den tatsächlichen Freigabebedingungen des Produkts abhängen. Kontaktiere den Support, wenn ein bestätigter Kauf nicht erkannt wird.",
+          "Ein Einmal- oder lebenslanges Produkt verlängert sich nicht automatisch, sofern das Angebot nicht ausdrücklich etwas anderes sagt. Sein Umfang folgt der Kaufbeschreibung und zwingendem Recht. Es verspricht nicht automatisch Betrieb bis zum Lebensende des Käufers oder jeden künftigen Dienst. Eine vereinbarte Berechtigung können wir nicht rückwirkend allein durch eine Neudefinition in diesen Bedingungen einschränken."
         ]
       },
       {
@@ -400,8 +440,8 @@
         "id": "termination",
         "title": "Nutzung beenden und Konto löschen",
         "paragraphs": [
-          "Sie können die Nutzung von amen beenden und die Kontolöschung über die App oder den Support beantragen. Deinstallation entfernt nicht automatisch gespeicherte Kontodaten. Informationen zu Löschung, rechtmäßiger Aufbewahrung und Sicherungen enthält {{privacy}}. Sichern Sie benötigte Angaben vor einer Löschanfrage.",
-          "Kündigen Sie Apple-Abonnements separat gegen weitere Abrechnung. Zugangsschließung beendet diesen Store-Vertrag nicht automatisch. Bei Beendigung durch amen gelten Informations-, Zugangs- und Verbraucherpflichten. Notwendig fortwirkende Ansprüche und rechtmäßige Speicherung bleiben dem Gesetz unterworfen."
+          "Du kannst amen nicht mehr nutzen und über die App oder den Support die Kontolöschung anfordern. Eine Deinstallation allein entfernt keine Cloud-Kontoinformationen. Manche rein lokalen Notizen, Markierungen oder Einstellungen können getrennt vom Konto bestehen bleiben. Siehe {{privacy}} zu Funktionen, Löschanfragen, gesetzlicher Aufbewahrung und Sicherungen. Sichere Informationen, die du behalten möchtest, vor einer Löschanfrage.",
+          "Kündige ein Apple-Abonnement separat, um künftige Abrechnungen zu stoppen. App-Entfernung, Kontolöschung oder ein Ende des Zugangs kündigen den Store-Vertrag nicht automatisch. Wenn amen einen Dienst oder deinen Vertrag beendet, beachten wir geltende Informations-, Zugangs- und Verbraucherabhilfepflichten. Notwendigerweise fortgeltende Regelungen, etwa entstandene Ansprüche und gesetzliche Aufbewahrung, bleiben dem Recht unterworfen."
         ]
       },
       {

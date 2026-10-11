@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const languages = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', sv: 'Svenska' };
-const date = '2026-10-10';
+const date = '2026-10-11';
 const origin = 'https://amen-app.com';
 const check = process.argv.includes('--check');
 const escape = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -90,12 +90,9 @@ function render(copy, locale, kind, auto = false) {
     '<nav aria-label="' + escape(ui.documents) + '">' + ['privacy', 'terms', 'imprint', 'support'].map((type) =>
       '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(ui[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
-    '<div class="page"><div class="document-heading"><p class="document-label">' + escape(ui.documents) + '</p><h1>' + title + '</h1>' +
+    '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' +
     '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata"><span>' + escape(ui.updated) + ': <time datetime="' + date + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + date + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
-    '<nav class="languages" aria-label="' + escape(ui.language) + '"><span>' + escape(ui.language) + '</span>' +
-    languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
-    '<a class="auto-language" href="/' + kind + '.html">' + escape(ui.auto) + '</a></nav>\n' +
-    '<div class="reading-layout"><aside><details open><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
+    '<aside class="contents"><details><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
     doc.sections.map((s) => '<li><a href="#' + s.id + '">' + escape(s.title) + '</a></li>').join('') +
     '</ol></nav></details></aside><main id="document" tabindex="-1">' + (doc.summary.length ? '<section class="key-points" aria-labelledby="key-points"><h2 id="key-points">' + escape(ui.summary) + '</h2><ul>' +
     doc.summary.map((s) => '<li>' + escape(s) + '</li>').join('') + '</ul></section>\n' : '') +
@@ -105,8 +102,11 @@ function render(copy, locale, kind, auto = false) {
       ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>' +
     (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
       ['google', 'googlePrivacy'].map(reference).join('') + '</ul></section>' : '') +
-    '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div></div>\n' +
-    '<footer><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(ui[type]) + '</a>').join('') + '</footer>\n</body>\n</html>\n';
+    '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
+    '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(ui[type]) + '</a>').join('') + '</div>' +
+    '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
+    languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
+    '<a class="auto-language" href="/' + kind + '.html">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
 }
 
 for (const locale of languages) {
