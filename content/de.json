@@ -501,8 +501,6 @@
   "notFound": {
     "title": "Seite nicht gefunden.",
     "description": "Dieser Link führt zu keiner Seite. Über die Startseite findest du zurück.",
-    "homeAction": "Zur Startseite",
-    "sheepNote": "Jedes Schaf ist es wert, gefunden zu werden.",
-    "sheepReference": "Nach Lukas 15,4"
+    "homeAction": "Zur Startseite"
   }
 }

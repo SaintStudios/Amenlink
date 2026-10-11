@@ -25,12 +25,13 @@ CI checks translation structure, paragraph links, generated files, internal link
 
 - Automatic entry pages read the browser’s primary language. Region never overrides that language. An unsupported primary language falls back to English even if a later preference is supported, matching the app.
 - ?lang=de, for example, selects German. Invalid language values fall back to English.
-- Explicit /legal/de/privacy.html links preserve that language regardless of browser preferences. Navigation among documents preserves the selection. Language links also preserve the current section.
+- Explicit /legal/de/privacy/ links preserve that language regardless of browser preferences. Navigation among documents preserves the selection. Language links also preserve the current section. All public navigation, canonical metadata and language links use clean directory URLs.
 - Pages contain all text before JavaScript runs. With JavaScript unavailable, automatic entry pages show complete English documents and all six explicit language links still work.
 - The site does not store language preferences in cookies or browser storage. No translation request, external font, analytics SDK or advertising pixel is added.
 - One compact language disclosure appears at the very bottom of each document, after the footer links. The language menu and contents list start collapsed and remain usable without JavaScript.
 - /privacy, /terms, /datenschutz, /nutzungsbedingungen and /agb, their .html versions and trailing-slash versions remain supported. /support, /imprint and /impressum work the same way.
-- The iOS source now uses localized amen-app.com privacy and terms URLs through AppLegalLinks (Amenapp commit f4730a1), including Profile → Legal and Contact, onboarding privacy and the deletion-offer paywall privacy link. Installed app versions and App Store metadata are separate from source changes. This repository cannot redirect the older amenbible.app or amen-ai.com domains.
+- Older localized .html URLs redirect in the browser to the corresponding clean URL, preserving the selected language and section. They still contain the full document when JavaScript is unavailable.
+- The iOS source uses the same localized amen-app.com clean privacy and terms URLs through AppLegalLinks, including Profile → Legal and Contact, onboarding privacy and the deletion-offer paywall privacy link. Installed app versions and App Store metadata are separate from source changes. This repository cannot redirect the older amenbible.app or amen-ai.com domains.
 
 ## Document design
 
@@ -38,7 +39,7 @@ The legal document layout follows the app's DESIGN.md: system type, neutral ligh
 
 ## Missing pages
 
-GitHub Pages serves the generated root `404.html` for unknown URLs, including nested paths. The page keeps the requested URL and its real HTTP 404 response. An original lost-sheep illustration, inspired by the minimal compositions in [404s.design](https://www.404s.design/sites/hexful), uses the app's teal and neutral colors. Gentle animation respects Reduce Motion.
+GitHub Pages serves the generated root `404.html` for unknown URLs, including nested paths. The page keeps the requested URL and its real HTTP 404 response. A minimal outlined 404 with a solid teal zero uses the app's system typography and neutral surfaces, inspired by the compositions in [404s.design](https://www.404s.design/sites/hexful). The layout is static, with a clear home action. `/404/` provides a clean preview; direct preview filenames redirect there.
 
 The error page uses the browser's primary language or an explicit `?lang=` selection, supports all six app languages, and falls back to complete English content if JavaScript is unavailable. Legal links follow the selected language. The compact footer selector changes language on the same URL; it uses no cookies, storage or external translation service. Its copy lives under `notFound` in the existing content files and is regenerated with the legal pages.
 
@@ -48,7 +49,7 @@ From this directory:
 
     python3 -m http.server 8765 --bind 127.0.0.1
 
-Then open http://127.0.0.1:8765/privacy.html or an explicit language page. Production deployment uses the committed HTML directly; .nojekyll prevents unrelated template processing.
+Then open http://127.0.0.1:8765/privacy/ or an explicit language page. Production deployment uses the committed HTML directly; .nojekyll prevents unrelated template processing.
 
 ## Legal review and implementation limits
 

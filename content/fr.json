@@ -501,8 +501,6 @@
   "notFound": {
     "title": "Page introuvable.",
     "description": "L’adresse a peut-être changé ou la page a été déplacée. Retrouvons l’accueil.",
-    "homeAction": "Retour à l’accueil",
-    "sheepNote": "Chaque brebis mérite d’être retrouvée.",
-    "sheepReference": "Inspiré de Luc 15,4"
+    "homeAction": "Retour à l’accueil"
   }
 }

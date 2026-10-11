@@ -14,9 +14,11 @@
   if (!['privacy', 'terms', 'support', 'imprint'].includes(kind)) return;
   const params = new URLSearchParams(window.location.search);
   const browserLocales = navigator.languages?.length ? Array.from(navigator.languages) : [navigator.language];
-  const locale = params.has('lang') ? normalize(params.get('lang')) : detectLanguage(browserLocales);
-  if ((root.dataset.autoLanguage === 'true' || params.has('lang')) && window.location.pathname !== '/legal/' + locale + '/' + kind + '.html') {
-    window.location.replace('/legal/' + locale + '/' + kind + '.html' + window.location.hash);
+  const locale = params.has('lang') ? normalize(params.get('lang')) :
+    (root.dataset.autoLanguage === 'true' ? detectLanguage(browserLocales) : normalize(root.lang));
+  const canonical = '/legal/' + locale + '/' + kind + '/';
+  if (window.location.pathname !== canonical) {
+    window.location.replace(canonical + window.location.hash);
     return;
   }
   const printButton = document.getElementById('print-document');

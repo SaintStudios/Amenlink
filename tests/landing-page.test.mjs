@@ -222,7 +222,7 @@ function runInitialization(fixture) {
     };
     const fixtureContext = vm.createContext({
         navigator: {
-            languages: ['en-US'],
+            languages: fixture.languages ?? ['en-US'],
             language: 'en-US',
             userAgent: fixture.userAgent,
             platform: fixture.platform,
@@ -243,6 +243,13 @@ function runInitialization(fixture) {
     vm.runInContext(functionSource, fixtureContext, { filename: 'index.inline.js' });
     fixtureContext.initializePage();
     return { actions, attemptedUrls, body, elements, pendingTimers };
+}
+
+for (const language of ['en', 'de', 'es', 'fr', 'it', 'sv']) {
+    const result = runInitialization({ ...platformFixtures.find(({ expected }) => expected === 'android'), languages: [language + '-CH'] });
+    for (const document of ['privacy', 'terms', 'support', 'imprint']) {
+        assert.equal(result.elements[document + 'Link'].href, '/legal/' + language + '/' + document + '/', 'landing navigation must use the selected language and clean URL');
+    }
 }
 
 for (const fixture of platformFixtures.filter(({ expected }) => expected === 'mac')) {

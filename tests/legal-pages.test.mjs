@@ -13,7 +13,7 @@ const copies = Object.fromEntries(locales.map((locale) => [locale, JSON.parse(re
 const kinds = ['privacy', 'terms', 'support', 'imprint'];
 const htmlFiles = [];
 for (const locale of locales) {
-  for (const kind of kinds) htmlFiles.push('legal/' + locale + '/' + kind + '.html');
+  for (const kind of kinds) htmlFiles.push('legal/' + locale + '/' + kind + '.html', 'legal/' + locale + '/' + kind + '/index.html');
 }
 for (const name of ['privacy', 'terms', 'datenschutz', 'nutzungsbedingungen', 'agb', 'support', 'imprint', 'impressum']) {
   htmlFiles.push(name + '.html', name + '/index.html');
@@ -83,9 +83,13 @@ for (const file of htmlFiles) {
     if (url.startsWith('#')) assert.ok(ids.includes(url.slice(1)), file + ': missing anchor ' + url);
     else if (url.startsWith('/')) {
       const local = url.split(/[?#]/)[0];
-      const target = path.join(root, local === '/' ? 'index.html' : local.slice(1));
+      assert.doesNotMatch(local, /\.html$/, file + ': public links must use clean routes');
+      const target = path.join(root, local.endsWith('/') ? local.slice(1) + 'index.html' : local.slice(1));
       assert.ok(fs.existsSync(target), file + ': broken local link ' + local);
-    } else assert.match(url, /^(https:|mailto:|tel:)/, file + ': unsafe URL');
+    } else {
+      assert.match(url, /^(https:|mailto:|tel:)/, file + ': unsafe URL');
+      if (url.startsWith('https://amen-app.com/')) assert.doesNotMatch(new URL(url).pathname, /\.html$/, file + ': metadata must use clean routes');
+    }
   }
 }
 const englishPrivacy = read('privacy.html');
@@ -126,27 +130,32 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', ha
 }
 for (const locale of locales) {
   for (const kind of kinds) {
+    const cleanPath = '/legal/' + locale + '/' + kind + '/';
     const automatic = run({ languages: [locale + '-DE'], kind, hash: '#contact' });
-    assert.deepEqual(automatic.redirects, ['/legal/' + locale + '/' + kind + '.html#contact']);
-    const explicit = run({ auto: false, pathname: '/legal/' + locale + '/' + kind + '.html', language: locale });
+    assert.deepEqual(automatic.redirects, [cleanPath + '#contact']);
+    const explicit = run({ auto: false, pathname: cleanPath, language: locale, kind });
     assert.deepEqual(explicit.redirects, [], 'explicit locale must survive a different browser preference');
     assert.equal(explicit.print.hidden, false);
+    for (const pathname of [cleanPath.slice(0, -1) + '.html', cleanPath + 'index.html']) {
+      assert.deepEqual(run({ auto: false, pathname, language: locale, kind, hash: '#contact' }).redirects, [cleanPath + '#contact'], 'older URLs must keep the explicit locale and section');
+    }
+    assert.equal(read('legal/' + locale + '/' + kind + '.html'), read('legal/' + locale + '/' + kind + '/index.html'), 'both routes must contain the complete document');
   }
 }
 for (const primary of ['pt-BR', 'zh-Hans', 'constructor', '__proto__', '', null]) {
-  assert.deepEqual(run({ languages: [primary, 'de-DE'] }).redirects, ['/legal/en/privacy.html']);
+  assert.deepEqual(run({ languages: [primary, 'de-DE'] }).redirects, ['/legal/en/privacy/']);
 }
-assert.deepEqual(run({ languages: ['SV_fi'] }).redirects, ['/legal/sv/privacy.html']);
-assert.deepEqual(run({ languages: [], browserLanguage: 'it-IT' }).redirects, ['/legal/it/privacy.html']);
-assert.deepEqual(run({ languages: undefined, browserLanguage: 'fr-FR' }).redirects, ['/legal/en/privacy.html']);
-assert.deepEqual(run({ search: '?lang=de', languages: ['es-ES'] }).redirects, ['/legal/de/privacy.html']);
-assert.deepEqual(run({ search: '?lang=es-MX', languages: ['de-DE'] }).redirects, ['/legal/es/privacy.html']);
+assert.deepEqual(run({ languages: ['SV_fi'] }).redirects, ['/legal/sv/privacy/']);
+assert.deepEqual(run({ languages: [], browserLanguage: 'it-IT' }).redirects, ['/legal/it/privacy/']);
+assert.deepEqual(run({ languages: undefined, browserLanguage: 'fr-FR' }).redirects, ['/legal/en/privacy/']);
+assert.deepEqual(run({ search: '?lang=de', languages: ['es-ES'] }).redirects, ['/legal/de/privacy/']);
+assert.deepEqual(run({ search: '?lang=es-MX', languages: ['de-DE'] }).redirects, ['/legal/es/privacy/']);
 for (const value of ['ja', '', '<script>', '../de', '__proto__', 'https://evil.invalid']) {
-  assert.deepEqual(run({ search: '?lang=' + encodeURIComponent(value), languages: ['de-DE'] }).redirects, ['/legal/en/privacy.html']);
+  assert.deepEqual(run({ search: '?lang=' + encodeURIComponent(value), languages: ['de-DE'] }).redirects, ['/legal/en/privacy/']);
 }
-assert.deepEqual(run({ auto: true, pathname: '/legal/en/privacy.html' }).redirects, [], 'English fallback must not loop');
-assert.deepEqual(run({ auto: false, pathname: '/legal/de/privacy.html', search: '?lang=no' }).redirects, ['/legal/en/privacy.html']);
-const manual = run({ auto: false, pathname: '/legal/en/privacy.html', hash: '#rights' });
+assert.deepEqual(run({ auto: true, pathname: '/legal/en/privacy/' }).redirects, [], 'English fallback must not loop');
+assert.deepEqual(run({ auto: false, pathname: '/legal/de/privacy/', language: 'de', search: '?lang=no' }).redirects, ['/legal/en/privacy/']);
+const manual = run({ auto: false, pathname: '/legal/en/privacy/', hash: '#rights' });
 assert.equal(manual.manualLink.hash, '#rights');
 assert.equal(manual.autoLink.hash, '#rights');
 manual.window.location.hash = '#retention';
@@ -165,4 +174,4 @@ if (appLanguageArgument) {
   const appLocales = Array.from(enumBody.matchAll(/case \w+ = "([a-z]{2})"/g), (m) => m[1]).sort();
   assert.deepEqual([...locales].sort(), appLocales, 'website languages must match the app');
 }
-console.log('Legal checks passed: 40 pages, six languages, links, content, fallback, explicit selections, restricted storage and print action.');
+console.log('Legal checks passed: 64 pages, six languages, clean routes, older URLs, content, fallback, explicit selections, restricted storage and print action.');

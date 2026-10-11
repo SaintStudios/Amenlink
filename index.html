@@ -606,10 +606,10 @@
             <p class="fallback-hint" id="fallbackHint">If that doesn’t work, copy the link and paste it into Safari or Chrome.</p>
 
             <footer class="legal-links">
-                <a id="privacyLink" href="/privacy">Privacy</a>
-                <a id="termsLink" href="/terms">Terms</a>
-                <a id="supportLink" href="/support">Support</a>
-                <a id="imprintLink" href="/imprint">Legal information</a>
+                <a id="privacyLink" href="/privacy/">Privacy</a>
+                <a id="termsLink" href="/terms/">Terms</a>
+                <a id="supportLink" href="/support/">Support</a>
+                <a id="imprintLink" href="/imprint/">Legal information</a>
             </footer>
         </section>
     </main>
@@ -894,10 +894,10 @@
             const comingSoon = document.getElementById('comingSoon');
             const fallbackHint = document.getElementById('fallbackHint');
 
-            document.getElementById('privacyLink').href = '/legal/' + language + '/privacy.html';
-            document.getElementById('termsLink').href = '/legal/' + language + '/terms.html';
-            document.getElementById('supportLink').href = '/legal/' + language + '/support.html';
-            document.getElementById('imprintLink').href = '/legal/' + language + '/imprint.html';
+            document.getElementById('privacyLink').href = '/legal/' + language + '/privacy/';
+            document.getElementById('termsLink').href = '/legal/' + language + '/terms/';
+            document.getElementById('supportLink').href = '/legal/' + language + '/support/';
+            document.getElementById('imprintLink').href = '/legal/' + language + '/imprint/';
 
             if (platform === 'android') {
                 setText('headline', copy.androidHeadline);

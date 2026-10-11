@@ -501,8 +501,6 @@
   "notFound": {
     "title": "Sidan hittades inte.",
     "description": "Länken kan ha ändrats eller sidan flyttats. Vi hjälper dig tillbaka till startsidan.",
-    "homeAction": "Till startsidan",
-    "sheepNote": "Varje får är värt att hitta.",
-    "sheepReference": "Inspirerat av Lukas 15:4"
+    "homeAction": "Till startsidan"
   }
 }
