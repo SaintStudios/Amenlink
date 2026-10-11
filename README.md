@@ -4,7 +4,11 @@ This is the amen website repository, named SaintStudios/Amenlink on GitHub. GitH
 
 ## App Store redirect design
 
-The main redirect page and the older blocked-link page follow the app's DESIGN.md: system sans typography, neutral light/dark page and card surfaces, subtle separators, 20-pixel action corners and growing controls with a 52-pixel minimum height. Status and availability labels are quiet text; instructions use plain numbered rows. The existing markup, translations, visible controls and redirect logic are preserved, including the immediate macOS redirect, delayed iOS handoff, TikTok instructions, in-app-browser recovery, Android availability notice and no-script fallback.
+The main redirect page follows the app's DESIGN.md: system sans typography, neutral light/dark page and card surfaces, subtle separators, 20-pixel action corners and growing controls with a 52-pixel minimum height. Status and availability labels are quiet text; instructions use plain numbered rows. Its name is “Amen - Bible Chat”, translated into all six app languages.
+
+Inside TikTok, the page only shows the icon, external-browser explanation, two menu instructions and the arrow pointing to the browser menu. Download and copy buttons, availability labels and footer links are hidden, and no App Store navigation is attempted. TikTok detection takes precedence over device routing, including on Android. Opening the same URL in an external iOS browser shows the localized App Store loading state and makes one delayed HTTPS handoff; macOS retains its immediate handoff. Other desktop, Android and in-app-browser states remain available.
+
+The older `/appstore_blocked.html` URL forwards to this same localized, platform-aware flow, preserving query parameters and the URL fragment. This avoids leaving Safari on stale blocked-browser instructions after the handoff. With JavaScript disabled, that URL retains English browser instructions and the main page retains its English download fallback.
 
 ## Legal pages
 
