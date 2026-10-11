@@ -2,7 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>amen - Bible Study herunterladen</title>
     <style>
@@ -11,153 +13,139 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        :root {
+            color-scheme: light dark;
+            --page: #ffffff;
+            --surface: #f5f5f5;
+            --ink: #1c1c1e;
+            --muted: #636366;
+            --line: rgba(0, 0, 0, 0.06);
+        }
+
         body {
-            height: 100vh;
+            min-height: 100vh;
+            min-height: 100svh;
+            min-height: 100dvh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: #1a1a1a;
-            padding: 20px;
+            padding:
+                max(160px, calc(env(safe-area-inset-top) + 140px))
+                max(24px, env(safe-area-inset-right))
+                max(32px, env(safe-area-inset-bottom))
+                max(24px, env(safe-area-inset-left));
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
+            overflow-wrap: break-word;
+            background: var(--page);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.0625rem;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
-        
+
         .app-icon {
             position: absolute;
-            top: 60px;
+            top: max(48px, calc(env(safe-area-inset-top) + 40px));
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 80px;
+            width: 76px;
+            height: 76px;
             background-image: url('/amen-app-icon.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border-radius: 19px;
         }
-        
+
         .arrow {
-            position: absolute;
-            top: 20px;
-            right: 15px;
-            font-size: 48px;
-            color: #1a1a1a;
-            opacity: 0.8;
-            transform: rotate(0deg);
-            animation: bounce 2s infinite;
+            position: fixed;
+            top: max(8px, calc(env(safe-area-inset-top) + 2px));
+            right: max(2px, calc(env(safe-area-inset-right) + 2px));
+            display: flex;
+            width: 40px;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink);
+            font-size: 40px;
+            line-height: 1;
+            opacity: 0.65;
+            pointer-events: none;
         }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: rotate(0deg) translateY(0);
-            }
-            40% {
-                transform: rotate(0deg) translateY(-10px);
-            }
-            60% {
-                transform: rotate(0deg) translateY(-5px);
-            }
-        }
-        
+
         .content {
-            text-align: left;
-            max-width: 320px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 32px 28px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 40px;
+            max-width: 360px;
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: var(--surface);
+            text-align: left;
         }
-        
+
         .content h1 {
-            font-size: 22px;
+            margin-bottom: 16px;
+            font-size: 1.375rem;
             font-weight: 600;
             line-height: 1.3;
-            margin-bottom: 24px;
-            color: #1a1a1a;
+            letter-spacing: -0.025em;
+            overflow-wrap: break-word;
         }
-        
+
         .steps {
             list-style: none;
         }
-        
+
         .steps li {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.4;
-            margin-bottom: 12px;
-            color: #2d2d2d;
             display: flex;
             align-items: flex-start;
+            gap: 12px;
+            padding: 14px 0;
+            color: var(--ink);
+            font-size: 0.9375rem;
+            font-weight: 400;
+            line-height: 1.5;
         }
-        
+
+        .steps li + li {
+            border-top: 1px solid var(--line);
+        }
+
         .step-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
             display: flex;
+            width: 28px;
+            min-height: 22px;
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
+            color: var(--muted);
+            font-size: 0.9375rem;
             font-weight: 600;
-            margin-right: 12px;
-            flex-shrink: 0;
-            margin-top: 2px;
+            font-variant-numeric: tabular-nums;
         }
-        
+
         .step-text {
             flex: 1;
+            min-width: 0;
         }
-        
+
         .dots {
-            font-weight: 700;
-            color: #1a1a1a;
+            color: var(--ink);
+            font-weight: 600;
         }
-        
-        /* Language detection and responsive design */
-        @media (max-width: 480px) {
-            .content {
-                max-width: 280px;
-                padding: 28px 24px;
-            }
-            
-            .content h1 {
-                font-size: 20px;
-            }
-            
-            .steps li {
-                font-size: 15px;
-            }
-            
-            .app-icon {
-                width: 70px;
-                height: 70px;
-                top: 50px;
-            }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.8s ease-out;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --page: #1c1c1e;
+                --surface: #2c2c2e;
+                --ink: #f5f5f7;
+                --muted: #b0b0b4;
+                --line: rgba(255, 255, 255, 0.06);
             }
         }
     </style>
