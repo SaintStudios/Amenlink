@@ -37,7 +37,7 @@
     "more": "Scopri di più qui"
   },
   "privacy": {
-    "intro": "amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
+    "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
     "summary": [
       "Nema usa i servizi IA di Google per la chat. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
       "L'uso come ospite crea un identificativo di account senza richiedere un indirizzo e-mail. Note ed evidenziazioni locali sono separate dai contenuti salvati nell'account. Gli acquisti sono gestiti tramite Apple.",
@@ -81,7 +81,7 @@
         "id": "reading",
         "title": "Lettura, note e personalizzazione",
         "paragraphs": [
-          "amen usa lingua, versione biblica, attività di lettura, serie, traguardi e impostazioni per fornire le funzioni scelte. Le note bibliche e le evidenziazioni dei versetti sono salvate nello spazio locale dell'app nella versione attuale. Versetti e messaggi salvati nell'account, conversazioni, profilo e progressi supportati usano il cloud quando disponibile. L'accesso non sincronizza da solo ogni elemento locale tra dispositivi. Le impostazioni del dispositivo e dei backup possono influire sulle informazioni locali.",
+          "Amen usa lingua, versione biblica, attività di lettura, serie, traguardi e impostazioni per fornire le funzioni scelte. Le note bibliche e le evidenziazioni dei versetti sono salvate nello spazio locale dell'app nella versione attuale. Versetti e messaggi salvati nell'account, conversazioni, profilo e progressi supportati usano il cloud quando disponibile. L'accesso non sincronizza da solo ogni elemento locale tra dispositivi. Le impostazioni del dispositivo e dei backup possono influire sulle informazioni locali.",
           "La finalità è fornire lettura, progressi e personalizzazione, di norma ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per convinzioni o altre circostanze sensibili. Usa i controlli di note, evidenziazioni o conversazioni per gestire i contenuti. Conserva una copia delle informazioni importanti; questo non riduce i tuoi diritti a un servizio conforme. La visibilità del profilo pubblico e delle classifiche è spiegata separatamente di seguito."
         ]
       },
@@ -137,7 +137,7 @@
         "id": "photos-notifications",
         "title": "Foto del profilo e permessi del dispositivo",
         "paragraphs": [
-          "Quando salvi una foto del profilo, l'immagine scelta viene conservata presso il servizio di account pertinente. Può apparire nel profilo o nella classifica. I collegamenti condivisi possono consentire ad altri di accedervi. amen usa l'immagine che selezioni; aggiungere una foto del profilo non rende tutte le immagini della libreria disponibili all'app.",
+          "Quando salvi una foto del profilo, l'immagine scelta viene conservata presso il servizio di account pertinente. Può apparire nel profilo o nella classifica. I collegamenti condivisi possono consentire ad altri di accedervi. Amen usa l'immagine che selezioni; aggiungere una foto del profilo non rende tutte le immagini della libreria disponibili all'app.",
           "Puoi gestire i permessi pertinenti di Foto e Tempo di utilizzo nelle impostazioni iOS. Salvare sfondi o Live Photo usa il permesso necessario per aggiungere i contenuti scelti a Foto, come spiegato sotto. Negare un permesso può limitare la funzione. Autorizzare una capacità del dispositivo è distinto dal consenso a pubblicità o trattamento sensibile. La privacy di Apple è disponibile a {{applePrivacy}}."
         ]
       },
@@ -169,7 +169,7 @@
         "id": "purchases",
         "title": "Acquisti e Apple",
         "paragraphs": [
-          "Apple gestisce pagamenti e fatturazione dell’App Store. amen non riceve il numero completo della carta da un acquisto in-app Apple. I servizi di verifica usano identificatori dell’account, transazioni, prodotti, stato di prova e accesso agli abbonamenti per riconoscere gli acquisti. Consulta {{appleTerms}}.",
+          "Apple gestisce pagamenti e fatturazione dell’App Store. Amen non riceve il numero completo della carta da un acquisto in-app Apple. I servizi di verifica usano identificatori dell’account, transazioni, prodotti, stato di prova e accesso agli abbonamenti per riconoscere gli acquisti. Consulta {{appleTerms}}.",
           "Stato degli acquisti e identificatori tecnici possono essere associati all’account amen per attribuire gli abbonamenti. La gestione dell’accesso si basa generalmente sull’articolo 6.1.b, i registri obbligatori sul 6.1.c e il marketing facoltativo sul consenso quando necessario. Il trattamento degli acquisti da parte di Apple è descritto in {{applePrivacy}}."
         ]
       },
@@ -264,7 +264,7 @@
     ]
   },
   "terms": {
-    "intro": "amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni spiegano uso dell’app, chat IA Nema, account e abbonamenti. Leggi anche l’informativa sulla privacy e l’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
+    "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni spiegano uso dell’app, chat IA Nema, account e abbonamenti. Leggi anche l’informativa sulla privacy e l’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
     "summary": [
       "Nema usa servizi IA di Google per la chat. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
       "La schermata d’acquisto mostra prezzo, periodo di fatturazione, condizioni di prova e accesso incluso prima della conferma.",
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "Servizi offerti",
         "paragraphs": [
-          "amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema offre chat IA con servizi di Google. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
+          "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema offre chat IA con servizi di Google. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
           "L'offerta effettiva e la schermata d'acquisto definiscono l'accesso a pagamento. Alcuni media devono essere scaricati prima dell'uso; salvare o condividere contenuti resta soggetto alla licenza. Queste condizioni non promettono un numero fisso di messaggi gratuiti, un modello specifico, tutte le traduzioni bibliche, funzionamento perpetuo o funzioni di un'altra versione. Descrizioni e impegni contrattuali resi vincolanti dalla legge restano vincolanti."
         ]
       },
@@ -300,7 +300,7 @@
         "id": "accounts",
         "title": "Account e sicurezza",
         "paragraphs": [
-          "amen può creare un account ospite durante la configurazione senza e-mail o accesso Apple. L'accesso dipende dalle informazioni di autenticazione disponibili e non offre le stesse opzioni di accesso e recupero di un account collegato. Gli account esistenti supportati possono usare il ritorno con Apple o e-mail e password. Alcune funzioni richiedono un account operativo e rete. Proteggi l'accesso e avvisa l'assistenza di sospetti usi non autorizzati; non sei automaticamente responsabile di ogni azione causata da guasti fuori dal tuo controllo. Non usare l’account di un’altra persona senza autorizzazione.",
+          "Amen può creare un account ospite durante la configurazione senza e-mail o accesso Apple. L'accesso dipende dalle informazioni di autenticazione disponibili e non offre le stesse opzioni di accesso e recupero di un account collegato. Gli account esistenti supportati possono usare il ritorno con Apple o e-mail e password. Alcune funzioni richiedono un account operativo e rete. Proteggi l'accesso e avvisa l'assistenza di sospetti usi non autorizzati; non sei automaticamente responsabile di ogni azione causata da guasti fuori dal tuo controllo. Non usare l’account di un’altra persona senza autorizzazione.",
           "L'opzione Apple disponibile può collegare o trasferire informazioni supportate dell'ospite. Autenticazione riuscita, dati esistenti e compatibilità influenzano collegamento e sincronizzazione; note ed evidenziazioni locali sono separate. Contatta l'assistenza per dati mancanti dopo cambi di accesso. La scelta di un nome visualizzato non autorizza a violare marchi o a fingere di essere un'altra persona. Conserva una copia delle informazioni importanti; ciò non riduce il dovere di amen di fornire un servizio conforme."
         ]
       },
@@ -332,7 +332,7 @@
         "id": "professional-advice",
         "title": "Consulenza ed emergenze",
         "paragraphs": [
-          "amen offre lettura e riflessione, non diagnosi, cure, psicoterapia, consulenza legale o finanziaria, monitoraggio emergenze o relazione pastorale riservata. Non sostituisce professionisti che conoscano le tue circostanze.",
+          "Amen offre lettura e riflessione, non diagnosi, cure, psicoterapia, consulenza legale o finanziaria, monitoraggio emergenze o relazione pastorale riservata. Non sostituisce professionisti che conoscano le tue circostanze.",
           "In pericolo immediato contatta emergenze o servizi di crisi locali. Non aspettare lettura umana tempestiva. Non decidere farmaci, sicurezza, diritto o finanze solo da IA. Restano responsabilità legalmente non escludibili."
         ]
       },
@@ -364,8 +364,8 @@
         "id": "paid-access",
         "title": "Accesso pagato e offerta",
         "paragraphs": [
-          "amen può offrire abbonamenti e acquisti unici Apple. Prima di confermare vedi prodotto, prezzo, valuta, periodo, prova o promozione e accesso incluso. Governa l’offerta concreta, non una descrizione generale.",
-          "Prezzi e disponibilità variano per store, imposte, prodotto e idoneità. Gli acquisti sono addebitati all’account Apple e servizi di verifica riconoscono l’accesso. amen non riceve il numero completo della carta. Prove e promozioni valgono solo se incluse nella conferma; consulta {{appleTerms}}."
+          "Amen può offrire abbonamenti e acquisti unici Apple. Prima di confermare vedi prodotto, prezzo, valuta, periodo, prova o promozione e accesso incluso. Governa l’offerta concreta, non una descrizione generale.",
+          "Prezzi e disponibilità variano per store, imposte, prodotto e idoneità. Gli acquisti sono addebitati all’account Apple e servizi di verifica riconoscono l’accesso. Amen non riceve il numero completo della carta. Prove e promozioni valgono solo se incluse nella conferma; consulta {{appleTerms}}."
         ]
       },
       {
@@ -497,5 +497,12 @@
         ]
       }
     ]
+  },
+  "notFound": {
+    "title": "Pagina non trovata.",
+    "description": "Il link potrebbe essere cambiato o la pagina è stata spostata. Torniamo all’inizio.",
+    "homeAction": "Torna all’inizio",
+    "sheepNote": "Ogni pecora merita di essere ritrovata.",
+    "sheepReference": "Ispirato a Luca 15,4"
   }
 }

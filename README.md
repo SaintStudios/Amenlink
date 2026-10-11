@@ -13,12 +13,13 @@ Validate with:
     node scripts/build-legal.mjs --check
     node tests/landing-page.test.mjs
     node tests/legal-pages.test.mjs
+    node tests/not-found.test.mjs
 
 To compare with a local amen app checkout:
 
     node tests/legal-pages.test.mjs --app-languages="/absolute/path/to/AMEN/AMEN/Services/LocalizationManager.swift"
 
-CI checks translation structure, paragraph links, generated files, internal links, metadata, fallback behavior, restricted-storage behavior and existing App Store routing. It also checks lowercase branding, app-only privacy scope, support email, recipient categories and official Apple references. Shared CSS and JavaScript URLs include content hashes to prevent stale cached assets after an update. Updating content or assets without regenerating the HTML fails the check.
+CI checks translation structure, paragraph links, generated files, internal links, metadata, fallback behavior, restricted-storage behavior and existing App Store routing. It also checks sentence capitalization, app-only privacy scope, support email, recipient categories and official Apple references. Shared CSS and JavaScript URLs include content hashes to prevent stale cached assets after an update. Updating content or assets without regenerating the HTML fails the check.
 
 ## Language behavior and compatibility
 
@@ -34,6 +35,12 @@ CI checks translation structure, paragraph links, generated files, internal link
 ## Document design
 
 The legal document layout follows the app's DESIGN.md: system type, neutral light/dark surfaces, restrained bright teal, and a maximum 680-pixel reading column with 24-pixel side insets. Headings are compact and the contents list is an inline disclosure. The footer language menu uses native details/summary and 44-pixel targets. The print stylesheet removes navigation and keeps a plain document layout.
+
+## Missing pages
+
+GitHub Pages serves the generated root `404.html` for unknown URLs, including nested paths. The page keeps the requested URL and its real HTTP 404 response. An original lost-sheep illustration, inspired by the minimal compositions in [404s.design](https://www.404s.design/sites/hexful), uses the app's teal and neutral colors. Gentle animation respects Reduce Motion.
+
+The error page uses the browser's primary language or an explicit `?lang=` selection, supports all six app languages, and falls back to complete English content if JavaScript is unavailable. Legal links follow the selected language. The compact footer selector changes language on the same URL; it uses no cookies, storage or external translation service. Its copy lives under `notFound` in the existing content files and is regenerated with the legal pages.
 
 ## Local preview
 

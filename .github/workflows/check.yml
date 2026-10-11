@@ -18,3 +18,4 @@ jobs:
       - run: node scripts/build-legal.mjs --check
       - run: node tests/landing-page.test.mjs
       - run: node tests/legal-pages.test.mjs
+      - run: node tests/not-found.test.mjs

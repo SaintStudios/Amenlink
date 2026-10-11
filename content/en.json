@@ -4,7 +4,7 @@
     "navTerms": "Terms",
     "navImprint": "Legal",
     "navSupport": "Support",
-    "home": "amen website",
+    "home": "Amen website",
     "privacy": "Privacy policy",
     "terms": "Terms of use",
     "support": "Contact support",
@@ -37,7 +37,7 @@
     "more": "See more here"
   },
   "privacy": {
-    "intro": "amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy explains how personal information is used in the app, including accounts, reading preferences, Nema AI chat, audio and subscriptions. The information processed depends on the features you choose.",
+    "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy explains how personal information is used in the app, including accounts, reading preferences, Nema AI chat, audio and subscriptions. The information processed depends on the features you choose.",
     "summary": [
       "Nema uses Google AI services to provide AI chat. Your message and relevant conversation context are sent to Google to generate a response.",
       "Guest use creates an account identifier without requiring an email address. Local notes and highlights are separate from account-based saved content. Purchases are managed through Apple.",
@@ -81,7 +81,7 @@
         "id": "reading",
         "title": "Reading activity, notes and personalization",
         "paragraphs": [
-          "amen uses language, Bible-version choices, reading activity, streaks, achievements and settings to provide the selected features. Bible notes and verse highlights are saved in local app storage in the current version. Account-based saved verses, saved chat messages, conversations, profile information and supported progress records use cloud storage where available. Signing in does not by itself synchronize every locally saved item across devices. Device and backup settings can also affect local information.",
+          "Amen uses language, Bible-version choices, reading activity, streaks, achievements and settings to provide the selected features. Bible notes and verse highlights are saved in local app storage in the current version. Account-based saved verses, saved chat messages, conversations, profile information and supported progress records use cloud storage where available. Signing in does not by itself synchronize every locally saved item across devices. Device and backup settings can also affect local information.",
           "The purpose is to provide reading, progress and personalization functions, usually under Article 6(1)(b), with additional protection where information reveals beliefs or other sensitive circumstances. Use the relevant note, highlight or conversation controls to manage saved content. Keep a separate copy of information important to you; this does not reduce your rights to a conforming service. Public profile and ranking visibility is explained separately below."
         ]
       },
@@ -137,7 +137,7 @@
         "id": "photos-notifications",
         "title": "Profile photos and device permissions",
         "paragraphs": [
-          "When you save a profile photo, the selected image is stored with the relevant account service. It can appear with your profile or ranking information. Shared image links may give others access to that image. amen uses the image you select; adding a profile photo should not be understood as making every image in your photo library available to the app.",
+          "When you save a profile photo, the selected image is stored with the relevant account service. It can appear with your profile or ranking information. Shared image links may give others access to that image. Amen uses the image you select; adding a profile photo should not be understood as making every image in your photo library available to the app.",
           "You can manage relevant photo and Screen Time permissions in iOS settings. Saving wallpapers or Live Photos uses the permission needed to add the selected content to Photos, as explained below. Denying a permission can limit its feature. A device-capability authorization is separate from consent to advertising or sensitive-data processing. Apple's privacy information is available at {{applePrivacy}}."
         ]
       },
@@ -169,7 +169,7 @@
         "id": "purchases",
         "title": "Purchases and Apple",
         "paragraphs": [
-          "Apple handles App Store payments and billing. amen does not receive your full payment-card number from an Apple in-app purchase. Purchase validation services use account identifiers, transaction details, products, trial status and subscription access information to recognize your purchases. Apple's purchase and usage rules are available at {{appleTerms}}.",
+          "Apple handles App Store payments and billing. Amen does not receive your full payment-card number from an Apple in-app purchase. Purchase validation services use account identifiers, transaction details, products, trial status and subscription access information to recognize your purchases. Apple's purchase and usage rules are available at {{appleTerms}}.",
           "Purchase status and technical identifiers may be associated with your amen account and used for subscription attribution. Access administration generally relies on Article 6(1)(b), legally required records on Article 6(1)(c), and optional marketing processing on consent where required. Apple's handling of purchase information is described in {{applePrivacy}}."
         ]
       },
@@ -264,7 +264,7 @@
     ]
   },
   "terms": {
-    "intro": "amen is a Christian app for Bible reading, prayer and spiritual reflection. These terms explain use of the app, including Nema AI chat, account features and subscriptions. Read them alongside the privacy policy and the offer shown before a purchase. Your statutory consumer rights remain protected.",
+    "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. These terms explain use of the app, including Nema AI chat, account features and subscriptions. Read them alongside the privacy policy and the offer shown before a purchase. Your statutory consumer rights remain protected.",
     "summary": [
       "Nema uses Google AI services for AI chat. Responses can be inaccurate; check important answers and Bible quotations.",
       "The purchase screen shows the price, billing period, trial conditions and included access before you confirm.",
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "What amen provides",
         "paragraphs": [
-          "amen supports Christian Bible reading, prayer and reflection through saved verses, highlights, notes, devotionals, reading progress and related features. Depending on the version and access level, it also provides Bible comics, wallpapers, touch-controlled 360° scenes, background music, Days with Jesus and widgets. Nema provides AI chat using Google AI services. Some reading recommendations and audio features also use AI; Bible Lock uses Apple's Screen Time functions.",
+          "Amen supports Christian Bible reading, prayer and reflection through saved verses, highlights, notes, devotionals, reading progress and related features. Depending on the version and access level, it also provides Bible comics, wallpapers, touch-controlled 360° scenes, background music, Days with Jesus and widgets. Nema provides AI chat using Google AI services. Some reading recommendations and audio features also use AI; Bible Lock uses Apple's Screen Time functions.",
           "The actual offer and purchase screen define paid access. Some media must be downloaded before use, and saving or sharing content remains subject to its license. These terms do not promise a fixed number of free messages, a particular AI model, every Bible translation, perpetual operation or features advertised for a different version. Descriptions and contractual commitments that law makes binding remain binding."
         ]
       },
@@ -300,7 +300,7 @@
         "id": "accounts",
         "title": "Accounts and account security",
         "paragraphs": [
-          "amen can create a guest account during onboarding without an email address or Apple sign-in. Guest access depends on authentication information available to the app and does not provide the same sign-in and recovery options as a linked account. Existing supported accounts can use the available returning-user Apple or email/password login. Certain functions need a working account and network access. Protect account access and notify support if you suspect unauthorized use; you are not automatically responsible for every action caused by a failure outside your control. Do not use another person’s account without authorization.",
+          "Amen can create a guest account during onboarding without an email address or Apple sign-in. Guest access depends on authentication information available to the app and does not provide the same sign-in and recovery options as a linked account. Existing supported accounts can use the available returning-user Apple or email/password login. Certain functions need a working account and network access. Protect account access and notify support if you suspect unauthorized use; you are not automatically responsible for every action caused by a failure outside your control. Do not use another person’s account without authorization.",
           "The available Apple option can link or transfer supported guest-account information. Successful authentication, existing account information and app compatibility affect linking and synchronization; locally stored notes and highlights are separate. Contact support about missing information after a sign-in change. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce amen's duty to provide a conforming service."
         ]
       },
@@ -332,7 +332,7 @@
         "id": "professional-advice",
         "title": "Professional advice and emergencies",
         "paragraphs": [
-          "amen offers reading and reflection support. It does not provide medical diagnosis, treatment, psychotherapy, legal or financial advice, emergency monitoring or a confidential pastoral relationship. A spiritual conversation is not a substitute for advice from a qualified person who understands your circumstances.",
+          "Amen offers reading and reflection support. It does not provide medical diagnosis, treatment, psychotherapy, legal or financial advice, emergency monitoring or a confidential pastoral relationship. A spiritual conversation is not a substitute for advice from a qualified person who understands your circumstances.",
           "If you face immediate danger, contact your local emergency service or an appropriate crisis service. Do not rely on a chat being reviewed or answered by a human in time. Do not make medication, safety, legal or financial decisions solely from AI output. These limitations do not exclude liability where the law does not permit exclusion."
         ]
       },
@@ -364,8 +364,8 @@
         "id": "paid-access",
         "title": "Paid access and the purchase offer",
         "paragraphs": [
-          "amen may offer subscriptions or one-time purchases through Apple. Before you confirm, the purchase interface shows the product, price, currency, billing period, trial or promotional conditions and included access. That specific offer governs the purchase; a general website description is not a substitute for it.",
-          "Prices and availability can vary by storefront, tax treatment, product and offer eligibility. Purchases are charged through your Apple account, and purchase validation services help recognize your access. amen does not receive your full payment-card number. A trial or promotion applies only when included in the confirmation screen; see {{appleTerms}} for Apple's rules."
+          "Amen may offer subscriptions or one-time purchases through Apple. Before you confirm, the purchase interface shows the product, price, currency, billing period, trial or promotional conditions and included access. That specific offer governs the purchase; a general website description is not a substitute for it.",
+          "Prices and availability can vary by storefront, tax treatment, product and offer eligibility. Purchases are charged through your Apple account, and purchase validation services help recognize your access. Amen does not receive your full payment-card number. A trial or promotion applies only when included in the confirmation screen; see {{appleTerms}} for Apple's rules."
         ]
       },
       {
@@ -396,7 +396,7 @@
         "id": "refunds",
         "title": "Refunds and purchase problems",
         "paragraphs": [
-          "For Apple-billed purchases, use {{refund}} or reportaproblem.apple.com to request a refund or investigate billing. Eligibility depends on the applicable store rules, circumstances and law. amen can help investigate access problems but cannot promise that Apple will grant every refund request.",
+          "For Apple-billed purchases, use {{refund}} or reportaproblem.apple.com to request a refund or investigate billing. Eligibility depends on the applicable store rules, circumstances and law. Amen can help investigate access problems but cannot promise that Apple will grant every refund request.",
           "This routing does not remove statutory remedies against a responsible trader. Report failures, duplicate access charges or a nonconforming service to us as well where appropriate. No clause here makes all purchases nonrefundable or requires you to abandon rights to repair, price reduction, termination or reimbursement."
         ]
       },
@@ -497,5 +497,12 @@
         ]
       }
     ]
+  },
+  "notFound": {
+    "title": "Page not found.",
+    "description": "The link may have changed or the page may have moved. Let’s get you back home.",
+    "homeAction": "Back home",
+    "sheepNote": "Every sheep is worth finding.",
+    "sheepReference": "Inspired by Luke 15:4"
   }
 }
