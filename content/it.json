@@ -39,7 +39,7 @@
   "privacy": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
     "summary": [
-      "Nema usa i servizi IA di Google per la chat. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
+      "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
       "L'uso come ospite crea un identificativo di account senza richiedere un indirizzo e-mail. Note ed evidenziazioni locali sono separate dai contenuti salvati nell'account. Gli acquisti sono gestiti tramite Apple.",
       "Preghiere, preferenze di fede e conversazioni possono contenere informazioni personali sensibili. I tuoi diritti e i consensi necessari restano tutelati.",
       "Per richieste sulla privacy, contatta l’assistenza a amenapphilfe@gmail.com. Gli abbonamenti Apple vanno annullati separatamente dall’eliminazione dell’app o dell’account amen."
@@ -65,7 +65,7 @@
         "id": "accounts",
         "title": "Account, autenticazione e profilo",
         "paragraphs": [
-          "Durante la configurazione iniziale, amen può creare un account ospite senza richiedere e-mail o Accedi con Apple. L'account ha un identificativo univoco e informazioni di sessione. Il nome scelto e le attività salvate supportate possono essere associati all'identificativo; l'uso come ospite non significa quindi che non vengano trattati dati personali. Identificativi, credenziali di sessione e preferenze sono conservati presso i servizi di account e sul dispositivo per mantenere l'accesso e la sincronizzazione disponibile. L'accesso dopo uscita, reinstallazione o cambio di dispositivo dipende dalle informazioni di autenticazione e recupero disponibili. Le informazioni di account includono anche le date di creazione e aggiornamento.",
+          "Durante la configurazione iniziale, amen può creare un account ospite senza richiedere e-mail o Accedi con Apple. L'account ha un identificativo univoco e informazioni di sessione. Il nome scelto e le attività salvate supportate sono associati a quell’identificativo di account. L’accesso come ospite non richiede la verifica dell’identità reale; le informazioni collegate all’account possono comunque essere dati personali. Identificativi, credenziali di sessione e preferenze sono conservati presso i servizi di account e sul dispositivo per mantenere l'accesso e la sincronizzazione disponibile. L'accesso dopo uscita, reinstallazione o cambio di dispositivo dipende dalle informazioni di autenticazione e recupero disponibili. Le informazioni di account includono anche le date di creazione e aggiornamento.",
           "Puoi collegare informazioni supportate dell'account ospite tramite Accedi con Apple. Apple può fornire identificativo, nome e indirizzo e-mail o di inoltro privato; amen non riceve la password del tuo account Apple. Il collegamento può associare o trasferire conversazioni, dati di profilo e progressi supportati, secondo le informazioni esistenti e il completamento del processo. Non rende disponibili altrove tutti i contenuti esclusivamente locali. Chi torna con un account esistente e-mail/password può usare i controlli di accesso e reimpostazione disponibili. I servizi di account trattano credenziali e informazioni di recupero necessarie. Le basi usuali sono l'articolo 6.1.b, la sicurezza proporzionata dell'articolo 6.1.f e gli obblighi legali dell'articolo 6.1.c del GDPR."
         ]
       },
@@ -97,7 +97,7 @@
         "id": "ai",
         "title": "Chat IA Nema",
         "paragraphs": [
-          "Nema usa un modello di IA di Google per offrire la chat IA in amen. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto può includere nome, lingua e preferenze di fede per personalizzare. Messaggi pertinenti possono anche essere inviati a Google per creare un breve titolo della conversazione. La conversazione è generata dall'IA, non da un consulente umano.",
+          "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto può includere nome, lingua e preferenze di fede per personalizzare. Messaggi pertinenti possono anche essere inviati a Google per creare un breve titolo della conversazione. La conversazione è generata dall'IA, non da un consulente umano.",
           "I servizi di IA di Google possono anche fornire spiegazioni bibliche e consigli di lettura personalizzati. Risposte, riferimenti o testi pertinenti sono usati per la funzione richiesta. Le riflessioni iniziali preparate sono descritte nella sezione di configurazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
         ]
       },
@@ -177,8 +177,8 @@
         "id": "analytics",
         "title": "Misurazione e attribuzione nell’app",
         "paragraphs": [
-          "I servizi di misurazione e attribuzione ricevono eventi iniziali e d'uso, come passaggi visualizzati o completati, interazioni con offerte a pagamento e attività d'acquisto. Possono includere nomi o numeri dei passaggi, orari, informazioni dell'app e identificativi di account, acquisto o dispositivo per misurazione e attribuzione degli abbonamenti.",
-          "Il permesso di tracciamento Apple non arresta necessariamente ogni evento dell'app o operativo. L'attribuzione può coinvolgere partner di marketing, e il tracciamento facoltativo richiede consenso ove previsto. Eventi di funzioni di fede possono rivelare o permettere di dedurre interessi religiosi; anche finalità e condizioni giuridiche devono essere valutate. Contatta {{email}} per destinatari, permessi o scelte di privacy."
+          "I servizi di misurazione e attribuzione ricevono eventi iniziali e d’uso, come passaggi visualizzati o completati, interazioni con offerte a pagamento e attività d’acquisto. Possono includere cronologia degli acquisti, interazioni con il prodotto, dati pubblicitari e altri dati d’uso, con nomi o numeri dei passaggi, orari, informazioni dell’app e identificativi di account, acquisto o dispositivo. I dati sui crash sono usati per analisi e indagini su errori tecnici.",
+          "I dati di acquisto e utilizzo possono servire a funzioni dell’app, personalizzazione, analisi, pubblicità e marketing. Quando viene fornito il consenso necessario, i partner pubblicitari e di misurazione possono usarli per tracciare attività tra app e siti di altre aziende. Il permesso di tracciamento Apple non arresta tutti gli eventi operativi. Gli eventi legati alla fede possono rivelare interessi religiosi e richiedono condizioni giuridiche adeguate. Contatta {{email}} per destinatari, permessi o scelte di privacy."
         ]
       },
       {
@@ -266,7 +266,7 @@
   "terms": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni spiegano uso dell’app, chat IA Nema, account e abbonamenti. Leggi anche l’informativa sulla privacy e l’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
     "summary": [
-      "Nema usa servizi IA di Google per la chat. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
+      "Nema usa un modello di IA di Google potenziato per la chat IA. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
       "La schermata d’acquisto mostra prezzo, periodo di fatturazione, condizioni di prova e accesso incluso prima della conferma.",
       "Gli abbonamenti Apple si rinnovano fino all’annullamento. Eliminare l’app o l’account amen non annulla la fatturazione Apple.",
       "Queste condizioni preservano i diritti legali dei consumatori. Restano applicabili regole d’acquisto Apple e licenza dell’app."
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "Servizi offerti",
         "paragraphs": [
-          "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema offre chat IA con servizi di Google. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
+          "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema usa un modello di IA di Google potenziato per la chat IA. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
           "L'offerta effettiva e la schermata d'acquisto definiscono l'accesso a pagamento. Alcuni media devono essere scaricati prima dell'uso; salvare o condividere contenuti resta soggetto alla licenza. Queste condizioni non promettono un numero fisso di messaggi gratuiti, un modello specifico, tutte le traduzioni bibliche, funzionamento perpetuo o funzioni di un'altra versione. Descrizioni e impegni contrattuali resi vincolanti dalla legge restano vincolanti."
         ]
       },
@@ -324,7 +324,7 @@
         "id": "ai",
         "title": "Nema e risultati IA",
         "paragraphs": [
-          "Nema usa un modello IA di Google per domande bibliche e riflessione cristiana. Le risposte sono generate da IA e possono contenere affermazioni inesatte, citazioni inventate, riferimenti errati o interpretazioni incomplete. Leggi con attenzione e controlla citazioni importanti nella traduzione biblica che usi.",
+          "Nema usa un modello di IA di Google potenziato per domande bibliche e riflessione cristiana. Le risposte sono generate da IA e possono contenere affermazioni inesatte, citazioni inventate, riferimenti errati o interpretazioni incomplete. Leggi con attenzione e controlla citazioni importanti nella traduzione biblica che usi.",
           "Verifica risposte importanti. Altri possono ricevere risultati simili; protezione ed esclusività non sono garantite. Non presentarli come consulenza verificata o parole autentiche altrui. Modello, velocità e disponibilità variano nel rispetto dei diritti contrattuali e legali."
         ]
       },
@@ -364,7 +364,7 @@
         "id": "paid-access",
         "title": "Accesso pagato e offerta",
         "paragraphs": [
-          "Amen può offrire abbonamenti e acquisti unici Apple. Prima di confermare vedi prodotto, prezzo, valuta, periodo, prova o promozione e accesso incluso. Governa l’offerta concreta, non una descrizione generale.",
+          "Amen Plus offre accesso a pagamento tramite un abbonamento Apple o un acquisto unico di accesso a vita. Include conversazioni illimitate con Nema, widget premium per le schermate Home e di blocco e risposte prioritarie. Alcune nuove funzioni possono essere offerte prima agli utenti Plus. Prima della conferma, la schermata d’acquisto mostra prodotto, prezzo, valuta, periodo di fatturazione, condizioni di prova o promozione e accesso incluso. L’offerta specifica definisce l’accesso acquistato, nel rispetto dei diritti previsti dalla legge.",
           "Prezzi e disponibilità variano per store, imposte, prodotto e idoneità. Gli acquisti sono addebitati all’account Apple e servizi di verifica riconoscono l’accesso. Amen non riceve il numero completo della carta. Prove e promozioni valgono solo se incluse nella conferma; consulta {{appleTerms}}."
         ]
       },
@@ -372,7 +372,7 @@
         "id": "trials",
         "title": "Prove e promozioni",
         "paragraphs": [
-          "Prove e prezzi introduttivi valgono solo se offerti e se idoneo. Durata, prezzo successivo e condizioni mostrate governano. La prova può diventare pagata automaticamente se non annullata nel termine Apple.",
+          "A tutti i nuovi utenti viene offerta una prova gratuita di Amen Plus di 7 giorni al termine della configurazione iniziale. La conferma d’acquisto Apple mostra idoneità, prezzo di rinnovo e condizioni. Terminato l’accesso di prova, l’uso dell’app richiede un abbonamento Amen Plus attivo o un acquisto valido di accesso a vita. Annulla prima della scadenza indicata da Apple per evitare addebiti automatici.",
           "Apple consiglia di annullare prove gratuite o scontate almeno 24 ore prima della fine per evitare rinnovo. Promemoria non sono garantiti. Controlla date negli abbonamenti Apple; disattivare notifiche o eliminare app non interrompe addebiti."
         ]
       },

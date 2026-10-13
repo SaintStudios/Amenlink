@@ -39,7 +39,7 @@
   "privacy": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
     "summary": [
-      "Nema använder Googles AI-tjänster för chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
+      "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
       "Gästanvändning skapar ett konto-ID utan krav på e-postadress. Lokala anteckningar och markeringar är separata från innehåll som sparas med kontot. Köp hanteras via Apple.",
       "Böner, trosinställningar och samtal kan innehålla känsliga personuppgifter. Dina rättigheter och nödvändiga samtycken är fortsatt skyddade.",
       "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller amen-kontot."
@@ -65,7 +65,7 @@
         "id": "accounts",
         "title": "Konton, inloggning och profil",
         "paragraphs": [
-          "Under introduktionen kan amen skapa ett gästkonto utan krav på e-postadress eller Logga in med Apple. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kan kopplas till detta ID; gästanvändning innebär därför inte att inga personuppgifter behandlas. Konto-ID, sessionsuppgifter för inloggning och inställningar lagras hos kontotjänster och på enheten för att bevara åtkomst och stödd synkronisering. Åtkomst efter utloggning, ominstallation eller byte av enhet beror på tillgängliga autentiserings- och återställningsuppgifter. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
+          "Under introduktionen kan amen skapa ett gästkonto utan krav på e-postadress eller Logga in med Apple. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kopplas till detta konto-ID. Gäståtkomst kräver inte att din verkliga identitet verifieras; kontokopplad information kan ändå vara personuppgifter. Konto-ID, sessionsuppgifter för inloggning och inställningar lagras hos kontotjänster och på enheten för att bevara åtkomst och stödd synkronisering. Åtkomst efter utloggning, ominstallation eller byte av enhet beror på tillgängliga autentiserings- och återställningsuppgifter. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
           "Du kan koppla stödda gästkontouppgifter genom Logga in med Apple. Apple kan lämna ett ID, namn och en e-postadress eller privat vidarebefordringsadress; amen får inte lösenordet till ditt Apple-konto. Kopplingen kan föra över eller knyta stödda samtal, profil- och framstegsuppgifter till kontot, beroende på befintliga uppgifter och att processen lyckas. Alla lokala objekt blir inte därmed tillgängliga på andra enheter. Återvändande användare med ett befintligt e-post-/lösenordskonto kan använda inloggning och lösenordsåterställning. Kontotjänster behandlar nödvändiga inloggnings- och återställningsuppgifter. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
         ]
       },
@@ -97,7 +97,7 @@
         "id": "ai",
         "title": "Nema AI-chatt",
         "paragraphs": [
-          "Nema använder en AI-modell från Google för AI-chatt i amen. Ditt meddelande och relevant samtalshistorik skickas till Google för att generera ett svar. Kontext kan omfatta namn, valt språk och trosinställningar vid personanpassning. Relevanta meddelanden kan också skickas till Google för att skapa en kort samtalstitel. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
+          "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalshistorik skickas till Google för att generera ett svar. Kontext kan omfatta namn, valt språk och trosinställningar vid personanpassning. Relevanta meddelanden kan också skickas till Google för att skapa en kort samtalstitel. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
           "Googles AI-tjänster kan också stödja bibelförklaringar och personanpassade läsrekommendationer. Relevanta svar, hänvisningar eller texter används för den funktion du begär. Förberedda introduktionsreflektioner beskrivs i introduktionsavsnittet. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
         ]
       },
@@ -177,8 +177,8 @@
         "id": "analytics",
         "title": "Appmätning och tillskrivning",
         "paragraphs": [
-          "Tjänster för appmätning och attribution får introduktions- och apphändelser, som visade eller slutförda steg, interaktioner med betalningserbjudanden och köprelaterad aktivitet. Händelser kan innehålla stegnamn eller nummer, tidsstämplar, appinformation samt konto-, köp- eller enhets-ID för mätning och abonnemangsattribution.",
-          "Apples spårningsbehörighet stoppar inte nödvändigtvis varje app- eller drifthändelse. Attribution kan involvera marknadsföringspartner, och valfri spårning kräver samtycke där det gäller. Händelser kring trosfunktioner kan avslöja eller möjliggöra slutsatser om religiösa intressen, så även deras ändamål och rättsliga villkor måste bedömas. Kontakta {{email}} om mottagare, behörigheter eller integritetsval."
+          "Tjänster för appmätning och attribution får introduktions- och apphändelser, som visade eller slutförda steg, interaktioner med betalningserbjudanden och köprelaterad aktivitet. Det kan omfatta köphistorik, produktinteraktioner, annonsdata och andra användningsdata, med stegnamn eller nummer, tidsstämplar, appinformation samt konto-, köp- eller enhets-ID. Kraschdata används för analys och utredning av tekniska fel.",
+          "Köp- och användningsdata kan användas för appfunktioner, personanpassning, analys, annonsering och marknadsföring. När nödvändigt samtycke har lämnats kan annons- och mätpartner använda uppgifterna för att spåra aktivitet mellan andra företags appar och webbplatser. Apples spårningsbehörighet stoppar inte alla drifthändelser. Händelser kring trosfunktioner kan avslöja religiösa intressen och behöver lämpliga rättsliga villkor. Kontakta {{email}} om mottagare, behörigheter eller integritetsval."
         ]
       },
       {
@@ -266,7 +266,7 @@
   "terms": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren beskriver appens användning, Nema AI-chatt, kontofunktioner och abonnemang. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
     "summary": [
-      "Nema använder Googles AI-tjänster för chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
+      "Nema använder en förbättrad AI-modell från Google för AI-chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
       "Köpskärmen visar pris, faktureringsperiod, provvillkor och inkluderad åtkomst före bekräftelse.",
       "Apple-abonnemang förnyas tills de sägs upp. Att radera appen eller amen-kontot avslutar inte Apples fakturering.",
       "Villkoren bevarar lagstadgade konsumenträttigheter. Apples köpregler och tillämplig applicens gäller också."
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "amens tjänster",
         "paragraphs": [
-          "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema ger AI-chatt med Googles tjänster. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
+          "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema använder en förbättrad AI-modell från Google för AI-chatten. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
           "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Vissa medier måste laddas ned före användning, och sparande eller delning omfattas av licensen. Villkoren lovar inte ett fast antal gratis meddelanden, en viss modell, alla bibelöversättningar, evig drift eller funktioner från en annan version. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
         ]
       },
@@ -324,7 +324,7 @@
         "id": "ai",
         "title": "Nema och AI-resultat",
         "paragraphs": [
-          "Nema använder en AI-modell från Google för bibelfrågor och kristen reflektion. Svar skapas av AI och kan innehålla felaktiga påståenden, påhittade citat, felaktiga hänvisningar eller ofullständiga tolkningar. Läs noggrant och kontrollera viktiga bibelcitat i den översättning du använder.",
+          "Nema använder en förbättrad AI-modell från Google för bibelfrågor och kristen reflektion. Svar skapas av AI och kan innehålla felaktiga påståenden, påhittade citat, felaktiga hänvisningar eller ofullständiga tolkningar. Läs noggrant och kontrollera viktiga bibelcitat i den översättning du använder.",
           "Kontrollera viktiga svar. Andra kan få liknande resultat; rättsligt skydd och exklusivitet är inte garanterade. Presentera inte AI som verifierat råd eller verkligt uttalande av någon annan. Modell, hastighet och tillgång varierar med bibehållna avtals- och lagrättigheter."
         ]
       },
@@ -364,7 +364,7 @@
         "id": "paid-access",
         "title": "Betald åtkomst och erbjudande",
         "paragraphs": [
-          "Amen kan erbjuda Apple-abonnemang eller engångsköp. Före bekräftelse visas produkt, pris, valuta, period, prov eller kampanj och åtkomst. Det specifika erbjudandet styr, inte allmän webbtext.",
+          "Amen Plus ger betald åtkomst genom ett Apple-abonnemang eller ett engångsköp av livstidsåtkomst. Det omfattar obegränsade Nema-samtal, premiumwidgetar för hem- och låsskärmen samt prioriterade svar. Vissa nya funktioner kan erbjudas Plus-användare först. Före bekräftelse visar köpskärmen produkt, pris, valuta, debiteringsperiod, prov- eller kampanjvillkor och ingående åtkomst. Det specifika erbjudandet definierar den köpta åtkomsten, med bibehållna lagstadgade rättigheter.",
           "Pris och tillgänglighet varierar med butik, skatt, produkt och behörighet. Köp debiteras Apple-kontot och verifieringstjänster hjälper till att känna igen åtkomsten. Amen får inte hela ditt kortnummer. Prov och erbjudanden gäller endast när bekräftelsen inkluderar dem; se {{appleTerms}}."
         ]
       },
@@ -372,7 +372,7 @@
         "id": "trials",
         "title": "Provperioder och kampanjer",
         "paragraphs": [
-          "Prov eller introduktionspris gäller bara om erbjudet och du uppfyller villkoren. Visad längd, senare pris och behörighet gäller. Prov kan automatiskt bli betalt om inte avslutat inom Apples frist.",
+          "Alla nya användare erbjuds en kostnadsfri provperiod på 7 dagar med Amen Plus i slutet av introduktionen. Apples köpbekräftelse visar behörighet, förnyelsepris och villkor. När provåtkomsten upphör kräver fortsatt användning ett aktivt Amen Plus-abonnemang eller ett giltigt köp av livstidsåtkomst. Säg upp före Apples angivna tidsfrist för att undvika automatisk debitering.",
           "Apple rekommenderar uppsägning av gratis eller rabatterat prov minst 24 timmar före slut om förnyelse inte önskas. Påminnelser är inte garanterade. Se datum i Apple-inställningar; borttagna notiser eller app stoppar inte betalning."
         ]
       },
