@@ -39,7 +39,7 @@
   "privacy": {
     "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
     "summary": [
-      "Nema nutzt Google-KI-Dienste für den KI-Chat. Ihre Nachricht und der relevante Gesprächskontext werden zur Erstellung einer Antwort an Google übermittelt.",
+      "Nema nutzt ein verbessertes KI-Modell von Google für den KI-Chat. Ihre Nachricht und der relevante Gesprächskontext werden zur Erstellung einer Antwort an Google übermittelt.",
       "Bei der Gastnutzung entsteht eine Kontokennung, ohne dass eine E-Mail-Adresse erforderlich ist. Lokale Notizen und Markierungen sind von kontobasiert gespeicherten Inhalten getrennt. Käufe werden über Apple verwaltet.",
       "Gebete, Glaubenseinstellungen und Gespräche können sensible personenbezogene Daten enthalten. Ihre Datenschutzrechte und erforderliche Einwilligungen bleiben geschützt.",
       "Datenschutzanfragen richten Sie an den Support unter amenapphilfe@gmail.com. Apple-Abonnements müssen unabhängig vom Löschen der App oder eines amen-Kontos gekündigt werden."
@@ -65,7 +65,7 @@
         "id": "accounts",
         "title": "Konten, Anmeldung und Profil",
         "paragraphs": [
-          "Während der Einrichtung kann amen ein Gastkonto erstellen, ohne eine E-Mail-Adresse oder eine Anmeldung mit Apple zu verlangen. Das Konto hat eine eindeutige Kennung und Sitzungsinformationen. Dein gewählter Name und unterstützte gespeicherte Aktivitäten können dieser Kennung zugeordnet werden. Gastnutzung bedeutet daher nicht, dass keine personenbezogenen Daten verarbeitet werden. Kontokennungen, Sitzungszugangsdaten und Einstellungen werden bei Kontodiensten und auf dem Gerät gespeichert, um den Zugang und unterstützte Synchronisierung aufrechtzuerhalten. Der Zugang nach Abmeldung, Neuinstallation oder Gerätewechsel hängt von verfügbaren Anmelde- und Wiederherstellungsinformationen ab. Zu Kontoinformationen gehören auch Erstellungs- und Aktualisierungszeiten.",
+          "Während der Einrichtung kann amen ein Gastkonto erstellen, ohne eine E-Mail-Adresse oder eine Anmeldung mit Apple zu verlangen. Das Konto hat eine eindeutige Kennung und Sitzungsinformationen. Dein gewählter Name und unterstützte gespeicherte Aktivitäten werden dieser Kontokennung zugeordnet. Für den Gastzugang ist kein Nachweis deiner tatsächlichen Identität erforderlich; kontobezogene Informationen können dennoch personenbezogene Daten sein. Kontokennungen, Sitzungszugangsdaten und Einstellungen werden bei Kontodiensten und auf dem Gerät gespeichert, um den Zugang und unterstützte Synchronisierung aufrechtzuerhalten. Der Zugang nach Abmeldung, Neuinstallation oder Gerätewechsel hängt von verfügbaren Anmelde- und Wiederherstellungsinformationen ab. Zu Kontoinformationen gehören auch Erstellungs- und Aktualisierungszeiten.",
           "Über „Mit Apple anmelden“ kannst du unterstützte Gastkontodaten verknüpfen. Apple kann eine Kennung, einen Namen und eine E-Mail- oder private Weiterleitungsadresse bereitstellen; amen erhält dein Apple-Kontopasswort nicht. Die Verknüpfung kann unterstützte Gespräche, Profil- und Fortschrittsdaten zuordnen oder übertragen, abhängig von vorhandenen Kontodaten und einem erfolgreichen Abschluss. Nicht alle rein lokalen Inhalte werden dadurch auf anderen Geräten verfügbar. Rückkehrende Nutzer mit einem bestehenden E-Mail-/Passwortkonto können die angebotene Anmeldung und Passwortzurücksetzung nutzen. Kontodienste verarbeiten die erforderlichen Zugangsdaten und Wiederherstellungsinformationen. Übliche Grundlagen sind Art. 6 Abs. 1 lit. b, angemessene Sicherheit nach lit. f und gesetzliche Pflichten nach lit. c DSGVO."
         ]
       },
@@ -97,7 +97,7 @@
         "id": "ai",
         "title": "Nema-KI-Chat",
         "paragraphs": [
-          "Nema verwendet ein KI-Modell von Google für den KI-Chat in amen. Deine Nachricht und der relevante Gesprächsverlauf werden an Google gesendet, um eine Antwort zu erzeugen. Zur Personalisierung können dein Name, die gewählte Sprache und Glaubenseinstellungen einbezogen werden. Relevante Nachrichten können auch an Google gesendet werden, um einen kurzen Gesprächstitel zu erstellen. Das Gespräch wird durch KI und nicht durch einen menschlichen Berater erzeugt.",
+          "Nema nutzt ein verbessertes KI-Modell von Google für den KI-Chat. Deine Nachricht und der relevante Gesprächsverlauf werden an Google gesendet, um eine Antwort zu erzeugen. Zur Personalisierung können dein Name, die gewählte Sprache und Glaubenseinstellungen einbezogen werden. Relevante Nachrichten können auch an Google gesendet werden, um einen kurzen Gesprächstitel zu erstellen. Das Gespräch wird durch KI und nicht durch einen menschlichen Berater erzeugt.",
           "Google-KI-Dienste können außerdem Bibelerklärungen und personalisierte Leseempfehlungen unterstützen. Relevante Antworten, Bibelstellen oder Texte werden für die angeforderte Funktion verwendet. Vorbereitete Reflexionen der Einrichtung werden im Einrichtungsabschnitt beschrieben. Teile keine Passwörter, Zahlungsdaten oder vertraulichen Informationen über andere Personen. Angeforderte Funktionen beruhen grundsätzlich auf Art. 6 Abs. 1 lit. b DSGVO und benötigen bei sensiblen personenbezogenen Daten eine zusätzliche rechtliche Voraussetzung."
         ]
       },
@@ -177,8 +177,8 @@
         "id": "analytics",
         "title": "App-Messung und Zuordnung",
         "paragraphs": [
-          "Dienste für App-Messung und Zuordnung erhalten Einrichtungs- und App-Ereignisse, etwa angesehene oder abgeschlossene Schritte, Interaktionen mit Kaufangeboten und kaufbezogene Aktivitäten. Ereignisse können Schrittnamen oder -nummern, Zeitstempel, App-Informationen sowie Konto-, Kauf- oder Gerätekennungen für Messung und Abonnementzuordnung enthalten.",
-          "Apples Tracking-Berechtigung stoppt nicht zwangsläufig jedes App- oder Betriebsereignis. Zuordnung kann Marketingpartner einbeziehen; optionales Tracking erfordert gegebenenfalls Einwilligung. Ereignisse zu Glaubensfunktionen können religiöse Interessen offenbaren oder entsprechende Rückschlüsse ermöglichen. Ihre Zwecke und rechtlichen Voraussetzungen müssen daher ebenfalls geprüft werden. Kontaktiere {{email}} zu Empfängern, Berechtigungen oder Datenschutzentscheidungen."
+          "Dienste für App-Messung und Zuordnung erhalten Einrichtungs- und App-Ereignisse, etwa angesehene oder abgeschlossene Schritte, Interaktionen mit Kaufangeboten und kaufbezogene Aktivitäten. Dazu können Einkaufsverlauf, Produktinteraktionen, Werbedaten und sonstige Nutzungsdaten mit Schrittnamen oder -nummern, Zeitstempeln, App-Informationen sowie Konto-, Kauf- oder Gerätekennungen gehören. Absturzdaten werden für Analysen und zur Untersuchung technischer Fehler verwendet.",
+          "Kauf- und Nutzungsdaten können für App-Funktionen, Personalisierung, Analysen, Werbung und Marketing verwendet werden. Wenn die erforderliche Einwilligung vorliegt, können Werbe- und Messpartner diese Daten nutzen, um Aktivitäten über Apps und Websites anderer Unternehmen hinweg zu verfolgen. Apples Tracking-Berechtigung stoppt nicht jedes Betriebsereignis. Ereignisse zu Glaubensfunktionen können religiöse Interessen offenbaren und benötigen angemessene rechtliche Voraussetzungen. Kontaktiere {{email}} zu Empfängern, Berechtigungen oder Datenschutzentscheidungen."
         ]
       },
       {
@@ -266,7 +266,7 @@
   "terms": {
     "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Bedingungen erklären die App-Nutzung einschließlich Nema-KI-Chat, Kontofunktionen und Abonnements. Lesen Sie auch die Datenschutzerklärung und das vor einem Kauf angezeigte Angebot. Ihre gesetzlichen Verbraucherrechte bleiben geschützt.",
     "summary": [
-      "Nema nutzt Google-KI-Dienste für den KI-Chat. Antworten können unzutreffend sein; prüfen Sie wichtige Aussagen und Bibelzitate.",
+      "Nema nutzt ein verbessertes KI-Modell von Google für den KI-Chat. Antworten können unzutreffend sein; prüfen Sie wichtige Aussagen und Bibelzitate.",
       "Vor der Bestätigung zeigt das Kaufangebot Preis, Abrechnungszeitraum, Testbedingungen und enthaltenen Zugang.",
       "Apple-Abonnements verlängern sich bis zur Kündigung. Das Löschen der App oder Ihres amen-Kontos beendet die Apple-Abrechnung nicht.",
       "Diese Bedingungen wahren gesetzliche Verbraucherrechte. Apples Kaufregeln und die geltende App-Lizenz bleiben anwendbar."
@@ -284,7 +284,7 @@
         "id": "service",
         "title": "Leistungen von amen",
         "paragraphs": [
-          "Amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritt und verwandten Funktionen. Je nach Version und Zugangslevel gibt es außerdem Bibelcomics, Hintergrundbilder, per Berührung gesteuerte 360°-Szenen, Hintergrundmusik, Tage mit Jesus und Widgets. Nema bietet KI-Chat mit Google-KI-Diensten. Manche Leseempfehlungen und Audiofunktionen verwenden ebenfalls KI. Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
+          "Amen unterstützt christliches Bibellesen, Gebet und Reflexion mit gespeicherten Versen, Markierungen, Notizen, Andachten, Lesefortschritt und verwandten Funktionen. Je nach Version und Zugangslevel gibt es außerdem Bibelcomics, Hintergrundbilder, per Berührung gesteuerte 360°-Szenen, Hintergrundmusik, Tage mit Jesus und Widgets. Nema nutzt ein verbessertes KI-Modell von Google für den KI-Chat. Manche Leseempfehlungen und Audiofunktionen verwenden ebenfalls KI. Bible Lock nutzt Apples Bildschirmzeitfunktionen.",
           "Das tatsächliche Angebot und der Kaufbildschirm bestimmen den kostenpflichtigen Zugang. Manche Medien müssen vor der Nutzung heruntergeladen werden; Speicherung und Weitergabe bleiben ihrer Lizenz unterworfen. Diese Bedingungen versprechen keine feste Zahl kostenloser Nachrichten, ein bestimmtes KI-Modell, jede Bibelübersetzung, unbegrenzten Betrieb oder Funktionen einer anderen Version. Gesetzlich verbindliche Beschreibungen und vertragliche Zusagen bleiben verbindlich."
         ]
       },
@@ -324,7 +324,7 @@
         "id": "ai",
         "title": "Nema und KI-Ausgaben",
         "paragraphs": [
-          "Nema nutzt ein KI-Modell von Google für Gespräche zu Bibelfragen und christlicher Reflexion. Antworten werden von KI erstellt und können unzutreffende Aussagen, erfundene Zitate, falsche Bibelstellen oder unvollständige Auslegungen enthalten. Lesen Sie Antworten sorgfältig und prüfen Sie wichtige Bibelzitate in Ihrer verwendeten Übersetzung.",
+          "Nema nutzt ein verbessertes KI-Modell von Google für Bibelfragen und christliche Reflexion. Antworten werden von KI erstellt und können unzutreffende Aussagen, erfundene Zitate, falsche Bibelstellen oder unvollständige Auslegungen enthalten. Lesen Sie Antworten sorgfältig und prüfen Sie wichtige Bibelzitate in Ihrer verwendeten Übersetzung.",
           "Prüfen Sie wichtige Antworten unabhängig. Ähnliche Ausgaben können für andere entstehen; rechtlicher Schutz und Exklusivität sind nicht garantiert. Stellen Sie KI-Ausgaben nicht als überprüfte Fachberatung oder echte Äußerung einer anderen Person dar. Verfügbarkeit, Geschwindigkeit und Modelle können unter Wahrung Ihrer vertraglichen und gesetzlichen Rechte variieren."
         ]
       },
@@ -364,7 +364,7 @@
         "id": "paid-access",
         "title": "Kostenpflichtiger Zugang und Angebot",
         "paragraphs": [
-          "Amen kann Apple-Abonnements und Einmalkäufe anbieten. Vor Bestätigung zeigt der Kaufdialog Produkt, Preis, Währung, Zeitraum, Test- oder Sonderkonditionen und enthaltenen Zugang. Dieses konkrete Angebot gilt; allgemeine Website-Angaben ersetzen es nicht.",
+          "Amen Plus bietet kostenpflichtigen Zugang über ein Apple-Abonnement oder einen einmaligen Lifetime-Kauf. Enthalten sind unbegrenzte Nema-Gespräche, Premium-Widgets für Home- und Sperrbildschirm sowie bevorzugte Antworten. Manche neuen Funktionen können Plus-Nutzern zuerst angeboten werden. Vor Bestätigung zeigt der Kaufdialog Produkt, Preis, Währung, Abrechnungszeitraum, Test- oder Sonderkonditionen und enthaltenen Zugang. Das konkrete Angebot bestimmt Ihren erworbenen Zugang unter Wahrung gesetzlicher Rechte.",
           "Preise und Verfügbarkeit können nach Store-Land, Steuern, Produkt und Angebotsberechtigung variieren. Käufe werden Ihrem Apple-Konto belastet; Kaufprüfdienste helfen, den Zugang zu erkennen. Amen erhält nicht Ihre vollständige Zahlungskartennummer. Tests und Aktionen gelten nur, wenn die Bestätigung sie enthält. Apples Regeln finden Sie unter {{appleTerms}}."
         ]
       },
@@ -372,7 +372,7 @@
         "id": "trials",
         "title": "Testphasen und Aktionen",
         "paragraphs": [
-          "Testphasen und Einführungspreise gelten nur bei ausdrücklichem Angebot und erfüllten Voraussetzungen. Angezeigte Dauer, Folgepreis und Berechtigung sind maßgeblich. Eine Testphase kann automatisch kostenpflichtig werden, wenn sie nicht bis zur von Apple angegebenen Frist gekündigt wird.",
+          "Allen neuen Nutzern wird am Ende der Einrichtung eine kostenlose 7-tägige Testphase für Amen Plus angeboten. Apples Kaufbestätigung zeigt die Testberechtigung, den Verlängerungspreis und die Bedingungen. Nach Ende des Testzugangs erfordert die weitere App-Nutzung ein aktives Amen-Plus-Abonnement oder einen gültigen Lifetime-Kauf. Kündigen Sie vor der von Apple angezeigten Frist, um automatische Abbuchungen zu vermeiden.",
           "Apple empfiehlt bei kostenlosen oder vergünstigten Tests eine Kündigung mindestens 24 Stunden vor Ablauf, wenn keine Verlängerung gewünscht ist. Erinnerungen können ausbleiben. Prüfen Sie Termine in Apples Abonnementeinstellungen; ausgeschaltete Mitteilungen oder Deinstallation stoppen keine Abrechnung."
         ]
       },

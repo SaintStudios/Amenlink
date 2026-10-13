@@ -1,8 +1,8 @@
-# amen legal content review — updated 11 October 2026
+# amen legal content review — updated 13 October 2026
 
 ## Current wording
 
-The privacy policy covers the app, rather than website hosting or browser behavior. It now has 27 substantive sections and approximately 3,014 English words, compared with approximately 838 before the legal-page work. Terms has 28 sections and approximately 2,865 English words, compared with approximately 1,580 before that work. References and navigation are additional to these counts.
+The privacy policy covers the app, rather than website hosting or browser behavior. It has 27 sections and 3,194 English words including its introduction, summary and section headings. Terms has 28 sections and 3,033 English words on the same basis. References and navigation are additional to these counts.
 
 English, German, Spanish, French, Italian and Swedish contain every section. These are written translations, not certified legal translations. Support reuses policy sections. Public copy uses lowercase amen and describes the app as Christian Bible reading, prayer and reflection.
 
@@ -10,7 +10,7 @@ The latest revision follows the user's requested presentation:
 
 - Support is contacted through amenapphilfe@gmail.com. Personal operator name, address and telephone blocks were removed from rendered documents.
 - Infrastructure names were replaced with specific recipient categories: account authentication, cloud hosting/storage, purchase validation, app measurement, advertising attribution and support email. Data categories and purposes remain disclosed.
-- Nema is described as using a Google AI model and Google AI services. Public numeric age wording was removed; applicable Google conditions remain linked. This does not change Google's eligibility rules.
+- Nema is described as using an enhanced Google AI model. Public numeric age wording was removed; applicable Google conditions remain linked. This does not change Google's eligibility rules.
 - Every document links Apple's terms and usage rules, standard app license, privacy, cancellation and refund guidance using localized short reference labels. Google AI conditions and privacy information are also linked. Provider notices do not replace the app's own responsibilities.
 - The /imprint and /impressum compatibility routes now show general legal information, not an operator disclosure.
 
@@ -21,6 +21,20 @@ The policies correct earlier claims that AI processing occurred only on amen's s
 Apple's official app-deletion guidance explicitly says removing an app does not automatically cancel in-app subscriptions. Apple's account-deletion guidance also says billing continues through Apple and users should be directed to cancellation. Separate cancellation instructions remain. A device prompt may offer a cancellation route; deletion itself is not cancellation.
 
 Apple's Media Services terms, standard app license, privacy policy, cancellation and refund guidance were read on 10 October 2026. The pages link them instead of reproducing them, preserve mandatory local rights and do not promise every purchase is refundable or every subscription supports Family Sharing. Apple rules do not transfer responsibility for the app's own processing to Apple.
+
+## App Store comparison — 13 October 2026
+
+The public US listing and the user's App Store Connect privacy page were read through computer use. No Apple settings, declarations or metadata were changed. Both show version 1.4.5 and the same privacy categories. App Store Connect declares nine data types: name, email address, user ID, device ID, purchase history, product interaction, advertising data, other usage data and crash data. Purchase and usage data are declared for tracking; crash data is declared for analytics. These are developer-supplied disclosures about app processing, not evidence that Apple receives every data type.
+
+Ten existing text entries per language were updated in English, German, Spanish, French, Italian and Swedish. No sections or layout were added. The user confirmed a seven-day Amen Plus trial offered to all new users at the end of onboarding, lifetime purchases, unlimited chats and priority responses. Early access is described conditionally because the user confirmed it only partly. Purchase-screen eligibility and Apple renewal/cancellation conditions remain. The user requested the description "enhanced Google AI model" without further model details. Privacy now explicitly covers the declared purchase/usage advertising data and crash analytics.
+
+The user also confirmed that guest profiles and chats remain saved under an account ID without verification of a guest's real-world identity. The policy describes that distinction rather than claiming anonymous processing. These App Store differences remain:
+
+- **Account linkage and omitted content categories.** App Store Connect currently declares all collected data as "not linked." [Apple's definition](https://developer.apple.com/app-store/app-privacy-details/#data-linked-to-the-user) includes linkage through an account or device, so the user's confirmed account storage does not establish that classification. The nine selected types also do not include user content or sensitive information, although the policy describes saved conversations and faith preferences. Review the actual data flows and declarations; do not remove accurate policy disclosures merely to mirror the label.
+- **Legal links.** Both the public description and the configured privacy URL still point to amenbible.app. Opening the published privacy link through computer use on 13 October forwarded to /lander rather than a policy; that domain cannot be fixed by this repository. The current website links are https://amen-app.com/privacy/ and https://amen-app.com/terms/. Apple metadata remains read-only at the user's request.
+- **Description precision.** The public description says a subscription is required after trial access, although the user confirmed lifetime purchases also provide access. Its early-access wording is broader than the user's partial confirmation. The website describes both purchase routes and conditional early access. The public model description is more specific than the user's approved "enhanced Google AI model" wording; no further model-training claim was inferred.
+
+The website update adds 33 English privacy words and 40 English terms words including summaries and headings. All existing website checks and the comparison with the app's six supported languages passed. The twelve translated privacy/terms pages were checked at a 320-pixel viewport with no horizontal overflow, and the English purchase/trial copy was visually reviewed at the normal browser size. The temporary viewport was reset. No iOS build or runtime verification was performed.
 
 ## Unresolved disclosure and implementation matters
 
