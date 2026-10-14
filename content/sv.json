@@ -146,7 +146,7 @@
         "title": "Notiser och påminnelsetider",
         "paragraphs": [
           "För fjärrlevererade vers- och bönepåminnelser skickar amen enhetens pushtoken, appspråk, tidszon, aktiverade påminnelsetyper och valda leveranstider till notistjänsten. Registreringen kan kopplas till kontot. Stödda lässvits- eller provperiodspåminnelser kan i stället schemaläggas lokalt. Uppgifterna används för de påminnelse- och leveransfunktioner du väljer.",
-          "Du kan ändra inställningar i appen och notisbehörighet i iOS. Leverans beror på behörigheter, enhetsinställningar och tillgängliga tjänster. Att återkalla en behörighet visar inte i sig att alla tidigare tokens eller uppgifter har raderats; kontakta {{email}} för raderingsbegäranden. En provperiodspåminnelse säger inte upp ett abonnemang och ersätter inte Apples förnyelseinformation."
+          "Du kan ändra inställningar i appen och notisbehörighet i iOS. Leverans beror på behörigheter, enhetsinställningar och tillgängliga tjänster. Att återkalla en behörighet visar inte i sig att alla tidigare tokens eller uppgifter har raderats; kontakta {{email}} för raderingsbegäranden. En provperiodspåminnelse säger inte upp ett abonnemang och ersätter inte Apples förnyelseinformation. Påminnelsen som nämns under introduktionen avser ett mejl från Apple om att provperioden snart tar slut, inte ett mejl från amen. Apple hanterar dessa mejl med hjälp av uppgifterna i ditt Apple-konto enligt {{applePrivacy}}. Amen styr inte leveransen eller tidpunkten för Apples mejl."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Provperioder och kampanjer",
         "paragraphs": [
           "Alla nya användare erbjuds en kostnadsfri provperiod på 7 dagar med Amen Plus i slutet av introduktionen. Apples köpbekräftelse visar behörighet, förnyelsepris och villkor. När provåtkomsten upphör kräver fortsatt användning ett aktivt Amen Plus-abonnemang eller ett giltigt köp av livstidsåtkomst. Säg upp före Apples angivna tidsfrist för att undvika automatisk debitering.",
-          "Apple rekommenderar uppsägning av gratis eller rabatterat prov minst 24 timmar före slut om förnyelse inte önskas. Påminnelser är inte garanterade. Se datum i Apple-inställningar; borttagna notiser eller app stoppar inte betalning."
+          "Apple rekommenderar att du säger upp en gratis eller rabatterad provperiod minst 24 timmar före slutet om du inte vill förnya den. Påminnelsen som nämns under introduktionen avser Apples mejl om att provperioden tar slut, inte ett mejl från amen. Apple styr leveransen och tidpunkten; mottagandet är inte garanterat. Kontrollera förnyelsedatumet i Apples abonnemangsinställningar; att stänga av notiser eller ta bort appen stoppar inte debiteringen."
         ]
       },
       {

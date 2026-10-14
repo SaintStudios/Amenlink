@@ -146,7 +146,7 @@
         "title": "Notifiche e orari dei promemoria",
         "paragraphs": [
           "Per i promemoria remoti di versetti e preghiere, amen invia al servizio di notifiche token push del dispositivo, lingua dell'app, fuso orario, tipi attivi e orari di consegna scelti. La registrazione può essere associata all'account. I promemoria supportati di serie o prove possono invece essere programmati localmente. Queste informazioni servono alle funzioni di promemoria e consegna che scegli.",
-          "Puoi cambiare le preferenze nell'app e il permesso di notifiche in iOS. La consegna dipende da permessi, impostazioni e servizi disponibili. Revocare un permesso non dimostra da solo che ogni token o dato precedente sia stato eliminato; contatta {{email}} per richieste di eliminazione. Un promemoria di prova non annulla un abbonamento e non sostituisce le informazioni di rinnovo di Apple."
+          "Puoi cambiare le preferenze nell'app e il permesso di notifiche in iOS. La consegna dipende da permessi, impostazioni e servizi disponibili. Revocare un permesso non dimostra da solo che ogni token o dato precedente sia stato eliminato; contatta {{email}} per richieste di eliminazione. Un promemoria di prova non annulla un abbonamento e non sostituisce le informazioni di rinnovo di Apple. Il promemoria menzionato durante la configurazione iniziale si riferisce a un'e-mail di Apple sulla prossima fine della prova, non a un'e-mail inviata da amen. Apple gestisce queste e-mail utilizzando i dati del tuo Apple Account secondo {{applePrivacy}}. Amen non ne controlla la consegna né i tempi di invio."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Prove e promozioni",
         "paragraphs": [
           "A tutti i nuovi utenti viene offerta una prova gratuita di Amen Plus di 7 giorni al termine della configurazione iniziale. La conferma d’acquisto Apple mostra idoneità, prezzo di rinnovo e condizioni. Terminato l’accesso di prova, l’uso dell’app richiede un abbonamento Amen Plus attivo o un acquisto valido di accesso a vita. Annulla prima della scadenza indicata da Apple per evitare addebiti automatici.",
-          "Apple consiglia di annullare prove gratuite o scontate almeno 24 ore prima della fine per evitare rinnovo. Promemoria non sono garantiti. Controlla date negli abbonamenti Apple; disattivare notifiche o eliminare app non interrompe addebiti."
+          "Apple consiglia di annullare le prove gratuite o scontate almeno 24 ore prima della fine se non desideri il rinnovo. Il promemoria menzionato durante la configurazione iniziale si riferisce all'e-mail di Apple sulla fine della prova, non a un'e-mail di amen. Apple ne controlla la consegna e i tempi; la ricezione non è garantita. Controlla la data di rinnovo nelle impostazioni degli abbonamenti Apple; disattivare le notifiche o eliminare l'app non interrompe gli addebiti."
         ]
       },
       {

@@ -146,7 +146,7 @@
         "title": "Mitteilungen und Erinnerungszeiten",
         "paragraphs": [
           "Für serverseitige Vers- und Gebetserinnerungen sendet amen die Push-Kennung des Geräts, App-Sprache, Zeitzone, aktivierte Erinnerungstypen und gewählte Zustellzeiten an den Mitteilungsdienst. Die Registrierung kann deinem Konto zugeordnet werden. Unterstützte Serien- oder Probezeiterinnerungen können stattdessen lokal auf dem Gerät geplant werden. Diese Informationen dienen den von dir gewählten Erinnerungs- und Zustellfunktionen.",
-          "Du kannst Erinnerungseinstellungen in der App und die Mitteilungsberechtigung in iOS ändern. Die Zustellung hängt von Berechtigungen, Geräteeinstellungen und verfügbaren Diensten ab. Ein Berechtigungswiderruf belegt nicht für sich, dass jede zuvor registrierte Kennung oder Dienstaufzeichnung gelöscht wurde; kontaktiere {{email}} für Löschanfragen. Eine Probezeiterinnerung kündigt kein Abonnement und ersetzt Apples Verlängerungsinformationen nicht."
+          "Du kannst Erinnerungseinstellungen in der App und die Mitteilungsberechtigung in iOS ändern. Die Zustellung hängt von Berechtigungen, Geräteeinstellungen und verfügbaren Diensten ab. Ein Berechtigungswiderruf belegt nicht für sich, dass jede zuvor registrierte Kennung oder Dienstaufzeichnung gelöscht wurde; kontaktiere {{email}} für Löschanfragen. Eine Probezeiterinnerung kündigt kein Abonnement und ersetzt Apples Verlängerungsinformationen nicht. Die während der Einrichtung erwähnte Erinnerung an das Ende der Testphase bezieht sich auf eine E-Mail von Apple, nicht auf eine von amen versandte E-Mail. Apple verarbeitet diese E-Mails anhand deiner Apple-Account-Daten gemäß {{applePrivacy}}. Amen hat keinen Einfluss auf die Zustellung oder den Zeitpunkt dieser E-Mails."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Testphasen und Aktionen",
         "paragraphs": [
           "Allen neuen Nutzern wird am Ende der Einrichtung eine kostenlose 7-tägige Testphase für Amen Plus angeboten. Apples Kaufbestätigung zeigt die Testberechtigung, den Verlängerungspreis und die Bedingungen. Nach Ende des Testzugangs erfordert die weitere App-Nutzung ein aktives Amen-Plus-Abonnement oder einen gültigen Lifetime-Kauf. Kündigen Sie vor der von Apple angezeigten Frist, um automatische Abbuchungen zu vermeiden.",
-          "Apple empfiehlt bei kostenlosen oder vergünstigten Tests eine Kündigung mindestens 24 Stunden vor Ablauf, wenn keine Verlängerung gewünscht ist. Erinnerungen können ausbleiben. Prüfen Sie Termine in Apples Abonnementeinstellungen; ausgeschaltete Mitteilungen oder Deinstallation stoppen keine Abrechnung."
+          "Apple empfiehlt bei kostenlosen oder vergünstigten Testphasen eine Kündigung mindestens 24 Stunden vor Ablauf, wenn keine Verlängerung gewünscht ist. Die während der Einrichtung erwähnte Erinnerung bezieht sich auf Apples E-Mail zum Ende der Testphase, nicht auf eine E-Mail von amen. Apple bestimmt Zustellung und Zeitpunkt; der Empfang ist nicht garantiert. Prüfen Sie das Verlängerungsdatum in Apples Abonnementeinstellungen; ausgeschaltete Mitteilungen oder die Deinstallation stoppen keine Abrechnung."
         ]
       },
       {

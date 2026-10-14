@@ -146,7 +146,7 @@
         "title": "Notifications et horaires des rappels",
         "paragraphs": [
           "Pour les rappels distants de versets et prières, amen transmet au service de notifications le jeton push de l'appareil, la langue, le fuseau horaire, les types activés et les heures de réception choisies. L'inscription peut être associée à votre compte. Les rappels pris en charge de séries ou d'essai peuvent être programmés localement sur l'appareil. Ces informations servent aux fonctions de rappel et de réception choisies.",
-          "Vous pouvez modifier les préférences dans l'app et la permission de notifications dans iOS. La réception dépend des permissions, réglages et services disponibles. Révoquer une permission ne prouve pas à soi seul que tous les jetons et enregistrements antérieurs ont été supprimés ; contactez {{email}} pour une demande. Un rappel d'essai n'annule pas l'abonnement et ne remplace pas les informations de renouvellement d'Apple."
+          "Vous pouvez modifier les préférences dans l'app et la permission de notifications dans iOS. La réception dépend des permissions, réglages et services disponibles. Révoquer une permission ne prouve pas à soi seul que tous les jetons et enregistrements antérieurs ont été supprimés ; contactez {{email}} pour une demande. Un rappel d'essai n'annule pas l'abonnement et ne remplace pas les informations de renouvellement d'Apple. Le rappel mentionné lors de la configuration initiale désigne un e-mail d'Apple concernant la fin prochaine de votre essai, et non un e-mail envoyé par amen. Apple gère ces e-mails à l'aide des informations de votre compte Apple conformément à {{applePrivacy}}. Amen ne contrôle ni leur réception ni leur date d'envoi."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Essais et promotions",
         "paragraphs": [
           "Un essai gratuit de 7 jours d’Amen Plus est proposé à tous les nouveaux utilisateurs à la fin de la configuration initiale. La confirmation d’achat Apple indique l’éligibilité, le prix de renouvellement et les conditions. Après la fin de l’accès d’essai, la poursuite de l’utilisation nécessite un abonnement Amen Plus actif ou un achat valide d’accès à vie. Résiliez avant l’échéance affichée par Apple pour éviter une facturation automatique.",
-          "Apple conseille de résilier un essai gratuit ou réduit au moins 24 heures avant sa fin pour éviter le renouvellement. Les rappels ne sont pas garantis. Vérifiez la date dans les abonnements Apple ; supprimer notifications ou app ne bloque pas la facturation."
+          "Apple conseille de résilier un essai gratuit ou à tarif réduit au moins 24 heures avant sa fin si vous ne souhaitez pas le renouveler. Le rappel mentionné lors de la configuration initiale désigne l'e-mail d'Apple concernant la fin de l'essai, et non un e-mail d'amen. Apple contrôle son envoi et sa date ; sa réception n'est pas garantie. Vérifiez la date de renouvellement dans les réglages des abonnements Apple ; désactiver les notifications ou supprimer l'app ne bloque pas la facturation."
         ]
       },
       {

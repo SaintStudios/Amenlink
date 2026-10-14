@@ -72,7 +72,7 @@ for (const file of htmlFiles) {
     'https://support.apple.com/en-us/118428',
     'https://support.apple.com/en-us/118223'
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
-  assert.ok(html.includes('datetime="2026-10-13"'));
+  assert.ok(html.includes('datetime="2026-10-14"'));
   assert.equal((html.match(/data-language="/g) || []).length, 6);
   assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
   assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'), file + ': language selection belongs below the document');

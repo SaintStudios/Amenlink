@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const languages = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', sv: 'Svenska' };
-const date = '2026-10-13';
+const date = '2026-10-14';
 const origin = 'https://amen-app.com';
 const check = process.argv.includes('--check');
 const escape = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));

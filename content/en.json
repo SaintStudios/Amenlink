@@ -146,7 +146,7 @@
         "title": "Notifications and reminder schedules",
         "paragraphs": [
           "For remote verse and prayer reminders, amen sends the device push token, app language, time zone, enabled reminder types and selected delivery times to the notification service. Registration can be associated with your account. Supported streak or trial reminders can instead be scheduled locally on the device. This information is used to provide the reminder and delivery features you choose.",
-          "You can change reminder preferences in the app and notification permission in iOS settings. Delivery depends on permissions, device settings and available services. Revoking a permission does not itself establish that every previously registered token or service record has been deleted; contact {{email}} for deletion requests. A trial reminder does not cancel a subscription or replace Apple's renewal information."
+          "You can change reminder preferences in the app and notification permission in iOS settings. Delivery depends on permissions, device settings and available services. Revoking a permission does not itself establish that every previously registered token or service record has been deleted; contact {{email}} for deletion requests. A trial reminder does not cancel a subscription or replace Apple's renewal information. The trial reminder mentioned during onboarding refers to an email from Apple about the upcoming end of your trial, not an email sent by amen. Apple handles these emails using your Apple Account information under {{applePrivacy}}. Amen does not control Apple's email delivery or timing."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Trials and promotional offers",
         "paragraphs": [
           "All new users are offered a 7-day free trial of Amen Plus at the end of onboarding. Apple's purchase confirmation shows the trial eligibility, renewal price and conditions. After trial access ends, continued app use requires an active Amen Plus subscription or a valid lifetime purchase. Cancel before Apple's displayed deadline to prevent automatic billing.",
-          "For a free or discounted trial, Apple advises cancellation at least 24 hours before the trial ends if you do not want renewal. A reminder notification is a convenience and is not guaranteed to arrive. Keep track of the renewal date in your Apple subscription settings; disabling notifications or removing the app does not stop billing."
+          "For a free or discounted trial, Apple advises cancellation at least 24 hours before the trial ends if you do not want renewal. The reminder mentioned during onboarding refers to Apple's trial-ending email, not an email from amen. Apple controls its delivery and timing; receipt is not guaranteed. Keep track of the renewal date in your Apple subscription settings; disabling notifications or removing the app does not stop billing."
         ]
       },
       {

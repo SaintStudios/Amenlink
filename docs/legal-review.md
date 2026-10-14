@@ -1,4 +1,4 @@
-# amen legal content review — updated 13 October 2026
+# amen legal content review — updated 14 October 2026
 
 ## Current wording
 
@@ -85,3 +85,11 @@ Generated-file, translation, link/anchor, app-language, fallback, restricted-sto
 All 24 translated documents were inspected at widths 1,280 and 320: 48 page/viewport combinations rendered without overflow, retained lowercase branding, contained five Apple references and showed no removed operator or infrastructure names. No browser warning or error was captured.
 
 Print wiring and stylesheet were checked; a native print dialog and exported PDF were not verified. The iOS runtime and production systems remain unverified.
+
+## 14 October 2026: trial reminder wording
+
+The privacy notification section and trial terms now clarify in all six languages that the onboarding reminder refers to Apple's trial-ending email, not an email sent by amen. Apple's privacy reference, delivery/timing limitations and the existing cancellation guidance remain explicit. This reflects the user's stated reminder channel; the Apple cancellation guidance does not establish guaranteed delivery of trial-ending emails.
+
+The existing disclosure of optional local trial notifications remains because the iOS source still schedules them through TrialReminderService. This copy update does not disable that service or change notification behavior. The app's onboarding copy uses passive reminder wording without the Apple/email explanation.
+
+Generated pages and their revision date were refreshed. Website generation, localization parity, landing-page, legal-page and missing-page checks passed. No iOS build or runtime verification was performed.

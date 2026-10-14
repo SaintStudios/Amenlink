@@ -146,7 +146,7 @@
         "title": "Notificaciones y horarios de recordatorio",
         "paragraphs": [
           "Para recordatorios remotos de versículos y oraciones, amen envía al servicio de notificaciones el token push del dispositivo, el idioma de la app, la zona horaria, los tipos activados y las horas de entrega elegidas. El registro puede asociarse con tu cuenta. Los recordatorios compatibles de rachas o pruebas pueden programarse localmente en el dispositivo. Esta información se utiliza para los recordatorios y la entrega que eliges.",
-          "Puedes cambiar las preferencias en la app y el permiso de notificaciones en iOS. La entrega depende de los permisos, los ajustes del dispositivo y los servicios disponibles. Revocar un permiso no acredita por sí solo que se hayan eliminado todos los tokens o registros previos; contacta en {{email}} para solicitarlo. Un recordatorio de prueba no cancela una suscripción ni sustituye la información de renovación de Apple."
+          "Puedes cambiar las preferencias en la app y el permiso de notificaciones en iOS. La entrega depende de los permisos, los ajustes del dispositivo y los servicios disponibles. Revocar un permiso no acredita por sí solo que se hayan eliminado todos los tokens o registros previos; contacta en {{email}} para solicitarlo. Un recordatorio de prueba no cancela una suscripción ni sustituye la información de renovación de Apple. El recordatorio mencionado durante la configuración inicial se refiere a un correo electrónico de Apple sobre el próximo fin de tu prueba, no a un correo enviado por amen. Apple gestiona estos correos utilizando los datos de tu cuenta de Apple conforme a {{applePrivacy}}. Amen no controla su entrega ni el momento del envío."
         ]
       },
       {
@@ -373,7 +373,7 @@
         "title": "Pruebas y promociones",
         "paragraphs": [
           "Al terminar la configuración inicial, se ofrece a todos los usuarios nuevos una prueba gratuita de Amen Plus de 7 días. La confirmación de compra de Apple muestra la elegibilidad, el precio de renovación y las condiciones. Cuando termina el acceso de prueba, seguir usando la app exige una suscripción activa a Amen Plus o una compra válida de acceso de por vida. Cancele antes del plazo indicado por Apple para evitar cobros automáticos.",
-          "Apple recomienda cancelar pruebas gratuitas o descontadas al menos 24 horas antes de terminar si no quiere renovación. Los recordatorios no están garantizados. Revise fechas en ajustes Apple; quitar notificaciones o desinstalar no detiene cobros."
+          "Apple recomienda cancelar las pruebas gratuitas o con descuento al menos 24 horas antes de que terminen si no desea renovarlas. El recordatorio mencionado durante la configuración inicial se refiere al correo de Apple sobre el fin de la prueba, no a un correo de amen. Apple controla su entrega y el momento del envío; no se garantiza su recepción. Consulte la fecha de renovación en los ajustes de suscripciones de Apple; desactivar las notificaciones o desinstalar la app no detiene los cobros."
         ]
       },
       {
