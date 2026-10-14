@@ -34,7 +34,9 @@
     "googlePrivacy": "Informativa sulla privacy di Google",
     "appleTerms": "Condizioni dell’App Store e regole d’uso di Apple",
     "appleInformation": "Informazioni Apple",
-    "more": "Scopri di più qui"
+    "more": "Scopri di più qui",
+    "tiktokPrivacy": "Informativa sulla privacy di TikTok",
+    "appleSKAN": "Informazioni Apple su SKAdNetwork"
   },
   "privacy": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
@@ -175,10 +177,18 @@
       },
       {
         "id": "analytics",
-        "title": "Misurazione e attribuzione nell’app",
+        "title": "Misurazione TikTok e attribuzione dell’app",
         "paragraphs": [
-          "I servizi di misurazione e attribuzione ricevono eventi iniziali e d’uso, come passaggi visualizzati o completati, interazioni con offerte a pagamento e attività d’acquisto. Possono includere cronologia degli acquisti, interazioni con il prodotto, dati pubblicitari e altri dati d’uso, con nomi o numeri dei passaggi, orari, informazioni dell’app e identificativi di account, acquisto o dispositivo. I dati sui crash sono usati per analisi e indagini su errori tecnici.",
-          "I dati di acquisto e utilizzo possono servire a funzioni dell’app, personalizzazione, analisi, pubblicità e marketing. Quando viene fornito il consenso necessario, i partner pubblicitari e di misurazione possono usarli per tracciare attività tra app e siti di altre aziende. Il permesso di tracciamento Apple non arresta tutti gli eventi operativi. Gli eventi legati alla fede possono rivelare interessi religiosi e richiedono condizioni giuridiche adeguate. Contatta {{email}} per destinatari, permessi o scelte di privacy."
+          "Le versioni dell’app che introducono la misurazione diretta di TikTok usano il TikTok App Events SDK per segnalare installazioni e avvii di prove gratuite idonee ai fini della misurazione e dell’ottimizzazione pubblicitaria. Un servizio di convalida degli acquisti conferma lo stato di prova prima che l’app ne segnali l’avvio. Le trasmissioni dell’SDK possono includere nomi, orari e identificativi degli eventi, informazioni su app e sessioni, identificativi del dispositivo come l’identificativo fornitore di Apple (IDFV), modello e versione del sistema, lingua, informazioni IP e di rete e dati diagnostici tecnici. L’accesso all’identificativo pubblicitario di Apple (IDFA) dipende dall’autorizzazione al tracciamento di Apple. Il trattamento di TikTok è descritto in {{tiktokPrivacy}}.",
+          "L’integrazione diretta di TikTok non aggiunge testi di preghiere, contenuti delle chat o risposte della configurazione iniziale agli eventi di marketing configurati. Anche senza tali contenuti, l’uso di un’app legata alla fede può suggerire interessi religiosi. TikTok può usare i dati degli eventi per resoconti, ottimizzazione pubblicitaria e, ove consentito, abbinamento dei dati e creazione di gruppi di pubblico. Le versioni precedenti installate possono ancora usare integrazioni di misurazione precedenti che segnalano passaggi iniziali, interazioni con schermate di abbonamento e attività relative agli acquisti. Il flusso di dati dipende quindi dalla versione installata; aggiornare l’app non cancella le informazioni già ricevute dai fornitori. I dati sugli arresti anomali possono inoltre essere usati per analisi e per indagare problemi tecnici."
+        ]
+      },
+      {
+        "id": "advertising-choice",
+        "title": "Scelta di tracciamento Apple e attribuzione anonima",
+        "paragraphs": [
+          "Nelle versioni con integrazione diretta di TikTok, l’SDK si avvia all’apertura dell’app, prima della richiesta App Tracking Transparency (ATT) di Apple nel carosello iniziale di benvenuto. L’SDK include lo stato ATT nelle richieste. Rifiutare o non rispondere non disattiva l’SDK e non interrompe tutti gli eventi o tutte le richieste di configurazione o diagnostica. La scelta deve essere rispettata per il tracciamento tra app e siti web di altre aziende; non limita l’accesso alle funzioni di amen. Puoi gestire l’autorizzazione Apple in Impostazioni → Privacy e sicurezza → Tracciamento o contattare {{email}} per le opzioni di privacy.",
+          "SKAdNetwork (SKAN) di Apple offre una forma separata di misurazione pubblicitaria che tutela la privacy e può funzionare senza autorizzazione ATT. Apple controlla i resoconti aggregati, i tempi di invio e la disponibilità di informazioni dettagliate sulle conversioni; un normale evento dell’SDK è distinto da un resoconto SKAN. Vedi {{appleSKAN}}. Questa informativa fornisce informazioni e non costituisce consenso: quando la legge applicabile richiede un consenso preventivo per la raccolta o la trasmissione dell’SDK, tale requisito resta valido. La scelta ATT di Apple non sostituisce ogni consenso o altra condizione legale."
         ]
       },
       {
@@ -209,7 +219,7 @@
         "id": "recipients",
         "title": "Fornitori e altri destinatari",
         "paragraphs": [
-          "Le categorie di destinatari comprendono autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, misurazione, attribuzione pubblicitaria ed email di supporto. Google fornisce servizi IA. Apple offre acquisti, accesso, notifiche e funzioni pertinenti del dispositivo. Le informazioni condivise dipendono da funzione e finalità.",
+          "Le categorie di destinatari comprendono autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, misurazione, attribuzione pubblicitaria ed email di supporto. Google fornisce servizi IA. Apple offre acquisti, accesso, notifiche e funzioni pertinenti del dispositivo. Le informazioni condivise dipendono da funzione e finalità. TikTok riceve i dati di misurazione pubblicitaria descritti sopra nelle versioni dell’app con integrazione diretta del suo SDK; vedi {{tiktokPrivacy}}.",
           "Le informazioni necessarie possono essere condivise anche con personale autorizzato, consulenti professionali o autorità quando richiesto dalla legge. Trattamento e trasferimenti internazionali restano soggetti alle garanzie applicabili. Contatta {{email}} per informazioni sui destinatari e sugli accordi relativi ai tuoi dati."
         ]
       },

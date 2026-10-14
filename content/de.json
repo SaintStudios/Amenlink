@@ -34,7 +34,9 @@
     "googlePrivacy": "Google-Datenschutzerklärung",
     "appleTerms": "Apple-App-Store-Bedingungen und Nutzungsregeln",
     "appleInformation": "Informationen von Apple",
-    "more": "Hier erfahren Sie mehr"
+    "more": "Hier erfahren Sie mehr",
+    "tiktokPrivacy": "TikTok-Datenschutzerklärung",
+    "appleSKAN": "Apple-Informationen zu SKAdNetwork"
   },
   "privacy": {
     "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
@@ -175,10 +177,18 @@
       },
       {
         "id": "analytics",
-        "title": "App-Messung und Zuordnung",
+        "title": "TikTok-Messung und App-Attribution",
         "paragraphs": [
-          "Dienste für App-Messung und Zuordnung erhalten Einrichtungs- und App-Ereignisse, etwa angesehene oder abgeschlossene Schritte, Interaktionen mit Kaufangeboten und kaufbezogene Aktivitäten. Dazu können Einkaufsverlauf, Produktinteraktionen, Werbedaten und sonstige Nutzungsdaten mit Schrittnamen oder -nummern, Zeitstempeln, App-Informationen sowie Konto-, Kauf- oder Gerätekennungen gehören. Absturzdaten werden für Analysen und zur Untersuchung technischer Fehler verwendet.",
-          "Kauf- und Nutzungsdaten können für App-Funktionen, Personalisierung, Analysen, Werbung und Marketing verwendet werden. Wenn die erforderliche Einwilligung vorliegt, können Werbe- und Messpartner diese Daten nutzen, um Aktivitäten über Apps und Websites anderer Unternehmen hinweg zu verfolgen. Apples Tracking-Berechtigung stoppt nicht jedes Betriebsereignis. Ereignisse zu Glaubensfunktionen können religiöse Interessen offenbaren und benötigen angemessene rechtliche Voraussetzungen. Kontaktiere {{email}} zu Empfängern, Berechtigungen oder Datenschutzentscheidungen."
+          "App-Versionen mit direkter TikTok-Messung verwenden das TikTok App Events SDK, um Installationen und berechtigte Starts kostenloser Testzeiträume zur Werbemessung und -optimierung zu melden. Ein Dienst zur Kaufvalidierung bestätigt den Teststatus, bevor die App den Start meldet. SDK-Übertragungen können Ereignisnamen, Zeitstempel und Ereigniskennungen, App- und Sitzungsinformationen, Gerätekennungen wie Apples Herstellerkennung (IDFV), Gerätemodell und Systemversion, Sprache, IP- und Netzwerkinformationen sowie technische Diagnosedaten enthalten. Der Zugriff auf Apples Werbekennung (IDFA) hängt von Apples Tracking-Erlaubnis ab. TikToks Verarbeitung wird in {{tiktokPrivacy}} beschrieben.",
+          "Die direkte TikTok-Integration fügt ihren konfigurierten Marketingereignissen keine Gebetstexte, Chatinhalte oder Antworten aus dem Onboarding hinzu. Auch ohne diese Inhalte kann die Nutzung einer glaubensbezogenen App auf religiöse Interessen schließen lassen. TikTok kann Ereignisdaten für Berichte, Werbeoptimierung und, soweit zulässig, für Zuordnung und Zielgruppenbildung verwenden. Ältere installierte App-Versionen können weiterhin frühere Messintegrationen nutzen, die Onboarding-Schritte, Interaktionen mit Bezahlschranken und kaufbezogene Aktivitäten melden. Der Datenfluss hängt daher von der installierten Version ab; ein App-Update löscht keine bereits bei Anbietern eingegangenen Informationen. Absturzdaten können außerdem für Analysen und zur Untersuchung technischer Fehler verwendet werden."
+        ]
+      },
+      {
+        "id": "advertising-choice",
+        "title": "Apples Tracking-Auswahl und anonyme Attribution",
+        "paragraphs": [
+          "In Versionen mit der direkten TikTok-Integration startet das SDK beim Öffnen der App, bevor Apples Anfrage zur App Tracking Transparency (ATT) im ersten Onboarding-Karussell erscheint. Das SDK übermittelt den ATT-Status mit Anfragen. Eine Ablehnung oder eine unbeantwortete Anfrage deaktiviert das SDK nicht und stoppt nicht jedes Ereignis und jede Konfigurations- oder Diagnoseanfrage. Die Auswahl muss beim Tracking über Apps und Websites anderer Unternehmen hinweg beachtet werden; sie schränkt den Zugriff auf amen-Funktionen nicht ein. Du kannst Apples Erlaubnis unter Einstellungen → Datenschutz & Sicherheit → Tracking verwalten oder dich bei Fragen zu Datenschutzoptionen an {{email}} wenden.",
+          "Apples SKAdNetwork (SKAN) bietet eine gesonderte, datenschutzwahrende Werbemessung, die ohne ATT-Erlaubnis funktionieren kann. Apple bestimmt die aggregierten Rückmeldungen, deren Zeitpunkt und die Verfügbarkeit detaillierter Konversionsinformationen; ein gewöhnliches SDK-Ereignis ist von einer SKAN-Rückmeldung getrennt. Siehe {{appleSKAN}}. Diese Erklärung informiert und stellt keine Einwilligung dar: Soweit das anwendbare Recht eine vorherige Einwilligung für die Erhebung oder Übertragung durch das SDK verlangt, gilt diese Anforderung weiterhin. Apples ATT-Auswahl ersetzt nicht jede Einwilligung oder andere rechtliche Voraussetzung."
         ]
       },
       {
@@ -209,7 +219,7 @@
         "id": "recipients",
         "title": "Dienstleister und andere Empfänger",
         "paragraphs": [
-          "Empfängerkategorien umfassen Anbieter von Kontoauthentifizierung, Cloud-Hosting und Speicherung, Kaufprüfung, Nutzungsmessung, Werbezuordnung und Support-E-Mail. Google stellt KI-Dienste bereit. Apple ermöglicht App-Store-Käufe, Anmeldung, Mitteilungen und betreffende Gerätefunktionen. Übermittelte Angaben hängen von Funktion und Zweck ab.",
+          "Empfängerkategorien umfassen Anbieter von Kontoauthentifizierung, Cloud-Hosting und Speicherung, Kaufprüfung, Nutzungsmessung, Werbezuordnung und Support-E-Mail. Google stellt KI-Dienste bereit. Apple ermöglicht App-Store-Käufe, Anmeldung, Mitteilungen und betreffende Gerätefunktionen. Übermittelte Angaben hängen von Funktion und Zweck ab. TikTok erhält in App-Versionen mit direkter SDK-Integration die oben beschriebenen Daten zur Werbemessung; siehe {{tiktokPrivacy}}.",
           "Erforderliche Angaben können auch an befugte Supportpersonen, professionelle Beratende oder gesetzlich zuständige Behörden gehen. Verarbeitung und internationale Übermittlungen unterliegen den geltenden Schutzmaßnahmen. Weitere Angaben zu Empfängern und Vereinbarungen für Ihre Daten erhalten Sie über {{email}}."
         ]
       },

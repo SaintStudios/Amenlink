@@ -20,7 +20,9 @@ const external = {
   appleTerms: 'https://www.apple.com/legal/internet-services/itunes/',
   google: 'https://ai.google.dev/gemini-api/terms',
   applePrivacy: 'https://www.apple.com/legal/privacy/',
-  googlePrivacy: 'https://policies.google.com/privacy'
+  googlePrivacy: 'https://policies.google.com/privacy',
+  tiktokPrivacy: 'https://www.tiktok.com/legal/page/eea/privacy-policy/en',
+  appleSKAN: 'https://developer.apple.com/documentation/storekit/skadnetwork'
 };
 const generated = new Map();
 
@@ -105,7 +107,7 @@ function render(copy, locale, kind, auto = false) {
     '<section aria-labelledby="apple-information"><h2 id="apple-information">' + escape(ui.appleInformation) + '</h2><ul class="provider-links">' +
       ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>' +
     (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
-      ['google', 'googlePrivacy'].map(reference).join('') + '</ul></section>' : '') +
+      ['google', 'googlePrivacy', 'tiktokPrivacy', 'appleSKAN'].map(reference).join('') + '</ul></section>' : '') +
     '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
     '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(navigation[type]) + '</a>').join('') + '</div>' +
     '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +

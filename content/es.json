@@ -34,7 +34,9 @@
     "googlePrivacy": "Política de privacidad de Google",
     "appleTerms": "Condiciones del App Store y reglas de uso de Apple",
     "appleInformation": "Información de Apple",
-    "more": "Más información aquí"
+    "more": "Más información aquí",
+    "tiktokPrivacy": "Política de privacidad de TikTok",
+    "appleSKAN": "Información de Apple sobre SKAdNetwork"
   },
   "privacy": {
     "intro": "Amen es una app cristiana para leer la Biblia, orar y reflexionar sobre la fe. Esta política explica el uso de información personal en la app, incluidas cuentas, preferencias de lectura, chat de IA Nema, audio y suscripciones. La información tratada depende de las funciones que elija.",
@@ -175,10 +177,18 @@
       },
       {
         "id": "analytics",
-        "title": "Medición y atribución de la app",
+        "title": "Medición de TikTok y atribución de la app",
         "paragraphs": [
-          "Los servicios de medición y atribución reciben eventos de configuración y uso, como pasos vistos o completados, interacciones con ofertas de pago y actividades de compra. Pueden incluir historial de compras, interacciones con el producto, datos publicitarios y otros datos de uso, con nombres o números de pasos, marcas de tiempo, información de la app e identificadores de cuenta, compra o dispositivo. Los datos de fallos se usan para análisis e investigación de errores técnicos.",
-          "Los datos de compras y uso pueden utilizarse para funciones de la app, personalización, análisis, publicidad y marketing. Cuando se otorga el consentimiento necesario, los socios de publicidad y medición pueden usarlos para rastrear actividad entre apps y sitios web de otras empresas. El permiso de rastreo de Apple no detiene todos los eventos operativos. Los eventos relacionados con la fe pueden revelar intereses religiosos y necesitan condiciones jurídicas adecuadas. Contacte con {{email}} sobre destinatarios, permisos u opciones de privacidad."
+          "Las versiones de la app que incorporan la medición directa de TikTok utilizan el SDK de eventos de aplicaciones de TikTok para comunicar instalaciones e inicios de pruebas gratuitas que cumplen los requisitos, con fines de medición y optimización publicitaria. Un servicio de validación de compras confirma el estado de prueba antes de que la app comunique su inicio. Las transmisiones del SDK pueden incluir nombres de eventos, marcas de tiempo e identificadores de eventos, información de la app y la sesión, identificadores del dispositivo como el identificador de proveedor de Apple (IDFV), modelo y versión del sistema, idioma, información de IP y red y diagnósticos técnicos. El acceso al identificador publicitario de Apple (IDFA) depende de la autorización de rastreo de Apple. El tratamiento de TikTok se describe en {{tiktokPrivacy}}.",
+          "La integración directa de TikTok no añade textos de oraciones, contenido de chats ni respuestas de la configuración inicial a sus eventos de marketing configurados. Incluso sin esos contenidos, el uso de una app relacionada con la fe puede sugerir intereses religiosos. TikTok puede usar datos de eventos para informes, optimización publicitaria y, cuando esté permitido, vinculación de datos y creación de audiencias. Las versiones anteriores instaladas pueden seguir usando integraciones de medición previas que comunican pasos de configuración inicial, interacciones con pantallas de suscripción y actividad relacionada con compras. Por tanto, el flujo de datos depende de la versión instalada; actualizar la app no elimina la información que los proveedores ya hayan recibido. Los datos de fallos también pueden usarse para análisis y para investigar problemas técnicos."
+        ]
+      },
+      {
+        "id": "advertising-choice",
+        "title": "Permiso de rastreo de Apple y atribución anónima",
+        "paragraphs": [
+          "En las versiones con integración directa de TikTok, el SDK se inicia al abrir la app, antes de la solicitud de App Tracking Transparency (ATT) de Apple en el carrusel inicial de bienvenida. El SDK incluye el estado ATT en sus solicitudes. Rechazar o no responder a la solicitud no desactiva el SDK ni detiene todos los eventos o solicitudes de configuración o diagnóstico. La elección debe respetarse para el rastreo entre apps y sitios web de otras empresas; no limita el acceso a las funciones de amen. Puedes gestionar el permiso de Apple en Ajustes → Privacidad y seguridad → Rastreo o contactar con {{email}} sobre tus opciones de privacidad.",
+          "SKAdNetwork (SKAN) de Apple ofrece una forma independiente de medición publicitaria que protege la privacidad y puede funcionar sin autorización ATT. Apple controla los informes agregados, su momento de envío y la disponibilidad de información detallada de conversiones; un evento ordinario del SDK es distinto de un informe de SKAN. Consulta {{appleSKAN}}. Esta política informa, pero no constituye consentimiento: cuando la legislación aplicable exija consentimiento previo para la recopilación o transmisión del SDK, ese requisito sigue siendo aplicable. La elección ATT de Apple no sustituye todos los consentimientos ni las demás condiciones legales."
         ]
       },
       {
@@ -209,7 +219,7 @@
         "id": "recipients",
         "title": "Proveedores y otros destinatarios",
         "paragraphs": [
-          "Las categorías de destinatarios incluyen autenticación de cuentas, alojamiento y almacenamiento en la nube, verificación de compras, medición, atribución publicitaria y correo de soporte. Google proporciona servicios de IA. Apple ofrece compras, inicio de sesión, notificaciones y funciones del dispositivo. La información compartida depende de la función y finalidad.",
+          "Las categorías de destinatarios incluyen autenticación de cuentas, alojamiento y almacenamiento en la nube, verificación de compras, medición, atribución publicitaria y correo de soporte. Google proporciona servicios de IA. Apple ofrece compras, inicio de sesión, notificaciones y funciones del dispositivo. La información compartida depende de la función y finalidad. TikTok recibe los datos de medición publicitaria descritos anteriormente en las versiones con integración directa de su SDK; consulta {{tiktokPrivacy}}.",
           "La información necesaria también puede compartirse con personal de soporte autorizado, asesores profesionales o autoridades cuando la ley lo exija. El tratamiento y las transferencias internacionales están sujetos a garantías aplicables. Contacte con {{email}} para información sobre destinatarios y acuerdos relativos a sus datos."
         ]
       },

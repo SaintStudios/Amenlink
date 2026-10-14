@@ -34,7 +34,9 @@
     "googlePrivacy": "Google privacy policy",
     "appleTerms": "Apple App Store terms and usage rules",
     "appleInformation": "Apple information",
-    "more": "See more here"
+    "more": "See more here",
+    "tiktokPrivacy": "TikTok privacy policy",
+    "appleSKAN": "Apple SKAdNetwork information"
   },
   "privacy": {
     "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy explains how personal information is used in the app, including accounts, reading preferences, Nema AI chat, audio and subscriptions. The information processed depends on the features you choose.",
@@ -175,10 +177,18 @@
       },
       {
         "id": "analytics",
-        "title": "App measurement and attribution",
+        "title": "TikTok measurement and app attribution",
         "paragraphs": [
-          "App measurement and attribution services receive onboarding and app events, such as steps viewed or completed, paywall interactions and purchase-related activity. This may include purchase history, product interactions, advertising data and other usage data, with step names or numbers, timestamps, app information and account, purchase or device identifiers. Crash data is used for analytics and to investigate technical faults.",
-          "Purchase and usage data may be used for app functionality, personalization, analytics, advertising and marketing. Where required consent is given, advertising and measurement partners may use these data to track activity across other companies' apps and websites. Apple's tracking permission does not stop every operational event. Faith-related events can reveal religious interests and need appropriate lawful conditions. Contact {{email}} about recipients, permissions or privacy choices."
+          "App versions introducing direct TikTok measurement use the TikTok App Events SDK to report installations and qualifying free-trial starts for advertising measurement and optimization. A purchase-validation service confirms trial status before the app reports a trial start. SDK transmissions can include event names, timestamps and event identifiers, app and session information, device identifiers such as Apple’s vendor identifier (IDFV), device model and system version, language, IP/network information and technical diagnostics. Access to Apple’s advertising identifier (IDFA) depends on Apple’s tracking authorization. TikTok’s processing is described in {{tiktokPrivacy}}.",
+          "The direct TikTok integration does not add prayer text, chat content or onboarding answers to its configured marketing events. Even without those contents, use of a faith-related app can suggest religious interests. TikTok may use event data for reporting, advertising optimization and, where permitted, matching and audience creation. Older installed app versions can still use previous measurement integrations that report onboarding steps, paywall interactions and purchase-related activity. The data flow therefore depends on the installed version; updating the app does not erase information previously received by providers. Crash data may also be used for analytics and investigating technical faults."
+        ]
+      },
+      {
+        "id": "advertising-choice",
+        "title": "Apple tracking choice and anonymous attribution",
+        "paragraphs": [
+          "In versions using the direct TikTok integration, the SDK starts when the app opens, before the Apple App Tracking Transparency (ATT) request in the opening onboarding carousel. The SDK includes the ATT status in requests. Declining or not answering the prompt does not disable the SDK or stop every event, configuration or diagnostic request. The choice must be respected for tracking across other companies’ apps and websites; it does not restrict access to amen features. You can manage Apple’s permission in Settings → Privacy & Security → Tracking or contact {{email}} about privacy choices.",
+          "Apple’s SKAdNetwork (SKAN) provides a separate form of privacy-preserving advertising measurement that can operate without ATT authorization. Apple controls the aggregated postbacks, their timing and whether detailed conversion information is available; an ordinary SDK event is separate from a SKAN postback. See {{appleSKAN}}. This policy is information, not consent: where applicable law requires prior consent for SDK collection or transmission, that requirement still applies. Apple’s ATT choice does not replace every consent or other legal condition."
         ]
       },
       {
@@ -209,7 +219,7 @@
         "id": "recipients",
         "title": "Service providers and other recipients",
         "paragraphs": [
-          "Recipient categories include providers of account authentication, cloud hosting and storage, purchase validation, app measurement, advertising attribution and support email. Google provides AI services. Apple provides App Store purchases, sign-in, notifications and relevant device functions. Information shared depends on the feature and purpose.",
+          "Recipient categories include providers of account authentication, cloud hosting and storage, purchase validation, app measurement, advertising attribution and support email. Google provides AI services. Apple provides App Store purchases, sign-in, notifications and relevant device functions. Information shared depends on the feature and purpose. TikTok receives the advertising measurement data described above in app versions with its direct SDK integration; see {{tiktokPrivacy}}.",
           "Necessary information may also be shared with authorized support personnel, professional advisers or authorities where legally required. Processing and any international transfers remain subject to applicable safeguards. Contact {{email}} for more information about recipients and arrangements relevant to your information."
         ]
       },

@@ -34,7 +34,9 @@
     "googlePrivacy": "Googles integritetspolicy",
     "appleTerms": "Apples App Store-villkor och användningsregler",
     "appleInformation": "Information från Apple",
-    "more": "Läs mer här"
+    "more": "Läs mer här",
+    "tiktokPrivacy": "TikToks integritetspolicy",
+    "appleSKAN": "Apples information om SKAdNetwork"
   },
   "privacy": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
@@ -175,10 +177,18 @@
       },
       {
         "id": "analytics",
-        "title": "Appmätning och tillskrivning",
+        "title": "TikTok-mätning och appattribuering",
         "paragraphs": [
-          "Tjänster för appmätning och attribution får introduktions- och apphändelser, som visade eller slutförda steg, interaktioner med betalningserbjudanden och köprelaterad aktivitet. Det kan omfatta köphistorik, produktinteraktioner, annonsdata och andra användningsdata, med stegnamn eller nummer, tidsstämplar, appinformation samt konto-, köp- eller enhets-ID. Kraschdata används för analys och utredning av tekniska fel.",
-          "Köp- och användningsdata kan användas för appfunktioner, personanpassning, analys, annonsering och marknadsföring. När nödvändigt samtycke har lämnats kan annons- och mätpartner använda uppgifterna för att spåra aktivitet mellan andra företags appar och webbplatser. Apples spårningsbehörighet stoppar inte alla drifthändelser. Händelser kring trosfunktioner kan avslöja religiösa intressen och behöver lämpliga rättsliga villkor. Kontakta {{email}} om mottagare, behörigheter eller integritetsval."
+          "Appversioner med direkt TikTok-mätning använder TikTok App Events SDK för att rapportera installationer och kvalificerade starter av kostnadsfria provperioder för annonsmätning och optimering. En tjänst för köpvalidering bekräftar provstatusen innan appen rapporterar starten. SDK-överföringar kan innehålla händelsenamn, tidsstämplar och händelseidentifierare, app- och sessionsinformation, enhetsidentifierare som Apples leverantörsidentifierare (IDFV), enhetsmodell och systemversion, språk, IP- och nätverksinformation samt teknisk diagnostik. Åtkomst till Apples annonsidentifierare (IDFA) beror på Apples spårningstillstånd. TikToks behandling beskrivs i {{tiktokPrivacy}}.",
+          "Den direkta TikTok-integrationen lägger inte till bönetexter, chattinnehåll eller svar från introduktionen i sina konfigurerade marknadsföringshändelser. Även utan detta innehåll kan användning av en trosrelaterad app antyda religiösa intressen. TikTok kan använda händelsedata för rapportering, annonsoptimering och, där det är tillåtet, matchning och skapande av målgrupper. Äldre installerade appversioner kan fortfarande använda tidigare mätintegrationer som rapporterar introduktionssteg, interaktioner med prenumerationsskärmar och köpaktivitet. Dataflödet beror därför på den installerade versionen; en appuppdatering raderar inte information som leverantörer redan har tagit emot. Kraschdata kan också användas för analys och utredning av tekniska fel."
+        ]
+      },
+      {
+        "id": "advertising-choice",
+        "title": "Apples spårningsval och anonym attribuering",
+        "paragraphs": [
+          "I versioner med den direkta TikTok-integrationen startar SDK:t när appen öppnas, före Apples förfrågan om App Tracking Transparency (ATT) i den första introduktionskarusellen. SDK:t inkluderar ATT-status i förfrågningar. Att neka eller inte svara inaktiverar inte SDK:t och stoppar inte alla händelser eller förfrågningar om konfiguration eller diagnostik. Valet måste respekteras för spårning mellan andra företags appar och webbplatser; det begränsar inte tillgången till amens funktioner. Du kan hantera Apples tillstånd under Inställningar → Integritet och säkerhet → Spårning eller kontakta {{email}} om dina integritetsval.",
+          "Apples SKAdNetwork (SKAN) ger en separat form av integritetsskyddande annonsmätning som kan fungera utan ATT-tillstånd. Apple styr de aggregerade återrapporterna, deras tidpunkt och om detaljerad konverteringsinformation finns tillgänglig; en vanlig SDK-händelse är separat från en SKAN-återrapport. Se {{appleSKAN}}. Denna policy informerar och utgör inte samtycke: när tillämplig lag kräver föregående samtycke för SDK:ts insamling eller överföring gäller det kravet fortfarande. Apples ATT-val ersätter inte alla samtycken eller andra rättsliga villkor."
         ]
       },
       {
@@ -209,7 +219,7 @@
         "id": "recipients",
         "title": "Tjänsteleverantörer och andra mottagare",
         "paragraphs": [
-          "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, appmätning, reklamtillskrivning och supportmejl. Google tillhandahåller AI-tjänster. Apple tillhandahåller köp, inloggning, notiser och relevanta enhetsfunktioner. Uppgifter som delas beror på funktion och syfte.",
+          "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, appmätning, reklamtillskrivning och supportmejl. Google tillhandahåller AI-tjänster. Apple tillhandahåller köp, inloggning, notiser och relevanta enhetsfunktioner. Uppgifter som delas beror på funktion och syfte. TikTok tar emot de annonsmätningsdata som beskrivs ovan i appversioner med dess direkta SDK-integration; se {{tiktokPrivacy}}.",
           "Nödvändiga uppgifter kan också delas med behörig supportpersonal, professionella rådgivare eller myndigheter när lagen kräver det. Behandling och internationella överföringar omfattas av tillämpliga skydd. Kontakta {{email}} för uppgifter om mottagare och avtal som rör dina uppgifter."
         ]
       },

@@ -93,3 +93,21 @@ The privacy notification section and trial terms now clarify in all six language
 The existing disclosure of optional local trial notifications remains because the iOS source still schedules them through TrialReminderService. This copy update does not disable that service or change notification behavior. The app's onboarding copy uses passive reminder wording without the Apple/email explanation.
 
 Generated pages and their revision date were refreshed. Website generation, localization parity, landing-page, legal-page and missing-page checks passed. No iOS build or runtime verification was performed.
+
+## 14 October 2026: direct TikTok attribution and ATT disclosure
+
+The privacy policy now has 28 sections. Its advertising section identifies TikTok, installation and qualifying trial-start events, the purchase-validation step, SDK identifiers and technical/network data, and older versions' legacy measurement. A separate section describes the source-confirmed startup behavior: TikTok initializes before the native ATT request in the opening carousel, and Deny does not shut down every SDK request. It separates ordinary SDK events from Apple's SKAN postbacks. TikTok's privacy policy and Apple's SKAN documentation are linked in all six languages. The page describes versions with this integration conditionally because this app update has not yet been released.
+
+This replaces the withdrawn, unpublished draft that would have claimed the SDK waits for Allow. No app or dashboard behavior is changed by this website commit. App code still keeps TikTok as the SKAN updater and emits confirmed trials independently of the ATT response. No prayer text, chat content or onboarding answers are added to the app's configured TikTok marketing events; this does not establish that use of a Christian app cannot itself suggest a religious interest.
+
+Apple's ATT policy permits nontracking analytics but requires authorization for linking user/device data across companies for advertising or ad measurement. TikTok's iOS guide recommends startup initialization; its separate consent guide says ePrivacy jurisdictions typically require prior informed consent before SDK transmission. SDK 1.7.2's ATT-status field does not independently verify TikTok's server-side treatment of denied or undecided users. That handling and the applicable consent requirements remain unresolved. Publishing accurate disclosures does not supply missing consent, validate App Store privacy labels, or certify the setup as compliant.
+
+References checked for this correction:
+- https://developer.apple.com/app-store/user-privacy-and-data-use/
+- https://developer.apple.com/videos/play/wwdc2022/10166/
+- https://business-api.tiktok.com/portal/docs/ios-integration-steps/v1.3
+- https://business-api.tiktok.com/portal/docs/resources-for-data-sharing-after-user-consent/v1.3
+- https://www.tiktok.com/legal/page/eea/privacy-policy/en
+- https://developer.apple.com/documentation/storekit/skadnetwork
+
+Generated-page checks and the existing legal, landing-page and missing-page test suites pass, including parity with the app's six supported languages. No iOS build or runtime testing was performed.
