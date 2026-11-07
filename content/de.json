@@ -36,7 +36,10 @@
     "appleInformation": "Informationen von Apple",
     "more": "Hier erfahren Sie mehr",
     "tiktokPrivacy": "TikTok-Datenschutzerklärung",
-    "appleSKAN": "Apple-Informationen zu SKAdNetwork"
+    "appleSKAN": "Apple-Informationen zu SKAdNetwork",
+    "deleteAccount": "Konto löschen",
+    "deleteAccountDescription": "So löschst du dein Konto bei Amen - Bible Chat und deine Daten, was gelöscht wird und was erhalten bleibt.",
+    "googlePlayCancel": "Google Play-Abo kündigen"
   },
   "privacy": {
     "intro": "Amen ist eine christliche App zum Bibellesen, Beten und zur geistlichen Reflexion. Diese Erklärung beschreibt die Verwendung personenbezogener Daten in der App, einschließlich Konten, Leseeinstellungen, Nema-KI-Chat, Audio und Abonnements. Welche Daten verarbeitet werden, hängt von den gewählten Funktionen ab.",
@@ -504,6 +507,57 @@
         "paragraphs": [
           "Kontaktieren Sie den amen-Support unter {{email}} bei App-Problemen, Kontofragen, Abonnementzugang oder Beschwerden. Die Apple-Links erläutern Abrechnung, Kündigung und Erstattung. Für Anfragen zu personenbezogenen Daten lesen Sie {{privacy}}.",
           "Nennen Sie betroffenes Produkt oder Funktion und beschreiben Sie das Anliegen kurz. Bestellreferenzen nur bei Bedarf; keine Passwörter, vollständigen Kartendaten oder unnötigen Chatdetails. Gesetzlich gültige Mitteilungen oder anderweitig zulässige Kontaktwege werden dadurch nicht beschränkt."
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "intro": "Auf dieser Seite erfährst du, wie du dein Konto bei Amen - Bible Chat auf Android und iOS löschst, welche Daten gelöscht werden und welche erhalten bleiben.",
+    "summary": [
+      "Lösche dein Konto in der App unter Du → Konto löschen. Es wird sofort gelöscht und kann nicht wiederhergestellt werden.",
+      "Ohne App kannst du die Löschung per E-Mail an amenapphilfe@gmail.com anfordern.",
+      "Konto, Profil, Unterhaltungen, gespeicherte Nachrichten und Fortschritt werden gelöscht. Verschlüsselte Backups laufen innerhalb von 7 Tagen ab.",
+      "Das Löschen des Kontos kündigt kein Google Play- oder Apple-Abo."
+    ],
+    "sections": [
+      {
+        "id": "delete-in-app",
+        "title": "Konto in der App löschen",
+        "paragraphs": [
+          "Öffne amen und gehe zum Tab Du. Scrolle ganz nach unten und tippe auf Konto löschen. Lies den Hinweis, tippe auf Weiter zur Bestätigung und bestätige mit Konto löschen.",
+          "Dein Konto wird sofort gelöscht und du wirst automatisch abgemeldet. Die Löschung kann nicht rückgängig gemacht werden. Wenn sie nicht abgeschlossen wird, tippe auf Erneut versuchen oder kontaktiere den Support unter {{email}}."
+        ]
+      },
+      {
+        "id": "delete-by-email",
+        "title": "Löschung ohne App anfordern",
+        "paragraphs": [
+          "Wenn du die App nicht mehr hast oder dein Konto nicht öffnen kannst, schreibe an {{email}} mit dem Betreff „amen-Konto löschen“. Sende die E-Mail von dem Google-Konto, das du in amen verknüpft hast, oder nenne deinen Anzeigenamen in amen, damit wir dein Konto finden.",
+          "Wir stellen eventuell eine kurze Frage, um zu prüfen, dass das Konto dir gehört; nach deinem Passwort fragen wir nie. Wir löschen das Konto innerhalb eines Monats und bestätigen die Löschung per E-Mail."
+        ]
+      },
+      {
+        "id": "deleted-data",
+        "title": "Was gelöscht wird",
+        "paragraphs": [
+          "Beim Löschen des Kontos werden dauerhaft entfernt: dein Login und ein verknüpftes Google-Konto, dein Name, dein Profilbild und App-Einstellungen wie Sprache und Konfession, alle Unterhaltungen, der Chatverlauf und gespeicherte Nachrichten, dein Fortschritt, Abzeichen und Ranglisteneintrag, Registrierungen für Mitteilungen und Meldungen, die du zu KI-Antworten gesendet hast.",
+          "Auch die Daten des Kontos auf deinem Handy werden entfernt. Einzelne Unterhaltungen und gespeicherte Nachrichten kannst du jederzeit in der App löschen, ohne dein Konto zu löschen."
+        ]
+      },
+      {
+        "id": "retained-data",
+        "title": "Was erhalten bleibt und wie lange",
+        "paragraphs": [
+          "Gelöschte Daten können in verschlüsselten Server-Backups bleiben, bis diese ablaufen, höchstens 7 Tage nach der Löschung. Sie werden daraus nicht wiederhergestellt und für keinen anderen Zweck verwendet.",
+          "Kaufbelege bewahren Google Play, Apple und unser Dienstleister für die Kaufprüfung unter einer anonymen ID auf, nicht unter deinem Namen, so lange es Abrechnungs-, Steuer- und Betrugsschutzvorschriften verlangen. Kopien, die du exportiert oder außerhalb der App geteilt hast, sind nicht betroffen."
+        ]
+      },
+      {
+        "id": "subscription",
+        "title": "Abo separat kündigen",
+        "paragraphs": [
+          "Das Löschen des Kontos oder das Deinstallieren der App kündigt kein Amen Plus-Abo. Auf Android kündigst du es in Google Play: {{googlePlayCancel}}.",
+          "Auf dem iPhone kündigst du es in deinem Apple-Account: {{cancel}}. Das Deinstallieren der App allein löscht auch dein Konto nicht; nutze dafür die Schritte oben."
         ]
       }
     ]

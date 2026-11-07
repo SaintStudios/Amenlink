@@ -7,6 +7,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const languages = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', sv: 'Svenska' };
 const date = '2026-10-14';
+// A document added later carries its own date; the others keep the shared version.
+const dates = { 'delete-account': '2026-11-07' };
+// URL slug → content and UI key (delete-account → deleteAccount).
+const key = (kind) => kind.replace(/-(\w)/g, (_, c) => c.toUpperCase());
 const origin = 'https://amen-app.com';
 const check = process.argv.includes('--check');
 const escape = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -15,6 +19,7 @@ const asset = (name) => '/assets/' + name + '?v=' + createHash('sha256').update(
 const external = {
   email: 'mailto:amenapphilfe@gmail.com',
   cancel: 'https://support.apple.com/en-us/118428',
+  googlePlayCancel: 'https://support.google.com/googleplay/answer/7018481',
   refund: 'https://support.apple.com/en-us/118223',
   appleEula: 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
   appleTerms: 'https://www.apple.com/legal/internet-services/itunes/',
@@ -33,7 +38,7 @@ function validate(copy, locale) {
   for (const key of Object.keys(english.notFound)) {
     if (typeof copy.notFound?.[key] !== 'string' || !copy.notFound[key].trim()) throw new Error(locale + ': missing 404 copy ' + key);
   }
-  for (const kind of ['privacy', 'terms']) {
+  for (const kind of ['privacy', 'terms', 'deleteAccount']) {
     const document = copy[kind];
     if (!document?.intro || document.summary?.length !== english[kind].summary.length) throw new Error(locale + ': incomplete ' + kind);
     if (document.sections?.length !== english[kind].sections.length) throw new Error(locale + ': missing sections in ' + kind);
@@ -70,20 +75,21 @@ function render(copy, locale, kind, auto = false) {
       copy.terms.sections.find((s) => s.id === 'disputes'),
       copy.terms.sections.find((s) => s.id === 'contact')
     ]
-  } : copy[kind];
+  } : copy[key(kind)];
   const url = (type, lang = locale) => '/legal/' + lang + '/' + type + '/';
   const links = { ...external, privacy: url('privacy'), terms: url('terms') };
   const rich = (s) => escape(s).replace(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!links[key] || !ui[key]) throw new Error('Unknown link token: ' + key);
     return '<a href="' + escape(links[key]) + '">' + escape(ui[key]) + '</a>';
   });
-  const localDate = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(date + 'T12:00:00Z'));
-  const title = escape(ui[kind]);
+  const updated = dates[kind] || date;
+  const localDate = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(updated + 'T12:00:00Z'));
+  const title = escape(ui[key(kind)]);
   const reference = (key) => '<li>' + escape(ui[key]) + ' · <a href="' + external[key] + '" aria-label="' + escape(ui[key]) + '">' + escape(ui.more) + '</a></li>';
   return '<!doctype html>\n' +
     '<html lang="' + locale + '" data-document="' + kind + '" data-auto-language="' + auto + '">\n<head>\n' +
     '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
-    '<meta name="description" content="' + escape(ui[kind + 'Description']) + '">\n' +
+    '<meta name="description" content="' + escape(ui[key(kind) + 'Description']) + '">\n' +
     '<meta name="referrer" content="strict-origin-when-cross-origin">\n' +
     '<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">\n' +
     '<title>' + title + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
@@ -97,7 +103,7 @@ function render(copy, locale, kind, auto = false) {
       '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(navigation[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
     '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' +
-    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata"><span>' + escape(ui.updated) + ': <time datetime="' + date + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + date + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
+    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata"><span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
     '<aside class="contents"><details><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
     doc.sections.map((s) => '<li><a href="#' + s.id + '">' + escape(s.title) + '</a></li>').join('') +
     '</ol></nav></details></aside><main id="document" tabindex="-1">' + (doc.summary.length ? '<section class="key-points" aria-labelledby="key-points"><h2 id="key-points">' + escape(ui.summary) + '</h2><ul>' +
@@ -149,13 +155,13 @@ for (const locale of languages) {
   const copy = JSON.parse(fs.readFileSync(path.join(root, 'content', locale + '.json'), 'utf8'));
   validate(copy, locale);
   notFoundCopies[locale] = { ui: copy.ui, notFound: copy.notFound, languageName: names[locale] };
-  for (const kind of ['privacy', 'terms', 'support', 'imprint']) {
+  for (const kind of ['privacy', 'terms', 'support', 'imprint', 'delete-account']) {
     const html = render(copy, locale, kind);
     generated.set('legal/' + locale + '/' + kind + '.html', html);
     generated.set('legal/' + locale + '/' + kind + '/index.html', html);
   }
 }
-const aliases = { privacy: ['privacy','datenschutz'], terms: ['terms','nutzungsbedingungen','agb'], support: ['support'], imprint: ['imprint','impressum'] };
+const aliases = { privacy: ['privacy','datenschutz'], terms: ['terms','nutzungsbedingungen','agb'], support: ['support'], imprint: ['imprint','impressum'], 'delete-account': ['delete-account'] };
 for (const [kind, names] of Object.entries(aliases)) {
   for (const name of names) {
     const html = render(english, 'en', kind, true);

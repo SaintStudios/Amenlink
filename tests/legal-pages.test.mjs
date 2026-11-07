@@ -10,22 +10,23 @@ const locales = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const script = read('assets/legal.js');
 const copies = Object.fromEntries(locales.map((locale) => [locale, JSON.parse(read('content/' + locale + '.json'))]));
-const kinds = ['privacy', 'terms', 'support', 'imprint'];
+const kinds = ['privacy', 'terms', 'support', 'imprint', 'delete-account'];
+const dates = { 'delete-account': '2026-11-07' };
 const htmlFiles = [];
 for (const locale of locales) {
   for (const kind of kinds) htmlFiles.push('legal/' + locale + '/' + kind + '.html', 'legal/' + locale + '/' + kind + '/index.html');
 }
-for (const name of ['privacy', 'terms', 'datenschutz', 'nutzungsbedingungen', 'agb', 'support', 'imprint', 'impressum']) {
+for (const name of ['privacy', 'terms', 'datenschutz', 'nutzungsbedingungen', 'agb', 'support', 'imprint', 'impressum', 'delete-account']) {
   htmlFiles.push(name + '.html', name + '/index.html');
 }
 
 // Every language contains complete documents even if scripts or the network fail.
 for (const locale of locales) {
   assert.deepEqual(Object.keys(copies[locale].ui).sort(), Object.keys(copies.en.ui).sort());
-  for (const kind of ['privacy', 'terms']) {
+  for (const kind of ['privacy', 'terms', 'deleteAccount']) {
     assert.doesNotMatch(JSON.stringify(copies[locale][kind]), /(?:"|[.!?]\s+)amen\b/, locale + ': sentence and heading starts must use Amen');
   }
-  for (const kind of ['privacy', 'terms']) {
+  for (const kind of ['privacy', 'terms', 'deleteAccount']) {
     const doc = copies[locale][kind];
     assert.deepEqual(doc.sections.map((s) => s.id), copies.en[kind].sections.map((s) => s.id));
     assert.equal(doc.summary.length, 4);
@@ -72,7 +73,8 @@ for (const file of htmlFiles) {
     'https://support.apple.com/en-us/118428',
     'https://support.apple.com/en-us/118223'
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
-  assert.ok(html.includes('datetime="2026-10-14"'));
+  const kind = html.match(/data-document="([^"]+)"/)[1];
+  assert.ok(html.includes('datetime="' + (dates[kind] || '2026-10-14') + '"'), file + ': wrong document date');
   assert.equal((html.match(/data-language="/g) || []).length, 6);
   assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
   assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'), file + ': language selection belongs below the document');
@@ -101,6 +103,15 @@ assert.match(copies.en.terms.intro, /Christian app/);
 assert.match(copies.en.terms.summary.join(' '), /does not cancel Apple billing/);
 assert.doesNotMatch(englishPrivacy, /No external AI|exclusively internally|only for the duration of the active session/);
 assert.match(read('terms.html'), /Article|consumer/);
+// Google Play needs one public page with the deletion steps, the deleted data and the retained data.
+for (const locale of locales) {
+  const ids = copies[locale].deleteAccount.sections.map((s) => s.id);
+  assert.deepEqual(ids, ['delete-in-app', 'delete-by-email', 'deleted-data', 'retained-data', 'subscription']);
+  const page = read('legal/' + locale + '/delete-account/index.html');
+  assert.ok(page.includes('href="https://support.google.com/googleplay/answer/7018481"'), locale + ': Google Play cancellation link');
+  assert.match(page, /Amen - Bible Chat/, locale + ': page names the store listing');
+  assert.match(page, /\b7\b/, locale + ': backup expiry is stated');
+}
 assert.match(read('assets/legal.css'), /@media print/);
 assert.match(read('assets/legal.css'), /:focus-visible/);
 
@@ -174,4 +185,4 @@ if (appLanguageArgument) {
   const appLocales = Array.from(enumBody.matchAll(/case \w+ = "([a-z]{2})"/g), (m) => m[1]).sort();
   assert.deepEqual([...locales].sort(), appLocales, 'website languages must match the app');
 }
-console.log('Legal checks passed: 64 pages, six languages, clean routes, older URLs, content, fallback, explicit selections, restricted storage and print action.');
+console.log('Legal checks passed: 76 pages, six languages, clean routes, older URLs, content, fallback, explicit selections, restricted storage and print action.');

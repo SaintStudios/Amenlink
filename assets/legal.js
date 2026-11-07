@@ -11,7 +11,7 @@
   }
   const root = document.documentElement;
   const kind = root.dataset.document;
-  if (!['privacy', 'terms', 'support', 'imprint'].includes(kind)) return;
+  if (!['privacy', 'terms', 'support', 'imprint', 'delete-account'].includes(kind)) return;
   const params = new URLSearchParams(window.location.search);
   const browserLocales = navigator.languages?.length ? Array.from(navigator.languages) : [navigator.language];
   const locale = params.has('lang') ? normalize(params.get('lang')) :

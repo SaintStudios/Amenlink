@@ -36,7 +36,10 @@
     "appleInformation": "Informazioni Apple",
     "more": "Scopri di più qui",
     "tiktokPrivacy": "Informativa sulla privacy di TikTok",
-    "appleSKAN": "Informazioni Apple su SKAdNetwork"
+    "appleSKAN": "Informazioni Apple su SKAdNetwork",
+    "deleteAccount": "Eliminare il tuo account",
+    "deleteAccountDescription": "Come eliminare il tuo account e i tuoi dati di Amen - Bible Chat, cosa viene eliminato e cosa viene conservato.",
+    "googlePlayCancel": "Annullare un abbonamento Google Play"
   },
   "privacy": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
@@ -504,6 +507,57 @@
         "paragraphs": [
           "Contatta l’assistenza di amen a {{email}} per l’app, l’account, l’accesso agli abbonamenti o reclami. I link Apple spiegano fatturazione, annullamento e rimborsi. Per richieste sulle informazioni personali, consulta {{privacy}}.",
           "Indica prodotto o funzione e descrivi brevemente. Riferimento ordine solo se necessario; niente password, carte complete o chat riservate superflui. Restano valide comunicazioni attraverso altri canali legalmente ammessi."
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "intro": "Questa pagina spiega come eliminare il tuo account di Amen - Bible Chat su Android e iOS, quali dati vengono eliminati e quali vengono conservati.",
+    "summary": [
+      "Elimina il tuo account nell’app in Tu → Elimina account. Viene eliminato subito e non può essere ripristinato.",
+      "Senza l’app, richiedi l’eliminazione via email all’indirizzo amenapphilfe@gmail.com.",
+      "Vengono eliminati account, profilo, conversazioni, messaggi salvati e progressi. I backup cifrati scadono entro 7 giorni.",
+      "Eliminare l’account non annulla un abbonamento Google Play o Apple."
+    ],
+    "sections": [
+      {
+        "id": "delete-in-app",
+        "title": "Eliminare l’account nell’app",
+        "paragraphs": [
+          "Apri amen e vai alla scheda Tu. Scorri fino in fondo e tocca Elimina account. Leggi l’avviso, tocca Continua alla conferma e conferma con Elimina account.",
+          "Il tuo account viene eliminato subito e vieni disconnesso automaticamente. L’eliminazione non può essere annullata. Se non si completa, tocca Riprova o contatta l’assistenza a {{email}}."
+        ]
+      },
+      {
+        "id": "delete-by-email",
+        "title": "Richiedere l’eliminazione senza l’app",
+        "paragraphs": [
+          "Se non hai più l’app o non riesci ad aprire il tuo account, scrivi a {{email}} con oggetto “Elimina il mio account amen”. Invia l’email dall’account Google collegato in amen oppure indica il tuo nome visualizzato in amen, così possiamo trovare il tuo account.",
+          "Potremmo farti una breve domanda per verificare che l’account sia tuo; non ti chiederemo mai la password. Eliminiamo l’account entro un mese e confermiamo l’eliminazione via email."
+        ]
+      },
+      {
+        "id": "deleted-data",
+        "title": "Cosa viene eliminato",
+        "paragraphs": [
+          "L’eliminazione dell’account rimuove definitivamente il tuo accesso e l’eventuale account Google collegato, il tuo nome, la foto profilo e le impostazioni dell’app come lingua e confessione, tutte le conversazioni, la cronologia della chat e i messaggi salvati, i tuoi progressi, i badge e la posizione in classifica, le registrazioni per le notifiche e le segnalazioni che hai inviato sulle risposte dell’IA.",
+          "Vengono rimossi anche i dati dell’account salvati sul tuo telefono. Puoi inoltre eliminare in qualsiasi momento singole conversazioni e messaggi salvati nell’app senza eliminare l’account."
+        ]
+      },
+      {
+        "id": "retained-data",
+        "title": "Cosa viene conservato e per quanto tempo",
+        "paragraphs": [
+          "I dati eliminati possono restare nei backup cifrati del server fino alla loro scadenza, al massimo 7 giorni dopo l’eliminazione. Non vengono ripristinati da essi né usati per altri scopi.",
+          "Google Play, Apple e il nostro fornitore di convalida degli acquisti conservano le registrazioni degli acquisti con un identificativo anonimo, non con il tuo nome, per il tempo richiesto dalle norme su fatturazione, fisco e prevenzione delle frodi. Le copie che hai esportato o condiviso fuori dall’app non sono interessate."
+        ]
+      },
+      {
+        "id": "subscription",
+        "title": "Annullare l’abbonamento separatamente",
+        "paragraphs": [
+          "Eliminare l’account o disinstallare l’app non annulla un abbonamento Amen Plus. Su Android, annullalo in Google Play: {{googlePlayCancel}}.",
+          "Su iPhone, annullalo nel tuo account Apple: {{cancel}}. Anche disinstallare l’app da sola non elimina il tuo account; segui i passaggi sopra."
         ]
       }
     ]

@@ -36,7 +36,10 @@
     "appleInformation": "Informations Apple",
     "more": "En savoir plus ici",
     "tiktokPrivacy": "Politique de confidentialité de TikTok",
-    "appleSKAN": "Informations Apple sur SKAdNetwork"
+    "appleSKAN": "Informations Apple sur SKAdNetwork",
+    "deleteAccount": "Supprimer votre compte",
+    "deleteAccountDescription": "Comment supprimer votre compte et vos données Amen - Bible Chat, ce qui est supprimé et ce qui est conservé.",
+    "googlePlayCancel": "Résilier un abonnement Google Play"
   },
   "privacy": {
     "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Cette politique explique l’utilisation des informations personnelles dans l’app : comptes, préférences de lecture, discussion IA Nema, audio et abonnements. Les informations traitées dépendent des fonctions choisies.",
@@ -504,6 +507,57 @@
         "paragraphs": [
           "Contactez l’assistance amen à {{email}} pour l’app, le compte, l’accès aux abonnements ou les réclamations. Les liens Apple expliquent facturation, résiliation et remboursement. Pour les demandes sur les informations personnelles, consultez {{privacy}}.",
           "Indiquez produit ou fonction et décrivez brièvement le souci. Référence de commande seulement si nécessaire ; jamais mots de passe, carte complète ou chats privés inutiles. Ces conseils ne limitent pas les notifications valides par d’autres voies légalement permises."
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "intro": "Cette page explique comment supprimer votre compte Amen - Bible Chat sur Android et iOS, quelles données sont supprimées et lesquelles sont conservées.",
+    "summary": [
+      "Supprimez votre compte dans l’app sous Toi → Supprimer le compte. Il est supprimé immédiatement et ne peut pas être restauré.",
+      "Sans l’app, demandez la suppression par e-mail à amenapphilfe@gmail.com.",
+      "Votre compte, votre profil, vos conversations, vos messages enregistrés et votre progression sont supprimés. Les sauvegardes chiffrées expirent sous 7 jours.",
+      "Supprimer votre compte ne résilie pas un abonnement Google Play ou Apple."
+    ],
+    "sections": [
+      {
+        "id": "delete-in-app",
+        "title": "Supprimer votre compte dans l’app",
+        "paragraphs": [
+          "Ouvrez amen et allez dans l’onglet Toi. Faites défiler jusqu’en bas et touchez Supprimer le compte. Lisez l’avertissement, touchez Continuer vers la confirmation et confirmez avec Supprimer le compte.",
+          "Votre compte est supprimé immédiatement et vous êtes déconnecté automatiquement. La suppression est irréversible. Si elle n’aboutit pas, touchez Réessayer ou contactez l’assistance à {{email}}."
+        ]
+      },
+      {
+        "id": "delete-by-email",
+        "title": "Demander la suppression sans l’app",
+        "paragraphs": [
+          "Si vous n’avez plus l’app ou ne pouvez pas ouvrir votre compte, écrivez à {{email}} avec l’objet « Supprimer mon compte amen ». Envoyez-le depuis le compte Google associé dans amen, ou indiquez votre nom affiché dans amen pour que nous puissions trouver votre compte.",
+          "Nous pouvons vous poser une courte question pour vérifier que le compte vous appartient ; nous ne vous demanderons jamais votre mot de passe. Nous supprimons le compte sous un mois et confirmons la suppression par e-mail."
+        ]
+      },
+      {
+        "id": "deleted-data",
+        "title": "Ce qui est supprimé",
+        "paragraphs": [
+          "La suppression du compte efface définitivement votre connexion et tout compte Google associé, votre nom, votre photo de profil et les réglages de l’app comme la langue et la confession, toutes les conversations, l’historique de chat et les messages enregistrés, votre progression, vos badges et votre place au classement, les inscriptions aux notifications et les signalements que vous avez envoyés sur des réponses de l’IA.",
+          "Les données du compte enregistrées sur votre téléphone sont également supprimées. Vous pouvez aussi supprimer à tout moment des conversations et des messages enregistrés dans l’app sans supprimer votre compte."
+        ]
+      },
+      {
+        "id": "retained-data",
+        "title": "Ce qui est conservé et pendant combien de temps",
+        "paragraphs": [
+          "Les données supprimées peuvent rester dans des sauvegardes chiffrées du serveur jusqu’à leur expiration, au plus 7 jours après la suppression. Elles n’en sont pas restaurées et ne sont utilisées à aucune autre fin.",
+          "Google Play, Apple et notre prestataire de validation des achats conservent les justificatifs d’achat sous un identifiant anonyme, et non sous votre nom, aussi longtemps que l’exigent les règles de facturation, fiscales et de prévention de la fraude. Les copies que vous avez exportées ou partagées hors de l’app ne sont pas concernées."
+        ]
+      },
+      {
+        "id": "subscription",
+        "title": "Résilier l’abonnement séparément",
+        "paragraphs": [
+          "Supprimer votre compte ou désinstaller l’app ne résilie pas un abonnement Amen Plus. Sur Android, résiliez-le dans Google Play : {{googlePlayCancel}}.",
+          "Sur iPhone, résiliez-le dans votre compte Apple : {{cancel}}. Désinstaller l’app ne supprime pas non plus votre compte à elle seule ; suivez les étapes ci-dessus."
         ]
       }
     ]

@@ -36,7 +36,10 @@
     "appleInformation": "Apple information",
     "more": "See more here",
     "tiktokPrivacy": "TikTok privacy policy",
-    "appleSKAN": "Apple SKAdNetwork information"
+    "appleSKAN": "Apple SKAdNetwork information",
+    "deleteAccount": "Delete your account",
+    "deleteAccountDescription": "How to delete your Amen - Bible Chat account and data, what is deleted and what is kept.",
+    "googlePlayCancel": "Google Play subscription cancellation"
   },
   "privacy": {
     "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy explains how personal information is used in the app, including accounts, reading preferences, Nema AI chat, audio and subscriptions. The information processed depends on the features you choose.",
@@ -504,6 +507,57 @@
         "paragraphs": [
           "Contact amen support at {{email}} for app help, account questions, subscription access or complaints. Apple's linked guidance explains its billing, cancellation and refund processes. For personal-information requests, see {{privacy}}.",
           "Include the product or feature concerned and a concise description. Share an order reference only when needed and avoid passwords, full card details and unnecessary private conversation content. These contact instructions do not restrict legally valid notices or require use of a particular channel where the law permits another."
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "intro": "This page explains how to delete your account in Amen - Bible Chat on Android and iOS, which data is deleted and which data is kept.",
+    "summary": [
+      "Delete your account in the app under You → Delete Account. It is deleted immediately and cannot be restored.",
+      "Without the app, request deletion by email at amenapphilfe@gmail.com.",
+      "Your account, profile, conversations, saved messages and progress are deleted. Encrypted backups expire within 7 days.",
+      "Deleting your account does not cancel a Google Play or Apple subscription."
+    ],
+    "sections": [
+      {
+        "id": "delete-in-app",
+        "title": "Delete your account in the app",
+        "paragraphs": [
+          "Open amen and go to the You tab. Scroll to the bottom and tap Delete Account. Read the notice, tap Continue to Confirmation and confirm with Delete Account.",
+          "Your account is deleted immediately and you are signed out automatically. Deletion cannot be undone. If it does not complete, tap Try Again or contact support at {{email}}."
+        ]
+      },
+      {
+        "id": "delete-by-email",
+        "title": "Request deletion without the app",
+        "paragraphs": [
+          "If you no longer have the app or cannot open your account, email {{email}} with the subject “Delete my amen account”. Send it from the Google account you linked in amen, or include your amen display name so we can find your account.",
+          "We may ask a short question to confirm that the account is yours; we will never ask for your password. We delete the account within one month and confirm the deletion by email."
+        ]
+      },
+      {
+        "id": "deleted-data",
+        "title": "What is deleted",
+        "paragraphs": [
+          "Deleting your account permanently removes your login and any linked Google account, your name, profile picture and app settings such as language and denomination, all conversations, chat history and saved messages, your progress, badges and leaderboard entry, notification registrations and reports you sent about AI responses.",
+          "The data stored on your phone for the account is removed as well. You can also delete individual conversations and saved messages in the app at any time without deleting your account."
+        ]
+      },
+      {
+        "id": "retained-data",
+        "title": "What is kept and for how long",
+        "paragraphs": [
+          "Deleted data can remain in encrypted server backups until they expire, at most 7 days after deletion. It is not restored from them or used for any other purpose.",
+          "Records of purchases are kept by Google Play, Apple and our purchase validation provider under an anonymous ID, not your name, for as long as billing, tax and fraud-prevention law requires. Copies you exported or shared outside the app are not affected."
+        ]
+      },
+      {
+        "id": "subscription",
+        "title": "Cancel your subscription separately",
+        "paragraphs": [
+          "Deleting your account or uninstalling the app does not cancel an Amen Plus subscription. On Android, cancel it in Google Play: {{googlePlayCancel}}.",
+          "On iPhone, cancel it in your Apple account: {{cancel}}. Uninstalling the app alone does not delete your account either; use the steps above."
         ]
       }
     ]

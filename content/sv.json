@@ -36,7 +36,10 @@
     "appleInformation": "Information från Apple",
     "more": "Läs mer här",
     "tiktokPrivacy": "TikToks integritetspolicy",
-    "appleSKAN": "Apples information om SKAdNetwork"
+    "appleSKAN": "Apples information om SKAdNetwork",
+    "deleteAccount": "Radera ditt konto",
+    "deleteAccountDescription": "Så raderar du ditt konto och dina data i Amen - Bible Chat, vad som raderas och vad som sparas.",
+    "googlePlayCancel": "Säg upp ett Google Play-abonnemang"
   },
   "privacy": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
@@ -504,6 +507,57 @@
         "paragraphs": [
           "Kontakta amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Apples länkar beskriver fakturering, uppsägning och återbetalning. För personuppgiftsförfrågningar, se {{privacy}}.",
           "Ange produkt eller funktion och beskriv kort. Orderreferens bara vid behov; inga lösenord, hela kortnummer eller onödiga privata chattar. Andra lagligen tillåtna och giltiga meddelanden begränsas inte."
+        ]
+      }
+    ]
+  },
+  "deleteAccount": {
+    "intro": "Den här sidan förklarar hur du raderar ditt konto i Amen - Bible Chat på Android och iOS, vilka data som raderas och vilka som sparas.",
+    "summary": [
+      "Radera ditt konto i appen under Du → Radera konto. Det raderas direkt och kan inte återställas.",
+      "Utan appen kan du begära radering via e-post till amenapphilfe@gmail.com.",
+      "Konto, profil, konversationer, sparade meddelanden och framsteg raderas. Krypterade säkerhetskopior löper ut inom 7 dagar.",
+      "Att radera kontot säger inte upp ett abonnemang hos Google Play eller Apple."
+    ],
+    "sections": [
+      {
+        "id": "delete-in-app",
+        "title": "Radera kontot i appen",
+        "paragraphs": [
+          "Öppna amen och gå till fliken Du. Skrolla längst ned och tryck på Radera konto. Läs informationen, tryck på Fortsätt till bekräftelse och bekräfta med Radera konto.",
+          "Ditt konto raderas direkt och du loggas ut automatiskt. Raderingen kan inte ångras. Om den inte slutförs, tryck på Försök igen eller kontakta support på {{email}}."
+        ]
+      },
+      {
+        "id": "delete-by-email",
+        "title": "Begär radering utan appen",
+        "paragraphs": [
+          "Om du inte längre har appen eller inte kan öppna ditt konto, mejla {{email}} med ämnet ”Radera mitt amen-konto”. Skicka det från Google-kontot du kopplade i amen, eller ange ditt visningsnamn i amen så att vi kan hitta ditt konto.",
+          "Vi kan ställa en kort fråga för att bekräfta att kontot är ditt; vi frågar aldrig efter ditt lösenord. Vi raderar kontot inom en månad och bekräftar raderingen via e-post."
+        ]
+      },
+      {
+        "id": "deleted-data",
+        "title": "Vad som raderas",
+        "paragraphs": [
+          "När du raderar kontot tas din inloggning och ett eventuellt kopplat Google-konto bort permanent, liksom ditt namn, din profilbild och appinställningar som språk och samfund, alla konversationer, chatthistorik och sparade meddelanden, dina framsteg, märken och din plats på topplistan, registreringar för aviseringar och rapporter du har skickat om AI-svar.",
+          "Kontots data på din telefon tas också bort. Du kan dessutom när som helst radera enskilda konversationer och sparade meddelanden i appen utan att radera ditt konto."
+        ]
+      },
+      {
+        "id": "retained-data",
+        "title": "Vad som sparas och hur länge",
+        "paragraphs": [
+          "Raderade data kan finnas kvar i krypterade säkerhetskopior på servern tills de löper ut, högst 7 dagar efter raderingen. De återställs inte därifrån och används inte för något annat syfte.",
+          "Köpposter sparas av Google Play, Apple och vår leverantör för köpvalidering under ett anonymt id, inte ditt namn, så länge regler om fakturering, skatt och bedrägeriförebyggande kräver. Kopior som du har exporterat eller delat utanför appen påverkas inte."
+        ]
+      },
+      {
+        "id": "subscription",
+        "title": "Säg upp abonnemanget separat",
+        "paragraphs": [
+          "Att radera kontot eller avinstallera appen säger inte upp ett Amen Plus-abonnemang. På Android säger du upp det i Google Play: {{googlePlayCancel}}.",
+          "På iPhone säger du upp det i ditt Apple-konto: {{cancel}}. Att bara avinstallera appen raderar inte heller ditt konto; följ stegen ovan."
         ]
       }
     ]
