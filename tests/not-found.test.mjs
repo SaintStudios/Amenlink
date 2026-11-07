@@ -46,7 +46,7 @@ for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)/g)) {
 function element(dataset = {}) {
   return { dataset, textContent: '', attributes: {}, setAttribute(key, value) { this.attributes[key] = value; }, removeAttribute(key) { delete this.attributes[key]; } };
 }
-function run({ languages = ['en-US'], browserLanguage = 'en-US', url = 'https://amen-app.com/missing/deep/page?old=value#top' } = {}) {
+function run({ languages = ['en-US'], browserLanguage = 'en-US', url = 'https://amen-app.com/missing/deep/page?old=value#top', referrer = '' } = {}) {
   const copyElements = Array.from(html.matchAll(/data-copy="([^\"]+)"/g), (match) => element({ copy: match[1] }));
   const legalLinks = Array.from(html.matchAll(/data-legal-document="([^\"]+)"/g), (match) => element({ legalDocument: match[1] }));
   const languageLinks = locales.map((locale) => element({ errorLanguage: locale }));
@@ -54,7 +54,7 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', url = 'https://
   const named = { '.brand': element(), '.site-header nav': element(), '.languages': element(), '.auto-language': auto, 'meta[name="description"]': element() };
   const current = element();
   const document = {
-    documentElement: { lang: 'en' }, title: '',
+    documentElement: { lang: 'en' }, title: '', referrer,
     getElementById: (id) => id === 'not-found-copy' ? { textContent: data } : current,
     querySelector: (selector) => named[selector],
     querySelectorAll: (selector) => ({ '[data-copy]': copyElements, '[data-legal-document]': legalLinks, '[data-error-language]': languageLinks })[selector]
@@ -104,4 +104,18 @@ for (const pathname of ['/missing', '/missing/deep/page.html', '/404/']) {
 for (const pathname of ['/404.html', '/404/index.html']) {
   assert.deepEqual(run({ url: 'https://amen-app.com' + pathname + '?lang=de#document' }).redirects, ['/404/?lang=de#document']);
 }
-console.log('404 checks passed: six translations, English fallback, nested missing paths, clean recovery links, preview aliases and restricted storage.');
+const lang = (options) => run(options).document.documentElement.lang;
+// The language written in a missing localized link wins over the browser language.
+assert.equal(lang({ languages: ['de-DE'], url: 'https://amen-app.com/legal/fr/delete-acount/' }), 'fr');
+assert.equal(lang({ languages: ['fr-FR'], url: 'https://amen-app.com/legal/en/privcy/' }), 'en');
+assert.equal(lang({ languages: ['de-DE'], url: 'https://amen-app.com/fr/missing' }), 'fr');
+assert.equal(lang({ languages: ['fr-FR'], url: 'https://amen-app.com/legal/pt/privacy/' }), 'en', 'unsupported link language falls back to English');
+assert.equal(lang({ languages: ['de-DE'], url: 'https://amen-app.com/legal/fr/missing?lang=it' }), 'it', 'explicit ?lang still wins');
+assert.equal(lang({ languages: ['de-DE'], url: 'https://amen-app.com/xy/missing' }), 'de', 'unknown short segments are not languages');
+// A broken link followed from a localized page keeps that page's language.
+assert.equal(lang({ languages: ['de-DE'], referrer: 'https://amen-app.com/legal/fr/privacy/' }), 'fr');
+assert.equal(lang({ languages: ['de-DE'], referrer: 'https://other.example/legal/fr/privacy/' }), 'de', 'other sites do not choose the language');
+assert.equal(lang({ languages: ['de-DE'], referrer: 'not a url' }), 'de');
+const french = run({ languages: ['de-DE'], url: 'https://amen-app.com/legal/fr/delete-acount/' });
+for (const link of french.legalLinks) assert.equal(link.attributes.href, '/legal/fr/' + link.dataset.legalDocument + '/');
+console.log('404 checks passed: six translations, English fallback, nested missing paths, link and referring-page language, clean recovery links, preview aliases and restricted storage.');
