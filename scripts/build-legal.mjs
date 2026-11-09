@@ -17,7 +17,8 @@ const platformIcons = {
   ios: 'M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701',
   android: 'M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z'
 };
-const platformKinds = ['privacy', 'terms', 'support'];
+// Every legal page has an iOS and an Android URL, so the chosen platform stays the same while reading.
+const platformKinds = ['privacy', 'terms', 'support', 'imprint', 'delete-account'];
 // Support has no text of its own: it repeats sections of the privacy policy and terms for the same platform.
 const androidTexts = ['privacy', 'terms'];
 const androidDate = '2026-11-09';
@@ -88,6 +89,14 @@ function validate(copy, locale) {
   }
 }
 
+const globe = '<svg class="picker-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3Z"/></svg>';
+const chevron = '<svg class="picker-chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7 10 5 5 5-5"/></svg>';
+// One compact pill: globe, current language, chevron. The menu opens upward and works without JavaScript.
+function languagePicker(label, current, links, labelAttributes = '') {
+  return '<details class="language-picker"><summary><span class="sr-only"' + labelAttributes + '>' + escape(label) + '</span>' + globe + current + chevron + '</summary>' +
+    '<nav class="languages" aria-label="' + escape(label) + '">' + links + '</nav></details>';
+}
+
 export function androidDocument(copy, kind) {
   const document = copy.android[kind];
   return {
@@ -119,12 +128,12 @@ function render(copy, locale, kind, auto = false, platform = null) {
     intro: ui.imprintDescription,
     summary: [],
     sections: [
-      copy.terms.sections.find((s) => s.id === 'provider'),
-      copy.terms.sections.find((s) => s.id === 'disputes'),
-      copy.terms.sections.find((s) => s.id === 'contact')
+      terms.sections.find((s) => s.id === 'provider'),
+      terms.sections.find((s) => s.id === 'disputes'),
+      terms.sections.find((s) => s.id === 'contact')
     ]
   } : kind === 'privacy' ? privacy : kind === 'terms' ? terms : copy[key(kind)];
-  // Privacy and terms links stay on the platform being read; the other documents have one version.
+  // Links stay on the platform being read.
   const url = (type, lang = locale, on = platform) => '/legal/' + lang + '/' + (on && platformKinds.includes(type) ? on + '/' : '') + type + '/';
   const links = { ...external, privacy: url('privacy'), terms: url('terms'), deleteAccount: url('delete-account') };
   const rich = (s) => escape(s).replace(/\{\{(\w+)\}\}/g, (_, key) => {
@@ -142,10 +151,9 @@ function render(copy, locale, kind, auto = false, platform = null) {
       ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>';
   const providerReferences = shown === 'android' ? ['google'] : ['google', 'googlePrivacy', 'tiktokPrivacy', 'appleSKAN'];
   // Plain links, so the choice works without JavaScript and every shared URL names its platform.
-  const platformSwitch = versioned ? '<nav class="platform-switch" aria-label="' + escape(ui.platform) + '"><span class="platform-options">' +
+  const platformSwitch = '<nav class="platform-switch" aria-label="' + escape(ui.platform) + '">' +
     platforms.map((p) => '<a data-platform-link="' + p + '" href="' + url(kind, locale, p) + '"' + (p === shown ? ' aria-current="page"' : '') + ' aria-label="' + platformNames[p] + '" title="' + platformNames[p] + '">' +
-      '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="' + platformIcons[p] + '"/></svg></a>').join('') +
-    '</span>' + (platform ? '' : '<span class="platform-hint">' + escape(ui.platformHint) + '</span>') + '</nav>' : '';
+      '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="' + platformIcons[p] + '"/></svg></a>').join('') + '</nav>';
   // The shared URL keeps its old x-default; a platform URL points at its English page on the same platform.
   const fallback = platform ? url(kind, 'en') : '/' + kind + '/';
   return '<!doctype html>\n' +
@@ -164,8 +172,8 @@ function render(copy, locale, kind, auto = false, platform = null) {
     '<nav aria-label="' + escape(ui.documents) + '">' + ['privacy', 'terms', 'imprint', 'support'].map((type) =>
       '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(navigation[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
-    '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' + platformSwitch +
-    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata">' + (shown ? '<span class="print-only">' + escape(ui.platform) + ': ' + platformNames[shown] + '</span>' : '') + '<span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
+    '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' +
+    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata">' + '<span class="platform-tag">' + platformNames[shown] + '</span>' + '<span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
     '<aside class="contents"><details><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
     doc.sections.map((s) => '<li><a href="#' + s.id + '">' + escape(s.title) + '</a></li>').join('') +
     '</ol></nav></details></aside><main id="document" tabindex="-1">' + (doc.summary.length ? '<section class="key-points" aria-labelledby="key-points"><h2 id="key-points">' + escape(ui.summary) + '</h2><ul>' +
@@ -176,10 +184,10 @@ function render(copy, locale, kind, auto = false, platform = null) {
     (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
       providerReferences.map(reference).join('') + '</ul></section>' : '') +
     '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
-    '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(navigation[type]) + '</a>').join('') + '</div>' +
-    '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
-    languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
-    '<a class="auto-language" href="/' + kind + '/' + (platform ? '?platform=' + platform : '') + '">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
+    '<footer><div class="footer-inner"><span class="footer-brand">' + escape(ui.copyright) + '</span><div class="footer-controls">' + platformSwitch +
+    languagePicker(ui.language, '<span>' + names[locale] + '</span>', languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
+      '<a class="auto-language" href="/' + kind + '/' + (platform ? '?platform=' + platform : '') + '">' + escape(ui.auto) + '</a>') +
+    '</div></div></footer>\n</body>\n</html>\n';
 }
 
 function renderNotFound(copies) {
@@ -204,10 +212,10 @@ function renderNotFound(copies) {
     '<p class="error-description" data-copy="notFound.description">' + escape(copy.description) + '</p>\n' +
     '<a class="home-action" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-copy="notFound.homeAction">' + escape(copy.homeAction) + '</span></a>\n' +
     '<p class="verse-note"><span data-copy="notFound.verse">' + escape(copy.verse) + '</span><span class="scripture-reference" data-copy="notFound.verseReference">' + escape(copy.verseReference) + '</span></p>\n</main>\n' +
-    '<footer><div class="footer-links"><span>Amen</span>' + navigation + '</div>' +
-    '<details class="language-picker"><summary><span data-copy="ui.language">' + escape(ui.language) + '</span> · <span id="current-language">English</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
-    languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +
-    '<a class="auto-language" href="?" data-copy="ui.auto">' + escape(ui.auto) + '</a></nav></details></footer>\n' +
+    '<footer><div class="footer-inner"><span class="footer-brand">Amen</span><div class="footer-controls">' +
+    languagePicker(ui.language, '<span id="current-language">English</span>', languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +
+      '<a class="auto-language" href="?" data-copy="ui.auto">' + escape(ui.auto) + '</a>', ' data-copy="ui.language"') +
+    '</div></div></footer>\n' +
     '<script type="application/json" id="not-found-copy">' + data + '</script>\n</body>\n</html>\n';
 }
 

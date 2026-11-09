@@ -2,8 +2,8 @@
   'use strict';
   const supported = ['en', 'de', 'es', 'fr', 'it', 'sv'];
   const platforms = ['ios', 'android'];
-  // Privacy, terms and support have an iOS and an Android version. The other documents have one.
-  const versioned = ['privacy', 'terms', 'support'];
+  // Every legal page has an iOS and an Android URL.
+  const versioned = ['privacy', 'terms', 'support', 'imprint', 'delete-account'];
   function normalize(locale) {
     if (typeof locale !== 'string') return 'en';
     const language = locale.trim().replace(/_/g, '-').split('-')[0].toLowerCase();

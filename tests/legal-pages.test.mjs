@@ -23,7 +23,7 @@ const platforms = ['ios', 'android'];
 const platformFiles = [];
 for (const locale of locales) {
   for (const platform of platforms) {
-    for (const kind of ['privacy', 'terms', 'support']) platformFiles.push('legal/' + locale + '/' + platform + '/' + kind + '/index.html');
+    for (const kind of kinds) platformFiles.push('legal/' + locale + '/' + platform + '/' + kind + '/index.html');
   }
 }
 htmlFiles.push(...platformFiles);
@@ -74,13 +74,13 @@ for (const locale of locales) {
     for (const other of ['privacy', 'terms']) assert.doesNotMatch(html, new RegExp('href="/legal/' + locale + '/' + other + '/"'), locale + '/' + kind + ': Android page links the shared ' + other + ' URL');
   }
   // The iOS URLs show exactly the iOS text that the shared URLs have always shown.
-  for (const kind of ['privacy', 'terms', 'support']) {
+  for (const kind of kinds) {
     const shared = read('legal/' + locale + '/' + kind + '/index.html');
     const ios = read('legal/' + locale + '/ios/' + kind + '/index.html');
     assert.equal(mainText(ios).replaceAll('/legal/' + locale + '/ios/', '/legal/' + locale + '/'), mainText(shared), locale + '/' + kind + ': iOS text must match the shared page');
     assert.match(ios, /data-platform-link="ios" href="[^"]+" aria-current="page"/);
     assert.match(shared, /data-platform=""/);
-    assert.match(shared, /class="platform-hint"/, locale + '/' + kind + ': the shared page explains the choice');
+    assert.match(shared, /<span class="platform-tag">iOS<\/span>/, locale + '/' + kind + ': the shared page says which version it shows');
   }
 }
 
@@ -145,8 +145,11 @@ for (const file of htmlFiles) {
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
   const kind = html.match(/data-document="([^"]+)"/)[1];
   assert.ok(html.includes('datetime="' + (android ? androidDate : dates[kind] || sharedDate) + '"'), file + ': wrong document date');
-  if (['privacy', 'terms', 'support'].includes(kind)) assert.equal((html.match(/data-platform-link="/g) || []).length, 2, file + ': the platform choice is visible');
-  else assert.doesNotMatch(html, /platform-switch/, file + ': only privacy, terms and support have platform versions');
+  // Platform and language choices sit together in the footer of every page.
+  assert.equal((html.match(/data-platform-link="/g) || []).length, 2, file + ': the platform choice is visible');
+  const footer = html.slice(html.indexOf('<footer>'));
+  assert.ok(footer.includes('class="platform-switch"') && footer.includes('class="language-picker"'), file + ': platform and language choices belong in the footer');
+  assert.ok(html.indexOf('class="platform-switch"') > html.indexOf('</main>'), file + ': no platform switch above the document');
   assert.equal((html.match(/data-language="/g) || []).length, 6);
   assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
   assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'), file + ': language selection belongs below the document');
@@ -257,7 +260,7 @@ const ua = {
   mac: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15',
   windows: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36'
 };
-for (const kind of ['privacy', 'terms', 'support']) {
+for (const kind of kinds) {
   const shared = { auto: false, pathname: '/legal/de/' + kind + '/', language: 'de', kind, platform: '' };
   assert.deepEqual(run({ ...shared, userAgent: ua.android, hash: '#rights' }).redirects, ['/legal/de/android/' + kind + '/#rights']);
   assert.deepEqual(run({ ...shared, userAgent: ua.iphone }).redirects, ['/legal/de/ios/' + kind + '/']);
@@ -280,9 +283,6 @@ for (const kind of ['privacy', 'terms', 'support']) {
   assert.deepEqual(run({ kind, platform: '', languages: ['de-AT'], userAgent: ua.android, pathname: '/' + kind + '/' }).redirects, ['/legal/de/android/' + kind + '/']);
   assert.deepEqual(run({ kind, platform: '', languages: ['it-IT'], search: '?platform=android', pathname: '/' + kind + '/' }).redirects, ['/legal/it/android/' + kind + '/']);
   assert.deepEqual(run({ kind, platform: '', languages: ['es-ES'], userAgent: ua.windows, pathname: '/' + kind + '/' }).redirects, ['/legal/es/' + kind + '/']);
-}
-for (const kind of ['imprint', 'delete-account']) {
-  assert.deepEqual(run({ auto: false, pathname: '/legal/en/' + kind + '/', kind, userAgent: ua.android, search: '?platform=android' }).redirects, [], kind + ' has one version');
 }
 
 for (const locale of locales) {

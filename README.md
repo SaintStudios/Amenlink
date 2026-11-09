@@ -31,16 +31,14 @@ CI checks translation structure, paragraph links, generated files, internal link
 
 ## iOS and Android versions
 
-Privacy, terms and support have one version per app, in all six languages:
+Every legal page (privacy, terms, support, legal information, account deletion) has an iOS and an Android URL in all six languages, for example `/legal/<language>/android/privacy/` and `/legal/<language>/ios/terms/`.
 
-- `/legal/<language>/ios/privacy/`, `/legal/<language>/ios/terms/` and `/legal/<language>/ios/support/`
-- `/legal/<language>/android/privacy/`, `/legal/<language>/android/terms/` and `/legal/<language>/android/support/`
+The iOS text is the existing shared text. The Android text lives under `android` in each content file: a section with only an `id` reuses the iOS section, a section with paragraphs replaces it or adds an Android-only one. Support and legal information repeat sections of the same platform's privacy policy and terms.
 
-The iOS text is the existing shared text, unchanged. The Android text lives under `android` in each content file. A section there with only an `id` reuses the iOS section; a section with paragraphs replaces it or adds an Android-only one. Support, legal information and account deletion have one version.
-
-- An explicit `/ios/` or `/android/` URL always shows that platform, whatever the device. Language links keep the platform.
-- The shared URLs (`/legal/<language>/privacy/`, `/privacy/`, `/datenschutz/`, `/agb/` and the other older routes) still work. `?platform=android` or `?platform=ios` selects a platform; otherwise an Android phone opens the Android URL and an iPhone or iPad the iOS URL. A desktop stays on the shared URL, which shows the iOS text and a visible iOS/Android switch. Without JavaScript the shared URL shows the iOS text with the same switch.
-- The choice is made in the browser from the URL and device, never stored, so cached pages and shared links cannot carry the wrong platform. Every platform URL has its own canonical URL.
+- The footer of every page holds the platform switch (Apple and Android icons) and the language menu. Links on a page stay on its platform and language.
+- An explicit `/ios/` or `/android/` URL always shows that platform, whatever the device.
+- Shared URLs (`/legal/<language>/privacy/`, `/privacy/`, `/datenschutz/`, `/agb/` and the other older routes) still work. `?platform=android` or `?platform=ios` selects a platform; otherwise an Android phone opens the Android URL and an iPhone or iPad the iOS URL. A desktop stays on the shared URL, which shows the iOS text, an iOS label under the introduction and the footer switch.
+- The choice is made in the browser from the URL and device and is never stored, so cached pages and shared links cannot carry the wrong platform.
 
 ## Language behavior and compatibility
 
@@ -49,7 +47,7 @@ The iOS text is the existing shared text, unchanged. The Android text lives unde
 - Explicit /legal/de/privacy/ links preserve that language regardless of browser preferences. Navigation among documents preserves the selection. Language links also preserve the current section. All public navigation, canonical metadata and language links use clean directory URLs.
 - Pages contain all text before JavaScript runs. With JavaScript unavailable, automatic entry pages show complete English documents and all six explicit language links still work.
 - The site does not store language preferences in cookies or browser storage. No translation request, external font, analytics SDK or advertising pixel is added.
-- One compact language disclosure appears at the very bottom of each document, after the footer links. The language menu and contents list start collapsed and remain usable without JavaScript.
+- The footer holds the brand, the platform switch and a compact language menu that opens upward. The language menu and contents list start collapsed and remain usable without JavaScript.
 - /privacy, /terms, /datenschutz, /nutzungsbedingungen and /agb, their .html versions and trailing-slash versions remain supported. /support, /imprint and /impressum work the same way.
 - Older localized .html URLs redirect in the browser to the corresponding clean URL, preserving the selected language and section. They still contain the full document when JavaScript is unavailable.
 - The iOS source uses the same localized amen-app.com clean privacy and terms URLs through AppLegalLinks, including Profile → Legal and Contact, onboarding privacy and the deletion-offer paywall privacy link. Installed app versions and App Store metadata are separate from source changes. This repository cannot redirect the older amenbible.app or amen-ai.com domains.
