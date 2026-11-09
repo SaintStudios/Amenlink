@@ -19,6 +19,68 @@ for (const locale of locales) {
 for (const name of ['privacy', 'terms', 'datenschutz', 'nutzungsbedingungen', 'agb', 'support', 'imprint', 'impressum', 'delete-account']) {
   htmlFiles.push(name + '.html', name + '/index.html');
 }
+const platforms = ['ios', 'android'];
+const platformFiles = [];
+for (const locale of locales) {
+  for (const platform of platforms) {
+    for (const kind of ['privacy', 'terms', 'support']) platformFiles.push('legal/' + locale + '/' + platform + '/' + kind + '/index.html');
+  }
+}
+htmlFiles.push(...platformFiles);
+const androidDate = '2026-11-09';
+const mainText = (html) => html.slice(html.indexOf('<main'), html.indexOf('</main>'));
+
+// Android lists only what differs from iOS. Every language must follow the English structure.
+for (const locale of locales) {
+  for (const kind of ['privacy', 'terms']) {
+    const doc = copies[locale].android[kind];
+    const english = copies.en.android[kind];
+    assert.equal(doc.summary.length, 4);
+    assert.deepEqual(doc.sections.map((s) => s.id), english.sections.map((s) => s.id), locale + ': Android ' + kind + ' sections');
+    assert.doesNotMatch(JSON.stringify(doc), /(?:"|[.!?]\s+)amen\b/, locale + ': sentence and heading starts must use Amen');
+    doc.sections.forEach((section, i) => {
+      assert.equal(Boolean(section.paragraphs), Boolean(english.sections[i].paragraphs), locale + ': Android reuse must match English: ' + section.id);
+      if (!section.paragraphs) {
+        assert.deepEqual(Object.keys(section), ['id'], locale + ': a reused section holds only its id');
+        assert.ok(copies[locale][kind].sections.some((s) => s.id === section.id), locale + ': Android reuses a missing iOS section ' + section.id);
+        return;
+      }
+      assert.equal(section.paragraphs.length, 2);
+      section.paragraphs.forEach((paragraph, p) => {
+        assert.ok(paragraph.length > 50, 'missing substantive Android paragraph in ' + locale + '/' + kind);
+        if (locale !== 'en') assert.notEqual(paragraph, english.sections[i].paragraphs[p]);
+        const tokens = (paragraph.match(/\{\{\w+\}\}/g) || []).sort();
+        assert.deepEqual(tokens, (english.sections[i].paragraphs[p].match(/\{\{\w+\}\}/g) || []).sort(), 'Android paragraph preserves its links: ' + locale + '/' + kind + '/' + section.id);
+      });
+    });
+  }
+}
+// The Android text must not describe iOS-only integrations or Apple billing.
+for (const locale of locales) {
+  for (const kind of ['privacy', 'terms', 'support']) {
+    const html = read('legal/' + locale + '/android/' + kind + '/index.html');
+    const text = mainText(html);
+    assert.doesNotMatch(text, /SKAdNetwork|SKAN|IDFA|IDFV|App Tracking Transparency|apple\.com|reportaproblem/, locale + '/' + kind + ': Android page names an iOS-only practice');
+    assert.doesNotMatch(text, /tiktok\.com/, locale + '/' + kind + ': Android page links TikTok');
+    for (const url of ['https://play.google.com/about/play-terms/index.html', 'https://support.google.com/googleplay/answer/7018481', 'https://support.google.com/googleplay/answer/2479637']) {
+      assert.ok(html.includes('href="' + url + '"'), locale + '/' + kind + ': missing Google Play reference ' + url);
+    }
+    assert.match(html, new RegExp('<link rel="canonical" href="https://amen-app.com/legal/' + locale + '/android/' + kind + '/">'));
+    assert.match(html, /data-platform="android"/);
+    assert.match(html, /data-platform-link="android" href="[^"]+" aria-current="page"/);
+    // Links inside an Android document stay on Android.
+    for (const other of ['privacy', 'terms']) assert.doesNotMatch(html, new RegExp('href="/legal/' + locale + '/' + other + '/"'), locale + '/' + kind + ': Android page links the shared ' + other + ' URL');
+  }
+  // The iOS URLs show exactly the iOS text that the shared URLs have always shown.
+  for (const kind of ['privacy', 'terms', 'support']) {
+    const shared = read('legal/' + locale + '/' + kind + '/index.html');
+    const ios = read('legal/' + locale + '/ios/' + kind + '/index.html');
+    assert.equal(mainText(ios).replaceAll('/legal/' + locale + '/ios/', '/legal/' + locale + '/'), mainText(shared), locale + '/' + kind + ': iOS text must match the shared page');
+    assert.match(ios, /data-platform-link="ios" href="[^"]+" aria-current="page"/);
+    assert.match(shared, /data-platform=""/);
+    assert.match(shared, /class="platform-hint"/, locale + '/' + kind + ': the shared page explains the choice');
+  }
+}
 
 // Every language contains complete documents even if scripts or the network fail.
 for (const locale of locales) {
@@ -66,7 +128,8 @@ for (const file of htmlFiles) {
   assert.ok(html.includes(copies[language].ui.skip));
   assert.ok(html.includes(copies[language].ui.more));
   assert.ok(html.includes('mailto:amenapphilfe@gmail.com'));
-  for (const url of [
+  const android = file.includes('/android/');
+  if (!android) for (const url of [
     'https://www.apple.com/legal/internet-services/itunes/',
     'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
     'https://www.apple.com/legal/privacy/',
@@ -74,7 +137,9 @@ for (const file of htmlFiles) {
     'https://support.apple.com/en-us/118223'
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
   const kind = html.match(/data-document="([^"]+)"/)[1];
-  assert.ok(html.includes('datetime="' + (dates[kind] || '2026-10-14') + '"'), file + ': wrong document date');
+  assert.ok(html.includes('datetime="' + (android ? androidDate : dates[kind] || '2026-10-14') + '"'), file + ': wrong document date');
+  if (['privacy', 'terms', 'support'].includes(kind)) assert.equal((html.match(/data-platform-link="/g) || []).length, 2, file + ': the platform choice is visible');
+  else assert.doesNotMatch(html, /platform-switch/, file + ': only privacy, terms and support have platform versions');
   assert.equal((html.match(/data-language="/g) || []).length, 6);
   assert.equal((html.match(/class="language-picker"/g) || []).length, 1);
   assert.ok(html.indexOf('class="language-picker"') > html.indexOf('</main>'), file + ': language selection belongs below the document');
@@ -115,7 +180,7 @@ for (const locale of locales) {
 assert.match(read('assets/legal.css'), /@media print/);
 assert.match(read('assets/legal.css'), /:focus-visible/);
 
-function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', hash = '', pathname = '/privacy.html', auto = true, language = 'en', kind = 'privacy' } = {}) {
+function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', hash = '', pathname = '/privacy.html', auto = true, language = 'en', kind = 'privacy', platform, userAgent = '', userAgentData, maxTouchPoints = 0 } = {}) {
   const redirects = [];
   const events = {};
   const print = { hidden: true, addEventListener(type, handler) { events[type] = handler; } };
@@ -130,12 +195,12 @@ function run({ languages = ['en-US'], browserLanguage = 'en-US', search = '', ha
   // A private/restricted browser may throw on any storage access.
   for (const key of ['localStorage', 'sessionStorage']) Object.defineProperty(window, key, { get() { throw new Error('storage unavailable'); } });
   const document = {
-    documentElement: { lang: language, dataset: { document: kind, autoLanguage: String(auto) } },
+    documentElement: { lang: language, dataset: { document: kind, autoLanguage: String(auto), ...(platform === undefined ? {} : { platform }) } },
     getElementById: (id) => id === 'print-document' ? print : null,
     querySelectorAll: (selector) => selector.includes('.auto-language') ? [manualLink, autoLink] : [manualLink]
   };
   Object.defineProperty(document, 'cookie', { get() { throw new Error('cookies unavailable'); }, set() { throw new Error('cookies unavailable'); } });
-  const context = vm.createContext({ window, document, navigator: { languages, language: browserLanguage }, URLSearchParams });
+  const context = vm.createContext({ window, document, navigator: { languages, language: browserLanguage, userAgent, userAgentData, maxTouchPoints }, URLSearchParams });
   vm.runInContext(script, context);
   return { redirects, events, print, manualEvents, manualLink, autoEvents, autoLink, window };
 }
@@ -178,6 +243,46 @@ manual.events.click();
 assert.equal(manual.events.printed, true);
 assert.deepEqual(run({ kind: 'unexpected' }).redirects, []);
 
+// Platform choice: an explicit /ios/ or /android/ URL always wins; the shared URL follows ?platform= or a phone.
+const ua = {
+  android: 'Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Mobile Safari/537.36',
+  iphone: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Mobile/15E148 Safari/604.1',
+  mac: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15',
+  windows: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36'
+};
+for (const kind of ['privacy', 'terms', 'support']) {
+  const shared = { auto: false, pathname: '/legal/de/' + kind + '/', language: 'de', kind, platform: '' };
+  assert.deepEqual(run({ ...shared, userAgent: ua.android, hash: '#rights' }).redirects, ['/legal/de/android/' + kind + '/#rights']);
+  assert.deepEqual(run({ ...shared, userAgent: ua.iphone }).redirects, ['/legal/de/ios/' + kind + '/']);
+  assert.deepEqual(run({ ...shared, userAgent: ua.mac, maxTouchPoints: 5 }).redirects, ['/legal/de/ios/' + kind + '/'], 'iPad requesting the desktop site');
+  assert.deepEqual(run({ ...shared, userAgent: ua.windows, userAgentData: { platform: 'Android' } }).redirects, ['/legal/de/android/' + kind + '/']);
+  for (const desktop of [ua.mac, ua.windows, '']) assert.deepEqual(run({ ...shared, userAgent: desktop }).redirects, [], 'a desktop keeps the shared page and its visible choice');
+  assert.deepEqual(run({ ...shared, userAgent: ua.iphone, search: '?platform=android' }).redirects, ['/legal/de/android/' + kind + '/']);
+  assert.deepEqual(run({ ...shared, userAgent: ua.android, search: '?platform=IOS' }).redirects, ['/legal/de/ios/' + kind + '/']);
+  for (const value of ['windows', '', '../ios', '__proto__']) assert.deepEqual(run({ ...shared, userAgent: ua.android, search: '?platform=' + encodeURIComponent(value) }).redirects, []);
+  for (const platform of ['ios', 'android']) {
+    const explicit = '/legal/de/' + platform + '/' + kind + '/';
+    for (const agent of Object.values(ua)) {
+      assert.deepEqual(run({ ...shared, pathname: explicit, platform, userAgent: agent }).redirects, [], 'an explicit ' + platform + ' link survives any device');
+      assert.deepEqual(run({ ...shared, pathname: explicit, platform, userAgent: agent, search: '?platform=' + (platform === 'ios' ? 'android' : 'ios') }).redirects, []);
+    }
+    assert.deepEqual(run({ ...shared, pathname: explicit, platform, search: '?lang=fr', hash: '#contact' }).redirects, ['/legal/fr/' + platform + '/' + kind + '/#contact'], 'a language change keeps the platform');
+    assert.deepEqual(run({ ...shared, pathname: explicit + 'index.html', platform }).redirects, [explicit]);
+  }
+  // Older and automatic entry URLs, such as /datenschutz or /terms, resolve language and platform together.
+  assert.deepEqual(run({ kind, platform: '', languages: ['de-AT'], userAgent: ua.android, pathname: '/' + kind + '/' }).redirects, ['/legal/de/android/' + kind + '/']);
+  assert.deepEqual(run({ kind, platform: '', languages: ['it-IT'], search: '?platform=android', pathname: '/' + kind + '/' }).redirects, ['/legal/it/android/' + kind + '/']);
+  assert.deepEqual(run({ kind, platform: '', languages: ['es-ES'], userAgent: ua.windows, pathname: '/' + kind + '/' }).redirects, ['/legal/es/' + kind + '/']);
+}
+for (const kind of ['imprint', 'delete-account']) {
+  assert.deepEqual(run({ auto: false, pathname: '/legal/en/' + kind + '/', kind, userAgent: ua.android, search: '?platform=android' }).redirects, [], kind + ' has one version');
+}
+
+for (const locale of locales) {
+  const support = read('legal/' + locale + '/android/support/index.html');
+  for (const id of ['contact', 'account-deletion', 'renewal', 'refunds', 'chat-storage']) assert.ok(support.includes('id="' + id + '"'), locale + ': Android support section ' + id);
+  assert.ok(mainText(support).replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&').includes(copies[locale].android.terms.sections.find((s) => s.id === 'renewal').paragraphs[0].split('{{')[0]), locale + ': Android support uses the Android renewal text');
+}
 const appLanguageArgument = process.argv.find((argument) => argument.startsWith('--app-languages='));
 if (appLanguageArgument) {
   const swift = fs.readFileSync(appLanguageArgument.slice('--app-languages='.length), 'utf8');
@@ -185,4 +290,4 @@ if (appLanguageArgument) {
   const appLocales = Array.from(enumBody.matchAll(/case \w+ = "([a-z]{2})"/g), (m) => m[1]).sort();
   assert.deepEqual([...locales].sort(), appLocales, 'website languages must match the app');
 }
-console.log('Legal checks passed: 76 pages, six languages, clean routes, older URLs, content, fallback, explicit selections, restricted storage and print action.');
+console.log('Legal checks passed: ' + htmlFiles.length + ' pages, six languages, iOS and Android versions, clean routes, older URLs, content, fallback, explicit selections, restricted storage and print action.');

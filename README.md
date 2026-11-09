@@ -29,6 +29,19 @@ To compare with a local amen app checkout:
 
 CI checks translation structure, paragraph links, generated files, internal links, metadata, fallback behavior, restricted-storage behavior and existing App Store routing. It also checks sentence capitalization, app-only privacy scope, support email, recipient categories and official Apple references. Shared CSS and JavaScript URLs include content hashes to prevent stale cached assets after an update. Updating content or assets without regenerating the HTML fails the check.
 
+## iOS and Android versions
+
+Privacy, terms and support have one version per app, in all six languages:
+
+- `/legal/<language>/ios/privacy/`, `/legal/<language>/ios/terms/` and `/legal/<language>/ios/support/`
+- `/legal/<language>/android/privacy/`, `/legal/<language>/android/terms/` and `/legal/<language>/android/support/`
+
+The iOS text is the existing shared text, unchanged. The Android text lives under `android` in each content file. A section there with only an `id` reuses the iOS section; a section with paragraphs replaces it or adds an Android-only one. Support, legal information and account deletion have one version.
+
+- An explicit `/ios/` or `/android/` URL always shows that platform, whatever the device. Language links keep the platform.
+- The shared URLs (`/legal/<language>/privacy/`, `/privacy/`, `/datenschutz/`, `/agb/` and the other older routes) still work. `?platform=android` or `?platform=ios` selects a platform; otherwise an Android phone opens the Android URL and an iPhone or iPad the iOS URL. A desktop stays on the shared URL, which shows the iOS text and a visible iOS/Android switch. Without JavaScript the shared URL shows the iOS text with the same switch.
+- The choice is made in the browser from the URL and device, never stored, so cached pages and shared links cannot carry the wrong platform. Every platform URL has its own canonical URL.
+
 ## Language behavior and compatibility
 
 - Automatic entry pages read the browser’s primary language. Region never overrides that language. An unsupported primary language falls back to English even if a later preference is supported, matching the app.

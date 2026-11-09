@@ -39,7 +39,12 @@
     "appleSKAN": "Apple SKAdNetwork information",
     "deleteAccount": "Delete your account",
     "deleteAccountDescription": "How to delete your Amen - Bible Chat account and data, what is deleted and what is kept.",
-    "googlePlayCancel": "Google Play subscription cancellation"
+    "googlePlayCancel": "Google Play subscription cancellation",
+    "platform": "Platform",
+    "platformHint": "Choose the version for your device. The iOS version is shown until you choose.",
+    "googlePlayInformation": "Google Play information",
+    "googlePlayTerms": "Google Play terms of service",
+    "googlePlayRefund": "Google Play refunds"
   },
   "privacy": {
     "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy explains how personal information is used in the app, including accounts, reading preferences, Nema AI chat, audio and subscriptions. The information processed depends on the features you choose.",
@@ -561,6 +566,370 @@
         ]
       }
     ]
+  },
+  "android": {
+    "privacy": {
+      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy applies to the amen app for Android. It explains how personal information is used in the app, including accounts, reading activity, Nema AI chat, audio, Bible Lock and subscriptions. The information processed depends on the features you choose.",
+      "summary": [
+        "Nema uses an enhanced Google AI model to provide AI chat. Your message and relevant conversation context are sent to Google to generate a response.",
+        "Amen creates a guest account without requiring an email address. You can save it with your Google account. Purchases are made and managed through Google Play.",
+        "Bible Lock checks on your phone which app is open so it can lock the apps you choose. This information is not sent to amen or to service providers.",
+        "Contact support at amenapphilfe@gmail.com for privacy requests. A Google Play subscription must be canceled in Google Play; deleting the app or your account does not cancel it."
+      ],
+      "sections": [
+        {
+          "id": "controller",
+          "title": "Privacy contact",
+          "paragraphs": [
+            "For questions about how the amen app for Android uses personal information, contact support at {{email}}. You can use this address for access, correction, deletion, restriction, portability, withdrawal of consent and other privacy requests.",
+            "This policy describes processing associated with the amen app on Android devices. Google also processes information for its own services, such as Google Play, Google sign-in and Android, under its own privacy policy. Google's responsibilities do not replace the responsibilities associated with amen or reduce your rights."
+          ]
+        },
+        {
+          "id": "support"
+        },
+        {
+          "id": "accounts",
+          "title": "Accounts, Google sign-in and profile",
+          "paragraphs": [
+            "During onboarding, amen creates a guest account without requiring an email address. The account has a unique identifier and session information. Your chosen name and supported saved activity are associated with that account identifier. Guest access does not require verification of your real-world identity; account-linked information can still be personal data. Account identifiers, session information and preferences are stored with account services and on the device. Account information also includes creation and update times.",
+            "You can save your account with your Google account and later sign in with it again. Google confirms the sign-in and can provide an identifier, your name and your email address; amen does not receive your Google password and does not request access to other Google content. On Android, Google sign-in is the only way to recover an account. A guest account that has not been saved with Google cannot be recovered after signing out, reinstalling the app or changing devices. The usual bases are Article 6(1)(b), proportionate security under Article 6(1)(f), and legal duties under Article 6(1)(c)."
+          ]
+        },
+        {
+          "id": "onboarding",
+          "title": "Onboarding answers and faith personalization",
+          "paragraphs": [
+            "Onboarding asks for your name and uses answers about faith goals, a faith vision, reading habits, obstacles, personal struggles, Bible version, denomination and gender to select relevant content and a read-aloud voice. These answers are stored on your device. Your name is saved with your account. Denomination is also saved with account chat settings and can be included in personalized Google AI requests.",
+            "These answers can reveal religious beliefs or personal circumstances and are covered by the sensitive-data section. Each purpose and recipient requires an appropriate lawful basis and, where applicable, an additional condition for sensitive data. Continuing onboarding, reading this policy or allowing a device permission does not by itself provide explicit consent for sensitive-data processing. Contact support at {{email}} about your answers, preferences or privacy requests."
+          ]
+        },
+        {
+          "id": "reading",
+          "title": "Reading activity, highlights and personalization",
+          "paragraphs": [
+            "Amen uses language, Bible-version choices, reading activity, streaks, achievements and settings to provide the selected features. On Android, verse highlights and the days on which your reading streak was active are saved on the device and synchronized with your account, so they are available when you sign in on another device. Saved chat messages, conversations, profile information and supported progress records also use cloud storage.",
+            "The purpose is to provide reading, progress and personalization functions, usually under Article 6(1)(b), with additional protection where information reveals beliefs or other sensitive circumstances. Use the relevant highlight, saved-message or conversation controls to manage saved content. Keep a separate copy of information important to you; this does not reduce your rights to a conforming service. Public profile and ranking visibility is explained separately below."
+          ]
+        },
+        {
+          "id": "rankings",
+          "title": "Public profile and leaderboards",
+          "paragraphs": [
+            "Leaderboards display ranking information to other users, including your display name, profile picture where available, a country flag where available, reading streak, badges, score and rank. Supported progress records are synchronized with the ranking service to calculate and show these results. Profile and ranking information is therefore different from a private conversation.",
+            "The Android app does not use your location for leaderboards. Choose a name and photo suitable for this visibility and avoid confidential information in profile fields. Shared image links may also allow others to view the image. Ranking processing generally supports the feature under Article 6(1)(b), with additional protection for sensitive information. Contact {{email}} about displayed information or privacy requests."
+          ]
+        },
+        {
+          "id": "ai",
+          "title": "Nema AI chat",
+          "paragraphs": [
+            "Nema uses an enhanced Google AI model to provide AI chat. Your message and relevant conversation history are sent to Google to generate a response. Context may include your name, selected language and denomination when used for personalization. The conversation is generated by AI rather than a human adviser.",
+            "Google AI services also support Bible Lock reading recommendations and read-aloud audio. If you report an AI response, the selected response, the reason you choose, any details you add and references to the conversation are stored for review. Avoid sharing passwords, payment details or confidential information about another person. Requested features generally rely on Article 6(1)(b), with an additional lawful condition for sensitive personal data."
+          ]
+        },
+        {
+          "id": "google"
+        },
+        {
+          "id": "chat-storage"
+        },
+        {
+          "id": "audio",
+          "title": "Read-aloud audio",
+          "paragraphs": [
+            "When you request read-aloud audio, the app sends the text to be read, its language and the selected voice to Google to generate speech. This can include Bible text, a devotional or a prayer. The generated audio is played on your device.",
+            "Read-aloud generates speech from text and does not record your microphone. Relevant text is processed to provide the requested audio; provider security and legal records may also apply. Playback generally relies on Article 6(1)(b), with additional protection if the text contains sensitive personal information."
+          ]
+        },
+        {
+          "id": "bible-lock",
+          "title": "Bible Lock on Android",
+          "paragraphs": [
+            "Android has no Screen Time, so Bible Lock works differently than on iOS. It needs two settings that you turn on in Android settings: usage access, so the app can see which app is open, and display over other apps, so it can cover a locked app. While Bible Lock is active, a service runs in the foreground with a permanent notification, as Android requires. The apps you choose, schedules, unlock status and reading progress are stored only on your phone. Information about which apps you open is used on the device to apply the lock and is not sent to amen or to service providers.",
+            "You can withdraw usage access and display over other apps in Android settings at any time; Bible Lock then stops working. For an AI reading recommendation, your selected need, requested reading length, preferred language and recent chapter references can be sent to Google. Recent references help avoid repeated recommendations and are also stored on your phone. Processing generally provides the requested feature under Article 6(1)(b), with additional protection for sensitive information."
+          ]
+        },
+        {
+          "id": "photos-permissions",
+          "title": "Profile photos and Android permissions",
+          "paragraphs": [
+            "When you choose a profile photo, the app uses the Android photo picker. Amen receives only the image you select and does not request access to your photo library. The selected image is stored with the relevant account service and can appear with your profile or ranking information. Shared image links may give others access to that image.",
+            "Depending on the features you use, the app can ask for notification permission, usage access and display over other apps for Bible Lock, and permission to schedule exact reminders. You can manage these permissions in Android settings. Denying a permission can limit the related feature. A device permission is separate from consent to sensitive-data processing. Google's privacy information is available at {{googlePrivacy}}."
+          ]
+        },
+        {
+          "id": "notifications",
+          "title": "Notifications and reminders",
+          "paragraphs": [
+            "Daily verse and streak reminders can be scheduled on your device. Where push notifications are available, the app registers a device push token with the notification service together with the platform, app language, time zone, reminder settings and your account identifier. Google delivers push notifications to Android devices.",
+            "You can change notification permission in Android settings. Revoking a permission does not itself establish that every previously registered token or service record has been deleted; contact {{email}} for deletion requests. A reminder does not cancel a subscription or replace the renewal information shown by Google Play. Google Play controls its own emails and notifications about subscriptions under {{googlePrivacy}}."
+          ]
+        },
+        {
+          "id": "widgets",
+          "title": "Days with Jesus and widgets",
+          "paragraphs": [
+            "If you use Days with Jesus, the date you choose is saved on your device to calculate the day count. Android widgets use verses, content and preferences that the app saves on the device. You can remove widgets at any time on your home screen.",
+            "Widgets and notifications can show faith-related content on your home screen or lock screen. People who can see the screen may also see that content. Choose widgets and notification settings with this visibility in mind. Requested widget functions generally rely on Article 6(1)(b), with additional protection where information reveals religious beliefs or other sensitive data."
+          ]
+        },
+        {
+          "id": "media",
+          "title": "Comics, images and sharing",
+          "paragraphs": [
+            "When you open comics or images in Discover, amen requests the content from delivery services and can keep temporary copies for display. Delivery involves the requested file and ordinary network connection information, including the IP address used for the connection.",
+            "Content you share through Android's share function goes to the app or person you choose. Shared copies are separate from account records and are not automatically recalled by account deletion. Media processing generally provides your requested feature under Article 6(1)(b)."
+          ]
+        },
+        {
+          "id": "purchases",
+          "title": "Purchases and Google Play",
+          "paragraphs": [
+            "Google Play handles payments and billing for purchases in the Android app. Amen does not receive your full payment-card number. A purchase validation service uses your account identifier, transaction details, products, trial status and subscription access information to recognize your purchases. Restoring purchases links the purchases of your Google Play account to your current amen account. Google Play's terms are available at {{googlePlayTerms}}.",
+            "The Android app does not use purchase information for advertising. Access administration generally relies on Article 6(1)(b) and legally required records on Article 6(1)(c). Google's handling of purchase information is described in {{googlePrivacy}}."
+          ]
+        },
+        {
+          "id": "measurement",
+          "title": "Analytics and advertising measurement",
+          "paragraphs": [
+            "The current Android app does not include third-party advertising measurement or attribution tools and does not request access to the Android advertising ID. It does not report installations, trial starts or purchases to advertising partners. The advertising measurement described in the iOS privacy policy does not apply to the Android app.",
+            "Google Play may provide amen with statistics and crash reports about the app, depending on your device and Google account settings. These reports help find technical faults and are handled under {{googlePrivacy}}. We will update this policy if measurement in the Android app changes."
+          ]
+        },
+        {
+          "id": "sensitive",
+          "title": "Religious beliefs and other sensitive data",
+          "paragraphs": [
+            "Denomination, prayer, faith goals and conversations may reveal religious beliefs, health or other special categories of data under Article 9 GDPR. Such processing needs both an Article 6 basis and an applicable Article 9 condition, ordinarily explicit consent for optional faith personalization. Reading a policy, using the app or allowing an Android permission is not that explicit consent.",
+            "You may request withdrawal, restriction or deletion at {{email}} and change available preferences. Withdrawal does not invalidate earlier lawful processing. Avoid entering sensitive data about other people without authority. This document cannot create consent or make an otherwise unlawful disclosure lawful."
+          ]
+        },
+        {
+          "id": "children",
+          "title": "Children and parental authorization",
+          "paragraphs": [
+            "Use of amen must comply with applicable child-data rules, legally effective parental authorization where required, and the conditions of external services. A Google Play content rating does not replace these requirements. Google's AI service conditions are linked in this policy and remain relevant to features that use those services.",
+            "Where consent is needed, the requirements for children depend on local law. Contact support if you believe a child's information was processed without the necessary authorization. We will investigate the request and arrange the restriction or deletion required in the circumstances."
+          ]
+        },
+        {
+          "id": "legal-bases"
+        },
+        {
+          "id": "recipients",
+          "title": "Service providers and other recipients",
+          "paragraphs": [
+            "Recipient categories include providers of account authentication, cloud hosting and storage, purchase validation, push notifications and support email. Google provides AI services, Google sign-in, Google Play purchases and push notification delivery. Information shared depends on the feature and purpose. The Android app does not share information with advertising partners.",
+            "Necessary information may also be shared with authorized support personnel, professional advisers or authorities where legally required. Processing and any international transfers remain subject to applicable safeguards. Contact {{email}} for more information about recipients and arrangements relevant to your information."
+          ]
+        },
+        {
+          "id": "transfers"
+        },
+        {
+          "id": "retention",
+          "title": "Retention criteria and backups",
+          "paragraphs": [
+            "Account and synchronized content are retained to provide your account and chosen features until removed or no longer needed. Information stored only on your device stays there until you delete it, delete your account or remove the app. The Android app excludes its data from Android cloud backups and device transfers. Support records depend on the request and legal obligations. Transaction records, fraud evidence and disputed matters may need longer retention under applicable law.",
+            "After account deletion, deleted data can remain in encrypted server backups until they expire, at most 7 days later; it is not restored from them. Purchase records are kept by Google Play and the purchase validation service under an anonymous identifier, not your name, for as long as billing, tax and fraud-prevention law requires. Cloud and AI services otherwise retain information according to the relevant purpose, agreements and legal duties."
+          ]
+        },
+        {
+          "id": "account-deletion",
+          "title": "Deleting your account",
+          "paragraphs": [
+            "You can delete your account in the app under You → Delete Account. The account is deleted immediately, you are signed out and the account's data on your phone is removed. Deletion cannot be undone. If you cannot use the app, request deletion at {{email}}; the steps are described on {{deleteAccount}}. Proportionate identity verification may be needed; you will not be asked to send a password.",
+            "Uninstalling the app alone does not delete your account. Removing amen's access in your Google account settings is also separate from deleting information held by amen. Neither app removal nor account deletion cancels a Google Play subscription: cancel it separately, see {{googlePlayCancel}}. Copies you shared outside the app and records subject to lawful retention are distinct from removal of the active account."
+          ]
+        },
+        {
+          "id": "rights"
+        },
+        {
+          "id": "security-decisions"
+        },
+        {
+          "id": "changes"
+        }
+      ]
+    },
+    "terms": {
+      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. These terms apply to the amen app for Android, including Nema AI chat, account features and subscriptions purchased through Google Play. Read them alongside the privacy policy and the offer shown before a purchase. Your statutory consumer rights remain protected.",
+      "summary": [
+        "Nema uses an enhanced Google AI model to provide AI chat. Responses can be inaccurate; check important answers and Bible quotations.",
+        "Before you confirm a purchase, Google Play shows the price, billing period, any free trial and the product you are buying.",
+        "Google Play subscriptions renew until canceled in Google Play. Deleting the app or your amen account does not cancel Google Play billing.",
+        "These terms preserve statutory consumer rights. Google Play's terms also apply to downloads and purchases."
+      ],
+      "sections": [
+        {
+          "id": "provider",
+          "title": "Scope and agreement",
+          "paragraphs": [
+            "These terms apply to the amen app for Android and its Bible, prayer and Christian reflection features. Contact support at {{email}} with questions about the agreement. Google's relationship with you for Google Play follows Google Play's own terms; see {{googlePlayTerms}}.",
+            "A contract is formed through the applicable registration, acceptance or purchase process after the relevant terms and offer are made available. Mere publication of these terms is not a substitute for acceptance where it is required. An individual agreement and mandatory law take precedence over inconsistent general wording."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "What amen provides",
+          "paragraphs": [
+            "Amen supports Christian Bible reading, prayer and reflection through saved verses, highlights, devotionals, reading progress and related features. Depending on the version and access level, the Android app also provides Bible comics, images, Days with Jesus and home screen widgets. Nema uses an enhanced Google AI model to provide AI chat. Some reading recommendations and audio features also use AI. Features of the iOS app are not automatically available in the Android app.",
+            "The actual offer and purchase screen define paid access. Some content must be downloaded before use, and sharing content remains subject to its license. These terms do not promise a fixed number of messages, a particular AI model, every Bible translation, perpetual operation or features advertised for a different version or platform. Descriptions and contractual commitments that law makes binding remain binding."
+          ]
+        },
+        {
+          "id": "eligibility",
+          "title": "Using amen and external services",
+          "paragraphs": [
+            "You must have the legal capacity to enter the relevant agreement or legally effective parental or guardian authorization where required. Use external services in accordance with their applicable conditions. Nema uses Google AI services; the provider's conditions are available at {{google}}.",
+            "Child-data and consent requirements depend on local law. Purchases require the payment method and any family or parental approval that applies to the Google account used. The app's content rating does not override legal requirements or the conditions of another service."
+          ]
+        },
+        {
+          "id": "accounts",
+          "title": "Accounts and account security",
+          "paragraphs": [
+            "Amen creates a guest account during onboarding without an email address. A guest account has no sign-in method: if you sign out, reinstall the app or change devices without saving it with Google, you can permanently lose access to it. Certain functions need a working account and network access. Protect access to your device and Google account and notify support if you suspect unauthorized use; you are not automatically responsible for every action caused by a failure outside your control. Do not use another person's account without authorization.",
+            "You can save your account with Google and sign in again with the same Google account. Email/password login and Sign in with Apple are not available in the Android app. If you sign in with a Google account that already belongs to another amen account, that account opens and guest information is not merged. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce amen's duty to provide a conforming service."
+          ]
+        },
+        {
+          "id": "license",
+          "title": "License to use the app",
+          "paragraphs": [
+            "You receive a limited, non-exclusive, non-transferable right to use the app personally on compatible Android devices you own or control, subject to these terms and applicable law. Downloads through Google Play are also subject to {{googlePlayTerms}}. The software's intellectual-property ownership is not transferred.",
+            "Do not redistribute or commercially exploit the app, bypass access controls, interfere with security or extract content unlawfully. Restrictions do not remove rights that mandatory law grants, including permitted interoperability, accessibility, lawful quotations or other statutory exceptions. Suspension and termination are governed by the provisions below rather than unrestricted revocation."
+          ]
+        },
+        {
+          "id": "bible"
+        },
+        {
+          "id": "ai"
+        },
+        {
+          "id": "professional-advice"
+        },
+        {
+          "id": "bible-lock",
+          "title": "Bible Lock, permissions and device functions",
+          "paragraphs": [
+            "Bible Lock on Android depends on usage access and display over other apps, which you turn on in Android settings, and on the apps and schedules you select. While it is active, a permanent notification is shown. Amen, Android settings, the phone app and the home screen cannot be locked, and calls are not covered. Bible Lock turns off when you no longer have access to Amen Plus. Review your selections before enabling it.",
+            "Android restrictions, battery and manufacturer settings, withdrawn permissions or interruptions can affect blocking and unlocking. A locked app can appear briefly before it is covered, and locking an app does not block its website in a browser. The feature is a personal routine aid and does not guarantee parental supervision, safety, treatment or uninterrupted enforcement. Reading recommendations can be generated by AI and must be reviewed like other AI content."
+          ]
+        },
+        {
+          "id": "your-content"
+        },
+        {
+          "id": "acceptable-use"
+        },
+        {
+          "id": "paid-access",
+          "title": "Paid access and the purchase offer",
+          "paragraphs": [
+            "Amen Plus provides paid access through Google Play. Use of the Android app requires active Amen Plus access. Before you confirm, Google Play shows the product, price, currency, billing period and any free trial or promotional conditions. The specific offer defines your purchased access, subject to statutory rights.",
+            "Prices and availability can vary by country, tax treatment, product and offer eligibility. Purchases are charged through your Google Play account, and a purchase validation service helps recognize your access. Amen does not receive your full payment-card number. A trial or promotion applies only when it is shown in Google Play's confirmation; see {{googlePlayTerms}} for Google Play's rules."
+          ]
+        },
+        {
+          "id": "trials",
+          "title": "Trials and promotional offers",
+          "paragraphs": [
+            "All new users are offered a 7-day free trial of Amen Plus at the end of onboarding. Google Play's confirmation shows your eligibility, when billing starts and the price after the trial. If you do not cancel in Google Play before the trial ends, the subscription starts automatically and is charged.",
+            "Cancel in Google Play before the trial ends if you do not want to be charged. Keep track of the end date in your Google Play subscriptions and do not rely on a reminder. Turning off notifications, removing the app or deleting your amen account does not stop billing."
+          ]
+        },
+        {
+          "id": "renewal",
+          "title": "Automatic renewal and cancellation",
+          "paragraphs": [
+            "Auto-renewing subscriptions continue for the stated billing period until canceled under Google Play's rules. Cancel in the Google Play app under Payments & subscriptions or follow {{googlePlayCancel}}. After cancellation, access normally continues until the end of the paid period; Google Play shows the relevant dates, and mandatory law determines the result.",
+            "Deleting the app, deleting your amen account, signing out, emailing a cancellation request to amen or revoking permissions does not itself cancel a Google Play subscription. Price changes follow Google Play's notice and consent processes and applicable law. We do not claim a right to raise an existing price without required notice or agreement."
+          ]
+        },
+        {
+          "id": "restoration",
+          "title": "Restoring purchases",
+          "paragraphs": [
+            "Use Restore purchases with the Google account that made the purchase. Your amen sign-in with Google and the Google account used for Google Play can be different accounts. Restoring links that Google Play account's purchases to your current amen account. Purchases made through Apple on iOS are managed by Apple and are not guaranteed to unlock the Android app. Contact support if a validated purchase is not recognized.",
+            "On Android, Amen Plus is offered only as an auto-renewing subscription; there is no one-time or lifetime purchase. Access depends on an active subscription and ends when it ends, subject to mandatory law. We cannot retrospectively reduce an agreed entitlement simply by redefining it in these terms."
+          ]
+        },
+        {
+          "id": "refunds",
+          "title": "Refunds and purchase problems",
+          "paragraphs": [
+            "For Google Play purchases, contact amen support at {{email}} or see {{googlePlayRefund}}. Google Play's policies, the circumstances and applicable law determine whether a refund is granted. We review each request individually and cannot promise that every request will be granted.",
+            "This routing does not remove statutory remedies against a responsible trader. Report failures, duplicate access charges or a nonconforming service to us as well where appropriate. No clause here makes all purchases nonrefundable or requires you to abandon rights to repair, price reduction, termination or reimbursement."
+          ]
+        },
+        {
+          "id": "withdrawal"
+        },
+        {
+          "id": "conformity"
+        },
+        {
+          "id": "changes-updates"
+        },
+        {
+          "id": "availability",
+          "title": "Availability and technical requirements",
+          "paragraphs": [
+            "Some functions need an internet connection, a compatible Android version, Google Play services, the relevant Android permissions, active authentication and available third-party services. Maintenance, outages, provider limits or device conditions can interrupt service. We cannot promise uninterrupted access, identical output or permanent availability of a particular model.",
+            "Where an interruption prevents delivery of contracted access, your applicable remedies remain available. We will assess reported failures and take reasonable corrective steps. You are responsible for your own connection and device costs, but that responsibility does not excuse an amen defect."
+          ]
+        },
+        {
+          "id": "suspension"
+        },
+        {
+          "id": "termination",
+          "title": "Ending use and deleting an account",
+          "paragraphs": [
+            "You can stop using amen and delete your account in the app or through support. Uninstalling alone does not delete your account. See {{privacy}} for deletion, lawful retention and backups. Save information you wish to keep before deleting your account.",
+            "Cancel a Google Play subscription separately in Google Play to stop future billing. App removal, account deletion or ending access does not automatically cancel it. If amen ends a service or your contract, we will follow applicable notice, paid-access and consumer-remedy duties. Clauses that necessarily continue, such as accrued claims and lawful retention, remain subject to law."
+          ]
+        },
+        {
+          "id": "liability"
+        },
+        {
+          "id": "google-play",
+          "title": "Google Play rules and related information",
+          "paragraphs": [
+            "Downloads and purchases through Google Play follow Google Play's terms: {{googlePlayTerms}}. Google's privacy information is available at {{googlePrivacy}}. These references explain Google's own services and do not replace amen's responsibilities for the app.",
+            "Use Google Play's cancellation process for Google Play subscriptions and contact us or Google Play about refunds. Android, Google sign-in and other external services have their own conditions, permissions and availability requirements. These rules apply alongside mandatory consumer rights; referring you to Google or another provider does not remove responsibilities associated with amen."
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Privacy and consent",
+          "paragraphs": [
+            "See {{privacy}} for data categories, providers, AI processing, legal bases and your rights. The policy is not a blanket consent form. Processing that requires consent, especially religious and other special-category information, needs a valid separate basis and any required explicit consent.",
+            "Neither acceptance of these terms nor an Android permission automatically authorizes every sensitive-data use. Withdrawal and deletion requests are handled under the applicable data-protection rules. Contract and purchase rights remain distinct from privacy permissions."
+          ]
+        },
+        {
+          "id": "disputes"
+        },
+        {
+          "id": "revisions"
+        },
+        {
+          "id": "contact",
+          "title": "Contact support",
+          "paragraphs": [
+            "Contact amen support at {{email}} for app help, account questions, subscription access or complaints. Google Play's linked guidance explains its billing and cancellation processes. For personal-information requests, see {{privacy}}.",
+            "Include the product or feature concerned and a concise description. Share an order reference only when needed and avoid passwords, full card details and unnecessary private conversation content. These contact instructions do not restrict legally valid notices or require use of a particular channel where the law permits another."
+          ]
+        }
+      ]
+    }
   },
   "notFound": {
     "title": "Page not found.",

@@ -9,6 +9,13 @@ const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', i
 const date = '2026-10-14';
 // A document added later carries its own date; the others keep the shared version.
 const dates = { 'delete-account': '2026-11-07' };
+// Privacy and terms exist once per app. The iOS text is the shared one; Android lists only what differs.
+export const platforms = ['ios', 'android'];
+const platformNames = { ios: 'iOS', android: 'Android' };
+const platformKinds = ['privacy', 'terms', 'support'];
+// Support has no text of its own: it repeats sections of the privacy policy and terms for the same platform.
+const androidTexts = ['privacy', 'terms'];
+const androidDate = '2026-11-09';
 // URL slug → content and UI key (delete-account → deleteAccount).
 const key = (kind) => kind.replace(/-(\w)/g, (_, c) => c.toUpperCase());
 const origin = 'https://amen-app.com';
@@ -20,6 +27,8 @@ const external = {
   email: 'mailto:amenapphilfe@gmail.com',
   cancel: 'https://support.apple.com/en-us/118428',
   googlePlayCancel: 'https://support.google.com/googleplay/answer/7018481',
+  googlePlayRefund: 'https://support.google.com/googleplay/answer/2479637',
+  googlePlayTerms: 'https://play.google.com/about/play-terms/index.html',
   refund: 'https://support.apple.com/en-us/118223',
   appleEula: 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
   appleTerms: 'https://www.apple.com/legal/internet-services/itunes/',
@@ -52,20 +61,54 @@ function validate(copy, locale) {
       }
     });
   }
+  // Android: a section with paragraphs replaces or adds text; a section with only an id reuses the iOS section.
+  for (const kind of androidTexts) {
+    const document = copy.android?.[kind];
+    const reference = english.android[kind];
+    if (!document?.intro || document.summary?.length !== reference.summary.length) throw new Error(locale + ': incomplete Android ' + kind);
+    if (document.sections?.length !== reference.sections.length) throw new Error(locale + ': missing sections in Android ' + kind);
+    document.sections.forEach((section, i) => {
+      const model = reference.sections[i];
+      if (section.id !== model.id || Boolean(section.paragraphs) !== Boolean(model.paragraphs)) throw new Error(locale + ': Android section differs from English: ' + kind + '/' + model.id);
+      if (!section.paragraphs) {
+        if (!copy[kind].sections.some((s) => s.id === section.id)) throw new Error(locale + ': Android reuses a missing iOS section ' + kind + '/' + section.id);
+        return;
+      }
+      if (!section.title || section.paragraphs.length !== model.paragraphs.length) throw new Error(locale + ': incomplete Android section ' + kind + '/' + model.id);
+      for (const paragraph of section.paragraphs) {
+        if (typeof paragraph !== 'string' || !paragraph.trim()) throw new Error(locale + ': empty Android paragraph');
+        if (locale !== 'en' && model.paragraphs.includes(paragraph)) throw new Error(locale + ': untranslated Android paragraph');
+      }
+    });
+  }
 }
 
-function render(copy, locale, kind, auto = false) {
+export function androidDocument(copy, kind) {
+  const document = copy.android[kind];
+  return {
+    intro: document.intro,
+    summary: document.summary,
+    sections: document.sections.map((section) => section.paragraphs ? section : copy[kind].sections.find((s) => s.id === section.id))
+  };
+}
+
+// platform: 'ios' or 'android' for a platform URL, null for the shared URL, which shows iOS until the script picks a device.
+function render(copy, locale, kind, auto = false, platform = null) {
   const ui = copy.ui;
   const navigation = { privacy: ui.navPrivacy, terms: ui.navTerms, imprint: ui.navImprint, support: ui.navSupport };
+  const versioned = platformKinds.includes(kind);
+  const shown = versioned ? platform || 'ios' : null;
+  const privacy = shown === 'android' ? androidDocument(copy, 'privacy') : copy.privacy;
+  const terms = shown === 'android' ? androidDocument(copy, 'terms') : copy.terms;
   const doc = kind === 'support' ? {
     intro: ui.supportDescription,
-    summary: [copy.privacy.summary[3], copy.terms.summary[1]],
+    summary: [privacy.summary[3], terms.summary[1]],
     sections: [
-      copy.terms.sections.find((s) => s.id === 'contact'),
-      copy.privacy.sections.find((s) => s.id === 'account-deletion'),
-      copy.terms.sections.find((s) => s.id === 'renewal'),
-      copy.terms.sections.find((s) => s.id === 'refunds'),
-      copy.privacy.sections.find((s) => s.id === 'chat-storage')
+      terms.sections.find((s) => s.id === 'contact'),
+      privacy.sections.find((s) => s.id === 'account-deletion'),
+      terms.sections.find((s) => s.id === 'renewal'),
+      terms.sections.find((s) => s.id === 'refunds'),
+      privacy.sections.find((s) => s.id === 'chat-storage')
     ]
   } : kind === 'imprint' ? {
     intro: ui.imprintDescription,
@@ -75,50 +118,62 @@ function render(copy, locale, kind, auto = false) {
       copy.terms.sections.find((s) => s.id === 'disputes'),
       copy.terms.sections.find((s) => s.id === 'contact')
     ]
-  } : copy[key(kind)];
-  const url = (type, lang = locale) => '/legal/' + lang + '/' + type + '/';
-  const links = { ...external, privacy: url('privacy'), terms: url('terms') };
+  } : kind === 'privacy' ? privacy : kind === 'terms' ? terms : copy[key(kind)];
+  // Privacy and terms links stay on the platform being read; the other documents have one version.
+  const url = (type, lang = locale, on = platform) => '/legal/' + lang + '/' + (on && platformKinds.includes(type) ? on + '/' : '') + type + '/';
+  const links = { ...external, privacy: url('privacy'), terms: url('terms'), deleteAccount: url('delete-account') };
   const rich = (s) => escape(s).replace(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!links[key] || !ui[key]) throw new Error('Unknown link token: ' + key);
     return '<a href="' + escape(links[key]) + '">' + escape(ui[key]) + '</a>';
   });
-  const updated = dates[kind] || date;
+  const updated = shown === 'android' ? androidDate : dates[kind] || date;
   const localDate = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(updated + 'T12:00:00Z'));
   const title = escape(ui[key(kind)]);
   const reference = (key) => '<li>' + escape(ui[key]) + ' · <a href="' + external[key] + '" aria-label="' + escape(ui[key]) + '">' + escape(ui.more) + '</a></li>';
+  const storeReferences = shown === 'android' ?
+    '<section aria-labelledby="google-play-information"><h2 id="google-play-information">' + escape(ui.googlePlayInformation) + '</h2><ul class="provider-links">' +
+      ['googlePlayTerms', 'googlePrivacy', 'googlePlayCancel', 'googlePlayRefund'].map(reference).join('') + '</ul></section>' :
+    '<section aria-labelledby="apple-information"><h2 id="apple-information">' + escape(ui.appleInformation) + '</h2><ul class="provider-links">' +
+      ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>';
+  const providerReferences = shown === 'android' ? ['google'] : ['google', 'googlePrivacy', 'tiktokPrivacy', 'appleSKAN'];
+  // Plain links, so the choice works without JavaScript and every shared URL names its platform.
+  const platformSwitch = versioned ? '<nav class="platform-switch" aria-label="' + escape(ui.platform) + '"><span class="platform-label">' + escape(ui.platform) + '</span><span class="platform-options">' +
+    platforms.map((p) => '<a data-platform-link="' + p + '" href="' + url(kind, locale, p) + '"' + (p === shown ? ' aria-current="page"' : '') + '>' + platformNames[p] + '</a>').join('') +
+    '</span>' + (platform ? '' : '<span class="platform-hint">' + escape(ui.platformHint) + '</span>') + '</nav>' : '';
+  // The shared URL keeps its old x-default; a platform URL points at its English page on the same platform.
+  const fallback = platform ? url(kind, 'en') : '/' + kind + '/';
   return '<!doctype html>\n' +
-    '<html lang="' + locale + '" data-document="' + kind + '" data-auto-language="' + auto + '">\n<head>\n' +
+    '<html lang="' + locale + '" data-document="' + kind + '" data-auto-language="' + auto + '"' + (versioned ? ' data-platform="' + (platform || '') + '"' : '') + '>\n<head>\n' +
     '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
     '<meta name="description" content="' + escape(ui[key(kind) + 'Description']) + '">\n' +
     '<meta name="referrer" content="strict-origin-when-cross-origin">\n' +
     '<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">\n' +
-    '<title>' + title + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
+    '<title>' + title + (platform ? ' (' + platformNames[platform] + ')' : '') + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
     '<link rel="canonical" href="' + origin + url(kind) + '">\n' +
     languages.map((l) => '<link rel="alternate" hreflang="' + l + '" href="' + origin + url(kind, l) + '">').join('\n') +
-    '\n<link rel="alternate" hreflang="x-default" href="' + origin + '/' + kind + '/">\n' +
+    '\n<link rel="alternate" hreflang="x-default" href="' + origin + fallback + '">\n' +
     '<link rel="stylesheet" href="' + asset('legal.css') + '">\n<script src="' + asset('legal.js') + '" defer></script>\n</head>\n<body id="top">\n' +
     '<a class="skip" href="#document">' + escape(ui.skip) + '</a>\n' +
     '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="36" height="36"><span>amen</span></a>' +
     '<nav aria-label="' + escape(ui.documents) + '">' + ['privacy', 'terms', 'imprint', 'support'].map((type) =>
       '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(navigation[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
-    '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' +
-    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata"><span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
+    '<div class="page"><div class="document-heading"><h1>' + title + '</h1>' + platformSwitch +
+    '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata">' + (shown ? '<span class="print-only">' + escape(ui.platform) + ': ' + platformNames[shown] + '</span>' : '') + '<span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
     '<aside class="contents"><details><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
     doc.sections.map((s) => '<li><a href="#' + s.id + '">' + escape(s.title) + '</a></li>').join('') +
     '</ol></nav></details></aside><main id="document" tabindex="-1">' + (doc.summary.length ? '<section class="key-points" aria-labelledby="key-points"><h2 id="key-points">' + escape(ui.summary) + '</h2><ul>' +
     doc.summary.map((s) => '<li>' + escape(s) + '</li>').join('') + '</ul></section>\n' : '') +
     doc.sections.map((s, i) => '<section aria-labelledby="' + s.id + '"><h2 id="' + s.id + '"><span class="section-number">' + (i + 1) + '.</span> ' + escape(s.title) + '</h2>' +
       s.paragraphs.map((p) => '<p>' + rich(p) + '</p>').join('\n') + '</section>').join('\n') +
-    '<section aria-labelledby="apple-information"><h2 id="apple-information">' + escape(ui.appleInformation) + '</h2><ul class="provider-links">' +
-      ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>' +
+    storeReferences +
     (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
-      ['google', 'googlePrivacy', 'tiktokPrivacy', 'appleSKAN'].map(reference).join('') + '</ul></section>' : '') +
+      providerReferences.map(reference).join('') + '</ul></section>' : '') +
     '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
     '<footer><div class="footer-links"><span>' + escape(ui.copyright) + '</span>' + ['privacy', 'terms', 'imprint', 'support'].filter((type) => type !== kind).map((type) => '<a href="' + url(type) + '">' + escape(navigation[type]) + '</a>').join('') + '</div>' +
     '<details class="language-picker"><summary>' + escape(ui.language) + ' · <span>' + names[locale] + '</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((l) => '<a data-language="' + l + '" lang="' + l + '" hreflang="' + l + '" href="' + url(kind, l) + '"' + (l === locale ? ' aria-current="true"' : '') + '>' + names[l] + '</a>').join('') +
-    '<a class="auto-language" href="/' + kind + '/">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
+    '<a class="auto-language" href="/' + kind + '/' + (platform ? '?platform=' + platform : '') + '">' + escape(ui.auto) + '</a></nav></details></footer>\n</body>\n</html>\n';
 }
 
 function renderNotFound(copies) {
@@ -159,6 +214,9 @@ for (const locale of languages) {
     const html = render(copy, locale, kind);
     generated.set('legal/' + locale + '/' + kind + '.html', html);
     generated.set('legal/' + locale + '/' + kind + '/index.html', html);
+  }
+  for (const platform of platforms) {
+    for (const kind of platformKinds) generated.set('legal/' + locale + '/' + platform + '/' + kind + '/index.html', render(copy, locale, kind, false, platform));
   }
 }
 const aliases = { privacy: ['privacy','datenschutz'], terms: ['terms','nutzungsbedingungen','agb'], support: ['support'], imprint: ['imprint','impressum'], 'delete-account': ['delete-account'] };

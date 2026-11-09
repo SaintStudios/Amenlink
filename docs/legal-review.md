@@ -111,3 +111,24 @@ References checked for this correction:
 - https://developer.apple.com/documentation/storekit/skadnetwork
 
 Generated-page checks and the existing legal, landing-page and missing-page test suites pass, including parity with the app's six supported languages. No iOS build or runtime testing was performed.
+
+## 9 November 2026: separate Android privacy policy and terms
+
+Privacy, terms and support now exist per platform at `/legal/<language>/ios/…` and `/legal/<language>/android/…` in all six languages. The iOS text is unchanged; tests compare it with the shared pages. Android writes its own text for 19 of 27 privacy sections and 16 of 28 terms sections and reuses the iOS text for the rest.
+
+Read-only review of the Android source (SaintStudios/amen-android, version 0.1.11, build 12) found these differences from iOS, which the Android text describes:
+
+- **Accounts.** Guest account plus optional Google sign-in (Credential Manager, ID token exchanged with the account service). No Sign in with Apple and no email/password login. A guest account not saved with Google cannot be recovered.
+- **Purchases.** Google Play Billing through a purchase validation service, logged in with the account ID. Restore purchases exists. No advertising use of purchase data.
+- **Measurement.** No TikTok, AppsFlyer, Crashlytics, Firebase Analytics or other attribution SDK; no AD_ID permission; no ATT equivalent. Firebase is used only for push messaging.
+- **Bible Lock.** Usage access, display over other apps and a `specialUse` foreground service with a permanent notification. Selected apps, schedules and progress stay in local storage. AI recommendation inputs match iOS.
+- **Storage.** Highlights and active streak days sync with the account; there are no Bible notes. Onboarding answers (name, goals, faith vision, reading days, obstacles, struggles, Bible version, denomination, gender) are stored locally; name and denomination are also saved with the account. Android cloud backup and device transfer are excluded.
+- **Notifications.** Local daily verse and streak reminders; FCM token registered with platform, language, time zone, default reminder settings and user ID. No local trial reminder was found.
+- **Media and permissions.** Comics and images only; no 360° scenes, music, wallpaper or Live Photo saving. Profile photos use the Android photo picker with no media permission. AI response reports are stored for review.
+- **Deletion.** Same server deletion function as iOS, then sign-out and removal of the account's device data. Encrypted backups expire within 7 days and purchase records stay under an anonymous ID, as the owner confirmed.
+
+The owner confirmed on 9 November 2026 that Android offers all new users a 7-day free trial at the end of onboarding and has no lifetime or other one-time product; the Android terms say so. The leaderboard country flag stays "where available".
+
+Support now also has iOS and Android versions (`/legal/<language>/ios/support/`, `/legal/<language>/android/support/`), built from the same platform's privacy and terms sections, so Android users see Google Play cancellation and refunds.
+
+Not verified from source: Google Play prices, production Firebase/Play Console settings, server-side deletion of provider records, and whether the leaderboard country flag is set for Android accounts. The Android onboarding screen promises a reminder before the trial ends, but no Android code schedules one; the Android terms tell users not to rely on a reminder.
