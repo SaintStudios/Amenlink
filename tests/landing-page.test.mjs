@@ -339,7 +339,7 @@ for (const fixture of platformFixtures.filter(({ expected }) => expected === 'ot
     const result = runInitialization(fixture);
     assert.deepEqual(result.attemptedUrls, [], `${fixture.name} desktop must not navigate automatically`);
     assert.equal(result.pendingTimers.size, 0, `${fixture.name} desktop must not schedule a store attempt`);
-    assert.equal(result.elements.headline.textContent, 'Download the amen app', `${fixture.name} must retain the desktop fallback`);
+    assert.equal(result.elements.headline.textContent, 'Download the Amen app', `${fixture.name} must retain the desktop fallback`);
     assert.equal(result.elements.comingSoon.classList.contains('is-visible'), true, `${fixture.name} must retain the desktop badge`);
 }
 
@@ -453,4 +453,4 @@ for (const legalPage of ['datenschutz.html', 'nutzungsbedingungen.html', 'privac
     assert.match(source, /href="\/assets\/legal.css\?v=[a-f0-9]{12}"/, legalPage + ' must use the current shared legal stylesheet');
 }
 
-console.log('amen landing-page checks passed.');
+console.log('Amen landing-page checks passed.');

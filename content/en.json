@@ -18,9 +18,9 @@
     "skip": "Skip to the document",
     "top": "Back to top",
     "documents": "Legal documents",
-    "copyright": "amen",
-    "privacyDescription": "How the amen app uses account, reading, prayer, chat and purchase information, and how to exercise your privacy rights.",
-    "termsDescription": "Terms for the amen Christian app, including Bible reading, prayer, Nema AI chat, subscriptions and consumer rights.",
+    "copyright": "Amen",
+    "privacyDescription": "How the Amen app uses account, reading, prayer, chat and purchase information, and how to exercise your privacy rights.",
+    "termsDescription": "Terms for the Amen Christian app, including Bible reading, prayer, Nema AI chat, subscriptions and consumer rights.",
     "email": "amenapphilfe@gmail.com",
     "cancel": "Apple subscription cancellation",
     "refund": "Apple refund requests",
@@ -29,8 +29,8 @@
     "providers": "Further information",
     "applePrivacy": "Apple privacy policy",
     "imprint": "Legal information",
-    "supportDescription": "Contact amen support at amenapphilfe@gmail.com for help with the app, your account, subscriptions or privacy requests.",
-    "imprintDescription": "Terms, privacy information and support for the amen app.",
+    "supportDescription": "Contact Amen support at amenapphilfe@gmail.com for help with the app, your account, subscriptions or privacy requests.",
+    "imprintDescription": "Terms, privacy information and support for the Amen app.",
     "googlePrivacy": "Google privacy policy",
     "appleTerms": "Apple App Store terms and usage rules",
     "appleInformation": "Apple information",
@@ -52,15 +52,15 @@
       "Nema uses an enhanced Google AI model to provide AI chat. Your message and relevant conversation context are sent to Google to generate a response.",
       "Guest use creates an account identifier without requiring an email address. Local notes and highlights are separate from account-based saved content. Purchases are managed through Apple.",
       "Prayer, faith preferences and conversations may contain sensitive personal information. Your privacy rights and any required consent remain protected.",
-      "Contact support at amenapphilfe@gmail.com for privacy requests. Apple subscriptions must be canceled separately from deleting the app or an amen account."
+      "Contact support at amenapphilfe@gmail.com for privacy requests. Apple subscriptions must be canceled separately from deleting the app or an Amen account."
     ],
     "sections": [
       {
         "id": "controller",
         "title": "Privacy contact",
         "paragraphs": [
-          "For questions about how the amen app uses personal information, contact support at {{email}}. You can use this address for access, correction, deletion, restriction, portability, withdrawal of consent and other privacy requests.",
-          "This policy describes processing associated with the amen app. Apple and Google also process information for their own services under their respective privacy policies. Their responsibilities do not replace the responsibilities associated with amen or reduce your rights."
+          "For questions about how the Amen app uses personal information, contact support at {{email}}. You can use this address for access, correction, deletion, restriction, portability, withdrawal of consent and other privacy requests.",
+          "This policy describes processing associated with the Amen app. Apple and Google also process information for their own services under their respective privacy policies. Their responsibilities do not replace the responsibilities associated with Amen or reduce your rights."
         ]
       },
       {
@@ -75,8 +75,8 @@
         "id": "accounts",
         "title": "Accounts, authentication and profile",
         "paragraphs": [
-          "During onboarding, amen can create a guest account without requiring an email address or Sign in with Apple. The account has a unique identifier and session information. Your chosen name and supported saved activity are associated with that account identifier. Guest access does not require verification of your real-world identity; account-linked information can still be personal data. Account identifiers, session credentials and preferences are stored with account services and on the device to maintain access and supported synchronization. Access after signing out, reinstalling or changing devices depends on the available authentication and recovery information. Account information also includes creation and update times.",
-          "You can link supported guest-account information through Sign in with Apple. Apple may provide an identifier, name and an email or private relay address; amen does not receive your Apple-account password. Linking can associate or transfer supported conversations, profile and progress records, depending on existing account information and successful completion. It does not make every device-only item available elsewhere. Returning users with an existing email/password account can use the available login and password-reset controls. Account services process the required credentials and recovery information. The usual bases are Article 6(1)(b), proportionate security under Article 6(1)(f), and legal duties under Article 6(1)(c)."
+          "During onboarding, Amen can create a guest account without requiring an email address or Sign in with Apple. The account has a unique identifier and session information. Your chosen name and supported saved activity are associated with that account identifier. Guest access does not require verification of your real-world identity; account-linked information can still be personal data. Account identifiers, session credentials and preferences are stored with account services and on the device to maintain access and supported synchronization. Access after signing out, reinstalling or changing devices depends on the available authentication and recovery information. Account information also includes creation and update times.",
+          "You can link supported guest-account information through Sign in with Apple. Apple may provide an identifier, name and an email or private relay address; Amen does not receive your Apple-account password. Linking can associate or transfer supported conversations, profile and progress records, depending on existing account information and successful completion. It does not make every device-only item available elsewhere. Returning users with an existing email/password account can use the available login and password-reset controls. Account services process the required credentials and recovery information. The usual bases are Article 6(1)(b), proportionate security under Article 6(1)(f), and legal duties under Article 6(1)(c)."
         ]
       },
       {
@@ -139,7 +139,7 @@
         "id": "bible-lock",
         "title": "Bible Lock and Screen Time",
         "paragraphs": [
-          "Bible Lock uses Apple's Screen Time functions when you authorize them. Apple-provided selection identifiers for chosen apps, app categories and supported web domains, together with schedules, unlock settings and reading progress, are stored locally for the app and its extensions to provide the feature. Authorization does not give amen general access to messages or browsing history. You can manage or revoke Screen Time access in system settings.",
+          "Bible Lock uses Apple's Screen Time functions when you authorize them. Apple-provided selection identifiers for chosen apps, app categories and supported web domains, together with schedules, unlock settings and reading progress, are stored locally for the app and its extensions to provide the feature. Authorization does not give Amen general access to messages or browsing history. You can manage or revoke Screen Time access in system settings.",
           "For an AI reading recommendation, your selected need, requested reading length, preferred language and recent chapter references can be sent to Google. Recent references help avoid repeated recommendations and are also stored locally for this feature. Processing generally provides the requested feature under Article 6(1)(b), with additional protection for sensitive information. Apple controls its own framework processing; device permissions do not supply consent for unrelated analytics or sensitive-data purposes."
         ]
       },
@@ -155,15 +155,15 @@
         "id": "notifications",
         "title": "Notifications and reminder schedules",
         "paragraphs": [
-          "For remote verse and prayer reminders, amen sends the device push token, app language, time zone, enabled reminder types and selected delivery times to the notification service. Registration can be associated with your account. Supported streak or trial reminders can instead be scheduled locally on the device. This information is used to provide the reminder and delivery features you choose.",
-          "You can change reminder preferences in the app and notification permission in iOS settings. Delivery depends on permissions, device settings and available services. Revoking a permission does not itself establish that every previously registered token or service record has been deleted; contact {{email}} for deletion requests. A trial reminder does not cancel a subscription or replace Apple's renewal information. The trial reminder mentioned during onboarding refers to an email from Apple about the upcoming end of your trial, not an email sent by amen. Apple handles these emails using your Apple Account information under {{applePrivacy}}. Amen does not control Apple's email delivery or timing."
+          "For remote verse and prayer reminders, Amen sends the device push token, app language, time zone, enabled reminder types and selected delivery times to the notification service. Registration can be associated with your account. Supported streak or trial reminders can instead be scheduled locally on the device. This information is used to provide the reminder and delivery features you choose.",
+          "You can change reminder preferences in the app and notification permission in iOS settings. Delivery depends on permissions, device settings and available services. Revoking a permission does not itself establish that every previously registered token or service record has been deleted; contact {{email}} for deletion requests. A trial reminder does not cancel a subscription or replace Apple's renewal information. The trial reminder mentioned during onboarding refers to an email from Apple about the upcoming end of your trial, not an email sent by Amen. Apple handles these emails using your Apple Account information under {{applePrivacy}}. Amen does not control Apple's email delivery or timing."
         ]
       },
       {
         "id": "widgets",
         "title": "Days with Jesus and widgets",
         "paragraphs": [
-          "If you use Days with Jesus, amen saves the date you choose locally to calculate the day count. You can change or reset the date in the feature. The date, Bible content, preferences and access information needed by supported widgets are shared with the app's extensions on the device. Bible Lock also uses shared device data for its authorized functions.",
+          "If you use Days with Jesus, Amen saves the date you choose locally to calculate the day count. You can change or reset the date in the feature. The date, Bible content, preferences and access information needed by supported widgets are shared with the app's extensions on the device. Bible Lock also uses shared device data for its authorized functions.",
           "Widgets and notification previews can show faith-related content on your Home Screen or Lock Screen. People who can see the screen may also see that content. Choose widgets and previews with this visibility in mind. Requested widget functions generally rely on Article 6(1)(b), with additional protection where information reveals religious beliefs or other sensitive data."
         ]
       },
@@ -171,8 +171,8 @@
         "id": "media",
         "title": "Comics, wallpapers, scenes and music",
         "paragraphs": [
-          "When you open comics, wallpapers, 360° scenes or audio, amen requests relevant content from delivery services and can keep local copies or caches for display and playback. Delivery involves the requested file and ordinary network connection information, including the IP address used for the connection. Supported background-music preferences are saved locally and can also be stored with your profile to provide the selected listening experience.",
-          "The current 360° viewer displays downloaded panoramas controlled by touch; it does not use the device camera to capture the surrounding room. Saving a wallpaper or Live Photo adds selected content to Photos with the requested permission. Copies saved to Photos or shared outside amen are separate from account records and are not automatically recalled by account deletion. Media processing generally provides your requested feature under Article 6(1)(b)."
+          "When you open comics, wallpapers, 360° scenes or audio, Amen requests relevant content from delivery services and can keep local copies or caches for display and playback. Delivery involves the requested file and ordinary network connection information, including the IP address used for the connection. Supported background-music preferences are saved locally and can also be stored with your profile to provide the selected listening experience.",
+          "The current 360° viewer displays downloaded panoramas controlled by touch; it does not use the device camera to capture the surrounding room. Saving a wallpaper or Live Photo adds selected content to Photos with the requested permission. Copies saved to Photos or shared outside Amen are separate from account records and are not automatically recalled by account deletion. Media processing generally provides your requested feature under Article 6(1)(b)."
         ]
       },
       {
@@ -180,7 +180,7 @@
         "title": "Purchases and Apple",
         "paragraphs": [
           "Apple handles App Store payments and billing. Amen does not receive your full payment-card number from an Apple in-app purchase. Purchase validation services use account identifiers, transaction details, products, trial status and subscription access information to recognize your purchases. Apple's purchase and usage rules are available at {{appleTerms}}.",
-          "Purchase status and technical identifiers may be associated with your amen account and used for subscription attribution. Access administration generally relies on Article 6(1)(b), legally required records on Article 6(1)(c), and optional marketing processing on consent where required. Apple's handling of purchase information is described in {{applePrivacy}}."
+          "Purchase status and technical identifiers may be associated with your Amen account and used for subscription attribution. Access administration generally relies on Article 6(1)(b), legally required records on Article 6(1)(c), and optional marketing processing on consent where required. Apple's handling of purchase information is described in {{applePrivacy}}."
         ]
       },
       {
@@ -195,7 +195,7 @@
         "id": "advertising-choice",
         "title": "Apple tracking choice and anonymous attribution",
         "paragraphs": [
-          "In versions using the direct TikTok integration, the SDK starts when the app opens, before the Apple App Tracking Transparency (ATT) request in the opening onboarding carousel. The SDK includes the ATT status in requests. Declining or not answering the prompt does not disable the SDK or stop every event, configuration or diagnostic request. The choice must be respected for tracking across other companies’ apps and websites; it does not restrict access to amen features. You can manage Apple’s permission in Settings → Privacy & Security → Tracking or contact {{email}} about privacy choices.",
+          "In versions using the direct TikTok integration, the SDK starts when the app opens, before the Apple App Tracking Transparency (ATT) request in the opening onboarding carousel. The SDK includes the ATT status in requests. Declining or not answering the prompt does not disable the SDK or stop every event, configuration or diagnostic request. The choice must be respected for tracking across other companies’ apps and websites; it does not restrict access to Amen features. You can manage Apple’s permission in Settings → Privacy & Security → Tracking or contact {{email}} about privacy choices.",
           "Apple’s SKAdNetwork (SKAN) provides a separate form of privacy-preserving advertising measurement that can operate without ATT authorization. Apple controls the aggregated postbacks, their timing and whether detailed conversion information is available; an ordinary SDK event is separate from a SKAN postback. See {{appleSKAN}}. This policy is information, not consent: where applicable law requires prior consent for SDK collection or transmission, that requirement still applies. Apple’s ATT choice does not replace every consent or other legal condition."
         ]
       },
@@ -211,7 +211,7 @@
         "id": "children",
         "title": "Children and parental authorization",
         "paragraphs": [
-          "Use of amen must comply with applicable child-data rules, legally effective parental authorization where required, and the conditions of external services. An App Store content rating does not replace these requirements. Google's AI service conditions are linked in this policy and remain relevant to features that use those services.",
+          "Use of Amen must comply with applicable child-data rules, legally effective parental authorization where required, and the conditions of external services. An App Store content rating does not replace these requirements. Google's AI service conditions are linked in this policy and remain relevant to features that use those services.",
           "Where consent is needed, the requirements for children depend on local law. Contact support if you believe a child's information was processed without the necessary authorization. We will investigate the request and arrange the restriction or deletion required in the circumstances."
         ]
       },
@@ -252,7 +252,7 @@
         "title": "Deleting your account",
         "paragraphs": [
           "You can request account deletion through the app. If you cannot access the account or the request does not complete, contact support at {{email}}. Proportionate identity verification may be needed to prevent unauthorized access or deletion; you will not be asked to send a password. Deleting an account and removing device-only content are separate operations. Local notes, highlights or preferences can remain independently of the account; use their available controls and the Days with Jesus reset control, or contact support for help.",
-          "Uninstalling the app alone does not delete cloud account records. Removing access through Sign in with Apple is also separate from requesting deletion of information held by amen. Neither app removal nor amen account deletion automatically cancels an Apple subscription: cancel it separately through {{cancel}}. Device copies, exported content, backup expiry and records subject to lawful retention are distinct from removal of the active account."
+          "Uninstalling the app alone does not delete cloud account records. Removing access through Sign in with Apple is also separate from requesting deletion of information held by Amen. Neither app removal nor Amen account deletion automatically cancels an Apple subscription: cancel it separately through {{cancel}}. Device copies, exported content, backup expiry and records subject to lawful retention are distinct from removal of the active account."
         ]
       },
       {
@@ -260,7 +260,7 @@
         "title": "Your rights and complaints",
         "paragraphs": [
           "Where the GDPR applies, you can request access, correction, erasure, restriction and, where the conditions are met, portability. You may withdraw consent and object to processing based on legitimate interests for reasons relating to your situation. You may object to direct marketing at any time.",
-          "Send requests to {{email}}. We normally respond within one month; legally permitted extensions require notice and reasons. Requests are normally free, subject to statutory exceptions. You may complain to the supervisory authority where you live, work or believe an infringement occurred. Contacting amen first is not a condition for complaining."
+          "Send requests to {{email}}. We normally respond within one month; legally permitted extensions require notice and reasons. Requests are normally free, subject to statutory exceptions. You may complain to the supervisory authority where you live, work or believe an infringement occurred. Contacting Amen first is not a condition for complaining."
         ]
       },
       {
@@ -286,7 +286,7 @@
     "summary": [
       "Nema uses an enhanced Google AI model to provide AI chat. Responses can be inaccurate; check important answers and Bible quotations.",
       "The purchase screen shows the price, billing period, trial conditions and included access before you confirm.",
-      "Apple subscriptions renew until canceled. Deleting the app or your amen account does not cancel Apple billing.",
+      "Apple subscriptions renew until canceled. Deleting the app or your Amen account does not cancel Apple billing.",
       "These terms preserve statutory consumer rights. Apple purchase rules and the applicable app license also apply."
     ],
     "sections": [
@@ -294,13 +294,13 @@
         "id": "provider",
         "title": "Scope and agreement",
         "paragraphs": [
-          "These terms apply to the amen iOS app and its Bible, prayer and Christian reflection features. Contact support at {{email}} with questions about the agreement. Apple's relationship with you for its own App Store services follows the rules applicable to your storefront; see {{appleTerms}}.",
+          "These terms apply to the Amen iOS app and its Bible, prayer and Christian reflection features. Contact support at {{email}} with questions about the agreement. Apple's relationship with you for its own App Store services follows the rules applicable to your storefront; see {{appleTerms}}.",
           "A contract is formed through the applicable registration, acceptance or purchase process after the relevant terms and offer are made available. Mere publication of these terms is not a substitute for acceptance where it is required. An individual agreement and mandatory law take precedence over inconsistent general wording."
         ]
       },
       {
         "id": "service",
-        "title": "What amen provides",
+        "title": "What Amen provides",
         "paragraphs": [
           "Amen supports Christian Bible reading, prayer and reflection through saved verses, highlights, notes, devotionals, reading progress and related features. Depending on the version and access level, it also provides Bible comics, wallpapers, touch-controlled 360° scenes, background music, Days with Jesus and widgets. Nema uses an enhanced Google AI model to provide AI chat. Some reading recommendations and audio features also use AI; Bible Lock uses Apple's Screen Time functions.",
           "The actual offer and purchase screen define paid access. Some media must be downloaded before use, and saving or sharing content remains subject to its license. These terms do not promise a fixed number of free messages, a particular AI model, every Bible translation, perpetual operation or features advertised for a different version. Descriptions and contractual commitments that law makes binding remain binding."
@@ -308,7 +308,7 @@
       },
       {
         "id": "eligibility",
-        "title": "Using amen and external services",
+        "title": "Using Amen and external services",
         "paragraphs": [
           "You must have the legal capacity to enter the relevant agreement or legally effective parental or guardian authorization where required. Use external services in accordance with their applicable conditions. Nema uses Google AI services; the provider's conditions are available at {{google}}.",
           "Child-data and consent requirements depend on local law. Purchases require the payment and family authorization applicable to the Apple account used. The app's content rating does not override legal requirements or the conditions of another service."
@@ -319,7 +319,7 @@
         "title": "Accounts and account security",
         "paragraphs": [
           "Amen can create a guest account during onboarding without an email address or Apple sign-in. Guest access depends on authentication information available to the app and does not provide the same sign-in and recovery options as a linked account. Existing supported accounts can use the available returning-user Apple or email/password login. Certain functions need a working account and network access. Protect account access and notify support if you suspect unauthorized use; you are not automatically responsible for every action caused by a failure outside your control. Do not use another person’s account without authorization.",
-          "The available Apple option can link or transfer supported guest-account information. Successful authentication, existing account information and app compatibility affect linking and synchronization; locally stored notes and highlights are separate. Contact support about missing information after a sign-in change. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce amen's duty to provide a conforming service."
+          "The available Apple option can link or transfer supported guest-account information. Successful authentication, existing account information and app compatibility affect linking and synchronization; locally stored notes and highlights are separate. Contact support about missing information after a sign-in change. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce Amen's duty to provide a conforming service."
         ]
       },
       {
@@ -334,7 +334,7 @@
         "id": "bible",
         "title": "Bible texts and spiritual content",
         "paragraphs": [
-          "Bible translations, commentary, artwork and other material can belong to amen or third-party licensors. Translation wording and denominational interpretations can differ. A generated paraphrase is not an exact Bible quotation; verify references and quotations against the translation you intend to use.",
+          "Bible translations, commentary, artwork and other material can belong to Amen or third-party licensors. Translation wording and denominational interpretations can differ. A generated paraphrase is not an exact Bible quotation; verify references and quotations against the translation you intend to use.",
           "Use the in-app sharing features within their stated purpose and respect attribution and third-party licenses. Access through the app does not automatically grant rights to reproduce an entire translation, create a competing database or publish protected material commercially. Statutory quotation and other lawful-use rights remain available."
         ]
       },
@@ -366,7 +366,7 @@
         "id": "your-content",
         "title": "Your content and permissions you grant",
         "paragraphs": [
-          "You keep the rights you hold in messages, notes, images and other submitted material. You permit amen and necessary service providers to process, store and transmit it only as needed to provide the requested functions, maintain security and meet lawful obligations, subject to the privacy policy and applicable law.",
+          "You keep the rights you hold in messages, notes, images and other submitted material. You permit Amen and necessary service providers to process, store and transmit it only as needed to provide the requested functions, maintain security and meet lawful obligations, subject to the privacy policy and applicable law.",
           "This is not a general permission to publish private chats, use your name in advertising or train models for unrelated purposes. Provider AI processing is explained in {{privacy}}. Submit only content you may lawfully use and avoid unnecessary sensitive information about other people. Shared or exported copies can remain with their recipients."
         ]
       },
@@ -374,7 +374,7 @@
         "id": "acceptable-use",
         "title": "Acceptable use",
         "paragraphs": [
-          "Do not use amen to commit unlawful acts, threaten or harass people, exploit children, infringe intellectual-property or privacy rights, distribute malicious software, obtain unauthorized access or deliberately evade safety and payment controls. Do not automate excessive requests that impair the service or bypass legitimate usage limits.",
+          "Do not use Amen to commit unlawful acts, threaten or harass people, exploit children, infringe intellectual-property or privacy rights, distribute malicious software, obtain unauthorized access or deliberately evade safety and payment controls. Do not automate excessive requests that impair the service or bypass legitimate usage limits.",
           "Good-faith religious discussion, questions and criticism are not themselves abuse. Restrictions must be applied proportionately and consistently with mandatory law. Report suspected misuse, infringements or security problems to {{email}} with enough detail to investigate, without sending unnecessary personal or illegal material."
         ]
       },
@@ -391,7 +391,7 @@
         "title": "Trials and promotional offers",
         "paragraphs": [
           "All new users are offered a 7-day free trial of Amen Plus at the end of onboarding. Apple's purchase confirmation shows the trial eligibility, renewal price and conditions. After trial access ends, continued app use requires an active Amen Plus subscription or a valid lifetime purchase. Cancel before Apple's displayed deadline to prevent automatic billing.",
-          "For a free or discounted trial, Apple advises cancellation at least 24 hours before the trial ends if you do not want renewal. The reminder mentioned during onboarding refers to Apple's trial-ending email, not an email from amen. Apple controls its delivery and timing; receipt is not guaranteed. Keep track of the renewal date in your Apple subscription settings; disabling notifications or removing the app does not stop billing."
+          "For a free or discounted trial, Apple advises cancellation at least 24 hours before the trial ends if you do not want renewal. The reminder mentioned during onboarding refers to Apple's trial-ending email, not an email from Amen. Apple controls its delivery and timing; receipt is not guaranteed. Keep track of the renewal date in your Apple subscription settings; disabling notifications or removing the app does not stop billing."
         ]
       },
       {
@@ -399,14 +399,14 @@
         "title": "Automatic renewal and cancellation",
         "paragraphs": [
           "Auto-renewing subscriptions continue for the stated billing period until canceled under Apple’s applicable rules. Manage cancellation in your device’s Apple account subscription settings or follow {{cancel}}. The subscription screen shows renewal dates and access after cancellation; store rules and mandatory law determine the result.",
-          "Deleting the app, deleting your amen account, signing out, emailing a cancellation request to amen or revoking permissions does not itself cancel an Apple-managed subscription. Price changes follow Apple’s notice and consent processes and applicable law. We do not claim a right to raise an existing price without required notice or agreement."
+          "Deleting the app, deleting your Amen account, signing out, emailing a cancellation request to Amen or revoking permissions does not itself cancel an Apple-managed subscription. Price changes follow Apple’s notice and consent processes and applicable law. We do not claim a right to raise an existing price without required notice or agreement."
         ]
       },
       {
         "id": "restoration",
         "title": "Restoring purchases and one-time access",
         "paragraphs": [
-          "Use the available restore-purchases function with the Apple account that made the purchase. Sign in with Apple for amen and the Apple account used for App Store purchases serve different purposes. App sign-in alone does not purchase, cancel or guarantee restoration of a subscription. Access can depend on successful Apple validation, account association, device compatibility and the product's actual sharing conditions. Contact support if a validated purchase is not recognized.",
+          "Use the available restore-purchases function with the Apple account that made the purchase. Sign in with Apple for Amen and the Apple account used for App Store purchases serve different purposes. App sign-in alone does not purchase, cancel or guarantee restoration of a subscription. Access can depend on successful Apple validation, account association, device compatibility and the product's actual sharing conditions. Contact support if a validated purchase is not recognized.",
           "A one-time or lifetime product does not auto-renew unless the offer expressly says otherwise. Its scope follows the purchase description and mandatory law; it does not automatically promise operation for the buyer's lifetime or every future service. We cannot retrospectively reduce an agreed entitlement simply by redefining it in these terms."
         ]
       },
@@ -422,7 +422,7 @@
         "id": "withdrawal",
         "title": "Consumer withdrawal rights",
         "paragraphs": [
-          "Where applicable consumer law grants a withdrawal period, including the usual 14-day period for relevant distance contracts in the EEA, the purchase-specific information and law determine your rights and the responsible recipient. Contact the seller identified in your purchase documentation and amen where it is the contracting party.",
+          "Where applicable consumer law grants a withdrawal period, including the usual 14-day period for relevant distance contracts in the EEA, the purchase-specific information and law determine your rights and the responsible recipient. Contact the seller identified in your purchase documentation and Amen where it is the contracting party.",
           "For digital content or services, immediate supply may affect withdrawal only if the legal conditions are met, including any required express request, consent, acknowledgment and contract confirmation. Downloading an app or reading these terms does not automatically waive withdrawal. You may use a clear statement of withdrawal; a particular form is not mandatory unless the law says otherwise."
         ]
       },
@@ -447,7 +447,7 @@
         "title": "Availability and technical requirements",
         "paragraphs": [
           "Some functions need an internet connection, compatible iOS version, Apple permissions, active authentication and available third-party services. Maintenance, outages, provider limits or device conditions can interrupt service. We cannot promise uninterrupted access, identical output or permanent availability of a particular model.",
-          "Where an interruption prevents delivery of contracted access, your applicable remedies remain available. We will assess reported failures and take reasonable corrective steps. You are responsible for your own connection and device costs, but that responsibility does not excuse an amen defect."
+          "Where an interruption prevents delivery of contracted access, your applicable remedies remain available. We will assess reported failures and take reasonable corrective steps. You are responsible for your own connection and device costs, but that responsibility does not excuse an Amen defect."
         ]
       },
       {
@@ -462,8 +462,8 @@
         "id": "termination",
         "title": "Ending use and deleting an account",
         "paragraphs": [
-          "You can stop using amen and request account deletion through the app or support. Uninstalling alone does not remove cloud account information, and some device-only notes, highlights or preferences can remain separately from the account. See {{privacy}} for controls, deletion requests, lawful retention and backups. Save information you wish to keep before requesting deletion.",
-          "Cancel an Apple subscription separately to stop future billing. App removal, account deletion or ending access does not automatically cancel that store contract. If amen ends a service or your contract, we will follow applicable notice, paid-access and consumer-remedy duties. Clauses that necessarily continue, such as accrued claims and lawful retention, remain subject to law."
+          "You can stop using Amen and request account deletion through the app or support. Uninstalling alone does not remove cloud account information, and some device-only notes, highlights or preferences can remain separately from the account. See {{privacy}} for controls, deletion requests, lawful retention and backups. Save information you wish to keep before requesting deletion.",
+          "Cancel an Apple subscription separately to stop future billing. App removal, account deletion or ending access does not automatically cancel that store contract. If Amen ends a service or your contract, we will follow applicable notice, paid-access and consumer-remedy duties. Clauses that necessarily continue, such as accrued claims and lawful retention, remain subject to law."
         ]
       },
       {
@@ -471,15 +471,15 @@
         "title": "Liability",
         "paragraphs": [
           "Nothing in these terms excludes liability for intent, gross negligence, injury to life, body or health, fraud, a binding guarantee or liability that mandatory law makes non-excludable, including applicable product liability. Mandatory consumer compensation and refund rights are preserved.",
-          "Where German law permits, liability for simple negligence involving an essential contractual obligation is limited to foreseeable damage typical for the contract; essential obligations are those necessary to perform the agreement and on which you may normally rely. Other limitations apply only to the extent lawful in your jurisdiction. There is no blanket exclusion of all damage, AI-related harm or data loss."
+          "To the extent permitted by law, the app and its content, including AI responses, are provided as is and as available. Amen is not liable for indirect or consequential loss, lost profits, loss of data or damage caused by third-party services, and its total liability for any claim is limited to the amount you paid for Amen Plus in the 12 months before the claim arose. These limitations do not apply where mandatory law does not allow them."
         ]
       },
       {
         "id": "apple",
         "title": "Apple rules and related information",
         "paragraphs": [
-          "App Store purchases and usage follow Apple's applicable terms: {{appleTerms}}. The applicable app license is available at {{appleEula}}, and Apple's privacy information at {{applePrivacy}}. These references explain Apple's own services and do not replace amen's responsibilities for the app.",
-          "Use Apple's cancellation and refund processes for Apple-billed subscriptions and purchases. External services and device functions have their own conditions, permissions and availability requirements. These rules apply alongside mandatory consumer rights; referring you to Apple or another provider does not remove responsibilities associated with amen."
+          "App Store purchases and usage follow Apple's applicable terms: {{appleTerms}}. The applicable app license is available at {{appleEula}}, and Apple's privacy information at {{applePrivacy}}. These references explain Apple's own services and do not replace Amen's responsibilities for the app.",
+          "Use Apple's cancellation and refund processes for Apple-billed subscriptions and purchases. External services and device functions have their own conditions, permissions and availability requirements. These rules apply alongside mandatory consumer rights; referring you to Apple or another provider does not remove responsibilities associated with Amen."
         ]
       },
       {
@@ -494,8 +494,8 @@
         "id": "disputes",
         "title": "Applicable law and complaints",
         "paragraphs": [
-          "German law applies to the extent a valid choice is permitted. For consumers, this does not take away mandatory protections of the country of habitual residence where applicable. Jurisdiction follows the law; these terms do not require every consumer to sue at the provider’s location or submit to mandatory private arbitration.",
-          "Send complaints to {{email}}. Any legally required information about an appropriate alternative dispute-resolution body or participation will be supplied for the relevant dispute. The former EU online dispute-resolution platform closed in 2025 and is not presented as an available complaint route."
+          "These terms and any dispute arising from them or from use of the app are governed by Hungarian law, excluding its conflict-of-law rules. The courts of Hungary have jurisdiction. If you are a consumer, this choice does not remove protections that the law of your country of residence makes mandatory, including any right to bring proceedings there.",
+          "Please contact us first at {{email}} so we can try to resolve the matter informally. Where the law requires it, we will provide information about an alternative dispute-resolution body for the relevant dispute. We are only obliged to take part in such a procedure where the law requires it. The former EU online dispute-resolution platform closed in 2025."
         ]
       },
       {
@@ -510,7 +510,7 @@
         "id": "contact",
         "title": "Contact support",
         "paragraphs": [
-          "Contact amen support at {{email}} for app help, account questions, subscription access or complaints. Apple's linked guidance explains its billing, cancellation and refund processes. For personal-information requests, see {{privacy}}.",
+          "Contact Amen support at {{email}} for app help, account questions, subscription access or complaints. Apple's linked guidance explains its billing, cancellation and refund processes. For personal-information requests, see {{privacy}}.",
           "Include the product or feature concerned and a concise description. Share an order reference only when needed and avoid passwords, full card details and unnecessary private conversation content. These contact instructions do not restrict legally valid notices or require use of a particular channel where the law permits another."
         ]
       }
@@ -529,7 +529,7 @@
         "id": "delete-in-app",
         "title": "Delete your account in the app",
         "paragraphs": [
-          "Open amen and go to the You tab. Scroll to the bottom and tap Delete Account. Read the notice, tap Continue to Confirmation and confirm with Delete Account.",
+          "Open Amen and go to the You tab. Scroll to the bottom and tap Delete Account. Read the notice, tap Continue to Confirmation and confirm with Delete Account.",
           "Your account is deleted immediately and you are signed out automatically. Deletion cannot be undone. If it does not complete, tap Try Again or contact support at {{email}}."
         ]
       },
@@ -537,7 +537,7 @@
         "id": "delete-by-email",
         "title": "Request deletion without the app",
         "paragraphs": [
-          "If you no longer have the app or cannot open your account, email {{email}} with the subject “Delete my amen account”. Send it from the Google account you linked in amen, or include your amen display name so we can find your account.",
+          "If you no longer have the app or cannot open your account, email {{email}} with the subject “Delete my Amen account”. Send it from the Google account you linked in Amen, or include your Amen display name so we can find your account.",
           "We may ask a short question to confirm that the account is yours; we will never ask for your password. We delete the account within one month and confirm the deletion by email."
         ]
       },
@@ -569,11 +569,11 @@
   },
   "android": {
     "privacy": {
-      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy applies to the amen app for Android. It explains how personal information is used in the app, including accounts, reading activity, Nema AI chat, audio, Bible Lock and subscriptions. The information processed depends on the features you choose.",
+      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. This policy applies to the Amen app for Android. It explains how personal information is used in the app, including accounts, reading activity, Nema AI chat, audio, Bible Lock and subscriptions. The information processed depends on the features you choose.",
       "summary": [
         "Nema uses an enhanced Google AI model to provide AI chat. Your message and relevant conversation context are sent to Google to generate a response.",
         "Amen creates a guest account without requiring an email address. You can save it with your Google account. Purchases are made and managed through Google Play.",
-        "Bible Lock checks on your phone which app is open so it can lock the apps you choose. This information is not sent to amen or to service providers.",
+        "Bible Lock checks on your phone which app is open so it can lock the apps you choose. This information is not sent to Amen or to service providers.",
         "Contact support at amenapphilfe@gmail.com for privacy requests. A Google Play subscription must be canceled in Google Play; deleting the app or your account does not cancel it."
       ],
       "sections": [
@@ -581,8 +581,8 @@
           "id": "controller",
           "title": "Privacy contact",
           "paragraphs": [
-            "For questions about how the amen app for Android uses personal information, contact support at {{email}}. You can use this address for access, correction, deletion, restriction, portability, withdrawal of consent and other privacy requests.",
-            "This policy describes processing associated with the amen app on Android devices. Google also processes information for its own services, such as Google Play, Google sign-in and Android, under its own privacy policy. Google's responsibilities do not replace the responsibilities associated with amen or reduce your rights."
+            "For questions about how the Amen app for Android uses personal information, contact support at {{email}}. You can use this address for access, correction, deletion, restriction, portability, withdrawal of consent and other privacy requests.",
+            "This policy describes processing associated with the Amen app on Android devices. Google also processes information for its own services, such as Google Play, Google sign-in and Android, under its own privacy policy. Google's responsibilities do not replace the responsibilities associated with Amen or reduce your rights."
           ]
         },
         {
@@ -592,8 +592,8 @@
           "id": "accounts",
           "title": "Accounts, Google sign-in and profile",
           "paragraphs": [
-            "During onboarding, amen creates a guest account without requiring an email address. The account has a unique identifier and session information. Your chosen name and supported saved activity are associated with that account identifier. Guest access does not require verification of your real-world identity; account-linked information can still be personal data. Account identifiers, session information and preferences are stored with account services and on the device. Account information also includes creation and update times.",
-            "You can save your account with your Google account and later sign in with it again. Google confirms the sign-in and can provide an identifier, your name and your email address; amen does not receive your Google password and does not request access to other Google content. On Android, Google sign-in is the only way to recover an account. A guest account that has not been saved with Google cannot be recovered after signing out, reinstalling the app or changing devices. The usual bases are Article 6(1)(b), proportionate security under Article 6(1)(f), and legal duties under Article 6(1)(c)."
+            "During onboarding, Amen creates a guest account without requiring an email address. The account has a unique identifier and session information. Your chosen name and supported saved activity are associated with that account identifier. Guest access does not require verification of your real-world identity; account-linked information can still be personal data. Account identifiers, session information and preferences are stored with account services and on the device. Account information also includes creation and update times.",
+            "You can save your account with your Google account and later sign in with it again. Google confirms the sign-in and can provide an identifier, your name and your email address; Amen does not receive your Google password and does not request access to other Google content. On Android, Google sign-in is the only way to recover an account. A guest account that has not been saved with Google cannot be recovered after signing out, reinstalling the app or changing devices. The usual bases are Article 6(1)(b), proportionate security under Article 6(1)(f), and legal duties under Article 6(1)(c)."
           ]
         },
         {
@@ -646,7 +646,7 @@
           "id": "bible-lock",
           "title": "Bible Lock on Android",
           "paragraphs": [
-            "Android has no Screen Time, so Bible Lock works differently than on iOS. It needs two settings that you turn on in Android settings: usage access, so the app can see which app is open, and display over other apps, so it can cover a locked app. While Bible Lock is active, a service runs in the foreground with a permanent notification, as Android requires. The apps you choose, schedules, unlock status and reading progress are stored only on your phone. Information about which apps you open is used on the device to apply the lock and is not sent to amen or to service providers.",
+            "Android has no Screen Time, so Bible Lock works differently than on iOS. It needs two settings that you turn on in Android settings: usage access, so the app can see which app is open, and display over other apps, so it can cover a locked app. While Bible Lock is active, a service runs in the foreground with a permanent notification, as Android requires. The apps you choose, schedules, unlock status and reading progress are stored only on your phone. Information about which apps you open is used on the device to apply the lock and is not sent to Amen or to service providers.",
             "You can withdraw usage access and display over other apps in Android settings at any time; Bible Lock then stops working. For an AI reading recommendation, your selected need, requested reading length, preferred language and recent chapter references can be sent to Google. Recent references help avoid repeated recommendations and are also stored on your phone. Processing generally provides the requested feature under Article 6(1)(b), with additional protection for sensitive information."
           ]
         },
@@ -678,7 +678,7 @@
           "id": "media",
           "title": "Comics, images and sharing",
           "paragraphs": [
-            "When you open comics or images in Discover, amen requests the content from delivery services and can keep temporary copies for display. Delivery involves the requested file and ordinary network connection information, including the IP address used for the connection.",
+            "When you open comics or images in Discover, Amen requests the content from delivery services and can keep temporary copies for display. Delivery involves the requested file and ordinary network connection information, including the IP address used for the connection.",
             "Content you share through Android's share function goes to the app or person you choose. Shared copies are separate from account records and are not automatically recalled by account deletion. Media processing generally provides your requested feature under Article 6(1)(b)."
           ]
         },
@@ -686,7 +686,7 @@
           "id": "purchases",
           "title": "Purchases and Google Play",
           "paragraphs": [
-            "Google Play handles payments and billing for purchases in the Android app. Amen does not receive your full payment-card number. A purchase validation service uses your account identifier, transaction details, products, trial status and subscription access information to recognize your purchases. Restoring purchases links the purchases of your Google Play account to your current amen account. Google Play's terms are available at {{googlePlayTerms}}.",
+            "Google Play handles payments and billing for purchases in the Android app. Amen does not receive your full payment-card number. A purchase validation service uses your account identifier, transaction details, products, trial status and subscription access information to recognize your purchases. Restoring purchases links the purchases of your Google Play account to your current Amen account. Google Play's terms are available at {{googlePlayTerms}}.",
             "The Android app does not use purchase information for advertising. Access administration generally relies on Article 6(1)(b) and legally required records on Article 6(1)(c). Google's handling of purchase information is described in {{googlePrivacy}}."
           ]
         },
@@ -695,7 +695,7 @@
           "title": "Analytics and advertising measurement",
           "paragraphs": [
             "The current Android app does not include third-party advertising measurement or attribution tools and does not request access to the Android advertising ID. It does not report installations, trial starts or purchases to advertising partners. The advertising measurement described in the iOS privacy policy does not apply to the Android app.",
-            "Google Play may provide amen with statistics and crash reports about the app, depending on your device and Google account settings. These reports help find technical faults and are handled under {{googlePrivacy}}. We will update this policy if measurement in the Android app changes."
+            "Google Play may provide Amen with statistics and crash reports about the app, depending on your device and Google account settings. These reports help find technical faults and are handled under {{googlePrivacy}}. We will update this policy if measurement in the Android app changes."
           ]
         },
         {
@@ -710,7 +710,7 @@
           "id": "children",
           "title": "Children and parental authorization",
           "paragraphs": [
-            "Use of amen must comply with applicable child-data rules, legally effective parental authorization where required, and the conditions of external services. A Google Play content rating does not replace these requirements. Google's AI service conditions are linked in this policy and remain relevant to features that use those services.",
+            "Use of Amen must comply with applicable child-data rules, legally effective parental authorization where required, and the conditions of external services. A Google Play content rating does not replace these requirements. Google's AI service conditions are linked in this policy and remain relevant to features that use those services.",
             "Where consent is needed, the requirements for children depend on local law. Contact support if you believe a child's information was processed without the necessary authorization. We will investigate the request and arrange the restriction or deletion required in the circumstances."
           ]
         },
@@ -741,7 +741,7 @@
           "title": "Deleting your account",
           "paragraphs": [
             "You can delete your account in the app under You → Delete Account. The account is deleted immediately, you are signed out and the account's data on your phone is removed. Deletion cannot be undone. If you cannot use the app, request deletion at {{email}}; the steps are described on {{deleteAccount}}. Proportionate identity verification may be needed; you will not be asked to send a password.",
-            "Uninstalling the app alone does not delete your account. Removing amen's access in your Google account settings is also separate from deleting information held by amen. Neither app removal nor account deletion cancels a Google Play subscription: cancel it separately, see {{googlePlayCancel}}. Copies you shared outside the app and records subject to lawful retention are distinct from removal of the active account."
+            "Uninstalling the app alone does not delete your account. Removing Amen's access in your Google account settings is also separate from deleting information held by Amen. Neither app removal nor account deletion cancels a Google Play subscription: cancel it separately, see {{googlePlayCancel}}. Copies you shared outside the app and records subject to lawful retention are distinct from removal of the active account."
           ]
         },
         {
@@ -756,11 +756,11 @@
       ]
     },
     "terms": {
-      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. These terms apply to the amen app for Android, including Nema AI chat, account features and subscriptions purchased through Google Play. Read them alongside the privacy policy and the offer shown before a purchase. Your statutory consumer rights remain protected.",
+      "intro": "Amen is a Christian app for Bible reading, prayer and spiritual reflection. These terms apply to the Amen app for Android, including Nema AI chat, account features and subscriptions purchased through Google Play. Read them alongside the privacy policy and the offer shown before a purchase. Your statutory consumer rights remain protected.",
       "summary": [
         "Nema uses an enhanced Google AI model to provide AI chat. Responses can be inaccurate; check important answers and Bible quotations.",
         "Before you confirm a purchase, Google Play shows the price, billing period, any free trial and the product you are buying.",
-        "Google Play subscriptions renew until canceled in Google Play. Deleting the app or your amen account does not cancel Google Play billing.",
+        "Google Play subscriptions renew until canceled in Google Play. Deleting the app or your Amen account does not cancel Google Play billing.",
         "These terms preserve statutory consumer rights. Google Play's terms also apply to downloads and purchases."
       ],
       "sections": [
@@ -768,13 +768,13 @@
           "id": "provider",
           "title": "Scope and agreement",
           "paragraphs": [
-            "These terms apply to the amen app for Android and its Bible, prayer and Christian reflection features. Contact support at {{email}} with questions about the agreement. Google's relationship with you for Google Play follows Google Play's own terms; see {{googlePlayTerms}}.",
+            "These terms apply to the Amen app for Android and its Bible, prayer and Christian reflection features. Contact support at {{email}} with questions about the agreement. Google's relationship with you for Google Play follows Google Play's own terms; see {{googlePlayTerms}}.",
             "A contract is formed through the applicable registration, acceptance or purchase process after the relevant terms and offer are made available. Mere publication of these terms is not a substitute for acceptance where it is required. An individual agreement and mandatory law take precedence over inconsistent general wording."
           ]
         },
         {
           "id": "service",
-          "title": "What amen provides",
+          "title": "What Amen provides",
           "paragraphs": [
             "Amen supports Christian Bible reading, prayer and reflection through saved verses, highlights, devotionals, reading progress and related features. Depending on the version and access level, the Android app also provides Bible comics, images, Days with Jesus and home screen widgets. Nema uses an enhanced Google AI model to provide AI chat. Some reading recommendations and audio features also use AI. Features of the iOS app are not automatically available in the Android app.",
             "The actual offer and purchase screen define paid access. Some content must be downloaded before use, and sharing content remains subject to its license. These terms do not promise a fixed number of messages, a particular AI model, every Bible translation, perpetual operation or features advertised for a different version or platform. Descriptions and contractual commitments that law makes binding remain binding."
@@ -782,7 +782,7 @@
         },
         {
           "id": "eligibility",
-          "title": "Using amen and external services",
+          "title": "Using Amen and external services",
           "paragraphs": [
             "You must have the legal capacity to enter the relevant agreement or legally effective parental or guardian authorization where required. Use external services in accordance with their applicable conditions. Nema uses Google AI services; the provider's conditions are available at {{google}}.",
             "Child-data and consent requirements depend on local law. Purchases require the payment method and any family or parental approval that applies to the Google account used. The app's content rating does not override legal requirements or the conditions of another service."
@@ -793,7 +793,7 @@
           "title": "Accounts and account security",
           "paragraphs": [
             "Amen creates a guest account during onboarding without an email address. A guest account has no sign-in method: if you sign out, reinstall the app or change devices without saving it with Google, you can permanently lose access to it. Certain functions need a working account and network access. Protect access to your device and Google account and notify support if you suspect unauthorized use; you are not automatically responsible for every action caused by a failure outside your control. Do not use another person's account without authorization.",
-            "You can save your account with Google and sign in again with the same Google account. Email/password login and Sign in with Apple are not available in the Android app. If you sign in with a Google account that already belongs to another amen account, that account opens and guest information is not merged. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce amen's duty to provide a conforming service."
+            "You can save your account with Google and sign in again with the same Google account. Email/password login and Sign in with Apple are not available in the Android app. If you sign in with a Google account that already belongs to another Amen account, that account opens and guest information is not merged. Choosing a display name does not give you a right to infringe trademarks or impersonate another person. Keep a separate copy of information important to you; this recommendation does not reduce Amen's duty to provide a conforming service."
           ]
         },
         {
@@ -840,7 +840,7 @@
           "title": "Trials and promotional offers",
           "paragraphs": [
             "All new users are offered a 7-day free trial of Amen Plus at the end of onboarding. Google Play's confirmation shows your eligibility, when billing starts and the price after the trial. If you do not cancel in Google Play before the trial ends, the subscription starts automatically and is charged.",
-            "Cancel in Google Play before the trial ends if you do not want to be charged. Keep track of the end date in your Google Play subscriptions and do not rely on a reminder. Turning off notifications, removing the app or deleting your amen account does not stop billing."
+            "Cancel in Google Play before the trial ends if you do not want to be charged. Keep track of the end date in your Google Play subscriptions and do not rely on a reminder. Turning off notifications, removing the app or deleting your Amen account does not stop billing."
           ]
         },
         {
@@ -848,14 +848,14 @@
           "title": "Automatic renewal and cancellation",
           "paragraphs": [
             "Auto-renewing subscriptions continue for the stated billing period until canceled under Google Play's rules. Cancel in the Google Play app under Payments & subscriptions or follow {{googlePlayCancel}}. After cancellation, access normally continues until the end of the paid period; Google Play shows the relevant dates, and mandatory law determines the result.",
-            "Deleting the app, deleting your amen account, signing out, emailing a cancellation request to amen or revoking permissions does not itself cancel a Google Play subscription. Price changes follow Google Play's notice and consent processes and applicable law. We do not claim a right to raise an existing price without required notice or agreement."
+            "Deleting the app, deleting your Amen account, signing out, emailing a cancellation request to Amen or revoking permissions does not itself cancel a Google Play subscription. Price changes follow Google Play's notice and consent processes and applicable law. We do not claim a right to raise an existing price without required notice or agreement."
           ]
         },
         {
           "id": "restoration",
           "title": "Restoring purchases",
           "paragraphs": [
-            "Use Restore purchases with the Google account that made the purchase. Your amen sign-in with Google and the Google account used for Google Play can be different accounts. Restoring links that Google Play account's purchases to your current amen account. Purchases made through Apple on iOS are managed by Apple and are not guaranteed to unlock the Android app. Contact support if a validated purchase is not recognized.",
+            "Use Restore purchases with the Google account that made the purchase. Your Amen sign-in with Google and the Google account used for Google Play can be different accounts. Restoring links that Google Play account's purchases to your current Amen account. Purchases made through Apple on iOS are managed by Apple and are not guaranteed to unlock the Android app. Contact support if a validated purchase is not recognized.",
             "On Android, Amen Plus is offered only as an auto-renewing subscription; there is no one-time or lifetime purchase. Access depends on an active subscription and ends when it ends, subject to mandatory law. We cannot retrospectively reduce an agreed entitlement simply by redefining it in these terms."
           ]
         },
@@ -863,7 +863,7 @@
           "id": "refunds",
           "title": "Refunds and purchase problems",
           "paragraphs": [
-            "For Google Play purchases, contact amen support at {{email}} or see {{googlePlayRefund}}. Google Play's policies, the circumstances and applicable law determine whether a refund is granted. We review each request individually and cannot promise that every request will be granted.",
+            "For Google Play purchases, contact Amen support at {{email}} or see {{googlePlayRefund}}. Google Play's policies, the circumstances and applicable law determine whether a refund is granted. We review each request individually and cannot promise that every request will be granted.",
             "This routing does not remove statutory remedies against a responsible trader. Report failures, duplicate access charges or a nonconforming service to us as well where appropriate. No clause here makes all purchases nonrefundable or requires you to abandon rights to repair, price reduction, termination or reimbursement."
           ]
         },
@@ -881,7 +881,7 @@
           "title": "Availability and technical requirements",
           "paragraphs": [
             "Some functions need an internet connection, a compatible Android version, Google Play services, the relevant Android permissions, active authentication and available third-party services. Maintenance, outages, provider limits or device conditions can interrupt service. We cannot promise uninterrupted access, identical output or permanent availability of a particular model.",
-            "Where an interruption prevents delivery of contracted access, your applicable remedies remain available. We will assess reported failures and take reasonable corrective steps. You are responsible for your own connection and device costs, but that responsibility does not excuse an amen defect."
+            "Where an interruption prevents delivery of contracted access, your applicable remedies remain available. We will assess reported failures and take reasonable corrective steps. You are responsible for your own connection and device costs, but that responsibility does not excuse an Amen defect."
           ]
         },
         {
@@ -891,8 +891,8 @@
           "id": "termination",
           "title": "Ending use and deleting an account",
           "paragraphs": [
-            "You can stop using amen and delete your account in the app or through support. Uninstalling alone does not delete your account. See {{privacy}} for deletion, lawful retention and backups. Save information you wish to keep before deleting your account.",
-            "Cancel a Google Play subscription separately in Google Play to stop future billing. App removal, account deletion or ending access does not automatically cancel it. If amen ends a service or your contract, we will follow applicable notice, paid-access and consumer-remedy duties. Clauses that necessarily continue, such as accrued claims and lawful retention, remain subject to law."
+            "You can stop using Amen and delete your account in the app or through support. Uninstalling alone does not delete your account. See {{privacy}} for deletion, lawful retention and backups. Save information you wish to keep before deleting your account.",
+            "Cancel a Google Play subscription separately in Google Play to stop future billing. App removal, account deletion or ending access does not automatically cancel it. If Amen ends a service or your contract, we will follow applicable notice, paid-access and consumer-remedy duties. Clauses that necessarily continue, such as accrued claims and lawful retention, remain subject to law."
           ]
         },
         {
@@ -902,8 +902,8 @@
           "id": "google-play",
           "title": "Google Play rules and related information",
           "paragraphs": [
-            "Downloads and purchases through Google Play follow Google Play's terms: {{googlePlayTerms}}. Google's privacy information is available at {{googlePrivacy}}. These references explain Google's own services and do not replace amen's responsibilities for the app.",
-            "Use Google Play's cancellation process for Google Play subscriptions and contact us or Google Play about refunds. Android, Google sign-in and other external services have their own conditions, permissions and availability requirements. These rules apply alongside mandatory consumer rights; referring you to Google or another provider does not remove responsibilities associated with amen."
+            "Downloads and purchases through Google Play follow Google Play's terms: {{googlePlayTerms}}. Google's privacy information is available at {{googlePrivacy}}. These references explain Google's own services and do not replace Amen's responsibilities for the app.",
+            "Use Google Play's cancellation process for Google Play subscriptions and contact us or Google Play about refunds. Android, Google sign-in and other external services have their own conditions, permissions and availability requirements. These rules apply alongside mandatory consumer rights; referring you to Google or another provider does not remove responsibilities associated with Amen."
           ]
         },
         {
@@ -924,7 +924,7 @@
           "id": "contact",
           "title": "Contact support",
           "paragraphs": [
-            "Contact amen support at {{email}} for app help, account questions, subscription access or complaints. Google Play's linked guidance explains its billing and cancellation processes. For personal-information requests, see {{privacy}}.",
+            "Contact Amen support at {{email}} for app help, account questions, subscription access or complaints. Google Play's linked guidance explains its billing and cancellation processes. For personal-information requests, see {{privacy}}.",
             "Include the product or feature concerned and a concise description. Share an order reference only when needed and avoid passwords, full card details and unnecessary private conversation content. These contact instructions do not restrict legally valid notices or require use of a particular channel where the law permits another."
           ]
         }

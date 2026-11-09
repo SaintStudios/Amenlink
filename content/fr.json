@@ -4,7 +4,7 @@
     "navTerms": "Conditions",
     "navImprint": "Infos légales",
     "navSupport": "Contact",
-    "home": "Site amen",
+    "home": "Site Amen",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d’utilisation",
     "support": "Contacter l’assistance",
@@ -18,9 +18,9 @@
     "skip": "Aller au document",
     "top": "Retour en haut",
     "documents": "Informations juridiques",
-    "copyright": "amen",
-    "privacyDescription": "Utilisation des données de compte, de lecture, de prière, de conversation et d’achat dans amen, et exercice de vos droits.",
-    "termsDescription": "Conditions de l’app chrétienne amen, lecture biblique, prière, discussion IA Nema, abonnements et droits des consommateurs.",
+    "copyright": "Amen",
+    "privacyDescription": "Utilisation des données de compte, de lecture, de prière, de conversation et d’achat dans Amen, et exercice de vos droits.",
+    "termsDescription": "Conditions de l’app chrétienne Amen, lecture biblique, prière, discussion IA Nema, abonnements et droits des consommateurs.",
     "email": "amenapphilfe@gmail.com",
     "cancel": "Résilier un abonnement Apple",
     "refund": "Demander un remboursement à Apple",
@@ -29,8 +29,8 @@
     "providers": "Informations complémentaires",
     "applePrivacy": "Confidentialité chez Apple",
     "imprint": "Informations juridiques",
-    "supportDescription": "Contactez l’assistance amen à amenapphilfe@gmail.com pour l’app, votre compte, les abonnements ou les demandes de confidentialité.",
-    "imprintDescription": "Conditions, informations de confidentialité et assistance pour l’app amen.",
+    "supportDescription": "Contactez l’assistance Amen à amenapphilfe@gmail.com pour l’app, votre compte, les abonnements ou les demandes de confidentialité.",
+    "imprintDescription": "Conditions, informations de confidentialité et assistance pour l’app Amen.",
     "googlePrivacy": "Politique de confidentialité de Google",
     "appleTerms": "Conditions de l’App Store et règles d’utilisation Apple",
     "appleInformation": "Informations Apple",
@@ -52,15 +52,15 @@
       "Nema utilise un modèle d’IA amélioré de Google pour la discussion par IA. Votre message et le contexte pertinent sont transmis à Google pour produire une réponse.",
       "L'utilisation en tant qu'invité crée un identifiant de compte sans exiger d'adresse e-mail. Les notes et surlignages locaux sont distincts des contenus enregistrés avec le compte. Apple gère les achats.",
       "Prières, préférences de foi et conversations peuvent contenir des informations personnelles sensibles. Vos droits et les consentements nécessaires restent protégés.",
-      "Pour vos demandes de confidentialité, écrivez à l’assistance à amenapphilfe@gmail.com. Les abonnements Apple doivent être résiliés séparément de la suppression de l’app ou du compte amen."
+      "Pour vos demandes de confidentialité, écrivez à l’assistance à amenapphilfe@gmail.com. Les abonnements Apple doivent être résiliés séparément de la suppression de l’app ou du compte Amen."
     ],
     "sections": [
       {
         "id": "controller",
         "title": "Contact pour la confidentialité",
         "paragraphs": [
-          "Pour toute question sur les informations personnelles dans l’app amen, contactez l’assistance à {{email}}. Cette adresse permet aussi de demander accès, rectification, effacement, limitation, portabilité, retrait du consentement ou d’exercer d’autres droits.",
-          "Cette politique décrit les traitements associés à l’app amen. Apple et Google traitent également des informations pour leurs propres services selon leurs politiques respectives. Leurs responsabilités ne remplacent pas celles associées à amen et ne réduisent pas vos droits."
+          "Pour toute question sur les informations personnelles dans l’app Amen, contactez l’assistance à {{email}}. Cette adresse permet aussi de demander accès, rectification, effacement, limitation, portabilité, retrait du consentement ou d’exercer d’autres droits.",
+          "Cette politique décrit les traitements associés à l’app Amen. Apple et Google traitent également des informations pour leurs propres services selon leurs politiques respectives. Leurs responsabilités ne remplacent pas celles associées à Amen et ne réduisent pas vos droits."
         ]
       },
       {
@@ -75,8 +75,8 @@
         "id": "accounts",
         "title": "Comptes, authentification et profil",
         "paragraphs": [
-          "Pendant la configuration initiale, amen peut créer un compte invité sans exiger d'adresse e-mail ni de connexion avec Apple. Le compte possède un identifiant unique et des informations de session. Le nom choisi et les activités enregistrées prises en charge sont associés à cet identifiant de compte. L’accès comme invité ne nécessite pas de vérifier votre identité réelle ; les informations liées au compte peuvent néanmoins être des données personnelles. Identifiants, informations d'authentification de session et préférences sont stockés auprès des services de compte et sur l'appareil pour maintenir l'accès et la synchronisation disponible. L'accès après déconnexion, réinstallation ou changement d'appareil dépend des informations d'authentification et de récupération disponibles. Les informations de compte comprennent aussi les dates de création et de mise à jour.",
-          "Vous pouvez associer des informations prises en charge du compte invité avec Se connecter avec Apple. Apple peut fournir un identifiant, un nom et une adresse e-mail ou de relais privé ; amen ne reçoit pas le mot de passe de votre compte Apple. L'association peut relier ou transférer des conversations, données de profil et de progression prises en charge, selon les informations existantes et la réussite de l'opération. Elle ne rend pas tous les éléments uniquement locaux disponibles ailleurs. Les utilisateurs disposant d'un compte existant avec e-mail et mot de passe peuvent utiliser la connexion et la réinitialisation proposées. Les services de compte traitent les identifiants et informations de récupération nécessaires. Les bases habituelles sont l'article 6, paragraphe 1, point b, la sécurité proportionnée au titre du point f et les obligations légales au titre du point c du RGPD."
+          "Pendant la configuration initiale, Amen peut créer un compte invité sans exiger d'adresse e-mail ni de connexion avec Apple. Le compte possède un identifiant unique et des informations de session. Le nom choisi et les activités enregistrées prises en charge sont associés à cet identifiant de compte. L’accès comme invité ne nécessite pas de vérifier votre identité réelle ; les informations liées au compte peuvent néanmoins être des données personnelles. Identifiants, informations d'authentification de session et préférences sont stockés auprès des services de compte et sur l'appareil pour maintenir l'accès et la synchronisation disponible. L'accès après déconnexion, réinstallation ou changement d'appareil dépend des informations d'authentification et de récupération disponibles. Les informations de compte comprennent aussi les dates de création et de mise à jour.",
+          "Vous pouvez associer des informations prises en charge du compte invité avec Se connecter avec Apple. Apple peut fournir un identifiant, un nom et une adresse e-mail ou de relais privé ; Amen ne reçoit pas le mot de passe de votre compte Apple. L'association peut relier ou transférer des conversations, données de profil et de progression prises en charge, selon les informations existantes et la réussite de l'opération. Elle ne rend pas tous les éléments uniquement locaux disponibles ailleurs. Les utilisateurs disposant d'un compte existant avec e-mail et mot de passe peuvent utiliser la connexion et la réinitialisation proposées. Les services de compte traitent les identifiants et informations de récupération nécessaires. Les bases habituelles sont l'article 6, paragraphe 1, point b, la sécurité proportionnée au titre du point f et les obligations légales au titre du point c du RGPD."
         ]
       },
       {
@@ -139,7 +139,7 @@
         "id": "bible-lock",
         "title": "Bible Lock et Temps d’écran",
         "paragraphs": [
-          "Bible Lock utilise les fonctions Temps d'écran d'Apple lorsque vous les autorisez. Les identifiants de sélection fournis par Apple des apps, catégories et domaines web pris en charge choisis, ainsi que les horaires, réglages de déverrouillage et progression de lecture, sont stockés localement pour l'app et ses extensions. L'autorisation ne donne pas à amen un accès général aux messages ou à l'historique de navigation. Vous pouvez gérer ou révoquer l'accès dans les réglages système.",
+          "Bible Lock utilise les fonctions Temps d'écran d'Apple lorsque vous les autorisez. Les identifiants de sélection fournis par Apple des apps, catégories et domaines web pris en charge choisis, ainsi que les horaires, réglages de déverrouillage et progression de lecture, sont stockés localement pour l'app et ses extensions. L'autorisation ne donne pas à Amen un accès général aux messages ou à l'historique de navigation. Vous pouvez gérer ou révoquer l'accès dans les réglages système.",
           "Pour une recommandation de lecture par IA, le besoin choisi, la longueur de lecture demandée, la langue préférée et les références de chapitres récents peuvent être envoyés à Google. Ces références évitent les répétitions et sont aussi enregistrées localement pour cette fonction. Le traitement fournit généralement la fonction demandée au titre de l'article 6, paragraphe 1, point b du RGPD, avec une protection supplémentaire pour les données sensibles. Apple contrôle son propre traitement système ; les permissions de l'appareil ne valent pas consentement pour des analyses sans rapport ou d'autres finalités sensibles."
         ]
       },
@@ -155,15 +155,15 @@
         "id": "notifications",
         "title": "Notifications et horaires des rappels",
         "paragraphs": [
-          "Pour les rappels distants de versets et prières, amen transmet au service de notifications le jeton push de l'appareil, la langue, le fuseau horaire, les types activés et les heures de réception choisies. L'inscription peut être associée à votre compte. Les rappels pris en charge de séries ou d'essai peuvent être programmés localement sur l'appareil. Ces informations servent aux fonctions de rappel et de réception choisies.",
-          "Vous pouvez modifier les préférences dans l'app et la permission de notifications dans iOS. La réception dépend des permissions, réglages et services disponibles. Révoquer une permission ne prouve pas à soi seul que tous les jetons et enregistrements antérieurs ont été supprimés ; contactez {{email}} pour une demande. Un rappel d'essai n'annule pas l'abonnement et ne remplace pas les informations de renouvellement d'Apple. Le rappel mentionné lors de la configuration initiale désigne un e-mail d'Apple concernant la fin prochaine de votre essai, et non un e-mail envoyé par amen. Apple gère ces e-mails à l'aide des informations de votre compte Apple conformément à {{applePrivacy}}. Amen ne contrôle ni leur réception ni leur date d'envoi."
+          "Pour les rappels distants de versets et prières, Amen transmet au service de notifications le jeton push de l'appareil, la langue, le fuseau horaire, les types activés et les heures de réception choisies. L'inscription peut être associée à votre compte. Les rappels pris en charge de séries ou d'essai peuvent être programmés localement sur l'appareil. Ces informations servent aux fonctions de rappel et de réception choisies.",
+          "Vous pouvez modifier les préférences dans l'app et la permission de notifications dans iOS. La réception dépend des permissions, réglages et services disponibles. Révoquer une permission ne prouve pas à soi seul que tous les jetons et enregistrements antérieurs ont été supprimés ; contactez {{email}} pour une demande. Un rappel d'essai n'annule pas l'abonnement et ne remplace pas les informations de renouvellement d'Apple. Le rappel mentionné lors de la configuration initiale désigne un e-mail d'Apple concernant la fin prochaine de votre essai, et non un e-mail envoyé par Amen. Apple gère ces e-mails à l'aide des informations de votre compte Apple conformément à {{applePrivacy}}. Amen ne contrôle ni leur réception ni leur date d'envoi."
         ]
       },
       {
         "id": "widgets",
         "title": "Jours avec Jésus et widgets",
         "paragraphs": [
-          "Si vous utilisez Jours avec Jésus, amen enregistre localement la date choisie pour calculer le nombre de jours. Vous pouvez la modifier ou la réinitialiser dans la fonction. La date, les contenus bibliques, préférences et informations d'accès nécessaires aux widgets pris en charge sont partagés avec les extensions de l'app sur l'appareil. Bible Lock utilise également des données partagées pour ses fonctions autorisées.",
+          "Si vous utilisez Jours avec Jésus, Amen enregistre localement la date choisie pour calculer le nombre de jours. Vous pouvez la modifier ou la réinitialiser dans la fonction. La date, les contenus bibliques, préférences et informations d'accès nécessaires aux widgets pris en charge sont partagés avec les extensions de l'app sur l'appareil. Bible Lock utilise également des données partagées pour ses fonctions autorisées.",
           "Les widgets et aperçus de notifications peuvent afficher des contenus de foi sur l'écran d'accueil ou verrouillé. Toute personne voyant l'écran peut aussi voir ces contenus. Tenez compte de cette visibilité lors de leur choix. Les fonctions de widgets demandées reposent généralement sur l'article 6, paragraphe 1, point b du RGPD, avec une protection supplémentaire si les informations révèlent des convictions religieuses ou d'autres données sensibles."
         ]
       },
@@ -171,8 +171,8 @@
         "id": "media",
         "title": "Bandes dessinées, fonds, scènes et musique",
         "paragraphs": [
-          "Quand vous ouvrez des bandes dessinées, fonds, scènes à 360° ou contenus audio, amen demande les contenus aux services de diffusion et peut conserver des copies ou caches locaux pour l'affichage et la lecture. La diffusion implique le fichier demandé et les informations habituelles de connexion réseau, dont l'adresse IP utilisée pour la connexion. Les préférences de musique de fond prises en charge sont enregistrées localement et peuvent aussi être stockées avec le profil pour fournir l'écoute choisie.",
-          "La vue actuelle à 360° affiche des panoramas téléchargés contrôlés au toucher ; elle n'utilise pas la caméra pour capturer la pièce. Enregistrer un fond ou une Live Photo ajoute le contenu choisi à Photos avec la permission demandée. Les copies enregistrées dans Photos ou partagées hors d'amen sont distinctes des données de compte et ne sont pas rappelées automatiquement par sa suppression. Le traitement des médias fournit généralement la fonction demandée au titre de l'article 6, paragraphe 1, point b du RGPD."
+          "Quand vous ouvrez des bandes dessinées, fonds, scènes à 360° ou contenus audio, Amen demande les contenus aux services de diffusion et peut conserver des copies ou caches locaux pour l'affichage et la lecture. La diffusion implique le fichier demandé et les informations habituelles de connexion réseau, dont l'adresse IP utilisée pour la connexion. Les préférences de musique de fond prises en charge sont enregistrées localement et peuvent aussi être stockées avec le profil pour fournir l'écoute choisie.",
+          "La vue actuelle à 360° affiche des panoramas téléchargés contrôlés au toucher ; elle n'utilise pas la caméra pour capturer la pièce. Enregistrer un fond ou une Live Photo ajoute le contenu choisi à Photos avec la permission demandée. Les copies enregistrées dans Photos ou partagées hors d'Amen sont distinctes des données de compte et ne sont pas rappelées automatiquement par sa suppression. Le traitement des médias fournit généralement la fonction demandée au titre de l'article 6, paragraphe 1, point b du RGPD."
         ]
       },
       {
@@ -180,7 +180,7 @@
         "title": "Achats et Apple",
         "paragraphs": [
           "Apple gère les paiements et la facturation de l’App Store. Amen ne reçoit pas votre numéro de carte complet lors d’un achat intégré Apple. Les services de validation utilisent identifiants de compte, transactions, produits, état d’essai et accès aux abonnements pour reconnaître les achats. Consultez {{appleTerms}}.",
-          "L’état d’achat et des identifiants techniques peuvent être associés à votre compte amen pour l’attribution des abonnements. La gestion d’accès repose généralement sur l’article 6.1.b, les dossiers obligatoires sur le 6.1.c et le marketing facultatif sur le consentement lorsqu’il est nécessaire. Le traitement des achats par Apple est décrit dans {{applePrivacy}}."
+          "L’état d’achat et des identifiants techniques peuvent être associés à votre compte Amen pour l’attribution des abonnements. La gestion d’accès repose généralement sur l’article 6.1.b, les dossiers obligatoires sur le 6.1.c et le marketing facultatif sur le consentement lorsqu’il est nécessaire. Le traitement des achats par Apple est décrit dans {{applePrivacy}}."
         ]
       },
       {
@@ -195,7 +195,7 @@
         "id": "advertising-choice",
         "title": "Choix de suivi Apple et attribution anonyme",
         "paragraphs": [
-          "Dans les versions utilisant l’intégration directe de TikTok, le SDK démarre à l’ouverture de l’app, avant la demande App Tracking Transparency (ATT) d’Apple dans le carrousel d’accueil initial. Le SDK inclut le statut ATT dans ses requêtes. Refuser ou ne pas répondre ne désactive pas le SDK et n’arrête pas tous les événements ni toutes les requêtes de configuration ou de diagnostic. Le choix doit être respecté pour le suivi entre les apps et sites web d’autres entreprises ; il ne limite pas l’accès aux fonctionnalités d’amen. Tu peux gérer l’autorisation Apple dans Réglages → Confidentialité et sécurité → Suivi ou contacter {{email}} au sujet de tes choix de confidentialité.",
+          "Dans les versions utilisant l’intégration directe de TikTok, le SDK démarre à l’ouverture de l’app, avant la demande App Tracking Transparency (ATT) d’Apple dans le carrousel d’accueil initial. Le SDK inclut le statut ATT dans ses requêtes. Refuser ou ne pas répondre ne désactive pas le SDK et n’arrête pas tous les événements ni toutes les requêtes de configuration ou de diagnostic. Le choix doit être respecté pour le suivi entre les apps et sites web d’autres entreprises ; il ne limite pas l’accès aux fonctionnalités d’Amen. Tu peux gérer l’autorisation Apple dans Réglages → Confidentialité et sécurité → Suivi ou contacter {{email}} au sujet de tes choix de confidentialité.",
           "SKAdNetwork (SKAN) d’Apple fournit une forme distincte de mesure publicitaire respectueuse de la vie privée, qui peut fonctionner sans autorisation ATT. Apple contrôle les rapports agrégés, leur calendrier et la disponibilité d’informations détaillées sur les conversions ; un événement ordinaire du SDK est distinct d’un rapport SKAN. Voir {{appleSKAN}}. Cette politique informe et ne constitue pas un consentement : lorsque la législation applicable exige un consentement préalable à la collecte ou à la transmission du SDK, cette exigence reste applicable. Le choix ATT d’Apple ne remplace pas tous les consentements ni les autres conditions légales."
         ]
       },
@@ -203,7 +203,7 @@
         "id": "sensitive",
         "title": "Religion et autres données sensibles",
         "paragraphs": [
-          "Confession, prières, objectifs et conversations peuvent révéler religion, santé ou catégories particulières de l’article 9 RGPD. Il faut une base de l’article 6 et une condition de l’article 9, normalement un consentement explicite pour la personnalisation religieuse facultative. Lire cette politique, utiliser amen ou permettre le suivi Apple ne suffit pas.",
+          "Confession, prières, objectifs et conversations peuvent révéler religion, santé ou catégories particulières de l’article 9 RGPD. Il faut une base de l’article 6 et une condition de l’article 9, normalement un consentement explicite pour la personnalisation religieuse facultative. Lire cette politique, utiliser Amen ou permettre le suivi Apple ne suffit pas.",
           "Vous pouvez demander retrait, restriction ou effacement à {{email}} et changer les préférences disponibles. Le retrait ne remet pas en cause un traitement antérieur licite. N’entrez pas de données sensibles de tiers sans autorité. La divulgation à l’analytique exige sa propre justification ; ce document ne crée pas de consentement et ne légalise pas un traitement illicite."
         ]
       },
@@ -211,7 +211,7 @@
         "id": "children",
         "title": "Enfants et autorisation parentale",
         "paragraphs": [
-          "L’usage d’amen doit respecter les règles applicables aux données des enfants, les autorisations parentales valides nécessaires et les conditions des services externes. Une classification de contenu App Store ne remplace pas ces exigences. Les conditions d’IA de Google liées dans cette politique restent pertinentes pour les fonctions utilisant ces services.",
+          "L’usage d’Amen doit respecter les règles applicables aux données des enfants, les autorisations parentales valides nécessaires et les conditions des services externes. Une classification de contenu App Store ne remplace pas ces exigences. Les conditions d’IA de Google liées dans cette politique restent pertinentes pour les fonctions utilisant ces services.",
           "Lorsque le consentement est nécessaire, les exigences concernant les enfants dépendent du droit local. Contactez l’assistance si vous pensez que des informations d’un enfant ont été traitées sans l’autorisation nécessaire. Nous examinerons la demande et organiserons la limitation ou l’effacement requis dans les circonstances."
         ]
       },
@@ -252,7 +252,7 @@
         "title": "Supprimer le compte",
         "paragraphs": [
           "Vous pouvez demander la suppression du compte dans l'app. Si vous n'y avez pas accès ou si la demande n'aboutit pas, contactez l'assistance à {{email}}. Une vérification proportionnée peut être nécessaire pour prévenir un accès ou une suppression non autorisés ; aucun envoi de mot de passe ne vous sera demandé. Supprimer le compte et retirer des contenus uniquement locaux sont des opérations distinctes. Notes, surlignages ou préférences peuvent subsister indépendamment du compte ; utilisez leurs commandes et la réinitialisation de Jours avec Jésus, ou contactez l'assistance.",
-          "Désinstaller l'app ne supprime pas à soi seul les données du compte dans le stockage distant. Retirer l'accès via Se connecter avec Apple est aussi distinct d'une demande de suppression des informations détenues par amen. Ni le retrait de l'app ni la suppression du compte n'annulent automatiquement un abonnement Apple : annulez-le séparément via {{cancel}}. Copies de l'appareil, exports, expiration des sauvegardes et conservation légale sont distincts du retrait du compte actif."
+          "Désinstaller l'app ne supprime pas à soi seul les données du compte dans le stockage distant. Retirer l'accès via Se connecter avec Apple est aussi distinct d'une demande de suppression des informations détenues par Amen. Ni le retrait de l'app ni la suppression du compte n'annulent automatiquement un abonnement Apple : annulez-le séparément via {{cancel}}. Copies de l'appareil, exports, expiration des sauvegardes et conservation légale sont distincts du retrait du compte actif."
         ]
       },
       {
@@ -260,7 +260,7 @@
         "title": "Droits et réclamations",
         "paragraphs": [
           "Lorsque le RGPD s’applique, vous pouvez demander accès, rectification, effacement, limitation et portabilité si les conditions sont réunies. Vous pouvez retirer le consentement et vous opposer à l’intérêt légitime pour votre situation particulière. L’opposition à la prospection directe est possible à tout moment.",
-          "Écrivez à {{email}}. Le délai normal est un mois ; une prolongation autorisée nécessite notification motivée. Les demandes sont normalement gratuites, sous exceptions légales. Vous pouvez saisir l’autorité de votre résidence, travail ou lieu d’infraction sans obligation de contacter amen d’abord."
+          "Écrivez à {{email}}. Le délai normal est un mois ; une prolongation autorisée nécessite notification motivée. Les demandes sont normalement gratuites, sous exceptions légales. Vous pouvez saisir l’autorité de votre résidence, travail ou lieu d’infraction sans obligation de contacter Amen d’abord."
         ]
       },
       {
@@ -286,7 +286,7 @@
     "summary": [
       "Nema utilise un modèle d’IA amélioré de Google pour la discussion par IA. Les réponses peuvent être inexactes ; vérifiez les affirmations importantes et les citations bibliques.",
       "L’écran d’achat affiche prix, période de facturation, conditions d’essai et accès inclus avant confirmation.",
-      "Les abonnements Apple se renouvellent jusqu’à résiliation. Supprimer l’app ou votre compte amen n’arrête pas la facturation Apple.",
+      "Les abonnements Apple se renouvellent jusqu’à résiliation. Supprimer l’app ou votre compte Amen n’arrête pas la facturation Apple.",
       "Ces conditions préservent les droits légaux des consommateurs. Les règles d’achat Apple et la licence applicable restent valables."
     ],
     "sections": [
@@ -294,7 +294,7 @@
         "id": "provider",
         "title": "Portée et accord",
         "paragraphs": [
-          "Ces conditions s’appliquent à l’app amen pour iOS et à ses fonctions bibliques, de prière et de réflexion chrétienne. Contactez l’assistance à {{email}} pour toute question sur l’accord. Votre relation avec Apple pour ses propres services App Store suit les règles de votre boutique ; consultez {{appleTerms}}.",
+          "Ces conditions s’appliquent à l’app Amen pour iOS et à ses fonctions bibliques, de prière et de réflexion chrétienne. Contactez l’assistance à {{email}} pour toute question sur l’accord. Votre relation avec Apple pour ses propres services App Store suit les règles de votre boutique ; consultez {{appleTerms}}.",
           "Le contrat se forme par inscription, acceptation ou achat applicable après présentation des conditions et de l’offre. Une publication seule ne remplace pas l’acceptation requise. Accord individuel et droit impératif priment sur une clause générale incompatible."
         ]
       },
@@ -308,7 +308,7 @@
       },
       {
         "id": "eligibility",
-        "title": "Utiliser amen et les services externes",
+        "title": "Utiliser Amen et les services externes",
         "paragraphs": [
           "Vous devez avoir la capacité juridique pour conclure l’accord ou une autorisation parentale ou du représentant légal valide si nécessaire. Utilisez les services externes conformément à leurs conditions. Nema utilise les services d’IA de Google ; les conditions du prestataire sont disponibles dans {{google}}.",
           "Les règles concernant données et consentement des enfants dépendent du droit local. Les achats nécessitent les autorisations de paiement et de famille applicables au compte Apple utilisé. La classification de contenu n’écarte pas les exigences légales ni les conditions d’autres services."
@@ -319,7 +319,7 @@
         "title": "Comptes et sécurité",
         "paragraphs": [
           "Amen peut créer un compte invité pendant la configuration sans e-mail ni connexion Apple. L'accès invité dépend des informations d'authentification disponibles et ne fournit pas les mêmes options de connexion ou récupération qu'un compte associé. Les comptes existants pris en charge peuvent utiliser le retour avec Apple ou e-mail et mot de passe. Certaines fonctions nécessitent un compte opérationnel et une connexion réseau. Protégez l'accès et signalez toute suspicion d'usage non autorisé ; vous n'êtes pas automatiquement responsable de tout acte causé par une défaillance hors de votre contrôle. N'utilisez pas le compte d'autrui sans autorisation.",
-          "L'option Apple proposée peut associer ou transférer des informations prises en charge du compte invité. L'authentification réussie, les données existantes et la compatibilité affectent association et synchronisation ; notes et surlignages locaux restent distincts. Contactez l'assistance pour toute information manquante après changement de connexion. Le choix d'un nom affiché n'autorise pas à porter atteinte à une marque ou à usurper l'identité d'une autre personne. Conservez une copie des informations importantes ; cette recommandation ne réduit pas l'obligation d'amen de fournir un service conforme."
+          "L'option Apple proposée peut associer ou transférer des informations prises en charge du compte invité. L'authentification réussie, les données existantes et la compatibilité affectent association et synchronisation ; notes et surlignages locaux restent distincts. Contactez l'assistance pour toute information manquante après changement de connexion. Le choix d'un nom affiché n'autorise pas à porter atteinte à une marque ou à usurper l'identité d'une autre personne. Conservez une copie des informations importantes ; cette recommandation ne réduit pas l'obligation d'Amen de fournir un service conforme."
         ]
       },
       {
@@ -334,7 +334,7 @@
         "id": "bible",
         "title": "Bible et contenu spirituel",
         "paragraphs": [
-          "Traductions, commentaires, illustrations et autres contenus peuvent appartenir à amen ou des tiers. Formulations et interprétations confessionnelles varient. Une paraphrase générée n’est pas une citation exacte ; vérifiez références et citations dans la traduction choisie.",
+          "Traductions, commentaires, illustrations et autres contenus peuvent appartenir à Amen ou des tiers. Formulations et interprétations confessionnelles varient. Une paraphrase générée n’est pas une citation exacte ; vérifiez références et citations dans la traduction choisie.",
           "Respectez destination des outils de partage, attribution et licences. L’accès n’autorise pas automatiquement reproduction intégrale, base concurrente ou publication commerciale protégée. Les exceptions légales de citation et d’usage restent disponibles."
         ]
       },
@@ -366,7 +366,7 @@
         "id": "your-content",
         "title": "Vos contenus et autorisations",
         "paragraphs": [
-          "Vos droits sur messages, notes et images restent les vôtres. Vous autorisez amen et les prestataires nécessaires à traiter, stocker et transmettre uniquement pour fonctions demandées, sécurité et obligations licites, sous réserve du droit et de la confidentialité.",
+          "Vos droits sur messages, notes et images restent les vôtres. Vous autorisez Amen et les prestataires nécessaires à traiter, stocker et transmettre uniquement pour fonctions demandées, sécurité et obligations licites, sous réserve du droit et de la confidentialité.",
           "Ce n’est pas une autorisation globale de publier des chats privés, de faire de la publicité avec votre nom ou d’entraîner des modèles pour d’autres buts. Voir {{privacy}} pour l’IA. Envoyez seulement des contenus utilisables légalement et évitez les données sensibles de tiers. Les copies partagées peuvent rester chez leurs destinataires."
         ]
       },
@@ -374,7 +374,7 @@
         "id": "acceptable-use",
         "title": "Usage acceptable",
         "paragraphs": [
-          "N’utilisez pas amen pour actes illégaux, menaces, harcèlement, exploitation d’enfants, atteintes aux droits, logiciels malveillants, accès non autorisé ou contournement de sécurité et paiement. Ne provoquez pas de requêtes excessives automatisées nuisant au service ou contournant les limites.",
+          "N’utilisez pas Amen pour actes illégaux, menaces, harcèlement, exploitation d’enfants, atteintes aux droits, logiciels malveillants, accès non autorisé ou contournement de sécurité et paiement. Ne provoquez pas de requêtes excessives automatisées nuisant au service ou contournant les limites.",
           "Discussion religieuse de bonne foi, questions et critiques ne sont pas des abus en soi. Les restrictions doivent être proportionnées et licites. Signalez les problèmes à {{email}} avec détails utiles, sans données personnelles ou matériel illicite superflus."
         ]
       },
@@ -391,7 +391,7 @@
         "title": "Essais et promotions",
         "paragraphs": [
           "Un essai gratuit de 7 jours d’Amen Plus est proposé à tous les nouveaux utilisateurs à la fin de la configuration initiale. La confirmation d’achat Apple indique l’éligibilité, le prix de renouvellement et les conditions. Après la fin de l’accès d’essai, la poursuite de l’utilisation nécessite un abonnement Amen Plus actif ou un achat valide d’accès à vie. Résiliez avant l’échéance affichée par Apple pour éviter une facturation automatique.",
-          "Apple conseille de résilier un essai gratuit ou à tarif réduit au moins 24 heures avant sa fin si vous ne souhaitez pas le renouveler. Le rappel mentionné lors de la configuration initiale désigne l'e-mail d'Apple concernant la fin de l'essai, et non un e-mail d'amen. Apple contrôle son envoi et sa date ; sa réception n'est pas garantie. Vérifiez la date de renouvellement dans les réglages des abonnements Apple ; désactiver les notifications ou supprimer l'app ne bloque pas la facturation."
+          "Apple conseille de résilier un essai gratuit ou à tarif réduit au moins 24 heures avant sa fin si vous ne souhaitez pas le renouveler. Le rappel mentionné lors de la configuration initiale désigne l'e-mail d'Apple concernant la fin de l'essai, et non un e-mail d'Amen. Apple contrôle son envoi et sa date ; sa réception n'est pas garantie. Vérifiez la date de renouvellement dans les réglages des abonnements Apple ; désactiver les notifications ou supprimer l'app ne bloque pas la facturation."
         ]
       },
       {
@@ -399,14 +399,14 @@
         "title": "Renouvellement et résiliation",
         "paragraphs": [
           "Les abonnements automatiques continuent pour la période indiquée jusqu’à résiliation selon Apple. Utilisez les réglages de votre compte ou {{cancel}}. Dates et accès après résiliation y figurent ; boutique et loi déterminent les effets.",
-          "Supprimer app ou compte, se déconnecter, écrire à amen ou retirer des permissions ne résilie pas Apple. Les changements de prix suivent avis, consentement et loi requis. Aucun droit d’augmenter sans information ou accord obligatoire n’est revendiqué."
+          "Supprimer app ou compte, se déconnecter, écrire à Amen ou retirer des permissions ne résilie pas Apple. Les changements de prix suivent avis, consentement et loi requis. Aucun droit d’augmenter sans information ou accord obligatoire n’est revendiqué."
         ]
       },
       {
         "id": "restoration",
         "title": "Restauration et accès unique",
         "paragraphs": [
-          "Utilisez la restauration des achats avec le compte Apple ayant effectué l'achat. Se connecter avec Apple dans amen et le compte utilisé pour les achats App Store remplissent des fonctions différentes. La connexion à l'app seule n'achète ni n'annule un abonnement et n'en garantit pas la restauration. L'accès peut dépendre de la validation Apple, de l'association du compte, de la compatibilité et des conditions réelles de partage. Contactez l'assistance si un achat validé n'est pas reconnu.",
+          "Utilisez la restauration des achats avec le compte Apple ayant effectué l'achat. Se connecter avec Apple dans Amen et le compte utilisé pour les achats App Store remplissent des fonctions différentes. La connexion à l'app seule n'achète ni n'annule un abonnement et n'en garantit pas la restauration. L'accès peut dépendre de la validation Apple, de l'association du compte, de la compatibilité et des conditions réelles de partage. Contactez l'assistance si un achat validé n'est pas reconnu.",
           "Un produit à achat unique ou à vie ne se renouvelle pas automatiquement sauf indication expresse de l'offre. Son étendue suit la description d'achat et le droit impératif ; il ne promet pas automatiquement le fonctionnement durant toute la vie de l'acheteur ni tous les services futurs. Nous ne pouvons réduire rétroactivement un droit convenu en le redéfinissant dans ces conditions."
         ]
       },
@@ -422,7 +422,7 @@
         "id": "withdrawal",
         "title": "Droit de rétractation",
         "paragraphs": [
-          "Si la loi accorde la rétractation, dont le délai habituel de 14 jours pour les contrats à distance concernés dans l’EEE, documents d’achat et loi fixent droits et destinataire. Contactez le vendeur identifié et amen s’il est cocontractant.",
+          "Si la loi accorde la rétractation, dont le délai habituel de 14 jours pour les contrats à distance concernés dans l’EEE, documents d’achat et loi fixent droits et destinataire. Contactez le vendeur identifié et Amen s’il est cocontractant.",
           "La fourniture numérique immédiate n’affecte le droit que si les conditions légales sont réunies, dont demande, consentement, reconnaissance et confirmation requis. Télécharger ou lire ces termes n’est pas une renonciation automatique. Une déclaration claire suffit, sans formulaire imposé sauf exigence légale."
         ]
       },
@@ -447,7 +447,7 @@
         "title": "Disponibilité et exigences techniques",
         "paragraphs": [
           "Des fonctions nécessitent internet, iOS compatible, permissions Apple, connexion et prestataires disponibles. Maintenance, pannes, limites ou appareil peuvent interrompre le service. Accès permanent, résultat identique et modèle durable ne sont pas garantis.",
-          "Vos recours restent si l’accès contractuel n’est pas fourni. Nous évaluons les incidents et prenons des mesures raisonnables. Les frais de connexion et d’appareil vous reviennent sans excuser un défaut amen."
+          "Vos recours restent si l’accès contractuel n’est pas fourni. Nous évaluons les incidents et prenons des mesures raisonnables. Les frais de connexion et d’appareil vous reviennent sans excuser un défaut Amen."
         ]
       },
       {
@@ -462,8 +462,8 @@
         "id": "termination",
         "title": "Cesser l’usage et supprimer le compte",
         "paragraphs": [
-          "Vous pouvez cesser d'utiliser amen et demander la suppression du compte dans l'app ou auprès de l'assistance. La désinstallation seule ne retire pas les données distantes ; certaines notes, surlignages ou préférences uniquement locaux peuvent subsister séparément. Consultez {{privacy}} pour les commandes, demandes, conservation légale et sauvegardes. Enregistrez les informations à conserver avant une demande de suppression.",
-          "Annulez séparément un abonnement Apple pour arrêter les facturations futures. Retirer l'app, supprimer le compte ou terminer l'accès n'annule pas automatiquement ce contrat. Si amen termine un service ou votre contrat, nous respecterons les obligations applicables de préavis, d'accès payé et de recours du consommateur. Les clauses devant continuer, comme les créances acquises et la conservation légale, restent soumises à la loi."
+          "Vous pouvez cesser d'utiliser Amen et demander la suppression du compte dans l'app ou auprès de l'assistance. La désinstallation seule ne retire pas les données distantes ; certaines notes, surlignages ou préférences uniquement locaux peuvent subsister séparément. Consultez {{privacy}} pour les commandes, demandes, conservation légale et sauvegardes. Enregistrez les informations à conserver avant une demande de suppression.",
+          "Annulez séparément un abonnement Apple pour arrêter les facturations futures. Retirer l'app, supprimer le compte ou terminer l'accès n'annule pas automatiquement ce contrat. Si Amen termine un service ou votre contrat, nous respecterons les obligations applicables de préavis, d'accès payé et de recours du consommateur. Les clauses devant continuer, comme les créances acquises et la conservation légale, restent soumises à la loi."
         ]
       },
       {
@@ -471,15 +471,15 @@
         "title": "Responsabilité",
         "paragraphs": [
           "Aucune exclusion ne couvre faute intentionnelle, négligence grave, atteinte à la vie ou santé, fraude, garantie contraignante ou responsabilité impérative, notamment du fait des produits. Les droits obligatoires d’indemnisation et remboursement subsistent.",
-          "Lorsque le droit allemand le permet, la négligence simple envers une obligation essentielle est limitée au dommage prévisible typique du contrat. Ces obligations permettent son exécution et fondent votre confiance normale. Les autres limites ne valent que légalement. Aucun rejet global de tous les dommages, de l’IA ou des pertes de données n’est prévu."
+          "Dans la mesure permise par la loi, l’app et son contenu, y compris les réponses de l’IA, sont fournis en l’état et selon leur disponibilité. Amen n’est pas responsable des dommages indirects ou consécutifs, du manque à gagner, de la perte de données ni des dommages causés par des services tiers, et sa responsabilité totale pour toute réclamation est limitée au montant que vous avez payé pour Amen Plus au cours des 12 mois précédant la réclamation. Ces limitations ne s’appliquent pas lorsque le droit impératif ne les autorise pas."
         ]
       },
       {
         "id": "apple",
         "title": "Règles Apple et informations associées",
         "paragraphs": [
-          "Achats et utilisation de l’App Store suivent les conditions Apple : {{appleTerms}}. La licence figure dans {{appleEula}} et les informations de confidentialité dans {{applePrivacy}}. Ces références expliquent les services propres à Apple et ne remplacent pas les responsabilités d’amen pour l’app.",
-          "Utilisez les procédures de résiliation et de remboursement Apple pour les achats et abonnements facturés par Apple. Les services externes et fonctions d’appareil ont leurs propres conditions, autorisations et exigences de disponibilité. Les droits obligatoires restent applicables ; un renvoi vers un autre prestataire ne supprime pas les responsabilités associées à amen."
+          "Achats et utilisation de l’App Store suivent les conditions Apple : {{appleTerms}}. La licence figure dans {{appleEula}} et les informations de confidentialité dans {{applePrivacy}}. Ces références expliquent les services propres à Apple et ne remplacent pas les responsabilités d’Amen pour l’app.",
+          "Utilisez les procédures de résiliation et de remboursement Apple pour les achats et abonnements facturés par Apple. Les services externes et fonctions d’appareil ont leurs propres conditions, autorisations et exigences de disponibilité. Les droits obligatoires restent applicables ; un renvoi vers un autre prestataire ne supprime pas les responsabilités associées à Amen."
         ]
       },
       {
@@ -494,8 +494,8 @@
         "id": "disputes",
         "title": "Droit applicable et réclamations",
         "paragraphs": [
-          "Le droit allemand s’applique si ce choix est valide, sans retirer les protections impératives applicables au consommateur dans sa résidence habituelle. Compétence suit la loi ; ni tribunal du prestataire imposé à tous ni arbitrage privé obligatoire.",
-          "Réclamations : {{email}}. Les informations légalement nécessaires sur médiation et participation seront fournies pour le différend. L’ancienne plateforme européenne en ligne a fermé en 2025 et n’est pas proposée comme recours actuel."
+          "Les présentes conditions et tout litige qui en découle ou qui découle de l’utilisation de l’app sont régis par le droit hongrois, à l’exclusion de ses règles de conflit de lois. Les tribunaux de Hongrie sont compétents. Si vous êtes consommateur, ce choix ne vous prive pas des protections impératives de la loi de votre pays de résidence, y compris tout droit d’y engager une procédure.",
+          "Veuillez d’abord nous contacter à {{email}} afin que nous puissions tenter de régler la question à l’amiable. Lorsque la loi l’exige, nous indiquerons un organisme de règlement extrajudiciaire des litiges pour le litige concerné. Nous ne sommes tenus de participer à une telle procédure que si la loi l’impose. L’ancienne plateforme européenne de règlement en ligne des litiges a fermé en 2025."
         ]
       },
       {
@@ -510,7 +510,7 @@
         "id": "contact",
         "title": "Contacter l’assistance",
         "paragraphs": [
-          "Contactez l’assistance amen à {{email}} pour l’app, le compte, l’accès aux abonnements ou les réclamations. Les liens Apple expliquent facturation, résiliation et remboursement. Pour les demandes sur les informations personnelles, consultez {{privacy}}.",
+          "Contactez l’assistance Amen à {{email}} pour l’app, le compte, l’accès aux abonnements ou les réclamations. Les liens Apple expliquent facturation, résiliation et remboursement. Pour les demandes sur les informations personnelles, consultez {{privacy}}.",
           "Indiquez produit ou fonction et décrivez brièvement le souci. Référence de commande seulement si nécessaire ; jamais mots de passe, carte complète ou chats privés inutiles. Ces conseils ne limitent pas les notifications valides par d’autres voies légalement permises."
         ]
       }
@@ -529,7 +529,7 @@
         "id": "delete-in-app",
         "title": "Supprimer votre compte dans l’app",
         "paragraphs": [
-          "Ouvrez amen et allez dans l’onglet Toi. Faites défiler jusqu’en bas et touchez Supprimer le compte. Lisez l’avertissement, touchez Continuer vers la confirmation et confirmez avec Supprimer le compte.",
+          "Ouvrez Amen et allez dans l’onglet Toi. Faites défiler jusqu’en bas et touchez Supprimer le compte. Lisez l’avertissement, touchez Continuer vers la confirmation et confirmez avec Supprimer le compte.",
           "Votre compte est supprimé immédiatement et vous êtes déconnecté automatiquement. La suppression est irréversible. Si elle n’aboutit pas, touchez Réessayer ou contactez l’assistance à {{email}}."
         ]
       },
@@ -537,7 +537,7 @@
         "id": "delete-by-email",
         "title": "Demander la suppression sans l’app",
         "paragraphs": [
-          "Si vous n’avez plus l’app ou ne pouvez pas ouvrir votre compte, écrivez à {{email}} avec l’objet « Supprimer mon compte amen ». Envoyez-le depuis le compte Google associé dans amen, ou indiquez votre nom affiché dans amen pour que nous puissions trouver votre compte.",
+          "Si vous n’avez plus l’app ou ne pouvez pas ouvrir votre compte, écrivez à {{email}} avec l’objet « Supprimer mon compte Amen ». Envoyez-le depuis le compte Google associé dans Amen, ou indiquez votre nom affiché dans Amen pour que nous puissions trouver votre compte.",
           "Nous pouvons vous poser une courte question pour vérifier que le compte vous appartient ; nous ne vous demanderons jamais votre mot de passe. Nous supprimons le compte sous un mois et confirmons la suppression par e-mail."
         ]
       },
@@ -569,11 +569,11 @@
   },
   "android": {
     "privacy": {
-      "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Cette politique s’applique à l’app amen pour Android. Elle explique l’utilisation des informations personnelles dans l’app : comptes, activité de lecture, discussion IA Nema, audio, Bible Lock et abonnements. Les informations traitées dépendent des fonctions choisies.",
+      "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Cette politique s’applique à l’app Amen pour Android. Elle explique l’utilisation des informations personnelles dans l’app : comptes, activité de lecture, discussion IA Nema, audio, Bible Lock et abonnements. Les informations traitées dépendent des fonctions choisies.",
       "summary": [
         "Nema utilise un modèle d’IA amélioré de Google pour la discussion par IA. Votre message et le contexte pertinent sont transmis à Google pour produire une réponse.",
         "Amen crée un compte invité sans exiger d’adresse e-mail. Vous pouvez l’enregistrer avec votre compte Google. Les achats sont effectués et gérés via Google Play.",
-        "Bible Lock vérifie sur votre téléphone quelle app est ouverte afin de verrouiller les apps que vous choisissez. Ces informations ne sont transmises ni à amen ni à des prestataires.",
+        "Bible Lock vérifie sur votre téléphone quelle app est ouverte afin de verrouiller les apps que vous choisissez. Ces informations ne sont transmises ni à Amen ni à des prestataires.",
         "Pour vos demandes de confidentialité, écrivez à l’assistance à amenapphilfe@gmail.com. Un abonnement Google Play doit être résilié dans Google Play ; supprimer l’app ou votre compte ne le résilie pas."
       ],
       "sections": [
@@ -581,8 +581,8 @@
           "id": "controller",
           "title": "Contact pour la confidentialité",
           "paragraphs": [
-            "Pour toute question sur les informations personnelles dans l’app amen pour Android, contactez l’assistance à {{email}}. Cette adresse permet aussi de demander accès, rectification, effacement, limitation, portabilité, retrait du consentement ou d’exercer d’autres droits.",
-            "Cette politique décrit les traitements associés à l’app amen sur les appareils Android. Google traite également des informations pour ses propres services, comme Google Play, la connexion avec Google et Android, selon sa propre politique de confidentialité. Les responsabilités de Google ne remplacent pas celles associées à amen et ne réduisent pas vos droits."
+            "Pour toute question sur les informations personnelles dans l’app Amen pour Android, contactez l’assistance à {{email}}. Cette adresse permet aussi de demander accès, rectification, effacement, limitation, portabilité, retrait du consentement ou d’exercer d’autres droits.",
+            "Cette politique décrit les traitements associés à l’app Amen sur les appareils Android. Google traite également des informations pour ses propres services, comme Google Play, la connexion avec Google et Android, selon sa propre politique de confidentialité. Les responsabilités de Google ne remplacent pas celles associées à Amen et ne réduisent pas vos droits."
           ]
         },
         {
@@ -592,8 +592,8 @@
           "id": "accounts",
           "title": "Comptes, connexion avec Google et profil",
           "paragraphs": [
-            "Pendant la configuration initiale, amen crée un compte invité sans exiger d’adresse e-mail. Le compte possède un identifiant unique et des informations de session. Le nom choisi et les activités enregistrées prises en charge sont associés à cet identifiant de compte. L’accès comme invité ne nécessite pas de vérifier votre identité réelle ; les informations liées au compte peuvent néanmoins être des données personnelles. Identifiants de compte, informations de session et préférences sont stockés auprès des services de compte et sur l’appareil. Les informations de compte comprennent aussi les dates de création et de mise à jour.",
-            "Vous pouvez enregistrer votre compte avec votre compte Google, puis vous reconnecter avec celui-ci. Google confirme la connexion et peut fournir un identifiant, votre nom et votre adresse e-mail ; amen ne reçoit pas le mot de passe de votre compte Google et ne demande pas l’accès à d’autres contenus Google. Sur Android, la connexion avec Google est le seul moyen de récupérer un compte. Un compte invité qui n’a pas été enregistré avec Google ne peut pas être récupéré après une déconnexion, une réinstallation de l’app ou un changement d’appareil. Les bases habituelles sont l’article 6, paragraphe 1, point b, la sécurité proportionnée au titre du point f et les obligations légales au titre du point c du RGPD."
+            "Pendant la configuration initiale, Amen crée un compte invité sans exiger d’adresse e-mail. Le compte possède un identifiant unique et des informations de session. Le nom choisi et les activités enregistrées prises en charge sont associés à cet identifiant de compte. L’accès comme invité ne nécessite pas de vérifier votre identité réelle ; les informations liées au compte peuvent néanmoins être des données personnelles. Identifiants de compte, informations de session et préférences sont stockés auprès des services de compte et sur l’appareil. Les informations de compte comprennent aussi les dates de création et de mise à jour.",
+            "Vous pouvez enregistrer votre compte avec votre compte Google, puis vous reconnecter avec celui-ci. Google confirme la connexion et peut fournir un identifiant, votre nom et votre adresse e-mail ; Amen ne reçoit pas le mot de passe de votre compte Google et ne demande pas l’accès à d’autres contenus Google. Sur Android, la connexion avec Google est le seul moyen de récupérer un compte. Un compte invité qui n’a pas été enregistré avec Google ne peut pas être récupéré après une déconnexion, une réinstallation de l’app ou un changement d’appareil. Les bases habituelles sont l’article 6, paragraphe 1, point b, la sécurité proportionnée au titre du point f et les obligations légales au titre du point c du RGPD."
           ]
         },
         {
@@ -646,7 +646,7 @@
           "id": "bible-lock",
           "title": "Bible Lock sur Android",
           "paragraphs": [
-            "Android ne dispose pas de Temps d’écran : Bible Lock y fonctionne donc autrement que sur iOS. Il nécessite deux réglages que vous activez dans les paramètres Android : l’accès aux données d’utilisation, pour que l’app voie quelle app est ouverte, et la superposition sur d’autres applis, pour qu’elle puisse recouvrir une app verrouillée. Tant que Bible Lock est actif, un service s’exécute au premier plan avec une notification permanente, comme l’exige Android. Les apps choisies, les horaires, l’état de déverrouillage et la progression de lecture sont stockés uniquement sur votre téléphone. Les informations sur les apps que vous ouvrez servent sur l’appareil à appliquer le verrouillage et ne sont transmises ni à amen ni à des prestataires.",
+            "Android ne dispose pas de Temps d’écran : Bible Lock y fonctionne donc autrement que sur iOS. Il nécessite deux réglages que vous activez dans les paramètres Android : l’accès aux données d’utilisation, pour que l’app voie quelle app est ouverte, et la superposition sur d’autres applis, pour qu’elle puisse recouvrir une app verrouillée. Tant que Bible Lock est actif, un service s’exécute au premier plan avec une notification permanente, comme l’exige Android. Les apps choisies, les horaires, l’état de déverrouillage et la progression de lecture sont stockés uniquement sur votre téléphone. Les informations sur les apps que vous ouvrez servent sur l’appareil à appliquer le verrouillage et ne sont transmises ni à Amen ni à des prestataires.",
             "Vous pouvez retirer à tout moment l’accès aux données d’utilisation et la superposition sur d’autres applis dans les paramètres Android ; Bible Lock cesse alors de fonctionner. Pour une recommandation de lecture par IA, le besoin choisi, la longueur de lecture demandée, la langue préférée et les références de chapitres récents peuvent être envoyés à Google. Ces références évitent les répétitions et sont aussi enregistrées sur votre téléphone. Le traitement fournit généralement la fonction demandée au titre de l'article 6, paragraphe 1, point b du RGPD, avec une protection supplémentaire pour les données sensibles."
           ]
         },
@@ -678,7 +678,7 @@
           "id": "media",
           "title": "Bandes dessinées, images et partage",
           "paragraphs": [
-            "Quand vous ouvrez des bandes dessinées ou des images dans Découvrir, amen demande les contenus aux services de diffusion et peut en conserver des copies temporaires pour l’affichage. La diffusion implique le fichier demandé et les informations habituelles de connexion réseau, dont l'adresse IP utilisée pour la connexion.",
+            "Quand vous ouvrez des bandes dessinées ou des images dans Découvrir, Amen demande les contenus aux services de diffusion et peut en conserver des copies temporaires pour l’affichage. La diffusion implique le fichier demandé et les informations habituelles de connexion réseau, dont l'adresse IP utilisée pour la connexion.",
             "Les contenus partagés avec la fonction de partage d’Android sont transmis à l’app ou à la personne que vous choisissez. Les copies partagées sont distinctes des données de compte et ne sont pas rappelées automatiquement par la suppression du compte. Le traitement des médias fournit généralement la fonction demandée au titre de l'article 6, paragraphe 1, point b du RGPD."
           ]
         },
@@ -686,7 +686,7 @@
           "id": "purchases",
           "title": "Achats et Google Play",
           "paragraphs": [
-            "Google Play gère les paiements et la facturation des achats dans l’app Android. Amen ne reçoit pas votre numéro de carte complet. Un service de validation des achats utilise l’identifiant de votre compte, les transactions, les produits, l’état d’essai et l’accès aux abonnements pour reconnaître vos achats. La restauration des achats associe les achats de votre compte Google Play à votre compte amen actuel. Les conditions de Google Play sont disponibles à {{googlePlayTerms}}.",
+            "Google Play gère les paiements et la facturation des achats dans l’app Android. Amen ne reçoit pas votre numéro de carte complet. Un service de validation des achats utilise l’identifiant de votre compte, les transactions, les produits, l’état d’essai et l’accès aux abonnements pour reconnaître vos achats. La restauration des achats associe les achats de votre compte Google Play à votre compte Amen actuel. Les conditions de Google Play sont disponibles à {{googlePlayTerms}}.",
             "L’app Android n’utilise pas les informations d’achat à des fins publicitaires. La gestion d’accès repose généralement sur l’article 6.1.b et les dossiers obligatoires sur le 6.1.c. Le traitement des informations d’achat par Google est décrit dans {{googlePrivacy}}."
           ]
         },
@@ -695,14 +695,14 @@
           "title": "Analyses et mesure publicitaire",
           "paragraphs": [
             "L’app Android actuelle n’intègre aucun outil tiers de mesure ou d’attribution publicitaire et ne demande pas l’accès à l’identifiant publicitaire Android. Elle ne signale ni les installations, ni les débuts d’essai, ni les achats à des partenaires publicitaires. La mesure publicitaire décrite dans la politique de confidentialité iOS ne s’applique pas à l’app Android.",
-            "Selon les réglages de votre appareil et de votre compte Google, Google Play peut fournir à amen des statistiques et des rapports de plantage concernant l’app. Ces rapports aident à détecter des défauts techniques et sont traités conformément à {{googlePrivacy}}. Nous mettrons à jour cette politique si la mesure dans l’app Android change."
+            "Selon les réglages de votre appareil et de votre compte Google, Google Play peut fournir à Amen des statistiques et des rapports de plantage concernant l’app. Ces rapports aident à détecter des défauts techniques et sont traités conformément à {{googlePrivacy}}. Nous mettrons à jour cette politique si la mesure dans l’app Android change."
           ]
         },
         {
           "id": "sensitive",
           "title": "Religion et autres données sensibles",
           "paragraphs": [
-            "Confession, prières, objectifs et conversations peuvent révéler religion, santé ou catégories particulières de l’article 9 RGPD. Il faut une base de l’article 6 et une condition de l’article 9, normalement un consentement explicite pour la personnalisation religieuse facultative. Lire cette politique, utiliser amen ou accorder une permission Android ne suffit pas.",
+            "Confession, prières, objectifs et conversations peuvent révéler religion, santé ou catégories particulières de l’article 9 RGPD. Il faut une base de l’article 6 et une condition de l’article 9, normalement un consentement explicite pour la personnalisation religieuse facultative. Lire cette politique, utiliser Amen ou accorder une permission Android ne suffit pas.",
             "Vous pouvez demander retrait, restriction ou effacement à {{email}} et changer les préférences disponibles. Le retrait ne remet pas en cause un traitement antérieur licite. N’entrez pas de données sensibles de tiers sans autorité. Ce document ne crée pas de consentement et ne rend pas licite une divulgation qui serait autrement illicite."
           ]
         },
@@ -710,7 +710,7 @@
           "id": "children",
           "title": "Enfants et autorisation parentale",
           "paragraphs": [
-            "L’usage d’amen doit respecter les règles applicables aux données des enfants, les autorisations parentales valides nécessaires et les conditions des services externes. Une classification de contenu Google Play ne remplace pas ces exigences. Les conditions d’IA de Google liées dans cette politique restent pertinentes pour les fonctions utilisant ces services.",
+            "L’usage d’Amen doit respecter les règles applicables aux données des enfants, les autorisations parentales valides nécessaires et les conditions des services externes. Une classification de contenu Google Play ne remplace pas ces exigences. Les conditions d’IA de Google liées dans cette politique restent pertinentes pour les fonctions utilisant ces services.",
             "Lorsque le consentement est nécessaire, les exigences concernant les enfants dépendent du droit local. Contactez l’assistance si vous pensez que des informations d’un enfant ont été traitées sans l’autorisation nécessaire. Nous examinerons la demande et organiserons la limitation ou l’effacement requis dans les circonstances."
           ]
         },
@@ -741,7 +741,7 @@
           "title": "Supprimer le compte",
           "paragraphs": [
             "Vous pouvez supprimer votre compte dans l’app sous Toi → Supprimer le compte. Le compte est supprimé immédiatement, vous êtes déconnecté et les données du compte sur votre téléphone sont effacées. La suppression est irréversible. Si vous ne pouvez pas utiliser l’app, demandez la suppression à {{email}} ; les étapes sont décrites sur la page {{deleteAccount}}. Une vérification proportionnée de l’identité peut être nécessaire ; aucun envoi de mot de passe ne vous sera demandé.",
-            "Désinstaller l’app ne supprime pas à soi seul votre compte. Retirer l’accès d’amen dans les paramètres de votre compte Google est aussi distinct de la suppression des informations détenues par amen. Ni le retrait de l’app ni la suppression du compte ne résilient un abonnement Google Play : résiliez-le séparément, voir {{googlePlayCancel}}. Les copies partagées hors de l’app et les données soumises à une conservation légale sont distinctes du retrait du compte actif."
+            "Désinstaller l’app ne supprime pas à soi seul votre compte. Retirer l’accès d’Amen dans les paramètres de votre compte Google est aussi distinct de la suppression des informations détenues par Amen. Ni le retrait de l’app ni la suppression du compte ne résilient un abonnement Google Play : résiliez-le séparément, voir {{googlePlayCancel}}. Les copies partagées hors de l’app et les données soumises à une conservation légale sont distinctes du retrait du compte actif."
           ]
         },
         {
@@ -756,11 +756,11 @@
       ]
     },
     "terms": {
-      "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Ces conditions s’appliquent à l’app amen pour Android, y compris la discussion IA Nema, les fonctions de compte et les abonnements achetés via Google Play. Lisez aussi la politique de confidentialité et l’offre affichée avant un achat. Vos droits légaux de consommateur restent protégés.",
+      "intro": "Amen est une app chrétienne pour lire la Bible, prier et réfléchir à la foi. Ces conditions s’appliquent à l’app Amen pour Android, y compris la discussion IA Nema, les fonctions de compte et les abonnements achetés via Google Play. Lisez aussi la politique de confidentialité et l’offre affichée avant un achat. Vos droits légaux de consommateur restent protégés.",
       "summary": [
         "Nema utilise un modèle d’IA amélioré de Google pour la discussion par IA. Les réponses peuvent être inexactes ; vérifiez les affirmations importantes et les citations bibliques.",
         "Avant que vous confirmiez un achat, Google Play affiche le prix, la période de facturation, l’éventuel essai gratuit et le produit acheté.",
-        "Les abonnements Google Play se renouvellent jusqu’à leur résiliation dans Google Play. Supprimer l’app ou votre compte amen n’arrête pas la facturation Google Play.",
+        "Les abonnements Google Play se renouvellent jusqu’à leur résiliation dans Google Play. Supprimer l’app ou votre compte Amen n’arrête pas la facturation Google Play.",
         "Ces conditions préservent les droits légaux des consommateurs. Les conditions de Google Play s’appliquent aussi aux téléchargements et aux achats."
       ],
       "sections": [
@@ -768,7 +768,7 @@
           "id": "provider",
           "title": "Portée et accord",
           "paragraphs": [
-            "Ces conditions s’appliquent à l’app amen pour Android et à ses fonctions bibliques, de prière et de réflexion chrétienne. Contactez l’assistance à {{email}} pour toute question sur l’accord. Votre relation avec Google pour Google Play suit les propres conditions de Google Play ; consultez {{googlePlayTerms}}.",
+            "Ces conditions s’appliquent à l’app Amen pour Android et à ses fonctions bibliques, de prière et de réflexion chrétienne. Contactez l’assistance à {{email}} pour toute question sur l’accord. Votre relation avec Google pour Google Play suit les propres conditions de Google Play ; consultez {{googlePlayTerms}}.",
             "Le contrat se forme par inscription, acceptation ou achat applicable après présentation des conditions et de l’offre. Une publication seule ne remplace pas l’acceptation requise. Accord individuel et droit impératif priment sur une clause générale incompatible."
           ]
         },
@@ -782,7 +782,7 @@
         },
         {
           "id": "eligibility",
-          "title": "Utiliser amen et les services externes",
+          "title": "Utiliser Amen et les services externes",
           "paragraphs": [
             "Vous devez avoir la capacité juridique pour conclure l’accord ou une autorisation parentale ou du représentant légal valide si nécessaire. Utilisez les services externes conformément à leurs conditions. Nema utilise les services d’IA de Google ; les conditions du prestataire sont disponibles dans {{google}}.",
             "Les règles concernant données et consentement des enfants dépendent du droit local. Les achats nécessitent le moyen de paiement et toute autorisation familiale ou parentale applicables au compte Google utilisé. La classification de contenu n’écarte pas les exigences légales ni les conditions d’autres services."
@@ -793,7 +793,7 @@
           "title": "Comptes et sécurité",
           "paragraphs": [
             "Amen crée un compte invité pendant la configuration, sans adresse e-mail. Un compte invité n’a aucune méthode de connexion : si vous vous déconnectez, réinstallez l’app ou changez d’appareil sans l’avoir enregistré avec Google, vous pouvez perdre définitivement l’accès à ce compte. Certaines fonctions nécessitent un compte opérationnel et une connexion réseau. Protégez l’accès à votre appareil et à votre compte Google et signalez toute suspicion d’usage non autorisé ; vous n’êtes pas automatiquement responsable de tout acte causé par une défaillance hors de votre contrôle. N’utilisez pas le compte d’autrui sans autorisation.",
-            "Vous pouvez enregistrer votre compte avec Google et vous reconnecter avec le même compte Google. La connexion par e-mail et mot de passe et Se connecter avec Apple ne sont pas disponibles dans l’app Android. Si vous vous connectez avec un compte Google déjà associé à un autre compte amen, c’est ce compte qui s’ouvre et les informations du compte invité ne sont pas fusionnées. Le choix d’un nom affiché n’autorise pas à porter atteinte à une marque ou à usurper l’identité d’une autre personne. Conservez une copie des informations importantes ; cette recommandation ne réduit pas l’obligation d’amen de fournir un service conforme."
+            "Vous pouvez enregistrer votre compte avec Google et vous reconnecter avec le même compte Google. La connexion par e-mail et mot de passe et Se connecter avec Apple ne sont pas disponibles dans l’app Android. Si vous vous connectez avec un compte Google déjà associé à un autre compte Amen, c’est ce compte qui s’ouvre et les informations du compte invité ne sont pas fusionnées. Le choix d’un nom affiché n’autorise pas à porter atteinte à une marque ou à usurper l’identité d’une autre personne. Conservez une copie des informations importantes ; cette recommandation ne réduit pas l’obligation d’Amen de fournir un service conforme."
           ]
         },
         {
@@ -840,7 +840,7 @@
           "title": "Essais et promotions",
           "paragraphs": [
             "Un essai gratuit de 7 jours d’Amen Plus est proposé à tous les nouveaux utilisateurs à la fin de la configuration initiale. La confirmation de Google Play indique si vous y avez droit, la date de début de la facturation et le prix après l’essai. Si vous ne résiliez pas dans Google Play avant la fin de l’essai, l’abonnement démarre automatiquement et est facturé.",
-            "Résiliez dans Google Play avant la fin de l’essai si vous ne souhaitez pas être facturé. Vérifiez la date de fin dans vos abonnements Google Play et ne comptez pas sur un rappel. Désactiver les notifications, supprimer l’app ou supprimer votre compte amen n’arrête pas la facturation."
+            "Résiliez dans Google Play avant la fin de l’essai si vous ne souhaitez pas être facturé. Vérifiez la date de fin dans vos abonnements Google Play et ne comptez pas sur un rappel. Désactiver les notifications, supprimer l’app ou supprimer votre compte Amen n’arrête pas la facturation."
           ]
         },
         {
@@ -848,14 +848,14 @@
           "title": "Renouvellement et résiliation",
           "paragraphs": [
             "Les abonnements à renouvellement automatique continuent pour la période de facturation indiquée jusqu’à leur résiliation selon les règles de Google Play. Résiliez dans l’app Google Play sous Paiements et abonnements ou suivez {{googlePlayCancel}}. Après la résiliation, l’accès se poursuit normalement jusqu’à la fin de la période payée ; Google Play indique les dates concernées, et le droit impératif détermine le résultat.",
-            "Supprimer l’app ou votre compte amen, vous déconnecter, demander la résiliation à amen par e-mail ou retirer des permissions ne résilie pas en soi un abonnement Google Play. Les changements de prix suivent les procédures d’information et de consentement de Google Play et la loi applicable. Nous ne revendiquons aucun droit d’augmenter un prix existant sans l’information ou l’accord requis."
+            "Supprimer l’app ou votre compte Amen, vous déconnecter, demander la résiliation à Amen par e-mail ou retirer des permissions ne résilie pas en soi un abonnement Google Play. Les changements de prix suivent les procédures d’information et de consentement de Google Play et la loi applicable. Nous ne revendiquons aucun droit d’augmenter un prix existant sans l’information ou l’accord requis."
           ]
         },
         {
           "id": "restoration",
           "title": "Restauration des achats",
           "paragraphs": [
-            "Utilisez Restaurer les achats avec le compte Google ayant effectué l’achat. Le compte Google utilisé pour vous connecter à amen et celui utilisé pour Google Play peuvent être différents. La restauration associe les achats de ce compte Google Play à votre compte amen actuel. Les achats effectués via Apple sur iOS sont gérés par Apple et ne débloquent pas forcément l’app Android. Contactez l’assistance si un achat validé n’est pas reconnu.",
+            "Utilisez Restaurer les achats avec le compte Google ayant effectué l’achat. Le compte Google utilisé pour vous connecter à Amen et celui utilisé pour Google Play peuvent être différents. La restauration associe les achats de ce compte Google Play à votre compte Amen actuel. Les achats effectués via Apple sur iOS sont gérés par Apple et ne débloquent pas forcément l’app Android. Contactez l’assistance si un achat validé n’est pas reconnu.",
             "Sur Android, Amen Plus est proposé uniquement sous forme d’abonnement à renouvellement automatique ; il n’existe pas d’achat unique ni d’accès à vie. L’accès dépend d’un abonnement actif et prend fin avec celui-ci, sous réserve du droit impératif. Nous ne pouvons réduire rétroactivement un droit convenu en le redéfinissant dans ces conditions."
           ]
         },
@@ -863,7 +863,7 @@
           "id": "refunds",
           "title": "Remboursements et problèmes",
           "paragraphs": [
-            "Pour les achats Google Play, contactez l’assistance amen à {{email}} ou consultez {{googlePlayRefund}}. Les règles de Google Play, les circonstances et la loi applicable déterminent si un remboursement est accordé. Nous examinons chaque demande individuellement et ne pouvons pas garantir que chaque demande sera acceptée.",
+            "Pour les achats Google Play, contactez l’assistance Amen à {{email}} ou consultez {{googlePlayRefund}}. Les règles de Google Play, les circonstances et la loi applicable déterminent si un remboursement est accordé. Nous examinons chaque demande individuellement et ne pouvons pas garantir que chaque demande sera acceptée.",
             "Les recours légaux contre le professionnel responsable restent ouverts. Signalez aussi défauts, doubles frais ou non-conformité si pertinent. Aucune clause ne rend tous les achats non remboursables ni ne retire réparation, réduction du prix, résolution ou remboursement."
           ]
         },
@@ -881,7 +881,7 @@
           "title": "Disponibilité et exigences techniques",
           "paragraphs": [
             "Des fonctions nécessitent internet, une version d’Android compatible, les services Google Play, les permissions Android concernées, une connexion active et des prestataires disponibles. Maintenance, pannes, limites ou appareil peuvent interrompre le service. Accès permanent, résultat identique et modèle durable ne sont pas garantis.",
-            "Vos recours restent si l’accès contractuel n’est pas fourni. Nous évaluons les incidents et prenons des mesures raisonnables. Les frais de connexion et d’appareil vous reviennent sans excuser un défaut amen."
+            "Vos recours restent si l’accès contractuel n’est pas fourni. Nous évaluons les incidents et prenons des mesures raisonnables. Les frais de connexion et d’appareil vous reviennent sans excuser un défaut Amen."
           ]
         },
         {
@@ -891,8 +891,8 @@
           "id": "termination",
           "title": "Cesser l’usage et supprimer le compte",
           "paragraphs": [
-            "Vous pouvez cesser d’utiliser amen et supprimer votre compte dans l’app ou auprès de l’assistance. La désinstallation seule ne supprime pas votre compte. Consultez {{privacy}} pour la suppression, la conservation légale et les sauvegardes. Enregistrez les informations à conserver avant de supprimer votre compte.",
-            "Résiliez séparément un abonnement Google Play dans Google Play pour arrêter les facturations futures. Retirer l'app, supprimer le compte ou terminer l'accès ne le résilie pas automatiquement. Si amen termine un service ou votre contrat, nous respecterons les obligations applicables de préavis, d'accès payé et de recours du consommateur. Les clauses devant continuer, comme les créances acquises et la conservation légale, restent soumises à la loi."
+            "Vous pouvez cesser d’utiliser Amen et supprimer votre compte dans l’app ou auprès de l’assistance. La désinstallation seule ne supprime pas votre compte. Consultez {{privacy}} pour la suppression, la conservation légale et les sauvegardes. Enregistrez les informations à conserver avant de supprimer votre compte.",
+            "Résiliez séparément un abonnement Google Play dans Google Play pour arrêter les facturations futures. Retirer l'app, supprimer le compte ou terminer l'accès ne le résilie pas automatiquement. Si Amen termine un service ou votre contrat, nous respecterons les obligations applicables de préavis, d'accès payé et de recours du consommateur. Les clauses devant continuer, comme les créances acquises et la conservation légale, restent soumises à la loi."
           ]
         },
         {
@@ -902,8 +902,8 @@
           "id": "google-play",
           "title": "Règles Google Play et informations associées",
           "paragraphs": [
-            "Téléchargements et achats via Google Play suivent les conditions de Google Play : {{googlePlayTerms}}. Les informations de confidentialité de Google figurent dans {{googlePrivacy}}. Ces références expliquent les services propres à Google et ne remplacent pas les responsabilités d’amen pour l’app.",
-            "Utilisez la procédure de résiliation de Google Play pour les abonnements Google Play, et contactez-nous ou Google Play pour les remboursements. Android, la connexion avec Google et les autres services externes ont leurs propres conditions, autorisations et exigences de disponibilité. Les droits obligatoires des consommateurs restent applicables ; un renvoi vers Google ou un autre prestataire ne supprime pas les responsabilités associées à amen."
+            "Téléchargements et achats via Google Play suivent les conditions de Google Play : {{googlePlayTerms}}. Les informations de confidentialité de Google figurent dans {{googlePrivacy}}. Ces références expliquent les services propres à Google et ne remplacent pas les responsabilités d’Amen pour l’app.",
+            "Utilisez la procédure de résiliation de Google Play pour les abonnements Google Play, et contactez-nous ou Google Play pour les remboursements. Android, la connexion avec Google et les autres services externes ont leurs propres conditions, autorisations et exigences de disponibilité. Les droits obligatoires des consommateurs restent applicables ; un renvoi vers Google ou un autre prestataire ne supprime pas les responsabilités associées à Amen."
           ]
         },
         {
@@ -924,7 +924,7 @@
           "id": "contact",
           "title": "Contacter l’assistance",
           "paragraphs": [
-            "Contactez l’assistance amen à {{email}} pour l’app, le compte, l’accès aux abonnements ou les réclamations. Les liens Google Play expliquent facturation et résiliation. Pour les demandes sur les informations personnelles, consultez {{privacy}}.",
+            "Contactez l’assistance Amen à {{email}} pour l’app, le compte, l’accès aux abonnements ou les réclamations. Les liens Google Play expliquent facturation et résiliation. Pour les demandes sur les informations personnelles, consultez {{privacy}}.",
             "Indiquez produit ou fonction et décrivez brièvement le souci. Référence de commande seulement si nécessaire ; jamais mots de passe, carte complète ou chats privés inutiles. Ces conseils ne limitent pas les notifications valides par d’autres voies légalement permises."
           ]
         }

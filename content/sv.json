@@ -4,7 +4,7 @@
     "navTerms": "Villkor",
     "navImprint": "Juridik",
     "navSupport": "Kontakt",
-    "home": "amens webbplats",
+    "home": "Amens webbplats",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
     "support": "Kontakta supporten",
@@ -18,9 +18,9 @@
     "skip": "Gå till dokumentet",
     "top": "Till toppen",
     "documents": "Juridisk information",
-    "copyright": "amen",
-    "privacyDescription": "Hur amen-appen använder konto-, läs-, böne-, chatt- och köpuppgifter och hur du använder dina integritetsrättigheter.",
-    "termsDescription": "Villkor för den kristna appen amen, bibelläsning, bön, Nema AI-chatt, abonnemang och konsumenträttigheter.",
+    "copyright": "Amen",
+    "privacyDescription": "Hur Amen-appen använder konto-, läs-, böne-, chatt- och köpuppgifter och hur du använder dina integritetsrättigheter.",
+    "termsDescription": "Villkor för den kristna appen Amen, bibelläsning, bön, Nema AI-chatt, abonnemang och konsumenträttigheter.",
     "email": "amenapphilfe@gmail.com",
     "cancel": "Säg upp ett Apple-abonnemang",
     "refund": "Begär återbetalning från Apple",
@@ -29,8 +29,8 @@
     "providers": "Mer information",
     "applePrivacy": "Apples integritetspolicy",
     "imprint": "Juridisk information",
-    "supportDescription": "Kontakta amens support på amenapphilfe@gmail.com för hjälp med appen, kontot, abonnemang eller integritetsfrågor.",
-    "imprintDescription": "Villkor, integritetsinformation och support för amen-appen.",
+    "supportDescription": "Kontakta Amens support på amenapphilfe@gmail.com för hjälp med appen, kontot, abonnemang eller integritetsfrågor.",
+    "imprintDescription": "Villkor, integritetsinformation och support för Amen-appen.",
     "googlePrivacy": "Googles integritetspolicy",
     "appleTerms": "Apples App Store-villkor och användningsregler",
     "appleInformation": "Information från Apple",
@@ -52,15 +52,15 @@
       "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
       "Gästanvändning skapar ett konto-ID utan krav på e-postadress. Lokala anteckningar och markeringar är separata från innehåll som sparas med kontot. Köp hanteras via Apple.",
       "Böner, trosinställningar och samtal kan innehålla känsliga personuppgifter. Dina rättigheter och nödvändiga samtycken är fortsatt skyddade.",
-      "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller amen-kontot."
+      "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller Amen-kontot."
     ],
     "sections": [
       {
         "id": "controller",
         "title": "Kontakt om integritet",
         "paragraphs": [
-          "Kontakta supporten på {{email}} om hur personuppgifter används i amen-appen. Adressen kan även användas för tillgång, rättelse, radering, begränsning, dataportabilitet, återkallat samtycke och andra integritetsförfrågningar.",
-          "Policyn beskriver behandling kopplad till amen-appen. Apple och Google behandlar också uppgifter för sina egna tjänster enligt sina respektive policyer. Deras ansvar ersätter inte ansvaret kopplat till amen och minskar inte dina rättigheter."
+          "Kontakta supporten på {{email}} om hur personuppgifter används i Amen-appen. Adressen kan även användas för tillgång, rättelse, radering, begränsning, dataportabilitet, återkallat samtycke och andra integritetsförfrågningar.",
+          "Policyn beskriver behandling kopplad till Amen-appen. Apple och Google behandlar också uppgifter för sina egna tjänster enligt sina respektive policyer. Deras ansvar ersätter inte ansvaret kopplat till Amen och minskar inte dina rättigheter."
         ]
       },
       {
@@ -75,8 +75,8 @@
         "id": "accounts",
         "title": "Konton, inloggning och profil",
         "paragraphs": [
-          "Under introduktionen kan amen skapa ett gästkonto utan krav på e-postadress eller Logga in med Apple. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kopplas till detta konto-ID. Gäståtkomst kräver inte att din verkliga identitet verifieras; kontokopplad information kan ändå vara personuppgifter. Konto-ID, sessionsuppgifter för inloggning och inställningar lagras hos kontotjänster och på enheten för att bevara åtkomst och stödd synkronisering. Åtkomst efter utloggning, ominstallation eller byte av enhet beror på tillgängliga autentiserings- och återställningsuppgifter. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
-          "Du kan koppla stödda gästkontouppgifter genom Logga in med Apple. Apple kan lämna ett ID, namn och en e-postadress eller privat vidarebefordringsadress; amen får inte lösenordet till ditt Apple-konto. Kopplingen kan föra över eller knyta stödda samtal, profil- och framstegsuppgifter till kontot, beroende på befintliga uppgifter och att processen lyckas. Alla lokala objekt blir inte därmed tillgängliga på andra enheter. Återvändande användare med ett befintligt e-post-/lösenordskonto kan använda inloggning och lösenordsåterställning. Kontotjänster behandlar nödvändiga inloggnings- och återställningsuppgifter. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
+          "Under introduktionen kan Amen skapa ett gästkonto utan krav på e-postadress eller Logga in med Apple. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kopplas till detta konto-ID. Gäståtkomst kräver inte att din verkliga identitet verifieras; kontokopplad information kan ändå vara personuppgifter. Konto-ID, sessionsuppgifter för inloggning och inställningar lagras hos kontotjänster och på enheten för att bevara åtkomst och stödd synkronisering. Åtkomst efter utloggning, ominstallation eller byte av enhet beror på tillgängliga autentiserings- och återställningsuppgifter. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
+          "Du kan koppla stödda gästkontouppgifter genom Logga in med Apple. Apple kan lämna ett ID, namn och en e-postadress eller privat vidarebefordringsadress; Amen får inte lösenordet till ditt Apple-konto. Kopplingen kan föra över eller knyta stödda samtal, profil- och framstegsuppgifter till kontot, beroende på befintliga uppgifter och att processen lyckas. Alla lokala objekt blir inte därmed tillgängliga på andra enheter. Återvändande användare med ett befintligt e-post-/lösenordskonto kan använda inloggning och lösenordsåterställning. Kontotjänster behandlar nödvändiga inloggnings- och återställningsuppgifter. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
         ]
       },
       {
@@ -139,7 +139,7 @@
         "id": "bible-lock",
         "title": "Bible Lock och Skärmtid",
         "paragraphs": [
-          "Bible Lock använder Apples Skärmtid efter ditt godkännande. Urvalsidentifierare från Apple för valda appar, appkategorier och stödda webbdomäner, tillsammans med scheman, upplåsningsinställningar och läsframsteg, lagras lokalt för appen och dess tillägg. Behörigheten ger inte amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla åtkomsten i systeminställningarna.",
+          "Bible Lock använder Apples Skärmtid efter ditt godkännande. Urvalsidentifierare från Apple för valda appar, appkategorier och stödda webbdomäner, tillsammans med scheman, upplåsningsinställningar och läsframsteg, lagras lokalt för appen och dess tillägg. Behörigheten ger inte Amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla åtkomsten i systeminställningarna.",
           "För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till Google. Hänvisningarna hjälper till att undvika upprepning och lagras även lokalt för funktionen. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter. Apple styr sin egen systembehandling; enhetsbehörigheter ger inte samtycke till orelaterad analys eller känsliga ändamål."
         ]
       },
@@ -155,15 +155,15 @@
         "id": "notifications",
         "title": "Notiser och påminnelsetider",
         "paragraphs": [
-          "För fjärrlevererade vers- och bönepåminnelser skickar amen enhetens pushtoken, appspråk, tidszon, aktiverade påminnelsetyper och valda leveranstider till notistjänsten. Registreringen kan kopplas till kontot. Stödda lässvits- eller provperiodspåminnelser kan i stället schemaläggas lokalt. Uppgifterna används för de påminnelse- och leveransfunktioner du väljer.",
-          "Du kan ändra inställningar i appen och notisbehörighet i iOS. Leverans beror på behörigheter, enhetsinställningar och tillgängliga tjänster. Att återkalla en behörighet visar inte i sig att alla tidigare tokens eller uppgifter har raderats; kontakta {{email}} för raderingsbegäranden. En provperiodspåminnelse säger inte upp ett abonnemang och ersätter inte Apples förnyelseinformation. Påminnelsen som nämns under introduktionen avser ett mejl från Apple om att provperioden snart tar slut, inte ett mejl från amen. Apple hanterar dessa mejl med hjälp av uppgifterna i ditt Apple-konto enligt {{applePrivacy}}. Amen styr inte leveransen eller tidpunkten för Apples mejl."
+          "För fjärrlevererade vers- och bönepåminnelser skickar Amen enhetens pushtoken, appspråk, tidszon, aktiverade påminnelsetyper och valda leveranstider till notistjänsten. Registreringen kan kopplas till kontot. Stödda lässvits- eller provperiodspåminnelser kan i stället schemaläggas lokalt. Uppgifterna används för de påminnelse- och leveransfunktioner du väljer.",
+          "Du kan ändra inställningar i appen och notisbehörighet i iOS. Leverans beror på behörigheter, enhetsinställningar och tillgängliga tjänster. Att återkalla en behörighet visar inte i sig att alla tidigare tokens eller uppgifter har raderats; kontakta {{email}} för raderingsbegäranden. En provperiodspåminnelse säger inte upp ett abonnemang och ersätter inte Apples förnyelseinformation. Påminnelsen som nämns under introduktionen avser ett mejl från Apple om att provperioden snart tar slut, inte ett mejl från Amen. Apple hanterar dessa mejl med hjälp av uppgifterna i ditt Apple-konto enligt {{applePrivacy}}. Amen styr inte leveransen eller tidpunkten för Apples mejl."
         ]
       },
       {
         "id": "widgets",
         "title": "Dagar med Jesus och widgetar",
         "paragraphs": [
-          "Om du använder Dagar med Jesus sparar amen ditt valda datum lokalt för att beräkna antalet dagar. Du kan ändra eller nollställa datumet i funktionen. Datum, bibelinnehåll, inställningar och åtkomstinformation som stödda widgetar behöver delas med appens tillägg på enheten. Bible Lock använder också delade enhetsuppgifter för godkända funktioner.",
+          "Om du använder Dagar med Jesus sparar Amen ditt valda datum lokalt för att beräkna antalet dagar. Du kan ändra eller nollställa datumet i funktionen. Datum, bibelinnehåll, inställningar och åtkomstinformation som stödda widgetar behöver delas med appens tillägg på enheten. Bible Lock använder också delade enhetsuppgifter för godkända funktioner.",
           "Widgetar och notisförhandsvisningar kan visa trosrelaterat innehåll på hem- eller låsskärmen. Personer som ser skärmen kan också se innehållet. Ta hänsyn till synligheten när du väljer widgetar och förhandsvisningar. Begärda widgetfunktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med extra skydd när uppgifter avslöjar religiös övertygelse eller annan känslig information."
         ]
       },
@@ -171,8 +171,8 @@
         "id": "media",
         "title": "Serier, bakgrunder, scener och musik",
         "paragraphs": [
-          "När du öppnar serier, bakgrunder, 360°-scener eller ljud begär amen innehåll från distributionstjänster och kan behålla lokala kopior eller cache för visning och uppspelning. Leveransen omfattar begärd fil och vanlig nätverksinformation, inklusive den IP-adress som används för anslutningen. Stödda bakgrundsmusikinställningar sparas lokalt och kan även lagras med profilen för den valda lyssningsupplevelsen.",
-          "Den nuvarande 360°-visaren visar nedladdade panoraman som styrs med pekgester; den använder inte enhetens kamera för att filma rummet. Att spara en bakgrund eller Live Photo lägger till valt innehåll i Bilder med begärd behörighet. Kopior i Bilder eller som delats utanför amen är separata från kontouppgifter och återkallas inte automatiskt när kontot raderas. Mediebehandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR."
+          "När du öppnar serier, bakgrunder, 360°-scener eller ljud begär Amen innehåll från distributionstjänster och kan behålla lokala kopior eller cache för visning och uppspelning. Leveransen omfattar begärd fil och vanlig nätverksinformation, inklusive den IP-adress som används för anslutningen. Stödda bakgrundsmusikinställningar sparas lokalt och kan även lagras med profilen för den valda lyssningsupplevelsen.",
+          "Den nuvarande 360°-visaren visar nedladdade panoraman som styrs med pekgester; den använder inte enhetens kamera för att filma rummet. Att spara en bakgrund eller Live Photo lägger till valt innehåll i Bilder med begärd behörighet. Kopior i Bilder eller som delats utanför Amen är separata från kontouppgifter och återkallas inte automatiskt när kontot raderas. Mediebehandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR."
         ]
       },
       {
@@ -180,7 +180,7 @@
         "title": "Köp och Apple",
         "paragraphs": [
           "Apple hanterar App Store-betalningar och fakturering. Amen får inte hela ditt kortnummer från ett Apple-köp i appen. Köpverifieringstjänster använder kontoidentifierare, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen köp. Apples köp- och användningsregler finns i {{appleTerms}}.",
-          "Köpstatus och tekniska identifierare kan kopplas till amen-kontot för abonnemangstillskrivning. Åtkomsthantering stöds vanligen av artikel 6.1 b, obligatoriska register av 6.1 c och valfri marknadsföring av samtycke när det krävs. Apples behandling av köpuppgifter beskrivs i {{applePrivacy}}."
+          "Köpstatus och tekniska identifierare kan kopplas till Amen-kontot för abonnemangstillskrivning. Åtkomsthantering stöds vanligen av artikel 6.1 b, obligatoriska register av 6.1 c och valfri marknadsföring av samtycke när det krävs. Apples behandling av köpuppgifter beskrivs i {{applePrivacy}}."
         ]
       },
       {
@@ -195,7 +195,7 @@
         "id": "advertising-choice",
         "title": "Apples spårningsval och anonym attribuering",
         "paragraphs": [
-          "I versioner med den direkta TikTok-integrationen startar SDK:t när appen öppnas, före Apples förfrågan om App Tracking Transparency (ATT) i den första introduktionskarusellen. SDK:t inkluderar ATT-status i förfrågningar. Att neka eller inte svara inaktiverar inte SDK:t och stoppar inte alla händelser eller förfrågningar om konfiguration eller diagnostik. Valet måste respekteras för spårning mellan andra företags appar och webbplatser; det begränsar inte tillgången till amens funktioner. Du kan hantera Apples tillstånd under Inställningar → Integritet och säkerhet → Spårning eller kontakta {{email}} om dina integritetsval.",
+          "I versioner med den direkta TikTok-integrationen startar SDK:t när appen öppnas, före Apples förfrågan om App Tracking Transparency (ATT) i den första introduktionskarusellen. SDK:t inkluderar ATT-status i förfrågningar. Att neka eller inte svara inaktiverar inte SDK:t och stoppar inte alla händelser eller förfrågningar om konfiguration eller diagnostik. Valet måste respekteras för spårning mellan andra företags appar och webbplatser; det begränsar inte tillgången till Amens funktioner. Du kan hantera Apples tillstånd under Inställningar → Integritet och säkerhet → Spårning eller kontakta {{email}} om dina integritetsval.",
           "Apples SKAdNetwork (SKAN) ger en separat form av integritetsskyddande annonsmätning som kan fungera utan ATT-tillstånd. Apple styr de aggregerade återrapporterna, deras tidpunkt och om detaljerad konverteringsinformation finns tillgänglig; en vanlig SDK-händelse är separat från en SKAN-återrapport. Se {{appleSKAN}}. Denna policy informerar och utgör inte samtycke: när tillämplig lag kräver föregående samtycke för SDK:ts insamling eller överföring gäller det kravet fortfarande. Apples ATT-val ersätter inte alla samtycken eller andra rättsliga villkor."
         ]
       },
@@ -211,7 +211,7 @@
         "id": "children",
         "title": "Barn och föräldratillstånd",
         "paragraphs": [
-          "Användning av amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i App Store ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
+          "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i App Store ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
           "När samtycke behövs beror kraven för barn på lokal lag. Kontakta supporten om du tror att ett barns uppgifter behandlats utan nödvändigt tillstånd. Vi undersöker förfrågan och ordnar den begränsning eller radering som krävs i situationen."
         ]
       },
@@ -252,7 +252,7 @@
         "title": "Radera kontot",
         "paragraphs": [
           "Du kan begära kontoradering i appen. Om du saknar åtkomst eller begäran inte slutförs, kontakta support på {{email}}. Proportionerlig identitetskontroll kan behövas för att förhindra obehörig åtkomst eller radering; du ombeds inte skicka ett lösenord. Kontoradering och borttagning av enbart lokalt innehåll är separata åtgärder. Lokala anteckningar, markeringar eller inställningar kan finnas kvar oberoende av kontot; använd deras kontroller och nollställning i Dagar med Jesus eller kontakta support.",
-          "Enbart avinstallation raderar inte kontouppgifter i molnet. Att ta bort åtkomst genom Logga in med Apple är också separat från en begäran att radera uppgifter hos amen. Varken appborttagning eller kontoradering avslutar automatiskt ett Apple-abonnemang: avsluta det separat via {{cancel}}. Enhetskopior, exporterat innehåll, utgång av säkerhetskopior och rättslig lagring skiljer sig från borttagning av det aktiva kontot."
+          "Enbart avinstallation raderar inte kontouppgifter i molnet. Att ta bort åtkomst genom Logga in med Apple är också separat från en begäran att radera uppgifter hos Amen. Varken appborttagning eller kontoradering avslutar automatiskt ett Apple-abonnemang: avsluta det separat via {{cancel}}. Enhetskopior, exporterat innehåll, utgång av säkerhetskopior och rättslig lagring skiljer sig från borttagning av det aktiva kontot."
         ]
       },
       {
@@ -260,7 +260,7 @@
         "title": "Dina rättigheter och klagomål",
         "paragraphs": [
           "När GDPR gäller kan du begära tillgång, rättelse, radering, begränsning och dataportabilitet där villkoren uppfylls. Du kan återkalla samtycke och invända mot berättigat intresse utifrån din situation. Direktmarknadsföring kan du alltid invända mot.",
-          "Skriv till {{email}}. Normal svarstid är en månad; tillåten förlängning kräver besked och skäl. Förfrågningar är normalt kostnadsfria med lagliga undantag. Du kan klaga hos myndigheten där du bor, arbetar eller där överträdelsen skett utan att kontakta amen först."
+          "Skriv till {{email}}. Normal svarstid är en månad; tillåten förlängning kräver besked och skäl. Förfrågningar är normalt kostnadsfria med lagliga undantag. Du kan klaga hos myndigheten där du bor, arbetar eller där överträdelsen skett utan att kontakta Amen först."
         ]
       },
       {
@@ -286,7 +286,7 @@
     "summary": [
       "Nema använder en förbättrad AI-modell från Google för AI-chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
       "Köpskärmen visar pris, faktureringsperiod, provvillkor och inkluderad åtkomst före bekräftelse.",
-      "Apple-abonnemang förnyas tills de sägs upp. Att radera appen eller amen-kontot avslutar inte Apples fakturering.",
+      "Apple-abonnemang förnyas tills de sägs upp. Att radera appen eller Amen-kontot avslutar inte Apples fakturering.",
       "Villkoren bevarar lagstadgade konsumenträttigheter. Apples köpregler och tillämplig applicens gäller också."
     ],
     "sections": [
@@ -294,13 +294,13 @@
         "id": "provider",
         "title": "Omfattning och avtal",
         "paragraphs": [
-          "Villkoren gäller amen-appen för iOS och dess funktioner för Bibeln, bön och kristen reflektion. Kontakta supporten på {{email}} om avtalet. Din relation med Apple för dess egna App Store-tjänster följer reglerna för din butik; se {{appleTerms}}.",
+          "Villkoren gäller Amen-appen för iOS och dess funktioner för Bibeln, bön och kristen reflektion. Kontakta supporten på {{email}} om avtalet. Din relation med Apple för dess egna App Store-tjänster följer reglerna för din butik; se {{appleTerms}}.",
           "Avtal ingås genom tillämplig registrering, acceptans eller köp efter tillgång till villkor och erbjudande. Publicering ersätter inte nödvändigt godkännande. Individuellt avtal och tvingande lag har företräde."
         ]
       },
       {
         "id": "service",
-        "title": "amens tjänster",
+        "title": "Amens tjänster",
         "paragraphs": [
           "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema använder en förbättrad AI-modell från Google för AI-chatten. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
           "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Vissa medier måste laddas ned före användning, och sparande eller delning omfattas av licensen. Villkoren lovar inte ett fast antal gratis meddelanden, en viss modell, alla bibelöversättningar, evig drift eller funktioner från en annan version. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
@@ -308,7 +308,7 @@
       },
       {
         "id": "eligibility",
-        "title": "Använda amen och externa tjänster",
+        "title": "Använda Amen och externa tjänster",
         "paragraphs": [
           "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder Googles AI-tjänster; leverantörens villkor finns i {{google}}.",
           "Regler för barns uppgifter och samtycke beror på lokal lag. Köp kräver betalnings- och familjetillstånd för det använda Apple-kontot. Appens innehållsbedömning åsidosätter inte lagkrav eller andra tjänsters villkor."
@@ -319,7 +319,7 @@
         "title": "Konton och säkerhet",
         "paragraphs": [
           "Amen kan skapa ett gästkonto under introduktionen utan e-post eller Apple-inloggning. Gäståtkomst beror på tillgänglig autentisering och ger inte samma inloggnings- och återställningsval som ett kopplat konto. Befintliga stödda konton kan använda återvändande inloggning med Apple eller e-post/lösenord. Vissa funktioner behöver ett fungerande konto och nätverk. Skydda åtkomsten och meddela support vid misstänkt obehörig användning; du ansvarar inte automatiskt för varje handling som orsakas av fel utanför din kontroll. Använd inte någon annans konto utan tillstånd.",
-          "Det tillgängliga Apple-valet kan koppla eller överföra stödda gästkontouppgifter. Lyckad autentisering, befintliga uppgifter och kompatibilitet påverkar koppling och synkronisering; lokala anteckningar och markeringar är separata. Kontakta support om uppgifter saknas efter ändrad inloggning. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte amens skyldighet att ge en avtalsenlig tjänst."
+          "Det tillgängliga Apple-valet kan koppla eller överföra stödda gästkontouppgifter. Lyckad autentisering, befintliga uppgifter och kompatibilitet påverkar koppling och synkronisering; lokala anteckningar och markeringar är separata. Kontakta support om uppgifter saknas efter ändrad inloggning. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte Amens skyldighet att ge en avtalsenlig tjänst."
         ]
       },
       {
@@ -334,7 +334,7 @@
         "id": "bible",
         "title": "Bibeltexter och andligt innehåll",
         "paragraphs": [
-          "Översättningar, kommentarer, bilder och annat kan tillhöra amen eller tredje part. Ordval och samfundstolkning varierar. En AI-parafras är inget exakt citat; kontrollera hänvisningar i vald översättning.",
+          "Översättningar, kommentarer, bilder och annat kan tillhöra Amen eller tredje part. Ordval och samfundstolkning varierar. En AI-parafras är inget exakt citat; kontrollera hänvisningar i vald översättning.",
           "Följ delningsfunktioners syfte, källangivelse och licenser. Åtkomst tillåter inte automatiskt hela översättningar, konkurrerande databaser eller skyddad kommersiell publicering. Lagliga citat- och användningsundantag kvarstår."
         ]
       },
@@ -391,7 +391,7 @@
         "title": "Provperioder och kampanjer",
         "paragraphs": [
           "Alla nya användare erbjuds en kostnadsfri provperiod på 7 dagar med Amen Plus i slutet av introduktionen. Apples köpbekräftelse visar behörighet, förnyelsepris och villkor. När provåtkomsten upphör kräver fortsatt användning ett aktivt Amen Plus-abonnemang eller ett giltigt köp av livstidsåtkomst. Säg upp före Apples angivna tidsfrist för att undvika automatisk debitering.",
-          "Apple rekommenderar att du säger upp en gratis eller rabatterad provperiod minst 24 timmar före slutet om du inte vill förnya den. Påminnelsen som nämns under introduktionen avser Apples mejl om att provperioden tar slut, inte ett mejl från amen. Apple styr leveransen och tidpunkten; mottagandet är inte garanterat. Kontrollera förnyelsedatumet i Apples abonnemangsinställningar; att stänga av notiser eller ta bort appen stoppar inte debiteringen."
+          "Apple rekommenderar att du säger upp en gratis eller rabatterad provperiod minst 24 timmar före slutet om du inte vill förnya den. Påminnelsen som nämns under introduktionen avser Apples mejl om att provperioden tar slut, inte ett mejl från Amen. Apple styr leveransen och tidpunkten; mottagandet är inte garanterat. Kontrollera förnyelsedatumet i Apples abonnemangsinställningar; att stänga av notiser eller ta bort appen stoppar inte debiteringen."
         ]
       },
       {
@@ -399,14 +399,14 @@
         "title": "Förnyelse och uppsägning",
         "paragraphs": [
           "Automatiska abonnemang fortsätter för angiven period tills uppsagda enligt Apple. Använd kontots abonnemang eller {{cancel}}. Där visas förnyelse och fortsatt åtkomst; butik och lag avgör följderna.",
-          "App- eller kontoradering, utloggning, mejl till amen och återkallade tillstånd säger inte upp Apple. Prisändringar följer erforderliga besked, samtycke och lag. Vi kräver ingen rätt att höja utan nödvändig information eller överenskommelse."
+          "App- eller kontoradering, utloggning, mejl till Amen och återkallade tillstånd säger inte upp Apple. Prisändringar följer erforderliga besked, samtycke och lag. Vi kräver ingen rätt att höja utan nödvändig information eller överenskommelse."
         ]
       },
       {
         "id": "restoration",
         "title": "Återställa köp och engångsåtkomst",
         "paragraphs": [
-          "Använd återställning av köp med Apple-kontot som gjorde köpet. Logga in med Apple för amen och kontot för App Store-köp har olika ändamål. Appinloggning köper, avslutar eller garanterar inte i sig återställning av ett abonnemang. Åtkomst kan bero på Apples validering, kontokoppling, kompatibilitet och produktens faktiska delningsvillkor. Kontakta support om ett validerat köp inte känns igen.",
+          "Använd återställning av köp med Apple-kontot som gjorde köpet. Logga in med Apple för Amen och kontot för App Store-köp har olika ändamål. Appinloggning köper, avslutar eller garanterar inte i sig återställning av ett abonnemang. Åtkomst kan bero på Apples validering, kontokoppling, kompatibilitet och produktens faktiska delningsvillkor. Kontakta support om ett validerat köp inte känns igen.",
           "En engångs- eller livstidsprodukt förnyas inte automatiskt om inte erbjudandet uttryckligen anger det. Omfattningen följer köpbeskrivning och tvingande lag; den lovar inte automatiskt drift under köparens hela liv eller varje framtida tjänst. Vi kan inte retroaktivt minska en avtalad rättighet genom att omdefiniera den i dessa villkor."
         ]
       },
@@ -422,7 +422,7 @@
         "id": "withdrawal",
         "title": "Ångerrätt",
         "paragraphs": [
-          "När konsumentlag ger ångerrätt, inklusive vanlig 14-dagarsfrist för relevanta distansavtal inom EES, styr köpinformation och lag rättigheter och mottagare. Kontakta angiven säljare och amen när avtalspart.",
+          "När konsumentlag ger ångerrätt, inklusive vanlig 14-dagarsfrist för relevanta distansavtal inom EES, styr köpinformation och lag rättigheter och mottagare. Kontakta angiven säljare och Amen när avtalspart.",
           "Omedelbar digital leverans påverkar rätten bara när lagkrav uppfylls, inklusive nödvändig uttrycklig begäran, samtycke, bekräftelse av kännedom och avtalsbekräftelse. Nedladdning eller läsning är inget automatiskt avstående. Ett tydligt meddelande räcker om inte lag kräver viss form."
         ]
       },
@@ -447,7 +447,7 @@
         "title": "Tillgänglighet och teknik",
         "paragraphs": [
           "Vissa funktioner kräver nät, kompatibelt iOS, behörigheter, inloggning och tredje part. Underhåll, avbrott, gränser och enhet kan störa. Vi garanterar inte ständig åtkomst, identiska svar eller en permanent AI-modell.",
-          "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta amens fel."
+          "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta Amens fel."
         ]
       },
       {
@@ -462,8 +462,8 @@
         "id": "termination",
         "title": "Sluta använda och radera konto",
         "paragraphs": [
-          "Du kan sluta använda amen och begära kontoradering i appen eller via support. Avinstallation tar inte i sig bort molnuppgifter; vissa enbart lokala anteckningar, markeringar eller inställningar kan finnas kvar separat från kontot. Se {{privacy}} för kontroller, begäranden, rättslig lagring och säkerhetskopior. Spara det du vill behålla innan du begär radering.",
-          "Avsluta ett Apple-abonnemang separat för att stoppa framtida debitering. Appborttagning, kontoradering eller avslutad åtkomst säger inte automatiskt upp butikens avtal. Om amen avslutar en tjänst eller ditt avtal följer vi tillämpliga skyldigheter för information, betald åtkomst och konsumentens rättigheter. Klausuler som måste fortsätta, som uppkomna anspråk och rättslig lagring, förblir underkastade lag."
+          "Du kan sluta använda Amen och begära kontoradering i appen eller via support. Avinstallation tar inte i sig bort molnuppgifter; vissa enbart lokala anteckningar, markeringar eller inställningar kan finnas kvar separat från kontot. Se {{privacy}} för kontroller, begäranden, rättslig lagring och säkerhetskopior. Spara det du vill behålla innan du begär radering.",
+          "Avsluta ett Apple-abonnemang separat för att stoppa framtida debitering. Appborttagning, kontoradering eller avslutad åtkomst säger inte automatiskt upp butikens avtal. Om Amen avslutar en tjänst eller ditt avtal följer vi tillämpliga skyldigheter för information, betald åtkomst och konsumentens rättigheter. Klausuler som måste fortsätta, som uppkomna anspråk och rättslig lagring, förblir underkastade lag."
         ]
       },
       {
@@ -471,15 +471,15 @@
         "title": "Ansvar",
         "paragraphs": [
           "Inget utesluter uppsåt, grov vårdslöshet, personskada, bedrägeri, bindande garanti eller tvingande ansvar inklusive produktansvar. Obligatorisk ersättning och återbetalning kvarstår.",
-          "När tysk lag tillåter begränsas enkel vårdslöshet i väsentlig avtalsplikt till typisk förutsebar skada. Väsentliga plikter möjliggör avtalet och kan normalt förväntas. Andra gränser gäller endast där lagligt. Ingen allmän uteslutning av alla skador, AI-skador eller dataförlust."
+          "I den utsträckning lagen tillåter tillhandahålls appen och dess innehåll, inklusive AI-svar, i befintligt skick och i mån av tillgänglighet. Amen ansvarar inte för indirekt skada eller följdskada, utebliven vinst, dataförlust eller skada som orsakas av tredjepartstjänster, och det totala ansvaret för varje anspråk är begränsat till det belopp du har betalat för Amen Plus under de 12 månaderna före anspråket. Dessa begränsningar gäller inte där tvingande lag inte tillåter dem."
         ]
       },
       {
         "id": "apple",
         "title": "Apples regler och relaterad information",
         "paragraphs": [
-          "App Store-köp och användning följer Apples villkor: {{appleTerms}}. Applicensen finns i {{appleEula}} och integritetsinformationen i {{applePrivacy}}. Hänvisningarna beskriver Apples egna tjänster och ersätter inte amens ansvar för appen.",
-          "Använd Apples uppsägnings- och återbetalningsprocesser för Apple-fakturerade abonnemang och köp. Externa tjänster och enhetsfunktioner har egna villkor, tillstånd och tillgänglighetskrav. Obligatoriska konsumenträttigheter gäller fortsatt; en hänvisning till annan leverantör tar inte bort ansvar kopplat till amen."
+          "App Store-köp och användning följer Apples villkor: {{appleTerms}}. Applicensen finns i {{appleEula}} och integritetsinformationen i {{applePrivacy}}. Hänvisningarna beskriver Apples egna tjänster och ersätter inte Amens ansvar för appen.",
+          "Använd Apples uppsägnings- och återbetalningsprocesser för Apple-fakturerade abonnemang och köp. Externa tjänster och enhetsfunktioner har egna villkor, tillstånd och tillgänglighetskrav. Obligatoriska konsumenträttigheter gäller fortsatt; en hänvisning till annan leverantör tar inte bort ansvar kopplat till Amen."
         ]
       },
       {
@@ -494,8 +494,8 @@
         "id": "disputes",
         "title": "Lag och klagomål",
         "paragraphs": [
-          "Tysk lag gäller där giltigt val, utan att ta bort tillämpligt tvingande konsumentskydd i hemvistlandet. Domstol följer lag; ingen generell skyldighet att processa hos leverantören eller använda privat skiljeförfarande.",
-          "Klagomål: {{email}}. Lagkrävda uppgifter om alternativ tvistlösning och deltagande lämnas för relevant tvist. EU:s tidigare onlineplattform stängde 2025 och anges inte som aktuell väg."
+          "Dessa villkor och alla tvister som uppstår ur dem eller ur användningen av appen regleras av ungersk lag, med undantag för dess lagvalsregler. Ungerska domstolar är behöriga. Om du är konsument tar detta val inte bort skydd som lagen i ditt hemland gör tvingande, inklusive en eventuell rätt att väcka talan där.",
+          "Kontakta oss först på {{email}} så att vi kan försöka lösa frågan i godo. När lagen kräver det informerar vi om ett organ för alternativ tvistlösning för den aktuella tvisten. Vi är skyldiga att delta i ett sådant förfarande endast när lagen kräver det. EU:s tidigare plattform för tvistlösning online stängdes 2025."
         ]
       },
       {
@@ -510,7 +510,7 @@
         "id": "contact",
         "title": "Kontakta supporten",
         "paragraphs": [
-          "Kontakta amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Apples länkar beskriver fakturering, uppsägning och återbetalning. För personuppgiftsförfrågningar, se {{privacy}}.",
+          "Kontakta Amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Apples länkar beskriver fakturering, uppsägning och återbetalning. För personuppgiftsförfrågningar, se {{privacy}}.",
           "Ange produkt eller funktion och beskriv kort. Orderreferens bara vid behov; inga lösenord, hela kortnummer eller onödiga privata chattar. Andra lagligen tillåtna och giltiga meddelanden begränsas inte."
         ]
       }
@@ -529,7 +529,7 @@
         "id": "delete-in-app",
         "title": "Radera kontot i appen",
         "paragraphs": [
-          "Öppna amen och gå till fliken Du. Skrolla längst ned och tryck på Radera konto. Läs informationen, tryck på Fortsätt till bekräftelse och bekräfta med Radera konto.",
+          "Öppna Amen och gå till fliken Du. Skrolla längst ned och tryck på Radera konto. Läs informationen, tryck på Fortsätt till bekräftelse och bekräfta med Radera konto.",
           "Ditt konto raderas direkt och du loggas ut automatiskt. Raderingen kan inte ångras. Om den inte slutförs, tryck på Försök igen eller kontakta support på {{email}}."
         ]
       },
@@ -537,7 +537,7 @@
         "id": "delete-by-email",
         "title": "Begär radering utan appen",
         "paragraphs": [
-          "Om du inte längre har appen eller inte kan öppna ditt konto, mejla {{email}} med ämnet ”Radera mitt amen-konto”. Skicka det från Google-kontot du kopplade i amen, eller ange ditt visningsnamn i amen så att vi kan hitta ditt konto.",
+          "Om du inte längre har appen eller inte kan öppna ditt konto, mejla {{email}} med ämnet ”Radera mitt Amen-konto”. Skicka det från Google-kontot du kopplade i Amen, eller ange ditt visningsnamn i Amen så att vi kan hitta ditt konto.",
           "Vi kan ställa en kort fråga för att bekräfta att kontot är ditt; vi frågar aldrig efter ditt lösenord. Vi raderar kontot inom en månad och bekräftar raderingen via e-post."
         ]
       },
@@ -569,11 +569,11 @@
   },
   "android": {
     "privacy": {
-      "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn gäller amen-appen för Android. Den beskriver hur personuppgifter används i appen, bland annat för konton, läsaktivitet, Nema AI-chatt, ljud, Bible Lock och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
+      "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn gäller Amen-appen för Android. Den beskriver hur personuppgifter används i appen, bland annat för konton, läsaktivitet, Nema AI-chatt, ljud, Bible Lock och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
       "summary": [
         "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
         "Amen skapar ett gästkonto utan krav på e-postadress. Du kan spara det med ditt Google-konto. Köp görs och hanteras via Google Play.",
-        "Bible Lock kontrollerar på din telefon vilken app som är öppen för att kunna låsa apparna du väljer. Uppgifterna skickas inte till amen eller till tjänsteleverantörer.",
+        "Bible Lock kontrollerar på din telefon vilken app som är öppen för att kunna låsa apparna du väljer. Uppgifterna skickas inte till Amen eller till tjänsteleverantörer.",
         "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Ett Google Play-abonnemang måste sägas upp i Google Play; att radera appen eller kontot säger inte upp det."
       ],
       "sections": [
@@ -581,8 +581,8 @@
           "id": "controller",
           "title": "Kontakt om integritet",
           "paragraphs": [
-            "Kontakta supporten på {{email}} om hur personuppgifter används i amen-appen för Android. Adressen kan även användas för tillgång, rättelse, radering, begränsning, dataportabilitet, återkallat samtycke och andra integritetsförfrågningar.",
-            "Policyn beskriver behandling kopplad till amen-appen på Android-enheter. Google behandlar också uppgifter för sina egna tjänster, till exempel Google Play, Google-inloggning och Android, enligt sin egen integritetspolicy. Googles ansvar ersätter inte ansvaret kopplat till amen och minskar inte dina rättigheter."
+            "Kontakta supporten på {{email}} om hur personuppgifter används i Amen-appen för Android. Adressen kan även användas för tillgång, rättelse, radering, begränsning, dataportabilitet, återkallat samtycke och andra integritetsförfrågningar.",
+            "Policyn beskriver behandling kopplad till Amen-appen på Android-enheter. Google behandlar också uppgifter för sina egna tjänster, till exempel Google Play, Google-inloggning och Android, enligt sin egen integritetspolicy. Googles ansvar ersätter inte ansvaret kopplat till Amen och minskar inte dina rättigheter."
           ]
         },
         {
@@ -592,8 +592,8 @@
           "id": "accounts",
           "title": "Konton, Google-inloggning och profil",
           "paragraphs": [
-            "Under introduktionen skapar amen ett gästkonto utan krav på e-postadress. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kopplas till detta konto-ID. Gäståtkomst kräver inte att din verkliga identitet verifieras; kontokopplad information kan ändå vara personuppgifter. Konto-ID, sessionsinformation och inställningar lagras hos kontotjänster och på enheten. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
-            "Du kan spara ditt konto med ditt Google-konto och senare logga in med det igen. Google bekräftar inloggningen och kan lämna ett ID, ditt namn och din e-postadress; amen får inte ditt Google-lösenord och begär inte åtkomst till annat Google-innehåll. På Android är Google-inloggning det enda sättet att återställa ett konto. Ett gästkonto som inte har sparats med Google kan inte återställas efter utloggning, ominstallation av appen eller byte av enhet. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
+            "Under introduktionen skapar Amen ett gästkonto utan krav på e-postadress. Kontot har ett unikt ID och sessionsinformation. Ditt valda namn och stödd sparad aktivitet kopplas till detta konto-ID. Gäståtkomst kräver inte att din verkliga identitet verifieras; kontokopplad information kan ändå vara personuppgifter. Konto-ID, sessionsinformation och inställningar lagras hos kontotjänster och på enheten. Kontouppgifter omfattar också tidpunkter för skapande och uppdatering.",
+            "Du kan spara ditt konto med ditt Google-konto och senare logga in med det igen. Google bekräftar inloggningen och kan lämna ett ID, ditt namn och din e-postadress; Amen får inte ditt Google-lösenord och begär inte åtkomst till annat Google-innehåll. På Android är Google-inloggning det enda sättet att återställa ett konto. Ett gästkonto som inte har sparats med Google kan inte återställas efter utloggning, ominstallation av appen eller byte av enhet. Vanliga grunder är artikel 6.1 b, proportionerlig säkerhet enligt artikel 6.1 f och rättsliga skyldigheter enligt artikel 6.1 c i GDPR."
           ]
         },
         {
@@ -646,7 +646,7 @@
           "id": "bible-lock",
           "title": "Bible Lock på Android",
           "paragraphs": [
-            "Android har ingen Skärmtid, så Bible Lock fungerar annorlunda än på iOS. Funktionen kräver två inställningar som du slår på i Androids inställningar: åtkomst till användningsdata, så att appen kan se vilken app som är öppen, och Visa ovanpå andra appar, så att den kan täcka en låst app. Medan Bible Lock är aktivt körs en tjänst i förgrunden med en permanent notis, som Android kräver. Apparna du väljer, scheman, upplåsningsstatus och läsframsteg lagras bara på din telefon. Uppgifter om vilka appar du öppnar används på enheten för att tillämpa låset och skickas inte till amen eller till tjänsteleverantörer.",
+            "Android har ingen Skärmtid, så Bible Lock fungerar annorlunda än på iOS. Funktionen kräver två inställningar som du slår på i Androids inställningar: åtkomst till användningsdata, så att appen kan se vilken app som är öppen, och Visa ovanpå andra appar, så att den kan täcka en låst app. Medan Bible Lock är aktivt körs en tjänst i förgrunden med en permanent notis, som Android kräver. Apparna du väljer, scheman, upplåsningsstatus och läsframsteg lagras bara på din telefon. Uppgifter om vilka appar du öppnar används på enheten för att tillämpa låset och skickas inte till Amen eller till tjänsteleverantörer.",
             "Du kan när som helst återkalla åtkomst till användningsdata och Visa ovanpå andra appar i Androids inställningar; Bible Lock slutar då att fungera. För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till Google. Hänvisningarna hjälper till att undvika upprepning och lagras även på din telefon. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter."
           ]
         },
@@ -678,7 +678,7 @@
           "id": "media",
           "title": "Serier, bilder och delning",
           "paragraphs": [
-            "När du öppnar serier eller bilder i Upptäck begär amen innehållet från distributionstjänster och kan behålla tillfälliga kopior för visning. Leveransen omfattar begärd fil och vanlig nätverksinformation, inklusive den IP-adress som används för anslutningen.",
+            "När du öppnar serier eller bilder i Upptäck begär Amen innehållet från distributionstjänster och kan behålla tillfälliga kopior för visning. Leveransen omfattar begärd fil och vanlig nätverksinformation, inklusive den IP-adress som används för anslutningen.",
             "Innehåll som du delar via Androids delningsfunktion går till den app eller person du väljer. Delade kopior är separata från kontouppgifter och återkallas inte automatiskt när kontot raderas. Mediebehandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR."
           ]
         },
@@ -686,7 +686,7 @@
           "id": "purchases",
           "title": "Köp och Google Play",
           "paragraphs": [
-            "Google Play hanterar betalningar och fakturering för köp i Android-appen. Amen får inte hela ditt kortnummer. En köpverifieringstjänst använder ditt konto-ID, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen dina köp. Återställning av köp kopplar köpen på ditt Google Play-konto till ditt nuvarande amen-konto. Google Plays villkor finns i {{googlePlayTerms}}.",
+            "Google Play hanterar betalningar och fakturering för köp i Android-appen. Amen får inte hela ditt kortnummer. En köpverifieringstjänst använder ditt konto-ID, transaktioner, produkter, provstatus och abonnemangstillgång för att känna igen dina köp. Återställning av köp kopplar köpen på ditt Google Play-konto till ditt nuvarande Amen-konto. Google Plays villkor finns i {{googlePlayTerms}}.",
             "Android-appen använder inte köpuppgifter för reklam. Åtkomsthantering stöds vanligen av artikel 6.1 b och obligatoriska register av 6.1 c. Googles behandling av köpuppgifter beskrivs i {{googlePrivacy}}."
           ]
         },
@@ -695,7 +695,7 @@
           "title": "Analys och annonsmätning",
           "paragraphs": [
             "Den nuvarande Android-appen innehåller inga verktyg från tredje part för annonsmätning eller tillskrivning och begär inte åtkomst till Androids annons-ID. Den rapporterar inte installationer, påbörjade provperioder eller köp till annonspartner. Annonsmätningen som beskrivs i integritetspolicyn för iOS gäller inte Android-appen.",
-            "Google Play kan ge amen statistik och kraschrapporter om appen, beroende på din enhet och inställningarna i ditt Google-konto. Rapporterna hjälper till att hitta tekniska fel och hanteras enligt {{googlePrivacy}}. Vi uppdaterar policyn om mätningen i Android-appen ändras."
+            "Google Play kan ge Amen statistik och kraschrapporter om appen, beroende på din enhet och inställningarna i ditt Google-konto. Rapporterna hjälper till att hitta tekniska fel och hanteras enligt {{googlePrivacy}}. Vi uppdaterar policyn om mätningen i Android-appen ändras."
           ]
         },
         {
@@ -710,7 +710,7 @@
           "id": "children",
           "title": "Barn och föräldratillstånd",
           "paragraphs": [
-            "Användning av amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i Google Play ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
+            "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i Google Play ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
             "När samtycke behövs beror kraven för barn på lokal lag. Kontakta supporten om du tror att ett barns uppgifter behandlats utan nödvändigt tillstånd. Vi undersöker förfrågan och ordnar den begränsning eller radering som krävs i situationen."
           ]
         },
@@ -741,7 +741,7 @@
           "title": "Radera kontot",
           "paragraphs": [
             "Du kan radera ditt konto i appen under Du → Radera konto. Kontot raderas direkt, du loggas ut och kontots data på din telefon tas bort. Raderingen kan inte ångras. Om du inte kan använda appen, begär radering via {{email}}; stegen beskrivs på {{deleteAccount}}. Proportionerlig identitetskontroll kan behövas; du ombeds inte skicka ett lösenord.",
-            "Enbart avinstallation raderar inte ditt konto. Att ta bort amens åtkomst i inställningarna för ditt Google-konto är också separat från radering av uppgifter hos amen. Varken appborttagning eller kontoradering säger upp ett Google Play-abonnemang: säg upp det separat, se {{googlePlayCancel}}. Kopior som du har delat utanför appen och rättslig lagring skiljer sig från borttagning av det aktiva kontot."
+            "Enbart avinstallation raderar inte ditt konto. Att ta bort Amens åtkomst i inställningarna för ditt Google-konto är också separat från radering av uppgifter hos Amen. Varken appborttagning eller kontoradering säger upp ett Google Play-abonnemang: säg upp det separat, se {{googlePlayCancel}}. Kopior som du har delat utanför appen och rättslig lagring skiljer sig från borttagning av det aktiva kontot."
           ]
         },
         {
@@ -756,11 +756,11 @@
       ]
     },
     "terms": {
-      "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren gäller amen-appen för Android, bland annat Nema AI-chatt, kontofunktioner och abonnemang som köps via Google Play. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
+      "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren gäller Amen-appen för Android, bland annat Nema AI-chatt, kontofunktioner och abonnemang som köps via Google Play. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
       "summary": [
         "Nema använder en förbättrad AI-modell från Google för AI-chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
         "Innan du bekräftar ett köp visar Google Play pris, faktureringsperiod, eventuell kostnadsfri provperiod och produkten du köper.",
-        "Google Play-abonnemang förnyas tills de sägs upp i Google Play. Att radera appen eller amen-kontot avslutar inte faktureringen via Google Play.",
+        "Google Play-abonnemang förnyas tills de sägs upp i Google Play. Att radera appen eller Amen-kontot avslutar inte faktureringen via Google Play.",
         "Villkoren bevarar lagstadgade konsumenträttigheter. Google Plays villkor gäller också för nedladdningar och köp."
       ],
       "sections": [
@@ -768,13 +768,13 @@
           "id": "provider",
           "title": "Omfattning och avtal",
           "paragraphs": [
-            "Villkoren gäller amen-appen för Android och dess funktioner för Bibeln, bön och kristen reflektion. Kontakta supporten på {{email}} om avtalet. Din relation med Google för Google Play följer Google Plays egna villkor; se {{googlePlayTerms}}.",
+            "Villkoren gäller Amen-appen för Android och dess funktioner för Bibeln, bön och kristen reflektion. Kontakta supporten på {{email}} om avtalet. Din relation med Google för Google Play följer Google Plays egna villkor; se {{googlePlayTerms}}.",
             "Avtal ingås genom tillämplig registrering, acceptans eller köp efter tillgång till villkor och erbjudande. Publicering ersätter inte nödvändigt godkännande. Individuellt avtal och tvingande lag har företräde."
           ]
         },
         {
           "id": "service",
-          "title": "Vad amen erbjuder",
+          "title": "Vad Amen erbjuder",
           "paragraphs": [
             "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns i Android-appen också bibelserier, bilder, Dagar med Jesus och widgetar för hemskärmen. Nema använder en förbättrad AI-modell från Google för AI-chatten. Vissa läsrekommendationer och ljudfunktioner använder också AI. Funktioner i iOS-appen är inte automatiskt tillgängliga i Android-appen.",
             "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Visst innehåll måste laddas ned före användning, och delning omfattas av licensen. Villkoren lovar inte ett fast antal meddelanden, en viss AI-modell, alla bibelöversättningar, evig drift eller funktioner från en annan version eller plattform. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
@@ -782,7 +782,7 @@
         },
         {
           "id": "eligibility",
-          "title": "Använda amen och externa tjänster",
+          "title": "Använda Amen och externa tjänster",
           "paragraphs": [
             "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder Googles AI-tjänster; leverantörens villkor finns i {{google}}.",
             "Regler för barns uppgifter och samtycke beror på lokal lag. Köp kräver betalningsmetoden och eventuellt familje- eller föräldragodkännande som gäller för det använda Google-kontot. Appens innehållsbedömning åsidosätter inte lagkrav eller andra tjänsters villkor."
@@ -793,7 +793,7 @@
           "title": "Konton och säkerhet",
           "paragraphs": [
             "Amen skapar ett gästkonto under introduktionen utan e-postadress. Ett gästkonto har ingen inloggningsmetod: om du loggar ut, installerar om appen eller byter enhet utan att spara det med Google kan du förlora åtkomsten permanent. Vissa funktioner behöver ett fungerande konto och nätverk. Skydda åtkomsten till din enhet och ditt Google-konto och meddela support vid misstänkt obehörig användning; du ansvarar inte automatiskt för varje handling som orsakas av fel utanför din kontroll. Använd inte någon annans konto utan tillstånd.",
-            "Du kan spara ditt konto med Google och logga in igen med samma Google-konto. Inloggning med e-post/lösenord och Logga in med Apple finns inte i Android-appen. Om du loggar in med ett Google-konto som redan hör till ett annat amen-konto öppnas det kontot och gästuppgifterna slås inte ihop. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte amens skyldighet att ge en avtalsenlig tjänst."
+            "Du kan spara ditt konto med Google och logga in igen med samma Google-konto. Inloggning med e-post/lösenord och Logga in med Apple finns inte i Android-appen. Om du loggar in med ett Google-konto som redan hör till ett annat Amen-konto öppnas det kontot och gästuppgifterna slås inte ihop. Ett valt namn ger inte rätt att använda andras varumärken eller utge sig för att vara någon annan. Behåll en egen kopia av viktig information; detta minskar inte Amens skyldighet att ge en avtalsenlig tjänst."
           ]
         },
         {
@@ -840,7 +840,7 @@
           "title": "Provperioder och kampanjer",
           "paragraphs": [
             "Alla nya användare erbjuds en kostnadsfri provperiod på 7 dagar med Amen Plus i slutet av introduktionen. Google Plays bekräftelse visar om du är behörig, när debiteringen börjar och priset efter provperioden. Om du inte säger upp i Google Play innan provperioden tar slut startar abonnemanget automatiskt och debiteras.",
-            "Säg upp i Google Play innan provperioden tar slut om du inte vill debiteras. Håll koll på slutdatumet i dina Google Play-abonnemang och förlita dig inte på en påminnelse. Att stänga av notiser, ta bort appen eller radera amen-kontot stoppar inte debiteringen."
+            "Säg upp i Google Play innan provperioden tar slut om du inte vill debiteras. Håll koll på slutdatumet i dina Google Play-abonnemang och förlita dig inte på en påminnelse. Att stänga av notiser, ta bort appen eller radera Amen-kontot stoppar inte debiteringen."
           ]
         },
         {
@@ -848,14 +848,14 @@
           "title": "Förnyelse och uppsägning",
           "paragraphs": [
             "Automatiska abonnemang fortsätter för angiven debiteringsperiod tills de sägs upp enligt Google Plays regler. Säg upp i Google Play-appen under Betalningar och prenumerationer eller följ {{googlePlayCancel}}. Efter uppsägning fortsätter åtkomsten normalt till slutet av den betalda perioden; Google Play visar aktuella datum, och tvingande lag avgör följderna.",
-            "App- eller kontoradering, utloggning, mejl till amen och återkallade tillstånd säger inte i sig upp ett Google Play-abonnemang. Prisändringar följer Google Plays besked- och samtyckesprocesser och tillämplig lag. Vi kräver ingen rätt att höja ett befintligt pris utan nödvändig information eller överenskommelse."
+            "App- eller kontoradering, utloggning, mejl till Amen och återkallade tillstånd säger inte i sig upp ett Google Play-abonnemang. Prisändringar följer Google Plays besked- och samtyckesprocesser och tillämplig lag. Vi kräver ingen rätt att höja ett befintligt pris utan nödvändig information eller överenskommelse."
           ]
         },
         {
           "id": "restoration",
           "title": "Återställa köp",
           "paragraphs": [
-            "Använd Återställ köp med Google-kontot som gjorde köpet. Din inloggning i amen med Google och Google-kontot för Google Play kan vara olika konton. Återställningen kopplar det Google Play-kontots köp till ditt nuvarande amen-konto. Köp som gjorts via Apple på iOS hanteras av Apple och garanteras inte låsa upp Android-appen. Kontakta support om ett validerat köp inte känns igen.",
+            "Använd Återställ köp med Google-kontot som gjorde köpet. Din inloggning i Amen med Google och Google-kontot för Google Play kan vara olika konton. Återställningen kopplar det Google Play-kontots köp till ditt nuvarande Amen-konto. Köp som gjorts via Apple på iOS hanteras av Apple och garanteras inte låsa upp Android-appen. Kontakta support om ett validerat köp inte känns igen.",
             "På Android erbjuds Amen Plus endast som ett abonnemang som förnyas automatiskt; det finns inget engångs- eller livstidsköp. Åtkomsten kräver ett aktivt abonnemang och upphör när det upphör, med förbehåll för tvingande lag. Vi kan inte retroaktivt minska en avtalad rättighet genom att omdefiniera den i dessa villkor."
           ]
         },
@@ -863,7 +863,7 @@
           "id": "refunds",
           "title": "Återbetalning och köpproblem",
           "paragraphs": [
-            "För köp via Google Play, kontakta amens support på {{email}} eller se {{googlePlayRefund}}. Google Plays policyer, omständigheterna och tillämplig lag avgör om en återbetalning beviljas. Vi granskar varje begäran individuellt och kan inte lova att varje begäran beviljas.",
+            "För köp via Google Play, kontakta Amens support på {{email}} eller se {{googlePlayRefund}}. Google Plays policyer, omständigheterna och tillämplig lag avgör om en återbetalning beviljas. Vi granskar varje begäran individuellt och kan inte lova att varje begäran beviljas.",
             "Lagliga anspråk mot ansvarig näringsidkare kvarstår. Rapportera också fel, dubbeldebitering eller bristande avtalsenlighet när relevant. Inget gör alla köp utan återbetalningsrätt eller tar bort rättelse, prisavdrag, hävning och återbetalning."
           ]
         },
@@ -881,7 +881,7 @@
           "title": "Tillgänglighet och teknik",
           "paragraphs": [
             "Vissa funktioner kräver internetanslutning, en kompatibel Android-version, Google Play-tjänster, relevanta Android-behörigheter, aktiv inloggning och tillgängliga tjänster från tredje part. Underhåll, avbrott, leverantörsgränser eller enhetens skick kan störa tjänsten. Vi garanterar inte ständig åtkomst, identiska svar eller en permanent AI-modell.",
-            "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta amens fel."
+            "Dina påföljder kvarstår vid utebliven avtalad tjänst. Vi bedömer rapporterade fel och gör rimliga åtgärder. Egna anslutnings- och enhetskostnader är dina utan att ursäkta Amens fel."
           ]
         },
         {
@@ -891,8 +891,8 @@
           "id": "termination",
           "title": "Sluta använda och radera konto",
           "paragraphs": [
-            "Du kan sluta använda amen och radera ditt konto i appen eller via support. Enbart avinstallation raderar inte ditt konto. Se {{privacy}} för radering, rättslig lagring och säkerhetskopior. Spara det du vill behålla innan du raderar kontot.",
-            "Säg upp ett Google Play-abonnemang separat i Google Play för att stoppa framtida debitering. Appborttagning, kontoradering eller avslutad åtkomst säger inte automatiskt upp det. Om amen avslutar en tjänst eller ditt avtal följer vi tillämpliga skyldigheter för information, betald åtkomst och konsumentens rättigheter. Klausuler som måste fortsätta, som uppkomna anspråk och rättslig lagring, förblir underkastade lag."
+            "Du kan sluta använda Amen och radera ditt konto i appen eller via support. Enbart avinstallation raderar inte ditt konto. Se {{privacy}} för radering, rättslig lagring och säkerhetskopior. Spara det du vill behålla innan du raderar kontot.",
+            "Säg upp ett Google Play-abonnemang separat i Google Play för att stoppa framtida debitering. Appborttagning, kontoradering eller avslutad åtkomst säger inte automatiskt upp det. Om Amen avslutar en tjänst eller ditt avtal följer vi tillämpliga skyldigheter för information, betald åtkomst och konsumentens rättigheter. Klausuler som måste fortsätta, som uppkomna anspråk och rättslig lagring, förblir underkastade lag."
           ]
         },
         {
@@ -902,8 +902,8 @@
           "id": "google-play",
           "title": "Google Plays regler och relaterad information",
           "paragraphs": [
-            "Nedladdningar och köp via Google Play följer Google Plays villkor: {{googlePlayTerms}}. Googles integritetsinformation finns i {{googlePrivacy}}. Hänvisningarna förklarar Googles egna tjänster och ersätter inte amens ansvar för appen.",
-            "Använd Google Plays uppsägningsprocess för Google Play-abonnemang och kontakta oss eller Google Play om återbetalningar. Android, Google-inloggning och andra externa tjänster har egna villkor, behörigheter och krav på tillgänglighet. Reglerna gäller vid sidan av tvingande konsumenträttigheter; att vi hänvisar dig till Google eller en annan leverantör tar inte bort ansvaret kopplat till amen."
+            "Nedladdningar och köp via Google Play följer Google Plays villkor: {{googlePlayTerms}}. Googles integritetsinformation finns i {{googlePrivacy}}. Hänvisningarna förklarar Googles egna tjänster och ersätter inte Amens ansvar för appen.",
+            "Använd Google Plays uppsägningsprocess för Google Play-abonnemang och kontakta oss eller Google Play om återbetalningar. Android, Google-inloggning och andra externa tjänster har egna villkor, behörigheter och krav på tillgänglighet. Reglerna gäller vid sidan av tvingande konsumenträttigheter; att vi hänvisar dig till Google eller en annan leverantör tar inte bort ansvaret kopplat till Amen."
           ]
         },
         {
@@ -924,7 +924,7 @@
           "id": "contact",
           "title": "Kontakta supporten",
           "paragraphs": [
-            "Kontakta amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Google Plays länkar beskriver fakturering och uppsägning. För personuppgiftsförfrågningar, se {{privacy}}.",
+            "Kontakta Amens support på {{email}} för hjälp med appen, kontot, abonnemangsåtkomst eller klagomål. Google Plays länkar beskriver fakturering och uppsägning. För personuppgiftsförfrågningar, se {{privacy}}.",
             "Ange produkt eller funktion och beskriv kort. Orderreferens bara vid behov; inga lösenord, hela kortnummer eller onödiga privata chattar. Andra lagligen tillåtna och giltiga meddelanden begränsas inte."
           ]
         }

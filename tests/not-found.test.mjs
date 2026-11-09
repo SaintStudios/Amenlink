@@ -71,7 +71,7 @@ for (const locale of locales) {
   const state = run({ languages: [locale.toUpperCase() + '_CH'] });
   assert.deepEqual(state.redirects, [], 'missing paths must remain real 404s');
   assert.equal(state.document.documentElement.lang, locale);
-  assert.equal(state.document.title, copies[locale].notFound.title + ' · amen');
+  assert.equal(state.document.title, copies[locale].notFound.title + ' · Amen');
   assert.equal(state.current.textContent, copies[locale].languageName);
   assert.equal(state.copyElements.find((element) => element.dataset.copy === 'notFound.title').textContent, copies[locale].notFound.title);
   for (const link of state.legalLinks) assert.equal(link.attributes.href, '/legal/' + locale + '/' + link.dataset.legalDocument + '/');

@@ -29,7 +29,7 @@
   const locale = supported(language) ? language : 'en';
   const copy = translations[locale];
   document.documentElement.lang = locale;
-  document.title = copy.notFound.title + ' · amen';
+  document.title = copy.notFound.title + ' · Amen';
   document.querySelector('meta[name="description"]').setAttribute('content', copy.notFound.description);
   for (const element of document.querySelectorAll('[data-copy]')) {
     const [section, key] = element.dataset.copy.split('.');

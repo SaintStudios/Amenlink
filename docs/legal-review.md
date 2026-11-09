@@ -132,3 +132,9 @@ The owner confirmed on 9 November 2026 that Android offers all new users a 7-day
 Support now also has iOS and Android versions (`/legal/<language>/ios/support/`, `/legal/<language>/android/support/`), built from the same platform's privacy and terms sections, so Android users see Google Play cancellation and refunds.
 
 Not verified from source: Google Play prices, production Firebase/Play Console settings, server-side deletion of provider records, and whether the leaderboard country flag is set for Android accounts. The Android onboarding screen promises a reminder before the trial ends, but no Android code schedules one; the Android terms tell users not to rely on a reminder.
+
+## 9 November 2026: Hungarian law, liability and Amen branding
+
+At the owner's request (the business is based in Hungary), the shared terms sections now choose Hungarian law and Hungarian courts instead of German law, in all six languages and on both platforms. The consumer carve-out for mandatory protections of the country of residence stays, because a choice of law or court that removes it is not enforceable against EU consumers. The liability section now provides the app and AI responses as is, excludes indirect loss, lost profits, lost data and third-party-service damage, and caps total liability at the Amen Plus payments of the previous 12 months, each only to the extent the law allows. The first liability paragraph with the non-excludable cases is unchanged. Hungarian-specific limits were not analysed; the wording is kept broad.
+
+The brand is now written Amen everywhere on the site, including the header, page titles, the 404 page and the landing page. The documents contain no em dashes; tests enforce both, and that no page mentions German law. All documents carry version 2026-11-09.

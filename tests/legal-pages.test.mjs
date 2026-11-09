@@ -11,7 +11,7 @@ const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const script = read('assets/legal.js');
 const copies = Object.fromEntries(locales.map((locale) => [locale, JSON.parse(read('content/' + locale + '.json'))]));
 const kinds = ['privacy', 'terms', 'support', 'imprint', 'delete-account'];
-const dates = { 'delete-account': '2026-11-07' };
+const dates = {};
 const htmlFiles = [];
 for (const locale of locales) {
   for (const kind of kinds) htmlFiles.push('legal/' + locale + '/' + kind + '.html', 'legal/' + locale + '/' + kind + '/index.html');
@@ -28,6 +28,8 @@ for (const locale of locales) {
 }
 htmlFiles.push(...platformFiles);
 const androidDate = '2026-11-09';
+const sharedDate = '2026-11-09';
+const plainText = (html) => html.replace(/<[^>]*>/g, ' ');
 const mainText = (html) => html.slice(html.indexOf('<main'), html.indexOf('</main>'));
 
 // Android lists only what differs from iOS. Every language must follow the English structure.
@@ -121,6 +123,11 @@ for (const file of htmlFiles) {
     assert.ok(html.includes('/assets/' + name + '?v=' + hash), file + ': stale asset URL');
   }
   assert.doesNotMatch(html, /AMEN|Supabase|RevenueCat|AppsFlyer|Ezra Maslaton|Gartenstraße|Oberschleißheim/);
+  // The brand is always written Amen, and the documents use no em dashes.
+  const visible = html.replace(/<[^>]*>/g, ' ').replace(/amenapphilfe@gmail\.com|amen-app\.com/g, '');
+  assert.doesNotMatch(visible, /\bamen\b/, file + ': write Amen, not amen');
+  assert.doesNotMatch(html, /\u2014/, file + ': no em dashes');
+  assert.doesNotMatch(plainText(html), /German law|deutsches Recht|droit allemand|derecho alemán|diritto tedesco|legge tedesca|tysk lag/i, file + ': Hungarian law applies, not German law');
   const prose = html.replace(/<span class="section-number">[^<]*<\/span>/g, '').replace(/<[^>]*>/g, ' ');
   assert.ok(!/\b18\b|\bFSK\b/.test(prose), file + ': unexpected numeric age label');
   const language = file.startsWith('legal/') ? file.split('/')[1] : 'en';
@@ -137,7 +144,7 @@ for (const file of htmlFiles) {
     'https://support.apple.com/en-us/118223'
   ]) assert.ok(html.includes('href="' + url + '"'), file + ': missing official Apple reference ' + url);
   const kind = html.match(/data-document="([^"]+)"/)[1];
-  assert.ok(html.includes('datetime="' + (android ? androidDate : dates[kind] || '2026-10-14') + '"'), file + ': wrong document date');
+  assert.ok(html.includes('datetime="' + (android ? androidDate : dates[kind] || sharedDate) + '"'), file + ': wrong document date');
   if (['privacy', 'terms', 'support'].includes(kind)) assert.equal((html.match(/data-platform-link="/g) || []).length, 2, file + ': the platform choice is visible');
   else assert.doesNotMatch(html, /platform-switch/, file + ': only privacy, terms and support have platform versions');
   assert.equal((html.match(/data-language="/g) || []).length, 6);

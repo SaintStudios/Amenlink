@@ -6,9 +6,9 @@ import { createHash } from 'node:crypto';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const languages = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', sv: 'Svenska' };
-const date = '2026-10-14';
+const date = '2026-11-09';
 // A document added later carries its own date; the others keep the shared version.
-const dates = { 'delete-account': '2026-11-07' };
+const dates = {};
 // Privacy and terms exist once per app. The iOS text is the shared one; Android lists only what differs.
 export const platforms = ['ios', 'android'];
 const platformNames = { ios: 'iOS', android: 'Android' };
@@ -154,13 +154,13 @@ function render(copy, locale, kind, auto = false, platform = null) {
     '<meta name="description" content="' + escape(ui[key(kind) + 'Description']) + '">\n' +
     '<meta name="referrer" content="strict-origin-when-cross-origin">\n' +
     '<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">\n' +
-    '<title>' + title + (platform ? ' (' + platformNames[platform] + ')' : '') + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
+    '<title>' + title + (platform ? ' (' + platformNames[platform] + ')' : '') + ' · Amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
     '<link rel="canonical" href="' + origin + url(kind) + '">\n' +
     languages.map((l) => '<link rel="alternate" hreflang="' + l + '" href="' + origin + url(kind, l) + '">').join('\n') +
     '\n<link rel="alternate" hreflang="x-default" href="' + origin + fallback + '">\n' +
     '<link rel="stylesheet" href="' + asset('legal.css') + '">\n<script src="' + asset('legal.js') + '" defer></script>\n</head>\n<body id="top">\n' +
     '<a class="skip" href="#document">' + escape(ui.skip) + '</a>\n' +
-    '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="36" height="36"><span>amen</span></a>' +
+    '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="36" height="36"><span>Amen</span></a>' +
     '<nav aria-label="' + escape(ui.documents) + '">' + ['privacy', 'terms', 'imprint', 'support'].map((type) =>
       '<a href="' + url(type) + '"' + (type === kind ? ' aria-current="page"' : '') + '>' + escape(navigation[type]) + '</a>').join('') +
     '</nav></div></header>\n' +
@@ -194,17 +194,17 @@ function renderNotFound(copies) {
     '<meta name="robots" content="noindex">\n<meta name="description" content="' + escape(copy.description) + '">\n' +
     '<meta name="referrer" content="strict-origin-when-cross-origin">\n' +
     '<meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; object-src &#39;none&#39;">\n' +
-    '<title>' + escape(copy.title) + ' · amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
+    '<title>' + escape(copy.title) + ' · Amen</title>\n<link rel="icon" href="/favicon.ico">\n' +
     '<link rel="stylesheet" href="' + asset('legal.css') + '">\n<link rel="stylesheet" href="' + asset('not-found.css') + '">\n' +
     '<script src="' + asset('not-found.js') + '" defer></script>\n</head>\n<body class="not-found-page">\n' +
     '<a class="skip" href="#document" data-copy="ui.skip">' + escape(ui.skip) + '</a>\n' +
-    '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="32" height="32"><span>amen</span></a><nav aria-label="' + escape(ui.documents) + '">' + navigation + '</nav></div></header>\n' +
+    '<header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="' + escape(ui.home) + '"><img src="/amen-app-icon.webp" alt="" width="32" height="32"><span>Amen</span></a><nav aria-label="' + escape(ui.documents) + '">' + navigation + '</nav></div></header>\n' +
     '<main id="document" class="not-found-main" tabindex="-1">\n' + artwork +
     '<h1><span class="sr-only">404: </span><span data-copy="notFound.title">' + escape(copy.title) + '</span></h1>\n' +
     '<p class="error-description" data-copy="notFound.description">' + escape(copy.description) + '</p>\n' +
     '<a class="home-action" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-copy="notFound.homeAction">' + escape(copy.homeAction) + '</span></a>\n' +
     '<p class="verse-note"><span data-copy="notFound.verse">' + escape(copy.verse) + '</span><span class="scripture-reference" data-copy="notFound.verseReference">' + escape(copy.verseReference) + '</span></p>\n</main>\n' +
-    '<footer><div class="footer-links"><span>amen</span>' + navigation + '</div>' +
+    '<footer><div class="footer-links"><span>Amen</span>' + navigation + '</div>' +
     '<details class="language-picker"><summary><span data-copy="ui.language">' + escape(ui.language) + '</span> · <span id="current-language">English</span></summary><nav class="languages" aria-label="' + escape(ui.language) + '">' +
     languages.map((locale) => '<a data-error-language="' + locale + '" lang="' + locale + '" hreflang="' + locale + '" href="?lang=' + locale + '"' + (locale === 'en' ? ' aria-current="true"' : '') + '>' + names[locale] + '</a>').join('') +
     '<a class="auto-language" href="?" data-copy="ui.auto">' + escape(ui.auto) + '</a></nav></details></footer>\n' +
