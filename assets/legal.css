@@ -9,7 +9,8 @@
   --selected: rgba(7, 183, 174, .18);
 }
 * { box-sizing: border-box; }
-html { scroll-padding-top: 1.5rem; }
+html { scroll-padding-top: 1.5rem; overscroll-behavior-y: none; }
+body { overscroll-behavior-y: none; }
 body { margin: 0; color: var(--ink); background: var(--paper); font: 1.0625rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 a { color: inherit; text-underline-offset: .22em; overflow-wrap: anywhere; }
 a:hover { text-decoration-thickness: 2px; }
@@ -70,6 +71,13 @@ main p { margin: 0 0 1rem; }
 .provider-links li { margin-bottom: .5rem; }
 .back-top { display: inline-block; min-height: 44px; padding: .5rem 0; font-size: .9375rem; font-weight: 600; }
 @media (max-width: 600px) {
+  /* One short footer row on phones: the header already shows the brand. */
+  footer { padding: .75rem 1rem calc(.75rem + env(safe-area-inset-bottom)); }
+  .footer-brand { display: none; }
+  .footer-controls { width: 100%; justify-content: space-between; flex-wrap: nowrap; }
+  .platform-switch a { min-width: 52px; }
+  .language-picker summary { padding: 0 .75rem; }
+  .page { padding-bottom: 1.5rem; }
   .header-inner { gap: .25rem; }
   .site-header nav { width: 100%; margin-left: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .125rem 1rem; }
   .page { padding-top: 1.5rem; }
