@@ -27,8 +27,8 @@ for (const locale of locales) {
   }
 }
 htmlFiles.push(...platformFiles);
-const androidDate = '2026-11-09';
-const sharedDate = '2026-11-09';
+const androidDate = '2026-11-20';
+const sharedDate = '2026-11-20';
 const plainText = (html) => html.replace(/<[^>]*>/g, ' ');
 const mainText = (html) => html.slice(html.indexOf('<main'), html.indexOf('</main>'));
 
@@ -37,7 +37,6 @@ for (const locale of locales) {
   for (const kind of ['privacy', 'terms']) {
     const doc = copies[locale].android[kind];
     const english = copies.en.android[kind];
-    assert.equal(doc.summary.length, 4);
     assert.deepEqual(doc.sections.map((s) => s.id), english.sections.map((s) => s.id), locale + ': Android ' + kind + ' sections');
     assert.doesNotMatch(JSON.stringify(doc), /(?:"|[.!?]\s+)amen\b/, locale + ': sentence and heading starts must use Amen');
     doc.sections.forEach((section, i) => {
@@ -93,7 +92,6 @@ for (const locale of locales) {
   for (const kind of ['privacy', 'terms', 'deleteAccount']) {
     const doc = copies[locale][kind];
     assert.deepEqual(doc.sections.map((s) => s.id), copies.en[kind].sections.map((s) => s.id));
-    assert.equal(doc.summary.length, 4);
     for (let i = 0; i < doc.sections.length; i++) {
       const section = doc.sections[i];
       assert.equal(section.paragraphs.length, 2);
@@ -170,12 +168,13 @@ for (const file of htmlFiles) {
   }
 }
 const englishPrivacy = read('privacy.html');
-assert.match(englishPrivacy, /Google AI model/);
+// The AI stack is described by category only: no provider or model name, and no key points box.
+assert.match(englishPrivacy, /external AI service provider/);
+assert.doesNotMatch(englishPrivacy + read('terms.html'), /Google AI|Gemini|key-points/);
 for (const category of ['cloud hosting', 'purchase validation', 'app measurement', 'advertising attribution']) assert.ok(englishPrivacy.includes(category), 'recipient category must still be disclosed: ' + category);
 assert.doesNotMatch(copies.en.privacy.intro, /website|amen-app\.com/i);
 assert.match(copies.en.privacy.intro, /Christian app/);
 assert.match(copies.en.terms.intro, /Christian app/);
-assert.match(copies.en.terms.summary.join(' '), /does not cancel Apple billing/);
 assert.doesNotMatch(englishPrivacy, /No external AI|exclusively internally|only for the duration of the active session/);
 assert.match(read('terms.html'), /Article|consumer/);
 // Google Play needs one public page with the deletion steps, the deleted data and the retained data.

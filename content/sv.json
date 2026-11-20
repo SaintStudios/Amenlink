@@ -11,7 +11,6 @@
     "language": "Språk",
     "auto": "Använd webbläsarens språk",
     "contents": "I det här dokumentet",
-    "summary": "Viktiga punkter",
     "updated": "Senast uppdaterad",
     "version": "Version",
     "print": "Skriv ut / spara PDF",
@@ -25,7 +24,6 @@
     "cancel": "Säg upp ett Apple-abonnemang",
     "refund": "Begär återbetalning från Apple",
     "appleEula": "Apples standardlicensavtal",
-    "google": "Villkor för Googles AI-tjänster",
     "providers": "Mer information",
     "applePrivacy": "Apples integritetspolicy",
     "imprint": "Juridisk information",
@@ -48,12 +46,6 @@
   },
   "privacy": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn beskriver hur personuppgifter används i appen, bland annat för konton, läsinställningar, Nema AI-chatt, ljud och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
-    "summary": [
-      "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
-      "Gästanvändning skapar ett konto-ID utan krav på e-postadress. Lokala anteckningar och markeringar är separata från innehåll som sparas med kontot. Köp hanteras via Apple.",
-      "Böner, trosinställningar och samtal kan innehålla känsliga personuppgifter. Dina rättigheter och nödvändiga samtycken är fortsatt skyddade.",
-      "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Apple-abonnemang måste sägas upp separat från att radera appen eller Amen-kontot."
-    ],
     "sections": [
       {
         "id": "controller",
@@ -83,7 +75,7 @@
         "id": "onboarding",
         "title": "Introduktionssvar och trosanpassning",
         "paragraphs": [
-          "Introduktionen använder svar om trosmål, en trosvision, läsvanor, hinder och personliga svårigheter för att välja relevant innehåll. Svaren sparas lokalt i det nuvarande flödet. Samfund sparas också med kontots chattinställningar och kan ingå i personanpassade förfrågningar till Googles AI. Vissa introduktionsreflektioner väljs ur förberedda, översatta texter i stället för att genereras av AI. Det nuvarande samfundssteget kräver ett val för att fortsätta.",
+          "Introduktionen använder svar om trosmål, en trosvision, läsvanor, hinder och personliga svårigheter för att välja relevant innehåll. Svaren sparas lokalt i det nuvarande flödet. Samfund sparas också med kontots chattinställningar och kan ingå i personanpassade AI-förfrågningar. Vissa introduktionsreflektioner väljs ur förberedda, översatta texter i stället för att genereras av AI. Det nuvarande samfundssteget kräver ett val för att fortsätta.",
           "Svaren kan avslöja religiös övertygelse eller personliga förhållanden och omfattas av avsnittet om känsliga uppgifter. Varje ändamål och mottagare behöver en lämplig rättslig grund och, när det gäller, ett ytterligare villkor för känsliga uppgifter. Att fortsätta introduktionen, läsa policyn eller tillåta en enhetsbehörighet ger inte i sig uttryckligt samtycke till sådan behandling. Kontakta support på {{email}} om svar, inställningar eller integritetsbegäranden."
         ]
       },
@@ -107,16 +99,16 @@
         "id": "ai",
         "title": "Nema AI-chatt",
         "paragraphs": [
-          "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalshistorik skickas till Google för att generera ett svar. Kontext kan omfatta namn, valt språk och trosinställningar vid personanpassning. Relevanta meddelanden kan också skickas till Google för att skapa en kort samtalstitel. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
-          "Googles AI-tjänster kan också stödja bibelförklaringar och personanpassade läsrekommendationer. Relevanta svar, hänvisningar eller texter används för den funktion du begär. Förberedda introduktionsreflektioner beskrivs i introduktionsavsnittet. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
+          "Nema använder en AI-modell från en extern AI-tjänsteleverantör för AI-chatten. Ditt meddelande och relevant samtalshistorik skickas till den leverantören för att generera ett svar. Kontext kan omfatta namn, valt språk och trosinställningar vid personanpassning. Relevanta meddelanden kan också skickas till en AI-tjänsteleverantör för att skapa en kort samtalstitel. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
+          "AI-tjänster kan också stödja bibelförklaringar och personanpassade läsrekommendationer. Relevanta svar, hänvisningar eller texter används för den funktion du begär. Förberedda introduktionsreflektioner beskrivs i introduktionsavsnittet. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
         ]
       },
       {
-        "id": "google",
-        "title": "Googles AI-tjänster",
+        "id": "ai-providers",
+        "title": "AI-tjänsteleverantörer",
         "paragraphs": [
-          "Google behandlar uppgifterna som skickas till dess AI-tjänster för att skapa det begärda svaret. Hanteringen av indata och svar beror på gällande villkor och inställningar, inklusive regler om modellförbättring, säkerhet och lagring. Se {{google}}.",
-          "Säkerhet, förebyggande av missbruk och rättsliga skyldigheter kan innebära tillfällig lagring eller granskning av AI-förfrågningar. Policyn lovar inte att varje leverantörsuppgift raderas omedelbart. Se {{googlePrivacy}} för Googles egen information. Kontakta supporten om hanteringen av dina chattuppgifter."
+          "Externa AI-tjänsteleverantörer behandlar de uppgifter som skickas till dem för att skapa det begärda svaret, titeln, rekommendationen eller ljudet. För Nemas AI-chatt kan leverantören lagra indata och svar från varje förfrågan, endast för att förebygga missbruk. De används inte för att träna AI-modeller.",
+          "Säkerhet, förebyggande av missbruk och rättsliga skyldigheter kan innebära tillfällig lagring eller granskning av AI-förfrågningar. Policyn lovar inte att varje leverantörsuppgift raderas omedelbart. Kontakta supporten om hanteringen av dina chattuppgifter."
         ]
       },
       {
@@ -131,7 +123,7 @@
         "id": "audio",
         "title": "Uppläsning",
         "paragraphs": [
-          "Vid genererat tal skickar appen text, röstval och instruktioner till Google. Det kan vara Bibeln, andakt eller bön. Ljud och röstinformation kan mellanlagras på enheten för uppspelning.",
+          "Vid genererat tal skickar appen text, röstval och instruktioner till en AI-tjänsteleverantör. Det kan vara Bibeln, andakt eller bön. Ljud och röstinformation kan mellanlagras på enheten för uppspelning.",
           "Uppläsning skapar tal från text och spelar inte i sig in mikrofonen. Relevant text behandlas för det begärda ljudet; leverantörens säkerhets- och rättsliga register kan också förekomma. Uppspelning stöds vanligen av artikel 6.1 b, med extra skydd om texten innehåller känsliga personuppgifter."
         ]
       },
@@ -140,7 +132,7 @@
         "title": "Bible Lock och Skärmtid",
         "paragraphs": [
           "Bible Lock använder Apples Skärmtid efter ditt godkännande. Urvalsidentifierare från Apple för valda appar, appkategorier och stödda webbdomäner, tillsammans med scheman, upplåsningsinställningar och läsframsteg, lagras lokalt för appen och dess tillägg. Behörigheten ger inte Amen allmän åtkomst till meddelanden eller webbhistorik. Du kan hantera eller återkalla åtkomsten i systeminställningarna.",
-          "För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till Google. Hänvisningarna hjälper till att undvika upprepning och lagras även lokalt för funktionen. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter. Apple styr sin egen systembehandling; enhetsbehörigheter ger inte samtycke till orelaterad analys eller känsliga ändamål."
+          "För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till en AI-tjänsteleverantör. Hänvisningarna hjälper till att undvika upprepning och lagras även lokalt för funktionen. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter. Apple styr sin egen systembehandling; enhetsbehörigheter ger inte samtycke till orelaterad analys eller känsliga ändamål."
         ]
       },
       {
@@ -211,7 +203,7 @@
         "id": "children",
         "title": "Barn och föräldratillstånd",
         "paragraphs": [
-          "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i App Store ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
+          "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i App Store ersätter inte dessa krav. AI-tjänsteleverantörernas villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
           "När samtycke behövs beror kraven för barn på lokal lag. Kontakta supporten om du tror att ett barns uppgifter behandlats utan nödvändigt tillstånd. Vi undersöker förfrågan och ordnar den begränsning eller radering som krävs i situationen."
         ]
       },
@@ -227,7 +219,7 @@
         "id": "recipients",
         "title": "Tjänsteleverantörer och andra mottagare",
         "paragraphs": [
-          "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, appmätning, reklamtillskrivning och supportmejl. Google tillhandahåller AI-tjänster. Apple tillhandahåller köp, inloggning, notiser och relevanta enhetsfunktioner. Uppgifter som delas beror på funktion och syfte. TikTok tar emot de annonsmätningsdata som beskrivs ovan i appversioner med dess direkta SDK-integration; se {{tiktokPrivacy}}.",
+          "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, appmätning, reklamtillskrivning och supportmejl. Externa AI-tjänsteleverantörer genererar AI-svar och ljud. Apple tillhandahåller köp, inloggning, notiser och relevanta enhetsfunktioner. Uppgifter som delas beror på funktion och syfte. TikTok tar emot de annonsmätningsdata som beskrivs ovan i appversioner med dess direkta SDK-integration; se {{tiktokPrivacy}}.",
           "Nödvändiga uppgifter kan också delas med behörig supportpersonal, professionella rådgivare eller myndigheter när lagen kräver det. Behandling och internationella överföringar omfattas av tillämpliga skydd. Kontakta {{email}} för uppgifter om mottagare och avtal som rör dina uppgifter."
         ]
       },
@@ -283,12 +275,6 @@
   },
   "terms": {
     "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren beskriver appens användning, Nema AI-chatt, kontofunktioner och abonnemang. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
-    "summary": [
-      "Nema använder en förbättrad AI-modell från Google för AI-chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
-      "Köpskärmen visar pris, faktureringsperiod, provvillkor och inkluderad åtkomst före bekräftelse.",
-      "Apple-abonnemang förnyas tills de sägs upp. Att radera appen eller Amen-kontot avslutar inte Apples fakturering.",
-      "Villkoren bevarar lagstadgade konsumenträttigheter. Apples köpregler och tillämplig applicens gäller också."
-    ],
     "sections": [
       {
         "id": "provider",
@@ -302,7 +288,7 @@
         "id": "service",
         "title": "Amens tjänster",
         "paragraphs": [
-          "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema använder en förbättrad AI-modell från Google för AI-chatten. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
+          "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, anteckningar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns också bibelserier, bakgrunder, pekstyrda 360°-scener, bakgrundsmusik, Dagar med Jesus och widgetar. Nema erbjuder en AI-chatt. Vissa läsrekommendationer och ljudfunktioner använder också AI; Bible Lock använder Apples Skärmtid.",
           "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Vissa medier måste laddas ned före användning, och sparande eller delning omfattas av licensen. Villkoren lovar inte ett fast antal gratis meddelanden, en viss modell, alla bibelöversättningar, evig drift eller funktioner från en annan version. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
         ]
       },
@@ -310,7 +296,7 @@
         "id": "eligibility",
         "title": "Använda Amen och externa tjänster",
         "paragraphs": [
-          "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder Googles AI-tjänster; leverantörens villkor finns i {{google}}.",
+          "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder externa AI-tjänster.",
           "Regler för barns uppgifter och samtycke beror på lokal lag. Köp kräver betalnings- och familjetillstånd för det använda Apple-kontot. Appens innehållsbedömning åsidosätter inte lagkrav eller andra tjänsters villkor."
         ]
       },
@@ -342,7 +328,7 @@
         "id": "ai",
         "title": "Nema och AI-resultat",
         "paragraphs": [
-          "Nema använder en förbättrad AI-modell från Google för bibelfrågor och kristen reflektion. Svar skapas av AI och kan innehålla felaktiga påståenden, påhittade citat, felaktiga hänvisningar eller ofullständiga tolkningar. Läs noggrant och kontrollera viktiga bibelcitat i den översättning du använder.",
+          "Nema använder AI för bibelfrågor och kristen reflektion. Svar skapas av AI och kan innehålla felaktiga påståenden, påhittade citat, felaktiga hänvisningar eller ofullständiga tolkningar. Läs noggrant och kontrollera viktiga bibelcitat i den översättning du använder.",
           "Kontrollera viktiga svar. Andra kan få liknande resultat; rättsligt skydd och exklusivitet är inte garanterade. Presentera inte AI som verifierat råd eller verkligt uttalande av någon annan. Modell, hastighet och tillgång varierar med bibehållna avtals- och lagrättigheter."
         ]
       },
@@ -518,12 +504,6 @@
   },
   "deleteAccount": {
     "intro": "Den här sidan förklarar hur du raderar ditt konto i Amen - Bible Chat på Android och iOS, vilka data som raderas och vilka som sparas.",
-    "summary": [
-      "Radera ditt konto i appen under Du → Radera konto. Det raderas direkt och kan inte återställas.",
-      "Utan appen kan du begära radering via e-post till amenapphilfe@gmail.com.",
-      "Konto, profil, konversationer, sparade meddelanden och framsteg raderas. Krypterade säkerhetskopior löper ut inom 7 dagar.",
-      "Att radera kontot säger inte upp ett abonnemang hos Google Play eller Apple."
-    ],
     "sections": [
       {
         "id": "delete-in-app",
@@ -570,12 +550,6 @@
   "android": {
     "privacy": {
       "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Den här policyn gäller Amen-appen för Android. Den beskriver hur personuppgifter används i appen, bland annat för konton, läsaktivitet, Nema AI-chatt, ljud, Bible Lock och abonnemang. Vilka uppgifter som behandlas beror på funktionerna du väljer.",
-      "summary": [
-        "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalssammanhang skickas till Google för att skapa ett svar.",
-        "Amen skapar ett gästkonto utan krav på e-postadress. Du kan spara det med ditt Google-konto. Köp görs och hanteras via Google Play.",
-        "Bible Lock kontrollerar på din telefon vilken app som är öppen för att kunna låsa apparna du väljer. Uppgifterna skickas inte till Amen eller till tjänsteleverantörer.",
-        "Kontakta supporten på amenapphilfe@gmail.com för integritetsfrågor. Ett Google Play-abonnemang måste sägas upp i Google Play; att radera appen eller kontot säger inte upp det."
-      ],
       "sections": [
         {
           "id": "controller",
@@ -600,7 +574,7 @@
           "id": "onboarding",
           "title": "Introduktionssvar och trosanpassning",
           "paragraphs": [
-            "Introduktionen frågar efter ditt namn och använder svar om trosmål, en trosvision, läsvanor, hinder, personliga svårigheter, bibelversion, samfund och kön för att välja relevant innehåll och en uppläsningsröst. Svaren lagras på din enhet. Ditt namn sparas med ditt konto. Samfund sparas också med kontots chattinställningar och kan ingå i personanpassade förfrågningar till Googles AI.",
+            "Introduktionen frågar efter ditt namn och använder svar om trosmål, en trosvision, läsvanor, hinder, personliga svårigheter, bibelversion, samfund och kön för att välja relevant innehåll och en uppläsningsröst. Svaren lagras på din enhet. Ditt namn sparas med ditt konto. Samfund sparas också med kontots chattinställningar och kan ingå i personanpassade AI-förfrågningar.",
             "Svaren kan avslöja religiös övertygelse eller personliga förhållanden och omfattas av avsnittet om känsliga uppgifter. Varje ändamål och mottagare behöver en lämplig rättslig grund och, när det gäller, ett ytterligare villkor för känsliga uppgifter. Att fortsätta introduktionen, läsa policyn eller tillåta en enhetsbehörighet ger inte i sig uttryckligt samtycke till sådan behandling. Kontakta support på {{email}} om svar, inställningar eller integritetsbegäranden."
           ]
         },
@@ -624,12 +598,12 @@
           "id": "ai",
           "title": "Nema AI-chatt",
           "paragraphs": [
-            "Nema använder en förbättrad AI-modell från Google för AI-chatten. Ditt meddelande och relevant samtalshistorik skickas till Google för att generera ett svar. Kontext kan omfatta namn, valt språk och samfund vid personanpassning. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
-            "Googles AI-tjänster stödjer också läsrekommendationer i Bible Lock och uppläsning. Om du rapporterar ett AI-svar lagras det valda svaret, orsaken du väljer, eventuella detaljer du lägger till och hänvisningar till samtalet för granskning. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
+            "Nema använder en AI-modell från en extern AI-tjänsteleverantör för AI-chatten. Ditt meddelande och relevant samtalshistorik skickas till den leverantören för att generera ett svar. Kontext kan omfatta namn, valt språk och samfund vid personanpassning. Samtalet genereras av AI och inte av en mänsklig rådgivare.",
+            "AI-tjänster stödjer också läsrekommendationer i Bible Lock och uppläsning. Om du rapporterar ett AI-svar lagras det valda svaret, orsaken du väljer, eventuella detaljer du lägger till och hänvisningar till samtalet för granskning. Undvik lösenord, betalningsuppgifter och konfidentiell information om andra. Begärda funktioner stödjer sig vanligtvis på artikel 6.1 b i GDPR, med ett ytterligare rättsligt villkor för känsliga personuppgifter."
           ]
         },
         {
-          "id": "google"
+          "id": "ai-providers"
         },
         {
           "id": "chat-storage"
@@ -638,7 +612,7 @@
           "id": "audio",
           "title": "Uppläsning",
           "paragraphs": [
-            "När du begär uppläsning skickar appen texten som ska läsas upp, dess språk och den valda rösten till Google för att generera tal. Det kan vara bibeltext, en andakt eller en bön. Det genererade ljudet spelas upp på din enhet.",
+            "När du begär uppläsning skickar appen texten som ska läsas upp, dess språk och den valda rösten till en AI-tjänsteleverantör för att generera tal. Det kan vara bibeltext, en andakt eller en bön. Det genererade ljudet spelas upp på din enhet.",
             "Uppläsning skapar tal från text och spelar inte in mikrofonen. Relevant text behandlas för det begärda ljudet; leverantörens säkerhets- och rättsliga register kan också förekomma. Uppspelning stöds vanligen av artikel 6.1 b, med extra skydd om texten innehåller känsliga personuppgifter."
           ]
         },
@@ -647,7 +621,7 @@
           "title": "Bible Lock på Android",
           "paragraphs": [
             "Android har ingen Skärmtid, så Bible Lock fungerar annorlunda än på iOS. Funktionen kräver två inställningar som du slår på i Androids inställningar: åtkomst till användningsdata, så att appen kan se vilken app som är öppen, och Visa ovanpå andra appar, så att den kan täcka en låst app. Medan Bible Lock är aktivt körs en tjänst i förgrunden med en permanent notis, som Android kräver. Apparna du väljer, scheman, upplåsningsstatus och läsframsteg lagras bara på din telefon. Uppgifter om vilka appar du öppnar används på enheten för att tillämpa låset och skickas inte till Amen eller till tjänsteleverantörer.",
-            "Du kan när som helst återkalla åtkomst till användningsdata och Visa ovanpå andra appar i Androids inställningar; Bible Lock slutar då att fungera. För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till Google. Hänvisningarna hjälper till att undvika upprepning och lagras även på din telefon. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter."
+            "Du kan när som helst återkalla åtkomst till användningsdata och Visa ovanpå andra appar i Androids inställningar; Bible Lock slutar då att fungera. För en AI-läsrekommendation kan valt behov, önskad läslängd, föredraget språk och nyliga kapitelhänvisningar skickas till en AI-tjänsteleverantör. Hänvisningarna hjälper till att undvika upprepning och lagras även på din telefon. Behandlingen ger vanligtvis den begärda funktionen enligt artikel 6.1 b i GDPR, med extra skydd för känsliga uppgifter."
           ]
         },
         {
@@ -710,7 +684,7 @@
           "id": "children",
           "title": "Barn och föräldratillstånd",
           "paragraphs": [
-            "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i Google Play ersätter inte dessa krav. Googles länkade AI-villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
+            "Användning av Amen måste följa regler för barns uppgifter, giltiga föräldratillstånd där de krävs och externa tjänsters villkor. En innehållsbedömning i Google Play ersätter inte dessa krav. AI-tjänsteleverantörernas villkor är fortsatt relevanta för funktioner som använder tjänsterna.",
             "När samtycke behövs beror kraven för barn på lokal lag. Kontakta supporten om du tror att ett barns uppgifter behandlats utan nödvändigt tillstånd. Vi undersöker förfrågan och ordnar den begränsning eller radering som krävs i situationen."
           ]
         },
@@ -721,7 +695,7 @@
           "id": "recipients",
           "title": "Tjänsteleverantörer och andra mottagare",
           "paragraphs": [
-            "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, pushnotiser och supportmejl. Google tillhandahåller AI-tjänster, Google-inloggning, köp via Google Play och leverans av pushnotiser. Uppgifter som delas beror på funktion och syfte. Android-appen delar inte uppgifter med annonspartner.",
+            "Mottagarkategorier omfattar kontoinloggning, molndrift och lagring, köpverifiering, pushnotiser och supportmejl. Externa AI-tjänsteleverantörer genererar AI-svar och ljud. Google tillhandahåller Google-inloggning, köp via Google Play och leverans av pushnotiser. Uppgifter som delas beror på funktion och syfte. Android-appen delar inte uppgifter med annonspartner.",
             "Nödvändiga uppgifter kan också delas med behörig supportpersonal, professionella rådgivare eller myndigheter när lagen kräver det. Behandling och internationella överföringar omfattas av tillämpliga skydd. Kontakta {{email}} för uppgifter om mottagare och avtal som rör dina uppgifter."
           ]
         },
@@ -757,12 +731,6 @@
     },
     "terms": {
       "intro": "Amen är en kristen app för bibelläsning, bön och andlig reflektion. Villkoren gäller Amen-appen för Android, bland annat Nema AI-chatt, kontofunktioner och abonnemang som köps via Google Play. Läs även integritetspolicyn och erbjudandet före köp. Dina lagstadgade konsumenträttigheter är fortsatt skyddade.",
-      "summary": [
-        "Nema använder en förbättrad AI-modell från Google för AI-chatten. Svaren kan vara felaktiga; kontrollera viktiga påståenden och bibelcitat.",
-        "Innan du bekräftar ett köp visar Google Play pris, faktureringsperiod, eventuell kostnadsfri provperiod och produkten du köper.",
-        "Google Play-abonnemang förnyas tills de sägs upp i Google Play. Att radera appen eller Amen-kontot avslutar inte faktureringen via Google Play.",
-        "Villkoren bevarar lagstadgade konsumenträttigheter. Google Plays villkor gäller också för nedladdningar och köp."
-      ],
       "sections": [
         {
           "id": "provider",
@@ -776,7 +744,7 @@
           "id": "service",
           "title": "Vad Amen erbjuder",
           "paragraphs": [
-            "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns i Android-appen också bibelserier, bilder, Dagar med Jesus och widgetar för hemskärmen. Nema använder en förbättrad AI-modell från Google för AI-chatten. Vissa läsrekommendationer och ljudfunktioner använder också AI. Funktioner i iOS-appen är inte automatiskt tillgängliga i Android-appen.",
+            "Amen stödjer kristen bibelläsning, bön och reflektion genom sparade verser, markeringar, andakter, läsframsteg och relaterade funktioner. Beroende på version och åtkomst finns i Android-appen också bibelserier, bilder, Dagar med Jesus och widgetar för hemskärmen. Nema erbjuder en AI-chatt. Vissa läsrekommendationer och ljudfunktioner använder också AI. Funktioner i iOS-appen är inte automatiskt tillgängliga i Android-appen.",
             "Det faktiska erbjudandet och köpskärmen definierar betald åtkomst. Visst innehåll måste laddas ned före användning, och delning omfattas av licensen. Villkoren lovar inte ett fast antal meddelanden, en viss AI-modell, alla bibelöversättningar, evig drift eller funktioner från en annan version eller plattform. Beskrivningar och avtalsåtaganden som lagen gör bindande förblir bindande."
           ]
         },
@@ -784,7 +752,7 @@
           "id": "eligibility",
           "title": "Använda Amen och externa tjänster",
           "paragraphs": [
-            "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder Googles AI-tjänster; leverantörens villkor finns i {{google}}.",
+            "Du behöver rättslig förmåga att ingå avtalet eller giltigt tillstånd från förälder eller vårdnadshavare där det krävs. Använd externa tjänster enligt deras villkor. Nema använder externa AI-tjänster.",
             "Regler för barns uppgifter och samtycke beror på lokal lag. Köp kräver betalningsmetoden och eventuellt familje- eller föräldragodkännande som gäller för det använda Google-kontot. Appens innehållsbedömning åsidosätter inte lagkrav eller andra tjänsters villkor."
           ]
         },

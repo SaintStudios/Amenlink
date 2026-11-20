@@ -10,8 +10,8 @@ The latest revision follows the user's requested presentation:
 
 - Support is contacted through amenapphilfe@gmail.com. Personal operator name, address and telephone blocks were removed from rendered documents.
 - Infrastructure names were replaced with specific recipient categories: account authentication, cloud hosting/storage, purchase validation, app measurement, advertising attribution and support email. Data categories and purposes remain disclosed.
-- Nema is described as using an enhanced Google AI model. Public numeric age wording was removed; applicable Google conditions remain linked. This does not change Google's eligibility rules.
-- Every document links Apple's terms and usage rules, standard app license, privacy, cancellation and refund guidance using localized short reference labels. Google AI conditions and privacy information are also linked. Provider notices do not replace the app's own responsibilities.
+- Nema is described as using an AI model from an external AI service provider, without a provider or model name. Public numeric age wording was removed. This does not change any provider's eligibility rules.
+- Every document links Apple's terms and usage rules, standard app license, privacy, cancellation and refund guidance using localized short reference labels. Google privacy information is also linked. Provider notices do not replace the app's own responsibilities.
 - The /imprint and /impressum compatibility routes now show general legal information, not an operator disclosure.
 
 The policies correct earlier claims that AI processing occurred only on amen's servers and that chats disappeared after a session. They retain saved-history, sensitive-data, subscription, statutory-remedy, withdrawal, cancellation, deletion and AI-limit explanations. They do not promise zero provider retention, immediate complete erasure or blanket immunity.
@@ -71,7 +71,6 @@ The visual revision follows DESIGN.md with system type, neutral surfaces, a 680-
 - Apple privacy: https://www.apple.com/legal/privacy/en-ww/
 - Apple cancellation: https://support.apple.com/en-us/118428
 - Apple refunds: https://support.apple.com/en-us/118223
-- Google AI conditions: https://ai.google.dev/gemini-api/terms
 - Google privacy: https://policies.google.com/privacy
 - GDPR, especially Articles 6, 8, 9, 13, 12–22 and 44–49: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
 - German operator disclosure, DDG Section 5: https://www.gesetze-im-internet.de/ddg/

@@ -11,7 +11,6 @@
     "language": "Lingua",
     "auto": "Usa la lingua del browser",
     "contents": "In questo documento",
-    "summary": "Punti principali",
     "updated": "Ultimo aggiornamento",
     "version": "Versione",
     "print": "Stampa / salva PDF",
@@ -25,7 +24,6 @@
     "cancel": "Annullare un abbonamento Apple",
     "refund": "Richiedere un rimborso ad Apple",
     "appleEula": "Licenza standard Apple",
-    "google": "Condizioni dei servizi IA di Google",
     "providers": "Ulteriori informazioni",
     "applePrivacy": "Privacy di Apple",
     "imprint": "Informazioni legali",
@@ -48,12 +46,6 @@
   },
   "privacy": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa spiega l’uso delle informazioni personali nell’app: account, preferenze di lettura, chat IA Nema, audio e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
-    "summary": [
-      "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
-      "L'uso come ospite crea un identificativo di account senza richiedere un indirizzo e-mail. Note ed evidenziazioni locali sono separate dai contenuti salvati nell'account. Gli acquisti sono gestiti tramite Apple.",
-      "Preghiere, preferenze di fede e conversazioni possono contenere informazioni personali sensibili. I tuoi diritti e i consensi necessari restano tutelati.",
-      "Per richieste sulla privacy, contatta l’assistenza a amenapphilfe@gmail.com. Gli abbonamenti Apple vanno annullati separatamente dall’eliminazione dell’app o dell’account Amen."
-    ],
     "sections": [
       {
         "id": "controller",
@@ -83,7 +75,7 @@
         "id": "onboarding",
         "title": "Risposte iniziali e personalizzazione della fede",
         "paragraphs": [
-          "La configurazione iniziale usa risposte su obiettivi di fede, una visione di fede, abitudini di lettura, ostacoli e difficoltà personali per selezionare contenuti pertinenti. Queste risposte sono salvate localmente nel flusso attuale. La confessione è anche salvata nelle impostazioni di chat dell'account e può essere inclusa nelle richieste personalizzate all'IA di Google. Alcune riflessioni iniziali sono scelte tra testi preparati e tradotti, anziché generate dall'IA. Il passaggio attuale della confessione richiede una scelta per continuare.",
+          "La configurazione iniziale usa risposte su obiettivi di fede, una visione di fede, abitudini di lettura, ostacoli e difficoltà personali per selezionare contenuti pertinenti. Queste risposte sono salvate localmente nel flusso attuale. La confessione è anche salvata nelle impostazioni di chat dell'account e può essere inclusa nelle richieste personalizzate all’IA. Alcune riflessioni iniziali sono scelte tra testi preparati e tradotti, anziché generate dall'IA. Il passaggio attuale della confessione richiede una scelta per continuare.",
           "Le risposte possono rivelare convinzioni religiose o circostanze personali e rientrano nella sezione sui dati sensibili. Ogni finalità e destinatario richiede una base giuridica adeguata e, ove applicabile, una condizione aggiuntiva per i dati sensibili. Continuare la configurazione, leggere questa informativa o concedere un permesso del dispositivo non costituisce di per sé consenso esplicito al trattamento sensibile. Contatta l'assistenza a {{email}} per risposte, preferenze o richieste relative alla privacy."
         ]
       },
@@ -107,16 +99,16 @@
         "id": "ai",
         "title": "Chat IA Nema",
         "paragraphs": [
-          "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto può includere nome, lingua e preferenze di fede per personalizzare. Messaggi pertinenti possono anche essere inviati a Google per creare un breve titolo della conversazione. La conversazione è generata dall'IA, non da un consulente umano.",
-          "I servizi di IA di Google possono anche fornire spiegazioni bibliche e consigli di lettura personalizzati. Risposte, riferimenti o testi pertinenti sono usati per la funzione richiesta. Le riflessioni iniziali preparate sono descritte nella sezione di configurazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
+          "Nema usa per la chat IA un modello di IA di un fornitore esterno di servizi IA. Il messaggio e la cronologia pertinente vengono inviati a tale fornitore per generare una risposta. Il contesto può includere nome, lingua e preferenze di fede per personalizzare. Messaggi pertinenti possono anche essere inviati a un fornitore di servizi IA per creare un breve titolo della conversazione. La conversazione è generata dall'IA, non da un consulente umano.",
+          "I servizi di IA possono anche fornire spiegazioni bibliche e consigli di lettura personalizzati. Risposte, riferimenti o testi pertinenti sono usati per la funzione richiesta. Le riflessioni iniziali preparate sono descritte nella sezione di configurazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
         ]
       },
       {
-        "id": "google",
-        "title": "Servizi IA di Google",
+        "id": "ai-providers",
+        "title": "Fornitori di servizi IA",
         "paragraphs": [
-          "Google tratta le informazioni inviate ai suoi servizi IA per generare la risposta richiesta. Il trattamento di input e risposte dipende dalle condizioni e impostazioni applicabili, comprese le disposizioni su miglioramento dei modelli, sicurezza e conservazione. Consulta {{google}}.",
-          "Sicurezza, prevenzione degli abusi e obblighi legali possono comportare conservazione temporanea o revisione delle richieste IA. L’informativa non promette la cancellazione immediata di ogni registro del fornitore. Per le informazioni di Google, consulta {{googlePrivacy}}. Puoi chiedere all’assistenza chiarimenti sui dati delle conversazioni."
+          "I fornitori esterni di servizi IA trattano le informazioni loro inviate per generare la risposta, il titolo, il consiglio o l’audio richiesti. Per la chat IA di Nema, il fornitore può conservare input e risposte di qualsiasi richiesta, solo per prevenire abusi. Non vengono usati per addestrare modelli di IA.",
+          "Sicurezza, prevenzione degli abusi e obblighi legali possono comportare conservazione temporanea o revisione delle richieste IA. L’informativa non promette la cancellazione immediata di ogni registro del fornitore. Puoi chiedere all’assistenza chiarimenti sui dati delle conversazioni."
         ]
       },
       {
@@ -131,7 +123,7 @@
         "id": "audio",
         "title": "Lettura ad alta voce",
         "paragraphs": [
-          "Quando richiedi voce generata, l’app invia a Google testo, impostazioni vocali e istruzioni, anche per Bibbia, meditazioni o preghiere. Audio e informazioni sulle voci possono essere memorizzati sul dispositivo per la riproduzione.",
+          "Quando richiedi voce generata, l’app invia a un fornitore di servizi IA testo, impostazioni vocali e istruzioni, anche per Bibbia, meditazioni o preghiere. Audio e informazioni sulle voci possono essere memorizzati sul dispositivo per la riproduzione.",
           "La lettura ad alta voce genera parlato dal testo e non registra di per sé il microfono. Il testo pertinente è trattato per fornire l’audio richiesto; possono esistere anche registri di sicurezza o legali del fornitore. La riproduzione si basa generalmente sull’articolo 6.1.b, con protezione aggiuntiva per informazioni sensibili."
         ]
       },
@@ -140,7 +132,7 @@
         "title": "Bible Lock e Tempo di utilizzo",
         "paragraphs": [
           "Bible Lock usa le funzioni Tempo di utilizzo di Apple quando le autorizzi. I codici di selezione forniti da Apple per app, categorie e domini web supportati scelti, insieme a orari, impostazioni di sblocco e progressi di lettura, sono conservati localmente per l'app e le estensioni. L'autorizzazione non dà ad Amen accesso generale a messaggi o cronologia di navigazione. Puoi gestire o revocare l'accesso nelle impostazioni di sistema.",
-          "Per un consiglio di lettura IA possono essere inviati a Google il bisogno selezionato, la lunghezza richiesta, la lingua preferita e i riferimenti di capitoli recenti. Questi evitano ripetizioni e sono anche salvati localmente per la funzione. Il trattamento fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili. Apple controlla il proprio trattamento di sistema; i permessi del dispositivo non valgono come consenso per analisi estranee o finalità sensibili."
+          "Per un consiglio di lettura IA possono essere inviati a un fornitore di servizi IA il bisogno selezionato, la lunghezza richiesta, la lingua preferita e i riferimenti di capitoli recenti. Questi evitano ripetizioni e sono anche salvati localmente per la funzione. Il trattamento fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili. Apple controlla il proprio trattamento di sistema; i permessi del dispositivo non valgono come consenso per analisi estranee o finalità sensibili."
         ]
       },
       {
@@ -211,7 +203,7 @@
         "id": "children",
         "title": "Minori e autorizzazione dei genitori",
         "paragraphs": [
-          "L’uso di Amen deve rispettare le norme sui dati dei minori, l’autorizzazione valida dei genitori quando necessaria e le condizioni dei servizi esterni. La classificazione dei contenuti dell’App Store non sostituisce tali requisiti. Le condizioni IA di Google collegate restano pertinenti per le funzioni che usano quei servizi.",
+          "L’uso di Amen deve rispettare le norme sui dati dei minori, l’autorizzazione valida dei genitori quando necessaria e le condizioni dei servizi esterni. La classificazione dei contenuti dell’App Store non sostituisce tali requisiti. Le condizioni dei fornitori di servizi IA restano pertinenti per le funzioni che usano quei servizi.",
           "Quando serve il consenso, i requisiti per minori dipendono dalla legge locale. Contatta l’assistenza se ritieni che informazioni di un minore siano state trattate senza l’autorizzazione necessaria. Esamineremo la richiesta e gestiremo la limitazione o cancellazione richiesta dalle circostanze."
         ]
       },
@@ -227,7 +219,7 @@
         "id": "recipients",
         "title": "Fornitori e altri destinatari",
         "paragraphs": [
-          "Le categorie di destinatari comprendono autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, misurazione, attribuzione pubblicitaria ed email di supporto. Google fornisce servizi IA. Apple offre acquisti, accesso, notifiche e funzioni pertinenti del dispositivo. Le informazioni condivise dipendono da funzione e finalità. TikTok riceve i dati di misurazione pubblicitaria descritti sopra nelle versioni dell’app con integrazione diretta del suo SDK; vedi {{tiktokPrivacy}}.",
+          "Le categorie di destinatari comprendono autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, misurazione, attribuzione pubblicitaria ed email di supporto. Fornitori esterni di servizi IA generano le risposte IA e l’audio. Apple offre acquisti, accesso, notifiche e funzioni pertinenti del dispositivo. Le informazioni condivise dipendono da funzione e finalità. TikTok riceve i dati di misurazione pubblicitaria descritti sopra nelle versioni dell’app con integrazione diretta del suo SDK; vedi {{tiktokPrivacy}}.",
           "Le informazioni necessarie possono essere condivise anche con personale autorizzato, consulenti professionali o autorità quando richiesto dalla legge. Trattamento e trasferimenti internazionali restano soggetti alle garanzie applicabili. Contatta {{email}} per informazioni sui destinatari e sugli accordi relativi ai tuoi dati."
         ]
       },
@@ -283,12 +275,6 @@
   },
   "terms": {
     "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni spiegano uso dell’app, chat IA Nema, account e abbonamenti. Leggi anche l’informativa sulla privacy e l’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
-    "summary": [
-      "Nema usa un modello di IA di Google potenziato per la chat IA. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
-      "La schermata d’acquisto mostra prezzo, periodo di fatturazione, condizioni di prova e accesso incluso prima della conferma.",
-      "Gli abbonamenti Apple si rinnovano fino all’annullamento. Eliminare l’app o l’account Amen non annulla la fatturazione Apple.",
-      "Queste condizioni preservano i diritti legali dei consumatori. Restano applicabili regole d’acquisto Apple e licenza dell’app."
-    ],
     "sections": [
       {
         "id": "provider",
@@ -302,7 +288,7 @@
         "id": "service",
         "title": "Servizi offerti",
         "paragraphs": [
-          "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema usa un modello di IA di Google potenziato per la chat IA. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
+          "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, note, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, offre anche fumetti biblici, sfondi, scene tattili a 360°, musica di sottofondo, Giorni con Gesù e widget. Nema offre una chat IA. Alcuni consigli di lettura e funzioni audio usano IA; Bible Lock usa Tempo di utilizzo di Apple.",
           "L'offerta effettiva e la schermata d'acquisto definiscono l'accesso a pagamento. Alcuni media devono essere scaricati prima dell'uso; salvare o condividere contenuti resta soggetto alla licenza. Queste condizioni non promettono un numero fisso di messaggi gratuiti, un modello specifico, tutte le traduzioni bibliche, funzionamento perpetuo o funzioni di un'altra versione. Descrizioni e impegni contrattuali resi vincolanti dalla legge restano vincolanti."
         ]
       },
@@ -310,7 +296,7 @@
         "id": "eligibility",
         "title": "Uso di Amen e servizi esterni",
         "paragraphs": [
-          "Devi avere capacità legale per concludere l’accordo o un’autorizzazione valida dei genitori o tutori quando necessaria. Usa i servizi esterni secondo le loro condizioni. Nema usa servizi IA di Google; le condizioni del fornitore sono disponibili in {{google}}.",
+          "Devi avere capacità legale per concludere l’accordo o un’autorizzazione valida dei genitori o tutori quando necessaria. Usa i servizi esterni secondo le loro condizioni. Nema usa servizi IA esterni.",
           "Requisiti su dati e consenso dei minori dipendono dalla legge locale. Gli acquisti richiedono le autorizzazioni di pagamento e famiglia dell’account Apple usato. La classificazione dei contenuti non prevale su requisiti legali o condizioni di altri servizi."
         ]
       },
@@ -342,7 +328,7 @@
         "id": "ai",
         "title": "Nema e risultati IA",
         "paragraphs": [
-          "Nema usa un modello di IA di Google potenziato per domande bibliche e riflessione cristiana. Le risposte sono generate da IA e possono contenere affermazioni inesatte, citazioni inventate, riferimenti errati o interpretazioni incomplete. Leggi con attenzione e controlla citazioni importanti nella traduzione biblica che usi.",
+          "Nema usa l’IA per domande bibliche e riflessione cristiana. Le risposte sono generate da IA e possono contenere affermazioni inesatte, citazioni inventate, riferimenti errati o interpretazioni incomplete. Leggi con attenzione e controlla citazioni importanti nella traduzione biblica che usi.",
           "Verifica risposte importanti. Altri possono ricevere risultati simili; protezione ed esclusività non sono garantite. Non presentarli come consulenza verificata o parole autentiche altrui. Modello, velocità e disponibilità variano nel rispetto dei diritti contrattuali e legali."
         ]
       },
@@ -518,12 +504,6 @@
   },
   "deleteAccount": {
     "intro": "Questa pagina spiega come eliminare il tuo account di Amen - Bible Chat su Android e iOS, quali dati vengono eliminati e quali vengono conservati.",
-    "summary": [
-      "Elimina il tuo account nell’app in Tu → Elimina account. Viene eliminato subito e non può essere ripristinato.",
-      "Senza l’app, richiedi l’eliminazione via email all’indirizzo amenapphilfe@gmail.com.",
-      "Vengono eliminati account, profilo, conversazioni, messaggi salvati e progressi. I backup cifrati scadono entro 7 giorni.",
-      "Eliminare l’account non annulla un abbonamento Google Play o Apple."
-    ],
     "sections": [
       {
         "id": "delete-in-app",
@@ -570,12 +550,6 @@
   "android": {
     "privacy": {
       "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Questa informativa si applica all’app Amen per Android. Spiega l’uso delle informazioni personali nell’app: account, attività di lettura, chat IA Nema, audio, Bible Lock e abbonamenti. Le informazioni trattate dipendono dalle funzioni che scegli.",
-      "summary": [
-        "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e il contesto pertinente della conversazione vengono inviati a Google per generare una risposta.",
-        "Amen crea un account ospite senza richiedere un indirizzo e-mail. Puoi salvarlo con il tuo account Google. Gli acquisti sono effettuati e gestiti tramite Google Play.",
-        "Bible Lock controlla sul telefono quale app è aperta, per poter bloccare le app che scegli. Queste informazioni non vengono inviate ad Amen né ai fornitori di servizi.",
-        "Per richieste sulla privacy, contatta l’assistenza a amenapphilfe@gmail.com. Un abbonamento Google Play va annullato in Google Play; eliminare l’app o l’account non lo annulla."
-      ],
       "sections": [
         {
           "id": "controller",
@@ -600,7 +574,7 @@
           "id": "onboarding",
           "title": "Risposte iniziali e personalizzazione della fede",
           "paragraphs": [
-            "La configurazione iniziale chiede il tuo nome e usa risposte su obiettivi di fede, una visione di fede, abitudini di lettura, ostacoli, difficoltà personali, versione biblica, confessione e genere per selezionare contenuti pertinenti e una voce per la lettura ad alta voce. Queste risposte sono salvate sul dispositivo. Il tuo nome è salvato con l’account. La confessione è anche salvata nelle impostazioni di chat dell’account e può essere inclusa nelle richieste personalizzate all’IA di Google.",
+            "La configurazione iniziale chiede il tuo nome e usa risposte su obiettivi di fede, una visione di fede, abitudini di lettura, ostacoli, difficoltà personali, versione biblica, confessione e genere per selezionare contenuti pertinenti e una voce per la lettura ad alta voce. Queste risposte sono salvate sul dispositivo. Il tuo nome è salvato con l’account. La confessione è anche salvata nelle impostazioni di chat dell’account e può essere inclusa nelle richieste personalizzate all’IA.",
             "Le risposte possono rivelare convinzioni religiose o circostanze personali e rientrano nella sezione sui dati sensibili. Ogni finalità e destinatario richiede una base giuridica adeguata e, ove applicabile, una condizione aggiuntiva per i dati sensibili. Continuare la configurazione, leggere questa informativa o concedere un permesso del dispositivo non costituisce di per sé consenso esplicito al trattamento sensibile. Contatta l'assistenza a {{email}} per risposte, preferenze o richieste relative alla privacy."
           ]
         },
@@ -624,12 +598,12 @@
           "id": "ai",
           "title": "Chat IA Nema",
           "paragraphs": [
-            "Nema usa un modello di IA di Google potenziato per la chat IA. Il messaggio e la cronologia pertinente vengono inviati a Google per generare una risposta. Il contesto può includere nome, lingua selezionata e confessione per personalizzare. La conversazione è generata dall'IA, non da un consulente umano.",
-            "I servizi di IA di Google supportano anche i consigli di lettura di Bible Lock e l’audio della lettura ad alta voce. Se segnali una risposta dell’IA, vengono conservati per la verifica la risposta selezionata, il motivo che scegli, gli eventuali dettagli che aggiungi e i riferimenti alla conversazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
+            "Nema usa per la chat IA un modello di IA di un fornitore esterno di servizi IA. Il messaggio e la cronologia pertinente vengono inviati a tale fornitore per generare una risposta. Il contesto può includere nome, lingua selezionata e confessione per personalizzare. La conversazione è generata dall'IA, non da un consulente umano.",
+            "I servizi di IA supportano anche i consigli di lettura di Bible Lock e l’audio della lettura ad alta voce. Se segnali una risposta dell’IA, vengono conservati per la verifica la risposta selezionata, il motivo che scegli, gli eventuali dettagli che aggiungi e i riferimenti alla conversazione. Evita password, dati di pagamento o informazioni riservate su altre persone. Le funzioni richieste si basano di norma sull'articolo 6.1.b del GDPR, con una condizione giuridica aggiuntiva per dati personali sensibili."
           ]
         },
         {
-          "id": "google"
+          "id": "ai-providers"
         },
         {
           "id": "chat-storage"
@@ -638,7 +612,7 @@
           "id": "audio",
           "title": "Lettura ad alta voce",
           "paragraphs": [
-            "Quando richiedi la lettura ad alta voce, l’app invia a Google il testo da leggere, la sua lingua e la voce selezionata per generare il parlato. Può trattarsi di testo biblico, di una meditazione o di una preghiera. L’audio generato viene riprodotto sul dispositivo.",
+            "Quando richiedi la lettura ad alta voce, l’app invia a un fornitore di servizi IA il testo da leggere, la sua lingua e la voce selezionata per generare il parlato. Può trattarsi di testo biblico, di una meditazione o di una preghiera. L’audio generato viene riprodotto sul dispositivo.",
             "La lettura ad alta voce genera parlato dal testo e non registra il microfono. Il testo pertinente è trattato per fornire l’audio richiesto; possono esistere anche registri di sicurezza o legali del fornitore. La riproduzione si basa generalmente sull’articolo 6.1.b, con protezione aggiuntiva per informazioni sensibili."
           ]
         },
@@ -647,7 +621,7 @@
           "title": "Bible Lock su Android",
           "paragraphs": [
             "Android non ha Tempo di utilizzo, quindi Bible Lock funziona diversamente rispetto a iOS. Richiede due impostazioni che attivi nelle impostazioni di Android: l’accesso ai dati di utilizzo, perché l’app possa vedere quale app è aperta, e “Mostra sopra altre app”, perché possa coprire un’app bloccata. Mentre Bible Lock è attivo, un servizio in primo piano resta in esecuzione con una notifica permanente, come richiesto da Android. Le app che scegli, gli orari, lo stato di sblocco e i progressi di lettura sono conservati solo sul tuo telefono. Le informazioni su quali app apri sono usate sul dispositivo per applicare il blocco e non vengono inviate ad Amen né ai fornitori di servizi.",
-            "Puoi revocare in qualsiasi momento l’accesso ai dati di utilizzo e “Mostra sopra altre app” nelle impostazioni di Android; in quel caso Bible Lock smette di funzionare. Per un consiglio di lettura IA possono essere inviati a Google il bisogno selezionato, la lunghezza richiesta, la lingua preferita e i riferimenti di capitoli recenti. Questi evitano ripetizioni e sono anche salvati sul tuo telefono. Il trattamento fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili."
+            "Puoi revocare in qualsiasi momento l’accesso ai dati di utilizzo e “Mostra sopra altre app” nelle impostazioni di Android; in quel caso Bible Lock smette di funzionare. Per un consiglio di lettura IA possono essere inviati a un fornitore di servizi IA il bisogno selezionato, la lunghezza richiesta, la lingua preferita e i riferimenti di capitoli recenti. Questi evitano ripetizioni e sono anche salvati sul tuo telefono. Il trattamento fornisce di norma la funzione richiesta ai sensi dell'articolo 6.1.b del GDPR, con protezione aggiuntiva per dati sensibili."
           ]
         },
         {
@@ -710,7 +684,7 @@
           "id": "children",
           "title": "Minori e autorizzazione dei genitori",
           "paragraphs": [
-            "L’uso di Amen deve rispettare le norme sui dati dei minori, l’autorizzazione valida dei genitori quando necessaria e le condizioni dei servizi esterni. La classificazione dei contenuti di Google Play non sostituisce tali requisiti. Le condizioni IA di Google collegate restano pertinenti per le funzioni che usano quei servizi.",
+            "L’uso di Amen deve rispettare le norme sui dati dei minori, l’autorizzazione valida dei genitori quando necessaria e le condizioni dei servizi esterni. La classificazione dei contenuti di Google Play non sostituisce tali requisiti. Le condizioni dei fornitori di servizi IA restano pertinenti per le funzioni che usano quei servizi.",
             "Quando serve il consenso, i requisiti per minori dipendono dalla legge locale. Contatta l’assistenza se ritieni che informazioni di un minore siano state trattate senza l’autorizzazione necessaria. Esamineremo la richiesta e gestiremo la limitazione o cancellazione richiesta dalle circostanze."
           ]
         },
@@ -721,7 +695,7 @@
           "id": "recipients",
           "title": "Fornitori e altri destinatari",
           "paragraphs": [
-            "Le categorie di destinatari comprendono fornitori di autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, notifiche push ed email di supporto. Google fornisce servizi IA, l’accesso con Google, gli acquisti tramite Google Play e la consegna delle notifiche push. Le informazioni condivise dipendono da funzione e finalità. L’app Android non condivide informazioni con partner pubblicitari.",
+            "Le categorie di destinatari comprendono fornitori di autenticazione degli account, hosting e archiviazione cloud, verifica degli acquisti, notifiche push ed email di supporto. Fornitori esterni di servizi IA generano le risposte IA e l’audio. Google fornisce l’accesso con Google, gli acquisti tramite Google Play e la consegna delle notifiche push. Le informazioni condivise dipendono da funzione e finalità. L’app Android non condivide informazioni con partner pubblicitari.",
             "Le informazioni necessarie possono essere condivise anche con personale autorizzato, consulenti professionali o autorità quando richiesto dalla legge. Trattamento e trasferimenti internazionali restano soggetti alle garanzie applicabili. Contatta {{email}} per informazioni sui destinatari e sugli accordi relativi ai tuoi dati."
           ]
         },
@@ -757,12 +731,6 @@
     },
     "terms": {
       "intro": "Amen è un’app cristiana per leggere la Bibbia, pregare e riflettere sulla fede. Queste condizioni si applicano all’app Amen per Android, inclusi la chat IA Nema, le funzioni dell’account e gli abbonamenti acquistati tramite Google Play. Leggile insieme all’informativa sulla privacy e all’offerta mostrata prima di acquistare. I tuoi diritti legali di consumatore restano tutelati.",
-      "summary": [
-        "Nema usa un modello di IA di Google potenziato per la chat IA. Le risposte possono essere inesatte; verifica affermazioni importanti e citazioni bibliche.",
-        "Prima che tu confermi un acquisto, Google Play mostra il prezzo, il periodo di fatturazione, l’eventuale prova gratuita e il prodotto che acquisti.",
-        "Gli abbonamenti Google Play si rinnovano fino all’annullamento in Google Play. Eliminare l’app o l’account Amen non annulla la fatturazione di Google Play.",
-        "Queste condizioni preservano i diritti legali dei consumatori. Per download e acquisti valgono anche i termini di Google Play."
-      ],
       "sections": [
         {
           "id": "provider",
@@ -776,7 +744,7 @@
           "id": "service",
           "title": "Servizi offerti",
           "paragraphs": [
-            "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, l’app Android offre anche fumetti biblici, immagini, Giorni con Gesù e widget per la schermata Home. Nema usa un modello di IA di Google potenziato per la chat IA. Anche alcuni consigli di lettura e funzioni audio usano l’IA. Le funzioni dell’app iOS non sono automaticamente disponibili nell’app Android.",
+            "Amen offre lettura biblica cristiana, preghiera e riflessione con versetti salvati, evidenziazioni, meditazioni, progressi e funzioni correlate. Secondo versione e accesso, l’app Android offre anche fumetti biblici, immagini, Giorni con Gesù e widget per la schermata Home. Nema offre una chat IA. Anche alcuni consigli di lettura e funzioni audio usano l’IA. Le funzioni dell’app iOS non sono automaticamente disponibili nell’app Android.",
             "L'offerta effettiva e la schermata d'acquisto definiscono l'accesso a pagamento. Alcuni contenuti devono essere scaricati prima dell'uso; condividere contenuti resta soggetto alla licenza. Queste condizioni non promettono un numero fisso di messaggi, un modello specifico, tutte le traduzioni bibliche, funzionamento perpetuo o funzioni pubblicizzate per un'altra versione o piattaforma. Descrizioni e impegni contrattuali resi vincolanti dalla legge restano vincolanti."
           ]
         },
@@ -784,7 +752,7 @@
           "id": "eligibility",
           "title": "Uso di Amen e servizi esterni",
           "paragraphs": [
-            "Devi avere capacità legale per concludere l’accordo o un’autorizzazione valida dei genitori o tutori quando necessaria. Usa i servizi esterni secondo le loro condizioni. Nema usa servizi IA di Google; le condizioni del fornitore sono disponibili in {{google}}.",
+            "Devi avere capacità legale per concludere l’accordo o un’autorizzazione valida dei genitori o tutori quando necessaria. Usa i servizi esterni secondo le loro condizioni. Nema usa servizi IA esterni.",
             "Requisiti su dati e consenso dei minori dipendono dalla legge locale. Gli acquisti richiedono il metodo di pagamento e l’eventuale approvazione familiare o dei genitori applicabile all’account Google usato. La classificazione dei contenuti dell’app non prevale su requisiti legali o condizioni di altri servizi."
           ]
         },

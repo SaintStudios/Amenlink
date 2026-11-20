@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const languages = ['en', 'de', 'es', 'fr', 'it', 'sv'];
 const names = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', sv: 'Svenska' };
-const date = '2026-11-09';
+const date = '2026-11-20';
 // A document added later carries its own date; the others keep the shared version.
 const dates = {};
 // Privacy and terms exist once per app. The iOS text is the shared one; Android lists only what differs.
@@ -21,7 +21,7 @@ const platformIcons = {
 const platformKinds = ['privacy', 'terms', 'support', 'imprint', 'delete-account'];
 // Support has no text of its own: it repeats sections of the privacy policy and terms for the same platform.
 const androidTexts = ['privacy', 'terms'];
-const androidDate = '2026-11-09';
+const androidDate = '2026-11-20';
 // URL slug → content and UI key (delete-account → deleteAccount).
 const key = (kind) => kind.replace(/-(\w)/g, (_, c) => c.toUpperCase());
 const origin = 'https://amen-app.com';
@@ -38,7 +38,6 @@ const external = {
   refund: 'https://support.apple.com/en-us/118223',
   appleEula: 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
   appleTerms: 'https://www.apple.com/legal/internet-services/itunes/',
-  google: 'https://ai.google.dev/gemini-api/terms',
   applePrivacy: 'https://www.apple.com/legal/privacy/',
   googlePrivacy: 'https://policies.google.com/privacy',
   tiktokPrivacy: 'https://www.tiktok.com/legal/page/eea/privacy-policy/en',
@@ -55,7 +54,7 @@ function validate(copy, locale) {
   }
   for (const kind of ['privacy', 'terms', 'deleteAccount']) {
     const document = copy[kind];
-    if (!document?.intro || document.summary?.length !== english[kind].summary.length) throw new Error(locale + ': incomplete ' + kind);
+    if (!document?.intro) throw new Error(locale + ': incomplete ' + kind);
     if (document.sections?.length !== english[kind].sections.length) throw new Error(locale + ': missing sections in ' + kind);
     document.sections.forEach((section, i) => {
       if (section.id !== english[kind].sections[i].id || !section.title || section.paragraphs?.length !== english[kind].sections[i].paragraphs.length) {
@@ -71,7 +70,7 @@ function validate(copy, locale) {
   for (const kind of androidTexts) {
     const document = copy.android?.[kind];
     const reference = english.android[kind];
-    if (!document?.intro || document.summary?.length !== reference.summary.length) throw new Error(locale + ': incomplete Android ' + kind);
+    if (!document?.intro) throw new Error(locale + ': incomplete Android ' + kind);
     if (document.sections?.length !== reference.sections.length) throw new Error(locale + ': missing sections in Android ' + kind);
     document.sections.forEach((section, i) => {
       const model = reference.sections[i];
@@ -101,7 +100,6 @@ export function androidDocument(copy, kind) {
   const document = copy.android[kind];
   return {
     intro: document.intro,
-    summary: document.summary,
     sections: document.sections.map((section) => section.paragraphs ? section : copy[kind].sections.find((s) => s.id === section.id))
   };
 }
@@ -116,7 +114,6 @@ function render(copy, locale, kind, auto = false, platform = null) {
   const terms = shown === 'android' ? androidDocument(copy, 'terms') : copy.terms;
   const doc = kind === 'support' ? {
     intro: ui.supportDescription,
-    summary: [privacy.summary[3], terms.summary[1]],
     sections: [
       terms.sections.find((s) => s.id === 'contact'),
       privacy.sections.find((s) => s.id === 'account-deletion'),
@@ -126,7 +123,6 @@ function render(copy, locale, kind, auto = false, platform = null) {
     ]
   } : kind === 'imprint' ? {
     intro: ui.imprintDescription,
-    summary: [],
     sections: [
       terms.sections.find((s) => s.id === 'provider'),
       terms.sections.find((s) => s.id === 'disputes'),
@@ -149,7 +145,8 @@ function render(copy, locale, kind, auto = false, platform = null) {
       ['googlePlayTerms', 'googlePrivacy', 'googlePlayCancel', 'googlePlayRefund'].map(reference).join('') + '</ul></section>' :
     '<section aria-labelledby="apple-information"><h2 id="apple-information">' + escape(ui.appleInformation) + '</h2><ul class="provider-links">' +
       ['appleTerms', 'appleEula', 'applePrivacy', 'cancel', 'refund'].map(reference).join('') + '</ul></section>';
-  const providerReferences = shown === 'android' ? ['google'] : ['google', 'googlePrivacy', 'tiktokPrivacy', 'appleSKAN'];
+  // Android has no extra provider links: Google's own pages are in the Google Play list above.
+  const providerReferences = shown === 'android' ? [] : ['googlePrivacy', 'tiktokPrivacy', 'appleSKAN'];
   // Plain links, so the choice works without JavaScript and every shared URL names its platform.
   const platformSwitch = '<nav class="platform-switch" aria-label="' + escape(ui.platform) + '">' +
     platforms.map((p) => '<a data-platform-link="' + p + '" href="' + url(kind, locale, p) + '"' + (p === shown ? ' aria-current="page"' : '') + ' aria-label="' + platformNames[p] + '" title="' + platformNames[p] + '">' +
@@ -176,12 +173,11 @@ function render(copy, locale, kind, auto = false, platform = null) {
     '<p class="intro">' + escape(doc.intro) + '</p><div class="metadata">' + '<span class="platform-tag">' + platformNames[shown] + '</span>' + '<span>' + escape(ui.updated) + ': <time datetime="' + updated + '">' + escape(localDate) + '</time></span><span>' + escape(ui.version) + ': ' + updated + '</span><button type="button" id="print-document" hidden>' + escape(ui.print) + '</button></div></div>\n' +
     '<aside class="contents"><details><summary>' + escape(ui.contents) + '</summary><nav aria-label="' + escape(ui.contents) + '"><ol>' +
     doc.sections.map((s) => '<li><a href="#' + s.id + '">' + escape(s.title) + '</a></li>').join('') +
-    '</ol></nav></details></aside><main id="document" tabindex="-1">' + (doc.summary.length ? '<section class="key-points" aria-labelledby="key-points"><h2 id="key-points">' + escape(ui.summary) + '</h2><ul>' +
-    doc.summary.map((s) => '<li>' + escape(s) + '</li>').join('') + '</ul></section>\n' : '') +
+    '</ol></nav></details></aside><main id="document" tabindex="-1">' +
     doc.sections.map((s, i) => '<section aria-labelledby="' + s.id + '"><h2 id="' + s.id + '"><span class="section-number">' + (i + 1) + '.</span> ' + escape(s.title) + '</h2>' +
       s.paragraphs.map((p) => '<p>' + rich(p) + '</p>').join('\n') + '</section>').join('\n') +
     storeReferences +
-    (kind === 'privacy' ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
+    (kind === 'privacy' && providerReferences.length ? '<section aria-labelledby="provider-links"><h2 id="provider-links">' + escape(ui.providers) + '</h2><ul class="provider-links">' +
       providerReferences.map(reference).join('') + '</ul></section>' : '') +
     '<a class="back-top" href="#top">' + escape(ui.top) + ' ↑</a></main></div>\n' +
     '<footer><div class="footer-inner"><span class="footer-brand">' + escape(ui.copyright) + '</span><div class="footer-controls">' + platformSwitch +

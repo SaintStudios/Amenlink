@@ -72,6 +72,6 @@ Then open http://127.0.0.1:8765/privacy/ or an explicit language page. Productio
 
 ## Legal review and implementation limits
 
-See docs/legal-review.md. The public copy uses amen branding and support email, describes infrastructure by recipient category, and covers app processing. It includes links to Apple's terms, license, privacy, cancellation and refund guidance, plus Google AI conditions and privacy information. The compatibility /imprint and /impressum routes now show general legal information, not an operator disclosure.
+See docs/legal-review.md. The public copy uses amen branding and support email, describes infrastructure by recipient category, and covers app processing. It includes links to Apple's terms, license, privacy, cancellation and refund guidance, plus Google privacy information. AI services are described by recipient category only, without provider or model names, and the pages have no key points box. The compatibility /imprint and /impressum routes now show general legal information, not an operator disclosure.
 
 These are substantial original drafts grounded in app source and official references, not a certification of legal compliance. Operator identity was removed at the user's request and remains an unresolved legal disclosure requirement. A privacy notice cannot create an absent consent flow, change provider eligibility rules or verify production configuration. Passing website checks does not establish those conditions.
